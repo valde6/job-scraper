@@ -24,7 +24,8 @@ companies:
   - https://www.maersk.com/careers
   - https://www.maersk.com/careers/vacancies
   source:
-    type: none
+    type: workday
+    url: https://maersk.wd3.myworkdayjobs.com/Maersk_Careers
 - rank: 3
   name: McKinsey & Company
   aliases:
@@ -91,7 +92,9 @@ companies:
   - https://careers.bcg.com/
   - https://www.bcg.com/careers
   source:
-    type: none
+    type: eightfold
+    url: https://bcg.eightfold.ai
+    domain: bcg.com
 - rank: 10
   name: Nordea
   aliases:
@@ -120,7 +123,8 @@ companies:
   - https://www.ey.com/da_dk/careers
   - https://careers.ey.com/
   source:
-    type: none
+    type: successfactors
+    url: https://careers.ey.com
 - rank: 13
   name: Jyske Bank
   aliases:
@@ -177,7 +181,8 @@ companies:
   - https://careers.vestas.com/
   - https://www.vestas.com/en/careers
   source:
-    type: none
+    type: successfactors
+    url: https://careers.vestas.com
 - rank: 19
   name: Implement
   aliases:
@@ -196,7 +201,8 @@ companies:
   - https://www.home.saxo/about-us/careers
   - https://www.home.saxo/careers
   source:
-    type: none
+    type: workday
+    url: https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank
 - rank: 21
   name: Finansministeriet
   aliases:
@@ -234,7 +240,8 @@ companies:
   - https://www.arla.com/careers/
   - https://jobs.arla.com/
   source:
-    type: none
+    type: phenom
+    url: https://jobs.arla.com/global/en
 - rank: 25
   name: Udenrigsministeriet
   aliases:
@@ -262,7 +269,9 @@ companies:
   - https://www.danskindustri.dk/om-di/job-i-di/
   - https://www.danskindustri.dk/om-di/job/
   source:
-    type: none
+    type: teamtailor
+    url: https://danskindustri.teamtailor.com
+    dk_only: true
 - rank: 28
   name: Nordnet
   aliases:
@@ -291,7 +300,8 @@ companies:
   - https://kpmg.com/dk/da/home/careers.html
   - https://kpmg.com/dk/da/home/karriere.html
   source:
-    type: none
+    type: hrmanager
+    customer: kpmg
 - rank: 31
   name: Matas
   aliases:
@@ -321,7 +331,8 @@ companies:
   - https://www.paconsulting.com/careers
   - https://www.paconsulting.com/careers/experienced-hires
   source:
-    type: none
+    type: smartrecruiters
+    company_id: PAConsulting
 - rank: 34
   name: Københavns Lufthavne
   aliases:
@@ -340,7 +351,8 @@ companies:
   - https://danskecommodities.com/careers/
   - https://danskecommodities.com/careers/jobs/
   source:
-    type: none
+    type: teamtailor
+    url: https://danskecommoditiesas.teamtailor.com
 - rank: 36
   name: Netcompany
   aliases:
@@ -349,7 +361,8 @@ companies:
   - https://www.netcompany.com/da/karriere
   - https://www.netcompany.com/careers
   source:
-    type: none
+    type: smartrecruiters
+    company_id: Netcompany1
 - rank: 37
   name: PFA Pension
   aliases: []
@@ -418,7 +431,12 @@ companies:
   - https://jobs.ikea.com/en/search?location=Denmark
   - https://www.ikea.com/dk/da/this-is-ikea/work-with-us/
   source:
-    type: none
+    type: generic
+    list_urls:
+    - https://jobs.ikea.com/da/soeg-jobs/student/Danmark/
+    - https://jobs.ikea.com/da/soeg-jobs/Danmark/
+    link_pattern: /da/job/
+    dk_only: true
 - rank: 44
   name: Statsministeriet
   aliases:
@@ -437,7 +455,12 @@ companies:
   - https://www.accenture.com/dk-en/careers
   - https://www.accenture.com/dk-en/careers/jobsearch?jk=&sb=1&vw=0&is_rj=0&pg=1
   source:
-    type: none
+    type: workday
+    url: https://accenture.wd103.myworkdayjobs.com/AccentureCareers
+    search_terms:
+    - student Denmark
+    - Copenhagen student
+    - studentermedhjælper
 - rank: 46
   name: Danmarks Radio
   aliases: []
@@ -445,7 +468,8 @@ companies:
   - https://www.dr.dk/om-dr/job-i-dr
   - https://www.dr.dk/om-dr/job
   source:
-    type: none
+    type: hrmanager
+    customer: danmarksradio
 - rank: 47
   name: DSV
   aliases:
@@ -472,7 +496,8 @@ companies:
   - https://www.ramboll.com/careers
   - https://www.ramboll.com/careers/job-search
   source:
-    type: none
+    type: smartrecruiters
+    company_id: Ramboll3
 - rank: 50
   name: Novonesis
   aliases:
@@ -482,4 +507,5 @@ companies:
   - https://www.novonesis.com/en/careers
   - https://www.novonesis.com/en/careers/jobs
   source:
-    type: none
+    type: workday
+    url: https://novonesis.wd103.myworkdayjobs.com/Novonesis_Careers

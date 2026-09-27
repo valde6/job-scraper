@@ -10,7 +10,7 @@ def scrape(cfg):
     listed, jobs, start = 0, [], 0
     while start < 500:
         data = get(f"{base}/api/apply/v2/jobs", params={"domain": dom, "start": start, "num": 50,
-                                                        "location": "Denmark", "sort_by": "timestamp"}).json()
+                                                        "location": cfg.get("location", "Denmark"), "sort_by": "timestamp"}).json()
         items = data.get("positions") or []
         for p in items:
             listed += 1

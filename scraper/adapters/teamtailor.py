@@ -2,21 +2,22 @@
 
 Bruger RSS-feedet /jobs.rss som indeholder titel, link, lokation og beskrivelse.
 """
+from bs4 import BeautifulSoup
 from ..common import Job, get, soup, clean, html_to_md, is_denmark, is_student, jsonld_jobposting, jsonld_location
 
 
 def scrape(cfg):
     base = cfg["url"].rstrip("/")
     xml = get(f"{base}/jobs.rss").text
-    s = soup(xml)
+    s = BeautifulSoup(xml, "xml")
     listed, jobs = 0, []
     for it in s.find_all("item"):
         listed += 1
         title = clean(it.find("title").get_text() if it.find("title") else "")
-        link = clean(it.find("guid").get_text() if it.find("guid") else "") or clean(str(it.find("link").next_sibling or ""))
+        link = clean(it.find("link").get_text() if it.find("link") else "") or clean(it.find("guid").get_text() if it.find("guid") else "")
         if not is_student(title):
             continue
-        loc_tags = it.find_all(["tt:location", "location", "tt:city", "city"])
+        loc_tags = it.find_all(["location", "city", "locations"])
         loc = " ".join(clean(t.get_text()) for t in loc_tags)
         desc = it.find("description")
         desc_md = html_to_md(desc.get_text() if desc else "")

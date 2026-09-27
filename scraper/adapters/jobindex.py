@@ -7,6 +7,7 @@ ikke kan læses. Jobs matches til virksomhederne i companies.yaml via navn/alias
 import re
 from urllib.parse import quote
 
+from bs4 import BeautifulSoup
 from ..common import Job, get, soup, clean, html_to_md, is_student, find_deadline
 
 QUERIES = ["studentermedhjælper", "student assistant", "studentermedarbejder", "studiejob", "student"]
@@ -31,17 +32,17 @@ def scrape_all(companies, today_year):
             xml = get(f"https://www.jobindex.dk/jobsoegning.rss?q={quote(q)}").text
         except Exception:
             continue
-        for it in soup(xml).find_all("item"):
-            link = clean(it.find("guid").get_text() if it.find("guid") else "")
-            if not link:
-                lk = it.find("link")
-                link = clean(lk.next_sibling if lk and lk.next_sibling else "")
+        for it in BeautifulSoup(xml, "xml").find_all("item"):
+            link = clean(it.find("link").get_text() if it.find("link") else "") or \
+                clean(it.find("guid").get_text() if it.find("guid") else "")
             if not link or link in seen:
                 continue
             seen.add(link)
             listed += 1
             title = clean(it.find("title").get_text() if it.find("title") else "")
-            blob = it.get_text(" ")
+            d = it.find("description")
+            dtxt = clean(BeautifulSoup(d.get_text(), "lxml").get_text(" ")) if d else ""
+            blob = title + " | " + dtxt[:250]   # kun starten: virksomhedsnavnet står først, undgå fx "Microsoft 365" i brødteksten
             company = next((n for n, rx in pats if rx.search(blob)), None)
             if not company or not is_student(title + " " + blob[:300]):
                 continue

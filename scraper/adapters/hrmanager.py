@@ -2,9 +2,27 @@
 
 Config: customer: nykredit   (fra candidate.hr-manager.net/...?customer=XXX)
 """
-from ..common import Job, get, clean, html_to_md, is_denmark, is_student
+import re
+from datetime import datetime, timezone
+
+from ..common import Job, get, clean, html_to_md, is_denmark, is_student, is_student_body
 
 API = "https://api.hr-manager.net/jobportal.svc/{c}/positionlist/json/"
+
+
+def _date(v):
+    m = re.search(r"/Date\((\d+)", str(v or ""))
+    if not m:
+        return ""
+    return datetime.fromtimestamp(int(m.group(1)) / 1000, tz=timezone.utc).date().isoformat()
+
+
+def _title(p):
+    for k in ("Name", "Title", "PositionTitle", "JobTitle", "Headline", "PositionName"):
+        if isinstance(p.get(k), str) and p[k].strip():
+            return p[k]
+    adv = (p.get("Advertisements") or [{}])[0]
+    return adv.get("Title") or adv.get("Name") or ""
 
 
 def scrape(cfg):
@@ -17,10 +35,12 @@ def scrape(cfg):
     listed, jobs = 0, []
     for p in items:
         listed += 1
-        title = clean(p.get("Name") or p.get("Title"))
-        if not is_student(title):
+        title = clean(_title(p))
+        adv0 = (p.get("Advertisements") or [{}])[0]
+        if not (is_student(title) or is_student_body(adv0.get("Content", "")[:3000])):
             continue
-        loc = clean(" ".join(str(p.get(k) or "") for k in ("WorkPlace", "WorkPlaceCity", "Location", "Country")))
+        loc = clean(" ".join(str(p.get(k) or "") for k in ("WorkPlace", "WorkPlaceCity", "Location", "PositionLocation", "Country")
+                             if isinstance(p.get(k), (str, int))))
         if loc and not is_denmark(loc, "denmark" if cfg.get("dk_only", True) else ""):
             continue
         adv = p.get("Advertisements") or []
@@ -29,8 +49,8 @@ def scrape(cfg):
             f"https://candidate.hr-manager.net/ApplicationInit.aspx?cid={p.get('CustomerId','')}&ProjectId={p.get('Id')}"
         jobs.append(Job(
             company=cfg["name"], title=title, url=url, apply_url=p.get("ApplicationFormUrl") or url,
-            location=loc or "Danmark", posted=(p.get("Created") or "")[:10],
-            deadline=(p.get("ApplicationDue") or "")[:10],
+            location=loc or "Danmark", posted=_date(p.get("Created")),
+            deadline=_date(p.get("ApplicationDue")),
             description_md=html_to_md(desc_html), source="hrmanager", external_id=str(p.get("Id")),
         ))
     return listed, jobs
