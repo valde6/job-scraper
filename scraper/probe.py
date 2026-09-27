@@ -79,6 +79,11 @@ for i, line in enumerate(lines, 1):
             f.write_text(redact(f"{line}\nOK listed={listed} matched={len(jobs)}\n\n{body[:40000]}"))
             summary.append(f"{i:02d} OK listed={listed} matched={len(jobs)} | {line}")
             continue
+        if parts[0] == "RAW":
+            r = http("GET", parts[1], retries=0, timeout=25)
+            f.write_text(redact(f"{line}\nSTATUS {r.status_code}\n\n{r.text[:int(parts[2]) if len(parts) > 2 else 12000]}"))
+            summary.append(f"{i:02d} RAW {r.status_code} {len(r.text)}B | {line}")
+            continue
         kw = {"retries": 0, "timeout": 25}
         if parts[0] == "POST":
             kw["json"] = json.loads(parts[2]) if len(parts) > 2 else {}
