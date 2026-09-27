@@ -18,10 +18,14 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python -m scraper.probe
       - run: |
+          mkdir -p data
+          python -m scraper.probe > data/probe.log 2>&1 || echo "probe exit $?" >> data/probe.log
+      - if: always()
+        run: |
           git config user.name "job-scraper-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/
+          git add -f data/ || true
+          git status --short
           git diff --cached --quiet || git commit -m "Probe $(date -u +%H:%M)"
           git pull --rebase --autostash && git push
