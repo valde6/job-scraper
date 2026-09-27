@@ -51,6 +51,7 @@ def post(url: str, **kw) -> requests.Response:
 def html_to_md(html: str | None) -> str:
     if not html:
         return ""
+    html = re.sub(r"&#x[aA];|&#10;", "\n", html)
     md = markdownify(html, heading_style="ATX", strip=["img", "script", "style"])
     md = re.sub(r"\n{3,}", "\n\n", md)
     return md.strip()
