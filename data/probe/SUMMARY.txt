@@ -1,21 +1,2 @@
-01 OK listed=8 matched=1 | SCRAPE A.P. Møller - Mærsk
-02 OK listed=38 matched=7 | SCRAPE LEGO Group
-03 OK listed=6 matched=0 | SCRAPE Saxo Bank
-04 OK listed=18 matched=3 | SCRAPE Novonesis
-05 OK listed=1 matched=1 | SCRAPE Accenture
-06 OK listed=36 matched=5 | SCRAPE Netcompany
-07 OK listed=54 matched=0 | SCRAPE Rambøll
-08 OK listed=12 matched=0 | SCRAPE PA Consulting Group
-09 OK listed=8 matched=3 | SCRAPE Dansk Industri
-10 OK listed=2 matched=0 | SCRAPE Danske Commodities
-11 OK listed=19 matched=1 | SCRAPE Danmarks Radio
-12 OK listed=20 matched=1 | SCRAPE KPMG
-13 OK listed=6 matched=0 | SCRAPE Amazon
-14 OK listed=5 matched=0 | SCRAPE Boston Consulting Group (BCG)
-15 OK listed=0 matched=0 | SCRAPE EY
-16 OK listed=5 matched=0 | SCRAPE Vestas
-17 OK listed=10 matched=0 | SCRAPE Arla Foods
-18 OK listed=28 matched=0 | SCRAPE IKEA
-19 ERR SSLError: HTTPSConnectionPool(host='gcsservices.careers.microsoft.com', port=443): Max retries exceeded with url: /search/api/v1/s | GET https://gcsservices.careers.microsoft.com/search/api/v1/search?lc=Denmark&q=student&pgSz=5
-20 ERR HTTPError: 400 Client Error: Bad Request for url: https://api.hr-manager.net/jobportal.svc/bangolufsen/positionlist/json/?incads=1 | GET https://api.hr-manager.net/jobportal.svc/bangolufsen/positionlist/json/?incads=1
-21 200 1148079B | GET https://jobs.ikea.com/da/soeg-jobs/student/Danmark/
+01 RAW 200 41811B | RAW https://www.jobindex.dk/jobsoegning.rss?q=studentermedhj%C3%A6lper 9000
+02 RAW 200 58916B | RAW https://www.jobindex.dk/jobannonce/h1701534/ 60000

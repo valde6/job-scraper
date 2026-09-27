@@ -1,22 +1,149 @@
-SCRAPE A.P. Møller - Mærsk
-OK listed=8 matched=1
+RAW https://www.jobindex.dk/jobsoegning.rss?q=studentermedhj%C3%A6lper 9000
+STATUS 200
 
-{
- "listed": 8,
- "jobs": [
-  {
-   "company": "A.P. Møller - Mærsk",
-   "title": "Audits and Investigation-Student Assistant (Early Careers)",
-   "url": "https://maersk.wd3.myworkdayjobs.[REDACTED]",
-   "apply_url": "https://maersk.wd3.myworkdayjobs.[REDACTED]",
-   "location": "Denmark, Copenhagen, 1098",
-   "posted": "2026-09-02",
-   "deadline": "",
-   "description_md": "You've seen us everywhere, from a road trip, passing over one of our trucks, to the biggest ports on the planet where we touch land to continue our journey All The Way to your front door. Now it's your chance to get to know us from within: a workplace full of warmth, friendship and support. We invite you to join our wonderful Audits & Investigation team and be part of our purpose: providing assurance to the AC and the Board of Directors and to strengthen A.P. Møller –Maersk’s ability to create, protect, and sustain value. If you are passionate about learning, understanding the world of governance, risk and controls, and have an appetite for generating analytic insights, this is for you!\n\n**We offer**\n\nAn opportunity to combine your studies with hands-on business experience. A strong platform for a future career. Working hours around 20 hours/week and based in Copenhagen\n\nWhen you join the Digital Excellence team within Audits & Investigation (A&I), you will become part of a team that excels for the quality of output, at a truly global company undergoing an exciting transformation. We offer flexibility to focus on lectures and exams, but the job also requires flexibility to commit more hours during peak periods.\n\n**Key Responsibilities**\n\nThe purpose of this role is to support A&I's transformation journey by helping embed digital solutions and AI-enabled ways of working across the function\n\nFurthermore, your key responsibilities will be:\n\n* Prototype AI capabilities that increases efficiency within A&I ways of working\n* Post prototyping based on feedback implement AI enabled ways of working.\n* Support with the digitization and automation of workflows within A&I.\n* Help transform raw data into actionable insights through structured analysis and visual storytelling.\n* Participate in audit/investigation-related engagement, especially those involving automation, analytics, or reporting.\n* Provide administrative and ad-hoc support to the A&I team as needed.\n\n**Who are you?**\n\n* You have recently started your master’s degree ( Sep 2026 intake) in Business Analytics, with a bachelors in Finance or Economics or a related field at a university in Denmark;\n* You are comfortable in using AI tools to design and implement AI-augmented workflows.\n* You are comfortable  working with data tools such as Power BI, Excel, and ideally some exposure to SQL, Python, or R.\n* Interested in how data, risk, and governance intersect in a global business environment\n* You are analytical, structured, and attentive to detail;\n* You bring a can-do attitude, intellectual curiosity, and the ability to learn quickly;\n* You are able to build strong professional relationships and thrive in a fast-paced environment;\n\nSince you are joining an international environment, your written and spoken English must be proficient. If you have been reading so far, we are glad to see you are interested! If you could see yourself in this role and are keen to be part of this journey at Maersk, we look forward to hearing from you!\n\nMaersk is committed to a diverse and inclusive workplace, and we embrace different styles of thinking. Maersk is an equal opportunities employer and welcomes applicants without regard to race, colour, gender, sex, age, religion, creed, national origin, ancestry, citizenship, marital status, sexual orientation, physical or mental disability, medical condition, pregnancy or parental leave, veteran status, gender identity, genetic information, or any other characteristic protected by applicable law. We will consider qualified applicants with criminal histories in a manner consistent with all legal requirements.\n\n \n\nWe are happy to support your need for any adjustments during the application and hiring process. If you need special assistance or an accommodation to use our website, apply for a position, or to perform a job, please contact us by emailing  [accommodationrequests@maersk.com](mailto:accommodationrequests@maersk.com).",
-   "source": "workday",
-   "external_id": "R194440",
-   "tags": [],
-   "id": "2d87d175ff97"
-  }
- ]
-}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="2.0"
+ xmlns:blogChannel="http://backend.userland.com/blogChannelModule"
+>
+
+<channel>
+<title>Jobindex - Ledige job indeholdende ordet studentermedhj&#xE6;lper</title>
+<link>https://www.jobindex.dk/jobsoegning?q=studentermedhj%C3%A6lper</link>
+<description>Danmarks st&#xF8;rste jobmarked</description>
+<language>da</language>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<webMaster>support@jobindex.dk (Jobindex)</webMaster>
+<ttl>1440</ttl>
+
+<image>
+<title>Jobindex - Ledige job indeholdende ordet studentermedhj&#xE6;lper</title>
+<url>https://www.jobindex.dk/img/jobindex130x30gray.gif</url>
+<link>https://www.jobindex.dk/jobsoegning?q=studentermedhj%C3%A6lper</link>
+</image>
+<item>
+<title>Ambiti&#xF8;s studentermedhj&#xE6;lper til uddannelsesomr&#xE5;det Industri, Medie og Sk&#xF8;nhed, NEXT Uddannelse K&#xF8;benhavn</title>
+<link>https://www.jobindex.dk/vis-job/h1701764</link>
+<description>
+
+&#x3C;div class=&#x22;jobsearch-result&#x22;&#x3E;
+&#x3C;div class=&#x22;PaidJob&#x22;&#x3E;
+
+
+    &#x3C;div class=&#x22;PaidJob-inner&#x22;&#x3E;
+        
+
+&#x3C;A HREF=&#x22;https://www.jobindex.dk/vis-job/h1701764&#x22; rel=&#x22;noopener&#x22; target=&#x22;_blank&#x22;&#x3E;&#x3C;img src=&#x22;https://www.jobindex.dk/img/logo/nextlogo2016.png&#x22; ALIGN=&#x22;right&#x22; ALT=&#x22;NEXT Uddannelse K&#x26;oslash;benhavn&#x22; style=&#x22;border: 0px; margin: 0 0 5px 20px;&#x22;&#x3E;&#x3C;/a&#x3E;
+&#x3C;h4&#x3E;&#x3C;A HREF=&#x22;https://www.jobindex.dk/vis-job/h1701764&#x22; rel=&#x22;noopener&#x22; target=&#x22;_blank&#x22;&#x3E;Ambiti&#xF8;s studentermedhj&#xE6;lper til uddannelsesomr&#xE5;det Industri, Medie og Sk&#xF8;nhed&#x3C;/a&#x3E;&#x3C;/h4&#x3E;
+
+        &#x3C;div class=&#x22;jobad-element-area&#x22;&#x3E;
+            &#x3C;span class=&#x22;jix_robotjob--area&#x22;&#x3E;K&#xF8;benhavn NV&#x3C;/span&#x3E;
+            
+        &#x3C;/div&#x3E;
+
+&#x3C;p&#x3E;Vi s&#xF8;ger lige nu en ambiti&#xF8;s og struktureret studentermedhj&#xE6;lper til at underst&#xF8;tte vores ledelse i industri, medie, sk&#xF8;nhed med at tr&#xE6;ffe kvalificerede beslutninger om udviklingen og driften af vores uddannelser.&#x3C;/p&#x3E;&#x3C;p&#x3E;Prim&#xE6;re arbejdsopgaver er bl.a.&#x3C;/p&#x3E;&#x3C;ul&#x3E;&#x3C;li&#x3E;klagesagsbehandling og opf&#xF8;lgning herp&#xE5;&#x3C;/li&#x3E;&#x3C;li&#x3E;udarbejdelse af notater, indstillinger og sagsopl&#xE6;g&#x3C;/li&#x3E;&#x3C;li&#x3E;analysearbejde med b&#xE5;de kvalitative og kvantitative data&#x3C;/li&#x3E;&#x3C;/ul&#x3E;
+
+
+    &#x3C;/div&#x3E;
+
+&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+</description>
+<category>Voksenuddannelse</category>
+<category>Akademisk og politisk arbejde</category>
+<guid isPermaLink="false">https://www.jobindex.dk/1701764</guid>
+<pubDate>Fri, 25 Sep 2026 00:00:00 +0200</pubDate>
+</item>
+<item>
+<title>Natur og Fures&#xF8; Kommune s&#xF8;ger studentermedhj&#xE6;lper til milj&#xF8;omr&#xE5;det, Fures&#xF8; Kommune</title>
+<link>https://www.jobindex.dk/vis-job/h1701630</link>
+<description>
+
+&#x3C;div class=&#x22;jobsearch-result&#x22;&#x3E;
+&#x3C;div class=&#x22;PaidJob&#x22;&#x3E;
+
+
+    &#x3C;div class=&#x22;PaidJob-inner&#x22;&#x3E;
+        
+
+&#x3C;A HREF=&#x22;https://www.jobindex.dk/vis-job/h1701630&#x22; rel=&#x22;noopener&#x22; target=&#x22;_blank&#x22;&#x3E;&#x3C;img src=&#x22;https://www.jobindex.dk/img/logo/furesoekommune.jpg&#x22; ALIGN=&#x22;right&#x22; ALT=&#x22;Fures&#x26;oslash; Kommune&#x22; style=&#x22;border: 0px; margin: 0 0 5px 20px;&#x22;&#x3E;&#x3C;/a&#x3E;
+&#x3C;h4&#x3E;&#x3C;A HREF=&#x22;https://www.jobindex.dk/vis-job/h1701630&#x22; rel=&#x22;noopener&#x22; target=&#x22;_blank&#x22;&#x3E;Natur og Fures&#xF8; Kommune s&#xF8;ger studentermedhj&#xE6;lper til milj&#xF8;omr&#xE5;det&#x3C;/a&#x3E;&#x3C;/h4&#x3E;
+
+        &#x3C;div class=&#x22;jobad-element-area&#x22;&#x3E;
+            &#x3C;span class=&#x22;jix_robotjob--area&#x22;&#x3E;V&#xE6;rl&#xF8;se&#x3C;/span&#x3E;
+            
+        &#x3C;/div&#x3E;
+
+&#x3C;p&#x3E;Kom og v&#xE6;r med til at l&#xF8;fte opgaverne p&#xE5; milj&#xF8;omr&#xE5;det!&#x3C;/p&#x3E;&#x3C;p&#x3E;Vi s&#xF8;ger en studentermedhj&#xE6;lper, som vil pr&#xF8;ve kr&#xE6;fter med paragrafferne inden for milj&#xF8;omr&#xE5;det. Du bliver ogs&#xE5; fortrolig med forvaltningslovens bestemmelser.&#x3C;/p&#x3E;&#x3C;p&#x3E;Dine opgaver:&#x3C;/p&#x3E;&#x3C;ul&#x3E;&#x3C;li&#x3E;Besvare foresp&#xF8;rgsler omkring olietanke og kloakforhold&#x3C;/li&#x3E;&#x3C;li&#x3E;Jordflytningssager&#x3C;/li&#x3E;&#x3C;li&#x3E;Byggeaffald og affaldstilsyn&#x3C;/li&#x3E;&#x3C;/ul&#x3E;
+
+
+    &#x3C;/div&#x3E;
+
+&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+</description>
+<category>Akademisk og politisk arbejde</category>
+<category>Kemi og bioteknik</category>
+<guid isPermaLink="false">https://www.jobindex.dk/1701630</guid>
+<pubDate>Fri, 25 Sep 2026 00:00:00 +0200</pubDate>
+</item>
+<item>
+<title>IT-supporter til Koncernsupport, Team It og teknik, Jyske Bank</title>
+<link>https://www.jobindex.dk/vis-job/h1701534</link>
+<description>
+
+&#x3C;div class=&#x22;jobsearch-result&#x22;&#x3E;
+&#x3C;div class=&#x22;PaidJob&#x22;&#x3E;
+
+
+    &#x3C;div class=&#x22;PaidJob-inner&#x22;&#x3E;
+        
+
+&#x3C;CENTER style=&#x22;margin-bottom: 15px;&#x22;&#x3E;&#x3C;A HREF=&#x22;https://www.jobindex.dk/vis-job/h1701534&#x22; rel=&#x22;noopener&#x22; target=&#x22;_blank&#x22;&#x3E;&#x3C;img src=&#x22;https://www.jobindex.dk/img/brand/HR_525x120_It_2.jpg&#x22; ALT=&#x22;Jyske Bank&#x22; style=&#x22;border: 0px; margin: 0;&#x22;&#x3E;&#x3C;/a&#x3E;&#x3C;/CENTER&#x3E;
+&#x3C;h4&#x3E;&#x3C;A HREF=&#x22;https://www.jobindex.dk/vis-job/h1701534&#x22; rel=&#x22;noopener&#x22; target=&#x22;_blank&#x22;&#x3E;IT-supporter til Koncernsupport, Team It og teknik&#x3C;/a&#x3E;&#x3C;/h4&#x3E;
+
+        &#x3C;div class=&#x22;jobad-element-area&#x22;&#x3E;
+            &#x3C;span class=&#x22;jix_robotjob--area&#x22;&#x3E;K&#xF8;benhavn V&#x3C;/span&#x3E;
+            
+        &#x3C;/div&#x3E;
+
+&#x3C;p&#x3E;Vil du hj&#xE6;lpe kolleger sikkert og effektivt videre i deres arbejdsdag og samtidig udvikle dine kompetencer? S&#xE5; er du m&#xE5;ske den, vi s&#xF8;ger til vores nyetablerede team.&#x3C;/p&#x3E;&#x3C;p&#x3E;Du bliver en del af Jyske Banks IT-support, hvor vi hver dag hj&#xE6;lper kolleger med at f&#xE5; en stabil og effektiv arbejdsdag.&#x3C;/p&#x3E;
+&#x3C;center&#x3E;&#x3C;A HREF=&#x22;https://www.jobindex.dk/vis-job/h1701534&#x22; rel=&#x22;noopener&#x22; target=&#x22;_blank&#x22;&#x3E;&#x3C;img src=&#x22;https://www.jobindex.[REDACTED].jpg?max_width=525&#x22; alt=&#x22;Jyske Bank&#x22; style=&#x22;border: 0px; margin-top: 5px;&#x22;&#x3E;&#x3C;/a&#x3E;&#x3C;/center&#x3E;
+
+    &#x3C;/div&#x3E;
+
+&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+</description>
+<category>IT-drift og support</category>
+<guid isPermaLink="false">https://www.jobindex.dk/1701534</guid>
+<pubDate>Fri, 25 Sep 2026 00:00:00 +0200</pubDate>
+</item>
+<item>
+<title>Studentermedhj&#xE6;lper til Produkter &#x26; Lanceringer i Tryg, Commercial Lines, Tryg Forsikring A/S</title>
+<link>https://www.jobindex.dk/vis-job/h1701847</link>
+<description>
+
+&#x3C;div class=&#x22;jobsearch-result&#x22;&#x3E;
+&#x3C;div class=&#x22;PaidJob&#x22;&#x3E;
+
+
+    &#x3C;div class=&#x22;PaidJob-inner&#x22;&#x3E;
+        
+
+&#x3C;CENTER style=&#x22;margin-bottom: 15px;&#x22;&#x3E;&#x3C;A HREF=&#x22;https://www.jobindex.dk/vis-job/h1701847&#x22; rel=&#x22;noopener&#x22; target=&#x22;_blank&#x22;&#x3E;&#x3C;img src=&#x22;https://www.jobindex.dk/img/brand/spo_top_tryg_250922.png&#x22; ALT=&#x22;Tryg Forsikring A/S&#x22; style=&#x22;border: 0px; margin: 0;&#x22;&#x3E;&#x3C;/a&#x3E;&#x3C;/CENTER&#x3E;
+&#x3C;h4&#x3E;&#x3C;A HREF=&#x22;https://www.jobindex.dk/vis-job/h1701847&#x22; rel=&#x22;noopener&#x22; target=&#x22;_blank&#x22;&#x3E;Studentermedhj&#xE6;lper til Produkter &#x26;amp; Lanceringer i Tryg, Commercial Lines&#x3C;/a&#x3E;&#x3C;/h4&#x3E;
+
+        &#x3C;div class=&#x22;jobad-element-area&#x22;&#x3E;
+            &#x3C;span class=&#x22;jix_robotjob--area&#x22;&#x3E;Ballerup&#x3C;/span&#x3E;
+            
+        &#x3C;/div&#x3E;
+
+&#x3C;p&#x3E;Vil du v&#xE6;re med til at udvikle forsikringsmarkedets bedste value proposition til erhvervskunderne? &#x3C;/p&#x3E;&#x3C;p&#x3E;Der vil sj&#xE6;ldent v&#xE6;re to dage, der ligner hinanden. Eksempler p&#xE5; dine arbejdsopgaver er beslutningsopl&#xE6;g i PowerPoint, diverse ad hoc-opgaver af administrativ og systemm&#xE6;ssig karakter, opdatere og udarbejde betingelser, sammenligninger, faktaark og vejledninger.&#x3C;/p&#x3E;
+&#x3C;center&#x3E;&#x3C;A HREF=&#x22;https://www.jobindex.dk/vis-job/h1701847&#x22; rel=&#x22;noopener&#x22; target=&#x22;_blank&#x22;&#x3E;&#x3C;img src=&#x22;https://www.jobindex.[REDACTED].png?max_width=525&#x22; alt=&#x22;Tryg Forsikring A/S&#x22; style=&#x22;border: 0px; margin-top: 5px;&#x22;&#x3E;&#x3C;/a&#x3E;&#x3C;/center&#x3E;
+
+    &#x3C;/div&#x3E;
+
+&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+</de
