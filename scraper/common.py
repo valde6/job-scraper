@@ -95,18 +95,35 @@ def is_denmark(*texts: str | None) -> bool:
     return any(p in t for p in DK_PLACES)
 
 
+STUDENT_BODY_RE = re.compile(
+    r"studentermedhj|studentermedarb|student\s+assistant|student\s+worker|studiejob|working\s+student|"
+    r"som\s+student|ved\s+siden\s+af\s+(?:dit|dine)\s+studi|alongside\s+your\s+stud|while\s+(?:you\s+)?stud|"
+    r"\d{1,2}\s*[-–]\s*\d{1,2}\s+(?:timer|hours)\s+(?:om|per|a|pr\.?)\s+(?:ugen|week)",
+    re.I,
+)
+
+
+def is_student_body(text: str) -> bool:
+    """Studenterjob hvor titlen ikke siger det, men opslagsteksten gør."""
+    return bool(STUDENT_BODY_RE.search(text or "")) and not EXCLUDE_RE.search((text or "")[:400])
+
+
 def is_student(title: str) -> bool:
     return bool(STUDENT_RE.search(title or "")) and not EXCLUDE_RE.search(title or "")
 
 
 TOPICS = {
+    "Data & analyse": r"data\s*anal|dataanal|datahåndtering|datamodel|dataflow|data\s+&\s+ai|analytics|analyt|business intelligence|\bbi\b|dashboards?",
     "SQL": r"\bsql\b|t-sql|postgres|snowflake|bigquery|databricks",
-    "Dataanalyse": r"data\s*anal|dataanal|analytics|analyt|business intelligence|\bbi\b|power\s*bi|tableau|dashboards?",
-    "Portfolio management": r"portef|portfolio|asset management|investment|investering|kapitalforvaltning|fund|equit|fixed income|trading",
-    "Optimering": r"optimi[sz]|optimering|operations research|forecast|prognos|pricing|supply chain",
-    "Automatisering": r"automati|\brpa\b|python|power automate|scripting|vba|process improvement",
+    "Automatisering": r"automati|\brpa\b|power automate|snaplogic|integration|workflow",
+    "AI": r"\bai\b|kunstig intelligens|artificial intelligence|machine learning|\bml\b|genai|llm|ai-agent|copilot",
+    "Proces": r"proces|process excellence|process improvement|lean|forbedring|optimi[sz]|optimering|operations research",
+    "Digitalisering": r"digitali|it[- ]udvikling|it development|requirements|kravindsamling|kravspec|validering|kvalitetssikring",
+    "Portfolio & investering": r"portef|portfolio|asset management|investment|investering|kapitalforvaltning|fund|equit|fixed income|trading|markets",
+    "Finans": r"business finance|finance|finans|risk|risiko|controlling|controller|treasury|økonomi|accounting|regnskab|valuation",
     "Consulting": r"consult|konsulent|rådgiv|advisory|strategy|strategi",
-    "Finans/risiko": r"finance|finans|risk|risiko|controlling|controller|treasury|økonomi|accounting|regnskab|valuation",
+    "Power BI / Excel": r"power\s*bi|power query|excel|vba",
+    "Python": r"python|pandas",
 }
 _TOPIC_RE = {k: re.compile(v, re.I) for k, v in TOPICS.items()}
 
