@@ -1,0 +1,388 @@
+GET https://bcg.eightfold.ai/api/apply/v2/jobs?domain=bcg.com&location=Copenhagen&num=5
+STATUS 200 FINAL https://bcg.eightfold.ai/api/apply/v2/jobs?domain=bcg.com&location=Copenhagen&num=5
+
+JSON
+{
+ "domain": "bcg.com",
+ "user": "",
+ "isWillingToRelocate": false,
+ "isUserAuthenticated": false,
+ "isUserETXCandidate": false,
+ "isDomainETX": false,
+ "isDomainVeteran": false,
+ "signUpConfig": {},
+ "getHelpButton": {},
+ "isCareerPlannerEnabled": false,
+ "enableRememberMeOption": false,
+ "isMyApplicationsEnabled": false,
+ "showVeteranEmployerSignUp": false,
+ "enableUserPreferenceSelection": false,
+ "isUserPreferenceApplied": false,
+ "candidate": {
+  "enc_id": 0,
+  "fullname": "",
+  "firstname": "",
+  "lastname": "",
+  "skills": [],
+  "email": "",
+  "phone": "",
+  "location": "",
+  "location_detail": {},
+  "filename": null,
+  "starred_positions": [],
+  "resumeUrl": "",
+  "onboardingCompleted": false,
+  "isUserInPcsIjp": false,
+  "linkedinUrl": ""
+ },
+ "branding": {
+  "postTalentNetworkText": "We’ll keep you up to date regarding upcoming events and career opportunities that match your interests. \r\nPlease note you have not created a login for our candidate portal.",
+  "browseMoreJobsButton": {
+   "url": "https://careers.bcg.com/search-results"
+  },
+  "hideJobCart": true,
+  "max_applications_apply": 5,
+  "footer": {
+   "aboutCompanyText": "Adding Footer Test"
+  },
+  "customNavbarItems": [
+   {
+    "label": "BCG Referral Microsite",
+    "path": "https://internal.bcg.[REDACTED]"
+   }
+  ],
+  "referralBannerImage": "https://static.vscdn.[REDACTED]::ref-banner",
+  "hideReferralJobCart": true,
+  "enableTalentNetwork": 1,
+  "links": {
+   "videos": [
+    "https://www.youtube.com/watch?v=jvGPbfHGCFs",
+    "https://www.youtube.com/watch?v=vMqQtw0623E"
+   ]
+  },
+  "companyName": "Boston Consulting Group",
+  "perks": [
+   {
+    "title": "Physical and Mental Wellbeing",
+    "description": "<ul style='list-style:disc; text-align:left'><li>Comprehensive medical coverage</li><li>Healthy living and fitness programs, resources, and discounts</li><li>Mental health and wellbeing resources, tools, and activities</li></ul>",
+    "image": "https://cdn.phenompeople.[REDACTED].png"
+   },
+   {
+    "title": "Financial and Places",
+    "description": "<ul style='list-style:disc; text-align:left'><li>Generous contributions towards retirement</li><li>Business travel insurance coverage</li><li>Life and disability insurance coverage</li><li>Perks and discounts on products and services</li></ul>",
+    "image": "https://cdn.phenompeople.[REDACTED].png"
+   },
+   {
+    "title": "Work - Life Harmony",
+    "description": "<ul style='list-style:disc; text-align:left'><li>Competitive leave policies</li><li>Access to support for employees caring for family</li></ul>",
+    "image": "https://cdn.phenompeople.[REDACTED].png"
+   },
+   {
+    "title": "Community",
+    "description": "<ul style='list-style:disc; text-align:left'><li>Employee resource groups</li><li>Affinity networks</li></ul>",
+    "image": "https://cdn.phenompeople.[REDACTED].png"
+   }
+  ],
+  "custom_style": {
+   "css": "/* REFERRALS */\n#EFSmartReferContainer ul li {margin-left:10px!important;list-style-type: disc!important;list-style:disc!important;display: list-item;}\n#EFSmartReferContainer p span strong{font-size:18pt;margin-bottom:-10px;margin-top:20px;display:block;font-weight:bold;color: #29ba74; margin-bottom",
+   "font": "https://cdn.phenompeople.[REDACTED].eot"
+  },
+  "custom_html": {
+   "header": "<html lang=\"en\" key-lang=\"langType\" data-ph-id=\"ph-page-element-page15-1ucvgJ\" class=\"external en_us desktop\">\n  <script type=\"text/javascript\" async=\"\" src=\"https://analytics.tiktok.com/i18n/pixel/static/main.MWE4ZjFkYTAyMQ.js\" data-id=\"CB3JIKRC77U9V9OUI0JG\"></script>\n  <script type=\"text/javascrip"
+  },
+  "privacy": {
+   "text": "I agree to BCG retaining my personal information for up to five years including any sensitive information I choose to share for future employment opportunities as part of BCG's optional recruiting programs, as set out in <a href=\"https://careers.bcg.com/bcg-recruitment-privacy-policy\" target=\"_blank",
+   "button": "Agree",
+   "title": "Data Privacy"
+  },
+  "talentNetworkHeroBanner": {
+   "image": "",
+   "title": "",
+   "opacity": 0
+  },
+  "talentNetworkBranding": {
+   "custom_html": {
+    "header": "<html lang=\"en\" key-lang=\"langType\" data-ph-id=\"ph-page-element-page15-1ucvgJ\" class=\"external en_us desktop\"><head data-ph-id=\"ph-page-element-page15-TJrzin\"><link rel=\"stylesheet\" type=\"text/css\" href=\"https://static.vscdn.[REDACTED]::main-minify-v1.css\" id=\"ten",
+    "footer": "<html lang=\"en\" key-lang=\"langType\" data-ph-id=\"ph-page-element-page15-1ucvgJ\" class=\"external en_us desktop\"><head data-ph-id=\"ph-page-element-page15-TJrzin\"></head><body class=\"jointalentcommunity-page\" data-ph-id=\"ph-page-element-page15-tkmAAB\" style=\"visibility: visible; padding-top: 0px\" cz-sho"
+   },
+   "custom_style": {
+    "css": "@media (min-width: 1025px) { .col-md-5 { float: initial !important; }}#EFSmartApplyContainer div.apply-form.jtn div.action-row { position: relative; left: 50%; transform: translateX(-50%);}#EFSmartApplyContainer div.apply-form.jtn div.apply-item div.checkBoxGroup div.col-md-6 { width: 100% !importan"
+   }
+  },
+  "navBar": {
+   "opacity": 1,
+   "background": "#15744E",
+   "image": "https://static.vscdn.[REDACTED]::logo-white"
+  },
+  "applyButton": {
+   "background": "#21bf61"
+  },
+  "favicons": {
+   "favicon": "https://static.vscdn.[REDACTED]::favicon.png"
+  },
+  "defaultState": {
+   "pymww": false
+  },
+  "custom_head_scripts": {
+   "SINGLE_POSITION_PAGE_LOAD": "<script>// Script is executed only in Referrals URLs\n  if (window.location.href.includes(\"/refer\")) {\n    /**\n        1- APPLY BUTTON LOGIC, FUNCTIONS AND STYLING\n      */\n  document.head.appendChild(document.createElement('style')).appendChild(document.createTextNode(\"#dropdown-1 { position: fixed ",
+   "HOME_PAGE_LOAD": "<script>// Script is executed only in Referrals URLs\n  if (window.location.href.includes(\"/refer\")) {\n    /**\n        1- APPLY BUTTON LOGIC, FUNCTIONS AND STYLING\n      */\n   const footerLink = document.querySelector('#EFSmartReferContainer > div > div.ef-styles-2020.page-footer > p');footerLink.inn",
+   "JOIN_TALENT_NETWORK_PAGE_LOAD": "<script>\n\nconst replaceEntities = (text) => {\n  return text.replace(/&lt;/g, '<').replace(/&gt;/g, '>');\n};\n\nconst element = document.querySelector('#EFSmartApplyContainer .checkbox-label');\n\nif (element) {\n  element.innerHTML = replaceEntities(element.innerHTML);\n}\n  // CUSTOMIZATION - CONSENT/PRIV",
+   "SUCCESS_FORM_PAGE_LOAD": "<script>\n    const loginButton = document.querySelector('.submitRedirectBtn');\n    loginButton.style.cssText = 'display: none';\n</script>"
+  },
+  "advancedSearchOptions": [
+   {
+    "key": "pa",
+    "name": "Practice Area",
+    "visible": true
+   },
+   {
+    "key": "business",
+    "name": "Business"
+   },
+   {
+    "key": "skills",
+    "name": "Skills"
+   },
+   {
+    "key": "job_type",
+    "name": "Job Type"
+   }
+  ],
+  "customContent": {
+   "positionSections": [
+    {
+     "body": "By actively participating in a referral campaign, or otherwise directing past colleagues to a role at BCG, you are individually responsible for ensuring these actions do not bring you in breach of any of your contractual commitments with past employers.",
+     "title": "Disclaimer"
+    }
+   ]
+  },
+  "recaptcha_enabled": 1,
+  "showLoggedOutNotificationsPrivacyPolicy": false,
+  "hideEightfoldBranding": false,
+  "customJobDescEnhancedTableGate": false
+ },
+ "positions": [
+  {
+   "id": 790313062445,
+   "name": "Forward Deployed AI Engineer, Internship, Denmark - BCG X",
+   "posting_name": "Forward Deployed AI Engineer, Internship, Denmark - BCG X",
+   "location": "Copenhagen V, Denmark",
+   "locations": [
+    "Copenhagen V, Denmark"
+   ],
+   "hot": 0,
+   "department": "BCG X",
+   "business_unit": "Unknown",
+   "t_update": 1776697328,
+   "t_create": 1764239340,
+   "ats_job_id": "56035",
+   "display_job_id": "2025-56035",
+   "type": "ATS",
+   "id_locale": "2025-56035-en",
+   "job_description": "Our product offerings span from fully custom-builds to industry specific leading edge AI software solutions. You'll be part of our rapidly growing team who will have a chance to apply data science methods and analytics to real-world business situations across a variety of industries to drive signifi",
+   "stars": 0.0,
+   "medallionProgram": null,
+   "location_flexibility": null,
+   "work_location_option": "onsite",
+   "canonicalPositionUrl": "https://studenttalent.bcg.com/careers/job/790313062445",
+   "isPrivate": false
+  },
+  {
+   "id": 790313062451,
+   "name": "Forward Deployed AI Scientist, Internship, Denmark - BCG X",
+   "posting_name": "Forward Deployed AI Scientist, Internship, Denmark - BCG X",
+   "location": "Copenhagen V, Denmark",
+   "locations": [
+    "Copenhagen V, Denmark"
+   ],
+   "hot": 0,
+   "department": "BCG X",
+   "business_unit": "Unknown",
+   "t_update": 1776699129,
+   "t_create": 1764239220,
+   "ats_job_id": "56033",
+   "display_job_id": "2025-56033",
+   "type": "ATS",
+   "id_locale": "2025-56033-en",
+   "job_description": "Our product offerings span from fully custom-builds to industry specific leading edge AI software solutions. You'll be part of our rapidly growing team who will have a chance to apply data science methods and analytics to real-world business situations across a variety of industries to drive signifi",
+   "stars": 0.0,
+   "medallionProgram": null,
+   "location_flexibility": null,
+   "work_location_option": "onsite",
+   "canonicalPositionUrl": "https://studenttalent.bcg.com/careers/job/790313062451",
+   "isPrivate": false
+  },
+  {
+   "id": 790317833296,
+   "name": "Visiting Associate - Copenhagen | BCG Platinion",
+   "posting_name": "Visiting Associate - Copenhagen | BCG Platinion",
+   "location": "Copenhagen V, Denmark",
+   "locations": [
+    "Copenhagen V, Denmark"
+   ],
+   "hot": 0,
+   "department": "BCG Platinion",
+   "business_unit": "Unknown",
+   "t_update": 1789552057,
+   "t_create": 1786951020,
+   "ats_job_id": "59117",
+   "display_job_id": "2026-59117",
+   "type": "ATS",
+   "id_locale": "2026-59117-en",
+   "job_description": "Shape the world of tomorrow Support our team with a wide range of activities in various industries and technical environments (e.g. analysis and optimization of IT processes, IT value chains and IT architectures, SW selection ) Develop IT-related project content independently by analyzing relevant d",
+   "stars": 0.0,
+   "medallionProgram": null,
+   "location_flexibility": null,
+   "work_location_option": "onsite",
+   "canonicalPositionUrl": "https://studenttalent.bcg.com/careers/job/790317833296",
+   "isPrivate": false
+  }
+ ],
+ "debug": {},
+ "count": 3,
+ "countFilterByMatchScore": null,
+ "location_user": [
+  "Copenhagen",
+  "remote,Denmark"
+ ],
+ "location_used": "Copenhagen",
+ "locationInsights": null,
+ "showWizard": 1,
+ "disableLocationSearchDropdown": false,
+ "pcsAutocompleteLocationEnabled": 0,
+ "recommended_star_threshold": 3,
+ "mocTitle": null,
+ "fuzzyResultsReturned": false,
+ "query": {
+  "query": null,
+  "location": "Copenhagen",
+  "department": [],
+  "skill": [],
+  "seniority": [],
+  "pid": "",
+  "skills": [],
+  "business": [],
+  "pa": [],
+  "job_type": []
+ },
+ "userTitles": [],
+ "isThinProfile": false,
+ "veteranProgramDetails": [],
+ "enableTargetedResume": false,
+ "jobCardConfig": null,
+ "facetDisplaySort": {
+  "skills": "count_desc",
+  "business": "count_desc",
+  "pa": "count_desc",
+  "job_type": "count_desc",
+  "locations": "count_desc"
+ },
+ "facets": {
+  "skills": {
+   "Teamwork": 94,
+   "English": 80,
+   "Leadership": 80,
+   "Microsoft Excel": 76,
+   "Finance": 75,
+   "Data Analysis": 73,
+   "Communication": 72,
+   "Economics": 65,
+   "Consulting": 64,
+   "Research": 62,
+   "Project Management": 57,
+   "Strategy": 54,
+   "Python": 46,
+   "Artificial Intelligence": 45,
+   "Microsoft PowerPoint": 40,
+   "Machine Learning": 39,
+   "Mathematics": 39,
+   "Language Skills": 37,
+   "Statistics": 37,
+   "Analytics": 34,
+   "Algorithms": 33,
+   "Data Science": 33,
+   "Implementation": 31,
+   "PyTorch": 31,
+   "scikit-learn": 31,
+   "Analysis": 28,
+   "Pandas": 28,
+   "SQL": 28,
+   "Computer Science": 25,
+   "Deep Learning": 25,
+   "Business Strategy": 23,
+   "Numpy": 23,
+   "Critical Thinking": 22,
+   "Financial Analysis": 22,
+   "Design": 20,
+   "Revenue Management": 20,
+   "TensorFlow": 20,
+   "Git": 19,
+   "Management Consulting": 19,
+   "Market Research": 19
+  },
+  "business": {
+   "BCG": 108,
+   "BCG X": 43,
+   "BCG Platinion": 14,
+   "Inverto": 2,
+   "BCG Vantage": 1
+  },
+  "pa": {
+   "platinion": 2,
+   "financial institutions - fip": 1,
+   "not applicable": 1,
+   "technology and digital advantage - tda": 1
+  },
+  "job_type": {
+   "full-time": 163,
+   "part-time": 4
+  },
+  "locations": {
+   "Remote": 999999,
+   "Paris, IDF, France": 9,
+   "Casablanca, Casablanca-Settat, Morocco": 7,
+   "Amsterdam, NH, Netherlands": 6,
+   "Chicago, IL, United States": 6,
+   "Hanoi, Viet Nam": 6,
+   "Ho Chi Minh City, Viet Nam": 6,
+   "Munich, BY, Germany": 6,
+   "Berlin, BE, Germany": 5,
+   "Frankfurt, HE, Germany": 5,
+   "Federal Territory of Kuala Lumpur, Malaysia": 5,
+   "Bogotá, Bogota, Colombia": 4,
+   "Brazil": 4,
+   "Calgary, AB, Canada": 4,
+   "Canada": 4,
+   "Colombia": 4,
+   "Germany": 4,
+   "Hamburg, HH, Germany": 4,
+   "Madrid, MD, Spain": 4,
+   "Montreal, QC, Canada": 4,
+   "New York, NY, United States": 4,
+   "Prague, Czechia": 4,
+   "Stuttgart, BW, Germany": 4,
+   "Thailand": 4,
+   "Toronto, ON, Canada": 4,
+   "Vienna, Austria": 4,
+   "Barcelona, CT, Spain": 3,
+   "NCR, Philippines": 3,
+   "Brussels, Belgium": 3,
+   "Copenhagen, Denmark": 3,
+   "Düsseldorf, NRW, Germany": 3,
+   "Greece": 3,
+   "HKI, Uusimaa, Finland": 3,
+   "Jakarta, Indonesia": 3,
+   "Japan": 3,
+   "Cologne, NRW, Germany": 3,
+   "Callao Region, Peru": 3,
+   "Oslo, Norway": 3,
+   "Peru": 3,
+   "Santiago Metropolitan Region, Chile": 3
+  }
+ },
+ "locationRadiusConfig": {
+  "showLocationRadius": true,
+  "locationRadiusType": "mi"
+ },
+ "isSubQuery": true
+}

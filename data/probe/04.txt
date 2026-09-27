@@ -1,0 +1,199 @@
+POST https://novonesis.wd103.myworkdayjobs.[REDACTED] {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
+STATUS 200 FINAL https://novonesis.wd103.myworkdayjobs.[REDACTED]
+
+JSON
+{
+ "total": 18,
+ "jobPostings": [
+  {
+   "title": "Studentermedhjælper til Customer Service & Logistics",
+   "externalPath": "[REDACTED]",
+   "locationsText": "Bagsværd",
+   "postedOn": "Slået op for 2 dage siden",
+   "bulletFields": [
+    "JR113391"
+   ]
+  },
+  {
+   "title": "Auszubildende/r Industriekaufmann/-frau (m/f/d)",
+   "externalPath": "[REDACTED]",
+   "locationsText": "Nienburg",
+   "postedOn": "Slået op for 3 dage siden",
+   "bulletFields": [
+    "JR113127"
+   ]
+  },
+  {
+   "title": "Student Assistant for the Packaging and Packaging Waste Regulation Project",
+   "externalPath": "[REDACTED]",
+   "locationsText": "Lyngby",
+   "postedOn": "Slået op for 3 dage siden",
+   "bulletFields": [
+    "JR113386"
+   ]
+  },
+  {
+   "title": "Manufacturing Operations Intern",
+   "externalPath": "[REDACTED]",
+   "locationsText": "New Berlin",
+   "postedOn": "Slået op for 5 dage siden",
+   "bulletFields": [
+    "JR113467"
+   ]
+  },
+  {
+   "title": "Manufacturing Training Intern",
+   "externalPath": "[REDACTED]",
+   "locationsText": "New Berlin",
+   "postedOn": "Slået op for 5 dage siden",
+   "bulletFields": [
+    "JR113466"
+   ]
+  }
+ ],
+ "facets": [
+  {
+   "facetParameter": "Country",
+   "descriptor": "Country",
+   "values": [
+    {
+     "descriptor": "USA",
+     "id": "bc33aa3152ec42d4995f4791a106ed09",
+     "count": 7
+    },
+    {
+     "descriptor": "Danmark",
+     "id": "49ab063f422741e2aef271de00efeac8",
+     "count": 4
+    },
+    {
+     "descriptor": "Tyskland",
+     "id": "dcc5b7608d8644b3a93716604e78e995",
+     "count": 3
+    },
+    {
+     "descriptor": "Brasilien",
+     "id": "1a29bb1357b240ab99a2fa755cc87c0e",
+     "count": 3
+    },
+    {
+     "descriptor": "Japan",
+     "id": "8b705da2becf43cfaccc091da0988ab2",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "jobFamily1",
+   "descriptor": "Jobfamilie",
+   "values": [
+    {
+     "descriptor": "Student/Trainee",
+     "id": "23e780dff0391000958d1553e5070000",
+     "count": 10
+    },
+    {
+     "descriptor": "Externals and Consultants",
+     "id": "23e780dff0391000958d15ed83ac0000",
+     "count": 7
+    },
+    {
+     "descriptor": "Sales Support",
+     "id": "23e780dff0391000958d318bd0930001",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "jobFamily",
+   "descriptor": "Jobkategori",
+   "values": [
+    {
+     "descriptor": "General Management & Administration",
+     "id": "23e780dff039100095f5fedacb400000",
+     "count": 17
+    },
+    {
+     "descriptor": "Commercial",
+     "id": "23e780dff039100095f5f8da24410001",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "timeType",
+   "descriptor": "Tidstype",
+   "values": [
+    {
+     "descriptor": "Fuldtid",
+     "id": "cf171b111ba11006e19b303e39480000",
+     "count": 13
+    },
+    {
+     "descriptor": "Part time",
+     "id": "cf171b111ba11006e19b2fa498490000",
+     "count": 5
+    }
+   ]
+  },
+  {
+   "facetParameter": "remoteType",
+   "descriptor": "Type af fjernarbejde",
+   "values": [
+    {
+     "descriptor": "Nej",
+     "id": "23e780dff0391000e3c6372495bc0000",
+     "count": 14
+    },
+    {
+     "descriptor": "Hybrid",
+     "id": "7433e3b431371010d2700d04232b0000",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "facetParameter": "locationMainGroup",
+   "values": [
+    {
+     "facetParameter": "locations",
+     "descriptor": "Steder",
+     "values": [
+      {
+       "descriptor": "Araucária - PR",
+       "id": "cf171b111ba1100782c99e0015570000",
+       "count": 3
+      },
+      {
+       "descriptor": "Avedøre",
+       "id": "592f50c6cbb710012b89db1eb4be0000",
+       "count": 1
+      },
+      {
+       "descriptor": "Bagsværd",
+       "id": "cf171b111ba1100782c912cba35f0000",
+       "count": 2
+      },
+      {
+       "descriptor": "Bagsværd",
+       "id": "cf171b111ba1100782c9b5ff8e5f0000",
+       "count": 1
+      },
+      {
+       "descriptor": "Blair",
+       "id": "cf171b111ba1100782c900cc038a0000",
+       "count": 1
+      },
+      {
+       "descriptor": "Franklinton",
+       "id": "cf171b111ba1100782c9bf999fa80000",
+       "count": 3
+      },
+      "... +17"
+     ]
+    }
+   ]
+  }
+ ],
+ "userAuthenticated": false
+}

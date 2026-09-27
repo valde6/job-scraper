@@ -1,0 +1,357 @@
+GET https://api.smartrecruiters.com/v1/companies/Netcompany1/postings?country=dk&limit=5
+STATUS 200 FINAL https://api.smartrecruiters.com/v1/companies/Netcompany1/postings?country=dk&limit=5
+
+JSON
+{
+ "offset": 0,
+ "limit": 5,
+ "totalFound": 36,
+ "content": [
+  {
+   "id": "744000151545709",
+   "name": "Property Management Specialist",
+   "uuid": "60408bcd-fe3f-4f97-8d63-005c40321029",
+   "jobAdId": "61bbca8f-db87-4fdd-8e13-6180d5ecd705",
+   "defaultJobAd": true,
+   "refNumber": "REF5985V",
+   "company": {
+    "identifier": "Netcompany1",
+    "name": "Netcompany"
+   },
+   "releasedDate": "2026-09-24T07:30:39.145Z",
+   "location": {
+    "city": "Copenhagen",
+    "country": "dk",
+    "remote": false,
+    "hybrid": false,
+    "latitude": "55.6760968",
+    "longitude": "12.5683371",
+    "fullLocation": "Copenhagen, , Denmark"
+   },
+   "industry": {
+    "id": "it_and_services",
+    "label": "Informationsteknologi og -tjenester"
+   },
+   "department": {},
+   "function": {
+    "id": "consulting",
+    "label": "Konsulentarbejde"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Fuldtid"
+   },
+   "experienceLevel": {
+    "id": "mid_senior_level",
+    "label": "Mellemleder"
+   },
+   "customField": [
+    {
+     "fieldId": "COUNTRY",
+     "fieldLabel": "Land/Region",
+     "valueId": "dk",
+     "valueLabel": "Danmark"
+    },
+    {
+     "fieldId": "5c178e29b1f60b149a817c42",
+     "fieldLabel": "Brands",
+     "valueId": "default",
+     "valueLabel": "Netcompany"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.[REDACTED]",
+   "language": {
+    "code": "en",
+    "label": "Engelsk",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "744000150634479",
+   "name": "Actuarial Consultant",
+   "uuid": "01b5de8f-6697-431d-8330-45b865ddac89",
+   "jobAdId": "3ec5bff9-86e1-4ccf-9bb0-8d9d1b2fd723",
+   "defaultJobAd": true,
+   "refNumber": "REF5950O",
+   "company": {
+    "identifier": "Netcompany1",
+    "name": "Netcompany"
+   },
+   "releasedDate": "2026-09-21T08:48:46.162Z",
+   "location": {
+    "city": "Copenhagen",
+    "country": "dk",
+    "remote": false,
+    "hybrid": false,
+    "latitude": "55.6760968",
+    "longitude": "12.5683371",
+    "fullLocation": "Copenhagen, , Denmark"
+   },
+   "industry": {
+    "id": "it_and_services",
+    "label": "Informationsteknologi og -tjenester"
+   },
+   "department": {},
+   "function": {
+    "id": "consulting",
+    "label": "Konsulentarbejde"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Fuldtid"
+   },
+   "experienceLevel": {
+    "id": "entry_level",
+    "label": "Nyuddannet"
+   },
+   "customField": [
+    {
+     "fieldId": "COUNTRY",
+     "fieldLabel": "Land/Region",
+     "valueId": "dk",
+     "valueLabel": "Danmark"
+    },
+    {
+     "fieldId": "5c178e29b1f60b149a817c42",
+     "fieldLabel": "Brands",
+     "valueId": "default",
+     "valueLabel": "Netcompany"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.[REDACTED]",
+   "language": {
+    "code": "en",
+    "label": "Engelsk",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "744000150117781",
+   "name": "Financial Data Management Consultant, Datadriven Banking, Netcompany Banking Services",
+   "uuid": "f6f74ef1-3c23-4ce9-9f3f-38a9232b039c",
+   "jobAdId": "7d14a40e-8a97-4cc8-b97c-8a3ed777354d",
+   "defaultJobAd": true,
+   "refNumber": "REF5977V",
+   "company": {
+    "identifier": "Netcompany1",
+    "name": "Netcompany"
+   },
+   "releasedDate": "2026-09-17T13:59:36.329Z",
+   "location": {
+    "city": "Copenhagen",
+    "country": "dk",
+    "remote": false,
+    "hybrid": false,
+    "latitude": "55.6760968",
+    "longitude": "12.5683371",
+    "fullLocation": "Copenhagen, , Denmark"
+   },
+   "industry": {
+    "id": "banking",
+    "label": "Bankvæsen"
+   },
+   "department": {},
+   "function": {
+    "id": "information_technology",
+    "label": "Informationsteknologi"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Fuldtid"
+   },
+   "experienceLevel": {
+    "id": "entry_level",
+    "label": "Nyuddannet"
+   },
+   "customField": [
+    {
+     "fieldId": "COUNTRY",
+     "fieldLabel": "Land/Region",
+     "valueId": "dk",
+     "valueLabel": "Danmark"
+    },
+    {
+     "fieldId": "5c66c3396d8bc54ab9044ae0",
+     "fieldLabel": "Primary profile",
+     "valueId": "daaaa2c8-fa38-4aab-943d-e72d1f6da047",
+     "valueLabel": "Data Management"
+    },
+    {
+     "fieldId": "5c178e29b1f60b149a817c42",
+     "fieldLabel": "Brands",
+     "valueId": "default",
+     "valueLabel": "Netcompany"
+    },
+    {
+     "fieldId": "5c6ab81c6d8bc54ab9044b5c",
+     "fieldLabel": "Career Level",
+     "valueId": "af73de79-cf31-4f69-9f83-a8a129ed043f",
+     "valueLabel": "Data Consultant"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.[REDACTED]",
+   "language": {
+    "code": "en",
+    "label": "Engelsk",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "744000149509279",
+   "name": "Student Assistant, Netcompany Institute",
+   "uuid": "6df42267-3421-4373-ab9d-3b93b9ee5860",
+   "jobAdId": "5d77d8f2-3576-4d65-97e4-c9b8e5f87582",
+   "defaultJobAd": true,
+   "refNumber": "REF5968N",
+   "company": {
+    "identifier": "Netcompany1",
+    "name": "Netcompany"
+   },
+   "releasedDate": "2026-09-15T06:16:40.782Z",
+   "location": {
+    "city": "Copenhagen",
+    "country": "dk",
+    "remote": false,
+    "hybrid": false,
+    "latitude": "55.6760968",
+    "longitude": "12.5683371",
+    "fullLocation": "Copenhagen, , Denmark"
+   },
+   "industry": {
+    "id": "it_and_services",
+    "label": "Informationsteknologi og -tjenester"
+   },
+   "department": {},
+   "function": {
+    "id": "consulting",
+    "label": "Konsulentarbejde"
+   },
+   "typeOfEmployment": {
+    "id": "part-time",
+    "label": "Deltid"
+   },
+   "experienceLevel": {
+    "id": "entry_level",
+    "label": "Nyuddannet"
+   },
+   "customField": [
+    {
+     "fieldId": "COUNTRY",
+     "fieldLabel": "Land/Region",
+     "valueId": "dk",
+     "valueLabel": "Danmark"
+    },
+    {
+     "fieldId": "5c66c3396d8bc54ab9044ae0",
+     "fieldLabel": "Primary profile",
+     "valueId": "b5bc294b-2fb8-4a99-960a-18eb48cf02c8",
+     "valueLabel": "Change Consulting"
+    },
+    {
+     "fieldId": "5c7aa1b6c9e77c0008017cf3",
+     "fieldLabel": "Type of contract",
+     "valueId": "d761067c-f15f-4a96-b2fd-96f8a9d8cac2",
+     "valueLabel": "NC Permanent"
+    },
+    {
+     "fieldId": "5c178e29b1f60b149a817c42",
+     "fieldLabel": "Brands",
+     "valueId": "default",
+     "valueLabel": "Netcompany"
+    },
+    {
+     "fieldId": "5c6ab81c6d8bc54ab9044b5c",
+     "fieldLabel": "Career Level",
+     "valueId": "4761f5f3-fbcc-49cd-bb66-0b5b324d23db",
+     "valueLabel": "Change Analyst"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.[REDACTED]",
+   "language": {
+    "code": "en",
+    "label": "Engelsk",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "744000149011750",
+   "name": "Business Consultant",
+   "uuid": "e2472360-3297-4851-b1ae-c591d548ebfe",
+   "jobAdId": "9486476e-0c59-4152-899a-7ba4c10e56ca",
+   "defaultJobAd": true,
+   "refNumber": "2017-39",
+   "company": {
+    "identifier": "Netcompany1",
+    "name": "Netcompany"
+   },
+   "releasedDate": "2026-09-11T12:47:03.140Z",
+   "location": {
+    "city": "Copenhagen",
+    "country": "dk",
+    "remote": false,
+    "hybrid": false,
+    "fullLocation": "Copenhagen, , Denmark"
+   },
+   "industry": {
+    "id": "it_and_services",
+    "label": "Informationsteknologi og -tjenester"
+   },
+   "department": {},
+   "function": {
+    "id": "consulting",
+    "label": "Konsulentarbejde"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Fuldtid"
+   },
+   "experienceLevel": {
+    "id": "not_applicable",
+    "label": "Ikke anvendelig"
+   },
+   "customField": [
+    {
+     "fieldId": "COUNTRY",
+     "fieldLabel": "Land/Region",
+     "valueId": "dk",
+     "valueLabel": "Danmark"
+    },
+    {
+     "fieldId": "5c66c3396d8bc54ab9044ae0",
+     "fieldLabel": "Primary profile",
+     "valueId": "b5bc294b-2fb8-4a99-960a-18eb48cf02c8",
+     "valueLabel": "Change Consulting"
+    },
+    {
+     "fieldId": "5c7aa1b6c9e77c0008017cf3",
+     "fieldLabel": "Type of contract",
+     "valueId": "d761067c-f15f-4a96-b2fd-96f8a9d8cac2",
+     "valueLabel": "NC Permanent"
+    },
+    {
+     "fieldId": "5c178e29b1f60b149a817c42",
+     "fieldLabel": "Brands",
+     "valueId": "default",
+     "valueLabel": "Netcompany"
+    },
+    {
+     "fieldId": "5c6ab81c6d8bc54ab9044b5c",
+     "fieldLabel": "Career Level",
+     "valueId": "f8adf37f-e953-4872-813d-c8b6c6f8829a",
+     "valueLabel": "Change Consultant"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.[REDACTED]",
+   "language": {
+    "code": "en-GB",
+    "label": "Engelsk (Storbritannien)",
+    "labelNative": "English (UK)"
+   }
+  }
+ ]
+}

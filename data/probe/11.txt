@@ -1,0 +1,11 @@
+GET https://candidate.hr-manager.net/Vacancies/List.aspx?cid=1762
+STATUS 200 FINAL https://candidate.hr-manager.net/Vacancies/List.aspx?cid=1762
+
+TYPE text/html; charset=utf-8
+TITLE Talentech - Vacant positions
+LINKS 2
+Register -> https://candidate.hr-manager.net/Agent/Subscription.aspx?cid=326&uiculture=en
+Sign in -> https://candidate.hr-manager.net/Login.aspx?customer=kimdemo&uiculture=en
+SCRIPTS https://consent.cookiebot.[REDACTED].js | https://consent.cookiebot.com/uc.js | https://candidate.hr-manager.net/Scripts/jQuery/jquery.js | https://candidate.hr-manager.net/Scripts/hrmanager-min.js?q=v3.38.1 | https://www.google-analytics.com/analytics.js | https://platform-api.sharethis.com/js/sharethis.js#property=66d16a4c05ca740019059b88&product=inline-share-buttons&source | https://kit.fontawesome.com/6c939bf83c.js | https://candidate.hr-manager.net/Scripts/jQuery/plugins/placeholder.js | https://candidate.hr-manager.net/Scripts/iframeResizer.contentWindow.min.js
+JSONLD 0
+TEXT Talentech - Vacant positions Warning Your browser is outdated. Get the best experience with speed, security and privacy by using the latest version of Chrome, Firefox, Microsoft Edge, Safari or Opera × Search/filter Department - Department - Location - Location - Select Select Category - Category - Select Select Vacant positions Welcome to our online Career Portal. Here you can submit an application for any of our vacancies, submit an unsolicited application or register to be notified about new openings. advertisement(s) We currently have no positions that match your selection. « Previous Page Next Page » If we currently have no vacancies of interest, please feel free to register your CV for future job opportunities. We currently have no positions that match your selection. Open application If we currently have no vacancies of interest, please feel free to register your CV for future job opportunities. JobAgent Do you wish to be informed about new positions in Register Sign in If you have already applied, you can update your details by signing in here. Sign in HR

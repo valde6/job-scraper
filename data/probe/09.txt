@@ -1,0 +1,547 @@
+GET https://api.hr-manager.net/jobportal.svc/danmarksradio/positionlist/json/?incads=1
+STATUS 200 FINAL https://api.hr-manager.net/jobportal.svc/danmarksradio/positionlist/json/?incads=1
+
+JSON
+{
+ "CustomerAlias": "danmarksradio",
+ "CustomerName": "Danmarks Radio",
+ "TransactionStatus": {
+  "Description": "The operation completed successfully.",
+  "StatusCode": 0
+ },
+ "Items": [
+  {
+   "CustomerAlias": "danmarksradio",
+   "CustomerName": "Danmarks Radio",
+   "TransactionStatus": {
+    "Description": "The operation completed successfully.",
+    "StatusCode": 0
+   },
+   "AdvertisementUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148600&DepartmentId=18959&MediaId=5",
+   "AdvertisementUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148600&DepartmentId=18959&MediaId=5",
+   "Advertisements": [
+    {
+     "Content": "<p>The Danish National Symphony Orchestra invites applications to audition for the following position:<br />\r\n<br />\r\n<strong>Associate Principal Clarinet with obligation to 2nd clarinet</strong></p>\r\n\r\n<p><strong>Please note: Only Böhm / french system</strong><br />\r\n<br />\r\nThe Danish National Sym",
+     "Created": "/Date(1781253480000+0200)/",
+     "Description": "",
+     "Id": 104335,
+     "ImageUrl": "https://cdn-recruiter.hr-manager.[REDACTED].ashx?AdvertisementId=104335&cid=1165",
+     "ImageUrlSecure": "https://cdn-recruiter.hr-manager.[REDACTED].ashx?AdvertisementId=104335&cid=1165",
+     "Introduction": "",
+     "LastUpdated": "/Date(1782722581000+0200)/",
+     "Video": {
+      "Embed": "",
+      "Url": null
+     }
+    }
+   ],
+   "ApplicationDue": "/Date(1790978399000+0200)/",
+   "ApplicationFormUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148600&DepartmentId=18959&MediaId=5&SkipAdvertisement=true",
+   "ApplicationFormUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148600&DepartmentId=18959&MediaId=5&SkipAdvertisement=true",
+   "Created": "/Date(1781253478000+0200)/",
+   "CustomList1": {
+    "DeepPositionCount": 1,
+    "Id": 18777,
+    "Name": "Fuldtidsansættelse",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList10MultiSelection": [],
+   "CustomList10TreeMultiSelection": [],
+   "CustomList11MultiSelection": [],
+   "CustomList11TreeMultiSelection": [],
+   "CustomList12MultiSelection": [],
+   "CustomList12TreeMultiSelection": [],
+   "CustomList13MultiSelection": [],
+   "CustomList13TreeMultiSelection": [],
+   "CustomList14MultiSelection": [],
+   "CustomList14TreeMultiSelection": [],
+   "CustomList15MultiSelection": [],
+   "CustomList15TreeMultiSelection": [],
+   "CustomList1MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18777,
+     "Name": "Fuldtidsansættelse",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList1Tree": {
+    "DeepPositionCount": 1,
+    "Id": 18777,
+    "Name": "Fuldtidsansættelse",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList1TreeMultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18777,
+     "Name": "Fuldtidsansættelse",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList2": null,
+   "CustomList2MultiSelection": [],
+   "CustomList2Tree": null,
+   "CustomList2TreeMultiSelection": [],
+   "CustomList3": null,
+   "CustomList3MultiSelection": [],
+   "CustomList3Tree": null,
+   "CustomList3TreeMultiSelection": [],
+   "CustomList4MultiSelection": [],
+   "CustomList4TreeMultiSelection": [],
+   "CustomList5MultiSelection": [],
+   "CustomList5TreeMultiSelection": [],
+   "CustomList6MultiSelection": [],
+   "CustomList6TreeMultiSelection": []
+  },
+  {
+   "CustomerAlias": "danmarksradio",
+   "CustomerName": "Danmarks Radio",
+   "TransactionStatus": {
+    "Description": "The operation completed successfully.",
+    "StatusCode": 0
+   },
+   "AdvertisementUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148644&DepartmentId=18961&MediaId=5",
+   "AdvertisementUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148644&DepartmentId=18961&MediaId=5",
+   "Advertisements": [
+    {
+     "Content": "<p><strong>Vil du lede DR’s nye team af marketingprojektledere og skabe sammenhæng i nogle af Danmarks mest komplekse og spændende markedsføringsindsatser?</strong></p>\r\n\r\n<p>DR’s markedsføring er blevet mere kompleks. En enkelt kampagne kan i dag bestå af 20+ forskellige indsatser – fra film og gra",
+     "Created": "/Date(1787750423000+0200)/",
+     "Description": "",
+     "Id": 104382,
+     "ImageUrl": "https://cdn-recruiter.hr-manager.[REDACTED].ashx?AdvertisementId=104382&cid=1165",
+     "ImageUrlSecure": "https://cdn-recruiter.hr-manager.[REDACTED].ashx?AdvertisementId=104382&cid=1165",
+     "Introduction": "",
+     "LastUpdated": "/Date(1788871674000+0200)/",
+     "Video": {
+      "Embed": "",
+      "Url": null
+     }
+    }
+   ],
+   "ApplicationDue": "/Date(1790546399000+0200)/",
+   "ApplicationFormUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148644&DepartmentId=18961&MediaId=5&SkipAdvertisement=true",
+   "ApplicationFormUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148644&DepartmentId=18961&MediaId=5&SkipAdvertisement=true",
+   "Created": "/Date(1787750321000+0200)/",
+   "CustomList1": {
+    "DeepPositionCount": 1,
+    "Id": 18777,
+    "Name": "Fuldtidsansættelse",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList10MultiSelection": [],
+   "CustomList10TreeMultiSelection": [],
+   "CustomList11MultiSelection": [],
+   "CustomList11TreeMultiSelection": [],
+   "CustomList12MultiSelection": [],
+   "CustomList12TreeMultiSelection": [],
+   "CustomList13MultiSelection": [],
+   "CustomList13TreeMultiSelection": [],
+   "CustomList14MultiSelection": [],
+   "CustomList14TreeMultiSelection": [],
+   "CustomList15MultiSelection": [],
+   "CustomList15TreeMultiSelection": [],
+   "CustomList1MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18777,
+     "Name": "Fuldtidsansættelse",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList1Tree": {
+    "DeepPositionCount": 1,
+    "Id": 18777,
+    "Name": "Fuldtidsansættelse",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList1TreeMultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18777,
+     "Name": "Fuldtidsansættelse",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList2": null,
+   "CustomList2MultiSelection": [],
+   "CustomList2Tree": null,
+   "CustomList2TreeMultiSelection": [],
+   "CustomList3": null,
+   "CustomList3MultiSelection": [],
+   "CustomList3Tree": null,
+   "CustomList3TreeMultiSelection": [],
+   "CustomList4MultiSelection": [],
+   "CustomList4TreeMultiSelection": [],
+   "CustomList5MultiSelection": [],
+   "CustomList5TreeMultiSelection": [],
+   "CustomList6MultiSelection": [],
+   "CustomList6TreeMultiSelection": []
+  },
+  {
+   "CustomerAlias": "danmarksradio",
+   "CustomerName": "Danmarks Radio",
+   "TransactionStatus": {
+    "Description": "The operation completed successfully.",
+    "StatusCode": 0
+   },
+   "AdvertisementUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148661&DepartmentId=18961&MediaId=5",
+   "AdvertisementUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148661&DepartmentId=18961&MediaId=5",
+   "Advertisements": [
+    {
+     "Content": "<p>Brugeraktivering (Markedsføring og Brugerkontakt) bruger DR's egne kontaktpunkter — email, push, in-app og bannere — og førstepartsdata til at skabe relevant, public service-orienteret kontakt med brugerne på tværs af DRTV, DR Lyd og dr.dk. Kontaktpunkterne spiller forskellige roller gennem hele ",
+     "Created": "/Date(1790157162000+0200)/",
+     "Description": "Brugeraktivering søger en dataanalytiker, der kan måle dækning og effekt af DR's kommunikation til brugerne via email, push, in-app og bannere — og give teamet det datafundament, beslutningerne skal hvile på.",
+     "Id": 104400,
+     "ImageUrl": null,
+     "ImageUrlSecure": null,
+     "Introduction": "",
+     "LastUpdated": "/Date(1790157365000+0200)/",
+     "Video": {
+      "Embed": "",
+      "Url": null
+     }
+    }
+   ],
+   "ApplicationDue": "/Date(1792015199000+0200)/",
+   "ApplicationFormUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148661&DepartmentId=18961&MediaId=5&SkipAdvertisement=true",
+   "ApplicationFormUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148661&DepartmentId=18961&MediaId=5&SkipAdvertisement=true",
+   "Created": "/Date(1790156211000+0200)/",
+   "CustomList1": {
+    "DeepPositionCount": 1,
+    "Id": 18777,
+    "Name": "Fuldtidsansættelse",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList10MultiSelection": [],
+   "CustomList10TreeMultiSelection": [],
+   "CustomList11MultiSelection": [],
+   "CustomList11TreeMultiSelection": [],
+   "CustomList12MultiSelection": [],
+   "CustomList12TreeMultiSelection": [],
+   "CustomList13MultiSelection": [],
+   "CustomList13TreeMultiSelection": [],
+   "CustomList14MultiSelection": [],
+   "CustomList14TreeMultiSelection": [],
+   "CustomList15MultiSelection": [],
+   "CustomList15TreeMultiSelection": [],
+   "CustomList1MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18777,
+     "Name": "Fuldtidsansættelse",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList1Tree": {
+    "DeepPositionCount": 1,
+    "Id": 18777,
+    "Name": "Fuldtidsansættelse",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList1TreeMultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18777,
+     "Name": "Fuldtidsansættelse",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList2": null,
+   "CustomList2MultiSelection": [],
+   "CustomList2Tree": null,
+   "CustomList2TreeMultiSelection": [],
+   "CustomList3": null,
+   "CustomList3MultiSelection": [],
+   "CustomList3Tree": null,
+   "CustomList3TreeMultiSelection": [],
+   "CustomList4MultiSelection": [],
+   "CustomList4TreeMultiSelection": [],
+   "CustomList5MultiSelection": [],
+   "CustomList5TreeMultiSelection": [],
+   "CustomList6MultiSelection": [],
+   "CustomList6TreeMultiSelection": []
+  },
+  {
+   "CustomerAlias": "danmarksradio",
+   "CustomerName": "Danmarks Radio",
+   "TransactionStatus": {
+    "Description": "The operation completed successfully.",
+    "StatusCode": 0
+   },
+   "AdvertisementUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148659&DepartmentId=18960&MediaId=5",
+   "AdvertisementUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148659&DepartmentId=18960&MediaId=5",
+   "Advertisements": [
+    {
+     "Content": "<p><span style=\"color:#242424\">Vi søger en journalist, der er vild med både den hurtige time-til-time-journalistik og kan lide at lave historier, der har et lidt længere aftræk. I en tidsbegrænset stilling på to år kommer du til at arbejde mest som reporter, men vi er på udkig efter en medarbejder, ",
+     "Created": "/Date(1789720653000+0200)/",
+     "Description": "",
+     "Id": 104398,
+     "ImageUrl": "https://cdn-recruiter.hr-manager.[REDACTED].ashx?AdvertisementId=104398&cid=1165",
+     "ImageUrlSecure": "https://cdn-recruiter.hr-manager.[REDACTED].ashx?AdvertisementId=104398&cid=1165",
+     "Introduction": "",
+     "LastUpdated": "/Date(1789727528000+0200)/",
+     "Video": {
+      "Embed": "",
+      "Url": null
+     }
+    }
+   ],
+   "ApplicationDue": "/Date(1791151199000+0200)/",
+   "ApplicationFormUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148659&DepartmentId=18960&MediaId=5&SkipAdvertisement=true",
+   "ApplicationFormUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148659&DepartmentId=18960&MediaId=5&SkipAdvertisement=true",
+   "Created": "/Date(1789720350000+0200)/",
+   "CustomList1": {
+    "DeepPositionCount": 1,
+    "Id": 18788,
+    "Name": "Tidsbegrænset fuldtidsansættelse",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList10MultiSelection": [],
+   "CustomList10TreeMultiSelection": [],
+   "CustomList11MultiSelection": [],
+   "CustomList11TreeMultiSelection": [],
+   "CustomList12MultiSelection": [],
+   "CustomList12TreeMultiSelection": [],
+   "CustomList13MultiSelection": [],
+   "CustomList13TreeMultiSelection": [],
+   "CustomList14MultiSelection": [],
+   "CustomList14TreeMultiSelection": [],
+   "CustomList15MultiSelection": [],
+   "CustomList15TreeMultiSelection": [],
+   "CustomList1MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18788,
+     "Name": "Tidsbegrænset fuldtidsansættelse",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList1Tree": {
+    "DeepPositionCount": 1,
+    "Id": 18788,
+    "Name": "Tidsbegrænset fuldtidsansættelse",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList1TreeMultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18788,
+     "Name": "Tidsbegrænset fuldtidsansættelse",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList2": null,
+   "CustomList2MultiSelection": [],
+   "CustomList2Tree": null,
+   "CustomList2TreeMultiSelection": [],
+   "CustomList3": null,
+   "CustomList3MultiSelection": [],
+   "CustomList3Tree": null,
+   "CustomList3TreeMultiSelection": [],
+   "CustomList4MultiSelection": [],
+   "CustomList4TreeMultiSelection": [],
+   "CustomList5MultiSelection": [],
+   "CustomList5TreeMultiSelection": [],
+   "CustomList6MultiSelection": [],
+   "CustomList6TreeMultiSelection": []
+  },
+  {
+   "CustomerAlias": "danmarksradio",
+   "CustomerName": "Danmarks Radio",
+   "TransactionStatus": {
+    "Description": "The operation completed successfully.",
+    "StatusCode": 0
+   },
+   "AdvertisementUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148642&DepartmentId=18964&MediaId=5",
+   "AdvertisementUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148642&DepartmentId=18964&MediaId=5",
+   "Advertisements": [
+    {
+     "Content": "<p>INDHOLD<br />\r\nI løbet af praktikugen vil du producere tv-indslag til et mini-magasin-program - både i studiet og ude i marken. Vi sørger for at instruere dig, så du på egen hånd kan forberede, vinkle og producere indslag, som bliver præsenteret og evalueret sidst i dit praktikforløb. <br />\r\nDu ",
+     "Created": "/Date(1787561656000+0200)/",
+     "Description": "",
+     "Id": 104380,
+     "ImageUrl": "https://cdn-recruiter.hr-manager.[REDACTED].ashx?AdvertisementId=104380&cid=1165",
+     "ImageUrlSecure": "https://cdn-recruiter.hr-manager.[REDACTED].ashx?AdvertisementId=104380&cid=1165",
+     "Introduction": "",
+     "LastUpdated": "/Date(1790005390000+0200)/",
+     "Video": {
+      "Embed": "",
+      "Url": null
+     }
+    }
+   ],
+   "ApplicationDue": "/Date(1790632799000+0200)/",
+   "ApplicationFormUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148642&DepartmentId=18964&MediaId=5&SkipAdvertisement=true",
+   "ApplicationFormUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148642&DepartmentId=18964&MediaId=5&SkipAdvertisement=true",
+   "Created": "/Date(1787561654000+0200)/",
+   "CustomList1": {
+    "DeepPositionCount": 1,
+    "Id": 18791,
+    "Name": "Ulønnet praktik",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList10MultiSelection": [],
+   "CustomList10TreeMultiSelection": [],
+   "CustomList11MultiSelection": [],
+   "CustomList11TreeMultiSelection": [],
+   "CustomList12MultiSelection": [],
+   "CustomList12TreeMultiSelection": [],
+   "CustomList13MultiSelection": [],
+   "CustomList13TreeMultiSelection": [],
+   "CustomList14MultiSelection": [],
+   "CustomList14TreeMultiSelection": [],
+   "CustomList15MultiSelection": [],
+   "CustomList15TreeMultiSelection": [],
+   "CustomList1MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18791,
+     "Name": "Ulønnet praktik",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList1Tree": {
+    "DeepPositionCount": 1,
+    "Id": 18791,
+    "Name": "Ulønnet praktik",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList1TreeMultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18791,
+     "Name": "Ulønnet praktik",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList2": null,
+   "CustomList2MultiSelection": [],
+   "CustomList2Tree": null,
+   "CustomList2TreeMultiSelection": [],
+   "CustomList3": null,
+   "CustomList3MultiSelection": [],
+   "CustomList3Tree": null,
+   "CustomList3TreeMultiSelection": [],
+   "CustomList4MultiSelection": [],
+   "CustomList4TreeMultiSelection": [],
+   "CustomList5MultiSelection": [],
+   "CustomList5TreeMultiSelection": [],
+   "CustomList6MultiSelection": [],
+   "CustomList6TreeMultiSelection": []
+  },
+  {
+   "CustomerAlias": "danmarksradio",
+   "CustomerName": "Danmarks Radio",
+   "TransactionStatus": {
+    "Description": "The operation completed successfully.",
+    "StatusCode": 0
+   },
+   "AdvertisementUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148665&DepartmentId=18963&MediaId=5",
+   "AdvertisementUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148665&DepartmentId=18963&MediaId=5",
+   "Advertisements": [
+    {
+     "Content": "<p><em><span style=\"color:black\">Vil du være helt tæt på den teknologiske og produktionsmæssige styring i en af Danmarks store medieorganisationer?</span></em><br />\r\n<br />\r\n<span style=\"color:black\">DR søger en ambitiøs, struktureret og samarbejdsstærk Executive Assistant til direktøren for Teknol",
+     "Created": "/Date(1790327527000+0200)/",
+     "Description": "",
+     "Id": 104404,
+     "ImageUrl": "https://cdn-recruiter.hr-manager.[REDACTED].ashx?AdvertisementId=104404&cid=1165",
+     "ImageUrlSecure": "https://cdn-recruiter.hr-manager.[REDACTED].ashx?AdvertisementId=104404&cid=1165",
+     "Introduction": "",
+     "LastUpdated": "/Date(1790342356000+0200)/",
+     "Video": {
+      "Embed": "",
+      "Url": null
+     }
+    }
+   ],
+   "ApplicationDue": "/Date(1792274399000+0200)/",
+   "ApplicationFormUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148665&DepartmentId=18963&MediaId=5&SkipAdvertisement=true",
+   "ApplicationFormUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148665&DepartmentId=18963&MediaId=5&SkipAdvertisement=true",
+   "Created": "/Date(1790326869000+0200)/",
+   "CustomList1": {
+    "DeepPositionCount": 1,
+    "Id": 18777,
+    "Name": "Fuldtidsansættelse",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList10MultiSelection": [],
+   "CustomList10TreeMultiSelection": [],
+   "CustomList11MultiSelection": [],
+   "CustomList11TreeMultiSelection": [],
+   "CustomList12MultiSelection": [],
+   "CustomList12TreeMultiSelection": [],
+   "CustomList13MultiSelection": [],
+   "CustomList13TreeMultiSelection": [],
+   "CustomList14MultiSelection": [],
+   "CustomList14TreeMultiSelection": [],
+   "CustomList15MultiSelection": [],
+   "CustomList15TreeMultiSelection": [],
+   "CustomList1MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18777,
+     "Name": "Fuldtidsansættelse",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList1Tree": {
+    "DeepPositionCount": 1,
+    "Id": 18777,
+    "Name": "Fuldtidsansættelse",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList1TreeMultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18777,
+     "Name": "Fuldtidsansættelse",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList2": null,
+   "CustomList2MultiSelection": [],
+   "CustomList2Tree": null,
+   "CustomList2TreeMultiSelection": [],
+   "CustomList3": null,
+   "CustomList3MultiSelection": [],
+   "CustomList3Tree": null,
+   "CustomList3TreeMultiSelection": [],
+   "CustomList4MultiSelection": [],
+   "CustomList4TreeMultiSelection": [],
+   "CustomList5MultiSelection": [],
+   "CustomList5TreeMultiSelection": [],
+   "CustomList6MultiSelection": [],
+   "CustomList6TreeMultiSelection": []
+  },
+  "... +13"
+ ],
+ "PositionCountCustomer": 19,
+ "PositionCountList": 19,
+ "PositionCountSearch": 19,
+ "PositionCountSkipped": 0
+}

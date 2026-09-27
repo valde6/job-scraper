@@ -1,0 +1,204 @@
+POST https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
+STATUS 200 FINAL https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs
+
+JSON
+{
+ "total": 38,
+ "jobPostings": [
+  {
+   "title": "Student worker",
+   "externalPath": "/job/Shanghai/Student-worker_0000038302",
+   "postedOn": "Slået op for 3 dage siden",
+   "bulletFields": [
+    "Shanghai",
+    "0000038302"
+   ]
+  },
+  {
+   "title": "student worker",
+   "externalPath": "/job/Shanghai/student-worker_0000038303",
+   "postedOn": "Slået op for 3 dage siden",
+   "bulletFields": [
+    "Shanghai",
+    "0000038303"
+   ]
+  },
+  {
+   "title": "Student Worker Prepack",
+   "externalPath": "[REDACTED]",
+   "postedOn": "Slået op for 3 dage siden",
+   "bulletFields": [
+    "Monterrey",
+    "0000038817"
+   ]
+  },
+  {
+   "title": "Student Worker QEHS",
+   "externalPath": "[REDACTED]",
+   "postedOn": "Slået op for 3 dage siden",
+   "bulletFields": [
+    "Monterrey",
+    "0000038816"
+   ]
+  },
+  {
+   "title": "Student Worker LCI",
+   "externalPath": "[REDACTED]",
+   "postedOn": "Slået op for 3 dage siden",
+   "bulletFields": [
+    "Monterrey",
+    "0000038820"
+   ]
+  }
+ ],
+ "facets": [
+  {
+   "facetParameter": "Location",
+   "descriptor": "Location",
+   "values": [
+    {
+     "descriptor": "Danmark",
+     "id": "49ab063f422741e2aef271de00efeac8",
+     "count": 19
+    },
+    {
+     "descriptor": "Mexico",
+     "id": "e2adff9272454660ac4fdb56fc70bb51",
+     "count": 8
+    },
+    {
+     "descriptor": "Tjekkiet",
+     "id": "fc078443155c4ad294201ecf5a61a499",
+     "count": 3
+    },
+    {
+     "descriptor": "Kina",
+     "id": "6cb77610a8a543aea2d6bc10457e35d4",
+     "count": 3
+    },
+    {
+     "descriptor": "Vietnam",
+     "id": "db69e8c8446c11de98360015c5e6daf6",
+     "count": 3
+    },
+    {
+     "descriptor": "Tyskland",
+     "id": "dcc5b7608d8644b3a93716604e78e995",
+     "count": 1
+    },
+    "... +1"
+   ]
+  },
+  {
+   "facetParameter": "workerSubType",
+   "descriptor": "Jobtype",
+   "values": [
+    {
+     "descriptor": "Education (tidsbegrænset ansættelse) (trainee)",
+     "id": "248fdf7f03f010095f1a088290c60002",
+     "count": 13
+    },
+    {
+     "descriptor": "Student Worker (tidsbegrænset ansættelse)",
+     "id": "248fdf7f03f010095f1a088290c60000",
+     "count": 10
+    },
+    {
+     "descriptor": "Other",
+     "id": "248fdf7f03f010095f36690ba99e0002",
+     "count": 10
+    },
+    {
+     "descriptor": "Regular",
+     "id": "248fdf7f03f010095f1a088290c60001",
+     "count": 4
+    },
+    {
+     "descriptor": "Temporary (tidsbegrænset ansættelse) (sæsonbestemt ansættelse)",
+     "id": "248fdf7f03f010095f1a07e885b60000",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "jobFamily",
+   "descriptor": "Jobfamilie",
+   "values": [
+    {
+     "descriptor": "Trainee / Intern / Apprentice",
+     "id": "248fdf7f03f01009a3eabbbb7e9c0000",
+     "count": 25
+    },
+    {
+     "descriptor": "Contingent Workers",
+     "id": "248fdf7f03f01009a3eabd8998ee0000",
+     "count": 8
+    },
+    {
+     "descriptor": "Finance Operations",
+     "id": "4169d0cc4b381001b92e6b998f090000",
+     "count": 1
+    },
+    {
+     "descriptor": "Hourly Logistics & Warehouse",
+     "id": "248fdf7f03f01009a3eabf574e920000",
+     "count": 1
+    },
+    {
+     "descriptor": "Product Creative & Design",
+     "id": "248fdf7f03f01009a3eaafb693200000",
+     "count": 1
+    },
+    {
+     "descriptor": "Product Marketing",
+     "id": "248fdf7f03f01009a3eaade8a1930001",
+     "count": 1
+    },
+    "... +1"
+   ]
+  },
+  {
+   "facetParameter": "timeType",
+   "descriptor": "Tidstype",
+   "values": [
+    {
+     "descriptor": "Full time",
+     "id": "07564020a44510063cb1bcb298e20001",
+     "count": 17
+    },
+    {
+     "descriptor": "Part time",
+     "id": "07564020a44510063cb1bcb298e20000",
+     "count": 17
+    }
+   ]
+  },
+  {
+   "facetParameter": "locationMainGroup",
+   "values": [
+    {
+     "facetParameter": "locationRegionStateProvince",
+     "descriptor": "Region/State/Province",
+     "values": [
+      {
+       "descriptor": "Bình Dương",
+       "id": "687510cc622f4c81859c53661dd1d20f",
+       "count": 3
+      },
+      {
+       "descriptor": "Massachusetts",
+       "id": "c66d738416b74fb180376cf59cc7ec8f",
+       "count": 1
+      },
+      {
+       "descriptor": "Shanghai",
+       "id": "12022932d53e4131959783deec185438",
+       "count": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "userAuthenticated": false
+}

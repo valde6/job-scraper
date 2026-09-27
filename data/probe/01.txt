@@ -1,0 +1,167 @@
+POST https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
+STATUS 200 FINAL https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs
+
+JSON
+{
+ "total": 8,
+ "jobPostings": [
+  {
+   "title": "Customer Experience Associate (Recent Graduates)",
+   "externalPath": "[REDACTED]",
+   "timeType": "Full time",
+   "locationsText": "MX - Mexico City",
+   "postedOn": "Slået op for 17 dage siden",
+   "bulletFields": [
+    "R195384"
+   ]
+  },
+  {
+   "title": "Maersk SEED Internship 2026 - Second Intake",
+   "externalPath": "[REDACTED]",
+   "timeType": "Full time",
+   "locationsText": "Thailand, Bangkok, Bangkok, 10120",
+   "postedOn": "Slået op for 10 dage siden",
+   "bulletFields": [
+    "R191546"
+   ]
+  },
+  {
+   "title": "Audits and Investigation-Student Assistant (Early Careers)",
+   "externalPath": "[REDACTED]",
+   "timeType": "Part time",
+   "locationsText": "Denmark, Copenhagen, 1098",
+   "postedOn": "Slået op for 25 dage siden",
+   "bulletFields": [
+    "R194440"
+   ]
+  },
+  {
+   "title": "Lead Logistics – System Intern",
+   "externalPath": "[REDACTED]",
+   "timeType": "Full time",
+   "locationsText": "VNSGN16 - Ho Chi Minh City - Maersk Vietnam,Sofic tower",
+   "postedOn": "Slået op for 30 dage siden",
+   "bulletFields": [
+    "R195143"
+   ]
+  },
+  {
+   "title": "Cold Chain Logistics & Claims Customer Experience Intern",
+   "externalPath": "[REDACTED]",
+   "timeType": "Full time",
+   "locationsText": "2 steder",
+   "postedOn": "Slået op for 30 dage siden",
+   "bulletFields": [
+    "R193961"
+   ]
+  }
+ ],
+ "facets": [
+  {
+   "facetParameter": "timeType",
+   "descriptor": "Fuldtid/deltid",
+   "values": [
+    {
+     "descriptor": "Full time",
+     "id": "a14634b7611b0137fe2ca232611a5900",
+     "count": 7
+    },
+    {
+     "descriptor": "Part time",
+     "id": "a14634b7611b011e4a13a232611a5800",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "workerSubType",
+   "descriptor": "Jobtype",
+   "values": [
+    {
+     "descriptor": "Fixed Term (tidsbegrænset ansættelse)",
+     "id": "51a22a099796018fc14d62d7691b8512",
+     "count": 6
+    },
+    {
+     "descriptor": "Local",
+     "id": "51a22a0997960160542762d7691b8412",
+     "count": 1
+    },
+    {
+     "descriptor": "Service Worker",
+     "id": "51a22a09979601e9fa5c41d7691bf311",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "jobFamilyGroup",
+   "descriptor": "Jobkategori",
+   "values": [
+    {
+     "descriptor": "Business Support",
+     "id": "56dbc69993671001ef27b0e5acb90000",
+     "count": 4
+    },
+    {
+     "descriptor": "Commercial",
+     "id": "0d1a9a0723441001ef289c7f000f0000",
+     "count": 1
+    },
+    {
+     "descriptor": "Operations - Service Delivery",
+     "id": "0dba1604be481001ef2794656fef0000",
+     "count": 2
+    },
+    {
+     "descriptor": "People",
+     "id": "56dbc69993671001ef27bff6c25c0000",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "locationMainGroup",
+   "values": [
+    {
+     "facetParameter": "locations",
+     "descriptor": "Steder",
+     "values": [
+      {
+       "descriptor": "CNSZH14 - Shenzhen - Warehouse No.2, No.3 District,Yantian Port, Yantian district, Shenzhen",
+       "id": "0a4542f6ab9010018e6a91a9d2740000",
+       "count": 1
+      },
+      {
+       "descriptor": "Croatia, Rijeka, 1351000",
+       "id": "15350d48499210009e2420743c660000",
+       "count": 1
+      },
+      {
+       "descriptor": "Denmark, Copenhagen, 1098",
+       "id": "d8801e5af43d10009e1db47c9a300000",
+       "count": 1
+      },
+      {
+       "descriptor": "MX - Mexico City",
+       "id": "4e4d26638c45010787a1f445d5520000",
+       "count": 1
+      },
+      {
+       "descriptor": "Panama, Panamá, Panama City",
+       "id": "7b88c76f001e10009e2a537a5aae0000",
+       "count": 1
+      },
+      {
+       "descriptor": "Thailand, Bangkok, Bangkok, 10120",
+       "id": "ddba4775944910009e3ef58678ba0000",
+       "count": 1
+      },
+      "... +3"
+     ]
+    }
+   ]
+  }
+ ],
+ "userAuthenticated": false
+}

@@ -1,0 +1,141 @@
+POST https://saxobank.wd3.myworkdayjobs.[REDACTED] {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
+STATUS 200 FINAL https://saxobank.wd3.myworkdayjobs.[REDACTED]
+
+JSON
+{
+ "total": 6,
+ "jobPostings": [
+  {
+   "title": "Student Assistant - Unsolicited Application",
+   "externalPath": "[REDACTED]",
+   "locationsText": "Headquarters",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "R-13931"
+   ]
+  },
+  {
+   "title": "Client Service Associate - part time",
+   "externalPath": "[REDACTED]",
+   "locationsText": "Headquarters",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "R-15369"
+   ]
+  },
+  {
+   "title": "Student Assistant - Digital Polish Language Support",
+   "externalPath": "[REDACTED]",
+   "locationsText": "Prague",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "R-19319"
+   ]
+  },
+  {
+   "title": "Student Assistant - Digital Czech Language Support",
+   "externalPath": "[REDACTED]",
+   "locationsText": "Prague",
+   "postedOn": "Posted 3 Days Ago",
+   "bulletFields": [
+    "R-19341"
+   ]
+  },
+  {
+   "title": "Student Digital Sales Associate",
+   "externalPath": "[REDACTED]",
+   "locationsText": "Headquarters",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "R-15566"
+   ]
+  }
+ ],
+ "facets": [
+  {
+   "facetParameter": "Skills",
+   "descriptor": "Skills",
+   "values": [
+    {
+     "descriptor": "Client Management",
+     "id": "abe344fe284910013e6cb67985ef0001",
+     "count": 2
+    },
+    {
+     "descriptor": "Marketing & Communication",
+     "id": "564e8a0cf65a1000b6fca20e105d0000",
+     "count": 1
+    },
+    {
+     "descriptor": "Digital Sales",
+     "id": "47d796c7e9520100b652e0d4ff3b0002",
+     "count": 1
+    },
+    {
+     "descriptor": "Proofreading",
+     "id": "a83d8820301b01009e221c6b58590000",
+     "count": 1
+    },
+    {
+     "descriptor": "Student Activities",
+     "id": "21bb7652b08210007dae6ab7f9aa0000",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "timeType",
+   "descriptor": "Time Type",
+   "values": [
+    {
+     "descriptor": "Part time",
+     "id": "d4ed2824391510f442d8b6d31af83893",
+     "count": 5
+    },
+    {
+     "descriptor": "Full time",
+     "id": "d4ed2824391510f442d8b6f983b83894",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "facetParameter": "jobFamilyGroup",
+   "descriptor": "Job Category",
+   "values": [
+    {
+     "descriptor": "Administration & Secretarial",
+     "id": "f9996b5b2b18016de4e0653df6019907",
+     "count": 4
+    },
+    {
+     "descriptor": "Sales",
+     "id": "f9996b5b2b18019830ba733df601c107",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "facetParameter": "locationMainGroup",
+   "values": [
+    {
+     "facetParameter": "locationCountry",
+     "descriptor": "Location Country",
+     "values": [
+      {
+       "descriptor": "Czechia",
+       "id": "fc078443155c4ad294201ecf5a61a499",
+       "count": 2
+      },
+      {
+       "descriptor": "Denmark",
+       "id": "49ab063f422741e2aef271de00efeac8",
+       "count": 4
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "userAuthenticated": false
+}
