@@ -1,0 +1,44 @@
+name: scrape-jobs
+
+on:
+  schedule:
+    - cron: "17 4 * * 1-5"   # man-fre kl. ~06:17 dansk tid
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Kun én virksomhed (navn som i companies.yaml) – tom = alle"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Scrape
+        run: |
+          if [ -n "${{ inputs.only }}" ]; then
+            python -m scraper.run --only "${{ inputs.only }}" 2>&1 | tee data/last_run.log
+          else
+            python -m scraper.run 2>&1 | tee data/last_run.log
+          fi
+      - name: Commit results
+        run: |
+          git config user.name "job-scraper-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Jobs opdateret $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase --autostash && git push

@@ -1,0 +1,212 @@
+"""Fælles hjælpefunktioner: HTTP, tekstrensning, filtre."""
+from __future__ import annotations
+
+import hashlib
+import json
+import re
+import time
+from dataclasses import dataclass, field, asdict
+from typing import Optional
+
+import requests
+from bs4 import BeautifulSoup
+from markdownify import markdownify
+
+UA = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/128.0 Safari/537.36 job-scraper (personal use)"
+)
+
+_session = requests.Session()
+_session.headers.update({"User-Agent": UA, "Accept-Language": "da,en;q=0.8"})
+
+
+def http(method: str, url: str, *, retries: int = 2, **kw) -> requests.Response:
+    kw.setdefault("timeout", 25)
+    last = None
+    for attempt in range(retries + 1):
+        try:
+            r = _session.request(method, url, **kw)
+            if r.status_code in (429, 502, 503, 504) and attempt < retries:
+                time.sleep(2 + attempt * 3)
+                continue
+            r.raise_for_status()
+            return r
+        except requests.RequestException as e:  # noqa: PERF203
+            last = e
+            if attempt < retries:
+                time.sleep(1.5 + attempt * 2)
+    raise last  # type: ignore[misc]
+
+
+def get(url: str, **kw) -> requests.Response:
+    return http("GET", url, **kw)
+
+
+def post(url: str, **kw) -> requests.Response:
+    return http("POST", url, **kw)
+
+
+# ---------------------------------------------------------------- tekst
+def html_to_md(html: str | None) -> str:
+    if not html:
+        return ""
+    md = markdownify(html, heading_style="ATX", strip=["img", "script", "style"])
+    md = re.sub(r"\n{3,}", "\n\n", md)
+    return md.strip()
+
+
+def soup(html: str) -> BeautifulSoup:
+    return BeautifulSoup(html, "lxml")
+
+
+def clean(s: str | None) -> str:
+    return re.sub(r"\s+", " ", s or "").strip()
+
+
+# ---------------------------------------------------------------- filtre
+STUDENT_RE = re.compile(
+    r"student|studerende|studiejob|studie-job|studentermedhj|studentermedarb|"
+    r"studentmedhj|working\s+student|werkstudent|part[- ]time\s+student",
+    re.I,
+)
+# ting der ligner studenterjob men ikke er det
+EXCLUDE_RE = re.compile(
+    r"graduate\s+program|graduateprogram|\bph\.?d\b|postdoc|trainee\s+program|"
+    r"student\s+(?:recruit|lead|engagement|advisor|counsel)|studievejled",
+    re.I,
+)
+
+DK_PLACES = [
+    "denmark", "danmark", "dänemark", "copenhagen", "københavn", "kobenhavn",
+    "aarhus", "århus", "odense", "aalborg", "billund", "bagsværd", "bagsvaerd",
+    "måløv", "maaloev", "kalundborg", "hillerød", "hillerod", "lyngby", "ballerup",
+    "hellerup", "gentofte", "søborg", "soborg", "valby", "frederiksberg",
+    "brabrand", "skejby", "silkeborg", "vejle", "kolding", "esbjerg", "horsens",
+    "randers", "herning", "struer", "lemvig", "fredericia", "roskilde", "køge",
+    "kastrup", "taastrup", "høje taastrup", "glostrup", "brøndby", "herlev",
+    "ringsted", "næstved", "holstebro", "viby", "risskov", "tilst", "skanderborg",
+    "hørsholm", "kgs. lyngby", "kongens lyngby", ", dk", " dk-", "dk ",
+]
+
+
+def is_denmark(*texts: str | None) -> bool:
+    t = " ".join(x or "" for x in texts).lower()
+    return any(p in t for p in DK_PLACES)
+
+
+def is_student(title: str) -> bool:
+    return bool(STUDENT_RE.search(title or "")) and not EXCLUDE_RE.search(title or "")
+
+
+TOPICS = {
+    "SQL": r"\bsql\b|t-sql|postgres|snowflake|bigquery|databricks",
+    "Dataanalyse": r"data\s*anal|dataanal|analytics|analyt|business intelligence|\bbi\b|power\s*bi|tableau|dashboards?",
+    "Portfolio management": r"portef|portfolio|asset management|investment|investering|kapitalforvaltning|fund|equit|fixed income|trading",
+    "Optimering": r"optimi[sz]|optimering|operations research|forecast|prognos|pricing|supply chain",
+    "Automatisering": r"automati|\brpa\b|python|power automate|scripting|vba|process improvement",
+    "Consulting": r"consult|konsulent|rådgiv|advisory|strategy|strategi",
+    "Finans/risiko": r"finance|finans|risk|risiko|controlling|controller|treasury|økonomi|accounting|regnskab|valuation",
+}
+_TOPIC_RE = {k: re.compile(v, re.I) for k, v in TOPICS.items()}
+
+
+def topic_tags(*texts: str) -> list[str]:
+    t = " ".join(texts)
+    return [k for k, rx in _TOPIC_RE.items() if rx.search(t)]
+
+
+DEADLINE_RES = [
+    re.compile(r"(?:ansøgningsfrist|frist|senest|deadline|apply by|application deadline)[^\n]{0,40}?"
+               r"(\d{1,2})\.?\s*(januar|februar|marts|april|maj|juni|juli|august|september|oktober|november|december|"
+               r"jan|feb|mar|apr|may|jun|jul|aug|sep|oct|okt|nov|dec)[a-z]*\.?\s*(\d{4})?", re.I),
+    re.compile(r"(?:ansøgningsfrist|frist|senest|deadline|apply by|application deadline)[^\n]{0,40}?"
+               r"(\d{1,2})[./-](\d{1,2})[./-](\d{2,4})", re.I),
+]
+_MONTHS = {m: i for i, ms in enumerate([
+    ("januar", "jan"), ("februar", "feb"), ("marts", "mar", "march"), ("april", "apr"), ("maj", "may"),
+    ("juni", "jun", "june"), ("juli", "jul", "july"), ("august", "aug"), ("september", "sep"),
+    ("oktober", "okt", "oct", "october"), ("november", "nov"), ("december", "dec")], start=1) for m in ms}
+
+
+def find_deadline(text: str, today_year: int) -> Optional[str]:
+    """Finder ansøgningsfrist i teksten og returnerer ISO-dato. Deterministisk, ikke AI."""
+    if not text:
+        return None
+    m = DEADLINE_RES[0].search(text)
+    if m:
+        d, mon, y = m.group(1), m.group(2).lower(), m.group(3)
+        mo = _MONTHS.get(mon) or _MONTHS.get(mon[:3])
+        if mo:
+            try:
+                return f"{int(y) if y else today_year:04d}-{mo:02d}-{int(d):02d}"
+            except ValueError:
+                pass
+    m = DEADLINE_RES[1].search(text)
+    if m:
+        d, mo, y = (int(x) for x in m.groups())
+        if y < 100:
+            y += 2000
+        if 1 <= mo <= 12 and 1 <= d <= 31:
+            return f"{y:04d}-{mo:02d}-{d:02d}"
+    return None
+
+
+# ---------------------------------------------------------------- model
+@dataclass
+class Job:
+    company: str
+    title: str
+    url: str                      # opslaget
+    apply_url: str = ""           # ansøgningslink (hvis kendt, ellers = url)
+    location: str = ""
+    posted: str = ""              # ISO dato hvis kendt
+    deadline: str = ""            # ISO dato hvis fundet
+    description_md: str = ""
+    source: str = ""
+    external_id: str = ""
+    tags: list[str] = field(default_factory=list)
+
+    @property
+    def id(self) -> str:
+        key = f"{self.company}|{self.external_id or self.url}".lower()
+        return hashlib.sha1(key.encode()).hexdigest()[:12]
+
+    def to_dict(self) -> dict:
+        d = asdict(self)
+        d["id"] = self.id
+        if not d["apply_url"]:
+            d["apply_url"] = self.url
+        return d
+
+
+def jsonld_jobposting(html: str) -> dict | None:
+    """Mange karrieresider har schema.org JobPosting til Google Jobs."""
+    s = soup(html)
+    for tag in s.find_all("script", type="application/ld+json"):
+        try:
+            data = json.loads(tag.string or tag.text or "")
+        except Exception:
+            continue
+        items = data if isinstance(data, list) else [data]
+        for it in list(items):
+            if isinstance(it, dict) and "@graph" in it:
+                items.extend(it["@graph"])
+        for it in items:
+            if isinstance(it, dict) and "JobPosting" in str(it.get("@type")):
+                return it
+    return None
+
+
+def jsonld_location(jp: dict) -> str:
+    locs = jp.get("jobLocation") or []
+    if isinstance(locs, dict):
+        locs = [locs]
+    out = []
+    for l in locs:
+        a = (l or {}).get("address") or {}
+        if isinstance(a, dict):
+            out.append(", ".join(clean(str(a.get(k, ""))) for k in ("addressLocality", "addressRegion", "addressCountry") if a.get(k)))
+        elif isinstance(a, str):
+            out.append(a)
+    return " | ".join(o for o in out if o)

@@ -1,0 +1,485 @@
+# De 50 virksomheder scraperen følger (Universum-ranking, Danmark).
+# source.type: workday | successfactors | smartrecruiters | greenhouse | lever | teamtailor |
+#              hrmanager | amazon | eightfold | oracle | generic | none
+# 'none' = ingen direkte kilde; virksomheden dækkes så kun via Jobindex RSS.
+# aliases bruges til at genkende virksomheden i Jobindex-opslag.
+companies:
+- rank: 1
+  name: Novo Nordisk
+  aliases:
+  - Novo Nordisk A/S
+  start_urls:
+  - https://www.novonordisk.com/careers.html
+  - https://www.novonordisk.com/careers/find-a-job.html
+  source:
+    type: none
+- rank: 2
+  name: A.P. Møller - Mærsk
+  aliases:
+  - Maersk
+  - Mærsk
+  - A.P. Moller - Maersk
+  - APM Terminals
+  start_urls:
+  - https://www.maersk.com/careers
+  - https://www.maersk.com/careers/vacancies
+  source:
+    type: none
+- rank: 3
+  name: McKinsey & Company
+  aliases:
+  - McKinsey
+  start_urls:
+  - https://www.mckinsey.com/careers/search-jobs
+  - https://www.mckinsey.com/dk/careers
+  source:
+    type: none
+- rank: 4
+  name: LEGO Group
+  aliases:
+  - LEGO
+  - LEGO System A/S
+  start_urls:
+  - https://www.lego.com/en-us/careers
+  - https://lego.wd103.myworkdayjobs.com/LEGO_External
+  source:
+    type: workday
+    url: https://lego.wd103.myworkdayjobs.com/LEGO_External
+- rank: 5
+  name: Danske Bank
+  aliases:
+  - Danske Bank A/S
+  start_urls:
+  - https://danskebank.com/careers
+  - https://danskebank.com/careers/search-jobs
+  source:
+    type: none
+- rank: 6
+  name: Deloitte
+  aliases:
+  - Deloitte Statsautoriseret Revisionspartnerselskab
+  start_urls:
+  - https://www.deloitte.com/dk/da/careers.html
+  - https://www2.deloitte.com/dk/da/careers/careers.html
+  source:
+    type: none
+- rank: 7
+  name: PwC
+  aliases:
+  - PricewaterhouseCoopers
+  start_urls:
+  - https://www.pwc.dk/da/karriere.html
+  - https://www.pwc.dk/da/karriere/ledige-stillinger.html
+  source:
+    type: none
+- rank: 8
+  name: Carlsberg
+  aliases:
+  - Carlsberg Group
+  - Carlsberg Danmark
+  start_urls:
+  - https://www.carlsberggroup.com/careers/
+  - https://careers.carlsberggroup.com/
+  source:
+    type: none
+- rank: 9
+  name: Boston Consulting Group (BCG)
+  aliases:
+  - BCG
+  - Boston Consulting Group
+  start_urls:
+  - https://careers.bcg.com/
+  - https://www.bcg.com/careers
+  source:
+    type: none
+- rank: 10
+  name: Nordea
+  aliases:
+  - Nordea Danmark
+  start_urls:
+  - https://www.nordea.com/en/careers
+  - https://www.nordea.com/en/careers/vacant-positions
+  source:
+    type: none
+- rank: 11
+  name: Microsoft
+  aliases:
+  - Microsoft Danmark
+  - Microsoft Development Center Copenhagen
+  start_urls:
+  - https://careers.microsoft.com/
+  - https://jobs.careers.microsoft.com/global/en/search?lc=Denmark
+  source:
+    type: none
+- rank: 12
+  name: EY
+  aliases:
+  - EY Godkendt Revisionspartnerselskab
+  - Ernst & Young
+  start_urls:
+  - https://www.ey.com/da_dk/careers
+  - https://careers.ey.com/
+  source:
+    type: none
+- rank: 13
+  name: Jyske Bank
+  aliases:
+  - Jyske Bank A/S
+  - Jyske Realkredit
+  start_urls:
+  - https://www.jyskebank.dk/om/job
+  - https://www.jyskebank.dk/om/job/ledige-stillinger
+  source:
+    type: none
+- rank: 14
+  name: Nykredit
+  aliases:
+  - Nykredit Bank
+  - Totalkredit
+  start_urls:
+  - https://www.nykredit.com/karriere/
+  - https://www.nykredit.com/om-os/job-og-karriere/
+  source:
+    type: none
+- rank: 15
+  name: Bestseller
+  aliases:
+  - BESTSELLER A/S
+  start_urls:
+  - https://about.bestseller.com/careers
+  - https://about.bestseller.com/jobs
+  source:
+    type: none
+- rank: 16
+  name: L'Oréal Groupe
+  aliases:
+  - L'Oréal
+  - L'Oreal
+  - L’Oréal Danmark
+  start_urls:
+  - https://careers.loreal.com/
+  - https://www.loreal.com/en/careers/
+  source:
+    type: none
+- rank: 17
+  name: Bain & Company
+  aliases: []
+  start_urls:
+  - https://www.bain.com/careers/
+  - https://www.bain.com/careers/find-a-role/
+  source:
+    type: none
+- rank: 18
+  name: Vestas
+  aliases:
+  - Vestas Wind Systems
+  start_urls:
+  - https://careers.vestas.com/
+  - https://www.vestas.com/en/careers
+  source:
+    type: none
+- rank: 19
+  name: Implement
+  aliases:
+  - Implement Consulting Group
+  start_urls:
+  - https://implementconsultinggroup.com/careers
+  - https://implementconsultinggroup.com/careers/jobs
+  source:
+    type: none
+  match_name: false
+- rank: 20
+  name: Saxo Bank
+  aliases:
+  - Saxo Bank A/S
+  start_urls:
+  - https://www.home.saxo/about-us/careers
+  - https://www.home.saxo/careers
+  source:
+    type: none
+- rank: 21
+  name: Finansministeriet
+  aliases:
+  - Finansministeriet
+  - Ministry of Finance
+  start_urls:
+  - https://fm.dk/om-os/job-i-finansministeriet/
+  - https://fm.dk/om-os/job/
+  source:
+    type: none
+- rank: 22
+  name: Bang & Olufsen
+  aliases:
+  - B&O
+  - Bang & Olufsen A/S
+  start_urls:
+  - https://www.bang-olufsen.com/en/dk/story/careers
+  - https://careers.bang-olufsen.com/
+  source:
+    type: none
+- rank: 23
+  name: Danmarks Nationalbank
+  aliases:
+  - Nationalbanken
+  start_urls:
+  - https://www.nationalbanken.dk/da/om-nationalbanken/job
+  - https://www.nationalbanken.dk/en/about-danmarks-nationalbank/careers
+  source:
+    type: none
+- rank: 24
+  name: Arla Foods
+  aliases:
+  - Arla
+  start_urls:
+  - https://www.arla.com/careers/
+  - https://jobs.arla.com/
+  source:
+    type: none
+- rank: 25
+  name: Udenrigsministeriet
+  aliases:
+  - Udenrigsministeriet
+  - Ministry of Foreign Affairs of Denmark
+  start_urls:
+  - https://um.dk/om-os/job-i-udenrigsministeriet
+  - https://um.dk/om-os/job
+  source:
+    type: none
+- rank: 26
+  name: Pandora
+  aliases:
+  - Pandora A/S
+  start_urls:
+  - https://pandoragroup.com/careers
+  - https://pandoragroup.com/careers/jobs
+  source:
+    type: none
+- rank: 27
+  name: Dansk Industri
+  aliases:
+  - DI - Dansk Industri
+  start_urls:
+  - https://www.danskindustri.dk/om-di/job-i-di/
+  - https://www.danskindustri.dk/om-di/job/
+  source:
+    type: none
+- rank: 28
+  name: Nordnet
+  aliases:
+  - Nordnet Bank
+  start_urls:
+  - https://www.nordnet.dk/dk/om-nordnet/karriere
+  - https://nordnet.teamtailor.com/
+  source:
+    type: none
+- rank: 29
+  name: Ørsted
+  aliases:
+  - Orsted
+  - Ørsted A/S
+  start_urls:
+  - https://orsted.com/en/careers
+  - https://orsted.com/en/careers/vacancies
+  source:
+    type: none
+- rank: 30
+  name: KPMG
+  aliases:
+  - KPMG P/S
+  - KPMG Acor Tax
+  start_urls:
+  - https://kpmg.com/dk/da/home/careers.html
+  - https://kpmg.com/dk/da/home/karriere.html
+  source:
+    type: none
+- rank: 31
+  name: Matas
+  aliases:
+  - Matas A/S
+  start_urls:
+  - https://www.matas.dk/job
+  - https://job.matas.dk/
+  source:
+    type: none
+- rank: 32
+  name: Salling Group
+  aliases:
+  - Salling Group A/S
+  - Netto
+  - Føtex
+  - Bilka
+  start_urls:
+  - https://sallinggroup.com/job/
+  - https://job.sallinggroup.com/
+  source:
+    type: none
+- rank: 33
+  name: PA Consulting Group
+  aliases:
+  - PA Consulting
+  start_urls:
+  - https://www.paconsulting.com/careers
+  - https://www.paconsulting.com/careers/experienced-hires
+  source:
+    type: none
+- rank: 34
+  name: Københavns Lufthavne
+  aliases:
+  - Copenhagen Airport
+  - Københavns Lufthavne A/S
+  start_urls:
+  - https://www.cph.dk/om-cph/job
+  - https://www.cph.dk/en/about-cph/jobs
+  source:
+    type: none
+- rank: 35
+  name: Danske Commodities
+  aliases:
+  - Danske Commodities A/S
+  start_urls:
+  - https://danskecommodities.com/careers/
+  - https://danskecommodities.com/careers/jobs/
+  source:
+    type: none
+- rank: 36
+  name: Netcompany
+  aliases:
+  - Netcompany A/S
+  start_urls:
+  - https://www.netcompany.com/da/karriere
+  - https://www.netcompany.com/careers
+  source:
+    type: none
+- rank: 37
+  name: PFA Pension
+  aliases: []
+  start_urls:
+  - https://www.pfa.dk/om-pfa/job-og-karriere/
+  - https://www.pfa.dk/job/
+  source:
+    type: none
+- rank: 38
+  name: SAS
+  aliases:
+  - SAS Scandinavian Airlines
+  - Scandinavian Airlines
+  start_urls:
+  - https://www.sasgroup.net/careers/
+  - https://www.flysas.com/en/careers/
+  source:
+    type: none
+  match_name: false
+- rank: 39
+  name: Amazon
+  aliases:
+  - Amazon Development Center Denmark
+  start_urls:
+  - https://www.amazon.jobs/en/locations/copenhagen-area-denmark
+  source:
+    type: amazon
+- rank: 40
+  name: Beierholm
+  aliases:
+  - Beierholm Statsautoriseret Revisionspartnerselskab
+  start_urls:
+  - https://www.beierholm.dk/karriere/
+  - https://www.beierholm.dk/karriere/ledige-stillinger/
+  source:
+    type: none
+- rank: 41
+  name: AL Sydbank
+  aliases:
+  - Sydbank
+  - Arbejdernes Landsbank
+  - AL Bank
+  start_urls:
+  - https://www.alsydbank.dk/om-os/job
+  - https://www.sydbank.dk/om-sydbank/job-og-karriere
+  - https://www.al-bank.dk/om-os/job
+  source:
+    type: none
+- rank: 42
+  name: Forsvaret
+  aliases:
+  - Forsvarsministeriet
+  - Forsvarsministeriets
+  start_urls:
+  - https://www.forsvaret.dk/da/job-i-forsvaret/
+  - https://job.forsvaret.dk/
+  source:
+    type: none
+- rank: 43
+  name: IKEA
+  aliases:
+  - IKEA Danmark
+  - Ingka
+  - Inter IKEA
+  start_urls:
+  - https://jobs.ikea.com/en/search?location=Denmark
+  - https://www.ikea.com/dk/da/this-is-ikea/work-with-us/
+  source:
+    type: none
+- rank: 44
+  name: Statsministeriet
+  aliases:
+  - Statsministeriet
+  - Prime Minister's Office
+  start_urls:
+  - https://stm.dk/om-os/job/
+  - https://stm.dk/om-os/ledige-stillinger/
+  source:
+    type: none
+- rank: 45
+  name: Accenture
+  aliases:
+  - Accenture A/S
+  start_urls:
+  - https://www.accenture.com/dk-en/careers
+  - https://www.accenture.com/dk-en/careers/jobsearch?jk=&sb=1&vw=0&is_rj=0&pg=1
+  source:
+    type: none
+- rank: 46
+  name: Danmarks Radio
+  aliases: []
+  start_urls:
+  - https://www.dr.dk/om-dr/job-i-dr
+  - https://www.dr.dk/om-dr/job
+  source:
+    type: none
+- rank: 47
+  name: DSV
+  aliases:
+  - DSV A/S
+  start_urls:
+  - https://www.dsv.com/en/careers
+  - https://www.dsv.com/en/careers/job-search
+  source:
+    type: none
+- rank: 48
+  name: BDO
+  aliases:
+  - BDO Statsautoriseret revisionsaktieselskab
+  start_urls:
+  - https://www.bdo.dk/da-dk/karriere
+  - https://www.bdo.dk/da-dk/karriere/ledige-stillinger
+  source:
+    type: none
+- rank: 49
+  name: Rambøll
+  aliases:
+  - Ramboll
+  start_urls:
+  - https://www.ramboll.com/careers
+  - https://www.ramboll.com/careers/job-search
+  source:
+    type: none
+- rank: 50
+  name: Novonesis
+  aliases:
+  - Novozymes
+  - Chr. Hansen
+  start_urls:
+  - https://www.novonesis.com/en/careers
+  - https://www.novonesis.com/en/careers/jobs
+  source:
+    type: none

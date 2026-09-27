@@ -1,0 +1,27 @@
+name: probe
+# Udviklingsværktøj: tester URL'erne i probe.txt fra GitHubs servere og gemmer svarene i data/probe/
+on:
+  push:
+    paths: ["probe.txt"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python -m scraper.probe
+      - run: |
+          git config user.name "job-scraper-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Probe $(date -u +%H:%M)"
+          git pull --rebase --autostash && git push

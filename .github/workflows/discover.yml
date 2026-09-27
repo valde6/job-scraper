@@ -1,0 +1,39 @@
+name: discover-ats
+
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Kun én virksomhed – tom = alle"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Discover
+        run: |
+          mkdir -p data
+          if [ -n "${{ inputs.only }}" ]; then
+            python -m scraper.discover --only "${{ inputs.only }}" 2>&1 | tee data/discover.log
+          else
+            python -m scraper.discover 2>&1 | tee data/discover.log
+          fi
+      - name: Commit
+        run: |
+          git config user.name "job-scraper-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Discovery $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase --autostash && git push

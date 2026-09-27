@@ -1,0 +1,278 @@
+<title>Studiejob Radar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+<style>
+:root{
+  --bg:#F4F6F8; --surface:#FFFFFF; --sunk:#EAEEF2; --line:#D6DDE4;
+  --ink:#14202B; --ink2:#4A5866; --ink3:#7A8794;
+  --accent:#0D6B66; --accent-ink:#FFFFFF; --accent-soft:#DDEFED;
+  --hi:#1E7B3A; --hi-soft:#E0F2E5; --mid:#8A6200; --mid-soft:#FBF0D6; --lo:#6B7580; --lo-soft:#ECEFF2;
+  --warn:#B3261E; --warn-soft:#FBE3E1;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0F161C; --surface:#172129; --sunk:#1E2A33; --line:#2B3843;
+    --ink:#E6ECF1; --ink2:#A9B6C1; --ink3:#7C8A96;
+    --accent:#4FC1B8; --accent-ink:#06201E; --accent-soft:#16332F;
+    --hi:#6FD08A; --hi-soft:#173322; --mid:#E5B94F; --mid-soft:#352A12; --lo:#9AA5AF; --lo-soft:#212C35;
+    --warn:#FF8A80; --warn-soft:#3A1D1B;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0F161C; --surface:#172129; --sunk:#1E2A33; --line:#2B3843;
+  --ink:#E6ECF1; --ink2:#A9B6C1; --ink3:#7C8A96;
+  --accent:#4FC1B8; --accent-ink:#06201E; --accent-soft:#16332F;
+  --hi:#6FD08A; --hi-soft:#173322; --mid:#E5B94F; --mid-soft:#352A12; --lo:#9AA5AF; --lo-soft:#212C35;
+  --warn:#FF8A80; --warn-soft:#3A1D1B;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body);padding:24px 16px 64px}
+.wrap{max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px}
+h1{font:700 clamp(28px,5vw,40px)/1.05 var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1 small{display:block;font:500 13px/1.4 var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.runmeta{display:flex;flex-wrap:wrap;gap:6px 18px;font:13px/1.4 var(--mono);color:var(--ink2)}
+.runmeta b{color:var(--ink);font-weight:500}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--hi);margin-right:6px;vertical-align:1px}
+.dot.stale{background:var(--mid)}
+
+.bar{display:flex;flex-direction:column;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.tabs{display:flex;flex-wrap:wrap;gap:4px;background:var(--sunk);border-radius:8px;padding:3px}
+.tabs button{border:0;background:transparent;color:var(--ink2);font:500 13px var(--body);padding:6px 12px;border-radius:6px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.tabs .n{font:12px var(--mono);color:var(--ink3);margin-left:4px}
+input[type=search],select,textarea{font:14px var(--body);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:7px 10px}
+input[type=search]{flex:1 1 220px;min-width:0}
+.chip{border:1px solid var(--line);background:transparent;color:var(--ink2);font:500 12.5px var(--body);padding:4px 10px;border-radius:99px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--ink)}
+label.inline{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--ink2)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.list{display:flex;flex-direction:column;gap:8px}
+.job{background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.job.inactive{opacity:.6}
+.head{display:grid;grid-template-columns:52px 1fr auto;gap:14px;align-items:start;padding:14px;cursor:pointer}
+.score{font:600 18px/1 var(--mono);text-align:center;padding:9px 0;border-radius:8px;font-variant-numeric:tabular-nums}
+.score.hi{background:var(--hi-soft);color:var(--hi)} .score.mid{background:var(--mid-soft);color:var(--mid)}
+.score.lo{background:var(--lo-soft);color:var(--lo)} .score.na{background:var(--sunk);color:var(--ink3);font-size:13px}
+.title{font:600 16px/1.3 var(--body);margin:0}
+.meta{font-size:13px;color:var(--ink2);margin-top:3px;display:flex;flex-wrap:wrap;gap:4px 12px}
+.meta .rank{font-family:var(--mono);color:var(--ink3)}
+.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+.tag{font:500 11.5px var(--body);letter-spacing:.02em;padding:2px 8px;border-radius:99px;background:var(--sunk);color:var(--ink2)}
+.tag.new{background:var(--accent);color:var(--accent-ink)}
+.side{display:flex;flex-direction:column;align-items:flex-end;gap:6px;white-space:nowrap}
+.due{font:500 12px var(--mono);padding:3px 8px;border-radius:6px;background:var(--sunk);color:var(--ink2)}
+.due.soon{background:var(--warn-soft);color:var(--warn)}
+.status{font:500 12px var(--body);color:var(--ink3)}
+.reason{font-size:13.5px;color:var(--ink2);margin-top:6px}
+.body{border-top:1px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:14px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:6px;font:500 13.5px var(--body);padding:7px 12px;border-radius:7px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;text-decoration:none}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{border-color:var(--ink3)}
+.desc{font-size:14.5px;max-width:68ch;overflow-wrap:anywhere}
+.desc h1,.desc h2,.desc h3{font:600 15px var(--body);margin:1em 0 .3em}
+.desc p{margin:.5em 0} .desc ul{padding-left:1.2em}
+.desc a{color:var(--accent)}
+.draft{width:100%;min-height:220px;font:14px/1.55 var(--body)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:13.5px}
+details.profile{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+details.profile summary{cursor:pointer;font-weight:600}
+details.profile textarea{width:100%;min-height:120px;margin-top:10px}
+.empty{padding:40px 16px;text-align:center;color:var(--ink2);background:var(--surface);border:1px dashed var(--line);border-radius:10px}
+.muted{color:var(--ink3);font-size:13px}
+@media (max-width:560px){
+  .head{grid-template-columns:44px 1fr}
+  .side{grid-column:2;flex-direction:row;align-items:center;justify-content:flex-start}
+}
+@media (prefers-reduced-motion:no-preference){.btn,.chip,.tabs button{transition:background .15s,border-color .15s}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1><small>Studenterjob · Top 50 arbejdsgivere · Danmark</small>Studiejob Radar</h1>
+    <div class="runmeta" id="runmeta"><span>Forbinder…</span></div>
+  </header>
+
+  <details class="profile" id="profileBox">
+    <summary>Min profil (bruges til AI-score og ansøgninger)</summary>
+    <textarea id="profile" placeholder="Fx: Cand.merc. FIN, 2. semester på CBS. Erfaring med SQL, Python og Excel-modeller. Interesseret i portfolio management, dataanalyse, optimering, automatisering og consulting. Kan arbejde 15-20 timer/uge."></textarea>
+    <div class="actions" style="margin-top:8px"><button class="btn" id="saveProfile" type="button">Gem profil</button><span class="muted" id="profileNote"></span></div>
+  </details>
+
+  <section class="bar" aria-label="Filtre">
+    <div class="row">
+      <div class="tabs" id="tabs" role="group" aria-label="Status"></div>
+      <input type="search" id="q" placeholder="Søg i titel, virksomhed eller tekst">
+    </div>
+    <div class="row" id="tagrow"></div>
+    <div class="row">
+      <label class="inline" for="minScore">Min. score <select id="minScore"><option value="0">Alle</option><option value="40">40+</option><option value="60">60+</option><option value="75">75+</option></select></label>
+      <label class="inline" for="sort">Sortér <select id="sort"><option value="score">Højeste score</option><option value="new">Nyeste først</option><option value="due">Kortest frist</option><option value="rank">Virksomhedens rank</option></select></label>
+      <label class="inline" for="showOld"><input type="checkbox" id="showOld"> Vis udløbne</label>
+    </div>
+  </section>
+
+  <div class="list" id="list"></div>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const STATUSES=[["ny","Nye"],["gemt","Gemt"],["ansøgt","Ansøgt"],["fravalgt","Fravalgt"],["alle","Alle"]];
+const TAGS=["SQL","Dataanalyse","Portfolio management","Optimering","Automatisering","Consulting","Finans/risiko"];
+const S={jobs:[],run:null,profile:"",tab:"ny",q:"",tags:new Set(),min:0,sort:"score",showOld:false,open:new Set(),drafts:{}};
+let db=null, sample=null;
+const $=id=>document.getElementById(id);
+try{const v=JSON.parse(localStorage.getItem("sjr-ui")||"{}");Object.assign(S,{tab:v.tab||S.tab,min:v.min||0,sort:v.sort||S.sort});}catch(e){}
+function saveUI(){try{localStorage.setItem("sjr-ui",JSON.stringify({tab:S.tab,min:S.min,sort:S.sort}))}catch(e){}}
+
+function toast(t){const el=$("toast");el.textContent=t;el.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>el.hidden=true,2200)}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function safeUrl(u){return /^https?:\/\//i.test(u||"")?u:"#"}
+function daysLeft(d){if(!d)return null;const t=new Date(d+"T23:59:59");return Math.ceil((t-new Date())/864e5)}
+function md(s){try{if(window.marked&&window.DOMPurify)return DOMPurify.sanitize(marked.parse(s||""),{ADD_ATTR:["target"]});}catch(e){}return "<p style='white-space:pre-wrap'>"+esc(s)+"</p>"}
+function scoreCls(s){return s==null?"na":s>=75?"hi":s>=50?"mid":"lo"}
+function statusOf(j){return j.status||"ny"}
+function expired(j){return j.active===false||(daysLeft(j.deadline)!==null&&daysLeft(j.deadline)<0)}
+
+function filtered(){
+  const q=S.q.toLowerCase();
+  let r=S.jobs.filter(j=>(S.showOld||!expired(j))
+    &&(S.tab==="alle"||statusOf(j)===S.tab)
+    &&(!q||(j.title+" "+j.company+" "+(j.description_md||"")).toLowerCase().includes(q))
+    &&(!S.tags.size||(j.tags||[]).some(t=>S.tags.has(t)))
+    &&((j.score??0)>=S.min||(S.min===0)));
+  const by={score:(a,b)=>(b.score??-1)-(a.score??-1),new:(a,b)=>String(b.first_seen).localeCompare(String(a.first_seen)),
+    due:(a,b)=>(a.deadline||"9999").localeCompare(b.deadline||"9999"),rank:(a,b)=>(a.rank||99)-(b.rank||99)};
+  return r.sort(by[S.sort]);
+}
+
+function renderControls(){
+  const counts={};S.jobs.forEach(j=>{if(!expired(j)||S.showOld){counts[statusOf(j)]=(counts[statusOf(j)]||0)+1;counts.alle=(counts.alle||0)+1}});
+  $("tabs").innerHTML=STATUSES.map(([k,l])=>`<button type="button" data-tab="${k}" aria-pressed="${S.tab===k}">${l}<span class="n">${counts[k]||0}</span></button>`).join("");
+  $("tagrow").innerHTML=TAGS.map(t=>`<button type="button" class="chip" data-tag="${esc(t)}" aria-pressed="${S.tags.has(t)}">${esc(t)}</button>`).join("");
+  $("minScore").value=String(S.min);$("sort").value=S.sort;$("showOld").checked=S.showOld;
+}
+
+function renderRun(){
+  const r=S.run;
+  if(!r){$("runmeta").innerHTML=db?"<span>Venter på første kørsel</span>":"<span>Kunne ikke forbinde til databasen</span>";return}
+  const age=(Date.now()-new Date(r.updated))/36e5;
+  const when=new Date(r.updated).toLocaleString("da-DK",{weekday:"short",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"});
+  $("runmeta").innerHTML=`<span><i class="dot ${age>80?"stale":""}"></i>Opdateret <b>${esc(when)}</b></span><span><b>${r.new_count??0}</b> nye</span><span><b>${r.active_count??0}</b> aktive</span><span>Kilder <b>${r.sources_ok??"?"}/${r.sources_total??50}</b></span>`;
+}
+
+function jobHTML(j){
+  const d=daysLeft(j.deadline), open=S.open.has(j.id), st=statusOf(j);
+  const isNew=S.run&&j.first_seen&&j.first_seen>=S.run.updated_first_seen_cutoff;
+  const due=d===null?`<span class="due">Løbende</span>`:d<0?`<span class="due">Udløbet</span>`:`<span class="due ${d<=5?"soon":""}">${d===0?"Frist i dag":d+" dage"}</span>`;
+  return `<article class="job ${expired(j)?"inactive":""}" data-id="${esc(j.id)}">
+  <div class="head" data-toggle="${esc(j.id)}" role="button" tabindex="0" aria-expanded="${open}">
+    <div class="score ${scoreCls(j.score)}" title="AI-relevansscore">${j.score==null?"–":j.score}</div>
+    <div>
+      <h2 class="title">${esc(j.title)}</h2>
+      <div class="meta"><span>${esc(j.company)}</span><span class="rank">#${esc(j.rank??"–")}</span><span>${esc(j.location||"")}</span></div>
+      ${j.reason?`<div class="reason">${esc(j.reason)}</div>`:""}
+      <div class="tags">${isNew?'<span class="tag new">Ny</span>':""}${(j.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>
+    </div>
+    <div class="side">${due}<span class="status">${esc(st)}</span></div>
+  </div>
+  ${open?`<div class="body">
+    <div class="actions">
+      <a class="btn primary" href="${esc(safeUrl(j.apply_url||j.url))}" target="_blank" rel="noopener">Ansøg</a>
+      <a class="btn" href="${esc(safeUrl(j.url))}" target="_blank" rel="noopener">Se opslaget</a>
+      <button class="btn" type="button" data-copy="${esc(j.id)}">Kopiér til AI</button>
+      ${sample?`<button class="btn" type="button" data-draft="${esc(j.id)}">Skriv ansøgningsudkast</button>`:""}
+      <label class="inline" for="st-${esc(j.id)}">Status <select id="st-${esc(j.id)}" data-status="${esc(j.id)}">${STATUSES.slice(0,4).map(([k,l])=>`<option value="${k}" ${k===st?"selected":""}>${l.replace(/e$/,"")}</option>`).join("")}</select></label>
+    </div>
+    ${S.drafts[j.id]!==undefined?`<div><textarea class="draft" id="draft-${esc(j.id)}" aria-label="Ansøgningsudkast">${esc(S.drafts[j.id])}</textarea><div class="actions"><button class="btn" type="button" data-copydraft="${esc(j.id)}">Kopiér udkast</button></div></div>`:""}
+    <div class="desc">${md(j.description_md)}</div>
+    <div class="muted">Kilde: ${esc(j.source)}${j.first_seen?` · Fundet ${esc(new Date(j.first_seen).toLocaleDateString("da-DK"))}`:""}${j.deadline?` · Frist ${esc(j.deadline)}`:""}</div>
+  </div>`:""}
+  </article>`;
+}
+
+function render(){
+  renderControls();renderRun();
+  const list=filtered();
+  if(!S.jobs.length){$("list").innerHTML=`<div class="empty">${db?"Ingen job endnu. De dukker op efter næste kørsel (man–fre om morgenen).":"Siden kunne ikke forbinde til sin database. Prøv at genindlæse."}</div>`;return}
+  $("list").innerHTML=list.length?list.map(jobHTML).join(""):`<div class="empty">Ingen job matcher filtrene.</div>`;
+}
+
+function aiPrompt(j){
+  return `Du er min ansøgningscoach. Skriv en målrettet ansøgning på dansk (max 1 side) til stillingen nedenfor, og list derefter de 3 vigtigste krav i opslaget og hvordan jeg matcher dem.
+
+## Min profil
+${S.profile||"(udfyld din profil i Studiejob Radar)"}
+
+## Stillingen
+${j.title} — ${j.company} (${j.location||"Danmark"})
+Frist: ${j.deadline||"løbende"}
+Link: ${j.url}
+
+${j.description_md||""}`;
+}
+
+async function copy(text){
+  try{await navigator.clipboard.writeText(text);toast("Kopieret");}
+  catch(e){const ta=document.createElement("textarea");ta.value=text;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");toast("Kopieret")}catch(_){toast("Markér teksten og kopiér manuelt")}ta.remove()}
+}
+
+async function setStatus(id,st){
+  const j=S.jobs.find(x=>x.id===id); if(!j||!db)return;
+  try{await db.doc("jobs/"+id).update({status:st,status_changed:new Date().toISOString()});toast("Status: "+st)}
+  catch(e){toast("Kunne ikke gemme status")}
+}
+
+async function draft(id){
+  const j=S.jobs.find(x=>x.id===id); if(!j||!sample)return;
+  S.drafts[id]="Skriver udkast…";render();
+  try{
+    await sample(aiPrompt(j),{onText:({text})=>{S.drafts[id]=text;const el=$("draft-"+id);if(el)el.value=text;}});
+    render();
+  }catch(e){S.drafts[id]=e&&e.text?e.text:"";toast(e&&e.code==="rate_limited"?"For mange forespørgsler. Prøv igen om lidt.":"Udkastet kunne ikke skrives");render()}
+}
+
+document.addEventListener("click",e=>{
+  const t=e.target.closest("[data-tab],[data-tag],[data-toggle],[data-copy],[data-draft],[data-copydraft]");
+  if(!t)return;
+  if(t.dataset.tab){S.tab=t.dataset.tab;saveUI();render()}
+  else if(t.dataset.tag){const g=t.dataset.tag;S.tags.has(g)?S.tags.delete(g):S.tags.add(g);render()}
+  else if(t.dataset.toggle){if(e.target.closest("a,button,select"))return;const id=t.dataset.toggle;S.open.has(id)?S.open.delete(id):S.open.add(id);render()}
+  else if(t.dataset.copy){const j=S.jobs.find(x=>x.id===t.dataset.copy);if(j)copy(aiPrompt(j))}
+  else if(t.dataset.draft){draft(t.dataset.draft)}
+  else if(t.dataset.copydraft){const el=$("draft-"+t.dataset.copydraft);if(el)copy(el.value)}
+});
+document.addEventListener("keydown",e=>{const t=e.target.closest("[data-toggle]");if(t&&(e.key==="Enter"||e.key===" ")&&e.target===t){e.preventDefault();t.click()}});
+document.addEventListener("change",e=>{
+  if(e.target.dataset.status)setStatus(e.target.dataset.status,e.target.value);
+  if(e.target.id==="minScore"){S.min=+e.target.value;saveUI();render()}
+  if(e.target.id==="sort"){S.sort=e.target.value;saveUI();render()}
+  if(e.target.id==="showOld"){S.showOld=e.target.checked;render()}
+});
+let qt;$("q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{S.q=e.target.value;render()},150)});
+$("saveProfile").addEventListener("click",async()=>{
+  if(!db)return;const v=$("profile").value.trim();
+  try{await db.doc("meta/profile").set({text:v,updated:new Date().toISOString()});S.profile=v;$("profileNote").textContent="Gemt. Bruges ved næste AI-scoring.";}
+  catch(e){$("profileNote").textContent="Kunne ikke gemme profilen."}
+});
+
+render();
+(async()=>{
+  db=await window.claude?.use?.("db");
+  if(!db){render();return}
+  db.collection("jobs").limit(1000).onSnapshot(snap=>{S.jobs=snap.docs.map(d=>({id:d.id,...d.data()}));render()},()=>{});
+  db.doc("meta/run").onSnapshot(s=>{S.run=s.exists?s.data():null;render()},()=>{});
+  db.doc("meta/profile").get().then(s=>{if(s.exists){S.profile=s.data().text||"";$("profile").value=S.profile;if(!S.profile)$("profileBox").open=true}else $("profileBox").open=true}).catch(()=>{});
+  sample=await window.claude.use("sample");render();
+})();
+</script>
