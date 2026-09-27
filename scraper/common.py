@@ -57,6 +57,9 @@ def html_to_md(html: str | None) -> str:
 
 
 def soup(html: str) -> BeautifulSoup:
+    import warnings
+    from bs4 import XMLParsedAsHTMLWarning
+    warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
     return BeautifulSoup(html, "lxml")
 
 
@@ -118,11 +121,11 @@ TOPICS = {
     "SQL": r"\bsql\b|t-sql|postgres|snowflake|bigquery|databricks",
     "Automatisering": r"automati|\brpa\b|power automate|snaplogic|integration|workflow",
     "AI": r"\bai\b|kunstig intelligens|artificial intelligence|machine learning|\bml\b|genai|llm|ai-agent|copilot",
-    "Proces": r"proces|process excellence|process improvement|lean|forbedring|optimi[sz]|optimering|operations research",
+    "Proces": r"procesoptim|procesudvikl|procesforbedr|process excellence|process improvement|process optimi|continuous improvement|\\blean\\b|optimering|optimi[sz]ation|operations research",
     "Digitalisering": r"digitali|it[- ]udvikling|it development|requirements|kravindsamling|kravspec|validering|kvalitetssikring",
-    "Portfolio & investering": r"portef|portfolio|asset management|investment|investering|kapitalforvaltning|fund|equit|fixed income|trading|markets",
+    "Portfolio & investering": r"porteføl|portfolio management|portfolio analy|asset management|kapitalforvaltning|investment (?:management|analy|team|banking)|investering|fixed income|equities|trading|pension fund",
     "Finans": r"business finance|finance|finans|risk|risiko|controlling|controller|treasury|økonomi|accounting|regnskab|valuation",
-    "Consulting": r"consult|konsulent|rådgiv|advisory|strategy|strategi",
+    "Consulting": r"consulting|consultant|konsulent|rådgivning|advisory|management consult",
     "Power BI / Excel": r"power\s*bi|power query|excel|vba",
     "Python": r"python|pandas",
 }

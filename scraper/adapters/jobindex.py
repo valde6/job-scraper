@@ -39,26 +39,43 @@ def scrape_all(companies, today_year):
                 continue
             seen.add(link)
             listed += 1
-            title = clean(it.find("title").get_text() if it.find("title") else "")
+            full_title = clean(it.find("title").get_text() if it.find("title") else "")
             d = it.find("description")
-            dtxt = clean(BeautifulSoup(d.get_text(), "lxml").get_text(" ")) if d else ""
-            blob = title + " | " + dtxt[:250]   # kun starten: virksomhedsnavnet står først, undgå fx "Microsoft 365" i brødteksten
-            company = next((n for n, rx in pats if rx.search(blob)), None)
-            if not company or not is_student(title + " " + blob[:300]):
+            dsoup = BeautifulSoup(d.get_text(), "lxml") if d else None
+            # RSS-titlen er "<jobtitel>, <virksomhed>"; logoets ALT er også virksomheden
+            title, _, comp_txt = full_title.rpartition(", ")
+            if not title:
+                title, comp_txt = full_title, ""
+            img = dsoup.find("img") if dsoup else None
+            comp_txt = f"{comp_txt} | {img.get('alt', '') if img else ''}"
+            company = next((n for n, rx in pats if rx.search(comp_txt)), None)
+            teaser_html = ""
+            loc = "Danmark"
+            if dsoup:
+                a = dsoup.select_one(".jix_robotjob--area, .jobad-element-area")
+                loc = clean(a.get_text()) if a else loc
+                ps = dsoup.find_all(["p", "ul"])
+                teaser_html = "".join(str(x) for x in ps)
+            if not company or not is_student(full_title + " " + clean(dsoup.get_text(" "))[:600] if dsoup else full_title):
                 continue
             jid = re.search(r"(h\d+)", link)
             ad_url = f"https://www.jobindex.dk/jobannonce/{jid.group(1)}/" if jid else link
             desc_md, apply = "", link
             try:
-                s = soup(get(ad_url).text)
-                body = s.select_one(".jobtext-jobad__body, .PaidJob-inner, article, main")
-                desc_md = html_to_md(str(body)) if body else ""
-                a = s.select_one("a[href*='/c?t='], a.btn-apply, a[data-click*=apply]")
-                if a:
-                    apply = a["href"] if a["href"].startswith("http") else "https://www.jobindex.dk" + a["href"]
+                s2 = soup(get(ad_url).text)
+                body = s2.select_one("article.jobcontent, .jobtext-jobad__body, .PaidJob-inner, article, main")
+                if body:
+                    for bad in body.select("nav, script, style, .rating, .jix-tags, footer"):
+                        bad.decompose()
+                    desc_md = html_to_md(str(body))
+                a2 = s2.select_one("a[href*='/c?t=']")
+                if a2:
+                    apply = a2["href"] if a2["href"].startswith("http") else "https://www.jobindex.dk" + a2["href"]
             except Exception:
-                desc_md = html_to_md(str(it.find("description") or ""))
-            jobs.append(Job(company=company, title=title, url=link, apply_url=apply, location="Danmark",
+                pass
+            if len(desc_md) < 300:
+                desc_md = html_to_md(teaser_html) + "\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
+            jobs.append(Job(company=company, title=title, url=link, apply_url=apply, location=loc,
                             deadline=find_deadline(desc_md, today_year) or "", description_md=desc_md,
                             source="jobindex", external_id=jid.group(1) if jid else link))
     return listed, jobs
