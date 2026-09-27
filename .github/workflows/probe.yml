@@ -28,4 +28,6 @@ jobs:
           git add -f data/ || true
           git status --short
           git diff --cached --quiet || git commit -m "Probe $(date -u +%H:%M)"
-          git pull --rebase --autostash && git push
+          { echo '```'; cat data/probe/SUMMARY.txt 2>/dev/null; tail -5 data/probe.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          git pull --rebase --autostash 2>&1 | tail -3 | tee -a "$GITHUB_STEP_SUMMARY"
+          git push 2>&1 | tail -15 | tee -a "$GITHUB_STEP_SUMMARY"
