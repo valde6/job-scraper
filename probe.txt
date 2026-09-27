@@ -1,0 +1,28 @@
+POST https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
+POST https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
+POST https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
+POST https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Novonesis_Careers/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
+POST https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student Denmark"}
+GET https://api.smartrecruiters.com/v1/companies/Netcompany1/postings?country=dk&limit=5
+GET https://api.smartrecruiters.com/v1/companies/Ramboll3/postings?country=dk&limit=5
+GET https://danskindustri.teamtailor.com/jobs.rss
+GET https://api.hr-manager.net/jobportal.svc/danmarksradio/positionlist/json/?incads=1
+GET https://api.hr-manager.net/jobportal.svc/kpmg/positionlist/json/?incads=1
+GET https://candidate.hr-manager.net/Vacancies/List.aspx?cid=1762
+GET https://www.amazon.jobs/en/search.json?normalized_country_code[]=DNK&result_limit=5
+GET https://apply.careers.microsoft.com/api/apply/v2/jobs?domain=microsoft.com&location=Denmark&num=5
+GET https://bcg.eightfold.ai/api/apply/v2/jobs?domain=bcg.com&location=Copenhagen&num=5
+GET https://careers.ey.com/search/?q=student&locationsearch=Denmark
+GET https://careers.vestas.com/search/?q=student&locationsearch=Denmark
+GET https://careers.pandoragroup.com/jobs
+GET https://orsted.com/en/careers/locations/denmark
+GET https://www.nykredit.com/karriere/stillinger/
+GET https://danskebank.com/careers
+GET https://jobs.ikea.com/da/soeg-jobs/Danmark/
+GET https://career2.successfactors.eu/career?company=novonordisk&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=en_GB
+GET https://career2.successfactors.eu/career?company=pfapensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK
+GET https://jobs.arla.com/global/en/search-results?keywords=student
+GET https://mckapi.mckinsey.com/api/jobsearch?pageSize=5&start=1&cities=Copenhagen
+GET https://www.jobindex.dk/jobsoegning.rss?q=studentermedhj%C3%A6lper
+GET https://sallinggroup.com/job/
+GET https://danskecommodities.com/join-us/vacancies
