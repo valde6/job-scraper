@@ -1,357 +1,78 @@
-GET https://api.smartrecruiters.com/v1/companies/Netcompany1/postings?country=dk&limit=5
-STATUS 200 FINAL https://api.smartrecruiters.com/v1/companies/Netcompany1/postings?country=dk&limit=5
+SCRAPE Netcompany
+OK listed=36 matched=5
 
-JSON
 {
- "offset": 0,
- "limit": 5,
- "totalFound": 36,
- "content": [
+ "listed": 36,
+ "jobs": [
   {
-   "id": "744000151545709",
-   "name": "Property Management Specialist",
-   "uuid": "60408bcd-fe3f-4f97-8d63-005c40321029",
-   "jobAdId": "61bbca8f-db87-4fdd-8e13-6180d5ecd705",
-   "defaultJobAd": true,
-   "refNumber": "REF5985V",
-   "company": {
-    "identifier": "Netcompany1",
-    "name": "Netcompany"
-   },
-   "releasedDate": "2026-09-24T07:30:39.145Z",
-   "location": {
-    "city": "Copenhagen",
-    "country": "dk",
-    "remote": false,
-    "hybrid": false,
-    "latitude": "55.6760968",
-    "longitude": "12.5683371",
-    "fullLocation": "Copenhagen, , Denmark"
-   },
-   "industry": {
-    "id": "it_and_services",
-    "label": "Informationsteknologi og -tjenester"
-   },
-   "department": {},
-   "function": {
-    "id": "consulting",
-    "label": "Konsulentarbejde"
-   },
-   "typeOfEmployment": {
-    "id": "permanent",
-    "label": "Fuldtid"
-   },
-   "experienceLevel": {
-    "id": "mid_senior_level",
-    "label": "Mellemleder"
-   },
-   "customField": [
-    {
-     "fieldId": "COUNTRY",
-     "fieldLabel": "Land/Region",
-     "valueId": "dk",
-     "valueLabel": "Danmark"
-    },
-    {
-     "fieldId": "5c178e29b1f60b149a817c42",
-     "fieldLabel": "Brands",
-     "valueId": "default",
-     "valueLabel": "Netcompany"
-    }
-   ],
-   "visibility": "PUBLIC",
-   "ref": "https://api.smartrecruiters.[REDACTED]",
-   "language": {
-    "code": "en",
-    "label": "Engelsk",
-    "labelNative": "English (US)"
-   }
+   "company": "Netcompany",
+   "title": "Student Assistant, Netcompany Institute",
+   "url": "https://jobs.smartrecruiters.[REDACTED]",
+   "apply_url": "https://jobs.smartrecruiters.[REDACTED]?oga=true",
+   "location": "Copenhagen, dk",
+   "posted": "2026-09-15",
+   "deadline": "",
+   "description_md": "\n\n*How does Europe reap the benefits of AI, while remaining secure, sovereign and true to its democratic values? These are some of the questions that Netcompany Institute has set out to answer, and we are looking for two student assistants to help us do just that.*\n\n*Netcompany Institute is a new analytical unit providing data-driven analyses of how AI and digitalization affect Europe. The aim is to strengthen the evidence base for public debate and help decision-makers navigate the choices that will shape Europe’s digital future.  You'll join a small team: a Chief Economist and two full-time Analytics Consultants.*\n\n**Responsibilities**\n\nYou will support analyses throughout their lifecycle – from framing questions to communicating results. Your responsibilites will typically include:\n\n* Monitor policy developments and research on AI and digitalisation in Europe\n* Collect and structure data from Eurostat, OECD and statistical offices\n* Produce descriptive statistics, tables and charts publication-ready\n* Write analytical text and fact-check sources\n\nResponsibility grows with experience. At the beginning you will work closely with an Analytics Consultant on clearly defined tasks; over time we expect you to take ownership of analyses in your own right.\n\n**How we work with AI**\n\nAI tools are integral to our work. We use them for literature searches, data work and monitoring – so human time focuses on what matters most: finding the right questions, interpreting results and communicating them clearly. You don't need expertise at the start, but must be willing to learn and maintain high accuracy standards.\n\n**About you**\n\nWe are looking for two students who can each work approximately 16 hours per week. We are flexible during exam periods, but availability is expected in the lead-up to publication deadlines and events. To succeed in this role, you:\n\n* Are in the final year of your bachelor’s degree or have started a master’s degree in economics, political science, statistics, data science or a similar field.\n* Full professional proficiency in English (written and spoken) is a must; Danish is an advantage.\n* Are comfortable working with data: confident in Excel and ideally familiar with Python, R, Stata or a similar tool.\n* Are curious about how AI and digitalisation are changing European economies and societies\n* Are willing to learn to use AI tools effectively in your own work, and to keep relating output critically to prior knowledge and theory.\n\n**Continue developing with us**\n\nAt Netcompany, we focus on your personal and professional development.\n\nWhen you join us, you will be assigned a personal mentor who will guide you through your development and help you achieve your goals. The close relationship with an experienced colleague helps ensure the well-being of each employee and provides you with concrete insights into the many different career opportunities as you build your experience.\n\nAdditionally, you will be enrolled in our internal training programme, Netcompany Academy, where you are offered courses and seminars on everything from technologies to customer management. All courses are taught by experienced Netcompany colleagues, ensuring that all content is highly relevant and builds upon your professional skills, preparing you for various tasks and continuously improving your expertise throughout your career with us.\n\n**Join an inclusive community**\n\nAt Netcompany, we highly prioritise an inclusive community. We actively promote an open and welcoming work culture based on collaboration and mutual trust, where there is always an opportunity for sparring.\n\nAs part of our culture and values, all employees, regardless of background, identity, and experience, are met with understanding and respect and given equal opportunities for development and well-being.\n\nAs we are an international company with offices in many countries, you will have the opportunity to learn and collaborate internationally with colleagues from across the world. We offer a shared environment where we engage with each other across departments and projects. Additionally, we have a wide range of social and professional events that provide you with the best opportunities to expand and build a network early in your career.\n\n**Send us your application**\n\nUpload your resume and a motivational letter to our recruitment system via the link. If you have unanswered questions, feel free to write to hr.dk@netcompany.com.\n\n*All qualified candidates are encouraged to apply regardless of gender, gender expression, sexuality, disability, age, religion and belief, political views, nationality, ethnicity, or social background.*\n\n*We are committed to creating an inclusive and diverse environment. Our recruitment processes are based on individual merit. If you require any reasonable adjustments or additional support during the interview process, please email our recruiters at reasonableadjustments@netcompany.com for assistance. #LI-SA1*\n\n\n\n",
+   "source": "smartrecruiters",
+   "external_id": "744000149509279",
+   "tags": [],
+   "id": "306491dfef38"
   },
   {
-   "id": "744000150634479",
-   "name": "Actuarial Consultant",
-   "uuid": "01b5de8f-6697-431d-8330-45b865ddac89",
-   "jobAdId": "3ec5bff9-86e1-4ccf-9bb0-8d9d1b2fd723",
-   "defaultJobAd": true,
-   "refNumber": "REF5950O",
-   "company": {
-    "identifier": "Netcompany1",
-    "name": "Netcompany"
-   },
-   "releasedDate": "2026-09-21T08:48:46.162Z",
-   "location": {
-    "city": "Copenhagen",
-    "country": "dk",
-    "remote": false,
-    "hybrid": false,
-    "latitude": "55.6760968",
-    "longitude": "12.5683371",
-    "fullLocation": "Copenhagen, , Denmark"
-   },
-   "industry": {
-    "id": "it_and_services",
-    "label": "Informationsteknologi og -tjenester"
-   },
-   "department": {},
-   "function": {
-    "id": "consulting",
-    "label": "Konsulentarbejde"
-   },
-   "typeOfEmployment": {
-    "id": "permanent",
-    "label": "Fuldtid"
-   },
-   "experienceLevel": {
-    "id": "entry_level",
-    "label": "Nyuddannet"
-   },
-   "customField": [
-    {
-     "fieldId": "COUNTRY",
-     "fieldLabel": "Land/Region",
-     "valueId": "dk",
-     "valueLabel": "Danmark"
-    },
-    {
-     "fieldId": "5c178e29b1f60b149a817c42",
-     "fieldLabel": "Brands",
-     "valueId": "default",
-     "valueLabel": "Netcompany"
-    }
-   ],
-   "visibility": "PUBLIC",
-   "ref": "https://api.smartrecruiters.[REDACTED]",
-   "language": {
-    "code": "en",
-    "label": "Engelsk",
-    "labelNative": "English (US)"
-   }
+   "company": "Netcompany",
+   "title": "Internship for Bachelor of Engineering students",
+   "url": "https://jobs.smartrecruiters.[REDACTED]",
+   "apply_url": "https://jobs.smartrecruiters.[REDACTED]?oga=true",
+   "location": "Copenhagen, Aarhus, dk",
+   "posted": "2026-09-11",
+   "deadline": "",
+   "description_md": "\n\n*Netcompany is now seeking talented IT engineers for an exciting and developmental internship in spring 2027. The internship is a paid 20-week period starting February 1st, 2027.*\n\n**We take responsibility for your internship**\n\nThere are large and meaningful tasks ahead of us at Netcompany. We have many different customers, from smaller private companies to large projects for the public sector. Regardless of the project's size, you, as an intern in Application Services, will make a noticeable difference.\n\nAt Netcompany, we prioritize our interns very highly, and it is no coincidence that the vast majority choose to continue their careers at Netcompany after the internship is completed – both as student assistants and later as qualified engineers.\n\nIn Application Services, we work with optimization, continuous development and new development of complex business and societally critical projects for our many customers. This is a great opportunity to explore a variety of technologies and to grow in both technical IT skills and business understanding. As an intern with us, we hope you enjoy working with new areas and are excited by the opportunity to learn quickly and develop along the way.\n\n**About you**\n\nYour background, qualifications, and interests are important to us. This way, we can ensure you the best internship, where you in 20 weeks build new skills and expertise that match your goals.  \n  \nTo succeed in this role, you are:\n\n* Familiar with Java, C#, databases, design patterns, or similar.\n* Motivated and want to develop both professionally and personally.\n* Looking for a company where you can use your abilities to make a noticeable difference both in business and society.\n* Full professional proficiency in Danish and English (written and spoken) is a must.\n\n**Continue developing with us**  \nAt Netcompany, we focus on your personal and professional development.\n\nWhen you join us, you will be assigned a personal mentor who will guide you through your development and help you achieve your goals. The close relationship with an experienced colleague helps ensure the well-being of each employee and provides you with concrete insights into the many different career opportunities as you build your experience.\n\nAdditionally, you will be enrolled in our internal training programme, Netcompany Academy, where you are offered courses and seminars on everything from technologies to customer management. All courses are taught by experienced Netcompany colleagues, ensuring that all content is highly relevant and builds upon your professional skills, preparing you for various tasks and continuously improving your expertise throughout your career with us.\n\n**Join an inclusive community**\n\nAt Netcompany, we highly prioritize an inclusive community. We actively promote an open and welcoming work culture based on collaboration and mutual trust, where there is always an opportunity for sparring.\n\nAs part of our culture and values, all employees, regardless of background, identity, and experience, are met with understanding and respect and given equal opportunities for development and well-being.\n\nAs we are an international company with offices in many countries, you will have the opportunity to learn and collaborate internationally with colleagues from across the world. We offer a shared environment where we engage with each other across departments and projects. Additionally, we have a wide range of social and professional events that provide you with the best opportunities to expand and build a network early in your career.\n\n**Send us your application**  \nUpload your resume and a motivational letter to our recruitment system via the link. If you have unanswered questions, feel free to write to hr.dk@netcompany.com.\n\n*All qualified candidates are encouraged to apply regardless of gender, gender expression, sexuality, disability, age, religion and belief, political views, nationality, ethnicity, or social background.*\n\n*We are committed to creating an inclusive and diverse environment. Our recruitment processes are based on individual merit. If you require any reasonable adjustments or additional support during the interview process, please email our recruiters at reasonableadjustments@netcompany.com for assistance.* *#LI-SA1*\n\n\n\n",
+   "source": "smartrecruiters",
+   "external_id": "744000148933299",
+   "tags": [],
+   "id": "9effee8a471e"
   },
   {
-   "id": "744000150117781",
-   "name": "Financial Data Management Consultant, Datadriven Banking, Netcompany Banking Services",
-   "uuid": "f6f74ef1-3c23-4ce9-9f3f-38a9232b039c",
-   "jobAdId": "7d14a40e-8a97-4cc8-b97c-8a3ed777354d",
-   "defaultJobAd": true,
-   "refNumber": "REF5977V",
-   "company": {
-    "identifier": "Netcompany1",
-    "name": "Netcompany"
-   },
-   "releasedDate": "2026-09-17T13:59:36.329Z",
-   "location": {
-    "city": "Copenhagen",
-    "country": "dk",
-    "remote": false,
-    "hybrid": false,
-    "latitude": "55.6760968",
-    "longitude": "12.5683371",
-    "fullLocation": "Copenhagen, , Denmark"
-   },
-   "industry": {
-    "id": "banking",
-    "label": "Bankvæsen"
-   },
-   "department": {},
-   "function": {
-    "id": "information_technology",
-    "label": "Informationsteknologi"
-   },
-   "typeOfEmployment": {
-    "id": "permanent",
-    "label": "Fuldtid"
-   },
-   "experienceLevel": {
-    "id": "entry_level",
-    "label": "Nyuddannet"
-   },
-   "customField": [
-    {
-     "fieldId": "COUNTRY",
-     "fieldLabel": "Land/Region",
-     "valueId": "dk",
-     "valueLabel": "Danmark"
-    },
-    {
-     "fieldId": "5c66c3396d8bc54ab9044ae0",
-     "fieldLabel": "Primary profile",
-     "valueId": "daaaa2c8-fa38-4aab-943d-e72d1f6da047",
-     "valueLabel": "Data Management"
-    },
-    {
-     "fieldId": "5c178e29b1f60b149a817c42",
-     "fieldLabel": "Brands",
-     "valueId": "default",
-     "valueLabel": "Netcompany"
-    },
-    {
-     "fieldId": "5c6ab81c6d8bc54ab9044b5c",
-     "fieldLabel": "Career Level",
-     "valueId": "af73de79-cf31-4f69-9f83-a8a129ed043f",
-     "valueLabel": "Data Consultant"
-    }
-   ],
-   "visibility": "PUBLIC",
-   "ref": "https://api.smartrecruiters.[REDACTED]",
-   "language": {
-    "code": "en",
-    "label": "Engelsk",
-    "labelNative": "English (US)"
-   }
+   "company": "Netcompany",
+   "title": "Internship for Bachelor of Engineering students, Operations & Infrastructure",
+   "url": "https://jobs.smartrecruiters.[REDACTED]",
+   "apply_url": "https://jobs.smartrecruiters.[REDACTED]?oga=true",
+   "location": "Copenhagen, dk",
+   "posted": "2026-08-28",
+   "deadline": "",
+   "description_md": "\n\n*Are you looking for the opportunity to contribute to some of Denmark’s most critical IT solutions? Then we have the ideal internship for you! At Netcompany, we are looking for IT engineering students to join our Infrastructure department for an exciting and challenging internship. The internship is a paid 20-week placement starting on 1 February 2027.*\n\n**Responsibilities and Technologies**\n\nOur Infrastructure department consists of several teams working with operations across a range of technical areas, including Linux, Windows, Cloud and Infrastructure, covering areas such as networking, servers, backup and storage. You will have ample opportunity to work with different technologies and develop your technical skills while also gaining valuable business insight.\n\nYou will become an integral part of our Infrastructure department, where you will have your own areas of responsibility as well as daily opportunities to collaborate and exchange knowledge with experienced specialists. You will get close to the core of our operations and help ensure the stability, monitoring and optimisation of systems that support many critical solutions across society.\n\nYou will work hands-on with modern enterprise infrastructure platforms. In addition, you will have the opportunity to take responsibility and contribute to both your professional and personal development in close collaboration with your future colleagues. Your responsibilities will vary depending on which area you are interested in becoming part of. Tasks may include:\n\n* Ensuring stable operations for many critical solutions\n\n* Integrating security into every aspect of your work and working with scripting and automation to create well-maintained and future-proof processes and systems\n\n* Improving and optimising workflows, solutions and tasks\n\n* Managing, operating and selecting the best platforms to meet current and future needs\n\n**About You**\n\nAt Netcompany, we place great emphasis on our interns, and there is a reason why many continue their careers with us after completing their internship – both as student employees and later as graduates.\n\n**We imagine that:**\n\n* You are studying for a Bachelor of Engineering degree in Software Engineering, IT or a related field\n\n* You are motivated to develop both professionally and personally\n\n* You are motivated by delivering optimal solutions that support critical business and societal needs\n\nAs a prerequisite for employment, you must be eligible to obtain and maintain PET security clearance.\n\n**Continue developing with us**  \nAt Netcompany, we focus on your personal and professional development.\n\nWhen you join us, you will be assigned a personal mentor who will guide you through your development and help you achieve your goals. The close relationship with an experienced colleague helps ensure the well-being of each employee and provides you with concrete insights into the many different career opportunities as you build your experience.\n\nAdditionally, you will be enrolled in our internal training programme, Netcompany Academy, where you are offered courses and seminars on everything from technologies to customer management. All courses are taught by experienced Netcompany colleagues, ensuring that all content is highly relevant and builds upon your professional skills, preparing you for various tasks and continuously improving your expertise throughout your career with us.\n\n**Join an inclusive community**\n\nAt Netcompany, we highly prioritise an inclusive community. We actively promote an open and welcoming work culture based on collaboration and mutual trust, where there is always an opportunity for sparring.\n\nAs part of our culture and values, all employees, regardless of background, identity, and experience, are met with understanding and respect and given equal opportunities for development and well-being.\n\nAs we are an international company with offices in many countries, you will have the opportunity to learn and collaborate internationally with colleagues from across the world. We offer a shared environment where we engage with each other across departments and projects. Additionally, we have a wide range of social and professional events that provide you with the best opportunities to expand and build a network early in your career.\n\n**Send us your application**  \nUpload your resume and a motivational letter to our recruitment system via the link. If you have unanswered questions, feel free to write to hr.dk@netcompany.com.\n\n*All qualified candidates are encouraged to apply regardless of gender, gender expression, sexuality, disability, age, religion and belief, political views, nationality, ethnicity, or social background.*\n\n*We are committed to creating an inclusive and diverse environment. Our recruitment processes are based on individual merit. If you require any reasonable adjustments or additional support during the interview process, please email our recruiters at reasonableadjustments@netcompany.com for assistance. #LI-SA1*\n\n\n\n",
+   "source": "smartrecruiters",
+   "external_id": "744000146143059",
+   "tags": [],
+   "id": "87cde3fd582b"
   },
   {
-   "id": "744000149509279",
-   "name": "Student Assistant, Netcompany Institute",
-   "uuid": "6df42267-3421-4373-ab9d-3b93b9ee5860",
-   "jobAdId": "5d77d8f2-3576-4d65-97e4-c9b8e5f87582",
-   "defaultJobAd": true,
-   "refNumber": "REF5968N",
-   "company": {
-    "identifier": "Netcompany1",
-    "name": "Netcompany"
-   },
-   "releasedDate": "2026-09-15T06:16:40.782Z",
-   "location": {
-    "city": "Copenhagen",
-    "country": "dk",
-    "remote": false,
-    "hybrid": false,
-    "latitude": "55.6760968",
-    "longitude": "12.5683371",
-    "fullLocation": "Copenhagen, , Denmark"
-   },
-   "industry": {
-    "id": "it_and_services",
-    "label": "Informationsteknologi og -tjenester"
-   },
-   "department": {},
-   "function": {
-    "id": "consulting",
-    "label": "Konsulentarbejde"
-   },
-   "typeOfEmployment": {
-    "id": "part-time",
-    "label": "Deltid"
-   },
-   "experienceLevel": {
-    "id": "entry_level",
-    "label": "Nyuddannet"
-   },
-   "customField": [
-    {
-     "fieldId": "COUNTRY",
-     "fieldLabel": "Land/Region",
-     "valueId": "dk",
-     "valueLabel": "Danmark"
-    },
-    {
-     "fieldId": "5c66c3396d8bc54ab9044ae0",
-     "fieldLabel": "Primary profile",
-     "valueId": "b5bc294b-2fb8-4a99-960a-18eb48cf02c8",
-     "valueLabel": "Change Consulting"
-    },
-    {
-     "fieldId": "5c7aa1b6c9e77c0008017cf3",
-     "fieldLabel": "Type of contract",
-     "valueId": "d761067c-f15f-4a96-b2fd-96f8a9d8cac2",
-     "valueLabel": "NC Permanent"
-    },
-    {
-     "fieldId": "5c178e29b1f60b149a817c42",
-     "fieldLabel": "Brands",
-     "valueId": "default",
-     "valueLabel": "Netcompany"
-    },
-    {
-     "fieldId": "5c6ab81c6d8bc54ab9044b5c",
-     "fieldLabel": "Career Level",
-     "valueId": "4761f5f3-fbcc-49cd-bb66-0b5b324d23db",
-     "valueLabel": "Change Analyst"
-    }
-   ],
-   "visibility": "PUBLIC",
-   "ref": "https://api.smartrecruiters.[REDACTED]",
-   "language": {
-    "code": "en",
-    "label": "Engelsk",
-    "labelNative": "English (US)"
-   }
+   "company": "Netcompany",
+   "title": "Student Assistant, Netcompany IT Security",
+   "url": "https://jobs.smartrecruiters.[REDACTED]",
+   "apply_url": "https://jobs.smartrecruiters.[REDACTED]?oga=true",
+   "location": "Copenhagen, dk",
+   "posted": "2026-07-28",
+   "deadline": "",
+   "description_md": "\n\n*Do you find Threat Hunting, Threat Intelligence, SIEM and EDR exciting, and do you want to be a deciding factor in IT Security in our internal as well as our customer’s environments? As a Student Assistant you ensure operations can perform their security-related tasks based on guidelines you help define.*\n\n**Tasks and Technologies**\n\nAs a Student Assistant you will be a part of Netcompany Operations and our dedicated security team consisting of skilled and committed colleagues. You will take part in defining how Denmark’s most ambitious IT company host solutions for critical Danish infrastructure and large international customers. You will encounter everything from identifying improvements to monitoring of servers and applications, optimising detection mechanisms and response thereof, advising colleagues about alerts as well as adjusting security tools.\n\nYou will be a trusted advisor for Netcompany’s delivery and project teams regarding how to solve security-related tasks.\n\nYour responsibilities will typically include:\n\n* Investigating patterns and implementing alerts and visualisations in our SIEM to ensure detection of suspicious events.\n* Responding to and follow up on alerts generated by our SIEM and EDR solutions, including adjusting these to ensure precision.\n* Configuring integrations between our SIEM and other systems and environments, including Cloud and containers.\n* Configuring and monitoring our IDS/IPS solutions.\n\n**About you**\n\nWe are looking for a student who can work approximately 16 hours per week. We are flexible during exam periods, but availability is expected in the lead-up to project deadlines and other key milestones. To succeed in this role, you:\n\n* Are in the final year of your bachelor’s degree or have started a master’s degree in engineering, computer science, software, IT, or a similar field.\n* Have experience with both Windows and Linux and have knowledge with SIEM or EDR solutions.\n* Are highly motivated and eager to develop your skills\n* Have full professional proficiency in Danish or English (written and spoken) is a must.\n\n*It is a requirement for the position that you can be approved for PET security clearance.*\n\n**Continue developing with us**  \nAt Netcompany, we focus on your personal and professional development.\n\nWe support you in your development and in reaching your goals. You will be included in projects equally with your colleagues and have the chance to take on responsibility from day one.\n\nWe offer a strong collegial community where you will work closely with your team who supports you both in task completion and in your development in the role. The close relationship with your colleagues and leader in everyday work helps to ensure the well-being of each employee and gives you concrete insights into the many different career opportunities as you build your experience.\n\n**Join an inclusive community**  \nAt Netcompany, we highly prioritise an inclusive community. We actively promote an open and welcoming work culture based on collaboration and mutual trust, where there is always an opportunity for sparring.\n\nAs part of our culture and values, all employees, regardless of background, identity, and experience, are met with understanding and respect and given equal opportunities for development and well-being.\n\nAs we are an international company with offices in many countries, you will have the opportunity to learn and collaborate internationally with colleagues from across the world.\n\nWe offer a shared environment where we engage with each other across departments and projects. Additionally, we have a wide range of social and professional events that provide you with the best opportunities to expand and build a network early in your career.\n\n**Send us your application**  \nUpload your resume and a motivational letter to our recruitment system via the link. If you have unanswered questions, feel free to write to hr.dk@netcompany.com.\n\n*All qualified candidates are encouraged to apply regardless of gender, gender expression, sexuality, disability, age, religion and belief, political views, nationality, ethnicity, or social background.*\n\n*We are committed to creating an inclusive and diverse environment. Our recruitment processes are based on individual merit. If you require any reasonable adjustments or additional support during the interview process, please email our responsible recruiters at* [*reasonableadjustments@netcompany.com*](mailto:reasonableadjustments@netcompany.com) *for assistance. #LI-SA1*\n\n\n\n",
+   "source": "smartrecruiters",
+   "external_id": "744000140217801",
+   "tags": [],
+   "id": "d36bc56b867a"
   },
   {
-   "id": "744000149011750",
-   "name": "Business Consultant",
-   "uuid": "e2472360-3297-4851-b1ae-c591d548ebfe",
-   "jobAdId": "9486476e-0c59-4152-899a-7ba4c10e56ca",
-   "defaultJobAd": true,
-   "refNumber": "2017-39",
-   "company": {
-    "identifier": "Netcompany1",
-    "name": "Netcompany"
-   },
-   "releasedDate": "2026-09-11T12:47:03.140Z",
-   "location": {
-    "city": "Copenhagen",
-    "country": "dk",
-    "remote": false,
-    "hybrid": false,
-    "fullLocation": "Copenhagen, , Denmark"
-   },
-   "industry": {
-    "id": "it_and_services",
-    "label": "Informationsteknologi og -tjenester"
-   },
-   "department": {},
-   "function": {
-    "id": "consulting",
-    "label": "Konsulentarbejde"
-   },
-   "typeOfEmployment": {
-    "id": "permanent",
-    "label": "Fuldtid"
-   },
-   "experienceLevel": {
-    "id": "not_applicable",
-    "label": "Ikke anvendelig"
-   },
-   "customField": [
-    {
-     "fieldId": "COUNTRY",
-     "fieldLabel": "Land/Region",
-     "valueId": "dk",
-     "valueLabel": "Danmark"
-    },
-    {
-     "fieldId": "5c66c3396d8bc54ab9044ae0",
-     "fieldLabel": "Primary profile",
-     "valueId": "b5bc294b-2fb8-4a99-960a-18eb48cf02c8",
-     "valueLabel": "Change Consulting"
-    },
-    {
-     "fieldId": "5c7aa1b6c9e77c0008017cf3",
-     "fieldLabel": "Type of contract",
-     "valueId": "d761067c-f15f-4a96-b2fd-96f8a9d8cac2",
-     "valueLabel": "NC Permanent"
-    },
-    {
-     "fieldId": "5c178e29b1f60b149a817c42",
-     "fieldLabel": "Brands",
-     "valueId": "default",
-     "valueLabel": "Netcompany"
-    },
-    {
-     "fieldId": "5c6ab81c6d8bc54ab9044b5c",
-     "fieldLabel": "Career Level",
-     "valueId": "f8adf37f-e953-4872-813d-c8b6c6f8829a",
-     "valueLabel": "Change Consultant"
-    }
-   ],
-   "visibility": "PUBLIC",
-   "ref": "https://api.smartrecruiters.[REDACTED]",
-   "language": {
-    "code": "en-GB",
-    "label": "Engelsk (Storbritannien)",
-    "labelNative": "English (UK)"
-   }
+   "company": "Netcompany",
+   "title": "Student Assistant, Netcompany Consulting",
+   "url": "https://jobs.smartrecruiters.[REDACTED]",
+   "apply_url": "https://jobs.smartrecruiters.[REDACTED]?oga=true",
+   "location": "Copenhagen, Aarhus or Aalborg, dk",
+   "posted": "2026-06-18",
+   "deadline": "",
+   "description_md": "\n\n*Would you like to be part of exciting and challenging projects within the IT world? Do you dream of having the opportunity to contribute to some of Denmark’s most business-critical IT solutions? Then we have the ideal student job for you.*\n\nAt Netcompany, we are looking for a student who wants to take part in our innovative projects. Here, you will have the chance to influence our solutions while working alongside some of the industry’s most skilled colleagues, who will inspire you and support your learning.\n\n**Responsibilities and technologies**\n\nAs a student assistant with us, you will be given responsibility from day one and become an important part of one of our teams. You will experience how your work directly contributes and creates value in the solutions we deliver to our clients. A student position with us gives you the opportunity to take on challenging tasks on equal footing with our full-time consultants.\n\nWe follow a well-established methodology from identifying client needs to implementing and rolling out solutions. You will therefore gain hands-on experience with developing IT systems from start to finish. You will primarily work on IT solutions and service-oriented architectures based on .NET and Java technologies, typically within maintenance, development and testing. The role provides the opportunity to put many of the skills gained during your studies into practice.\n\nYour responsibilites will typically include:\n\n* Developing functional and technical designs for system components.\n* Programming tasks across all layers of the system.\n* Configuration and development of extensions for standard platforms.\n* Automation of business processes.\n\n**About you**\n\nWe are looking for a student who can work approximately 16 hours per week. We are flexible during exam periods, but availability is expected in the lead-up to project deadlines and other key milestones. To succeed in this role, you:\n\n* Are in the final year of your bachelor’s degree or have started a master’s degree in engineering, computer science, software, IT, or a similar field.\n* Have some experience with object-oriented programming and familiarity with languages such as C# .NET and/or Java.\n* Are highly motivated and eager to develop your skills.\n* Full professional proficiency in Danish and English (written and spoken) is a must.\n\n**Continue developing with us**  \nAt Netcompany, we focus on your personal and professional development.\n\nWhen you join us, you will be assigned a personal mentor who will guide you through your development and help you achieve your goals. The close relationship with an experienced colleague helps ensure the well-being of each employee and provides you with concrete insights into the many different career opportunities as you build your experience.\n\nAdditionally, you will be enrolled in our internal training programme, Netcompany Academy, where you are offered courses and seminars on everything from technologies to customer management. All courses are taught by experienced Netcompany colleagues, ensuring that all content is highly relevant and builds upon your professional skills, preparing you for various tasks and continuously improving your expertise throughout your career with us.\n\n**Join an inclusive community**\n\nAt Netcompany, we highly prioritise an inclusive community. We actively promote an open and welcoming work culture based on collaboration and mutual trust, where there is always an opportunity for sparring.\n\nAs part of our culture and values, all employees, regardless of background, identity, and experience, are met with understanding and respect and given equal opportunities for development and well-being.\n\nAs we are an international company with offices in many countries, you will have the opportunity to learn and collaborate internationally with colleagues from across the world. We offer a shared environment where we engage with each other across departments and projects. Additionally, we have a wide range of social and professional events that provide you with the best opportunities to expand and build a network early in your career.\n\n**Send us your application**  \nUpload your resume and a motivational letter to our recruitment system via the link. If you have unanswered questions, feel free to write to hr.dk@netcompany.com.\n\n*All qualified candidates are encouraged to apply regardless of gender, gender expression, sexuality, disability, age, religion and belief, political views, nationality, ethnicity, or social background.*\n\n*We are committed to creating an inclusive and diverse environment. Our recruitment processes are based on individual merit. If you require any reasonable adjustments or additional support during the interview process, please email our recruiters at reasonableadjustments@netcompany.com for assistance.* *#LI-SA1*\n\n\n\n",
+   "source": "smartrecruiters",
+   "external_id": "744000132845010",
+   "tags": [],
+   "id": "2bbd93941937"
   }
  ]
 }

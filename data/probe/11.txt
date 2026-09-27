@@ -1,11 +1,22 @@
-GET https://candidate.hr-manager.net/Vacancies/List.aspx?cid=1762
-STATUS 200 FINAL https://candidate.hr-manager.net/Vacancies/List.aspx?cid=1762
+SCRAPE Danmarks Radio
+OK listed=19 matched=1
 
-TYPE text/html; charset=utf-8
-TITLE Talentech - Vacant positions
-LINKS 2
-Register -> https://candidate.hr-manager.net/Agent/Subscription.aspx?cid=326&uiculture=en
-Sign in -> https://candidate.hr-manager.net/Login.aspx?customer=kimdemo&uiculture=en
-SCRIPTS https://consent.cookiebot.[REDACTED].js | https://consent.cookiebot.com/uc.js | https://candidate.hr-manager.net/Scripts/jQuery/jquery.js | https://candidate.hr-manager.net/Scripts/hrmanager-min.js?q=v3.38.1 | https://www.google-analytics.com/analytics.js | https://platform-api.sharethis.com/js/sharethis.js#property=66d16a4c05ca740019059b88&product=inline-share-buttons&source | https://kit.fontawesome.com/6c939bf83c.js | https://candidate.hr-manager.net/Scripts/jQuery/plugins/placeholder.js | https://candidate.hr-manager.net/Scripts/iframeResizer.contentWindow.min.js
-JSONLD 0
-TEXT Talentech - Vacant positions Warning Your browser is outdated. Get the best experience with speed, security and privacy by using the latest version of Chrome, Firefox, Microsoft Edge, Safari or Opera × Search/filter Department - Department - Location - Location - Select Select Category - Category - Select Select Vacant positions Welcome to our online Career Portal. Here you can submit an application for any of our vacancies, submit an unsolicited application or register to be notified about new openings. advertisement(s) We currently have no positions that match your selection. « Previous Page Next Page » If we currently have no vacancies of interest, please feel free to register your CV for future job opportunities. We currently have no positions that match your selection. Open application If we currently have no vacancies of interest, please feel free to register your CV for future job opportunities. JobAgent Do you wish to be informed about new positions in Register Sign in If you have already applied, you can update your details by signing in here. Sign in HR
+{
+ "listed": 19,
+ "jobs": [
+  {
+   "company": "Danmarks Radio",
+   "title": "Trafikvært (barselsvikariat)",
+   "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148652&DepartmentId=18960&MediaId=5",
+   "apply_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1165&ProjectId=148652&DepartmentId=18960&MediaId=5&SkipAdvertisement=true",
+   "location": "København",
+   "posted": "2026-09-11",
+   "deadline": "2026-09-27",
+   "description_md": "Kunne du tænke dig at hjælpe pendlerne sikkert frem på de danske veje? DR København søger en barselsvikar i rollen som trafikvært. Jobbet er for dig, der elsker hurtig formidling både på Danmarks største radiokanal - P4 - trafiksitet på dr.dk og TVA.\n\n**Om jobbet**\n\nP4 Trafik har i alt tre trafikcentre: Et i København, et i Odense og et i Aarhus. Under de regionale morgen- og eftermiddagsflader på P4 sender alle centrene trafikmeldinger fra deres område. Uden for myldretiden i hverdagene og hele weekenden bliver trafikmeldingerne over hele landet sendt fra centret i Trafiktårnet i København. Dine vagter bliver hovedsageligt – men ikke udelukkende – kl. 05-11 eller 12-18 på hverdage.\n\nSom trafikvært hos DR København vil du komme til at arbejde i Trafiktårnet i København, centralt placeret ved Dybbølsbro. Her vil du sidde tæt på medarbejderne i Vejdirektoratets Trafikcenter og i samarbejde med dem og de andre trafikværter sikre, at præcise trafikmeldinger sendes ud i hovedstadsområdet og resten af Danmark.\n\n**Din profil**\n\n* Du kan lide hurtig formidling på radio, tv og web\n* Du er god til at holde overblik, selv når der er travlt\n* Du er god til at samarbejde med andre – internt som eksternt\n* Du er en god kollega\n* Du er god til at kommunikere effektivt og professionelt både mundtligt og på skrift\n* Du har en troværdig og myndig stemme, der evner at signalere overblik uanset travlhed\n* Du har med fordel god geografisk forståelse og et kørekort\n* Du har med fordel erfaring med radiomediet\n\n**Vi tilbyder**\n\nEn tidsbegrænset stilling på 33 timer som barselsvikar fra december til juli måned.\n\nVi tilbyder et gennemgribende oplæringsforløb, så du føler dig godt rustet.\n\nTrafikredaktionen hos DR København er en stærk og selvkørende redaktion, hvor der er et godt sammenhold. Vi er i konstant udvikling og ikke én dag er ens. Der kan både være fart over feltet og mere stille timer, hvor der er rum til sparring og faglige diskussioner. Der er 5 fast tilknyttede trafikværter i Trafiktårnet og et større hold studentermedhjælpere. Vi sigter mod at besætte stillingen fra 1. december.\n\n**Kontakt**\n\nDR ønsker at afspejle samfundet. Derfor opfordrer vi alle uanset køn, alder, religion, handicap og etnisk baggrund til at søge.\n\nHvis du vil høre mere om stillingen så kontakt redaktionschef Morten Møbjerg på [mmz@dr.dk](mailto:mmz@dr.dk) eller trafikvært Mads Herholdt (kl. 10:30-18:00) på telefon 3520 6844.\n\nVi ser frem til at modtage din ansøgning, dit cv og relevante eksamenspapirer. Stillinger i DR søges udelukkende elektronisk. Du søger ved at klikke på ”Søg stillingen” i højre side.\n\nAnsøgningsfristen er søndag den 27. september og vi forventer at holde ansættelsessamtaler i uge 43.",
+   "source": "hrmanager",
+   "external_id": "148652",
+   "tags": [],
+   "id": "b88b051edd4f"
+  }
+ ]
+}

@@ -1,167 +1,22 @@
-POST https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
-STATUS 200 FINAL https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs
+SCRAPE A.P. Møller - Mærsk
+OK listed=8 matched=1
 
-JSON
 {
- "total": 8,
- "jobPostings": [
+ "listed": 8,
+ "jobs": [
   {
-   "title": "Customer Experience Associate (Recent Graduates)",
-   "externalPath": "[REDACTED]",
-   "timeType": "Full time",
-   "locationsText": "MX - Mexico City",
-   "postedOn": "Slået op for 17 dage siden",
-   "bulletFields": [
-    "R195384"
-   ]
-  },
-  {
-   "title": "Maersk SEED Internship 2026 - Second Intake",
-   "externalPath": "[REDACTED]",
-   "timeType": "Full time",
-   "locationsText": "Thailand, Bangkok, Bangkok, 10120",
-   "postedOn": "Slået op for 10 dage siden",
-   "bulletFields": [
-    "R191546"
-   ]
-  },
-  {
+   "company": "A.P. Møller - Mærsk",
    "title": "Audits and Investigation-Student Assistant (Early Careers)",
-   "externalPath": "[REDACTED]",
-   "timeType": "Part time",
-   "locationsText": "Denmark, Copenhagen, 1098",
-   "postedOn": "Slået op for 25 dage siden",
-   "bulletFields": [
-    "R194440"
-   ]
-  },
-  {
-   "title": "Lead Logistics – System Intern",
-   "externalPath": "[REDACTED]",
-   "timeType": "Full time",
-   "locationsText": "VNSGN16 - Ho Chi Minh City - Maersk Vietnam,Sofic tower",
-   "postedOn": "Slået op for 30 dage siden",
-   "bulletFields": [
-    "R195143"
-   ]
-  },
-  {
-   "title": "Cold Chain Logistics & Claims Customer Experience Intern",
-   "externalPath": "[REDACTED]",
-   "timeType": "Full time",
-   "locationsText": "2 steder",
-   "postedOn": "Slået op for 30 dage siden",
-   "bulletFields": [
-    "R193961"
-   ]
+   "url": "https://maersk.wd3.myworkdayjobs.[REDACTED]",
+   "apply_url": "https://maersk.wd3.myworkdayjobs.[REDACTED]",
+   "location": "Denmark, Copenhagen, 1098",
+   "posted": "2026-09-02",
+   "deadline": "",
+   "description_md": "You've seen us everywhere, from a road trip, passing over one of our trucks, to the biggest ports on the planet where we touch land to continue our journey All The Way to your front door. Now it's your chance to get to know us from within: a workplace full of warmth, friendship and support. We invite you to join our wonderful Audits & Investigation team and be part of our purpose: providing assurance to the AC and the Board of Directors and to strengthen A.P. Møller –Maersk’s ability to create, protect, and sustain value. If you are passionate about learning, understanding the world of governance, risk and controls, and have an appetite for generating analytic insights, this is for you!\n\n**We offer**\n\nAn opportunity to combine your studies with hands-on business experience. A strong platform for a future career. Working hours around 20 hours/week and based in Copenhagen\n\nWhen you join the Digital Excellence team within Audits & Investigation (A&I), you will become part of a team that excels for the quality of output, at a truly global company undergoing an exciting transformation. We offer flexibility to focus on lectures and exams, but the job also requires flexibility to commit more hours during peak periods.\n\n**Key Responsibilities**\n\nThe purpose of this role is to support A&I's transformation journey by helping embed digital solutions and AI-enabled ways of working across the function\n\nFurthermore, your key responsibilities will be:\n\n* Prototype AI capabilities that increases efficiency within A&I ways of working\n* Post prototyping based on feedback implement AI enabled ways of working.\n* Support with the digitization and automation of workflows within A&I.\n* Help transform raw data into actionable insights through structured analysis and visual storytelling.\n* Participate in audit/investigation-related engagement, especially those involving automation, analytics, or reporting.\n* Provide administrative and ad-hoc support to the A&I team as needed.\n\n**Who are you?**\n\n* You have recently started your master’s degree ( Sep 2026 intake) in Business Analytics, with a bachelors in Finance or Economics or a related field at a university in Denmark;\n* You are comfortable in using AI tools to design and implement AI-augmented workflows.\n* You are comfortable  working with data tools such as Power BI, Excel, and ideally some exposure to SQL, Python, or R.\n* Interested in how data, risk, and governance intersect in a global business environment\n* You are analytical, structured, and attentive to detail;\n* You bring a can-do attitude, intellectual curiosity, and the ability to learn quickly;\n* You are able to build strong professional relationships and thrive in a fast-paced environment;\n\nSince you are joining an international environment, your written and spoken English must be proficient. If you have been reading so far, we are glad to see you are interested! If you could see yourself in this role and are keen to be part of this journey at Maersk, we look forward to hearing from you!\n\nMaersk is committed to a diverse and inclusive workplace, and we embrace different styles of thinking. Maersk is an equal opportunities employer and welcomes applicants without regard to race, colour, gender, sex, age, religion, creed, national origin, ancestry, citizenship, marital status, sexual orientation, physical or mental disability, medical condition, pregnancy or parental leave, veteran status, gender identity, genetic information, or any other characteristic protected by applicable law. We will consider qualified applicants with criminal histories in a manner consistent with all legal requirements.\n\n \n\nWe are happy to support your need for any adjustments during the application and hiring process. If you need special assistance or an accommodation to use our website, apply for a position, or to perform a job, please contact us by emailing  [accommodationrequests@maersk.com](mailto:accommodationrequests@maersk.com).",
+   "source": "workday",
+   "external_id": "R194440",
+   "tags": [],
+   "id": "2d87d175ff97"
   }
- ],
- "facets": [
-  {
-   "facetParameter": "timeType",
-   "descriptor": "Fuldtid/deltid",
-   "values": [
-    {
-     "descriptor": "Full time",
-     "id": "a14634b7611b0137fe2ca232611a5900",
-     "count": 7
-    },
-    {
-     "descriptor": "Part time",
-     "id": "a14634b7611b011e4a13a232611a5800",
-     "count": 1
-    }
-   ]
-  },
-  {
-   "facetParameter": "workerSubType",
-   "descriptor": "Jobtype",
-   "values": [
-    {
-     "descriptor": "Fixed Term (tidsbegrænset ansættelse)",
-     "id": "51a22a099796018fc14d62d7691b8512",
-     "count": 6
-    },
-    {
-     "descriptor": "Local",
-     "id": "51a22a0997960160542762d7691b8412",
-     "count": 1
-    },
-    {
-     "descriptor": "Service Worker",
-     "id": "51a22a09979601e9fa5c41d7691bf311",
-     "count": 1
-    }
-   ]
-  },
-  {
-   "facetParameter": "jobFamilyGroup",
-   "descriptor": "Jobkategori",
-   "values": [
-    {
-     "descriptor": "Business Support",
-     "id": "56dbc69993671001ef27b0e5acb90000",
-     "count": 4
-    },
-    {
-     "descriptor": "Commercial",
-     "id": "0d1a9a0723441001ef289c7f000f0000",
-     "count": 1
-    },
-    {
-     "descriptor": "Operations - Service Delivery",
-     "id": "0dba1604be481001ef2794656fef0000",
-     "count": 2
-    },
-    {
-     "descriptor": "People",
-     "id": "56dbc69993671001ef27bff6c25c0000",
-     "count": 1
-    }
-   ]
-  },
-  {
-   "facetParameter": "locationMainGroup",
-   "values": [
-    {
-     "facetParameter": "locations",
-     "descriptor": "Steder",
-     "values": [
-      {
-       "descriptor": "CNSZH14 - Shenzhen - Warehouse No.2, No.3 District,Yantian Port, Yantian district, Shenzhen",
-       "id": "0a4542f6ab9010018e6a91a9d2740000",
-       "count": 1
-      },
-      {
-       "descriptor": "Croatia, Rijeka, 1351000",
-       "id": "15350d48499210009e2420743c660000",
-       "count": 1
-      },
-      {
-       "descriptor": "Denmark, Copenhagen, 1098",
-       "id": "d8801e5af43d10009e1db47c9a300000",
-       "count": 1
-      },
-      {
-       "descriptor": "MX - Mexico City",
-       "id": "4e4d26638c45010787a1f445d5520000",
-       "count": 1
-      },
-      {
-       "descriptor": "Panama, Panamá, Panama City",
-       "id": "7b88c76f001e10009e2a537a5aae0000",
-       "count": 1
-      },
-      {
-       "descriptor": "Thailand, Bangkok, Bangkok, 10120",
-       "id": "ddba4775944910009e3ef58678ba0000",
-       "count": 1
-      },
-      "... +3"
-     ]
-    }
-   ]
-  }
- ],
- "userAuthenticated": false
+ ]
 }

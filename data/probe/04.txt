@@ -1,199 +1,50 @@
-POST https://novonesis.wd103.myworkdayjobs.[REDACTED] {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
-STATUS 200 FINAL https://novonesis.wd103.myworkdayjobs.[REDACTED]
+SCRAPE Novonesis
+OK listed=18 matched=3
 
-JSON
 {
- "total": 18,
- "jobPostings": [
+ "listed": 18,
+ "jobs": [
   {
+   "company": "Novonesis",
    "title": "Studentermedhjælper til Customer Service & Logistics",
-   "externalPath": "[REDACTED]",
-   "locationsText": "Bagsværd",
-   "postedOn": "Slået op for 2 dage siden",
-   "bulletFields": [
-    "JR113391"
-   ]
+   "url": "https://novonesis.wd103.myworkdayjobs.[REDACTED]",
+   "apply_url": "https://novonesis.wd103.myworkdayjobs.[REDACTED]",
+   "location": "Bagsværd",
+   "posted": "2026-09-25",
+   "deadline": "",
+   "description_md": "**Interesseret i en karriere, der gør en forskel?**\n\n&#xa;\n\nVil du være en vigtig del af den daglige drift i en global virksomhed og samtidig opbygge værdifuld erfaring inden for administration, logistik og kundeservice? I Customer Service & Logistics bliver du en del af en afdeling med omkring 40 kolleger, som hver dag sikrer, at kunder over hele verden modtager deres produkter korrekt og til tiden.\n\n  \n\nSom studentermedhjælper kommer du til at arbejde tæt sammen med to andre studentermedhjælpere og kolleger på tværs af afdelingen. Sammen understøtter i de administrative processer, der er afgørende for pålidelige leverancer og en stærk kundeoplevelse.\n\n  \n\n**Rollen & dit bidrag**Som studentermedhjælper får du en vigtig operativ rolle, hvor du understøtter Customer Service & Logistics med administrative opgaver, dokumenthåndtering og koordinering. Du bliver en del af et team med højt fokus på kvalitet, service og samarbejde.\n\n  \n\n**Dine primære ansvarsområder i denne rolle**\n\n  \n\n* Udarbejde eksportdokumenter samt opdatere og vedligeholde forskellige dokumenter.\n* Håndtere og besvare generelle spørgsmål og opgaver fra interne interessenter via en fælles mailboks.\n* Indkøbe mindre kontorudstyr via en online platform.\n* Understøtte kolleger i Customer Service and Logistics med forskellige administrative ad hoc-opgaver.\n\n  \n\n**Hvad der skal til for, at du får succes i denne rolle**\n\nVi forestiller os, at du:\n\n  \n\n* Er i gang med første eller andet år af en bacheloruddannelse, gerne inden for logistik, Supply Chain Management eller en anden relevant uddannelse.\n* Taler og skriver flydende dansk.\n* Har gode engelskkundskaber, både skriftligt og mundtligt.\n* Har erfaring med Microsoft Office-pakken, herunder Excel, Word og PowerPoint.\n* Har evnen til hurtigt at sætte dig ind i nye administrative systemer og arbejdsprocesser.\n* Er struktureret, detaljeorienteret, og kan arbejde selvstændigt og tage ansvar for dine opgaver.\n* Er god til at kommunikere og samarbejde med forskellige interessenter.\n* Er resultatorienteret og kan håndtere flere opgaver og deadlines samtidigt.\n\n  \n\n**Andre færdigheder og interesser, som vi værdsætter**\n\nDet er en fordel, men ikke et krav, hvis du:\n\n  \n\n* Har interesse for logistik, supply chain eller international handel.\n* Har erfaring med Adobe-programmer.\n* Har tidligere erfaring fra et administrativt studiejob.\n* Trives med at identificere forbedringsmuligheder og tage initiativ til nye løsninger.\n\n**Det, vi kan tilbyde dig**Du får mulighed for at opbygge relevant erhvervserfaring ved siden af studiet og opnå værdifuld indsigt i kundeservice, logistik og supply chain-processer. Samtidig bliver du en del af et engageret og samarbejdsorienteret arbejdsmiljø, hvor ansvar, tillid og faglig udvikling er centrale værdier, og hvor du arbejder tæt sammen med kolleger på tværs af organisationen.\n\n  \n\n**Arbejdsforhold**Stillingen er på gennemsnitligt 10-15 timer om ugen, primært inden for almindelig kontortid. Arbejdsstedet er i Bagsværd, hvor fysisk fremmøde på kontoret er en forudsætning, da hjemmearbejde ikke er muligt i rollen. Der forventes gensidig fleksibilitet i forhold til arbejdsbelastning, eksamensperioder og deadlines. Arbejdet består af kontorbaserede administrative opgaver uden væsentlige fysiske krav og foregår i et professionelt arbejdsmiljø i Customer Service & Logistics.\n\n  \n\n**Ansøgningsfrist:** 7. oktober 2026. Vi indkalder til samtaler efter ansøgningsfristens udløb, og du kan derfor forvente at høre mere fra os efter denne dato.\n\n  \n\n**Kontaktperson:** Head of Shipping and Solutions EMA Maja Kiel på [MJK@novozymes.com](mailto:MJK@novozymes.com).\n\n**Vores formål viser vejen**\n\nI Novonesis ved vi, at løsninger forankret i biologi kan hjælpe med at løse verdens største udfordringer. Siden vi begyndte for mere end et århundrede siden, har dette været vores pejlemærke. Det er sådan, vi er nået så langt. Og det er sådan, vi vil påvirke fremtiden. Nu, mere end nogensinde, har verden brug for forandring. Og med biosolutions er mulighederne for transformation uendelige. Hvis vores formål giver mening for dig, opfordrer vi dig til at søge.\n\n**Muligheder for alle**\n\nVi er dedikerede til en inkluderende rekrutteringsproces og lige muligheder for alle ansøgere. Derfor beder vi dig om ikke at vedhæfte en ansøgning eller et foto og i stedet inkludere et par sætninger i dit CV, hvor du forklarer din motivation for at ansøge.\n\nVi træffer alle ansættelsesbeslutninger baseret på forretningsbehov og byder kandidater med en bred vifte af baggrunde velkommen, herunder etnicitet, religion, køn, seksuel orientering, alder, handicap eller veteranstatus.\n\n**Udforsk andre stillinger**\n\nHvis denne stilling ikke passer til dig, kan du stadig finde andre muligheder hos os. Du er velkommen til at udforske ledige stillinger eller oprette en jobagent for at holde dig opdateret om fremtidige muligheder på [novonesis.com/Career](http://novonesis.com/Career).",
+   "source": "workday",
+   "external_id": "JR113391",
+   "tags": [],
+   "id": "827d92935d54"
   },
   {
-   "title": "Auszubildende/r Industriekaufmann/-frau (m/f/d)",
-   "externalPath": "[REDACTED]",
-   "locationsText": "Nienburg",
-   "postedOn": "Slået op for 3 dage siden",
-   "bulletFields": [
-    "JR113127"
-   ]
-  },
-  {
+   "company": "Novonesis",
    "title": "Student Assistant for the Packaging and Packaging Waste Regulation Project",
-   "externalPath": "[REDACTED]",
-   "locationsText": "Lyngby",
-   "postedOn": "Slået op for 3 dage siden",
-   "bulletFields": [
-    "JR113386"
-   ]
+   "url": "https://novonesis.wd103.myworkdayjobs.[REDACTED]",
+   "apply_url": "https://novonesis.wd103.myworkdayjobs.[REDACTED]",
+   "location": "Lyngby",
+   "posted": "2026-09-24",
+   "deadline": "",
+   "description_md": "**Interesseret i en karriere, der gør en forskel?**\n\n&#xa;\n\nWould you like to help drive one of the most significant packaging regulations in Europe while gaining hands-on experience in global program and project management?\n\n  \n\nJoin the PPWR Team in Novonesis' Supply Chain organization and become part of a newly established team responsible for driving our global PPWR Program and supporting compliance with the EU Packaging and Packaging Waste Regulation. This is a unique opportunity to join a team at the beginning of an important journey, helping Novonesis prepare for a more sustainable packaging future.\n\n  \n\nToday, we are five colleagues representing four nationalities, and we are growing as the program moves into execution. We combine a structured PMO setup and strong project management framework with an open, curious, and pragmatic way of working, creating an environment where learning and collaboration are at the heart of everything we do.\n\n  \n\n**The role & your impact**As a Student Assistant in the PPWR Team, you will provide dedicated support to the PMO Manager and contribute to creating structure, transparency, and progress across a global transformation program.\n\nYou will gain valuable insight into how large-scale programs are managed while supporting projects that span multiple functions, stakeholders, and geographies across Novonesis.\n\n  \n\n**In this role, you will make an impact by:**\n\n  \n\n* Collecting, consolidating, and following up on project status updates, milestones, risks, actions, and decisions across the program.\n* Supporting financial tracking and reporting by gathering inputs, validating data quality, and preparing clear overviews for decision-making.\n* Preparing steering committee presentations, agendas, meeting materials, and other decision-support documentation.\n* Supporting program communication and helping ensure information is accurate, current, and accessible to stakeholders.\n* Providing day-to-day PMO support, including meeting documentation, action follow-up, coordination of inputs, and stakeholder communication.\n\n  \n\n**What you will need to be successful**We imagine that you are currently enrolled in a relevant higher-education program and are looking to gain practical experience within program management, business operations, finance, or supply chain.\n\n  \n\n**To succeed in this role, you bring:**\n\n  \n\n* Enrollment in a relevant degree program such as business administration, economics, finance, supply chain management, project management, communication, or a related field.\n* Strong analytical skills and an interest in understanding how projects, finances, compliance requirements, and business priorities connect.\n* Experience working with data and the ability to organize information, identify inconsistencies, and create structured overviews.\n* Good skills in Microsoft Excel and PowerPoint and professional written and spoken English.\n\n  \n\n**We are looking for someone who:**\n\n  \n\n* Is structured, detail-oriented, and comfortable working with multiple tasks and deadlines simultaneously.\n* Is proactive and able to work independently while knowing when to seek guidance and reliable and committed to delivering high-quality work with accuracy and attention to detail.\n\n  \n\n**While not required, it would be an advantage if you have:**\n\n  \n\n* Experience with Teams, SharePoint, or similar collaboration and documentation tools.\n* An interest in project management, PMO processes, compliance, or supply chain operations.\n* Experience supporting administrative, coordination, or back-office activities.\n* An interest in working across functions and engaging with stakeholders from different parts of the organization.\n* Curiosity about sustainability, packaging regulation, and business transformation initiatives.\n\n  \n\n**What we offer**You will become part of a purpose-driven company where biology powers solutions to some of the world's biggest challenges.\n\n  \n\n**In this role, you can expect:**\n\n  \n\n* A unique opportunity to join a newly established global program team and contribute to an important strategic initiative.\n* Hands-on experience with PMO disciplines, program governance, project reporting, stakeholder management, and business communication.\n* Close collaboration with experienced project and program professionals.\n* Exposure to senior stakeholders and cross-functional collaboration across Novonesis.\n* A supportive, international, and collaborative team environment with strong opportunities for learning and development.\n\n  \n\n**Ways of working**You will be based in Lyngby and working closely with the PPWR Team. Working arrangements can be agreed together with the hiring manager based on business needs and study commitments.\n\n  \n\n**Application deadline:** October 4th, 2026.We will screen in-coming applications and invite for interviews continuously during the application period, so please apply as soon as possible.\n\n**Contact information :** Jens Herping Ellegaard, Head of Global PPWR Strategy & Compliance at  [**JNHE@novonesis.com**](mailto:JNHE@novonesis.com)**.**\n\n**Vores formål viser vejen**\n\nI Novonesis ved vi, at løsninger forankret i biologi kan hjælpe med at løse verdens største udfordringer. Siden vi begyndte for mere end et århundrede siden, har dette været vores pejlemærke. Det er sådan, vi er nået så langt. Og det er sådan, vi vil påvirke fremtiden. Nu, mere end nogensinde, har verden brug for forandring. Og med biosolutions er mulighederne for transformation uendelige. Hvis vores formål giver mening for dig, opfordrer vi dig til at søge.\n\n**Muligheder for alle**\n\nVi er dedikerede til en inkluderende rekrutteringsproces og lige muligheder for alle ansøgere. Derfor beder vi dig om ikke at vedhæfte en ansøgning eller et foto og i stedet inkludere et par sætninger i dit CV, hvor du forklarer din motivation for at ansøge.\n\nVi træffer alle ansættelsesbeslutninger baseret på forretningsbehov og byder kandidater med en bred vifte af baggrunde velkommen, herunder etnicitet, religion, køn, seksuel orientering, alder, handicap eller veteranstatus.\n\n**Udforsk andre stillinger**\n\nHvis denne stilling ikke passer til dig, kan du stadig finde andre muligheder hos os. Du er velkommen til at udforske ledige stillinger eller oprette en jobagent for at holde dig opdateret om fremtidige muligheder på [novonesis.com/Career](http://novonesis.com/Career).",
+   "source": "workday",
+   "external_id": "JR113386",
+   "tags": [],
+   "id": "b4ef5ecbd1b5"
   },
   {
-   "title": "Manufacturing Operations Intern",
-   "externalPath": "[REDACTED]",
-   "locationsText": "New Berlin",
-   "postedOn": "Slået op for 5 dage siden",
-   "bulletFields": [
-    "JR113467"
-   ]
-  },
-  {
-   "title": "Manufacturing Training Intern",
-   "externalPath": "[REDACTED]",
-   "locationsText": "New Berlin",
-   "postedOn": "Slået op for 5 dage siden",
-   "bulletFields": [
-    "JR113466"
-   ]
+   "company": "Novonesis",
+   "title": "Student Assistant, Commercial Business Finance, Novonesis",
+   "url": "https://novonesis.wd103.myworkdayjobs.[REDACTED]",
+   "apply_url": "https://novonesis.wd103.myworkdayjobs.[REDACTED]",
+   "location": "Lyngby",
+   "posted": "2026-09-22",
+   "deadline": "",
+   "description_md": "**Interesseret i en karriere, der gør en forskel?**\n\n&#xa;\n\nDo you want to rethink your impact, and are you passionate about analytics and business finance?\n\nAt Novonesis, we believe biological solutions can help solve some of the world’s biggest challenges. As a Student Assistant in Commercial Business Finance, you will join an international team that drives value creation through financial insights, analytics, and strong business partnering. This is an exciting opportunity to gain hands-on experience, influence business decisions, and collaborate with stakeholders across a global organization while developing your finance toolkit.\n\n  \n\n**The Role & Your Impact**\n\nAs a Student Assistant, you will support financial processes and strategic decision-making across the business. You will work closely with finance\n\nprofessionals and commercial stakeholders, contributing analyses and recommendations that help drive performance and value creation. You will also gain exposure to senior leadership and participate in projects with real business impact.\n\n  \n\n**Your key responsibilities in this role:**\n\n* Support financial planning, forecasting, and business review processes.\n* Build analyses and generate insights for performance management.\n* Contribute to business cases and strategic initiatives.\n* Prepare presentations and decision-support materials for leadership teams.\n* Drive and support projects with meaningful business impact.\n* Collaborate with stakeholders across functions and geographies.\n\n  \n\n**What you'll need to be successful in this role**\n\nWe are looking for a motivated and analytical student who enjoys working with data, solving problems, and collaborating with others.\n\n  \n\n**Must-have qualifications:**\n\n* Currently pursuing a degree in Finance, Economics, Business Administration, or a related field.\n* In the second half of your Bachelor's degree or the first half of your Master's degree.\n* Strong analytical and structured approach to problem-solving.\n* Advanced Excel and PowerPoint skills.\n* Professional proficiency in written and spoken English.\n* Ability to take ownership, work proactively, and engage with stakeholders.\n\n  \n\n**Key competencies:**\n\n* Strong attention to detail.\n* Analytical mindset.\n* Structured way of working.\n* Curiosity and learning agility.\n* Collaboration and communication skills.\n\n  \n\n**Additional skills & interests we value**\n\nWhile not required, the following qualifications will help you succeed and grow in the role:\n\n* Experience with data management, visualization, or ETL tools such as SAP, Tableau, or KNIME.\n* Interest in financial analysis and commercial business partnering.\n* Curiosity and eagerness to learn in a dynamic environment.\n* Strong collaboration skills across functions and cultures.\n* Interest in sustainability, biotechnology, and biosolutions.\n\n  \n\n**What We Offer**\n\nAt Novonesis, you will join a collaborative and purpose-driven environment where learning and development are an integral part of everyday work. You will gain hands-on experience with core Business Finance processes and real business challenges while working alongside experienced colleagues and senior stakeholders.\n\nThe role offers significant exposure to global collaboration and the opportunity to apply your financial toolbox to real-life business situations. You will become part of a supportive team focused on development, knowledge sharing, and creating value together. The position is expected to be approximately 15-20 hours per week and may offer future opportunities for full-time employment upon completion of your studies.\n\n  \n\n**Ways of Working / Working Conditions**\n\nThis student position offers flexibility to accommodate your studies while providing meaningful professional experience. The role is based in Lyngby, Denmark, and includes collaboration with colleagues and stakeholders across global teams.\n\nHybrid working arrangements can be accommodated based on team needs. You should enjoy working in a dynamic and international environment where\n\npriorities may change and where project-based work creates opportunities for continuous learning and development.\n\n  \n\n**Relevant information**\n\nAs part of your application, we kindly ask you to upload your academic transcript. We encourage applicants to apply without a cover letter or photo. Instead, please include a few lines in your CV explaining your motivation\n\nfor applying and what interests you about the role.\n\n  \n\n**Location:** Lyngby, Denmark\n\n**Application deadline:** 2 October 2026\n\n**Contact information:** For more information, please contact Senior Manager, Business Finance, Mads Lagoni at [MADPE@novonesis.com](mailto:MADPE@novonesis.com)\n\n  \n\n**Vores formål viser vejen**\n\nI Novonesis ved vi, at løsninger forankret i biologi kan hjælpe med at løse verdens største udfordringer. Siden vi begyndte for mere end et århundrede siden, har dette været vores pejlemærke. Det er sådan, vi er nået så langt. Og det er sådan, vi vil påvirke fremtiden. Nu, mere end nogensinde, har verden brug for forandring. Og med biosolutions er mulighederne for transformation uendelige. Hvis vores formål giver mening for dig, opfordrer vi dig til at søge.\n\n**Muligheder for alle**\n\nVi er dedikerede til en inkluderende rekrutteringsproces og lige muligheder for alle ansøgere. Derfor beder vi dig om ikke at vedhæfte en ansøgning eller et foto og i stedet inkludere et par sætninger i dit CV, hvor du forklarer din motivation for at ansøge.\n\nVi træffer alle ansættelsesbeslutninger baseret på forretningsbehov og byder kandidater med en bred vifte af baggrunde velkommen, herunder etnicitet, religion, køn, seksuel orientering, alder, handicap eller veteranstatus.\n\n**Udforsk andre stillinger**\n\nHvis denne stilling ikke passer til dig, kan du stadig finde andre muligheder hos os. Du er velkommen til at udforske ledige stillinger eller oprette en jobagent for at holde dig opdateret om fremtidige muligheder på [novonesis.com/Career](http://novonesis.com/Career).",
+   "source": "workday",
+   "external_id": "JR113280",
+   "tags": [],
+   "id": "4ca0d0e5e682"
   }
- ],
- "facets": [
-  {
-   "facetParameter": "Country",
-   "descriptor": "Country",
-   "values": [
-    {
-     "descriptor": "USA",
-     "id": "bc33aa3152ec42d4995f4791a106ed09",
-     "count": 7
-    },
-    {
-     "descriptor": "Danmark",
-     "id": "49ab063f422741e2aef271de00efeac8",
-     "count": 4
-    },
-    {
-     "descriptor": "Tyskland",
-     "id": "dcc5b7608d8644b3a93716604e78e995",
-     "count": 3
-    },
-    {
-     "descriptor": "Brasilien",
-     "id": "1a29bb1357b240ab99a2fa755cc87c0e",
-     "count": 3
-    },
-    {
-     "descriptor": "Japan",
-     "id": "8b705da2becf43cfaccc091da0988ab2",
-     "count": 1
-    }
-   ]
-  },
-  {
-   "facetParameter": "jobFamily1",
-   "descriptor": "Jobfamilie",
-   "values": [
-    {
-     "descriptor": "Student/Trainee",
-     "id": "23e780dff0391000958d1553e5070000",
-     "count": 10
-    },
-    {
-     "descriptor": "Externals and Consultants",
-     "id": "23e780dff0391000958d15ed83ac0000",
-     "count": 7
-    },
-    {
-     "descriptor": "Sales Support",
-     "id": "23e780dff0391000958d318bd0930001",
-     "count": 1
-    }
-   ]
-  },
-  {
-   "facetParameter": "jobFamily",
-   "descriptor": "Jobkategori",
-   "values": [
-    {
-     "descriptor": "General Management & Administration",
-     "id": "23e780dff039100095f5fedacb400000",
-     "count": 17
-    },
-    {
-     "descriptor": "Commercial",
-     "id": "23e780dff039100095f5f8da24410001",
-     "count": 1
-    }
-   ]
-  },
-  {
-   "facetParameter": "timeType",
-   "descriptor": "Tidstype",
-   "values": [
-    {
-     "descriptor": "Fuldtid",
-     "id": "cf171b111ba11006e19b303e39480000",
-     "count": 13
-    },
-    {
-     "descriptor": "Part time",
-     "id": "cf171b111ba11006e19b2fa498490000",
-     "count": 5
-    }
-   ]
-  },
-  {
-   "facetParameter": "remoteType",
-   "descriptor": "Type af fjernarbejde",
-   "values": [
-    {
-     "descriptor": "Nej",
-     "id": "23e780dff0391000e3c6372495bc0000",
-     "count": 14
-    },
-    {
-     "descriptor": "Hybrid",
-     "id": "7433e3b431371010d2700d04232b0000",
-     "count": 2
-    }
-   ]
-  },
-  {
-   "facetParameter": "locationMainGroup",
-   "values": [
-    {
-     "facetParameter": "locations",
-     "descriptor": "Steder",
-     "values": [
-      {
-       "descriptor": "Araucária - PR",
-       "id": "cf171b111ba1100782c99e0015570000",
-       "count": 3
-      },
-      {
-       "descriptor": "Avedøre",
-       "id": "592f50c6cbb710012b89db1eb4be0000",
-       "count": 1
-      },
-      {
-       "descriptor": "Bagsværd",
-       "id": "cf171b111ba1100782c912cba35f0000",
-       "count": 2
-      },
-      {
-       "descriptor": "Bagsværd",
-       "id": "cf171b111ba1100782c9b5ff8e5f0000",
-       "count": 1
-      },
-      {
-       "descriptor": "Blair",
-       "id": "cf171b111ba1100782c900cc038a0000",
-       "count": 1
-      },
-      {
-       "descriptor": "Franklinton",
-       "id": "cf171b111ba1100782c9bf999fa80000",
-       "count": 3
-      },
-      "... +17"
-     ]
-    }
-   ]
-  }
- ],
- "userAuthenticated": false
+ ]
 }

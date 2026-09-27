@@ -1,79 +1,74 @@
-GET https://www.nykredit.com/karriere/stillinger/
-STATUS 200 FINAL https://www.nykredit.com/karriere/stillinger/
+GET https://gcsservices.careers.microsoft.com/search/api/v1/search?lc=Denmark&q=student&pgSz=5
+ERROR SSLError: HTTPSConnectionPool(host='gcsservices.careers.microsoft.com', port=443): Max retries exceeded with url: /search/api/v1/search?lc=Denmark&q=student&pgSz=5 (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gcsservices.careers.microsoft.com'. (_ssl.c:1010)")))
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 470, in _make_request
+    self._validate_conn(conn)
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1125, in _validate_conn
+    conn.connect()
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/urllib3/connection.py", line 878, in connect
+    wrapped_socket, is_verified = _ssl_wrap_socket_and_match_hostname(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/urllib3/connection.py", line 1080, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 437, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 481, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gcsservices.careers.microsoft.com'. (_ssl.c:1010)
 
-TYPE text/html; charset=utf-8
-TITLE Ledige stillinger
-LINKS 70
-Nykredit.com -> https://www.nykredit.com/
-Investor Relations -> https://www.nykredit.com/en-gb/investor-relations/
-Presse -> https://www.nykredit.com/presse-og-nyheder/
-Karriere -> https://www.nykredit.com/karriere/
-Samfundsansvar -> https://www.nykredit.com/samfundsansvar/udviklingiheledk/
-Om os -> https://www.nykredit.com/om-os/
-Karriere -> https://www.nykredit.com/karriere/
-Ledige stillinger -> https://www.nykredit.com/karriere/stillinger/
-Vores arbejdsplads -> https://www.nykredit.com/karriere/vores-arbejdsplads/
-Arkiv -> https://www.nykredit.com/filarkiv/
-Nykredit.com -> https://www.nykredit.com/
-Investor Relations -> https://www.nykredit.com/en-gb/investor-relations/
-Presse -> https://www.nykredit.com/presse-og-nyheder/
-Samfundsansvar -> https://www.nykredit.com/samfundsansvar/udviklingiheledk/
-Om os -> https://www.nykredit.com/om-os/
-Karriere -> https://www.nykredit.com/karriere/
-Ledige stillinger -> https://www.nykredit.com/karriere/stillinger/
-Vores arbejdsplads -> https://www.nykredit.com/karriere/vores-arbejdsplads/
-Nykredit.com -> https://www.nykredit.com/
-Karriere -> https://www.nykredit.com/karriere/
-Ledige stillinger -> https://www.nykredit.com/karriere/stillinger/
-nytjob@nykredit.dk -> mailto:nytjob@nykredit.dk
-Din finanskarriere i Nykredit-koncernen Bliv finansbachelor- eller finansøkonompraktikant  -> https://www.nykredit.[REDACTED]
-Bliv graduate i Nykredit-koncernen Nykredit-koncernens graduateprogrammer er det oplagte v -> https://www.nykredit.com/karriere/bliv-graduate-i-nykredit/
-Indblik i processen Hvad sker der efter, at du har sendt os din ansøgning og dit CV? Ansæt -> https://www.nykredit.com/karriere/ansattelsesproces/
-Se på kort -> https://www.nykredit.dk/find-nykredit/
-Jeg vil gerne kontaktes -> https://www.nykredit.[REDACTED]
-(+45) 70 10 90 00 -> tel:+4570109000
-Tilmeld Nyhedsbrev -> https://www.nykredit.dk/nyhedsbreve/
-70 10 90 00 -> tel:+4570109000
-Kundeservice - Privat -> https://www.nykredit.dk/dit-liv/kundeservice-privat/?q=
-Kundeservice - Erhverv -> https://www.nykredit.dk/din-virksomhed/kundeservice-erhverv/?q=
-Klager, ros og ris -> https://www.nykredit.dk/kundeservice/ris-og-ros/
-Nyhedsbreve -> https://www.nykredit.dk/nyhedsbreve/
-Personoplysninger og cookies -> https://www.nykredit.com/personoplysninger-og-cookies/
-Tilgængelighedserklæring -> https://www.nykredit.com/tilgangelighedserklaring---nykredit.com
-Investor Relations (English) -> https://www.nykredit.com/en-gb/investor-relations/
-Presse -> https://www.nykredit.com/presse-og-nyheder/
-Karriere -> https://www.nykredit.com/karriere/
-Samfundsansvar -> https://www.nykredit.com/samfundsansvar/udviklingiheledk/
-Code of Conduct -> https://www.nykredit.com/globalassets/nykredit.[REDACTED].pdf
-Om os -> https://www.nykredit.com/om-os/
-Finanstilsynet -> https://www.nykredit.[REDACTED]
-Nykredit.dk -> https://www.nykredit.dk/dit-liv/
-Nykredit Invest -> https://www.nykreditinvest.dk/
-Markets -> https://www.nykredit.dk/cib/nykredit-markets/
-Markets (English) -> https://www.nykredit.dk/en-gb/cib/nykredit-markets/
-Asset Management (English) -> https://www.nykredit.[REDACTED]
-International Lending (English) -> https://www.nykredit.[REDACTED]
-Forenet Kredit -> http://www.forenetkredit.dk/
-Kundeservice - Privat -> https://www.nykredit.dk/dit-liv/kundeservice-privat/?q=
-Kundeservice - Erhverv -> https://www.nykredit.dk/din-virksomhed/kundeservice-erhverv/?q=
-Klager, ros og ris -> https://www.nykredit.dk/kundeservice/ris-og-ros/
-Nyhedsbreve -> https://www.nykredit.dk/nyhedsbreve/
-Personoplysninger og cookies -> https://www.nykredit.com/personoplysninger-og-cookies/
-Tilgængelighedserklæring -> https://www.nykredit.com/tilgangelighedserklaring---nykredit.com
-Nykredit.dk -> https://www.nykredit.dk/dit-liv/
-Nykredit Invest -> https://www.nykreditinvest.dk/
-Markets -> https://www.nykredit.dk/cib/nykredit-markets/
-Markets (English) -> https://www.nykredit.dk/en-gb/cib/nykredit-markets/
-Asset Management (English) -> https://www.nykredit.[REDACTED]
-International Lending (English) -> https://www.nykredit.[REDACTED]
-Forenet Kredit -> http://www.forenetkredit.dk/
-Investor Relations (English) -> https://www.nykredit.com/en-gb/investor-relations/
-Presse -> https://www.nykredit.com/presse-og-nyheder/
-Karriere -> https://www.nykredit.com/karriere/
-Samfundsansvar -> https://www.nykredit.com/samfundsansvar/udviklingiheledk/
-Code of Conduct -> https://www.nykredit.com/globalassets/nykredit.[REDACTED].pdf
-Om os -> https://www.nykredit.com/om-os/
-Finanstilsynet -> https://www.nykredit.[REDACTED]
-SCRIPTS https://policy.app.cookieinformation.com/uc.js | [REDACTED].js | /Content/v-639257453140000000/app.min.js | /Content/v-639257453140000000/tk-glide.min.js | /Util/Find/epi-util/find.js
-JSONLD 0
-TEXT Ledige stillinger * c-question c question 887625C2-7BF1-4000-B4A3-B26DC9267EA1@3x 2F9E87B5-5CC3-4957-855A-0368FBC07B2C@1x Group 13 - Group 13 - Group 13 + Group 13 + c-question flag-en Stroke 1 Stroke 1 Nykredit.com Investor Relations Presse Karriere Samfundsansvar Om os EN DA Karriere Ledige stillinger Vores arbejdsplads Søg Arkiv EN Karriere Nykredit.com Investor Relations Presse Samfundsansvar Om os Karriere Ledige stillinger Vores arbejdsplads Karriere Ledige stillinger Vores arbejdsplads EN DA ... Nykredit.com Karriere Ledige stillinger Ledige stillinger Vil du være en del af os - Danmarks eneste foreningsejede finansielle virksomhed? Så tjek vores ledige stillinger. Måske finder du dit drømmejob hos os! Har du spørgsmål? Du er altid velkommen til at kontakte rekrutteringsteamet på nytjob@nykredit.dk . Din finanskarriere i Nykredit-koncernen Bliv finansbachelor- eller finansøkonompraktikant i Nykredit-koncernen. Læs mere om vores uddannelsesforløb, der giver dig mulighed for at omsætte teori til praksis. Bliv finanspraktikant Bliv graduate i Nykredit-koncernen Nykredit-koncernens graduateprogrammer er det oplagte valg for dig, der har ambitioner og er villig til at yde en ekstra indsats for vores kunder. Graduate i Nykredit Indblik i processen Hvad sker der efter, at du har sendt os din ansøgning og dit CV? Ansættelsesproces Lad os hjælpe dig i gang – og godt videre Hjælp og support Søg Søg Find os Vi har lokalbanker fordelt over hele landet. Find lokalbankerne, og se åbningstider her. Se på kort Skriv til os Hvis du har behov for rådgivning så udfyld vores kontaktformular. Jeg vil gerne kontaktes Ring til os Du kan ringe mandag-fredag: Kl. 08.00-20.00 og lørdag-søndag: Kl. 10.00-15.00. (+45) 70 10 90 00 Hold dig opdateret Tilmeld dig vores nyhedsbreve. Så får du løbende aktuelle nyheder, videoer og podcasts om, hvad der sker på bolig- og finansmarkederne, og hvordan det kan påvirke din bolig, økonomi, formue og opsparing. Tilmeld Nyhedsbrev Nykredit Sundkrogsgade 25 2150 Nordhavn 70 10 90 00 Kundeservice Kundeservice - Privat Kundeservice - Erhverv Klager, ros og ris Nyhedsbreve Personoplysninger og cookies Tilgængelighedserklæring Corporate Investor Relations (English) Presse Karriere Samfundsansvar Code of Conduct Om os Finanstilsynet Andre sites Nykredit.dk Nykredit Invest Markets Markets (English) Asset Management (English) International Lending (English) Forenet Kredit Kundeservice Kundeservice - Privat Kundeservice - Erhverv Klager, ros og ris Nyhedsbreve Personoplysninger og cookies Tilgængelighedserklæring Andre sites Nykredit.dk Nykredit Invest Markets Markets (English) Asset Management (English) International Lending (English) Forenet Kredit Corporate Investor Relations (English) Presse Karriere Samfundsansvar Code of Conduct Om os Finanstilsynet
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 494, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gcsservices.careers.microsoft.com'. (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/urllib3/util/retry.py", line 555, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='gcsservices.careers.microsoft.com', port=443): Max retries exceeded with url: /search/api/v1/search?lc=Denmark&q=student&pgSz=5 (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gcsservices.careers.microsoft.com'. (_ssl.c:1010)")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/job-scraper/job-scraper/scraper/probe.py", line 85, in <module>
+    r = http(parts[0], parts[1], **kw)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 39, in http
+    raise last  # type: ignore[misc]
+    ^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 29, in http
+    r = _session.request(method, url, **kw)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/requests/adapters.py", line 727, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='gcsservices.careers.microsoft.com', port=443): Max retries exceeded with url: /search/api/v1/search?lc=Denmark&q=student&pgSz=5 (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gcsservices.careers.microsoft.com'. (_ssl.c:1010)")))
+

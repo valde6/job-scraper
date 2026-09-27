@@ -1,28 +1,21 @@
-01 200 3564B | POST https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
-02 200 3389B | POST https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
-03 200 2432B | POST https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
-04 200 4692B | POST https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Novonesis_Careers/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
-05 200 2244B | POST https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student Denmark"}
-06 200 6931B | GET https://api.smartrecruiters.com/v1/companies/Netcompany1/postings?country=dk&limit=5
-07 200 15960B | GET https://api.smartrecruiters.com/v1/companies/Ramboll3/postings?country=dk&limit=5
-08 200 53095B | GET https://danskindustri.teamtailor.com/jobs.rss
-09 200 216916B | GET https://api.hr-manager.net/jobportal.svc/danmarksradio/positionlist/json/?incads=1
-10 200 248316B | GET https://api.hr-manager.net/jobportal.svc/kpmg/positionlist/json/?incads=1
-11 200 463544B | GET https://candidate.hr-manager.net/Vacancies/List.aspx?cid=1762
-12 200 50698B | GET https://www.amazon.jobs/en/search.json?normalized_country_code[]=DNK&result_limit=5
-13 ERR HTTPError: 403 Client Error: Forbidden for url: https://apply.careers.microsoft.com/api/apply/v2/jobs?domain=microsoft.com&location | GET https://apply.careers.microsoft.com/api/apply/v2/jobs?domain=microsoft.com&location=Denmark&num=5
-14 200 169157B | GET https://bcg.eightfold.ai/api/apply/v2/jobs?domain=bcg.com&location=Copenhagen&num=5
-15 200 159199B | GET https://careers.ey.com/search/?q=student&locationsearch=Denmark
-16 200 256254B | GET https://careers.vestas.com/search/?q=student&locationsearch=Denmark
-17 200 261994B | GET https://careers.pandoragroup.com/jobs
-18 200 162384B | GET https://orsted.com/en/careers/locations/denmark
-19 200 196737B | GET https://www.nykredit.com/karriere/stillinger/
-20 200 100348B | GET https://danskebank.com/careers
-21 200 266010B | GET https://jobs.ikea.com/da/soeg-jobs/Danmark/
-22 200 46543B | GET https://career2.successfactors.eu/career?company=novonordisk&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=en_GB
-23 200 206414B | GET https://career2.successfactors.eu/career?company=pfapensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK
-24 200 95056B | GET https://jobs.arla.com/global/en/search-results?keywords=student
-25 ERR ReadTimeout: HTTPSConnectionPool(host='mckapi.mckinsey.com', port=443): Read timed out. (read timeout=25) | GET https://mckapi.mckinsey.com/api/jobsearch?pageSize=5&start=1&cities=Copenhagen
-26 200 41811B | GET https://www.jobindex.dk/jobsoegning.rss?q=studentermedhj%C3%A6lper
-27 200 537890B | GET https://sallinggroup.com/job/
-28 200 66938B | GET https://danskecommodities.com/join-us/vacancies
+01 OK listed=8 matched=1 | SCRAPE A.P. Møller - Mærsk
+02 OK listed=38 matched=7 | SCRAPE LEGO Group
+03 OK listed=6 matched=0 | SCRAPE Saxo Bank
+04 OK listed=18 matched=3 | SCRAPE Novonesis
+05 OK listed=1 matched=1 | SCRAPE Accenture
+06 OK listed=36 matched=5 | SCRAPE Netcompany
+07 OK listed=54 matched=0 | SCRAPE Rambøll
+08 OK listed=12 matched=0 | SCRAPE PA Consulting Group
+09 OK listed=8 matched=3 | SCRAPE Dansk Industri
+10 OK listed=2 matched=0 | SCRAPE Danske Commodities
+11 OK listed=19 matched=1 | SCRAPE Danmarks Radio
+12 OK listed=20 matched=1 | SCRAPE KPMG
+13 OK listed=6 matched=0 | SCRAPE Amazon
+14 OK listed=5 matched=0 | SCRAPE Boston Consulting Group (BCG)
+15 OK listed=0 matched=0 | SCRAPE EY
+16 OK listed=5 matched=0 | SCRAPE Vestas
+17 OK listed=10 matched=0 | SCRAPE Arla Foods
+18 OK listed=28 matched=0 | SCRAPE IKEA
+19 ERR SSLError: HTTPSConnectionPool(host='gcsservices.careers.microsoft.com', port=443): Max retries exceeded with url: /search/api/v1/s | GET https://gcsservices.careers.microsoft.com/search/api/v1/search?lc=Denmark&q=student&pgSz=5
+20 ERR HTTPError: 400 Client Error: Bad Request for url: https://api.hr-manager.net/jobportal.svc/bangolufsen/positionlist/json/?incads=1 | GET https://api.hr-manager.net/jobportal.svc/bangolufsen/positionlist/json/?incads=1
+21 200 1148079B | GET https://jobs.ikea.com/da/soeg-jobs/student/Danmark/

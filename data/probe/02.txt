@@ -1,204 +1,85 @@
-POST https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
-STATUS 200 FINAL https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs
+SCRAPE LEGO Group
+OK listed=38 matched=7
 
-JSON
 {
- "total": 38,
- "jobPostings": [
+ "listed": 38,
+ "jobs": [
   {
-   "title": "Student worker",
-   "externalPath": "/job/Shanghai/Student-worker_0000038302",
-   "postedOn": "Slået op for 3 dage siden",
-   "bulletFields": [
-    "Shanghai",
-    "0000038302"
-   ]
+   "company": "LEGO Group",
+   "title": "Student Worker, Product Licensing",
+   "url": "https://lego.wd103.myworkdayjobs.[REDACTED]",
+   "apply_url": "https://lego.wd103.myworkdayjobs.[REDACTED]",
+   "location": "Billund",
+   "posted": "2026-08-24",
+   "deadline": "",
+   "description_md": "**Job Description**\n\n**Are you interested in learning and contributing to the licensed consumer products division for one of the most trusted brands in the world?**   \n*Join us as an intern and help deliver sustainable licensing & consumer product solutions through global brand collaborations which are both experience and product focused.*\n\n**Core Responsibilities**\n\n* Work creatively with licensees to build product portfolios that meet the requirements of our LEGO owned channels (i.e. LEGO.com, LEGO Stores, Merlin/LEGOLAND).\n* Support LEGO’s brand values and sustainability journey through licensee pipeline management & strategic assortment definition always grounded on insights.\n* Deliver excellence in contract negotiations, forecasting and product portfolio management.\n* Engage partners with clear strategic, creative and brand direction.\n* Collaborate with internal & external stakeholders to bring to life strategies from a top line vision to day-to-day operations.\n* Work closely with internal stakeholders to deliver against business plans and activate according to the brand’s KPI’s and strategic tentpoles.\n* This role can be located in Billund DK, or London, UK, or Boston, MA USA.\n* We are working in a hybrid schedule which means in the office three days a week and two days remote.\n\n**Play your part in our team succeeding**  \nPlay your part in our team succeeding The Outbound Licensing (OBL) team, contributes by delivering a sustainable licensed consumer products program ensuring the direction taken is anchored in our consumer promise and brand vision of learning through play. This role will entail extending the LEGO brick and digital play into new sustainable categories, partnerships and experiences that celebrates playful creativity and inspires people across consumer categories, and enables the LEGO brand love to extend beyond the brick.\n\n**Do you have what it takes?**\n\n* It's a requirement that you are enrolled in a University program within Business or something similar\n* ​Proficient in writing and speaking English.\n* In-depth experience at a leading brand (as a licensor) delivering global/regional licensee partnership base.\n* A sustainability journey within your current licensing role is essential.\n* Capacity to balance a diverse role with a passion for delivering products, negotiations and storytelling all aligned with our strategy.\n* Experienced in consumer products licensing.\n* A natural collaborator and relationship builder with ability to present with confidence.\n* Balanced brand vs. business decision making with a focus on ROI (return on investment) and OES (owned, earned, shared) value generation.\n* Strong communication skills (externally and across the organization).\n* Problem solver and interest in licensing both through product licensing, publishing and branded partnerships.\n* Able to prioritize key initiatives and able to support a growing portfolio through submissions, reports, research and furthering the agenda of licensing within the LEGO group.\n* Able to be a self-starter and work independently based on key deliverables outlined for the licensing business.\n* Able to work cross functionally across a diverse group of enabling and supporting functions, both internally and externally.\n* Strong financial understanding to articulate the partner business needs to internal stakeholders.\n* Strong system understanding (Adjuno – to be taught).\n* Xcel skills, powerpoint, data analysis and market place reporting.\n\nApplications are reviewed on an ongoing basis. However, please note we do amend or withdraw our jobs and reserve the right to do so at any time, including prior to any advertised closing date. So, if you're interested in this role we encourage you to apply as soon as possible.\n\n**What’s in it for you?**\n\nHere is what you can expect:\n\n**Family Care Leave** - We offer enhanced paid leave options for those important times.\n\n**Insurances** – All colleagues are covered by our life and disability insurance which provides protection and peace of mind.\n\n**Wellbeing** - We want our people to feel well and thrive. We offer resources and benefits to nurture physical and mental wellbeing along with opportunities to build community and inspire creativity.\n\n**Colleague Discount** – We know you'll love to build, so from day 1 you will qualify for our generous colleague discount.\n\n**Bonus** - We do our best work to succeed together. When goals are reached and if eligible, you'll be rewarded through our bonus scheme.\n\n**Workplace** - When you join the team you'll be assigned a primary workplace location i.e. one of our Offices, stores or factories. Our hybrid work policy means an average of 3 days per week in the office. The hiring team will discuss the policy and role eligibility with you during the recruitment process.\n\nChildren are our role models. Their curiosity, creativity and imagination inspire everything we do. We strive to create a diverse, dynamic and inclusive culture of play at the LEGO Group, where everyone feels safe, valued and they belong.\n\nThe LEGO Group is highly committed to equal employment opportunity and equal pay and seeks to encourage applicants from all backgrounds (eg. sex, gender identity or expression, race/ethnicity, national origin, sexual orientation, disability, age and religion) to apply for roles in our team.\n\nThe LEGO Group is fully committed to Children’s Rights and Child Wellbeing across the globe. Candidates offered positions with high engagement with children are required to take part in Child Safeguarding Background Screening, as a condition of the offer.\n\nThank you for sharing our global commitment to Children’s Rights.\n\nJust imagine building your dream career.\n\nThen make it real.\n\n**Join the LEGO® team today.**",
+   "source": "workday",
+   "external_id": "0000037165",
+   "tags": [],
+   "id": "89098005a78b"
   },
   {
-   "title": "student worker",
-   "externalPath": "/job/Shanghai/student-worker_0000038303",
-   "postedOn": "Slået op for 3 dage siden",
-   "bulletFields": [
-    "Shanghai",
-    "0000038303"
-   ]
+   "company": "LEGO Group",
+   "title": "Student Worker - Technical Operations",
+   "url": "https://lego.wd103.myworkdayjobs.[REDACTED]",
+   "apply_url": "https://lego.wd103.myworkdayjobs.[REDACTED]",
+   "location": "Billund",
+   "posted": "2026-09-22",
+   "deadline": "",
+   "description_md": "**Job Description**\n\nAs a Tech Ops Student Worker, you will play a crucial role in maintaining, tracking, and optimizing hardware and software resources across LEGO Game.\n\n  \n\nYou will ensure that all teams have the necessary tools, access, and infrastructure to work efficiently.\n\n  \n\n**Core Responsibilities** \n\n* Assist with day-to-day operations within the respective department and team\n* Support team members on ongoing projects by conducting research, data analysis, and compiling reports\n* Participate in team meetings and contribute ideas for improvement\n* Help create and maintain documentation for processes and procedures\n* Collaborate with other interns and staff to complete assigned tasks and projects\n* Perform administrative tasks as needed to support team objectives\n\n  \n\n* *Maintaining, cataloging, and documenting hardware and software used across LEGO Game teams.*\n\n* *Ensuring all team members have access to the platforms, tools, and environments they need.*\n\n* *Setting up and managing software licenses, permissions, and configurations.*\n\n* *Liaising with internal IT teams to facilitate smooth operations and resolve technical issues.*\n\n* *Monitoring and improving development workflows, deployment processes, and system performance.*\n\n* *Assisting in automating and optimizing infrastructure and development environments.*\n\n* *Supporting onboarding processes by ensuring new employees have the necessary tools and access.*\n\n* *Keeping track of emerging technologies and best practices to improve efficiency and security.*\n\n## \n\n## Play your part in our team succeeding\n\n  \n\n*LEGO Game is growing rapidbly, expanding teams and team members as well as our portfolio of hard-software and infrastructure.* \n\n  \n\n*You will be the fountain of knowledge and the clutch power that ensures we all aim for a uniform approach across the department.* \n\n  \n\n**Do you have what it takes?** \n\n*A student of Computer Science, IT, Software Engineering, or a related field (or equivalent experience).* \n\n  \n\n* Basic knowledge of DevOps practices, IT administration, or system management.\n\n* Familiarity with cloud platforms is a plus.\n\n* Some experience with scripting is beneficial but not required.\n\n* A structured and detail-oriented mindset for tracking and managing software and hardware resources.\n\n* Strong problem-solving skills and a proactive approach to troubleshooting.\n\n  \n\n* Excellent communication and collaboration skills to work effectively with IT and game development teams.\n\n* A passion for gaming and an interest in the gaming industry is a bonus!\n\n* Knowledge of Atlassian Software, JIRA/CONFLUENCE\n* *Danish and English at C1-C2 levels*\n\n  \n\n**Join the global LEGO family** \n\nThe LEGO® Group recruits and develops people entirely on merit.  If you are confident you have what it takes to succeed in this role – and you share our commitment to creativity, collaboration, and quality – use the APPLY NOW button above or below.  Please remember to attach your application and current CV. \n\nApplications are reviewed on an ongoing basis. However, please note we do amend or withdraw our jobs and reserve the right to do so at any time, including prior to any advertised closing date. So, if you're interested in this role we encourage you to apply as soon as possible.\n\n**What’s in it for you?**\n\nHere is what you can expect:\n\n**Family Care Leave** - We offer enhanced paid leave options for those important times.\n\n**Insurances** – All colleagues are covered by our life and disability insurance which provides protection and peace of mind.\n\n**Wellbeing** - We want our people to feel well and thrive. We offer resources and benefits to nurture physical and mental wellbeing along with opportunities to build community and inspire creativity.\n\n**Colleague Discount** – We know you'll love to build, so from day 1 you will qualify for our generous colleague discount.\n\n**Bonus** - We do our best work to succeed together. When goals are reached and if eligible, you'll be rewarded through our bonus scheme.\n\n**Workplace** - When you join the team you'll be assigned a primary workplace location i.e. one of our Offices, stores or factories. Our hybrid work policy means an average of 3 days per week in the office. The hiring team will discuss the policy and role eligibility with you during the recruitment process.\n\nChildren are our role models. Their curiosity, creativity and imagination inspire everything we do. We strive to create a diverse, dynamic and inclusive culture of play at the LEGO Group, where everyone feels safe, valued and they belong.\n\nThe LEGO Group is highly committed to equal employment opportunity and equal pay and seeks to encourage applicants from all backgrounds (eg. sex, gender identity or expression, race/ethnicity, national origin, sexual orientation, disability, age and religion) to apply for roles in our team.\n\nThe LEGO Group is fully committed to Children’s Rights and Child Wellbeing across the globe. Candidates offered positions with high engagement with children are required to take part in Child Safeguarding Background Screening, as a condition of the offer.\n\nThank you for sharing our global commitment to Children’s Rights.\n\nJust imagine building your dream career.\n\nThen make it real.\n\n**Join the LEGO® team today.**",
+   "source": "workday",
+   "external_id": "0000038251",
+   "tags": [],
+   "id": "8efa1b5f45b5"
   },
   {
-   "title": "Student Worker Prepack",
-   "externalPath": "[REDACTED]",
-   "postedOn": "Slået op for 3 dage siden",
-   "bulletFields": [
-    "Monterrey",
-    "0000038817"
-   ]
+   "company": "LEGO Group",
+   "title": "Student Worker - Content and Editorial",
+   "url": "https://lego.wd103.myworkdayjobs.[REDACTED]",
+   "apply_url": "https://lego.wd103.myworkdayjobs.[REDACTED]",
+   "location": "Billund LEGO Campus",
+   "posted": "2026-09-17",
+   "deadline": "",
+   "description_md": "**Job Description**\n\n**Do you want to join a Content and Editorial team that's striving to provide inspirational experiences for kids across our owned platforms (apps, web, magazine)?**\n\nWe are looking for someone who’s had exposure to digital content, Magazine content and copywriting with a proactive mindset that has attention to detail and a creative and collaborative attitude.\n\n**Core Responsibilities**\n\n* Content management including but not limited to, content planning, content publishing and driving quality assurance of live content\n* Keeping a close eye on the community in the LEGO Life app and reporting on content performance and trends\n* Proofing of our LEGO Life magazine and handling of UGC submissions\n* Creating adhoc content or copy where needed\n* Bringing enthusiasm and ideas to creative brainstorms\n* Staying up to date with landscape trends and insights from our competitors to inspire the team with new ideas for content, games and events – especially for the 8-12 year old audience\n\n**Play your part in our team succeeding**\n\nThe Content & Editorial team within Digital Consumer Engagement is responsible for strategizing and producing content for our owned channels that are built in-house. These platforms allow The LEGO Group to offer inspirational, personal and social experiences to kids and adults across all touch points. This includes the LEGO® Life app and magazine, LEGO.com/kids, LEGO.com as well as several new innovative platforms currently under construction. Our team tries to bridge the gap between our software engineering and UX design teams creating these platforms on the one side and the product teams creating marketing campaigns for our franchises on the other. Together we create campaign and engagement content for our Digital Ecosystem that ties together all digital LEGO experiences in meaningful ways, creating deeper consumer engagement and improved consumer life-time value.\n\n**Do you have what it takes?**\n\n* Student at Bachelor or Master level\n* Degrees in the fields of Digital Design, Communication, Marketing will be beneficial\n* Has an interest in LEGO, digital platforms, the latest digital trends and content management\n* Wants to work in a fast-paced agile environment\n* Has attention to detail and a systematic approach to challenges\n* Eager to learn and be part of a global team\n* An ambitious self-starter who will take initiative\n* Has experience in communication or digital design (this is a plus, though not mandatory)\n* English at fluent level is required as this is the standard office language. Other languages are a positive plus.\n\n## Nice to have\n\n* Thrives and contributes in a team setting\n* Previous experience working with content management systems (CMS) or on social media, gaming or other online platforms – both professionally or in their spare time.\n\nApplications are reviewed on an ongoing basis. However, please note we do amend or withdraw our jobs and reserve the right to do so at any time, including prior to any advertised closing date. So, if you're interested in this role we encourage you to apply as soon as possible.\n\n**What’s in it for you?**\n\nHere is what you can expect:\n\n**Family Care Leave** - We offer enhanced paid leave options for those important times.\n\n**Insurances** – All colleagues are covered by our life and disability insurance which provides protection and peace of mind.\n\n**Wellbeing** - We want our people to feel well and thrive. We offer resources and benefits to nurture physical and mental wellbeing along with opportunities to build community and inspire creativity.\n\n**Colleague Discount** – We know you'll love to build, so from day 1 you will qualify for our generous colleague discount.\n\n**Bonus** - We do our best work to succeed together. When goals are reached and if eligible, you'll be rewarded through our bonus scheme.\n\n**Workplace** - When you join the team you'll be assigned a primary workplace location i.e. one of our Offices, stores or factories. Our hybrid work policy means an average of 3 days per week in the office. The hiring team will discuss the policy and role eligibility with you during the recruitment process.\n\nChildren are our role models. Their curiosity, creativity and imagination inspire everything we do. We strive to create a diverse, dynamic and inclusive culture of play at the LEGO Group, where everyone feels safe, valued and they belong.\n\nThe LEGO Group is highly committed to equal employment opportunity and equal pay and seeks to encourage applicants from all backgrounds (eg. sex, gender identity or expression, race/ethnicity, national origin, sexual orientation, disability, age and religion) to apply for roles in our team.\n\nThe LEGO Group is fully committed to Children’s Rights and Child Wellbeing across the globe. Candidates offered positions with high engagement with children are required to take part in Child Safeguarding Background Screening, as a condition of the offer.\n\nThank you for sharing our global commitment to Children’s Rights.\n\nJust imagine building your dream career.\n\nThen make it real.\n\n**Join the LEGO® team today.**",
+   "source": "workday",
+   "external_id": "0000034327",
+   "tags": [],
+   "id": "7a12397213dc"
   },
   {
-   "title": "Student Worker QEHS",
-   "externalPath": "[REDACTED]",
-   "postedOn": "Slået op for 3 dage siden",
-   "bulletFields": [
-    "Monterrey",
-    "0000038816"
-   ]
+   "company": "LEGO Group",
+   "title": "Student Worker in Sustainable Operations",
+   "url": "https://lego.wd103.myworkdayjobs.[REDACTED]",
+   "apply_url": "https://lego.wd103.myworkdayjobs.[REDACTED]",
+   "location": "Billund",
+   "posted": "2026-09-23",
+   "deadline": "",
+   "description_md": "**Job Description**\n\nWe’re looking for a proactive and curious Student Worker to join our Sustainable Operations team. You will be supporting driving LEGO Group's energy decarbonization agenda through data analytics, reporting, project coordination, and stakeholder communication. The role offers hands-on experience in sustainability strategy implementation, energy management, carbon reporting, and renewable energy initiatives while supporting key business decisions and climate commitment.\n\n  \n\n## Core responsibilities\n\n  \n\n* Support energy data analysis, forecasting, and consumption modelling to inform sustainability and operational decision-making.\n* Perform calculations and business case assessments for energy efficiency and decarbonization projects, supporting investment approvals and savings reporting.\n* Provide administrative support for project tracking, team activities, and follow-up actions.\n\n* Develop data visualizations, dashboards, and management reporting in Excel and PowerPoint to support decision-making and strategic oversight.\n* Create presentations, one-pagers, and storytelling materials to communicate sustainability initiatives and drive stakeholder engagement across functions.\n* Document processes, governance structures, and methodologies for the climate and carbonworkstreams\n\n  \n\n## Play a part in our team succeeding\n\n  \n\nSustainable Operations is the global department within LEGO Group that leads the change journey towards zero environmental impact in our factories. We lead, design and implement sustainable solutions primarily within energy/CO2, water, and waste - in a circular mindset. Moreover, we are responsible for managing the tracking of realized reductions towards zero-impact, and the programme office for sustainability in Engineering & Workplace. We identify and implement reduction projects in close collaboration with the production sites and other partners\n\n  \n\n*We take our part in a global force for good to reduce negative impact on the environment. Our part in this journey is to reduce energy consumption, remove CO2 emissions, eliminate waste, and reduce water consumption in our Operations in the LEGO Group.*\n\n**Do you have what it takes?**\n\n* Currently enrolled in a Bachelor's or Master's degree in Engineering, Sustainability, Environmental Science, Business Analytics, Economics, Data Science, or a related field.\n* Minimum two years remaining in studies before graduation.\n* Strong analytical skills with experience in data analysis, forecasting, and modelling.\n* Passion for sustainability, climate strategy, energy management, renewable energy, and decarbonization initiatives.\n* Proficiency in Excel and PowerPoint.\n* Available to work approximately 15-20 hours per week during the semester.\n\nApplications are reviewed on an ongoing basis. However, please note we do amend or withdraw our jobs and reserve the right to do so at any time, including prior to any advertised closing date. So, if you're interested in this role we encourage you to apply as soon as possible.\n\n**What’s in it for you?**\n\nHere is what you can expect:\n\n**Family Care Leave** - We offer enhanced paid leave options for those important times.\n\n**Insurances** – All colleagues are covered by our life and disability insurance which provides protection and peace of mind.\n\n**Wellbeing** - We want our people to feel well and thrive. We offer resources and benefits to nurture physical and mental wellbeing along with opportunities to build community and inspire creativity.\n\n**Colleague Discount** – We know you'll love to build, so from day 1 you will qualify for our generous colleague discount.\n\n**Bonus** - We do our best work to succeed together. When goals are reached and if eligible, you'll be rewarded through our bonus scheme.\n\n**Workplace** - When you join the team you'll be assigned a primary workplace location i.e. one of our Offices, stores or factories. Our hybrid work policy means an average of 3 days per week in the office. The hiring team will discuss the policy and role eligibility with you during the recruitment process.\n\nChildren are our role models. Their curiosity, creativity and imagination inspire everything we do. We strive to create a diverse, dynamic and inclusive culture of play at the LEGO Group, where everyone feels safe, valued and they belong.\n\nThe LEGO Group is highly committed to equal employment opportunity and equal pay and seeks to encourage applicants from all backgrounds (eg. sex, gender identity or expression, race/ethnicity, national origin, sexual orientation, disability, age and religion) to apply for roles in our team.\n\nThe LEGO Group is fully committed to Children’s Rights and Child Wellbeing across the globe. Candidates offered positions with high engagement with children are required to take part in Child Safeguarding Background Screening, as a condition of the offer.\n\nThank you for sharing our global commitment to Children’s Rights.\n\nJust imagine building your dream career.\n\nThen make it real.\n\n**Join the LEGO® team today.**",
+   "source": "workday",
+   "external_id": "0000038667",
+   "tags": [],
+   "id": "08197a5f6033"
   },
   {
-   "title": "Student Worker LCI",
-   "externalPath": "[REDACTED]",
-   "postedOn": "Slået op for 3 dage siden",
-   "bulletFields": [
-    "Monterrey",
-    "0000038820"
-   ]
-  }
- ],
- "facets": [
-  {
-   "facetParameter": "Location",
-   "descriptor": "Location",
-   "values": [
-    {
-     "descriptor": "Danmark",
-     "id": "49ab063f422741e2aef271de00efeac8",
-     "count": 19
-    },
-    {
-     "descriptor": "Mexico",
-     "id": "e2adff9272454660ac4fdb56fc70bb51",
-     "count": 8
-    },
-    {
-     "descriptor": "Tjekkiet",
-     "id": "fc078443155c4ad294201ecf5a61a499",
-     "count": 3
-    },
-    {
-     "descriptor": "Kina",
-     "id": "6cb77610a8a543aea2d6bc10457e35d4",
-     "count": 3
-    },
-    {
-     "descriptor": "Vietnam",
-     "id": "db69e8c8446c11de98360015c5e6daf6",
-     "count": 3
-    },
-    {
-     "descriptor": "Tyskland",
-     "id": "dcc5b7608d8644b3a93716604e78e995",
-     "count": 1
-    },
-    "... +1"
-   ]
+   "company": "LEGO Group",
+   "title": "Digital Technology Student Worker - Data Science",
+   "url": "https://lego.wd103.myworkdayjobs.[REDACTED]",
+   "apply_url": "https://lego.wd103.myworkdayjobs.[REDACTED]",
+   "location": "Billund",
+   "posted": "2026-09-14",
+   "deadline": "",
+   "description_md": "**Job Description**\n\nJust imagine helping decide which LEGO® sets appear on shelves for different customers around the world. Then make it real.\n\n**About the role**\n\nAs our Data Science Student Worker, you'll support the team behind the next version of our stock keeping unit (SKU) performance scoring system, run experiments to improve novelty predictions, and help evolve assortment optimization tools. You'll work alongside experienced data scientists on real production pipelines, contributing to data preparation, experimentation, analysis, and production code. It's a hands-on role designed to help you learn while making a meaningful contribution from week one.\n\n**Required Qualifications**\n\n* Solid Python fundamentals\n\n* Good understanding of data analysis and machine learning concepts, e.g. from coursework or other experience\n\n* Comfortable with SQL and working with tabular data\n\n* Fluent English\n\n**Preferred Qualifications**\n\n* Exposure to optimization / operations research (e.g. linear programming)\n\n* Familiarity with cloud data platforms (Databricks, AWS)\n\n* Experience with pyspark\n\n**What you'll build**\n\n* Support the development of the next generation of SKU performance scoring capabilities\n\n* Run experiments that improve prediction models and generate actionable insights\n\n* Contribute to assortment optimisation tools used by hundreds of users every day\n\n* Help maintain and improve production data science solutions\n\n* Work with experienced team members to turn analysis into practical outcomes\n\nIf you've worked in a role where you used real data to answer business questions, you'll feel at home here. What matters most is your ability to learn, contribute to shared code, and translate analysis into meaningful improvements.\n\n**Life on the team**\n\nYou'll join the Assortment & Space Management team within Digital Technology. We help deliver customer- and channel-specific assortment recommendations while creating greater portfolio transparency across the business. Our team works in a hybrid rhythm with daily stand-ups and weekly team sessions, including anchor days on Tuesdays and Thursdays. You'll work closely with data scientists and software engineers while bringing curiosity, reliability, and a strong team spirit to everything you do.\n\n**What success looks like**\n\nSuccess means confidently contributing to production systems, running experiments that improve model performance, and becoming a trusted member of the team. Over the next 12 to 18 months, we're focused on rolling out a new version of our core product performance scoring and prediction system. You'll work closely with data scientists and software engineers to help shape that journey while building skills that can grow with you at the LEGO Group.\n\n**We're looking for students who**\n\n* Are currently enrolled in Denmark in a **Bachelor’s, Master’s, or Erhvervsakademi** (professional academy) program in fields related to data.\n\n* Preferably graduating summer 2028 or beyond, having at least 1.5-2 years left of studies\n\n* Are curious and willing to learn, with a **positive, team-player attitude**.\n\n* Can be present 15–20 hours per week, ideally with 1–2 days at our **LEGO Campus in Billund**.\n\n* Are passionate about digital technology and eager to contribute to real projects.\n\nIf you're interested in joining us, please prepare your CV and cover letter in English.\n\nThe application portal will remain open from 14th September to 12th October 2026, but it may be taken down earlier so we urge you to apply as soon as possible. If you are shortlisted, you will be invited to attend our Assessment Day on 4th November 2026 at our Kornmarken Campus in Billund. Following the Assessment Day, there will be one final interview round. The expected start date for successful candidates is either 1st December 2026 or 1st January 2027.\n\n#LI-MF2\n\nApplications are reviewed on an ongoing basis. However, please note we do amend or withdraw our jobs and reserve the right to do so at any time, including prior to any advertised closing date. So, if you're interested in this role we encourage you to apply as soon as possible.\n\n**What’s in it for you?**\n\nHere is what you can expect:\n\n**Family Care Leave** - We offer enhanced paid leave options for those important times.\n\n**Insurances** – All colleagues are covered by our life and disability insurance which provides protection and peace of mind.\n\n**Wellbeing** - We want our people to feel well and thrive. We offer resources and benefits to nurture physical and mental wellbeing along with opportunities to build community and inspire creativity.\n\n**Colleague Discount** – We know you'll love to build, so from day 1 you will qualify for our generous colleague discount.\n\n**Bonus** - We do our best work to succeed together. When goals are reached and if eligible, you'll be rewarded through our bonus scheme.\n\n**Workplace** - When you join the team you'll be assigned a primary workplace location i.e. one of our Offices, stores or factories. Our hybrid work policy means an average of 3 days per week in the office. The hiring team will discuss the policy and role eligibility with you during the recruitment process.\n\nChildren are our role models. Their curiosity, creativity and imagination inspire everything we do. We strive to create a diverse, dynamic and inclusive culture of play at the LEGO Group, where everyone feels safe, valued and they belong.\n\nThe LEGO Group is highly committed to equal employment opportunity and equal pay and seeks to encourage applicants from all backgrounds (eg. sex, gender identity or expression, race/ethnicity, national origin, sexual orientation, disability, age and religion) to apply for roles in our team.\n\nThe LEGO Group is fully committed to Children’s Rights and Child Wellbeing across the globe. Candidates offered positions with high engagement with children are required to take part in Child Safeguarding Background Screening, as a condition of the offer.\n\nThank you for sharing our global commitment to Children’s Rights.\n\nJust imagine building your dream career.\n\nThen make it real.\n\n**Join the LEGO® team today.**",
+   "source": "workday",
+   "external_id": "0000037813",
+   "tags": [],
+   "id": "ee487e780253"
   },
   {
-   "facetParameter": "workerSubType",
-   "descriptor": "Jobtype",
-   "values": [
-    {
-     "descriptor": "Education (tidsbegrænset ansættelse) (trainee)",
-     "id": "248fdf7f03f010095f1a088290c60002",
-     "count": 13
-    },
-    {
-     "descriptor": "Student Worker (tidsbegrænset ansættelse)",
-     "id": "248fdf7f03f010095f1a088290c60000",
-     "count": 10
-    },
-    {
-     "descriptor": "Other",
-     "id": "248fdf7f03f010095f36690ba99e0002",
-     "count": 10
-    },
-    {
-     "descriptor": "Regular",
-     "id": "248fdf7f03f010095f1a088290c60001",
-     "count": 4
-    },
-    {
-     "descriptor": "Temporary (tidsbegrænset ansættelse) (sæsonbestemt ansættelse)",
-     "id": "248fdf7f03f010095f1a07e885b60000",
-     "count": 1
-    }
-   ]
-  },
-  {
-   "facetParameter": "jobFamily",
-   "descriptor": "Jobfamilie",
-   "values": [
-    {
-     "descriptor": "Trainee / Intern / Apprentice",
-     "id": "248fdf7f03f01009a3eabbbb7e9c0000",
-     "count": 25
-    },
-    {
-     "descriptor": "Contingent Workers",
-     "id": "248fdf7f03f01009a3eabd8998ee0000",
-     "count": 8
-    },
-    {
-     "descriptor": "Finance Operations",
-     "id": "4169d0cc4b381001b92e6b998f090000",
-     "count": 1
-    },
-    {
-     "descriptor": "Hourly Logistics & Warehouse",
-     "id": "248fdf7f03f01009a3eabf574e920000",
-     "count": 1
-    },
-    {
-     "descriptor": "Product Creative & Design",
-     "id": "248fdf7f03f01009a3eaafb693200000",
-     "count": 1
-    },
-    {
-     "descriptor": "Product Marketing",
-     "id": "248fdf7f03f01009a3eaade8a1930001",
-     "count": 1
-    },
-    "... +1"
-   ]
-  },
-  {
-   "facetParameter": "timeType",
-   "descriptor": "Tidstype",
-   "values": [
-    {
-     "descriptor": "Full time",
-     "id": "07564020a44510063cb1bcb298e20001",
-     "count": 17
-    },
-    {
-     "descriptor": "Part time",
-     "id": "07564020a44510063cb1bcb298e20000",
-     "count": 17
-    }
-   ]
-  },
-  {
-   "facetParameter": "locationMainGroup",
-   "values": [
-    {
-     "facetParameter": "locationRegionStateProvince",
-     "descriptor": "Region/State/Province",
-     "values": [
-      {
-       "descriptor": "Bình Dương",
-       "id": "687510cc622f4c81859c53661dd1d20f",
-       "count": 3
-      },
-      {
-       "descriptor": "Massachusetts",
-       "id": "c66d738416b74fb180376cf59cc7ec8f",
-       "count": 1
-      },
-      {
-       "descriptor": "Shanghai",
-       "id": "12022932d53e4131959783deec185438",
-       "count": 3
-      }
-     ]
-    }
-   ]
-  }
- ],
- "userAuthenticated": false
-}
+   "company": "LEGO Group",
+   "title": "Digital Technology Student Workers - Software Engineering",
+   "url": "https://lego.wd103.myworkdayjobs.[REDACTED]",
+   "apply_url": "https://lego.wd103.myworkdayjobs.[REDACTED]",
+   "location": "Billund",
+   "posted": "2026-09-14",
+   "deadline": "",
+   "description_md": "**Job Description**\n\nThis autumn semester, we are excited to welcome **four** new student workers to join our teams in Billund. These roles span across front-end and full-stack software engineering, offering great opportunities to learn, grow, and make an impact.\n\n**Student Worker, BrickLink Technology (role 1)**\n\nAs our Student Worker – Frontend Development, you'll build real frontend features on BrickLink.com alongside engineers who are rebuilding the platform on a modern stack. You'll join a product team with engineering, product, and design partners, and your work will reach a live global audience. You'll experience both a long-running production system and a greenfield modern architecture while contributing to member-facing experiences across home pages, accounts, sessions, and community touchpoints within the LEGO® ecosystem.\n\n**Required Qualifications**\n\n* JavaScript or TypeScript fundamentals\n\n* Experience with/exposure to React (or a comparable component framework)\n\n* Experience with/exposure to HTML and CSS - semantic markup, responsive layout\n\n**Preferred Qualifications**\n\n* Experience with/exposure to Next.js or a modern SSR framework\n\n* Basic experience with backend/APIs or testing\n\n**What you'll build**\n\n* Frontend features that improve the experience for BrickLink members.\n\n* Pages aligned with LEGO design and component systems.\n\n* Solutions that help legacy and modern platforms work together during replatforming.\n\n* Experiences that meet quality, performance, and accessibility expectations at scale.\n\n* Visible improvements that reach members while helping the team modernise the platform.\n\n**Student Worker, Brick Technology (role 2)**\n\nAs our Student Worker - Frontend Engineer, you'll work in the Digital Element Design area, helping migrate web applications to the LEGO® design system. You'll refactor and replace user interface components, apply design tokens and styles, and help ensure the applications remain responsive and accessible. Working in a TypeScript and React monorepo, you'll contribute to modernising the design ecosystem one component at a time while collaborating closely with designers and engineers.\n\n**Required Qualifications**\n\n* Studying Computer Science, Software Engineering, or a related field\n\n* Exposure to or experience with React, TypeScript, and CSS through university, personal, or other projects\n\n* Fluent English\n\n**Preferred Qualifications**\n\n* Applied basic unit testing practices and validated changes using existing test suites\n\n* Explored web accessibility and responsive design principles through projects or coursework\n\n**What you'll build**\n\n* Migrate web applications to the LEGO design system\n\n* Refactor and replace existing user interface components\n\n* Apply design tokens and styling standards across applications\n\n* Help ensure a responsive and accessible user experience\n\n* Contribute to the modernisation of a shared frontend ecosystem used across the team\n\n**Student Worker, Cybersecurity Platforms (role 3)**\n\nAs our Student Worker, Software Engineer, Cybersecurity, you'll work across a wide range of cybersecurity platforms, applications, and engineering challenges. You'll help implement software features, build infrastructure through code, and support large-scale security logging solutions. Some of the tools and platforms you'll work with are bought and maintained, while others are built from scratch by the team. You won't be expected to know everything from day one. Instead, you'll learn alongside experienced engineers while contributing to meaningful work from week one.\n\n**Required Qualifications**\n\n* Currently pursuing studies in computer science or a related field\n\n* Exposure to software development through university projects, hobby projects, internships, or similar practical experience\n\n* Fluent English\n\n**Preferred Qualifications**\n\n* Experience with C# or Next.js\n\n**What you'll build**\n\n* Implement new features across cybersecurity platforms and applications\n\n* Help build and maintain infrastructure through code\n\n* Support the operation of large security logging solutions\n\n* Contribute to both internally developed and vendor-supported security technologies\n\n* Learn new technologies and engineering approaches while supporting the team\n\n**Student Worker, Manufacturing Technology (role 4)**\n\nAs our Student Worker, you'll join the Warehousing and Site Logistics product team within Manufacturing Technology. You'll help build and support software solutions used in warehouses, logistics operations, and material handling across manufacturing sites. You'll contribute as a regular member of the team while learning both technical and business-domain topics. The role offers the chance to work on systems with real operational impact, where reliable software helps keep production moving every day.\n\n**Required Qualifications**\n\n* Exposure to or experience working with Typescript, React, and Go\n\n* Fluent English\n\n* Studying computer science, software engineering, or related subject\n\n**Preferred Qualifications**\n\n* Exposure to or experience with Python\n\n**What you'll build**\n\n* Support software solutions used in warehousing, logistics, and material-handling operations\n\n* Contribute to development activities that support factories and warehouses globally\n\n* Work alongside experienced engineers on technology decisions and software delivery\n\n* Help improve systems that support continuous movement of products through the supply chain\n\n* Contribute to initiatives connected to factory expansion and new-site implementation projects\n\n**We're looking for students who**\n\n* Are currently enrolled in Denmark in a **Bachelor’s, Master’s, or Erhvervsakademi** (professional academy) program in fields related to data.\n\n* Preferably graduating summer 2028 or beyond, having at least 1.5-2 years left of studies\n\n* Are curious and willing to learn, with a **positive, team-player attitude**.\n\n* Can be present 15–20 hours per week, ideally with 1–2 days at our **LEGO office in Billund**.\n\n* Are passionate about digital technology and eager to contribute to real projects.\n\nIf you're interested in joining us, please prepare your CV and cover letter in English. We also ask that you in your CV or cover letter indicate which role you’re most interested in.\n\nThe application portal will remain open from 14th September to 12th October 2026, but it may be taken down earlier so we urge you to apply as soon as possible. If you are shortlisted, you will be invited to attend our Assessment Day on 4th November 2026 at our Kornmarken Campus in Billund. Following the Assessment Day, there will be one final interview round. The expected start date for successful candidates is either 1st December 2026 or 1st January 2027.\n\n#LI-MF2\n\nApplications are reviewed on an ongoing basis. However, please note we do amend or withdraw our jobs and reserve the right to do so at any time, including prior to any advertised closing date. So, if you're interested in this role we encourage you to apply as soon as possible.\n\n**What’s in it for you?**\n\nHere is what you can expect:\n\n**Family Care Leave** - We offer enhanced paid leave options for those important times.\n\n**Insurances** – All colleagues are covered by our life and disability insurance which provides protection and peace of mind.\n\n**Wellbeing** - We want our people to feel well and thrive. We offer resources and benefits to nurture physical and mental wellbeing along with opportunities to build community and inspire creativity.\n\n**Colleague Discount** – We know you'll love to build, so from day 1 you will qualify for our generous colleague discount.\n\n**Bonus** - We do our best work to succeed together. When goals are reached and if eligible, you'll be rewarded through our bonus scheme.\n\n**Workplace** - When you join the team you'll be assigned a primary workplace location i.e. one of our Offices, stores or factories. Our hybrid work policy means an average of 3 days per week in the office. The hiring team will discuss the policy and role eligibility with you during the recruitment process.\n\nChildren are our role models. Their curiosity, creativity and imagination inspire everything we do. We strive to create a diverse, dynamic and inclusive culture of play at the LEGO Group, where everyone feels safe, valued and they belong.\n\nThe LEGO Group is highly committed to equal employment opportunity and equal pay and seeks to encourage applicants from all backgrounds (eg. sex, gender identity or expression, race/ethnicity, national origin, sexual orientation, disability, age and religion) to apply for roles in our team.\n\nThe LEGO Group is fully committed to Children’s Rights and Child Wellbeing across the globe. Candidates offered positions with high engagement with children are required to take part i
