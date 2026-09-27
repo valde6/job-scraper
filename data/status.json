@@ -1,0 +1,398 @@
+{
+ "updated": "2026-09-27T19:02:28+00:00",
+ "companies": [
+  {
+   "company": "Novo Nordisk",
+   "rank": 1,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "A.P. Møller - Mærsk",
+   "rank": 2,
+   "source": "workday",
+   "ok": true,
+   "listed": 8,
+   "matched": 1,
+   "seconds": 2.0
+  },
+  {
+   "company": "McKinsey & Company",
+   "rank": 3,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "LEGO Group",
+   "rank": 4,
+   "source": "workday",
+   "ok": true,
+   "listed": 38,
+   "matched": 7,
+   "seconds": 10.6
+  },
+  {
+   "company": "Danske Bank",
+   "rank": 5,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Deloitte",
+   "rank": 6,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "PwC",
+   "rank": 7,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Carlsberg",
+   "rank": 8,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Boston Consulting Group (BCG)",
+   "rank": 9,
+   "source": "eightfold",
+   "ok": true,
+   "listed": 5,
+   "matched": 0,
+   "seconds": 0.7
+  },
+  {
+   "company": "Nordea",
+   "rank": 10,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Microsoft",
+   "rank": 11,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "EY",
+   "rank": 12,
+   "source": "successfactors",
+   "ok": true,
+   "listed": 0,
+   "matched": 0,
+   "seconds": 1.2
+  },
+  {
+   "company": "Jyske Bank",
+   "rank": 13,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Nykredit",
+   "rank": 14,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Bestseller",
+   "rank": 15,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "L'Oréal Groupe",
+   "rank": 16,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Bain & Company",
+   "rank": 17,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Vestas",
+   "rank": 18,
+   "source": "successfactors",
+   "ok": true,
+   "listed": 5,
+   "matched": 0,
+   "seconds": 1.4
+  },
+  {
+   "company": "Implement",
+   "rank": 19,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Saxo Bank",
+   "rank": 20,
+   "source": "workday",
+   "ok": true,
+   "listed": 6,
+   "matched": 0,
+   "seconds": 3.8
+  },
+  {
+   "company": "Finansministeriet",
+   "rank": 21,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Bang & Olufsen",
+   "rank": 22,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Danmarks Nationalbank",
+   "rank": 23,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Arla Foods",
+   "rank": 24,
+   "source": "phenom",
+   "ok": true,
+   "listed": 10,
+   "matched": 0,
+   "seconds": 20.5
+  },
+  {
+   "company": "Udenrigsministeriet",
+   "rank": 25,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Pandora",
+   "rank": 26,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Dansk Industri",
+   "rank": 27,
+   "source": "teamtailor",
+   "ok": true,
+   "listed": 8,
+   "matched": 3,
+   "seconds": 0.6
+  },
+  {
+   "company": "Nordnet",
+   "rank": 28,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Ørsted",
+   "rank": 29,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "KPMG",
+   "rank": 30,
+   "source": "hrmanager",
+   "ok": true,
+   "listed": 20,
+   "matched": 1,
+   "seconds": 1.1
+  },
+  {
+   "company": "Matas",
+   "rank": 31,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Salling Group",
+   "rank": 32,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "PA Consulting Group",
+   "rank": 33,
+   "source": "smartrecruiters",
+   "ok": true,
+   "listed": 12,
+   "matched": 0,
+   "seconds": 0.5
+  },
+  {
+   "company": "Københavns Lufthavne",
+   "rank": 34,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Danske Commodities",
+   "rank": 35,
+   "source": "teamtailor",
+   "ok": true,
+   "listed": 2,
+   "matched": 0,
+   "seconds": 0.6
+  },
+  {
+   "company": "Netcompany",
+   "rank": 36,
+   "source": "smartrecruiters",
+   "ok": true,
+   "listed": 36,
+   "matched": 3,
+   "seconds": 1.8
+  },
+  {
+   "company": "PFA Pension",
+   "rank": 37,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "SAS",
+   "rank": 38,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Amazon",
+   "rank": 39,
+   "source": "amazon",
+   "ok": true,
+   "listed": 6,
+   "matched": 0,
+   "seconds": 0.5
+  },
+  {
+   "company": "Beierholm",
+   "rank": 40,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "AL Sydbank",
+   "rank": 41,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Forsvaret",
+   "rank": 42,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "IKEA",
+   "rank": 43,
+   "source": "generic",
+   "ok": true,
+   "listed": 28,
+   "matched": 0,
+   "seconds": 0.6
+  },
+  {
+   "company": "Statsministeriet",
+   "rank": 44,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Accenture",
+   "rank": 45,
+   "source": "workday",
+   "ok": true,
+   "listed": 1,
+   "matched": 1,
+   "seconds": 12.4
+  },
+  {
+   "company": "Danmarks Radio",
+   "rank": 46,
+   "source": "hrmanager",
+   "ok": true,
+   "listed": 19,
+   "matched": 1,
+   "seconds": 0.3
+  },
+  {
+   "company": "DSV",
+   "rank": 47,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "BDO",
+   "rank": 48,
+   "source": "none",
+   "ok": null,
+   "note": "Ingen direkte kilde. Dækkes via Jobindex."
+  },
+  {
+   "company": "Rambøll",
+   "rank": 49,
+   "source": "smartrecruiters",
+   "ok": true,
+   "listed": 54,
+   "matched": 0,
+   "seconds": 0.4
+  },
+  {
+   "company": "Novonesis",
+   "rank": 50,
+   "source": "workday",
+   "ok": true,
+   "listed": 18,
+   "matched": 3,
+   "seconds": 3.1
+  },
+  {
+   "company": "(Jobindex RSS)",
+   "source": "jobindex",
+   "ok": true,
+   "listed": 84,
+   "matched": 4
+  }
+ ]
+}
