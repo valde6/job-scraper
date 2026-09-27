@@ -99,7 +99,9 @@ def main():
     run = {"updated": data.get("updated") or datetime.now(timezone.utc).isoformat(timespec="seconds"),
            "synced": datetime.now(timezone.utc).isoformat(timespec="seconds"),
            "new_count": len(new), "active_count": active,
-           "sources_ok": sum(1 for c in comps if c.get("ok")), "sources_total": len(comps),
+           "sources_ok": sum(1 for c in comps if c.get("ok") and c.get("source") != "jobindex"),
+           "sources_total": sum(1 for c in comps if c.get("source") != "jobindex"),
+           "jobindex_ok": any(c.get("ok") for c in comps if c.get("source") == "jobindex"),
            "top_new": sorted(({"title": j["title"], "company": j["company"], "score": scores.get(j["id"], {}).get("score")} for j in new),
                              key=lambda x: -(x["score"] or 0))[:5]}
     (a.out / "run.json").write_text(json.dumps(run, ensure_ascii=False))

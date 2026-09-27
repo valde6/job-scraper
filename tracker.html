@@ -168,12 +168,12 @@ function renderRun(){
   if(!r){$("runmeta").innerHTML=db?"<span>Venter på første kørsel</span>":"<span>Kunne ikke forbinde til databasen</span>";return}
   const age=(Date.now()-new Date(r.updated))/36e5;
   const when=new Date(r.updated).toLocaleString("da-DK",{weekday:"short",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"});
-  $("runmeta").innerHTML=`<span><i class="dot ${age>80?"stale":""}"></i>Opdateret <b>${esc(when)}</b></span><span><b>${r.new_count??0}</b> nye</span><span><b>${r.active_count??0}</b> aktive</span><span>Kilder <b>${r.sources_ok??"?"}/${r.sources_total??50}</b></span>`;
+  $("runmeta").innerHTML=`<span><i class="dot ${age>80?"stale":""}"></i>Opdateret <b>${esc(when)}</b></span><span><b>${r.new_count??0}</b> nye</span><span><b>${r.active_count??0}</b> aktive</span><span>Direkte kilder <b>${r.sources_ok??"?"}/${r.sources_total??50}</b>${r.jobindex_ok?" + Jobindex":""}</span>`;
 }
 
 function jobHTML(j){
   const d=daysLeft(j.deadline), open=S.open.has(j.id), st=statusOf(j);
-  const isNew=S.run&&j.first_seen&&j.first_seen>=S.run.updated_first_seen_cutoff;
+  const isNew=!!(S.run&&j.first_seen&&S.run.updated&&j.first_seen>=S.run.updated);
   const due=d===null?`<span class="due">Løbende</span>`:d<0?`<span class="due">Udløbet</span>`:`<span class="due ${d<=5?"soon":""}">${d===0?"Frist i dag":d+" dage"}</span>`;
   return `<article class="job ${expired(j)?"inactive":""}" data-id="${esc(j.id)}">
   <div class="head" data-toggle="${esc(j.id)}" role="button" tabindex="0" aria-expanded="${open}">
