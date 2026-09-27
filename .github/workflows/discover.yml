@@ -1,6 +1,8 @@
 name: discover-ats
 
 on:
+  push:
+    paths: ["triggers/discover"]
   workflow_dispatch:
     inputs:
       only:
@@ -25,12 +27,14 @@ jobs:
       - name: Discover
         run: |
           mkdir -p data
-          if [ -n "${{ inputs.only }}" ]; then
-            python -m scraper.discover --only "${{ inputs.only }}" 2>&1 | tee data/discover.log
+          ONLY="${{ inputs.only }}"; [ -z "$ONLY" ] && [ -f triggers/discover ] && ONLY="$(grep -v '^#' triggers/discover | head -1 || true)"
+          if [ -n "$ONLY" ]; then
+            python -m scraper.discover --only "$ONLY" 2>&1 | tee data/discover.log
           else
             python -m scraper.discover 2>&1 | tee data/discover.log
           fi
       - name: Commit
+        if: always()
         run: |
           git config user.name "job-scraper-bot"
           git config user.email "actions@users.noreply.github.com"
