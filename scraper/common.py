@@ -72,7 +72,8 @@ STUDENT_RE = re.compile(
 )
 # ting der ligner studenterjob men ikke er det
 EXCLUDE_RE = re.compile(
-    r"graduate\s+program|graduateprogram|\bph\.?d\b|postdoc|trainee\s+program|"
+    r"graduate\s+program|graduateprogram|\bph\.?d\b|postdoc|trainee\s+program|\binternship|\bintern\b|"
+    r"praktikant|praktikophold|\bpraktik\b|bachelorprojekt|speciale|thesis|"
     r"student\s+(?:recruit|lead|engagement|advisor|counsel)|studievejled",
     re.I,
 )
@@ -97,8 +98,8 @@ def is_denmark(*texts: str | None) -> bool:
 
 STUDENT_BODY_RE = re.compile(
     r"studentermedhj|studentermedarb|student\s+assistant|student\s+worker|studiejob|working\s+student|"
-    r"som\s+student|ved\s+siden\s+af\s+(?:dit|dine)\s+studi|alongside\s+your\s+stud|while\s+(?:you\s+)?stud|"
-    r"\d{1,2}\s*[-–]\s*\d{1,2}\s+(?:timer|hours)\s+(?:om|per|a|pr\.?)\s+(?:ugen|week)",
+    r"ved\s+siden\s+af\s+(?:dit|dine)\s+studi|alongside\s+your\s+stud|"
+    r"\b(?:1[0-9]|20)\s*[-–]\s*(?:1[0-9]|2[0-5])\s+(?:timer|hours)\s+(?:om|per|a|pr\.?)\s+(?:ugen|week)",
     re.I,
 )
 
