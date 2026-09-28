@@ -117,7 +117,35 @@ def main():
     (DATA / "jobs.json").write_text(json.dumps({"updated": now, "count": len(jobs_out), "jobs": jobs_out}, ensure_ascii=False, indent=1))
     (DATA / "new.json").write_text(json.dumps({"updated": now, "count": len(new), "jobs": new}, ensure_ascii=False, indent=1))
     (DATA / "status.json").write_text(json.dumps({"updated": now, "companies": status}, ensure_ascii=False, indent=1))
+    export_tracker(jobs_out, status, companies, now)
     print(f"\nFærdig: {len(found)} fundet i dag, {len(new)} nye, {sum(j['active'] for j in jobs_out)} aktive i alt.")
+
+
+def export_tracker(jobs_out, status, companies, now):
+    """Færdige tracker-dokumenter (ren data) til den planlagte Claude-opgave, så den ikke skal køre kode fra repoet."""
+    ranks = {c["name"]: c.get("rank") for c in companies}
+    tdir = DATA / "tracker"
+    docs = tdir / "docs"
+    docs.mkdir(parents=True, exist_ok=True)
+    for f in docs.glob("*.json"):
+        f.unlink()
+    index = []
+    for j in jobs_out:
+        if not j.get("active", True):
+            index.append({"id": j["id"], "active": False, "deadline": j.get("deadline", "")})
+            continue
+        doc = {k: j.get(k) for k in ("title", "company", "location", "url", "apply_url", "deadline", "posted",
+                                      "description_md", "source", "tags", "first_seen", "last_seen", "active")}
+        doc["rank"] = ranks.get(j["company"])
+        (docs / f"{j['id']}.json").write_text(json.dumps(doc, ensure_ascii=False))
+        index.append({"id": j["id"], "active": True, "company": j["company"], "title": j["title"],
+                      "location": j.get("location", ""), "deadline": j.get("deadline", ""), "tags": j.get("tags", []),
+                      "excerpt": (j.get("description_md") or "")[:1500]})
+    direct = [c for c in status if c.get("source") not in ("jobindex", "none")]
+    run = {"updated": now, "active_count": sum(1 for j in jobs_out if j.get("active", True)),
+           "sources_ok": sum(1 for c in direct if c.get("ok")), "sources_total": len(companies),
+           "jobindex_ok": any(c.get("ok") for c in status if c.get("source") == "jobindex")}
+    (tdir / "index.json").write_text(json.dumps({"updated": now, "run": run, "jobs": index}, ensure_ascii=False, indent=1))
 
 
 if __name__ == "__main__":
