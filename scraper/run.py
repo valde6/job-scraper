@@ -68,7 +68,8 @@ def main():
 
     if not args.only:
         try:
-            listed, jobs = jobindex.scrape_all(companies, today.year)
+            known = {j["external_id"]: j for j in old.values() if j.get("source") == "jobindex" and len(j.get("description_md", "")) > 300}
+            listed, jobs = jobindex.scrape_all(companies, today.year, known=known)
             found += jobs
             status.append({"company": "(Jobindex RSS)", "source": "jobindex", "ok": True, "listed": listed, "matched": len(jobs)})
         except Exception as e:  # noqa: BLE001

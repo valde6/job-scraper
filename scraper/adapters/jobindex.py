@@ -10,8 +10,13 @@ from urllib.parse import quote
 from bs4 import BeautifulSoup
 from ..common import Job, get, soup, clean, html_to_md, is_student, find_deadline, is_cph, topic_tags
 
-QUERIES = ["studentermedhjælper", "student assistant", "studentermedarbejder", "studiejob", "student"]
-# Feeds: (sti, søgeord). Stier udvides når robots.txt er tjekket. Hvert feed = de ~20 nyeste opslag.
+# robots.txt tillader kun /jobsoegning.rss?q=... med højst to ord (ingen side-, region- eller aldersfiltre).
+# Hvert feed viser de ~20 nyeste opslag, så vi bruger mange forskellige søgninger og kører ofte.
+QUERIES = [
+    "studentermedhjælper", "studentermedhjælpere", "studentermedarbejder", "studentermedarbejdere",
+    "studiejob", "studenterjob", "studentmedhjælper", "student", "studerende",
+    '"student assistant"', '"student assistants"', '"student worker"', '"working student"', '"student job"',
+]
 FEEDS = [("jobsoegning", q) for q in QUERIES]
 
 
@@ -25,17 +30,20 @@ def _matcher(companies):
     return pats
 
 
-def scrape_all(companies, today_year, all_companies=True):
+def scrape_all(companies, today_year, all_companies=True, known=None):
     """Returnerer (listed, [Job]).
 
     Top 50-virksomheder: alle studenterjob i Danmark.
     Andre virksomheder (all_companies=True): studenterjob i Storkøbenhavn med mindst ét fagligt match.
     """
+    import time
     pats = _matcher(companies)
+    known = known or {}
     seen, listed, jobs = set(), 0, []
     for path, q in FEEDS:
+        time.sleep(1)
         try:
-            xml = get(f"https://www.jobindex.dk/{path}.rss?q={quote(q)}").text
+            xml = get(f"https://www.jobindex.dk/{path}.rss?q={quote(q, safe='')}").text
         except Exception:
             continue
         for it in BeautifulSoup(xml, "xml").find_all("item"):
@@ -72,9 +80,17 @@ def scrape_all(companies, today_year, all_companies=True):
             if not top50 and not (is_cph(loc) and topic_tags(title, teaser_txt)):
                 continue
             jid = re.search(r"(h\d+)", link)
+            ext = jid.group(1) if jid else link
+            if ext in known:          # allerede hentet i en tidligere kørsel: genbrug teksten
+                k = known[ext]
+                jobs.append(Job(company=company, title=title, url=link, apply_url=k.get("apply_url") or link,
+                                location=loc, deadline=k.get("deadline", ""), description_md=k.get("description_md", ""),
+                                source="jobindex", external_id=ext, top50=top50))
+                continue
             ad_url = f"https://www.jobindex.dk/jobannonce/{jid.group(1)}/" if jid else link
             desc_md, apply = "", link
             try:
+                time.sleep(0.5)
                 s2 = soup(get(ad_url).text)
                 body = s2.select_one("article.jobcontent, .jobtext-jobad__body, .PaidJob-inner, article, main")
                 if body:
