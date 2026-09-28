@@ -1,5 +1,5 @@
-RAW https://www.jobindex.dk/jobsoegning/storkoebenhavn.rss?q=studentermedhj%C3%A6lper 40000
-ERROR HTTPError: 404 Client Error: Not Found for url: https://www.jobindex.dk/jobsoegning/storkoebenhavn.rss?q=studentermedhj%C3%A6lper
+RAW https://www.jobindex.dk/jobsoegning/studiejob/storkoebenhavn.rss 40000
+ERROR HTTPError: 404 Client Error: Not Found for url: https://www.jobindex.dk/jobsoegning/studiejob/storkoebenhavn.rss
 Traceback (most recent call last):
   File "/home/runner/work/job-scraper/job-scraper/scraper/probe.py", line 83, in <module>
     r = http("GET", parts[1], retries=0, timeout=25)
@@ -11,7 +11,7 @@ Traceback (most recent call last):
     r.raise_for_status()
   File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
     raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.jobindex.dk/jobsoegning/storkoebenhavn.rss?q=studentermedhj%C3%A6lper
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.jobindex.dk/jobsoegning/studiejob/storkoebenhavn.rss
 
 <!DOCTYPE html>
 <html lang="da-DK">
@@ -42,7 +42,7 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.
     
     
     
-<link href="?q=studentermedhj%C3%A6lper" rel="canonical">
+<link href="" rel="canonical">
 
     
 
@@ -69,4 +69,4 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.
     
 <script>//<![CDATA[
 
- 
+    var Stash = {"common":{"

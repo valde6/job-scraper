@@ -1,1 +1,9 @@
-01 RAW 200 4218B | RAW https://www.jobindex.dk/robots.txt 30000
+01 ERR HTTPError: 404 Client Error: Not Found for url: https://www.jobindex.dk/jobsoegning/storkoebenhavn.rss?q=studentermedhj%C3%A6lper | RAW https://www.jobindex.dk/jobsoegning/storkoebenhavn.rss?q=studentermedhj%C3%A6lper 40000
+02 ERR HTTPError: 404 Client Error: Not Found for url: https://www.jobindex.dk/jobsoegning/studiejob.rss | RAW https://www.jobindex.dk/jobsoegning/studiejob.rss 40000
+03 ERR HTTPError: 404 Client Error: Not Found for url: https://www.jobindex.dk/jobsoegning/studiejob/storkoebenhavn.rss | RAW https://www.jobindex.dk/jobsoegning/studiejob/storkoebenhavn.rss 40000
+04 ERR HTTPError: 404 Client Error: Not Found for url: https://www.jobindex.dk/jobsoegning/kontor/storkoebenhavn.rss?q=student | RAW https://www.jobindex.dk/jobsoegning/kontor/storkoebenhavn.rss?q=student 40000
+05 ERR HTTPError: 404 Client Error: Not Found for url: https://www.jobindex.dk/jobsoegning/it/storkoebenhavn.rss?q=student | RAW https://www.jobindex.dk/jobsoegning/it/storkoebenhavn.rss?q=student 40000
+06 ERR HTTPError: 404 Client Error: Not Found for url: https://www.jobindex.dk/jobsoegning/kontor/oekonomi.rss?q=student | RAW https://www.jobindex.dk/jobsoegning/kontor/oekonomi.rss?q=student 40000
+07 RAW 200 43319B | RAW https://www.jobindex.dk/jobsoegning.rss?q=studentermedhj%C3%A6lper+data 40000
+08 RAW 200 41169B | RAW https://www.jobindex.dk/jobsoegning.rss?q=%22student+assistant%22 40000
+09 RAW 200 400436B | RAW https://www.jobindex.dk/jobsoegning/storkoebenhavn 60000
