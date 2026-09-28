@@ -100,6 +100,9 @@ def main():
         d["active"] = not (d["deadline"] and d["deadline"] < today.isoformat())
         current[d["id"]] = d
 
+    from datetime import timedelta
+    cutoff_42 = (datetime.now(timezone.utc) - timedelta(days=42)).isoformat(timespec="seconds")
+    cutoff_60 = (datetime.now(timezone.utc) - timedelta(days=60)).isoformat(timespec="seconds")
     # jobs vi ikke så i dag: behold, men marker inaktive hvis kilden faktisk virkede
     for jid, prev in old.items():
         if jid in current:
@@ -108,6 +111,10 @@ def main():
             prev["active"] = False
         elif prev.get("deadline") and prev["deadline"] < today.isoformat():
             prev["active"] = False
+        elif prev["source"] == "jobindex" and not prev.get("deadline") and prev.get("first_seen", now) < cutoff_42:
+            prev["active"] = False   # Jobindex-opslag uden frist: antag lukket efter 6 uger
+        if not prev.get("active") and prev.get("last_seen", now) < cutoff_60:
+            continue                 # ryd gamle, lukkede job ud af datafilen
         current[jid] = prev
 
     jobs_out = sorted(current.values(), key=lambda j: (not j["active"], j["first_seen"]), reverse=False)
@@ -136,9 +143,11 @@ def export_tracker(jobs_out, status, companies, now):
             continue
         doc = {k: j.get(k) for k in ("title", "company", "location", "url", "apply_url", "deadline", "posted",
                                       "description_md", "source", "tags", "first_seen", "last_seen", "active")}
-        doc["rank"] = ranks.get(j["company"])
+        doc["top50"] = j.get("top50", True)
+        doc["rank"] = ranks.get(j["company"]) if doc["top50"] else None
         (docs / f"{j['id']}.json").write_text(json.dumps(doc, ensure_ascii=False))
         index.append({"id": j["id"], "active": True, "company": j["company"], "title": j["title"],
+                      "top50": j.get("top50", True),
                       "location": j.get("location", ""), "deadline": j.get("deadline", ""), "tags": j.get("tags", []),
                       "excerpt": (j.get("description_md") or "")[:1500]})
     direct = [c for c in status if c.get("source") not in ("jobindex", "none")]

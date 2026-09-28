@@ -8,9 +8,11 @@ import re
 from urllib.parse import quote
 
 from bs4 import BeautifulSoup
-from ..common import Job, get, soup, clean, html_to_md, is_student, find_deadline
+from ..common import Job, get, soup, clean, html_to_md, is_student, find_deadline, is_cph, topic_tags
 
 QUERIES = ["studentermedhjælper", "student assistant", "studentermedarbejder", "studiejob", "student"]
+# Feeds: (sti, søgeord). Stier udvides når robots.txt er tjekket. Hvert feed = de ~20 nyeste opslag.
+FEEDS = [("jobsoegning", q) for q in QUERIES]
 
 
 def _matcher(companies):
@@ -23,13 +25,17 @@ def _matcher(companies):
     return pats
 
 
-def scrape_all(companies, today_year):
-    """Returnerer (listed, [Job]) for alle virksomheder på én gang."""
+def scrape_all(companies, today_year, all_companies=True):
+    """Returnerer (listed, [Job]).
+
+    Top 50-virksomheder: alle studenterjob i Danmark.
+    Andre virksomheder (all_companies=True): studenterjob i Storkøbenhavn med mindst ét fagligt match.
+    """
     pats = _matcher(companies)
     seen, listed, jobs = set(), 0, []
-    for q in QUERIES:
+    for path, q in FEEDS:
         try:
-            xml = get(f"https://www.jobindex.dk/jobsoegning.rss?q={quote(q)}").text
+            xml = get(f"https://www.jobindex.dk/{path}.rss?q={quote(q)}").text
         except Exception:
             continue
         for it in BeautifulSoup(xml, "xml").find_all("item"):
@@ -49,6 +55,9 @@ def scrape_all(companies, today_year):
             img = dsoup.find("img") if dsoup else None
             comp_txt = f"{comp_txt} | {img.get('alt', '') if img else ''}"
             company = next((n for n, rx in pats if rx.search(comp_txt)), None)
+            top50 = company is not None
+            if not top50 and all_companies:
+                company = clean(comp_txt.split("|")[0]) or clean(img.get("alt", "") if img else "") or "Ukendt"
             teaser_html = ""
             loc = "Danmark"
             if dsoup:
@@ -56,7 +65,11 @@ def scrape_all(companies, today_year):
                 loc = clean(a.get_text()) if a else loc
                 ps = dsoup.find_all(["p", "ul"])
                 teaser_html = "".join(str(x) for x in ps)
-            if not company or not is_student(full_title + " " + clean(dsoup.get_text(" "))[:600] if dsoup else full_title):
+            teaser_txt = clean(dsoup.get_text(" "))[:600] if dsoup else ""
+            if not company or not is_student(full_title + " " + teaser_txt):
+                continue
+            # uden for top 50: kun Storkøbenhavn og kun hvis titel/uddrag rammer dine fagområder
+            if not top50 and not (is_cph(loc) and topic_tags(title, teaser_txt)):
                 continue
             jid = re.search(r"(h\d+)", link)
             ad_url = f"https://www.jobindex.dk/jobannonce/{jid.group(1)}/" if jid else link
@@ -77,7 +90,7 @@ def scrape_all(companies, today_year):
                 desc_md = html_to_md(teaser_html) + "\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
             jobs.append(Job(company=company, title=title, url=link, apply_url=apply, location=loc,
                             deadline=find_deadline(desc_md, today_year) or "", description_md=desc_md,
-                            source="jobindex", external_id=jid.group(1) if jid else link))
+                            source="jobindex", external_id=jid.group(1) if jid else link, top50=top50))
     return listed, jobs
 
 

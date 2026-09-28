@@ -95,6 +95,24 @@ DK_PLACES = [
 ]
 
 
+CPH_PLACES = [
+    "københavn", "kobenhavn", "copenhagen", "frederiksberg", "storkøbenhavn", "hovedstad", "gentofte", "hellerup",
+    "lyngby", "søborg", "soborg", "valby", "glostrup", "ballerup", "herlev", "brøndby", "hvidovre", "rødovre",
+    "albertslund", "taastrup", "kastrup", "tårnby", "ørestad", "nordhavn", "bagsværd", "måløv", "hørsholm",
+    "gladsaxe", "virum", "holte", "birkerød", "farum", "værløse", "skovlunde", "ishøj", "vallensbæk", "greve",
+    "dragør", "hillerød", "roskilde", "kongens lyngby", "charlottenlund", "klampenborg", "nærum", "kgs. lyngby",
+    "remote", "hybrid", "hjemmefra",
+]
+
+
+def is_cph(*texts: str | None) -> bool:
+    """Storkøbenhavn (+ remote). Ukendt/landsdækkende lokation tæller også med."""
+    t = " ".join(x or "" for x in texts).lower().strip()
+    if not t or t in ("danmark", "denmark"):
+        return True
+    return any(p in t for p in CPH_PLACES)
+
+
 def is_denmark(*texts: str | None) -> bool:
     t = " ".join(x or "" for x in texts).lower()
     return any(p in t for p in DK_PLACES)
@@ -188,6 +206,7 @@ class Job:
     source: str = ""
     external_id: str = ""
     tags: list[str] = field(default_factory=list)
+    top50: bool = True            # False = virksomhed uden for top 50 (kun fra Jobindex)
 
     @property
     def id(self) -> str:
