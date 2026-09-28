@@ -365,7 +365,8 @@ companies:
     company_id: Netcompany1
 - rank: 37
   name: PFA Pension
-  aliases: []
+  aliases:
+  - PFA
   start_urls:
   - https://www.pfa.dk/om-pfa/job-og-karriere/
   - https://www.pfa.dk/job/

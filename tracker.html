@@ -65,7 +65,7 @@ label.inline{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--
 .score.lo{background:var(--lo-soft);color:var(--lo)} .score.na{background:var(--sunk);color:var(--ink3);font-size:13px}
 .title{font:600 16px/1.3 var(--body);margin:0}
 .meta{font-size:13px;color:var(--ink2);margin-top:3px;display:flex;flex-wrap:wrap;gap:4px 12px}
-.meta .rank{font-family:var(--mono);color:var(--ink3)}
+.meta .t50{font:500 11.5px var(--mono);color:var(--accent);background:var(--accent-soft);padding:1px 7px;border-radius:5px}
 .tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
 .tag{font:500 11.5px var(--body);letter-spacing:.02em;padding:2px 8px;border-radius:99px;background:var(--sunk);color:var(--ink2)}
 .tag.new{background:var(--accent);color:var(--accent-ink)}
@@ -99,7 +99,7 @@ details.profile textarea{width:100%;min-height:120px;margin-top:10px}
 
 <div class="wrap">
   <header>
-    <h1><small>Studenterjob · Top 50 arbejdsgivere · Danmark</small>Studiejob Radar</h1>
+    <h1><small>Studenterjob · Storkøbenhavn · Top 50-arbejdsgivere i hele landet</small>Studiejob Radar</h1>
     <div class="runmeta" id="runmeta"><span>Forbinder…</span></div>
   </header>
 
@@ -118,6 +118,7 @@ details.profile textarea{width:100%;min-height:120px;margin-top:10px}
     <div class="row">
       <label class="inline" for="minScore">Min. score <select id="minScore"><option value="0">Alle</option><option value="40">40+</option><option value="60">60+</option><option value="75">75+</option></select></label>
       <label class="inline" for="sort">Sortér <select id="sort"><option value="score">Højeste score</option><option value="new">Nyeste først</option><option value="due">Kortest frist</option><option value="rank">Virksomhedens rank</option></select></label>
+      <label class="inline" for="only50"><input type="checkbox" id="only50"> Kun top 50-arbejdsgivere</label>
       <label class="inline" for="showOld"><input type="checkbox" id="showOld"> Vis udløbne</label>
     </div>
   </section>
@@ -129,7 +130,7 @@ details.profile textarea{width:100%;min-height:120px;margin-top:10px}
 <script>
 const STATUSES=[["ny","Nye"],["gemt","Gemt"],["ansøgt","Ansøgt"],["fravalgt","Fravalgt"],["alle","Alle"]];
 const TAGS=["Data & analyse","SQL","Automatisering","AI","Proces","Digitalisering","Portfolio & investering","Finans","Consulting","Power BI / Excel","Python"];
-const S={jobs:[],run:null,profile:"",tab:"ny",q:"",tags:new Set(),min:0,sort:"score",showOld:false,open:new Set(),drafts:{}};
+const S={jobs:[],run:null,profile:"",tab:"ny",q:"",tags:new Set(),min:0,sort:"score",showOld:false,only50:false,open:new Set(),drafts:{}};
 let db=null, sample=null;
 const $=id=>document.getElementById(id);
 try{const v=JSON.parse(localStorage.getItem("sjr-ui")||"{}");Object.assign(S,{tab:v.tab||S.tab,min:v.min||0,sort:v.sort||S.sort});}catch(e){}
@@ -149,10 +150,11 @@ function filtered(){
   let r=S.jobs.filter(j=>(S.showOld||!expired(j))
     &&(S.tab==="alle"||statusOf(j)===S.tab)
     &&(!q||(j.title+" "+j.company+" "+(j.description_md||"")).toLowerCase().includes(q))
+    &&(!S.only50||j.top50!==false)
     &&(!S.tags.size||(j.tags||[]).some(t=>S.tags.has(t)))
     &&((j.score??0)>=S.min||(S.min===0)));
   const by={score:(a,b)=>(b.score??-1)-(a.score??-1),new:(a,b)=>String(b.first_seen).localeCompare(String(a.first_seen)),
-    due:(a,b)=>(a.deadline||"9999").localeCompare(b.deadline||"9999"),rank:(a,b)=>(a.rank||99)-(b.rank||99)};
+    due:(a,b)=>(a.deadline||"9999").localeCompare(b.deadline||"9999"),rank:(a,b)=>(a.top50===false?999:(a.rank||99))-(b.top50===false?999:(b.rank||99))};
   return r.sort(by[S.sort]);
 }
 
@@ -160,7 +162,7 @@ function renderControls(){
   const counts={};S.jobs.forEach(j=>{if(!expired(j)||S.showOld){counts[statusOf(j)]=(counts[statusOf(j)]||0)+1;counts.alle=(counts.alle||0)+1}});
   $("tabs").innerHTML=STATUSES.map(([k,l])=>`<button type="button" data-tab="${k}" aria-pressed="${S.tab===k}">${l}<span class="n">${counts[k]||0}</span></button>`).join("");
   $("tagrow").innerHTML=TAGS.map(t=>`<button type="button" class="chip" data-tag="${esc(t)}" aria-pressed="${S.tags.has(t)}">${esc(t)}</button>`).join("");
-  $("minScore").value=String(S.min);$("sort").value=S.sort;$("showOld").checked=S.showOld;
+  $("minScore").value=String(S.min);$("sort").value=S.sort;$("showOld").checked=S.showOld;$("only50").checked=S.only50;
 }
 
 function renderRun(){
@@ -180,7 +182,7 @@ function jobHTML(j){
     <div class="score ${scoreCls(j.score)}" title="AI-relevansscore">${j.score==null?"–":j.score}</div>
     <div>
       <h2 class="title">${esc(j.title)}</h2>
-      <div class="meta"><span>${esc(j.company)}</span><span class="rank">#${esc(j.rank??"–")}</span><span>${esc(j.location||"")}</span></div>
+      <div class="meta"><span>${esc(j.company)}</span>${j.top50===false?"":`<span class="t50">Top 50 · #${esc(j.rank??"–")}</span>`}<span>${esc(j.location||"")}</span></div>
       ${j.reason?`<div class="reason">${esc(j.reason)}</div>`:""}
       <div class="tags">${isNew?'<span class="tag new">Ny</span>':""}${(j.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>
     </div>
@@ -258,6 +260,7 @@ document.addEventListener("change",e=>{
   if(e.target.id==="minScore"){S.min=+e.target.value;saveUI();render()}
   if(e.target.id==="sort"){S.sort=e.target.value;saveUI();render()}
   if(e.target.id==="showOld"){S.showOld=e.target.checked;render()}
+  if(e.target.id==="only50"){S.only50=e.target.checked;render()}
 });
 let qt;$("q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{S.q=e.target.value;render()},150)});
 $("saveProfile").addEventListener("click",async()=>{

@@ -144,7 +144,7 @@ TOPICS = {
     "Digitalisering": r"digitali|it[- ]udvikling|it development|requirements|kravindsamling|kravspec|validering|kvalitetssikring",
     "Portfolio & investering": r"porteføl|portfolio management|portfolio analy|asset management|kapitalforvaltning|investment (?:management|analy|team|banking)|investering|fixed income|equities|trading|pension fund",
     "Finans": r"business finance|finance|finans|risk|risiko|controlling|controller|treasury|økonomi|accounting|regnskab|valuation",
-    "Consulting": r"consulting|consultant|konsulent|rådgivning|advisory|management consult",
+    "Consulting": r"consulting|consultant|konsulent|advisory|management consult",
     "Power BI / Excel": r"power\s*bi|power query|excel|vba",
     "Python": r"python|pandas",
 }
