@@ -55,6 +55,7 @@ def scrape(cfg):
             if href in seen or href.rstrip("/") == lu.rstrip("/") or not pat.search(href):
                 continue
             title = clean(a.get_text())
+            title = title[7:] if title.lower().startswith("se job ") else title
             if len(title) < 6:
                 continue
             seen.add(href)

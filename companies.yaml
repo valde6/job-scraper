@@ -437,7 +437,7 @@ companies:
     - https://jobs.ikea.com/da/soeg-jobs/student/Danmark/
     - https://jobs.ikea.com/da/soeg-jobs/Danmark/
     link_pattern: /da/job/
-    dk_only: true
+    dk_only: false
 - rank: 44
   name: Statsministeriet
   aliases:
