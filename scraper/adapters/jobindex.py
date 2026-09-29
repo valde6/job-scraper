@@ -87,7 +87,7 @@ def scrape_all(companies, today_year, all_companies=True, known=None, extended=T
                 continue
             tags = topic_tags(title, teaser_txt)
             # uden for top 50: kun Storkøbenhavn og kun hvis titel/uddrag rammer dine fagområder
-            if not top50 and not (is_cph(loc) and tags):
+            if not top50 and not (is_cph(loc, title) and tags):
                 continue
             fit = student_fit(title, teaser_txt)
             if fit != "sikker" and not extended:

@@ -105,12 +105,19 @@ CPH_PLACES = [
 ]
 
 
-def is_cph(*texts: str | None) -> bool:
-    """Storkøbenhavn (+ remote). Ukendt/landsdækkende lokation tæller også med."""
-    t = " ".join(x or "" for x in texts).lower().strip()
-    if not t or t in ("danmark", "denmark"):
+NON_CPH = ["aarhus", "århus", "odense", "aalborg", "esbjerg", "vejle", "kolding", "horsens", "herning", "silkeborg",
+           "randers", "holbæk", "næstved", "billund", "fredericia", "viborg", "sønderborg", "svendborg", "slagelse", "holstebro"]
+
+
+def is_cph(loc: str | None, title: str = "") -> bool:
+    """Storkøbenhavn (+ remote). Ukendt/landsdækkende lokation tæller med, medmindre titlen nævner en anden by."""
+    t = (loc or "").lower().strip()
+    if any(p in t for p in CPH_PLACES):
         return True
-    return any(p in t for p in CPH_PLACES)
+    if not t or t in ("danmark", "denmark"):
+        tl = (title or "").lower()
+        return not any(c in tl for c in NON_CPH) or any(p in tl for p in CPH_PLACES)
+    return False
 
 
 def is_denmark(*texts: str | None) -> bool:
@@ -132,21 +139,24 @@ def is_student_body(text: str) -> bool:
 
 
 # --- Udvidet filter: studiejob uden ordet "student" -------------------------------------------
+# Stærke tegn: teksten taler direkte om at kombinere jobbet med studier
 STUDY_SIGNAL_RE = re.compile(
-    r"studentermedhj|studentermedarb|student\s+assistant|student\s+worker|studiejob|working\s+student|"
     r"ved\s+siden\s+af\s+(?:dit|dine|studiet|studierne|din\s+uddannelse)|sideløbende\s+med\s+(?:dit|dine|din)\s+(?:studie|uddannelse)|"
     r"kombiner\w*\s+med\s+(?:dine\s+|dit\s+)?(?:studier|studiet|studie|uddannelse)|combin\w*\s+with\s+(?:your\s+)?stud|"
     r"alongside\s+your\s+(?:studies|degree|education)|while\s+(?:you\s+are\s+)?(?:studying|completing\s+your)|"
-    r"under\s+uddannelse|i\s+gang\s+med\s+(?:en|din)\s+(?:videregående\s+)?uddannelse|igangværende\s+(?:videregående\s+)?uddannelse|"
-    r"(?:bachelor|kandidat)studerende|studerende\s+(?:på|ved|inden\s+for)|læser\s+(?:på|til)\s+|"
-    r"currently\s+(?:enrolled|studying|pursuing)|enrolled\s+(?:in|at)\s+(?:a|an|university)|"
-    r"pursuing\s+(?:a|an|your)\s+(?:bachelor|master|degree)|"
-    r"(?:eksamensperiode|eksamenstid|exam\s+periods?|eksamen)[^.]{0,40}(?:fleksib|hensyn)|(?:fleksib|hensyn)[^.]{0,60}(?:eksamen|exam)",
+    r"(?:du|you)\s+(?:er|are)\s+(?:i\s+gang\s+med|currently\s+(?:enrolled|studying|pursuing))|"
+    r"igangværende\s+(?:videregående\s+)?uddannelse|currently\s+enrolled|"
+    r"(?:fleksib|hensyn)[^.]{0,60}(?:eksamen|eksamens|exam)",
+    re.I,
+)
+# Svage tegn: nævner studerende/studentermedhjælpere – tæller kun sammen med deltid/≤25 timer
+WEAK_STUDY_RE = re.compile(
+    r"studentermedhj|studentermedarb|student\s+assistant|student\s+worker|studiejob|working\s+student|studerende",
     re.I,
 )
 _HOURS_RE = re.compile(r"\b(\d{1,2})\s*(?:[-–]\s*(\d{1,2})\s*)?(?:timer|t\.|hours?|hrs)\s*(?:om|per|pr\.?|a|i|/)\s*(?:ugen|uge|week|wk)", re.I)
 PARTTIME_RE = re.compile(r"\bdeltid|part[- ]time|deltidsstilling|deltidsjob", re.I)
-SENIOR_RE = re.compile(r"\bsenior|\blead\b|leder\b|\bchef\b|\bhead\b|director|direktør|\bmanager\b|erfaren|experienced|principal|\bpartner\b|\bVP\b", re.I)
+SENIOR_RE = re.compile(r"chef\b|\bsenior|\blead\b|leder\b|\bchef\b|\bhead\b|director|direktør|\bmanager\b|erfaren|experienced|principal|\bpartner\b|\bVP\b", re.I)
 
 
 def study_hours(text: str) -> bool:
@@ -172,9 +182,10 @@ def student_fit(title: str, text: str = "") -> str | None:
     if SENIOR_RE.search(title or ""):
         return None
     body = (text or "")[:8000]
-    if STUDY_SIGNAL_RE.search(body):
+    parttime = bool(PARTTIME_RE.search(title or "") or study_hours(title + " " + body) or PARTTIME_RE.search(body[:1500]))
+    if STUDY_SIGNAL_RE.search(body) or (parttime and WEAK_STUDY_RE.search(body)):
         return "sandsynlig"
-    if PARTTIME_RE.search(title or "") or study_hours(title + " " + body) or PARTTIME_RE.search(body[:1500]):
+    if parttime:
         return "mulig"
     return None
 
@@ -192,7 +203,7 @@ TOPICS = {
     "Digitalisering": r"digitali|it[- ]udvikling|it development|requirements|kravindsamling|kravspec|validering|kvalitetssikring",
     "Portfolio & investering": r"porteføl|portfolio management|portfolio analy|asset management|kapitalforvaltning|investment (?:management|analy|team|banking)|investering|fixed income|equities|trading|pension fund",
     "Finans": r"business finance|finance|finans|risk|risiko|controlling|controller|treasury|økonomi|accounting|regnskab|valuation",
-    "Consulting": r"consulting|consultant|konsulent|advisory|management consult",
+    "Consulting": r"consulting|consultant|advisory|management consult|(?<!salgs)(?<!kunde)(?<!personale)(?<!service)(?<!butiks)konsulent",
     "Power BI / Excel": r"power\s*bi|power query|excel|vba",
     "Python": r"python|pandas",
 }
