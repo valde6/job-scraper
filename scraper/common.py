@@ -131,6 +131,54 @@ def is_student_body(text: str) -> bool:
     return bool(STUDENT_BODY_RE.search(text or "")) and not EXCLUDE_RE.search((text or "")[:400])
 
 
+# --- Udvidet filter: studiejob uden ordet "student" -------------------------------------------
+STUDY_SIGNAL_RE = re.compile(
+    r"studentermedhj|studentermedarb|student\s+assistant|student\s+worker|studiejob|working\s+student|"
+    r"ved\s+siden\s+af\s+(?:dit|dine|studiet|studierne|din\s+uddannelse)|sideløbende\s+med\s+(?:dit|dine|din)\s+(?:studie|uddannelse)|"
+    r"kombiner\w*\s+med\s+(?:dine\s+|dit\s+)?(?:studier|studiet|studie|uddannelse)|combin\w*\s+with\s+(?:your\s+)?stud|"
+    r"alongside\s+your\s+(?:studies|degree|education)|while\s+(?:you\s+are\s+)?(?:studying|completing\s+your)|"
+    r"under\s+uddannelse|i\s+gang\s+med\s+(?:en|din)\s+(?:videregående\s+)?uddannelse|igangværende\s+(?:videregående\s+)?uddannelse|"
+    r"(?:bachelor|kandidat)studerende|studerende\s+(?:på|ved|inden\s+for)|læser\s+(?:på|til)\s+|"
+    r"currently\s+(?:enrolled|studying|pursuing)|enrolled\s+(?:in|at)\s+(?:a|an|university)|"
+    r"pursuing\s+(?:a|an|your)\s+(?:bachelor|master|degree)|"
+    r"(?:eksamensperiode|eksamenstid|exam\s+periods?|eksamen)[^.]{0,40}(?:fleksib|hensyn)|(?:fleksib|hensyn)[^.]{0,60}(?:eksamen|exam)",
+    re.I,
+)
+_HOURS_RE = re.compile(r"\b(\d{1,2})\s*(?:[-–]\s*(\d{1,2})\s*)?(?:timer|t\.|hours?|hrs)\s*(?:om|per|pr\.?|a|i|/)\s*(?:ugen|uge|week|wk)", re.I)
+PARTTIME_RE = re.compile(r"\bdeltid|part[- ]time|deltidsstilling|deltidsjob", re.I)
+SENIOR_RE = re.compile(r"\bsenior|\blead\b|leder\b|\bchef\b|\bhead\b|director|direktør|\bmanager\b|erfaren|experienced|principal|\bpartner\b|\bVP\b", re.I)
+
+
+def study_hours(text: str) -> bool:
+    """Timetal, der passer til et studiejob (højst 25 t/uge)."""
+    for m in _HOURS_RE.finditer(text or ""):
+        hi = int(m.group(2) or m.group(1))
+        if 5 <= hi <= 25:
+            return True
+    return False
+
+
+def student_fit(title: str, text: str = "") -> str | None:
+    """Hvor sikkert er det et studiejob?
+    'sikker'     – titlen siger student/studiejob
+    'sandsynlig' – teksten taler om studier ved siden af jobbet, studentermedhjælper e.l.
+    'mulig'      – deltid/≤25 timer om ugen og ikke en senior-/lederstilling
+    None         – ingen tegn på studiejob (eller praktik/graduate/ph.d.)
+    """
+    if EXCLUDE_RE.search(title or ""):
+        return None
+    if is_student(title):
+        return "sikker"
+    if SENIOR_RE.search(title or ""):
+        return None
+    body = (text or "")[:8000]
+    if STUDY_SIGNAL_RE.search(body):
+        return "sandsynlig"
+    if PARTTIME_RE.search(title or "") or study_hours(title + " " + body) or PARTTIME_RE.search(body[:1500]):
+        return "mulig"
+    return None
+
+
 def is_student(title: str) -> bool:
     return bool(STUDENT_RE.search(title or "")) and not EXCLUDE_RE.search(title or "")
 
@@ -207,6 +255,7 @@ class Job:
     external_id: str = ""
     tags: list[str] = field(default_factory=list)
     top50: bool = True            # False = virksomhed uden for top 50 (kun fra Jobindex)
+    fit: str = "sikker"           # sikker | sandsynlig | mulig (se student_fit)
 
     @property
     def id(self) -> str:

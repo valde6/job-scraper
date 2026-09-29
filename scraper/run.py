@@ -69,9 +69,14 @@ def main():
     if not args.only:
         try:
             known = {j["external_id"]: j for j in old.values() if j.get("source") == "jobindex" and len(j.get("description_md", "")) > 300}
-            listed, jobs = jobindex.scrape_all(companies, today.year, known=known)
+            rej_file = DATA / "jobindex_rejected.json"
+            rejected = set(json.loads(rej_file.read_text())[-5000:]) if rej_file.exists() else set()
+            listed, jobs = jobindex.scrape_all(companies, today.year, known=known, rejected=rejected)
+            rej_file.write_text(json.dumps(sorted(rejected)[-5000:]))
+            print("Jobindex:", getattr(jobindex.scrape_all, "stats", {}))
             found += jobs
-            status.append({"company": "(Jobindex RSS)", "source": "jobindex", "ok": True, "listed": listed, "matched": len(jobs)})
+            status.append({"company": "(Jobindex RSS)", "source": "jobindex", "ok": True, "listed": listed, "matched": len(jobs),
+                           "fit": getattr(jobindex.scrape_all, "stats", {})})
         except Exception as e:  # noqa: BLE001
             status.append({"company": "(Jobindex RSS)", "source": "jobindex", "ok": False, "error": str(e)[:300]})
 
@@ -144,11 +149,12 @@ def export_tracker(jobs_out, status, companies, now):
             continue
         doc = {k: j.get(k) for k in ("title", "company", "location", "url", "apply_url", "deadline", "posted",
                                       "description_md", "source", "tags", "first_seen", "last_seen", "active")}
+        doc["fit"] = j.get("fit") or "sikker"
         doc["top50"] = j.get("top50", True)
         doc["rank"] = ranks.get(j["company"]) if doc["top50"] else None
         (docs / f"{j['id']}.json").write_text(json.dumps(doc, ensure_ascii=False))
         index.append({"id": j["id"], "active": True, "company": j["company"], "title": j["title"],
-                      "top50": j.get("top50", True),
+                      "top50": j.get("top50", True), "fit": j.get("fit") or "sikker",
                       "location": j.get("location", ""), "deadline": j.get("deadline", ""), "tags": j.get("tags", []),
                       "excerpt": (j.get("description_md") or "")[:1500]})
     direct = [c for c in status if c.get("source") not in ("jobindex", "none")]

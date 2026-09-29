@@ -79,6 +79,16 @@ for i, line in enumerate(lines, 1):
             f.write_text(redact(f"{line}\nOK listed={listed} matched={len(jobs)}\n\n{body[:40000]}"))
             summary.append(f"{i:02d} OK listed={listed} matched={len(jobs)} | {line}")
             continue
+        if parts[0] == "JOBINDEX":
+            from .adapters import jobindex as ji
+            listed, jobs = ji.scrape_all(list(companies.values()), 2026, extended=True)
+            by = {}
+            for j in jobs:
+                by.setdefault(j.fit, []).append(f"{'T50' if j.top50 else '   '} {j.company[:28]} | {j.title[:70]} | {j.location[:25]} | {','.join(j.tags)}")
+            txt = f"listed={listed} stats={ji.scrape_all.stats}\n" + "\n".join(f"\n== {k} ({len(v)})\n" + "\n".join(v) for k, v in by.items())
+            f.write_text(redact(txt))
+            summary.append(f"{i:02d} JOBINDEX listed={listed} {ji.scrape_all.stats}")
+            continue
         if parts[0] == "RAW":
             r = http("GET", parts[1], retries=0, timeout=25)
             f.write_text(redact(f"{line}\nSTATUS {r.status_code}\n\n{r.text[:int(parts[2]) if len(parts) > 2 else 12000]}"))

@@ -8,7 +8,7 @@ import re
 from urllib.parse import quote
 
 from bs4 import BeautifulSoup
-from ..common import Job, get, soup, clean, html_to_md, is_student, find_deadline, is_cph, topic_tags
+from ..common import Job, get, soup, clean, html_to_md, is_student, find_deadline, is_cph, topic_tags, student_fit, SENIOR_RE
 
 # robots.txt tillader kun /jobsoegning.rss?q=... med højst to ord (ingen side-, region- eller aldersfiltre).
 # Hvert feed viser de ~20 nyeste opslag, så vi bruger mange forskellige søgninger og kører ofte.
@@ -17,7 +17,14 @@ QUERIES = [
     "studiejob", "studenterjob", "studentmedhjælper", "student", "studerende",
     '"student assistant"', '"student assistants"', '"student worker"', '"working student"', '"student job"',
 ]
+# Ekstra feeds til studiejob, der ikke bruger ordet "student": deltid/timer + dine fagområder.
+EXTRA_QUERIES = [
+    "deltid", '"part-time"', '"timer om ugen"', '"ved siden af"', "deltidsjob", "junior", '"junior analyst"',
+    "dataanalytiker", '"data analyst"', "SQL", '"Power BI"', "RPA", "automatisering", "procesoptimering",
+    '"business analyst"', "analytiker", "investering", "controlling", "digitalisering",
+]
 FEEDS = [("jobsoegning", q) for q in QUERIES]
+EXTRA_FEEDS = [("jobsoegning", q) for q in EXTRA_QUERIES]
 
 
 def _matcher(companies):
@@ -30,7 +37,7 @@ def _matcher(companies):
     return pats
 
 
-def scrape_all(companies, today_year, all_companies=True, known=None):
+def scrape_all(companies, today_year, all_companies=True, known=None, extended=True, rejected=None):
     """Returnerer (listed, [Job]).
 
     Top 50-virksomheder: alle studenterjob i Danmark.
@@ -39,8 +46,10 @@ def scrape_all(companies, today_year, all_companies=True, known=None):
     import time
     pats = _matcher(companies)
     known = known or {}
+    rejected = rejected if rejected is not None else set()   # opslag vi allerede har læst og fravalgt
     seen, listed, jobs = set(), 0, []
-    for path, q in FEEDS:
+    stats = {"sikker": 0, "sandsynlig": 0, "mulig": 0, "body_fetch": 0}
+    for path, q in FEEDS + (EXTRA_FEEDS if extended else []):
         time.sleep(1)
         try:
             xml = get(f"https://www.jobindex.dk/{path}.rss?q={quote(q, safe='')}").text
@@ -74,18 +83,30 @@ def scrape_all(companies, today_year, all_companies=True, known=None):
                 ps = dsoup.find_all(["p", "ul"])
                 teaser_html = "".join(str(x) for x in ps)
             teaser_txt = clean(dsoup.get_text(" "))[:600] if dsoup else ""
-            if not company or not is_student(full_title + " " + teaser_txt):
+            if not company:
                 continue
+            tags = topic_tags(title, teaser_txt)
             # uden for top 50: kun Storkøbenhavn og kun hvis titel/uddrag rammer dine fagområder
-            if not top50 and not (is_cph(loc) and topic_tags(title, teaser_txt)):
+            if not top50 and not (is_cph(loc) and tags):
                 continue
+            fit = student_fit(title, teaser_txt)
+            if fit != "sikker" and not extended:
+                continue
+            if fit != "sikker" and (not tags or SENIOR_RE.search(title)):
+                continue   # ikke-oplagte studiejob kræver fagligt match og ingen seniortitel
             jid = re.search(r"(h\d+)", link)
             ext = jid.group(1) if jid else link
+            if ext in rejected:
+                continue
             if ext in known:          # allerede hentet i en tidligere kørsel: genbrug teksten
                 k = known[ext]
+                kfit = k.get("fit") or student_fit(title, k.get("description_md", ""))
+                if not kfit:
+                    continue
+                stats[kfit] += 1
                 jobs.append(Job(company=company, title=title, url=link, apply_url=k.get("apply_url") or link,
                                 location=loc, deadline=k.get("deadline", ""), description_md=k.get("description_md", ""),
-                                source="jobindex", external_id=ext, top50=top50))
+                                source="jobindex", external_id=ext, top50=top50, fit=kfit))
                 continue
             ad_url = f"https://www.jobindex.dk/jobannonce/{jid.group(1)}/" if jid else link
             desc_md, apply = "", link
@@ -102,11 +123,19 @@ def scrape_all(companies, today_year, all_companies=True, known=None):
                     apply = a2["href"] if a2["href"].startswith("http") else "https://www.jobindex.dk" + a2["href"]
             except Exception:
                 pass
+            stats["body_fetch"] += 1
+            if fit != "sikker":
+                fit = student_fit(title, desc_md or teaser_txt)
+                if not fit:
+                    rejected.add(ext)
+                    continue
+            stats[fit] += 1
             if len(desc_md) < 300:
                 desc_md = html_to_md(teaser_html) + "\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
             jobs.append(Job(company=company, title=title, url=link, apply_url=apply, location=loc,
                             deadline=find_deadline(desc_md, today_year) or "", description_md=desc_md,
-                            source="jobindex", external_id=jid.group(1) if jid else link, top50=top50))
+                            source="jobindex", external_id=jid.group(1) if jid else link, top50=top50, fit=fit))
+    scrape_all.stats = stats
     return listed, jobs
 
 
