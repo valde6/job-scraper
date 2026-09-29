@@ -1,13 +1,31 @@
 {
- "updated": "2026-09-29T18:05:10+00:00",
+ "updated": "2026-09-29T22:15:15+00:00",
  "run": {
-  "updated": "2026-09-29T18:05:10+00:00",
-  "active_count": 46,
+  "updated": "2026-09-29T22:15:15+00:00",
+  "active_count": 47,
   "sources_ok": 18,
   "sources_total": 50,
   "jobindex_ok": true
  },
  "jobs": [
+  {
+   "id": "75e70fd851c6",
+   "active": true,
+   "company": "LEGO Group",
+   "title": "Student Worker – Data & Digital Analytics",
+   "top50": true,
+   "fit": "sikker",
+   "location": "Billund",
+   "deadline": "",
+   "tags": [
+    "Data & analyse",
+    "Automatisering",
+    "AI",
+    "Finans",
+    "Python"
+   ],
+   "excerpt": "**Job Description**\n\n*Are you passionate about using AI and digital solutions to solve real business challenges and create tangible value?*\n\n**Bring your digital superpower in play and join the LEGO Group in Billund and become part of a team that is strengthening its digital capabilities by exploring how AI can improve processes, data quality and decision-making.**\n\n**Core Responsibilities**\n\nAs a student worker, you will work closely with the business to identify, develop and validate AI-supported solutions to real operational challenges. You will have the opportunity to combine your interest in AI and technology with a strong understanding of business processes — turning ideas into practical solutions that create measurable value.\n\nYour tasks will cover:\n\n* Analyze technical drawings, order data, product categorization and supplier segmentation rules in cooperation with engineering and business experts\n* Prepare, clean, structure and label datasets for e.g. machine learning\n* Explore and evaluate suitable approaches, including computer vision, OCR, multimodal models, metadata-bassed classification, and rule-based methods.\n* Develop and test a proof of concept for automatically recommending the appropriate product category and supplier segment for an order (matchmaking).\n* Define evaluation criteria and measure model performance using agreed metrics, including classification accuracy, coverage, confidence, and error types\n* Validate results with eingineering, procurement and"
+  },
   {
    "id": "6d2768e34221",
    "active": true,
