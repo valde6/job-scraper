@@ -5,7 +5,7 @@ Config: customer: nykredit   (fra candidate.hr-manager.net/...?customer=XXX)
 import re
 from datetime import datetime, timezone
 
-from ..common import Job, get, clean, html_to_md, is_denmark, is_student, is_student_body
+from ..common import Job, get, clean, html_to_md, is_denmark, is_student, is_student_body, student_fit, topic_tags
 
 API = "https://api.hr-manager.net/jobportal.svc/{c}/positionlist/json/"
 
@@ -37,7 +37,9 @@ def scrape(cfg):
         listed += 1
         title = clean(_title(p))
         adv0 = (p.get("Advertisements") or [{}])[0]
-        if not (is_student(title) or is_student_body(adv0.get("Content", "")[:3000])):
+        content = html_to_md(adv0.get("Content", ""))
+        fit = student_fit(title, content)
+        if not fit or (fit != "sikker" and not topic_tags(title, content[:3000])):
             continue
         loc = clean(" ".join(str(p.get(k) or "") for k in ("WorkPlace", "WorkPlaceCity", "Location", "PositionLocation", "Country")
                              if isinstance(p.get(k), (str, int))))
@@ -51,6 +53,6 @@ def scrape(cfg):
             company=cfg["name"], title=title, url=url, apply_url=p.get("ApplicationFormUrl") or url,
             location=loc or "Danmark", posted=_date(p.get("Created")),
             deadline=_date(p.get("ApplicationDue")),
-            description_md=html_to_md(desc_html), source="hrmanager", external_id=str(p.get("Id")),
+            description_md=html_to_md(desc_html), source="hrmanager", external_id=str(p.get("Id")), fit=fit,
         ))
     return listed, jobs

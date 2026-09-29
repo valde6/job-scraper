@@ -5,9 +5,9 @@ Config: url: https://lego.wd103.myworkdayjobs.com/LEGO_External
 import re
 from urllib.parse import urlparse
 
-from ..common import Job, post, get, html_to_md, is_denmark, is_student, is_student_body, clean
+from ..common import Job, post, get, html_to_md, is_denmark, is_student, is_student_body, clean, student_fit, topic_tags
 
-SEARCH_TERMS = ["student", "studentermedhjælper", "student assistant", "studiejob"]
+SEARCH_TERMS = ["student", "studentermedhjælper", "student assistant", "studiejob", "part-time", "deltid"]
 
 
 def _parts(url: str):
@@ -49,7 +49,9 @@ def scrape(cfg):
                 locs = [info.get("location") or ""] + (info.get("additionalLocations") or [])
                 if not is_denmark(country, " ".join(locs), loc):
                     continue
-                if not (is_student(title) or is_student_body(info.get("jobDescription", ""))):
+                desc = html_to_md(info.get("jobDescription"))
+                fit = student_fit(title, desc)
+                if not fit or (fit != "sikker" and not topic_tags(title, desc[:3000])):
                     continue
                 jobs.append(Job(
                     company=cfg["name"], title=title,
@@ -58,7 +60,7 @@ def scrape(cfg):
                     location=", ".join(x for x in locs if x) or loc,
                     posted=info.get("startDate") or "",
                     description_md=html_to_md(info.get("jobDescription")),
-                    source="workday", external_id=info.get("jobReqId") or path,
+                    source="workday", external_id=info.get("jobReqId") or path, fit=fit,
                 ))
             offset += 20
             if offset >= (data.get("total") or 0) or not posts:

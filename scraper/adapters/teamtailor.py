@@ -3,7 +3,7 @@
 Bruger RSS-feedet /jobs.rss som indeholder titel, link, lokation og beskrivelse.
 """
 from bs4 import BeautifulSoup
-from ..common import Job, get, soup, clean, html_to_md, is_denmark, is_student, jsonld_jobposting, jsonld_location
+from ..common import Job, get, soup, clean, html_to_md, is_denmark, is_student, jsonld_jobposting, jsonld_location, student_fit, topic_tags, SENIOR_RE
 
 
 def scrape(cfg):
@@ -15,7 +15,10 @@ def scrape(cfg):
         listed += 1
         title = clean(it.find("title").get_text() if it.find("title") else "")
         link = clean(it.find("link").get_text() if it.find("link") else "") or clean(it.find("guid").get_text() if it.find("guid") else "")
-        if not is_student(title):
+        desc0 = it.find("description")
+        pre = html_to_md(desc0.get_text() if desc0 else "")
+        fit = student_fit(title, pre)
+        if not fit or (fit != "sikker" and not topic_tags(title, pre[:3000])):
             continue
         loc_tags = it.find_all(["location", "city", "locations"])
         loc = " ".join(clean(t.get_text()) for t in loc_tags)
@@ -29,5 +32,5 @@ def scrape(cfg):
         if not is_denmark(loc, "" if not cfg.get("dk_only") else "denmark"):
             continue
         jobs.append(Job(company=cfg["name"], title=title, url=link, location=loc,
-                        description_md=desc_md, source="teamtailor", external_id=link.rstrip("/").split("/")[-1]))
+                        description_md=desc_md, source="teamtailor", external_id=link.rstrip("/").split("/")[-1], fit=fit))
     return listed, jobs

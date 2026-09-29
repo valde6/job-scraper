@@ -69,6 +69,7 @@ label.inline{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--
 .tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
 .tag{font:500 11.5px var(--body);letter-spacing:.02em;padding:2px 8px;border-radius:99px;background:var(--sunk);color:var(--ink2)}
 .tag.new{background:var(--accent);color:var(--accent-ink)}
+.tag.fit{background:var(--mid-soft);color:var(--mid)}
 .side{display:flex;flex-direction:column;align-items:flex-end;gap:6px;white-space:nowrap}
 .due{font:500 12px var(--mono);padding:3px 8px;border-radius:6px;background:var(--sunk);color:var(--ink2)}
 .due.soon{background:var(--warn-soft);color:var(--warn)}
@@ -118,6 +119,7 @@ details.profile textarea{width:100%;min-height:120px;margin-top:10px}
     <div class="row">
       <label class="inline" for="minScore">Min. score <select id="minScore"><option value="0">Alle</option><option value="40">40+</option><option value="60">60+</option><option value="75">75+</option></select></label>
       <label class="inline" for="sort">Sortér <select id="sort"><option value="score">Højeste score</option><option value="new">Nyeste først</option><option value="due">Kortest frist</option><option value="rank">Virksomhedens rank</option></select></label>
+      <label class="inline" for="fitSel">Studiejob <select id="fitSel"><option value="alle">Alle niveauer</option><option value="sandsynlig">Sikre + sandsynlige</option><option value="sikker">Kun sikre</option></select></label>
       <label class="inline" for="only50"><input type="checkbox" id="only50"> Kun top 50-arbejdsgivere</label>
       <label class="inline" for="showOld"><input type="checkbox" id="showOld"> Vis udløbne</label>
     </div>
@@ -130,7 +132,7 @@ details.profile textarea{width:100%;min-height:120px;margin-top:10px}
 <script>
 const STATUSES=[["ny","Nye"],["gemt","Gemt"],["ansøgt","Ansøgt"],["fravalgt","Fravalgt"],["alle","Alle"]];
 const TAGS=["Data & analyse","SQL","Automatisering","AI","Proces","Digitalisering","Portfolio & investering","Finans","Consulting","Power BI / Excel","Python"];
-const S={jobs:[],run:null,profile:"",tab:"ny",q:"",tags:new Set(),min:0,sort:"score",showOld:false,only50:false,open:new Set(),drafts:{}};
+const S={jobs:[],run:null,profile:"",tab:"ny",q:"",tags:new Set(),min:0,sort:"score",showOld:false,only50:false,fitMin:"alle",open:new Set(),drafts:{}};
 let db=null, sample=null;
 const $=id=>document.getElementById(id);
 try{const v=JSON.parse(localStorage.getItem("sjr-ui")||"{}");Object.assign(S,{tab:v.tab||S.tab,min:v.min||0,sort:v.sort||S.sort});}catch(e){}
@@ -151,6 +153,7 @@ function filtered(){
     &&(S.tab==="alle"||statusOf(j)===S.tab)
     &&(!q||(j.title+" "+j.company+" "+(j.description_md||"")).toLowerCase().includes(q))
     &&(!S.only50||j.top50!==false)
+    &&(S.fitMin==="alle"||(j.fit||"sikker")==="sikker"||(S.fitMin==="sandsynlig"&&j.fit==="sandsynlig"))
     &&(!S.tags.size||(j.tags||[]).some(t=>S.tags.has(t)))
     &&((j.score??0)>=S.min||(S.min===0)));
   const by={score:(a,b)=>(b.score??-1)-(a.score??-1),new:(a,b)=>String(b.first_seen).localeCompare(String(a.first_seen)),
@@ -162,7 +165,7 @@ function renderControls(){
   const counts={};S.jobs.forEach(j=>{if(!expired(j)||S.showOld){counts[statusOf(j)]=(counts[statusOf(j)]||0)+1;counts.alle=(counts.alle||0)+1}});
   $("tabs").innerHTML=STATUSES.map(([k,l])=>`<button type="button" data-tab="${k}" aria-pressed="${S.tab===k}">${l}<span class="n">${counts[k]||0}</span></button>`).join("");
   $("tagrow").innerHTML=TAGS.map(t=>`<button type="button" class="chip" data-tag="${esc(t)}" aria-pressed="${S.tags.has(t)}">${esc(t)}</button>`).join("");
-  $("minScore").value=String(S.min);$("sort").value=S.sort;$("showOld").checked=S.showOld;$("only50").checked=S.only50;
+  $("minScore").value=String(S.min);$("sort").value=S.sort;$("showOld").checked=S.showOld;$("only50").checked=S.only50;$("fitSel").value=S.fitMin;
 }
 
 function renderRun(){
@@ -184,7 +187,7 @@ function jobHTML(j){
       <h2 class="title">${esc(j.title)}</h2>
       <div class="meta"><span>${esc(j.company)}</span>${j.top50===false?"":`<span class="t50">Top 50 · #${esc(j.rank??"–")}</span>`}<span>${esc(j.location||"")}</span></div>
       ${j.reason?`<div class="reason">${esc(j.reason)}</div>`:""}
-      <div class="tags">${isNew?'<span class="tag new">Ny</span>':""}${(j.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>
+      <div class="tags">${isNew?'<span class="tag new">Ny</span>':""}${j.fit==="sandsynlig"?'<span class="tag fit" title="Titlen siger ikke student, men teksten taler om at kombinere jobbet med studier">Sandsynligt studiejob</span>':j.fit==="mulig"?'<span class="tag fit" title="Deltid eller højst 25 timer om ugen – tjek om det passer til studiet">Deltid – tjek selv</span>':""}${(j.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>
     </div>
     <div class="side">${due}<span class="status">${esc(st)}</span></div>
   </div>
@@ -261,6 +264,7 @@ document.addEventListener("change",e=>{
   if(e.target.id==="sort"){S.sort=e.target.value;saveUI();render()}
   if(e.target.id==="showOld"){S.showOld=e.target.checked;render()}
   if(e.target.id==="only50"){S.only50=e.target.checked;render()}
+  if(e.target.id==="fitSel"){S.fitMin=e.target.value;render()}
 });
 let qt;$("q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{S.q=e.target.value;render()},150)});
 $("saveProfile").addEventListener("click",async()=>{
