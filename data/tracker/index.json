@@ -1,19 +1,96 @@
 {
- "updated": "2026-09-29T09:49:44+00:00",
+ "updated": "2026-09-29T11:45:19+00:00",
  "run": {
-  "updated": "2026-09-29T09:49:44+00:00",
-  "active_count": 41,
+  "updated": "2026-09-29T11:45:19+00:00",
+  "active_count": 45,
   "sources_ok": 18,
   "sources_total": 50,
   "jobindex_ok": true
  },
  "jobs": [
   {
+   "id": "ab66af49de0b",
+   "active": true,
+   "company": "A.P. Møller - Mærsk",
+   "title": "Vedligeholdelses Assistent (deltids eller konsulent)",
+   "top50": true,
+   "fit": "mulig",
+   "location": "Denmark, Esbjerg, 6705",
+   "deadline": "",
+   "tags": [
+    "Digitalisering",
+    "Consulting"
+   ],
+   "excerpt": "Som vores nye Vedligeholdelses Assistent bliver du en del af et engageret team, der understøtter den daglige drift af Maersk Trainings faciliteter, udstyr og træningsmiljøer. Du vil arbejde tæt sammen med instruktører og vedligeholdelsesteamet for at sikre, at vores træningsudstyr og faciliteter altid er klar til brug og lever op til gældende sikkerheds- og kvalitetskrav.\n\nStillingen er en konsulent- eller deltidsstilling på ca. 15-20 timer om ugen.\n\n* Vedligeholdelse, eftersyn og klargøring af træningsudstyr, faciliteter, fartøjer og tekniske installationer.\n* Udførelse af praktiske vedligeholdelsesopgaver, mindre reparationer samt forebyggende vedligehold.\n* Inspektion og servicering af sikkerheds-, rednings- og brandudstyr i henhold til gældende krav og procedurer.\n* Understøttelse af træningsaktiviteter gennem klargøring, rengøring og vedligeholdelse af udstyr og faciliteter.\n* Registrering af vedligeholdelsesaktiviteter og eftersyn i virksomhedens vedligeholdelsessystem.\n* Bidrage til at sikre et sikkert, professionelt og velholdt træningsmiljø.\n* Du vil referere til Maintenance Supervisor, men forventes at samarbejde bredt på tværs af organisationen.\n* Vedligeholdelse og pleje af udendørsarealer, herunder græsslåning, hækklipning, malerarbejde og generel arealpleje.\n* Du skal være struktureret i din tilgang, serviceminded og kunne arbejde selvstændigt.\n* Da du vil have en bred kontaktflade internt i organisationen, er det vigtigt, at du er samarbejdsorienteret og trives"
+  },
+  {
+   "id": "e1cfdb420c56",
+   "active": true,
+   "company": "PFA Pension",
+   "title": "Studentermedhjælper til CRM, Marketing Automation og Kundedialog",
+   "top50": true,
+   "fit": "sikker",
+   "location": "København Ø",
+   "deadline": "",
+   "tags": [
+    "Automatisering"
+   ],
+   "excerpt": "Vi har et spændende studiejob til dig, der vil lære en masse om CRM, marketing automation, kundedata og digital kundedialog. Oveni hatten får du et fantastisk team med et godt fællesskab og mange muligheder for at arbejde på tværs af PFA.\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
+  },
+  {
+   "id": "52df04e90a0e",
+   "active": true,
+   "company": "FDB Møbler A/S",
+   "title": "Performance Marketing Specialist",
+   "top50": false,
+   "fit": "mulig",
+   "location": "Albertslund",
+   "deadline": "2026-10-20",
+   "tags": [
+    "Data & analyse",
+    "Automatisering",
+    "AI",
+    "Proces"
+   ],
+   "excerpt": "[Gem job](/bruger/dine-job/h1702501/gem)\n[Del](https://www.jobindex.dk/vis-job/h1702501 \"Del\")\n[Ansøg](/c?t=e6317863&ctx=w&source=jobtext)\n\n# Performance Marketing Specialist\n\nFDB Møbler A/S\n\nAlbertslund\n\n## Vil du være med til at accelerere den digitale vækst hos FDB Møbler?\n\nFDB Møbler søger en datadrevet Performance Marketing Specialist, der kan være med til at udvikle og optimere vores digitale marketingindsats.\n\nDu får ansvar for at sikre, at vores digitale marketingbudget bliver omsat til målbar vækst gennem skarp kampagneopsætning, løbende analyse og optimering på tværs af Google, Meta og øvrige digitale touchpoints. Vi søger en analytisk stærk profil, der både kan arbejde hands-on i platformene og samtidig forstå den samlede kunderejse. Du skal være nysgerrig på data, kunne identificere forbedringsmuligheder og omsætte indsigter til konkrete handlinger, der styrker både ROAS, ROI og konvertering.\n\nStillingen er som udgangspunkt på deltid, ca. 20 timer om ugen.\n\n## Dine opgaver\n\n* Opsætte, monitorere og optimere pris- og brandkampagner på Google Ads og Meta.\n* Analysere performance, herunder kampagneeffekt og attribution, og løbende optimere ROAS, ROI, konvertering og øvrige centrale KPI’er.\n* Løbende optimere den digitale kunderejse gennem test af målgrupper, kreativer og budskaber, kampagnestruktur og opsætning på e-commerce.\n* Sikre korrekt tracking, datakvalitet og måling på tværs af kunderejsen.\n* Analysere digitale touchpoints og identificere muligheder for at fo"
+  },
+  {
+   "id": "8591789f0c22",
+   "active": true,
+   "company": "HOFOR",
+   "title": "Studentermedhjælper til Asset Systems & Data i HOFOR Vind og Sol",
+   "top50": false,
+   "fit": "sikker",
+   "location": "København S",
+   "deadline": "",
+   "tags": [
+    "Portfolio & investering"
+   ],
+   "excerpt": "Kunne du tænke dig at arbejde med data og Asset Management System i Danmarks største multiforsyningsselskab?\n\nSom studentermedhjælper får du et unikt indblik i drift og vedligehold af kritisk energiinfrastruktur.\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
+  },
+  {
+   "id": "078739a313a5",
+   "active": true,
+   "company": "Ukendt",
+   "title": "Student Python Developer",
+   "top50": false,
+   "fit": "sikker",
+   "location": "København",
+   "deadline": "",
+   "tags": [
+    "Data & analyse",
+    "AI",
+    "Python"
+   ],
+   "excerpt": "# Jobannonce: Student Python Developer\n\nTembi\n\n[Fejlmeld annonce](/bruger/fejlmelding/r14003080)\n\nDel annoncen\n\nKopier link\nVia apps\n[Facebook](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.jobindex.dk%2Fvis-job%2Fr14003080)\n[LinkedIn](https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.jobindex.dk%2Fvis-job%2Fr14003080&mini=true)\n\n#### [Student Python Developer](https://thehub.io/jobs/6a9aada560f6d6332bd030d3?utm_source=jobindex&utm_medium=jobboard&utm_content=dk)\n\nKøbenhavn\n\nAt Tembi, we help organizations use AI, analytics and data.\n\nIndrykket:\n17-09-2026\n\nHentet fra The Hub\n\n[Gem job](/bruger/dine-job/r14003080/gem)\n\n[Se jobbet](https://thehub.io/jobs/6a9aada560f6d6332bd030d3?utm_source=jobindex&utm_medium=jobboard&utm_content=dk)\n\n[Se jobbet](https://thehub.io/jobs/6a9aada560f6d6332bd030d3?utm_source=jobindex&utm_medium=jobboard&utm_content=dk)\n\n## Anbefalede job\n\nIndrykket:\n21. september 2026\n\n[Stu­den­ter­med­hjæl­per – IT De­ve­l­op­ment & AI](/c?t=h1700343&ctx=w&ctt=r&u=22713686)\n\nDanmarks Skibskredit A/S\n\nKøbenhavn K\n\n[Se jobbet](/c?t=h1700343&ctx=w&ctt=r&u=22713686)\n\nIndrykket:\n8. september 2026\n\n[Stu­den­ter­med­hjæl­per – Junior Data & AI Analyst](/c?t=h1696516&ctx=w&ctt=r&u=22694038)\n\nDanmarks Skibskredit A/S\n\nKøbenhavn K\n\n[Se jobbet](/c?t=h1696516&ctx=w&ctt=r&u=22694038)\n\nIndrykket:\n22. september 2026\n\n[Stu­den­ter­med­hjæl­per til AI og au­to­ma­ti­se­ring](/c?t=h1692200&ctx=w&ctt=r&u=22673180)\n\nNordic Well Group\n\nNordhavn og mulighed "
+  },
+  {
    "id": "22861cdfe118",
    "active": true,
    "company": "Novonesis",
    "title": "Student Assistant, Order to Cash, Lyngby - Novonesis",
    "top50": true,
+   "fit": "sikker",
    "location": "Lyngby",
    "deadline": "2026-10-09",
    "tags": [
@@ -31,6 +108,7 @@
    "company": "Trafikselskabet Movia",
    "title": "Studentermedhjælper til juridisk og administrativ sagsbehandling til afdeling for kontrolafgifter",
    "top50": false,
+   "fit": "sikker",
    "location": "Valby",
    "deadline": "",
    "tags": [
@@ -45,6 +123,7 @@
    "company": "POWERCARE A/S",
    "title": "POWERCARE søger studerende som timelønnede personalekonsulenter",
    "top50": false,
+   "fit": "sikker",
    "location": "Klampenborg",
    "deadline": "",
    "tags": [
@@ -59,6 +138,7 @@
    "company": "Hamamatsu Photonics",
    "title": "Student Assistant – Continuous Improvement / Lean Operations",
    "top50": false,
+   "fit": "sikker",
    "location": "Birkerød",
    "deadline": "",
    "tags": [
@@ -73,6 +153,7 @@
    "company": "LB Forsikring",
    "title": "Studentermedhjælper til Copilot og RPA",
    "top50": false,
+   "fit": "sikker",
    "location": "København Ø",
    "deadline": "2026-10-04",
    "tags": [
@@ -88,6 +169,7 @@
    "company": "DSB",
    "title": "Juniorkonsulent til IT-compliance og leverandørstyring (Studerende)",
    "top50": false,
+   "fit": "sikker",
    "location": "Taastrup og mulighed for hjemmearbejde",
    "deadline": "",
    "tags": [
@@ -101,6 +183,7 @@
    "company": "HOFOR",
    "title": "Studentermedarbejder til Energianalyse",
    "top50": false,
+   "fit": "sikker",
    "location": "København S",
    "deadline": "",
    "tags": [
@@ -115,6 +198,7 @@
    "company": "Danmarks Skibskredit A/S",
    "title": "Studentermedhjælper – IT Development & AI",
    "top50": false,
+   "fit": "sikker",
    "location": "København K",
    "deadline": "",
    "tags": [
@@ -131,6 +215,7 @@
    "company": "Danmarks Lærerforening",
    "title": "Juridisk afdeling i Danmarks Lærerforening søger jurastuderende, som er interesseret i at arbejde med ansættelsesret",
    "top50": false,
+   "fit": "sikker",
    "location": "København K",
    "deadline": "",
    "tags": [
@@ -144,6 +229,7 @@
    "company": "PFA Pension",
    "title": "Juridisk studentermedarbejder til investeringsafdelingen",
    "top50": true,
+   "fit": "sikker",
    "location": "København Ø",
    "deadline": "",
    "tags": [
@@ -157,6 +243,7 @@
    "company": "ROCKWOOL Fonden",
    "title": "Metodestærke studerende med interesse for forskning i familieforhold og demografi søges",
    "top50": false,
+   "fit": "sikker",
    "location": "København K",
    "deadline": "2026-10-01",
    "tags": [
@@ -171,6 +258,7 @@
    "company": "KMD A/S",
    "title": "Student Worker | Finance",
    "top50": false,
+   "fit": "sikker",
    "location": "Ballerup, Ballerup, Aalborg, Aalborg",
    "deadline": "",
    "tags": [
@@ -184,6 +272,7 @@
    "company": "Ukendt",
    "title": "Studentermedarbejder til Koncernindkøb på Københavns Universitet",
    "top50": false,
+   "fit": "sikker",
    "location": "Danmark",
    "deadline": "",
    "tags": [
@@ -197,6 +286,7 @@
    "company": "Ukendt",
    "title": "Økonomistuderende til politisk afdeling i IDA",
    "top50": false,
+   "fit": "sikker",
    "location": "København V",
    "deadline": "",
    "tags": [
@@ -211,6 +301,7 @@
    "company": "Akademikerne",
    "title": "Talstærk student til analyser af arbejdsmarked, uddannelse og økonomi",
    "top50": false,
+   "fit": "sikker",
    "location": "København K",
    "deadline": "",
    "tags": [
@@ -224,6 +315,7 @@
    "company": "Hamamatsu Photonics",
    "title": "Student Assistant – Supply Chain Analytics",
    "top50": false,
+   "fit": "sikker",
    "location": "Birkerød",
    "deadline": "",
    "tags": [
@@ -239,6 +331,7 @@
    "company": "Everllence",
    "title": "Student worker for Direct Procurement",
    "top50": false,
+   "fit": "sikker",
    "location": "Copenhagen",
    "deadline": "",
    "tags": [
@@ -252,6 +345,7 @@
    "company": "B2 Impact",
    "title": "Studiejob som Collection Agent",
    "top50": false,
+   "fit": "sikker",
    "location": "København V",
    "deadline": "",
    "tags": [
@@ -260,26 +354,12 @@
    "excerpt": "Operations\n·\nKøbenhavn\n\n# Studiejob som Collection Agent\n\n## Få relevant erfaring hos B2 Impact og gør en forskel for mennesker og deres økonomi. Bliv en del af et ungt team med fokus på læring, samarbejde og digitale løsninger. Klar til at udvikle dig? Søg nu.\n\nSøg jobbet nu\n\nVi svarer normalt indenfor en uge\n\n# Studerende søges som Collection Agent\n\nVil du have et studiejob, hvor du får ansvar, lærer en masse og får erfaring med at arbejde med mennesker og økonomi?\n\nB2 Impact søger studerende til vores team - Operations - i Carlsberg Byen. Her bliver du en del af en gruppe af studerende og faste medarbejdere, som arbejder med inkassosager og dialog med mennesker om deres økonomi og gæld.\n\nVi tror på, at den bedste løsning findes gennem dialog. Derfor forsøger vi at skabe overblik og finde en realistisk vej videre i den enkelte sag.\n\n## Dit arbejde\n\nSom Collection Agent arbejder du med vores inkassosager og har kontakt med skyldnere både telefonisk og skriftligt.\n\nDine opgaver vil blandt andet være:\n\n* telefonisk og skriftlig kontakt med skyldnere\n* behandling af forskellige administrative opgaver i vores sagsbehandlingssystem\n* samarbejde med kolleger om kvalitet og opfølgning\n* forskellige forefaldende opgaver\n\nDu behøver ikke kende til inkasso på forhånd. Vi sørger for en grundig oplæring, hvor du lærer vores sagsbehandlingssystem NOVA at kende og får den nødvendige viden om de regler og processer, du skal bruge i jobbet.\n\nDu får også en buddy, som hjælper dig godt i gang"
   },
   {
-   "id": "60a5c21f17ba",
-   "active": true,
-   "company": "Novonesis",
-   "title": "IT Service Desk Teamlead, Novonesis",
-   "top50": true,
-   "location": "Hørsholm, Gammel Venlighedsvej",
-   "deadline": "2026-10-07",
-   "tags": [
-    "Data & analyse",
-    "Proces",
-    "Power BI / Excel"
-   ],
-   "excerpt": "**Interesseret i en karriere, der gør en forskel?**\n\n&#xa;\n\nAre you an experienced people leader who is passionate about building high-performing IT support teams and delivering seamless digital experiences? At Novonesis, we are looking for a Team Lead to lead our Denmark-based ITSM ServiceDesk team and take full leadership responsibility for the people, performance, and day-to-day operation of Local IT support. \n\nIn this role, you will be the leader of the Danish ServiceDesk team — setting direction and goals, developing your team, and owning the results your team delivers to employees across the organization. Working in a global ITSM environment, you will combine people leadership, operational management, and service excellence to ensure that the Service Desk consistently meets its targets and continuously raises the standard of IT support across Novonesis. \n\n \n\n**The Role & Your Impact** \n\nAs Team Lead for the ITSM ServiceDesk in Denmark, you will lead a team of 12 ServiceDesk supporters plus a group of student assistants. You hold full personnel responsibility for the team and are accountable for both the wellbeing and the performance of your team. You set the goals, you build the team, and you own the outcomes. \n\nYou are responsible for the full people-leadership cycle — from recruiting the right talent and onboarding new colleagues to coaching, developing, and following up on performance, so that every team member knows what is expected and has what they need to succeed"
-  },
-  {
    "id": "0ad94305dfaa",
    "active": true,
    "company": "EY",
    "title": "Student Assistant - Branding, Marketing & Communication | EY-Parthenon",
    "top50": true,
+   "fit": "sikker",
    "location": "Frederiksberg",
    "deadline": "",
    "tags": [
@@ -295,6 +375,7 @@
    "company": "A.P. Møller - Mærsk",
    "title": "Business Analyst",
    "top50": true,
+   "fit": "sandsynlig",
    "location": "Denmark, Copenhagen, 1098",
    "deadline": "",
    "tags": [
@@ -309,6 +390,7 @@
    "company": "A.P. Møller - Mærsk",
    "title": "Audits and Investigation-Student Assistant (Early Careers)",
    "top50": true,
+   "fit": "sikker",
    "location": "Denmark, Copenhagen, 1098",
    "deadline": "",
    "tags": [
@@ -329,6 +411,7 @@
    "company": "LEGO Group",
    "title": "Student Worker, Product Licensing",
    "top50": true,
+   "fit": "sikker",
    "location": "Billund",
    "deadline": "",
    "tags": [
@@ -345,6 +428,7 @@
    "company": "LEGO Group",
    "title": "Student Worker - Content and Editorial",
    "top50": true,
+   "fit": "sikker",
    "location": "Billund LEGO Campus",
    "deadline": "",
    "tags": [],
@@ -356,6 +440,7 @@
    "company": "LEGO Group",
    "title": "Student Worker in Sustainable Operations",
    "top50": true,
+   "fit": "sikker",
    "location": "Billund",
    "deadline": "",
    "tags": [
@@ -370,6 +455,7 @@
    "company": "LEGO Group",
    "title": "Digital Technology Student Worker - Data Science",
    "top50": true,
+   "fit": "sikker",
    "location": "Billund",
    "deadline": "",
    "tags": [
@@ -387,6 +473,7 @@
    "company": "LEGO Group",
    "title": "Digital Technology Student Workers - Software Engineering",
    "top50": true,
+   "fit": "sikker",
    "location": "Billund",
    "deadline": "",
    "tags": [
@@ -400,6 +487,7 @@
    "company": "LEGO Group",
    "title": "Digital Technology Student Workers - Technical Program Management",
    "top50": true,
+   "fit": "sikker",
    "location": "Billund",
    "deadline": "",
    "tags": [
@@ -416,6 +504,7 @@
    "company": "Dansk Industri",
    "title": "Vil du være med til at lave økonomiske analyser, der flytter samfundet? Bliv student i DI",
    "top50": true,
+   "fit": "sikker",
    "location": "DI København - Industriens Hus H. C. Andersens Blvd. 18 1553 København Denmark DI København - Industriens Hus H. C. Andersens Blvd. 18 1553 København Denmark København",
    "deadline": "2026-10-11",
    "tags": [
@@ -434,6 +523,7 @@
    "company": "Dansk Industri",
    "title": "Student til uddannelsespolitik",
    "top50": true,
+   "fit": "sikker",
    "location": "DI København - Industriens Hus H. C. Andersens Blvd. 18 1553 København Denmark DI København - Industriens Hus H. C. Andersens Blvd. 18 1553 København Denmark København",
    "deadline": "2026-10-01",
    "tags": [
@@ -450,6 +540,7 @@
    "company": "Dansk Industri",
    "title": "Studenterhjælp: til digital kommunikation, e-commerce & events - bliv en del af DI",
    "top50": true,
+   "fit": "sikker",
    "location": "DI København - Industriens Hus H. C. Andersens Blvd. 18 1553 København Denmark DI København - Industriens Hus H. C. Andersens Blvd. 18 1553 København Denmark København",
    "deadline": "2026-10-11",
    "tags": [
@@ -464,6 +555,7 @@
    "company": "Netcompany",
    "title": "Student Assistant, Netcompany Institute",
    "top50": true,
+   "fit": "sikker",
    "location": "Copenhagen, dk",
    "deadline": "",
    "tags": [
@@ -482,6 +574,7 @@
    "company": "Netcompany",
    "title": "Student Assistant, Netcompany IT Security",
    "top50": true,
+   "fit": "sikker",
    "location": "Copenhagen, dk",
    "deadline": "",
    "tags": [
@@ -495,6 +588,7 @@
    "company": "Netcompany",
    "title": "Student Assistant, Netcompany Consulting",
    "top50": true,
+   "fit": "sikker",
    "location": "Copenhagen, Aarhus or Aalborg, dk",
    "deadline": "",
    "tags": [
@@ -509,6 +603,7 @@
    "company": "Accenture",
    "title": "Join Halfspace’s Strategy & Execution Team: Associate Engagement Manager (Part-Time, Student Position)",
    "top50": true,
+   "fit": "sikker",
    "location": "Copenhagen, Kronprinsensgade 7",
    "deadline": "",
    "tags": [
@@ -526,6 +621,7 @@
    "company": "Novonesis",
    "title": "Studentermedhjælper til Customer Service & Logistics",
    "top50": true,
+   "fit": "sikker",
    "location": "Bagsværd",
    "deadline": "2026-10-07",
    "tags": [
@@ -539,6 +635,7 @@
    "company": "Novonesis",
    "title": "Student Assistant for the Packaging and Packaging Waste Regulation Project",
    "top50": true,
+   "fit": "sikker",
    "location": "Lyngby",
    "deadline": "",
    "tags": [
@@ -556,6 +653,7 @@
    "company": "Novonesis",
    "title": "Student Assistant, Commercial Business Finance, Novonesis",
    "top50": true,
+   "fit": "sikker",
    "location": "Lyngby",
    "deadline": "2026-10-02",
    "tags": [
@@ -571,6 +669,7 @@
    "company": "EY",
    "title": "Audit Studentermedarbejder i EY",
    "top50": true,
+   "fit": "sikker",
    "location": "Danmark",
    "deadline": "",
    "tags": [],
@@ -582,6 +681,7 @@
    "company": "Finansministeriet",
    "title": "DREAM søger to dygtige studerende til arbejdet med GrønREFORM",
    "top50": true,
+   "fit": "sikker",
    "location": "København K",
    "deadline": "",
    "tags": [
@@ -595,6 +695,7 @@
    "company": "Novo Nordisk",
    "title": "Full-time Student Assistant for Management Support at Novo Nordisk Engineering, NNE",
    "top50": true,
+   "fit": "sikker",
    "location": "Danmark",
    "deadline": "",
    "tags": [],
@@ -604,6 +705,11 @@
    "id": "6541d89c5e88",
    "active": false,
    "deadline": ""
+  },
+  {
+   "id": "60a5c21f17ba",
+   "active": false,
+   "deadline": "2026-10-07"
   },
   {
    "id": "8efa1b5f45b5",
