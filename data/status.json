@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30T05:32:51+00:00",
+ "updated": "2026-09-30T12:34:45+00:00",
  "companies": [
   {
    "company": "Novo Nordisk",
@@ -15,7 +15,7 @@
    "ok": true,
    "listed": 408,
    "matched": 3,
-   "seconds": 19.8
+   "seconds": 19.9
   },
   {
    "company": "McKinsey & Company",
@@ -29,9 +29,9 @@
    "rank": 4,
    "source": "workday",
    "ok": true,
-   "listed": 69,
-   "matched": 7,
-   "seconds": 15.3
+   "listed": 67,
+   "matched": 5,
+   "seconds": 13.5
   },
   {
    "company": "Danske Bank",
@@ -91,7 +91,7 @@
    "ok": true,
    "listed": 0,
    "matched": 0,
-   "seconds": 1.8
+   "seconds": 2.0
   },
   {
    "company": "Jyske Bank",
@@ -135,7 +135,7 @@
    "ok": true,
    "listed": 5,
    "matched": 0,
-   "seconds": 1.8
+   "seconds": 1.9
   },
   {
    "company": "Implement",
@@ -151,7 +151,7 @@
    "ok": true,
    "listed": 19,
    "matched": 0,
-   "seconds": 5.2
+   "seconds": 5.1
   },
   {
    "company": "Finansministeriet",
@@ -181,7 +181,7 @@
    "ok": true,
    "listed": 10,
    "matched": 0,
-   "seconds": 32.5
+   "seconds": 36.4
   },
   {
    "company": "Udenrigsministeriet",
@@ -204,7 +204,7 @@
    "ok": true,
    "listed": 7,
    "matched": 3,
-   "seconds": 0.8
+   "seconds": 1.0
   },
   {
    "company": "Nordnet",
@@ -227,7 +227,7 @@
    "ok": true,
    "listed": 25,
    "matched": 0,
-   "seconds": 1.6
+   "seconds": 1.8
   },
   {
    "company": "Matas",
@@ -248,9 +248,9 @@
    "rank": 33,
    "source": "smartrecruiters",
    "ok": true,
-   "listed": 11,
+   "listed": 12,
    "matched": 0,
-   "seconds": 0.5
+   "seconds": 0.6
   },
   {
    "company": "Københavns Lufthavne",
@@ -275,7 +275,7 @@
    "ok": true,
    "listed": 35,
    "matched": 3,
-   "seconds": 1.8
+   "seconds": 1.9
   },
   {
    "company": "PFA Pension",
@@ -326,9 +326,9 @@
    "rank": 43,
    "source": "generic",
    "ok": true,
-   "listed": 30,
+   "listed": 27,
    "matched": 0,
-   "seconds": 0.9
+   "seconds": 1.1
   },
   {
    "company": "Statsministeriet",
@@ -342,9 +342,9 @@
    "rank": 45,
    "source": "workday",
    "ok": true,
-   "listed": 1,
-   "matched": 1,
-   "seconds": 12.9
+   "listed": 0,
+   "matched": 0,
+   "seconds": 12.2
   },
   {
    "company": "Danmarks Radio",
@@ -383,21 +383,21 @@
    "rank": 50,
    "source": "workday",
    "ok": true,
-   "listed": 52,
-   "matched": 4,
-   "seconds": 9.2
+   "listed": 54,
+   "matched": 5,
+   "seconds": 10.0
   },
   {
    "company": "(Jobindex RSS)",
    "source": "jobindex",
    "ok": true,
-   "listed": 406,
+   "listed": 407,
    "matched": 21,
    "fit": {
     "sikker": 20,
     "sandsynlig": 0,
     "mulig": 1,
-    "body_fetch": 5
+    "body_fetch": 16
    }
   }
  ]
