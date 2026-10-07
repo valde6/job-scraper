@@ -1,6 +1,7 @@
-01 GREP 0 | GREP https://danskebank.com/careers https://[a-z0-9.-]+oraclecloud\.com[^"'<> ]*
-02 ERR HTTPError: 405 Client Error: Method Not Allowed for url: https://orsted.com/api/jobs/jobList | GET https://orsted.com/api/jobs/jobList
-03 BROWSER links=224 json=3 | Vacancies: See All Available Jobs | Ørsted Careers | BROWSER https://orsted.com/en/careers/vacancies-list
-04 BROWSER links=338 json=12 | Bliv en del af PwC - Tjek ledige stillinger her | BROWSER https://www.pwc.dk/da/karriere/jobsoegning.html
-05 BROWSER links=169 json=3 | Ledige stillinger | BROWSER https://www.nykredit.com/karriere/stillinger/
-06 BROWSER links=143 json=6 | Student - Carlsberg Jobs | BROWSER https://careers.carlsberg.com/search/?q=student
+01 OK listed=3 matched=1 | SCRAPE Novo Nordisk
+02 OK listed=0 matched=0 | SCRAPE Nordea
+03 OK listed=56 matched=2 | SCRAPE Nykredit
+04 OK listed=0 matched=0 | SCRAPE PwC
+05 OK listed=32 matched=3 | SCRAPE Deloitte
+06 OK listed=5 matched=1 | SCRAPE PFA Pension
+07 BROWSER links=147 json=16 | Careers | Danske Bank | Use your curiosity to connect what m | BROWSER https://danskebank.com/careers
