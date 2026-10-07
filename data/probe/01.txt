@@ -1,7 +1,8 @@
-SCRAPE Ørsted
-OK listed=0 matched=0
+SCRAPE Ørsted # 2
+ERROR KeyError: 'Ørsted # 2'
+Traceback (most recent call last):
+  File "/home/runner/work/job-scraper/job-scraper/scraper/probe.py", line 76, in <module>
+    c = companies[line[7:].strip()]
+        ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'Ørsted # 2'
 
-{
- "listed": 0,
- "jobs": []
-}
