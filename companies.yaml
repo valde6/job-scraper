@@ -77,11 +77,12 @@ companies:
   - https://www.pwc.dk/da/karriere/ledige-stillinger.html
   source:
     type: workday
-    url: https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers
+    url: https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers
     search_terms:
-    - student Denmark
+    - Denmark
+    - København
+    - Copenhagen
     - studentermedhjælper
-    - student assistant Copenhagen
 - rank: 8
   name: Carlsberg
   aliases:
