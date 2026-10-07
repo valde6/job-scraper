@@ -69,7 +69,7 @@ def render(url: str, wait_ms: int = 2500, scroll: int = 4, more_clicks: int = 3,
             try:
                 ct = r.headers.get("content-type", "")
                 if "json" in ct and r.request.resource_type in ("xhr", "fetch"):
-                    captured.append((r.url, r.text()[:20000]))
+                    captured.append((r.url, r.text()[:3000000]))
             except Exception:
                 pass
         page.on("response", on_resp)
