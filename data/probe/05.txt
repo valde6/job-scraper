@@ -1,129 +1,89 @@
-GET https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-STATUS 200 FINAL https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-
-TYPE text/html;charset=UTF-8
-TITLE Student AND Denmark - Carlsberg Jobs
-LINKS 155
-Skip to main content -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark#content
-Dansk -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=da_DK
-Deutsch -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=de_DE
-English -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=en_GB
-Suomi -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=fi_FI
-Français -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=fr_FR
-Italiano -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=it_IT
-Norsk bokmål -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=nb_NO
-Polski -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=pl_PL
-Svenska -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=sv_SE
-LOCATIONS -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Western Europe -> https://careers.carlsberg.com/content/Locations-WE/?locale=en_GB
-Central & Eastern Europe -> https://careers.carlsberg.com/content/Locations-CEE/?locale=en_GB
-Asia -> https://careers.carlsberg.com/content/Locations-Asia/?locale=en_GB
-GROUP FUNCTIONS -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Central Office -> https://careers.carlsberg.com/go/Central-Office/4396001/
-Integrated Information Technology (IIT) -> https://careers.carlsberg.[REDACTED]%28IIT%29/4604401/
-Integrated Supply Chain (ISC) -> https://careers.carlsberg.com/go/Integrated-Supply-Chain-%28ISC%29/4397501/
-Carlsberg Shared Services (CSS) -> https://careers.carlsberg.com/go/Carlsberg-Shared-Services-%28CSS%29/4395901/
-Carlsberg Export & License (CE&L) -> https://careers.carlsberg.com/go/Carlsberg-Export-&-License-%28CE&L%29/4395801/
-EARLY CAREERS -> https://careers.carlsberg.com/content/Early-Careers/?locale=en_GB
-EXPERTISE -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Marketing and Sales -> https://careers.carlsberg.[REDACTED]
-Supply Chain & Production -> https://careers.carlsberg.com/go/Supply-Chain-&-Production-at-Carlsberg-Group/4401901/
-Research -> https://careers.carlsberg.[REDACTED]
-IT, Finance, Procurement, Legal & Communication -> https://careers.carlsberg.com/go/IT%2C-Finance%2C-Procurement%2C-Legal-&[REDACTED]
-People & Culture and Corporate Affairs -> https://careers.carlsberg.com/go/People-&[REDACTED]
-WORKING AT CARLSBERG -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Carlsberg culture -> https://careers.carlsberg.com/content/Culture/?locale=en_GB
-People of Carlsberg -> https://careers.carlsberg.com/content/Global-career-stories/?locale=en_GB
-Our high engagement -> https://careers.carlsberg.com/content/Highly-engaged-global/?locale=en_GB
-Learning opportunities -> https://careers.carlsberg.[REDACTED]?locale=en_GB
-Diversity, Equity and Inclusion -> https://careers.carlsberg.[REDACTED]?locale=en_GB
-Forbes' 2025 Best Employers -> https://careers.carlsberg.[REDACTED]?locale=en_GB
-Universum Nordics Most Attractive Employers ranking -> https://careers.carlsberg.[REDACTED]?locale=en_GB
-APPLY -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Open posititions -> https://careers.carlsberg.com/search/
-LOGIN -> https://career2.successfactors.eu/career?career_company=carlsbergg&lang=en_GB&company=carlsbergg&site=&loginFlowRequired=true
-Dansk -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=da_DK
-Deutsch -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=de_DE
-English -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=en_GB
-Suomi -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=fi_FI
-Français -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=fr_FR
-Italiano -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=it_IT
-Norsk bokmål -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=nb_NO
-Polski -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=pl_PL
-Svenska -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=sv_SE
-LOCATIONS -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Western Europe -> https://careers.carlsberg.com/content/Locations-WE/?locale=en_GB
-Central & Eastern Europe -> https://careers.carlsberg.com/content/Locations-CEE/?locale=en_GB
-Asia -> https://careers.carlsberg.com/content/Locations-Asia/?locale=en_GB
-GROUP FUNCTIONS -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Central Office -> https://careers.carlsberg.com/go/Central-Office/4396001/
-Integrated Information Technology (IIT) -> https://careers.carlsberg.[REDACTED]%28IIT%29/4604401/
-Integrated Supply Chain (ISC) -> https://careers.carlsberg.com/go/Integrated-Supply-Chain-%28ISC%29/4397501/
-Carlsberg Shared Services (CSS) -> https://careers.carlsberg.com/go/Carlsberg-Shared-Services-%28CSS%29/4395901/
-Carlsberg Export & License (CE&L) -> https://careers.carlsberg.com/go/Carlsberg-Export-&-License-%28CE&L%29/4395801/
-EARLY CAREERS -> https://careers.carlsberg.com/content/Early-Careers/?locale=en_GB
-EXPERTISE -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Marketing and Sales -> https://careers.carlsberg.[REDACTED]
-Supply Chain & Production -> https://careers.carlsberg.com/go/Supply-Chain-&-Production-at-Carlsberg-Group/4401901/
-Research -> https://careers.carlsberg.[REDACTED]
-IT, Finance, Procurement, Legal & Communication -> https://careers.carlsberg.com/go/IT%2C-Finance%2C-Procurement%2C-Legal-&[REDACTED]
-People & Culture and Corporate Affairs -> https://careers.carlsberg.com/go/People-&[REDACTED]
-WORKING AT CARLSBERG -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Carlsberg culture -> https://careers.carlsberg.com/content/Culture/?locale=en_GB
-People of Carlsberg -> https://careers.carlsberg.com/content/Global-career-stories/?locale=en_GB
-Our high engagement -> https://careers.carlsberg.com/content/Highly-engaged-global/?locale=en_GB
-Learning opportunities -> https://careers.carlsberg.[REDACTED]?locale=en_GB
-Diversity, Equity and Inclusion -> https://careers.carlsberg.[REDACTED]?locale=en_GB
-Forbes' 2025 Best Employers -> https://careers.carlsberg.[REDACTED]?locale=en_GB
-Universum Nordics Most Attractive Employers ranking -> https://careers.carlsberg.[REDACTED]?locale=en_GB
-APPLY -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Open posititions -> https://careers.carlsberg.com/search/
-LOGIN -> https://career2.successfactors.eu/career?career_company=carlsbergg&lang=en_GB&company=carlsbergg&site=&loginFlowRequired=true
-Dansk -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=da_DK
-Deutsch -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=de_DE
-English -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=en_GB
-Suomi -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=fi_FI
-Français -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=fr_FR
-Italiano -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=it_IT
-Norsk bokmål -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=nb_NO
-Polski -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=pl_PL
-Svenska -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark&locale=sv_SE
-Join our Talent Community -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-LOCATIONS -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Western Europe -> https://careers.carlsberg.com/content/Locations-WE/?locale=en_GB
-Central & Eastern Europe -> https://careers.carlsberg.com/content/Locations-CEE/?locale=en_GB
-Asia -> https://careers.carlsberg.com/content/Locations-Asia/?locale=en_GB
-GROUP FUNCTIONS -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Central Office -> https://careers.carlsberg.com/go/Central-Office/4396001/
-Integrated Information Technology (IIT) -> https://careers.carlsberg.[REDACTED]%28IIT%29/4604401/
-Integrated Supply Chain (ISC) -> https://careers.carlsberg.com/go/Integrated-Supply-Chain-%28ISC%29/4397501/
-Carlsberg Shared Services (CSS) -> https://careers.carlsberg.com/go/Carlsberg-Shared-Services-%28CSS%29/4395901/
-Carlsberg Export & License (CE&L) -> https://careers.carlsberg.com/go/Carlsberg-Export-&-License-%28CE&L%29/4395801/
-EARLY CAREERS -> https://careers.carlsberg.com/content/Early-Careers/?locale=en_GB
-EXPERTISE -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Marketing and Sales -> https://careers.carlsberg.[REDACTED]
-Supply Chain & Production -> https://careers.carlsberg.com/go/Supply-Chain-&-Production-at-Carlsberg-Group/4401901/
-Research -> https://careers.carlsberg.[REDACTED]
-IT, Finance, Procurement, Legal & Communication -> https://careers.carlsberg.com/go/IT%2C-Finance%2C-Procurement%2C-Legal-&[REDACTED]
-People & Culture and Corporate Affairs -> https://careers.carlsberg.com/go/People-&[REDACTED]
-WORKING AT CARLSBERG -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Carlsberg culture -> https://careers.carlsberg.com/content/Culture/?locale=en_GB
-People of Carlsberg -> https://careers.carlsberg.com/content/Global-career-stories/?locale=en_GB
-Our high engagement -> https://careers.carlsberg.com/content/Highly-engaged-global/?locale=en_GB
-Learning opportunities -> https://careers.carlsberg.[REDACTED]?locale=en_GB
-Diversity, Equity and Inclusion -> https://careers.carlsberg.[REDACTED]?locale=en_GB
-Forbes' 2025 Best Employers -> https://careers.carlsberg.[REDACTED]?locale=en_GB
-Universum Nordics Most Attractive Employers ranking -> https://careers.carlsberg.[REDACTED]?locale=en_GB
-APPLY -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Open positions -> https://careers.carlsberg.com/search/
-Home -> https://careers.carlsberg.com/
-Show More Options -> javascript:void(0)
-Clear -> https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-Field Operations Development Executive -> https://careers.carlsberg.[REDACTED]
-Field Operations Development Executive -> https://careers.carlsberg.[REDACTED]
-Field Operations Development Executive -> https://careers.carlsberg.[REDACTED]
-Multi Skilled Engineer - Days -> https://careers.carlsberg.[REDACTED]
-Multi Skilled Engineer - Days -> https://careers.carlsberg.[REDACTED]
-SCRIPTS /platform/js/j2w/j2w.fallbacks.js | https://performancemanager.successfactors.eu/verp/vmod_v1/ui/extlib/jquery_3.5.1/jquery.js | https://performancemanager.successfactors.eu/verp/vmod_v1/ui/extlib/jquery_3.5.1/jquery-migrate.js | /platform/js/jquery/jquery-migrate-1.4.1.js | https://careers.carlsberg.com/platform/bootstrap/3.4.8_NES/js/lib/dompurify/purify.min.js | https://careers.carlsberg.com/platform/bootstrap/3.4.8_NES/js/bootstrap.min.js | /platform/js/localized/strings_en_GB.js?h=275f70e9 | /platform/js/j2w/min/j2w.core.min.js?h=275f70e9 | /platform/js/j2w/min/j2w.tc.min.js?h=275f70e9 | /platform/js/search/search.js?h=275f70e9 | /platform/js/j2w/min/j2w.user.min.js?h=275f70e9 | /platform/js/j2w/min/j2w.searchResults.min.js?h=275f70e9 | /platform/js/j2w/min/j2w.agent.min.js?h=275f70e9 | /platform/js/jquery/js.cookie-2.2.1.min.js | /platform/js/jquery/jquery.lightbox_me.js | /platform/js/jquery/jquery.placeholder.2.0.7.min.js | /js/override.js?locale=en_GB&i=900454049 | /platform/js/j2w/min/j2w.apply.min.js?h=275f70e9 | /platform/js/tc/subscribeWidget.js?h=275f70e9 | /platform/js/j2w/min/options-search.min.js?h=275f70e9
-JSONLD 0
-TEXT Student AND Denmark - Carlsberg Jobs Skip to main content EN Dansk Deutsch English Suomi Français Italiano Norsk bokmål Polski Svenska LOCATIONS Western Europe Central & Eastern Europe Asia GROUP FUNCTIONS Central Office Integrated Information Technology (IIT) Integrated Supply Chain (ISC) Carlsberg Shared Services (CSS) Carlsberg Export & License (CE&L) EARLY CAREERS EXPERTISE Marketing and Sales Supply Chain & Production Research IT, Finance, Procurement, Legal & Communication People & Culture and Corporate Affairs WORKING AT CARLSBERG Carlsberg culture People of Carlsberg Our high engagement Learning opportunities Diversity, Equity and Inclusion Forbes' 2025 Best Employers Universum Nordics Most Attractive Employers ranking APPLY Open posititions FAQ LOGIN EN Dansk Deutsch English Suomi Français Italiano Norsk bokmål Polski Svenska LOCATIONS Western Europe Central & Eastern Europe Asia GROUP FUNCTIONS Central Office Integrated Information Technology (IIT) Integrated Supply Chain (ISC) Carlsberg Shared Services (CSS) Carlsberg Export & License (CE&L) EARLY CAREERS EXPERTISE Marketing and Sales Supply Chain & Production Research IT, Finance, Procurement, Legal & Communication People & Culture and Corporate Affairs WORKING AT CARLSBERG Carlsberg culture People of Carlsberg Our high engagement Learning opportunities Diversity, Equity and Inclusion Forbes' 2025 Best Employers Universum Nordics Most Attractive Employers ranking APPLY Open posititions FAQ LOGIN EN Dansk Deutsch English Suomi Français Italiano Norsk bokmål Polski Svenska Join our Talent Community LOCATIONS Western Europe Central & Eastern Europe Asia GROUP FUNCTIONS Central Office Integrated Information Technology (IIT) Integrated Supply Chain (ISC) Carlsberg Shared Services (CSS) Carlsberg Export & License (CE&L) EARLY CAREERS EXPERTISE Marketing and Sales Supply Chain & Production Research IT, Finance, Procurement, Legal & Communication People & Culture and Corporate Affairs WORKING AT CARLSBERG Carlsberg culture People of Carlsberg Our high engagement Learning opportunities Diversity, Equity and Inclusion Forbes' 2025 Best Employers Universum Nordics Most Attractive Employers ranking APPLY Open positions FAQ Home | Student AND Denmark at Carlsberg (current page) Search results for "student AND Denmark". Positions matching " student AND Denmark " can't be displayed on this site or there's no match. Click the globe icon or change search criteria to view open positions within Carlsberg Group. The 10 most recent jobs posted by Carlsberg are listed below for your convenience. Search by Keyword Search by Location Show More Options Loading... Entity / company All Job category All Job Type All Clear Select how often (in days) to receive an alert: Create Alert × Select how often (in days) to receive an alert: Showing 1 to 10 of 10 Jobs Search results for "student AND Denmark". Showing 1 to 10 of 10 Jobs Use the Tab key to navigate the Job List. Select to view the full details of the job. Title Field Operations Development Executive Posting Date 7 Oct 2026 Entity / company Carlsberg Marston’s Brewing Company Job category Sales Job Type Temporary contract Location Field Based, GB Title Field Operations Development Executive Posting Date 7 Oct 2026 Location Field Based, GB Entity / company Carlsberg Marston’s Brewing Company Job category Sales Job Type Temporary contract Title Field Operations Development Executive Entity / company Carlsberg Marston’s Brewing Company Location Field Based, GB Select with space bar to view the full contents of the job information. Title Multi Skilled Engineer - Days Posting Date 7 Oct 2026 Entity / company Carlsberg Marston’s Brewing Company Job category Production / Engineering Job Type Permanent Location Northampton, GB Title Multi Skilled Engineer - Days Posting Date 7 Oct 2026 Location Northampton, GB Entity / company Carlsberg Marston’s Brewing Company Job category Production / Engineering Job Type Permanent Title Multi Skilled Engineer 
+BROWSER https://www.nykredit.com/karriere/stillinger/
+FINAL https://www.nykredit.com/karriere/stillinger/
+TITLE Ledige stillinger
+LINKS 169
+L Karriere -> https://www.nykredit.com/karriere/
+L EN -> https://www.nykredit.com/en-gb/career/stillinger/
+L DA -> https://www.nykredit.com/karriere/stillinger/
+L Karriere -> https://www.nykredit.com/karriere/
+L Ledige stillinger -> https://www.nykredit.com/karriere/stillinger/
+L Vores arbejdsplads -> https://www.nykredit.com/karriere/vores-arbejdsplads/
+L EN -> https://www.nykredit.com/en-gb/career/stillinger/
+L Karriere -> https://www.nykredit.com/karriere/
+L Ledige stillinger -> https://www.nykredit.com/karriere/stillinger/
+L Vores arbejdsplads -> https://www.nykredit.com/karriere/vores-arbejdsplads/
+L Karriere -> https://www.nykredit.com/karriere/
+L EN -> https://www.nykredit.com/en-gb/career/stillinger/
+L DA -> https://www.nykredit.com/karriere/stillinger/
+L Karriere -> https://www.nykredit.com/karriere/
+L Ledige stillinger -> https://www.nykredit.com/karriere/stillinger/
+L Bliv rådgiver i Nykredit og Spar Nord i Køge - og vær med til at opbygge en ny afdeling -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5337
+L Seniorrådgiver til betjening af Nykredits kunder i Grønland -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5438
+L Bliv senior-/privatrådgiver i Nykredit og Spar Nord på Amager – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5483
+L Er du vores nye finansbachelorpraktikant i Regionalbank Midtjylland? -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5291
+L Er du vores nye studentermedhjælper i IT Infrastructure? -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5466
+L Bliv analytiker i Virksomhedsanalyse -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5512
+L Er du vores nye studentermedhjælper til Data & Indsigter i Totalkredit? -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5480
+L Bliv privatrådgiver i Nykredit og Spar Nord i Vejgaard – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5516
+L Bliv funktionschef for Kundeservice i Nykredit og Spar Nord i Aalborg -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5515
+L Bliv privatrådgiver i Nykredit/Spar Nord i Esbjerg – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5430
+L Bliv Kundedirektør i Private Banking København og stå i spidsen for et vigtigt vækstområde -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5511
+L Bliv storkunderådgiver i Storkunder Syddanmark – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5440
+L Vil du starte en karriere i Equity Trading i Nykredit Markets? -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5501
+L Bliv privatkundechef i Lokalbank København, Danmarks største lokalbank -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5477
+L Bliv porteføljemanager til globale konvertible obligationer i Nykredit Asset Management -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5427
+L Bliv vurderingsspecialist til Horsens- og Silkeborgområdet i Totalkredit -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5463
+L Bliv senioranalytiker i Virksomhedsanalyse med fokus på landbrugskunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-4771
+L Bliv seniorerhvervsrådgiver i Nykredit og Spar Nord, Lokalbank Aalborg -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5185
+L Bliv leveranceleder for AI-udvikling i Nykredits AI Center of Excellence -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5489
+L Bliv leder for AI Engagement i Nykredits AI Center of Excellence -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5491
+L Kundedirektør til Private Banking Sjælland -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5487
+L Er du vores nye vikar til Derivatives & Collateral i Wealth Operations and Development? -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5486
+L Bliv Software Engineer til Case Management løsninger i en foreningsejet Nykredit-koncern -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5443
+L Vi fortsætter med at vækste i Private Banking København. Bliv en del af vores team og gør en forskel -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-4793
+L Bliv erhvervsrådgiver i Totalkredit Erhverv – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5474
+L Bliv privatrådgiver i Nykredit og Spar Nord i Nyborg – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5481
+L Bliv Private Banker i Private Banking Elite, Aalborg – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5452
+L Bliv kunderådgiver i Kundeservice i Nykredit Direkte, Viby J - og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5305
+L Bliv stedfortræder og vurderingsspecialist i Totalkredit med fokus på ledelse og faglig kvalitet -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5424
+L Bliv seniorprivatrådgiver i Nykredit og Spar Nord i Odense – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5458
+L Bliv Seniorspecialist til Post Trade Infrastruktur i Operations – Betalinger og Investering, Taastru -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5409
+L Bliv privatrådgiver i Nykredit og Spar Nord i Vejle – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5389
+L Bliv totalrådgiver i Spar Nord i Hjørring – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5396
+L Bliv privatrådgiver i Spar Nord i Hjørring – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5395
+L Bliv Finansiel Controller hos Nykredit Portefølje Administration A/S i en foreningsejet Nykredit-kon -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-4776
+L Bliv formuerådgiver i Private Banking Elite København – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5451
+L Bliv seniorsupporter i Realkredit Erhverv – og gør en forskel for vores erhvervskunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5471
+L Byg fremtidens dataløsninger i Nykredit-koncernen -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5456
+L Bliv koordinator i Regionalbank Nordjylland og få en nøglerolle tæt på kunder og kolleger -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5431
+L Bliv totalrådgiver i Nykredit Spar Nord Lyngby og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5407
+L Bliv privatrådgiver i Nykredit Spar Nord Lyngby og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5406
+L Bliv Private Banker til Private Banking Elite, København – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5439
+L Bliv lokalbankdirektør i Nykredit og Spar Nord i Sønderjylland -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5473
+L Erfaren senioranalytiker til Treasury Operations, Funding & Kapital i København -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5453
+L Bliv Kundedirektør i Private Banking Syddanmark og stå i spidsen for et vigtigt vækstområde -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5435
+L Bliv opsøgende rådgiver i Nykredit/Spar Nord - og vær med til at opbygge Forenet Vækst -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-4990
+L Bliv Private Banker i Regionalbank Sjælland og vær med til at vinde nye kunder og styrke vores posit -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-4915
+L Bliv erhvervsrådgiver i Nykredit og Spar Nord i Viby – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-4762
+L Er du vores nye finansbachelorpraktikant i Direkte Erhverv i Nykredit og Spar Nord? -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5292
+L Bliv privatrådgiver i Nykredit og Spar Nord i Brønderslev – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5109
+L Er du vores nye finansbachelorpraktikant i Regionalbank Nordjylland? -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5286
+L Er du vores nye finansbachelorpraktikant i Operations? -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5290
+L Er du vores nye finansbachelorpraktikant i Storkunder eller Erhvervscenter København? -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5289
+L Er du vores nye finansbachelorpraktikant i Syddanmark? -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5288
+L Er du vores nye finansbachelorpraktikant i Spar Nord og Nykredit på Sjælland? -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5287
+L Bliv rådgiver i Nykredit & Spar Nord i Viby – og gør en forskel for vores kunder -> https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5269
+L nytjob@nykredit.dk -> mailto:nytjob@nykredit.dk
+L Din finanskarriere i Nykredit-koncernen Bliv finansbachelor- eller finansøkonompraktikant i Nykredit -> https://www.nykredit.[REDACTED]
+L Bliv graduate i Nykredit-koncernen Nykredit-koncernens graduateprogrammer er det oplagte valg for di -> https://www.nykredit.com/karriere/bliv-graduate-i-nykredit/
+L Indblik i processen Hvad sker der efter, at du har sendt os din ansøgning og dit CV? Ansættelsesproc -> https://www.nykredit.com/karriere/ansattelsesproces/
+L Karriere -> https://www.nykredit.com/karriere/
+L Karriere -> https://www.nykredit.com/karriere/
+JSON 3
+J https://policy.app.cookieinformation.com/cookie-data/nykredit.com/cabl.json
+   {"metadata":{"last_updated":"2026-09-14T01:32:26.239Z","autoblocking_enabled":false},"cookies":[{"name":".AspNetCore.Session","domain":"www.nykredit.com","category":"cookie_cat_necessary"},{"name":"CookieInformationConsent","domain":"www.nykredit.com","category":"cookie_cat_necessary"},{"name":"ARRAffinity","domain":".www.nykredit.com","category":"cookie_cat_necessary"},{"name":"ARRAffinitySameSite","domain":".www.nykredit.com","category":"cookie_cat_necessary"},{"name":"ai_user","domain":"www.nykredit.com","category":"cookie_cat_statistic"},{"name":"_ga","domain":".nykredit.com","category":"cookie_cat_statistic"},{"name":"ai_session","domain":"www.nykredit.com","category":"cookie_cat_statis
+J https://www.nykredit.com/api/talentsoft/getfilteredjoblist/?type=
+   [{"reference":"2026-5337","title":"Bliv rådgiver i Nykredit og Spar Nord i Køge - og vær med til at opbygge en ny afdeling","positionType":"","city":"Køge","type":{"code":2630,"clientCode":"[REDACTED]","label":"Bank og kunder","active":true,"parentCode":null,"type":"Stillingskategori","parentType":null,"hasChildren":false,"_links":null}},{"reference":"2026-5438","title":"Seniorrådgiver til betjening af Nykredits kunder i Grønland","positionType":"","city":"Nordhavn","type":{"code":2630,"clientCode":"[REDACTED]","label":"Bank og kunder","active":true,"parentCode":null,"type":"Stillingskategori","parentType":null,"hasChildren":false,"
+J https://northeurope-2.in.applicationinsights.azure.com//v2/track
+   {"itemsReceived":3,"itemsAccepted":3,"appId":null,"errors":[]}
+TEXT Du bestemmer over dine data Nykredit bruger egne cookies samt cookies fra tredjeparter til at indsamle og behandle oplysninger om din adfærd på hjemmesiden til funktionelle, statistiske og markedsføringsmæssige formål. Hvis du giver samtykke til brug af markedsføringscookies, så videregiver vi oplysninger om din adfærd på hjemmesiden til vores koncernforbundne selskaber og tredjeparter, som vi samarbejder med. Det gør vi med henblik på, at disse parter må behandle oplysningerne for at vise dig markedsføring på denne og andre hjemmesider samt sociale medier.​ Ved at klikke på ”Accepter alle” giver du samtykke til, at vi indsamler og behandler oplysninger fra cookies og videregiver disse oplysninger til alle de beskrevne formål og modtagere. Du kan også vælge, hvilke formål du vil give samtykke til, ved at benytte knapperne ud for formålet, og derefter klikke på ”Accepter valgte”. Under "Om cookies” kan du se hvilke koncernforbundne selskaber vi samarbejder med, og under "Vis detaljer”, kan du se en beskrivelse af de forskellige formål og cookies.​ Du kan til enhver tid ændre eller trække dit samtykke tilbage via det lille cookieikon i venstre hjørne af hjemmesiden. Du kan læse mere om vores brug af cookies og modtagerne af oplysningerne her, ligesom du kan læse mere om vores behandling af personoplysninger her. Om cookies Vis detaljer Kun nødvendige cookies Accepter alle cookies Nødvendige Statistiske Marketing Nykredit.com Investor Relations Presse Karriere Samfundsansvar Om os EN DA Karriere Ledige stillinger Vores arbejdsplads Søg Arkiv Nykredit.com Karriere Ledige stillinger Ledige stillinger Vil du være en del af os - Danmarks eneste foreningsejede finansielle virksomhed? Så tjek vores ledige stillinger. Måske finder du dit drømmejob hos os! Alle Bank og kunder Praktikant Studentermedhjælper Stab og specialist Ledelse IT og teknologi Kategori Stilling By Bliv rådgiver i Nykredit og Spar Nord i Køge - og vær med til at opbygge en ny afdeling Køge Seniorrådgiver til betjening af Nykredits kunder i Grønland Nordhavn Bliv senior-/privatrådgiver i Nykredit og Spar Nord på Amager – og gør en forskel for vores kunder Amager Er du vores nye finansbachelorpraktikant i Regionalbank Midtjylland? Midtjylland Er du vores nye studentermedhjælper i IT Infrastructure? Aalborg Bliv analytiker i Virksomhedsanalyse Aalborg Er du vores nye studentermedhjælper til Data & Indsigter i Totalkredit? København Bliv privatrådgiver i Nykredit og Spar Nord i Vejgaard – og gør en forskel for vores kunder Vejgaard Bliv funktionschef for Kundeservice i Nykredit og Spar Nord i Aalborg Aalborg Bliv privatrådgiver i Nykredit/Spar Nord i Esbjerg – og gør en forskel for vores kunder Esbjerg Bliv Kundedirektør i Private Banking København og stå i spidsen for et vigtigt vækstområde København Bliv storkunderådgiver i Storkunder Syddanmark – og gør en forskel for vores kunder Syddanmark Vil du starte en karriere i Equity Trading i Nykredit Markets? København Bliv privatkundechef i Lokalbank København, Danmarks største lokalbank København Bliv porteføljemanager til globale konvertible obligationer i Nykredit Asset Management København Bliv vurderingsspecialist til Horsens- og Silkeborgområdet i Totalkredit Horsens eller Silkeborg Bliv senioranalytiker i Virksomhedsanalyse med fokus på landbrugskunder Aalborg Bliv seniorerhvervsrådgiver i Nykredit og Spar Nord, Lokalbank Aalborg Aalborg Bliv leveranceleder for AI-udvikling i Nykredits AI Center of Excellence Nordhavn Bliv leder for AI Engagement i Nykredits AI Center of Excellence Nordhavn Kundedirektør til Private Banking Sjælland Roskilde Er du vores nye vikar til Derivatives & Collateral i Wealth Operations and Development? København Bliv Software Engineer til Case Management løsninger i en foreningsejet Nykredit-koncern København eller Aalborg Vi fortsætter med at vækste i Private Banking København. Bliv en del af vores team og gør en forskel København Bliv erhvervsrådgiver i Totalkredit Erhverv – og gør en forskel for vores kunder Viby J Bliv privatrådgiver i Nykredit og Spar Nord i Nyborg – og gør en forskel for vores kunder Nyborg Bliv Private Banker i Private Banking Elite, Aalborg – og gør en forskel for vores kunder Aalborg Bliv kunderådgiver i Kundeservice i Nykredit Direkte, Viby J - og gør en forskel for vores kunder Viby J Bliv stedfortræder og vurderingsspecialist i Totalkredit med fokus på ledelse og faglig kvalitet Syddanmark Bliv seniorprivatrådgiver i Nykredit og Spar Nord i Odense – og gør en forskel for vores kunder Odense Bliv Seniorspecialist til Post Trade Infrastruktur i Operations – Betalinger og Investering, Taastrup Taastrup Bliv privatrådgiver i Nykredit og Spar Nord i Vejle – og gør en forskel for vores kunder Vejle Bliv totalrådgiver i Spar Nord i Hjørring – og gør en forskel for vores kunder Hjørring Bliv privatrådgiver i Spar Nord i Hjørring – og gør en forskel for vores kunder Hjørring Bliv Finansiel Controller hos Nykredit Portefølje Administration A/S i en for

@@ -1,16 +1,142 @@
-GET https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=student&location=Denmark&start=0
-ERROR HTTPError: 429 Client Error: Too Many Requests for url: https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=student&location=Denmark&start=0
-Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/probe.py", line 113, in <module>
-    r = http(parts[0], parts[1], **kw)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 39, in http
-    raise last  # type: ignore[misc]
-    ^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 33, in http
-    r.raise_for_status()
-  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=student&location=Denmark&start=0
-
-Please try again later
+BROWSER https://careers.carlsberg.com/search/?q=student
+FINAL https://careers.carlsberg.com/search/?q=student
+TITLE Student - Carlsberg Jobs
+LINKS 143
+L EN -> https://careers.carlsberg.com/search/?q=student#
+L Dansk -> https://careers.carlsberg.com/search/?q=student&locale=da_DK
+L Deutsch -> https://careers.carlsberg.com/search/?q=student&locale=de_DE
+L English -> https://careers.carlsberg.com/search/?q=student&locale=en_GB
+L Suomi -> https://careers.carlsberg.com/search/?q=student&locale=fi_FI
+L Français -> https://careers.carlsberg.com/search/?q=student&locale=fr_FR
+L Italiano -> https://careers.carlsberg.com/search/?q=student&locale=it_IT
+L Norsk bokmål -> https://careers.carlsberg.com/search/?q=student&locale=nb_NO
+L Polski -> https://careers.carlsberg.com/search/?q=student&locale=pl_PL
+L Svenska -> https://careers.carlsberg.com/search/?q=student&locale=sv_SE
+L Menu -> https://careers.carlsberg.com/search/?q=student#
+L LOCATIONS -> https://careers.carlsberg.com/search/?q=student#
+L Western Europe -> https://careers.carlsberg.com/content/Locations-WE/?locale=en_GB
+L Central & Eastern Europe -> https://careers.carlsberg.com/content/Locations-CEE/?locale=en_GB
+L Asia -> https://careers.carlsberg.com/content/Locations-Asia/?locale=en_GB
+L GROUP FUNCTIONS -> https://careers.carlsberg.com/search/?q=student#
+L Central Office -> https://careers.carlsberg.com/go/Central-Office/4396001/
+L Integrated Information Technology (IIT) -> https://careers.carlsberg.[REDACTED]%28IIT%29/4604401/
+L Integrated Supply Chain (ISC) -> https://careers.carlsberg.com/go/Integrated-Supply-Chain-%28ISC%29/4397501/
+L Carlsberg Shared Services (CSS) -> https://careers.carlsberg.com/go/Carlsberg-Shared-Services-%28CSS%29/4395901/
+L Carlsberg Export & License (CE&L) -> https://careers.carlsberg.com/go/Carlsberg-Export-&-License-%28CE&L%29/4395801/
+L EARLY CAREERS -> https://careers.carlsberg.com/content/Early-Careers/?locale=en_GB
+L EXPERTISE -> https://careers.carlsberg.com/search/?q=student#
+L Marketing and Sales -> https://careers.carlsberg.[REDACTED]
+L Supply Chain & Production -> https://careers.carlsberg.com/go/Supply-Chain-&-Production-at-Carlsberg-Group/4401901/
+L Research -> https://careers.carlsberg.[REDACTED]
+L IT, Finance, Procurement, Legal & Communication -> https://careers.carlsberg.com/go/IT%2C-Finance%2C-Procurement%2C-Legal-&[REDACTED]
+L People & Culture and Corporate Affairs -> https://careers.carlsberg.com/go/People-&[REDACTED]
+L WORKING AT CARLSBERG -> https://careers.carlsberg.com/search/?q=student#
+L Carlsberg culture -> https://careers.carlsberg.com/content/Culture/?locale=en_GB
+L People of Carlsberg -> https://careers.carlsberg.com/content/Global-career-stories/?locale=en_GB
+L Our high engagement -> https://careers.carlsberg.com/content/Highly-engaged-global/?locale=en_GB
+L Learning opportunities -> https://careers.carlsberg.[REDACTED]?locale=en_GB
+L Diversity, Equity and Inclusion -> https://careers.carlsberg.[REDACTED]?locale=en_GB
+L Forbes' 2025 Best Employers -> https://careers.carlsberg.[REDACTED]?locale=en_GB
+L Universum Nordics Most Attractive Employers ranking -> https://careers.carlsberg.[REDACTED]?locale=en_GB
+L APPLY -> https://careers.carlsberg.com/search/?q=student#
+L Open posititions -> https://careers.carlsberg.com/search/?
+L FAQ -> https://careers.carlsberg.com/content/FAQ/?locale=en_GB
+L LOGIN -> https://career2.successfactors.eu/career?career_company=carlsbergg&lang=en_GB&company=carlsbergg&site=&loginFlowRequired=true
+L EN -> https://careers.carlsberg.com/search/?q=student#
+L Dansk -> https://careers.carlsberg.com/search/?q=student&locale=da_DK
+L Deutsch -> https://careers.carlsberg.com/search/?q=student&locale=de_DE
+L English -> https://careers.carlsberg.com/search/?q=student&locale=en_GB
+L Suomi -> https://careers.carlsberg.com/search/?q=student&locale=fi_FI
+L Français -> https://careers.carlsberg.com/search/?q=student&locale=fr_FR
+L Italiano -> https://careers.carlsberg.com/search/?q=student&locale=it_IT
+L Norsk bokmål -> https://careers.carlsberg.com/search/?q=student&locale=nb_NO
+L Polski -> https://careers.carlsberg.com/search/?q=student&locale=pl_PL
+L Svenska -> https://careers.carlsberg.com/search/?q=student&locale=sv_SE
+L Menu -> https://careers.carlsberg.com/search/?q=student#
+L LOCATIONS -> https://careers.carlsberg.com/search/?q=student#
+L Western Europe -> https://careers.carlsberg.com/content/Locations-WE/?locale=en_GB
+L Central & Eastern Europe -> https://careers.carlsberg.com/content/Locations-CEE/?locale=en_GB
+L Asia -> https://careers.carlsberg.com/content/Locations-Asia/?locale=en_GB
+L GROUP FUNCTIONS -> https://careers.carlsberg.com/search/?q=student#
+L Central Office -> https://careers.carlsberg.com/go/Central-Office/4396001/
+L Integrated Information Technology (IIT) -> https://careers.carlsberg.[REDACTED]%28IIT%29/4604401/
+L Integrated Supply Chain (ISC) -> https://careers.carlsberg.com/go/Integrated-Supply-Chain-%28ISC%29/4397501/
+L Carlsberg Shared Services (CSS) -> https://careers.carlsberg.com/go/Carlsberg-Shared-Services-%28CSS%29/4395901/
+L Carlsberg Export & License (CE&L) -> https://careers.carlsberg.com/go/Carlsberg-Export-&-License-%28CE&L%29/4395801/
+L EARLY CAREERS -> https://careers.carlsberg.com/content/Early-Careers/?locale=en_GB
+L EXPERTISE -> https://careers.carlsberg.com/search/?q=student#
+L Marketing and Sales -> https://careers.carlsberg.[REDACTED]
+L Supply Chain & Production -> https://careers.carlsberg.com/go/Supply-Chain-&-Production-at-Carlsberg-Group/4401901/
+L Research -> https://careers.carlsberg.[REDACTED]
+L IT, Finance, Procurement, Legal & Communication -> https://careers.carlsberg.com/go/IT%2C-Finance%2C-Procurement%2C-Legal-&[REDACTED]
+L People & Culture and Corporate Affairs -> https://careers.carlsberg.com/go/People-&[REDACTED]
+L WORKING AT CARLSBERG -> https://careers.carlsberg.com/search/?q=student#
+L Carlsberg culture -> https://careers.carlsberg.com/content/Culture/?locale=en_GB
+L People of Carlsberg -> https://careers.carlsberg.com/content/Global-career-stories/?locale=en_GB
+L Our high engagement -> https://careers.carlsberg.com/content/Highly-engaged-global/?locale=en_GB
+L Learning opportunities -> https://careers.carlsberg.[REDACTED]?locale=en_GB
+L Diversity, Equity and Inclusion -> https://careers.carlsberg.[REDACTED]?locale=en_GB
+L Forbes' 2025 Best Employers -> https://careers.carlsberg.[REDACTED]?locale=en_GB
+L Universum Nordics Most Attractive Employers ranking -> https://careers.carlsberg.[REDACTED]?locale=en_GB
+L APPLY -> https://careers.carlsberg.com/search/?q=student#
+L Open posititions -> https://careers.carlsberg.com/search/?
+L FAQ -> https://careers.carlsberg.com/content/FAQ/?locale=en_GB
+L LOGIN -> https://career2.successfactors.eu/career?career_company=carlsbergg&lang=en_GB&company=carlsbergg&site=&loginFlowRequired=true
+L EN -> https://careers.carlsberg.com/search/?q=student#
+L Dansk -> https://careers.carlsberg.com/search/?q=student&locale=da_DK
+L Deutsch -> https://careers.carlsberg.com/search/?q=student&locale=de_DE
+L English -> https://careers.carlsberg.com/search/?q=student&locale=en_GB
+L Suomi -> https://careers.carlsberg.com/search/?q=student&locale=fi_FI
+L Français -> https://careers.carlsberg.com/search/?q=student&locale=fr_FR
+L Italiano -> https://careers.carlsberg.com/search/?q=student&locale=it_IT
+L Norsk bokmål -> https://careers.carlsberg.com/search/?q=student&locale=nb_NO
+L Polski -> https://careers.carlsberg.com/search/?q=student&locale=pl_PL
+L Svenska -> https://careers.carlsberg.com/search/?q=student&locale=sv_SE
+L Join our Talent Community -> https://careers.carlsberg.com/search/?q=student#
+L LOCATIONS -> https://careers.carlsberg.com/search/?q=student#
+L Western Europe -> https://careers.carlsberg.com/content/Locations-WE/?locale=en_GB
+L Central & Eastern Europe -> https://careers.carlsberg.com/content/Locations-CEE/?locale=en_GB
+L Asia -> https://careers.carlsberg.com/content/Locations-Asia/?locale=en_GB
+L GROUP FUNCTIONS -> https://careers.carlsberg.com/search/?q=student#
+L Central Office -> https://careers.carlsberg.com/go/Central-Office/4396001/
+L Integrated Information Technology (IIT) -> https://careers.carlsberg.[REDACTED]%28IIT%29/4604401/
+L Integrated Supply Chain (ISC) -> https://careers.carlsberg.com/go/Integrated-Supply-Chain-%28ISC%29/4397501/
+L Carlsberg Shared Services (CSS) -> https://careers.carlsberg.com/go/Carlsberg-Shared-Services-%28CSS%29/4395901/
+L Carlsberg Export & License (CE&L) -> https://careers.carlsberg.com/go/Carlsberg-Export-&-License-%28CE&L%29/4395801/
+L EARLY CAREERS -> https://careers.carlsberg.com/content/Early-Careers/?locale=en_GB
+L EXPERTISE -> https://careers.carlsberg.com/search/?q=student#
+L Marketing and Sales -> https://careers.carlsberg.[REDACTED]
+L Supply Chain & Production -> https://careers.carlsberg.com/go/Supply-Chain-&-Production-at-Carlsberg-Group/4401901/
+L Research -> https://careers.carlsberg.[REDACTED]
+L IT, Finance, Procurement, Legal & Communication -> https://careers.carlsberg.com/go/IT%2C-Finance%2C-Procurement%2C-Legal-&[REDACTED]
+L People & Culture and Corporate Affairs -> https://careers.carlsberg.com/go/People-&[REDACTED]
+L WORKING AT CARLSBERG -> https://careers.carlsberg.com/search/?q=student#
+L Carlsberg culture -> https://careers.carlsberg.com/content/Culture/?locale=en_GB
+L People of Carlsberg -> https://careers.carlsberg.com/content/Global-career-stories/?locale=en_GB
+L Our high engagement -> https://careers.carlsberg.com/content/Highly-engaged-global/?locale=en_GB
+L Learning opportunities -> https://careers.carlsberg.[REDACTED]?locale=en_GB
+L Diversity, Equity and Inclusion -> https://careers.carlsberg.[REDACTED]?locale=en_GB
+L Forbes' 2025 Best Employers -> https://careers.carlsberg.[REDACTED]?locale=en_GB
+L Universum Nordics Most Attractive Employers ranking -> https://careers.carlsberg.[REDACTED]?locale=en_GB
+L APPLY -> https://careers.carlsberg.com/search/?q=student#
+L Open positions -> https://careers.carlsberg.com/search/?
+L FAQ -> https://careers.carlsberg.com/content/FAQ/?locale=en_GB
+L Home -> https://careers.carlsberg.com/
+L Clear -> https://careers.carlsberg.com/search/?q=student
+L Product Development Placement Student -> https://careers.carlsberg.[REDACTED]
+L Product Development Placement Student -> https://careers.carlsberg.[REDACTED]
+L Product Development Placement Student -> https://careers.carlsberg.[REDACTED]
+JSON 6
+J https://careers.carlsberg.com/services/t/l?referrer=&ctid=22e429e2-0567-4b68-a26c-663af11a49d0&landing=https%3A%2F%2Fcareers.carlsberg.com%2Fsearch%2F%3Fq%3Dstudent&brand=&_=1791409192477
+   {SUCCESS:true}
+J https://careers.carlsberg.com/services/jobs/options/facetValues/
+   {"facets":{"map":{"customfield3":[{"translated":"","name":"Accounting / Finance / Controlling","count":10},{"translated":"","name":"Information Technology","count":1},{"translated":"","name":"Internal Audit","count":2},{"translated":"","name":"Legal","count":1},{"translated":"","name":"Marketing","count":8},{"translated":"","name":"Others","count":9},{"translated":"","name":"People \u0026 Culture","count":5},{"translated":"","name":"Production / Engineering","count":14},{"translated":"","name":"Quality / Control","count":3},{"translated":"","name":"Research \u0026 Development","count":1},{"translated":"","name":"Sales","count":8},{"translated":"","name":"Sales Administration - Customer Servi
+J https://api-eu.carlsbergwebservices.[REDACTED]
+   {"continent":{"code":"NA"},"country":{"isoCode":"US"}}
+J https://api-eu.carlsbergwebservices.[REDACTED]
+   {"legalEntities":[{"eid":"2f569cf8-375e-4bbb-a090-1245cd5f8dd3","name":"Carlsberg Breweries A/S","formalName":"Carlsberg Breweries A/S","country":"DK","regNumber":"25508343","address":"J.C. Jacobsens Gade 1, 1799, Copenhagen V","isEmployer":null,"createdAt":null}],"formalEntityName":"Carlsberg Breweries A/S","entityName":"Carlsberg Breweries A/S","entityRegNumber":"25508343","entityAddress":"J.C. Jacobsens Gade 1, 1799, Copenhagen V","entityCountry":"DK","siteDomain":"careers.carlsberg.com","siteContactEmail":" ","soMeContactEmail":null,"siteHomepageUrl":"https://careers.carlsberg.com","policiesPageUrl":null,"cookiesPageUrl":null,"cookies":["guest_id","_fbp","_gat","cbgAge","personalization_
+J https://api.dev.carlsbergwebservices.[REDACTED]?handle=ccp$cc=en
+   {"meta":{"Status":200,"Redirect":null},"route":null,"views":{"cookieConsentPlugin":{"i18nKeys":{"dialogTitle":"Cookie preferences ","detailsTitle":"Manage cookies","intro":"With your consent, {{formalEntityName}} and Carlsberg Group Entities would like to use cookies to enhance website functionality, personalize content, and deliver targeted advertising. This includes sharing your personal data with our partners. Use \"Manage cookies\" to change your consent preferences anytime. See our <link_cookies>Cookie Notification</link_cookies> & <link_privacy>Privacy Notification</link_privacy> for details. ","introBlock1":"","introBlock2":"","introBlock3":"","cookiePref1Label":"Strictly Necessary Co
+J https://api-eu.carlsbergwebservices.[REDACTED]?market=dk&country=US
+   
+TEXT EN Join our Talent Community LOCATIONS GROUP FUNCTIONS EARLY CAREERS EXPERTISE WORKING AT CARLSBERG APPLY Search by Keyword Search by Location Show More Options Clear Select how often (in days) to receive an alert: Create Alert Search results for "student". Showing 1 Job Use the Tab key to navigate the Job List. Select to view the full details of the job. Title Product Development Placement Student Posting Date 25 Sept 2026 Entity / company Carlsberg Marston’s Brewing Company Job category Research & Development Job Type Temporary contract Location Hemel Hempstead, GB Select with space bar to view the full contents of the job information. Who we are Privacy Cookies Terms of Use Acceptable Use Contact Disclosure Policy Manage Cookies Opens in a new tab. Opens in a new tab. Opens in a new tab. Cookie preferences With your consent, Carlsberg Breweries A/S and Carlsberg Group Entities would like to use cookies to enhance website functionality, personalize content, and deliver targeted advertising. This includes sharing your personal data with our partners. Use "Manage cookies" to change your consent preferences anytime. See our Cookie Notification & Privacy Notification for details. Allow all Refuse optional Manage cookies

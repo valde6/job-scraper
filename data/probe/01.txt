@@ -1,20 +1,2 @@
-GET https://www.novonordisk.com/bin/nncorp/careersearch?keyword=student&country=Denmark
-ERROR HTTPError: 400 Client Error: Bad Request for url: https://www.novonordisk.com/bin/nncorp/careersearch?keyword=student&country=Denmark
-Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/probe.py", line 113, in <module>
-    r = http(parts[0], parts[1], **kw)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 39, in http
-    raise last  # type: ignore[misc]
-    ^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 33, in http
-    r.raise_for_status()
-  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://www.novonordisk.com/bin/nncorp/careersearch?keyword=student&country=Denmark
-
-{
-  "data": "",
-  "status": 500,
-  "message": "Failed due to missing one or more query parameter(s)"
-}
+GREP https://danskebank.com/careers https://[a-z0-9.-]+oraclecloud\.com[^"'<> ]*
+STATUS 200

@@ -1,16 +1,6 @@
-01 ERR HTTPError: 400 Client Error: Bad Request for url: https://www.novonordisk.com/bin/nncorp/careersearch?keyword=student&country=Denma | GET https://www.novonordisk.com/bin/nncorp/careersearch?keyword=student&country=Denmark
-02 200 66969B | GET https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark
-03 200 16909B | GET https://www.nordea.com/en/api/jobs-list?_format=json&items_per_page=50&page=0&search=student
-04 200 20587B | GET https://www.nykredit.com/api/talentsoft/getfilteredjoblist/?type=
-05 200 203932B | GET https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-06 ERR HTTPError: 429 Client Error: Too Many Requests for url: https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&qu | GET https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=student&location=Denmark&start=0
-07 200 9722B | GET https://api.smartrecruiters.com/v1/companies/DeloitteNordic/postings?country=dk&limit=5
-08 RAW 200 100377B | RAW https://danskebank.com/careers 250000
-09 BROWSER links=338 json=12 | Bliv en del af PwC - Tjek ledige stillinger her | BROWSER https://www.pwc.dk/da/karriere/jobsoegning.html
-10 BROWSER links=224 json=3 | Vacancies: See All Available Jobs | Ørsted Careers | BROWSER https://orsted.com/en/careers/vacancies-list
-11 BROWSER links=113 json=12 | Search Jobs at Pandora | BROWSER https://careers.pandoragroup.com/jobs?filter%5Bcategory%5D%5B0%5D=Corporate
-12 BROWSER links=0 json=0 | Et øjeblik ... | BROWSER https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs
-13 BROWSER links=0 json=0 | Et øjeblik ... | BROWSER https://medarbejder.jyskebank.dk/job
-14 ERR Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.mckinsey.com/dk/careers
-Call log:
-navigating to "https://www.mck | BROWSER https://www.mckinsey.com/dk/careers
+01 GREP 0 | GREP https://danskebank.com/careers https://[a-z0-9.-]+oraclecloud\.com[^"'<> ]*
+02 ERR HTTPError: 405 Client Error: Method Not Allowed for url: https://orsted.com/api/jobs/jobList | GET https://orsted.com/api/jobs/jobList
+03 BROWSER links=224 json=3 | Vacancies: See All Available Jobs | Ørsted Careers | BROWSER https://orsted.com/en/careers/vacancies-list
+04 BROWSER links=338 json=12 | Bliv en del af PwC - Tjek ledige stillinger her | BROWSER https://www.pwc.dk/da/karriere/jobsoegning.html
+05 BROWSER links=169 json=3 | Ledige stillinger | BROWSER https://www.nykredit.com/karriere/stillinger/
+06 BROWSER links=143 json=6 | Student - Carlsberg Jobs | BROWSER https://careers.carlsberg.com/search/?q=student
