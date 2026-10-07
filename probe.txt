@@ -1,14 +1,6 @@
-GET https://www.novonordisk.com/bin/nncorp/careersearch?keyword=student&country=Denmark
-GET https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark
-GET https://www.nordea.com/en/api/jobs-list?_format=json&items_per_page=50&page=0&search=student
-GET https://www.nykredit.com/api/talentsoft/getfilteredjoblist/?type=
-GET https://careers.carlsberg.com/search/?q=student&locationsearch=Denmark
-GET https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=student&location=Denmark&start=0
-GET https://api.smartrecruiters.com/v1/companies/DeloitteNordic/postings?country=dk&limit=5
-RAW https://danskebank.com/careers 250000
-BROWSER https://www.pwc.dk/da/karriere/jobsoegning.html
+GREP https://danskebank.com/careers https://[a-z0-9.-]+oraclecloud\.com[^"'<> ]*
+GET https://orsted.com/api/jobs/jobList
 BROWSER https://orsted.com/en/careers/vacancies-list
-BROWSER https://careers.pandoragroup.com/jobs?filter%5Bcategory%5D%5B0%5D=Corporate
-BROWSER https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs
-BROWSER https://medarbejder.jyskebank.dk/job
-BROWSER https://www.mckinsey.com/dk/careers
+BROWSER https://www.pwc.dk/da/karriere/jobsoegning.html
+BROWSER https://www.nykredit.com/karriere/stillinger/
+BROWSER https://careers.carlsberg.com/search/?q=student

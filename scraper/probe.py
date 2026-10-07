@@ -82,7 +82,7 @@ for i, line in enumerate(lines, 1):
         if parts[0] == "BROWSER":
             from . import browser as B
             r = B.render(parts[1], capture_json=True)
-            jobish = re.compile(r"job|stilling|vacan|position|career|karriere|opening|requisition|req", re.I)
+            jobish = re.compile(r"job|stilling|vacan|position|career|karriere|opening|requisition|req|\\d{4,}", re.I)
             lines = [f"FINAL {r['url']}", f"TITLE {r['title']}", f"LINKS {len(r['links'])}"]
             lines += [f"L {clean(t)[:100]} -> {h[:220]}" for t, h in r["links"] if jobish.search(h) and clean(t)][:150]
             lines.append(f"JSON {len(r['json'])}")
@@ -91,6 +91,12 @@ for i, line in enumerate(lines, 1):
             lines.append("TEXT " + clean(r["text"])[:5000])
             f.write_text(redact(f"{line}\n" + "\n".join(lines)))
             summary.append(f"{i:02d} BROWSER links={len(r['links'])} json={len(r['json'])} | {r['title'][:60]} | {line}")
+            continue
+        if parts[0] == "GREP":
+            r = http("GET", parts[1], retries=0, timeout=25)
+            ms = sorted(set(re.findall(parts[2], r.text)))[:200]
+            f.write_text(redact(f"{line}\nSTATUS {r.status_code}\n" + "\n".join(ms)))
+            summary.append(f"{i:02d} GREP {len(ms)} | {line}")
             continue
         if parts[0] == "JOBINDEX":
             from .adapters import jobindex as ji
