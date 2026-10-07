@@ -55,7 +55,9 @@ companies:
   - https://danskebank.com/careers
   - https://danskebank.com/careers/search-jobs
   source:
-    type: none
+    type: oracle
+    host: https://ejqi.fa.ocs.oraclecloud.eu
+    site: CX_1001
 - rank: 6
   name: Deloitte
   aliases:
@@ -110,8 +112,7 @@ companies:
   - https://www.nordea.com/en/careers
   - https://www.nordea.com/en/careers/vacant-positions
   source:
-    type: successfactors
-    url: https://careers.nordea.com
+    type: nordea
 - rank: 11
   name: Microsoft
   aliases:

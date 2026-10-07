@@ -1,7 +1,5 @@
-SCRAPE Novo Nordisk
 SCRAPE Nordea
-SCRAPE Nykredit
-SCRAPE PwC
-SCRAPE Deloitte
-SCRAPE PFA Pension
-BROWSER https://danskebank.com/careers
+SCRAPE Danske Bank
+POST https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Experienced_Careers/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
+POST https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
+GET https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Experienced_Careers/jobs
