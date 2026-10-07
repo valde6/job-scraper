@@ -43,7 +43,55 @@ def _detail(url: str, how: str):
     return r["html"], md
 
 
+def _get_path(obj, path):
+    for k in (path or "").split("."):
+        if not k:
+            continue
+        obj = obj.get(k, {}) if isinstance(obj, dict) else {}
+    return obj
+
+
+def scrape_captured(cfg):
+    """Variant: siden henter joblisten fra et JSON-API – vi lader browseren hente det og læser svaret.
+    cfg.capture: {url_contains, items, title, location, link, extra}"""
+    import json as _json
+    cap = cfg["capture"]
+    page = B.render(cfg["urls"][0], capture_json=True, more_clicks=cfg.get("more_clicks", 3))
+    listed, jobs, seen = 0, [], set()
+    for u, body in page["json"]:
+        if cap["url_contains"] not in u:
+            continue
+        try:
+            data = _json.loads(body)
+        except Exception:
+            continue
+        for p in _get_path(data, cap.get("items")) or []:
+            title = clean(str(p.get(cap["title"]) or ""))
+            link = p.get(cap["link"]) or ""
+            if not title or link in seen:
+                continue
+            seen.add(link)
+            listed += 1
+            loc = clean(" ".join(str(p.get(k) or "") for k in cap.get("location", [])))
+            extra = " ".join(str(p.get(k) or "") for k in cap.get("extra", []))
+            if not cfg.get("dk_only") and not is_denmark(loc):
+                continue
+            fit = student_fit(title, extra)
+            if fit != "sikker" and not ("student" in extra.lower() and fit):
+                continue
+            try:
+                html, md = _detail(link, cfg.get("detail", "browser"))
+            except Exception:
+                html, md = "", ""
+            jobs.append(Job(company=cfg["name"], title=title, url=link, apply_url=link, location=loc,
+                            deadline=str(p.get(cap.get("deadline", "")) or "")[:10],
+                            description_md=md, source="browser", external_id=link, fit=fit))
+    return listed, jobs
+
+
 def scrape(cfg):
+    if cfg.get("capture"):
+        return scrape_captured(cfg)
     pat = re.compile(cfg["link_pattern"], re.I)
     terms = cfg.get("search_terms", TERMS)
     how = cfg.get("detail", "browser")
