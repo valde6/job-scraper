@@ -1,7 +1,5 @@
-01 OK listed=3 matched=1 | SCRAPE Novo Nordisk
-02 OK listed=0 matched=0 | SCRAPE Nordea
-03 OK listed=56 matched=2 | SCRAPE Nykredit
-04 OK listed=0 matched=0 | SCRAPE PwC
-05 OK listed=32 matched=3 | SCRAPE Deloitte
-06 OK listed=5 matched=1 | SCRAPE PFA Pension
-07 BROWSER links=147 json=16 | Careers | Danske Bank | Use your curiosity to connect what m | BROWSER https://danskebank.com/careers
+01 OK listed=27 matched=0 | SCRAPE Nordea
+02 OK listed=9 matched=4 | SCRAPE Danske Bank
+03 200 5161B | POST https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Experienced_Careers/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
+04 200 7325B | POST https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
+05 ERR HTTPError: 400 Client Error: Bad Request for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Experienced_Careers/jobs | GET https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Experienced_Careers/jobs

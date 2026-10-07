@@ -1,7 +1,188 @@
-SCRAPE PwC
-OK listed=0 matched=0
+POST https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
+STATUS 200 FINAL https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs
 
+JSON
 {
- "listed": 0,
- "jobs": []
+ "total": 156,
+ "jobPostings": [
+  {
+   "title": "Paid Internship in Deals",
+   "externalPath": "/job/Vilnius/Paid-Internship-in-Deals-team_766460WD-1",
+   "timeType": "Full time",
+   "locationsText": "Vilnius",
+   "postedOn": "Slået op i dag",
+   "bulletFields": [
+    "766460WD"
+   ]
+  },
+  {
+   "title": "Paid Internship in Audit (Klaipėda)",
+   "externalPath": "/job/Klaipeda/Internship-in-Audit-team--Klaipda-_766582WD-1",
+   "timeType": "Full time",
+   "locationsText": "Klaipeda",
+   "postedOn": "Slået op i dag",
+   "bulletFields": [
+    "766582WD"
+   ]
+  },
+  {
+   "title": "Junior - Transfer Pricing",
+   "externalPath": "/job/Zonafranca/Junior---Transfer-Pricing_766527WD",
+   "timeType": "Full time",
+   "locationsText": "Zonafranca",
+   "postedOn": "Slået op i går",
+   "bulletFields": [
+    "766527WD"
+   ]
+  },
+  {
+   "title": "Junior Finance Transformation Consultant (full-time / internship)",
+   "externalPath": "/job/Prague/Junior-Konzultant---Finann-Reporting--full-time---internship-_766002WD",
+   "timeType": "Full time",
+   "locationsText": "Prague",
+   "postedOn": "Slået op for 2 dage siden",
+   "bulletFields": [
+    "766002WD"
+   ]
+  },
+  {
+   "title": "Tax - Goods and Services Tax Associate (July 2027 Intake)",
+   "externalPath": "/job/Singapore/Goods-and-Services-Tax-Associate---July-2027-Intake_737671WD",
+   "timeType": "Full time",
+   "locationsText": "Singapore",
+   "postedOn": "Slået op for 2 dage siden",
+   "bulletFields": [
+    "737671WD"
+   ]
+  }
+ ],
+ "facets": [
+  {
+   "facetParameter": "timeType",
+   "descriptor": "Fuldtid/deltid",
+   "values": [
+    {
+     "descriptor": "Full time",
+     "id": "7f2542d987a0014e913741e973274900",
+     "count": 150
+    },
+    {
+     "descriptor": "Part time",
+     "id": "7f2542d987a0013f132241e973274800",
+     "count": 6
+    }
+   ]
+  },
+  {
+   "facetParameter": "workerSubType",
+   "descriptor": "Jobtype",
+   "values": [
+    {
+     "descriptor": "Fixed Term (tidsbegrænset ansættelse)",
+     "id": "e57e6863118d01544d441845322bfaa2",
+     "count": 24
+    },
+    {
+     "descriptor": "Intern",
+     "id": "e57e6863118d01e8c8ee4356e52a5e2d",
+     "count": 11
+    },
+    {
+     "descriptor": "Intern (trainee)",
+     "id": "e57e6863118d01ccc3941a45322bfba2",
+     "count": 79
+    },
+    {
+     "descriptor": "Non-Salaried / Self-Employed (tidsbegrænset ansættelse)",
+     "id": "d479389f01bd01f8844e9e6e716a25ed",
+     "count": 1
+    },
+    {
+     "descriptor": "Regular",
+     "id": "e57e6863118d01402d7b0445322bf9a2",
+     "count": 41
+    }
+   ]
+  },
+  {
+   "facetParameter": "jobFamilyGroup",
+   "descriptor": "Jobkategori",
+   "values": [
+    {
+     "descriptor": "Audit and Assurance",
+     "id": "2d7d0eae2e7e1014427eeac2ee5a0000",
+     "count": 36
+    },
+    {
+     "descriptor": "Brand Management, Marketing and Sales",
+     "id": "fc91b97ed3901014427e1a2722670000",
+     "count": 1
+    },
+    {
+     "descriptor": "Business Application Consulting",
+     "id": "83dadf5ea2a3101442803a154ceb0000",
+     "count": 4
+    },
+    {
+     "descriptor": "Business Services and Support",
+     "id": "0f629f6e2e4710144281298f3fa40000",
+     "count": 1
+    },
+    {
+     "descriptor": "Contingent Workforce",
+     "id": "a7ce8d4680bc1014427e8a1b66d30000",
+     "count": 2
+    },
+    {
+     "descriptor": "Corporate Affairs and Communication",
+     "id": "fde1246ed99e10155bff141238520000",
+     "count": 2
+    },
+    "... +13"
+   ]
+  },
+  {
+   "facetParameter": "locationMainGroup",
+   "values": [
+    {
+     "facetParameter": "locations",
+     "descriptor": "Steder",
+     "values": [
+      {
+       "descriptor": "Almaty",
+       "id": "e57e6863118d010facf5bc77342bf3b1",
+       "count": 1
+      },
+      {
+       "descriptor": "Amsterdam",
+       "id": "e57e6863118d01bdb4499b78342b38b3",
+       "count": 2
+      },
+      {
+       "descriptor": "Antwerp",
+       "id": "e57e6863118d014007921f92342bdcd4",
+       "count": 2
+      },
+      {
+       "descriptor": "Athens",
+       "id": "e57e6863118d012bdf39fe78342bc4b3",
+       "count": 1
+      },
+      {
+       "descriptor": "Auckland - NZL",
+       "id": "e57e6863118d0183ba15037b342ba3b6",
+       "count": 1
+      },
+      {
+       "descriptor": "Barcelona",
+       "id": "e57e6863118d0150d51c657e342b3dbb",
+       "count": 3
+      },
+      "... +38"
+     ]
+    }
+   ]
+  }
+ ],
+ "userAuthenticated": false
 }
