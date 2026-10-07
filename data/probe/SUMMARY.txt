@@ -1,5 +1,1 @@
-01 OK listed=27 matched=0 | SCRAPE Nordea
-02 OK listed=9 matched=4 | SCRAPE Danske Bank
-03 200 5161B | POST https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Experienced_Careers/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
-04 200 7325B | POST https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs {"appliedFacets":{},"limit":5,"offset":0,"searchText":"student"}
-05 ERR HTTPError: 400 Client Error: Bad Request for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Experienced_Careers/jobs | GET https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Experienced_Careers/jobs
+01 OK listed=14 matched=3 | SCRAPE PwC
