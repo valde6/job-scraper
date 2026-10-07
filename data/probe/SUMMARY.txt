@@ -1,1 +1,16 @@
-01 RAW 200 318367B | RAW https://api.hr-manager.net/jobportal.svc/kpmg/positionlist/json/?incads=1 400000
+01 BROWSER links=125 json=10 | Career search results | BROWSER https://www.novonordisk.com/careers/find-a-job/career-search-results.html?searchText=student
+02 BROWSER links=59 json=2 | Novo Nordisk | BROWSER https://career2.successfactors.eu/career?company=novonordisk&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=en_GB
+03 BROWSER links=147 json=16 | Careers | Danske Bank | Use your curiosity to connect what m | BROWSER https://danskebank.com/careers
+04 BROWSER links=818 json=1 | Open jobs | Nordea | BROWSER https://www.nordea.com/en/careers/vacant-positions
+05 BROWSER links=11 json=3 | 404 | BROWSER https://www.deloitte.com/dk/da/careers.html
+06 BROWSER links=345 json=12 | Karriere i PwC | BROWSER https://www.pwc.dk/da/karriere.html
+07 BROWSER links=196 json=2 | Jobs in Renewable Energy | Ørsted Careers | BROWSER https://orsted.com/en/careers
+08 BROWSER links=169 json=3 | Ledige stillinger | BROWSER https://www.nykredit.com/karriere/stillinger/
+09 BROWSER links=12 json=1 | Karrieremuligheder | BROWSER https://career2.successfactors.eu/career?company=pfapensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK
+10 BROWSER links=0 json=0 | Et øjeblik ... | BROWSER https://www.jyskebank.dk/om/karriere
+11 ERR Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.mckinsey.com/careers/search-jobs?query=student
+Call log:
+navigat | BROWSER https://www.mckinsey.com/careers/search-jobs?query=student
+12 BROWSER links=109 json=34 | Applied ML Engineer | BROWSER https://jobs.careers.microsoft.com/global/en/search?q=student&lc=Denmark
+13 BROWSER links=157 json=10 | Carlsberg | BROWSER https://www.carlsberggroup.com/careers/
+14 BROWSER links=116 json=12 | Search Jobs at Pandora | BROWSER https://careers.pandoragroup.com/jobs
