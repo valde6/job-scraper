@@ -8,7 +8,7 @@ from urllib.parse import urljoin
 from .common import soup, clean
 
 SECRET_RE = re.compile(r"(AIza[0-9A-Za-z_-]{20,}|gh[pousr]_[A-Za-z0-9]{20,}|github_pat_\w+|sk-[A-Za-z0-9]{20,}|xox[abp]-[\w-]+|"
-                       r"eyJ[\w-]{10,}\.[\w-]{10,}\.[\w-]{5,}|(?<![A-Za-z0-9/])[A-Za-z0-9+/_-]{40,}={0,2})")
+                       r"eyJ[\w-]{10,}\.[\w-]{10,}\.[\w-]{5,})")
 
 
 def redact(t):

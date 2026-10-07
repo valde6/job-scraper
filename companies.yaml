@@ -12,7 +12,8 @@ companies:
   - https://www.novonordisk.com/careers.html
   - https://www.novonordisk.com/careers/find-a-job.html
   source:
-    type: none
+    type: successfactors
+    url: https://careers.novonordisk.com
 - rank: 2
   name: A.P. Møller - Mærsk
   aliases:
@@ -63,7 +64,8 @@ companies:
   - https://www.deloitte.com/dk/da/careers.html
   - https://www2.deloitte.com/dk/da/careers/careers.html
   source:
-    type: none
+    type: smartrecruiters
+    company_id: DeloitteNordic
 - rank: 7
   name: PwC
   aliases:
@@ -72,7 +74,12 @@ companies:
   - https://www.pwc.dk/da/karriere.html
   - https://www.pwc.dk/da/karriere/ledige-stillinger.html
   source:
-    type: none
+    type: workday
+    url: https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers
+    search_terms:
+    - student Denmark
+    - studentermedhjælper
+    - student assistant Copenhagen
 - rank: 8
   name: Carlsberg
   aliases:
@@ -103,7 +110,8 @@ companies:
   - https://www.nordea.com/en/careers
   - https://www.nordea.com/en/careers/vacant-positions
   source:
-    type: none
+    type: successfactors
+    url: https://careers.nordea.com
 - rank: 11
   name: Microsoft
   aliases:
@@ -144,7 +152,11 @@ companies:
   - https://www.nykredit.com/karriere/
   - https://www.nykredit.com/om-os/job-og-karriere/
   source:
-    type: none
+    type: browser
+    urls:
+    - https://www.nykredit.com/karriere/stillinger/
+    link_pattern: stilling/\?jobId=
+    dk_only: true
 - rank: 15
   name: Bestseller
   aliases:
@@ -371,7 +383,11 @@ companies:
   - https://www.pfa.dk/om-pfa/job-og-karriere/
   - https://www.pfa.dk/job/
   source:
-    type: none
+    type: browser
+    urls:
+    - https://career2.successfactors.eu/career?company=pfapensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK
+    link_pattern: career_job_req_id=\d+
+    dk_only: true
 - rank: 38
   name: SAS
   aliases:

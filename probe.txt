@@ -1,6 +1,7 @@
-GREP https://danskebank.com/careers https://[a-z0-9.-]+oraclecloud\.com[^"'<> ]*
-GET https://orsted.com/api/jobs/jobList
-BROWSER https://orsted.com/en/careers/vacancies-list
-BROWSER https://www.pwc.dk/da/karriere/jobsoegning.html
-BROWSER https://www.nykredit.com/karriere/stillinger/
-BROWSER https://careers.carlsberg.com/search/?q=student
+SCRAPE Novo Nordisk
+SCRAPE Nordea
+SCRAPE Nykredit
+SCRAPE PwC
+SCRAPE Deloitte
+SCRAPE PFA Pension
+BROWSER https://danskebank.com/careers
