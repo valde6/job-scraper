@@ -1,1 +1,14 @@
-RAW https://api.hr-manager.net/jobportal.svc/kpmg/positionlist/json/?incads=1 400000
+BROWSER https://www.novonordisk.com/careers/find-a-job/career-search-results.html?searchText=student
+BROWSER https://career2.successfactors.eu/career?company=novonordisk&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=en_GB
+BROWSER https://danskebank.com/careers
+BROWSER https://www.nordea.com/en/careers/vacant-positions
+BROWSER https://www.deloitte.com/dk/da/careers.html
+BROWSER https://www.pwc.dk/da/karriere.html
+BROWSER https://orsted.com/en/careers
+BROWSER https://www.nykredit.com/karriere/stillinger/
+BROWSER https://career2.successfactors.eu/career?company=pfapensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK
+BROWSER https://www.jyskebank.dk/om/karriere
+BROWSER https://www.mckinsey.com/careers/search-jobs?query=student
+BROWSER https://jobs.careers.microsoft.com/global/en/search?q=student&lc=Denmark
+BROWSER https://www.carlsberggroup.com/careers/
+BROWSER https://careers.pandoragroup.com/jobs

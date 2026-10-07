@@ -79,6 +79,19 @@ for i, line in enumerate(lines, 1):
             f.write_text(redact(f"{line}\nOK listed={listed} matched={len(jobs)}\n\n{body[:40000]}"))
             summary.append(f"{i:02d} OK listed={listed} matched={len(jobs)} | {line}")
             continue
+        if parts[0] == "BROWSER":
+            from . import browser as B
+            r = B.render(parts[1], capture_json=True)
+            jobish = re.compile(r"job|stilling|vacan|position|career|karriere|opening|requisition|req", re.I)
+            lines = [f"FINAL {r['url']}", f"TITLE {r['title']}", f"LINKS {len(r['links'])}"]
+            lines += [f"L {clean(t)[:100]} -> {h[:220]}" for t, h in r["links"] if jobish.search(h) and clean(t)][:150]
+            lines.append(f"JSON {len(r['json'])}")
+            for u, body in r["json"][:25]:
+                lines.append(f"J {u[:300]}\n   {clean(body)[:700]}")
+            lines.append("TEXT " + clean(r["text"])[:5000])
+            f.write_text(redact(f"{line}\n" + "\n".join(lines)))
+            summary.append(f"{i:02d} BROWSER links={len(r['links'])} json={len(r['json'])} | {r['title'][:60]} | {line}")
+            continue
         if parts[0] == "JOBINDEX":
             from .adapters import jobindex as ji
             listed, jobs = ji.scrape_all(list(companies.values()), 2026, extended=True)
