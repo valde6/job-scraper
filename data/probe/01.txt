@@ -1,38 +1,20 @@
-BROWSER https://www.novonordisk.[REDACTED].html?searchText=student
-FINAL https://www.novonordisk.[REDACTED].html?searchText=student&countries=Denmark%3BUnited+States%3BChina+Mainland%3BArgentina%3BAustralia%3BBrazil%3BCanada%3BChile%3BCzech+Republic%3BFrance%3BGermany%3BHong+Kong%3BIndia%3BIndonesia%3BIraq%3BIsrael%3BItaly%3BJapan%3BMalaysia%3BMexico%3BPakistan%3BPhilippines%3BPoland%3BRomania%3BSaudi+Arabia%3BSingapore%3BSouth+Korea%3BSweden%3BSwitzerland%3BTaiwan%3BThailand%3BTurkey%3BUnited+Arab+Emirates%3BUnited+Kingdom&categories=Business+Support+%26+Administration%3BClinical+Development%3BCommercial+Marketing%3BData+%26+AI%3BDigital+%26+IT%3BEducation%3BEngineering+%26+Technical%3BFinance%3BHuman+Resource+Management%3BLegal%2C+Compliance+%26+Audit%3BManufacturing%3BMarket+Access%3BMedical+Affairs%3BProcurement%3BProject+Management+%26+Agile%3BQuality%3BReg+Affairs+%26+Safety+Pharmacovigilance%3BResearch%3BSupply+Chain%3BBusiness+Development+%26+Strategy%3BCorporate+Affairs%3BSales
-TITLE Career search results
-LINKS 125
-L Find a job -> https://www.novonordisk.com/careers/find-a-job.html
-L Career search results -> https://www.novonordisk.[REDACTED].html
-L Careers at Novo -> https://www.novonordisk.com/careers/careers-at-novo.html
-L Find a job -> https://www.novonordisk.com/careers/find-a-job.html
-L Job Alerts -> https://www.novonordisk.com/careers/job-agent.html
-L Early Career -> https://www.novonordisk.com/careers/early-career-programmes.html
-L Career areas -> https://www.novonordisk.com/careers/career-areas.html
-L Our recruitment process -> https://www.novonordisk.com/careers/our-recruitment-process.html
-L Notice on Recruitment Fraud -> https://www.novonordisk.com/careers/notice-on-recruitment-fraud.html
-L Position on falsified medicines -> https://www.novonordisk.[REDACTED].html
-L Job Alerts -> https://www.novonordisk.com/careers/job-agent.html?cid=cr
-L Cookie settings -> https://www.novonordisk.[REDACTED].html?searchText=student&countries=Denmark%3BUnited+States%3BChina+Mainland%3BArgentina%3BAustralia%3BBrazil%3BCanada%3BChile%3BCzech+Republic%3BFrance%
-JSON 10
-J https://cdn.cookielaw.[REDACTED].json
-   {"CookieSPAEnabled":false,"CookieSameSiteNoneEnabled":true,"CookieV2CSPEnabled":false,"MultiVariantTestingEnabled":false,"UseV2":true,"MobileSDK":false,"SkipGeolocation":false,"ScriptType":"PRODUCTION","Version":"202608.1.0","OptanonDataJSON":"c514d13c-c030-447f-af6b-7b80d4d7ccae","GeolocationUrl":"https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location","BulkDomainCheckUrl":"https://cookies-data.onetrust.io/bannersdk/v1/domaingroupcheck","RuleSet":[{"Id":"36fe23c7-8e54-467c-a7de-45f25ea46b5a","Name":"Global","Countries":["pr","ps","pw","py","qa","ad","ae","af","ag","ai","al","am","ao","aq","ar","as","au","aw","az","ba","bb","rs","bd","ru","bf","rw","bh","bi","bj","bl","bm","bn","b
-J https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
-   {"country":"US","state":"CA","stateName":"California","continent":"NA"}
-J https://www.novonordisk.com/libs/cq/i18n/dict.en.json
-   {"Add to cart":"Add to cart","Compound handling instructions":"Compound handling instructions","Maximum 3 vials":"Maximum 3 vials","In vivo":"In vivo","Subcategories":"Subcategories","No":"No","Additional info":"Additional information","Selected phases":"Selected phases","Institution / company name":"Institution / company name","Countries":"Countries","Results shown":"Results shown","Load more":"Load more","Invalid email address":"Invalid email address","nndev - Invite":"Invite","Go to stock watch":"Go to stock watch","Job sub category":"Job category","State / Province":"State / Province","I do not agree":"I do not agree","Follow":"Follow","All":"All","Institution / company info":"Institutio
-J https://www.novonordisk.com/libs/granite/csrf/token.json
-   {}
-J https://cdn.cookielaw.[REDACTED].json
-   {"DomainData":{"pclifeSpanYr":"Year","pclifeSpanYrs":"Years","pclifeSpanSecs":"A few seconds","pclifeSpanWk":"Week","pclifeSpanWks":"Weeks","pccontinueWithoutAcceptText":"Continue without Accepting","pccloseButtonType":"Icon","MainText":"We value your privacy","MainInfoText":"<p style=\"margin-bottom: 15px;\">We use our own cookies as well as cookies from third parties. Cookies and the related processing of your personal data are used to remember your settings, traffic metrics, to present you with targeted adverts, and to track your use of our website. You can withdraw or change your consent by clicking on the cookie settings link at the bottom of this website. Your consent covers the use of
-J https://cdn.cookielaw.org/scripttemplates/202608.1.0/assets/v2/otPcCenter.json
-   { "name": "otPcCenter", "html": "[REDACTED]
-J https://www.novonordisk.com/bin/nncorp/getlanguagenavigation?currentPage=[REDACTED]&depth=5
-   { "data": { "languageNavigationItems": [ { "title": "Novo Nordisk", "path": "https://www.novonordisk.com/", "level": 0, "active": true, "search": false, "depth": 0, "hasChildren": true, "children": [ { "title": "Therapy areas", "navigationTitle": "Therapy areas", "path": "https://www.novonordisk.com/disease-areas", "level": 1, "active": false, "search": false, "depth": 0, "hasChildren": true, "children": [ { "title": "Type 1 diabetes", "navigationTitle": "Type 1 diabetes", "path": "https://www.novonordisk.com/disease-areas/type-1-diabetes", "level": 2, "active": false, "search": false, "depth": 0, "hasChildren": false, "children": [] }, { "title": "Type 2 diabetes", "navigationTitle": "Type 
-J https://www.novonordisk.com/bin/nncorp/getnavigationitems?currentPage=[REDACTED]&depth=5&navRootShiftDepth=0
-   { "data": { "mainNavigationItems": [ { "title": "Therapy areas", "path": "https://www.novonordisk.com/disease-areas", "level": 0, "active": false, "search": false, "depth": 5, "hasChildren": true, "children": [ { "title": "Type 1 diabetes", "path": "https://www.novonordisk.com/disease-areas/type-1-diabetes", "level": 1, "active": false, "search": false, "depth": 6, "hasChildren": false, "children": [] }, { "title": "Type 2 diabetes", "path": "https://www.novonordisk.com/disease-areas/type-2-diabetes", "level": 1, "active": false, "search": false, "depth": 6, "hasChildren": false, "children": [] }, { "title": "Obesity", "path": "https://www.novonordisk.com/disease-areas/obesity", "level": 1, 
-J https://www.novonordisk.com/bin/nncorp/careercontent?content=jobCountDictionary&locale=en
-   { "data": [ { "jobCountry": { "label": "Denmark", "value": "Denmark" }, "jobCategory": { "label": "Business Support \u0026 Administration", "value": "Business Support \u0026 Administration" }, "jobCount": 4 }, { "jobCountry": { "label": "Denmark", "value": "Denmark" }, "jobCategory": { "label": "Clinical Development", "value": "Clinical Development" }, "jobCount": 3 }, { "jobCountry": { "label": "Denmark", "value": "Denmark" }, "jobCategory": { "label": "Commercial Marketing", "value": "Commercial Marketing" }, "jobCount": 2 }, { "jobCountry": { "label": "Denmark", "value": "Denmark" }, "jobCategory": { "label": "Data \u0026 AI", "value": "Data \u0026 AI" }, "jobCount": 2 }, { "jobCountry": 
-J https://www.novonordisk.com/bin/nncorp/careersearch?keyword=student&country=Denmark%3BUnited%20States%3BChina%20Mainland%3BArgentina%3BAustralia%3BBrazil%3BCanada%3BChile%3BCzech%20Republic%3BFrance%3BGermany%3BHong%20Kong%3BIndia%3BIndonesia%3BIraq%3BIsrael%3BItaly%3BJapan%3BMalaysia%3BMexico%3BPak
-   { "data": { "executionTimeMs": 181, "totalMatches": 3, "keywordParam": "student", "localeParam": "en", "countriesParam": [ "Denmark", "United States", "China Mainland", "Argentina", "Australia", "Brazil", "Canada", "Chile", "Czech Republic", "France", "Germany", "Hong Kong", "India", "Indonesia", "Iraq", "Israel", "Italy", "Japan", "Malaysia", "Mexico", "Pakistan", "Philippines", "Poland", "Romania", "Saudi Arabia", "Singapore", "South Korea", "Sweden", "Switzerland", "Taiwan", "Thailand", "Turkey", "United Arab Emirates", "United Kingdom" ], "categoriesParam": [ "Business Support \u0026 Administration", "Clinical Development", "Commercial Marketing", "Data \u0026 AI", "Digital \u0026 IT", "
-TEXT Novo Global Find a job / Career search results Therapy areas Science & technology Partnering Sustainable business Careers About us Our products Investors News & media Healthcare professionals Contact us Disclaimer statement I do not agree I agree Warning! Ok Cancel Open roles Don't see a role that's right for you? Sign up for Job Alerts, and we'll reach out when a new position opens up that matches your profile. We offer 419 job opportunities Find jobs Showing 3 results of 3 New content loaded PhD Student - Biophysical Characterization Location Denmark, Måløv Category Education Student - Computerised Laboratory Systems Location Denmark, Hillerød Category Education Computerized Systems Engineer Location Denmark, Kalundborg Category Digital & IT NOVO HQ Novo Nordisk A/S Novo Alle 1 2880 Bagsværd Denmark +45-4444-8888 CVR-no. 24256790 Our medicines are for the approved indication for which they are authorised in the local country or region. For more information, please visit our product page HELPFUL LINKS Contact us about a product issue or side effect Supplier help Product list Contact us Our Purpose - Code of conduct ESG reporting Novo Nordisk Foundation FOLLOW US Social media community guidelines LinkedIn YouTube Facebook X (Twitter) Instagram TikTok FIND YOUR LOCAL OFFICE Select location © 2026 Novo Nordisk A/S Data Privacy Cookie policy Cookie settings We value your privacy We use our own cookies as well as cookies from third parties. Cookies and the related processing of your personal data are used to remember your settings, traffic metrics, to present you with targeted adverts, and to track your use of our website. You can withdraw or change your consent by clicking on the cookie settings link at the bottom of this website. Your consent covers the use of cookies and the related processing of your personal data. Here you may read more on our Privacy policy Here you may read more on our Cookie policy. Show details Cookie PolicyPrivacy Policy Only necessary cookies Accept all cookies Strictly necessary Always Active Analytics Targeting Others
+GET https://www.novonordisk.com/bin/nncorp/careersearch?keyword=student&country=Denmark
+ERROR HTTPError: 400 Client Error: Bad Request for url: https://www.novonordisk.com/bin/nncorp/careersearch?keyword=student&country=Denmark
+Traceback (most recent call last):
+  File "/home/runner/work/job-scraper/job-scraper/scraper/probe.py", line 113, in <module>
+    r = http(parts[0], parts[1], **kw)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 39, in http
+    raise last  # type: ignore[misc]
+    ^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 33, in http
+    r.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://www.novonordisk.com/bin/nncorp/careersearch?keyword=student&country=Denmark
+
+{
+  "data": "",
+  "status": 500,
+  "message": "Failed due to missing one or more query parameter(s)"
+}

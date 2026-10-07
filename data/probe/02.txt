@@ -1,64 +1,81 @@
-BROWSER https://career2.successfactors.eu/career?company=novonordisk&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=en_GB
-FINAL https://careers.novonordisk.com/
-TITLE Novo Nordisk
-LINKS 59
-L Home -> https://careers.novonordisk.com/
-L Language -> https://careers.novonordisk.com/#
-L Dansk (Danmark) -> https://careers.novonordisk.com/?locale=da_DK
-L Deutsch (Deutschland) -> https://careers.novonordisk.com/?locale=de_DE
-L Ελληνικά (Ελλάδα) -> https://careers.novonordisk.com/?locale=el_GR
-L English (United Kingdom) -> https://careers.novonordisk.com/?locale=en_GB
-L English (United States) -> https://careers.novonordisk.com/?locale=en_US
-L Español (España) -> https://careers.novonordisk.com/?locale=es_ES
-L Français (France) -> https://careers.novonordisk.com/?locale=fr_FR
-L Italiano (Italia) -> https://careers.novonordisk.com/?locale=it_IT
-L 日本語 (日本) -> https://careers.novonordisk.com/?locale=ja_JP
-L Nederlands (Nederland) -> https://careers.novonordisk.com/?locale=nl_NL
-L Português (Brasil) -> https://careers.novonordisk.com/?locale=pt_BR
-L Русский язык (Россия) -> https://careers.novonordisk.com/?locale=ru_RU
-L Türkçe (Türkiye) -> https://careers.novonordisk.com/?locale=tr_TR
-L 简体中文 (中国大陆) -> https://careers.novonordisk.com/?locale=zh_CN
-L View profile -> https://careers.novonordisk.com/#
-L Home -> https://careers.novonordisk.com/
-L Language -> https://careers.novonordisk.com/#
-L Dansk (Danmark) -> https://careers.novonordisk.com/?locale=da_DK
-L Deutsch (Deutschland) -> https://careers.novonordisk.com/?locale=de_DE
-L Ελληνικά (Ελλάδα) -> https://careers.novonordisk.com/?locale=el_GR
-L English (United Kingdom) -> https://careers.novonordisk.com/?locale=en_GB
-L English (United States) -> https://careers.novonordisk.com/?locale=en_US
-L Español (España) -> https://careers.novonordisk.com/?locale=es_ES
-L Français (France) -> https://careers.novonordisk.com/?locale=fr_FR
-L Italiano (Italia) -> https://careers.novonordisk.com/?locale=it_IT
-L 日本語 (日本) -> https://careers.novonordisk.com/?locale=ja_JP
-L Nederlands (Nederland) -> https://careers.novonordisk.com/?locale=nl_NL
-L Português (Brasil) -> https://careers.novonordisk.com/?locale=pt_BR
-L Русский язык (Россия) -> https://careers.novonordisk.com/?locale=ru_RU
-L Türkçe (Türkiye) -> https://careers.novonordisk.com/?locale=tr_TR
-L 简体中文 (中国大陆) -> https://careers.novonordisk.com/?locale=zh_CN
-L View profile -> https://careers.novonordisk.com/#
-L Home -> https://careers.novonordisk.com/
-L Search jobs -> https://careers.novonordisk.com/search/
-L Careers -> https://www.novonordisk.com/careers
-L Language -> https://careers.novonordisk.com/#
-L Dansk (Danmark) -> https://careers.novonordisk.com/?locale=da_DK
-L Deutsch (Deutschland) -> https://careers.novonordisk.com/?locale=de_DE
-L Ελληνικά (Ελλάδα) -> https://careers.novonordisk.com/?locale=el_GR
-L English (United Kingdom) -> https://careers.novonordisk.com/?locale=en_GB
-L English (United States) -> https://careers.novonordisk.com/?locale=en_US
-L Español (España) -> https://careers.novonordisk.com/?locale=es_ES
-L Français (France) -> https://careers.novonordisk.com/?locale=fr_FR
-L Italiano (Italia) -> https://careers.novonordisk.com/?locale=it_IT
-L 日本語 (日本) -> https://careers.novonordisk.com/?locale=ja_JP
-L Nederlands (Nederland) -> https://careers.novonordisk.com/?locale=nl_NL
-L Português (Brasil) -> https://careers.novonordisk.com/?locale=pt_BR
-L Русский язык (Россия) -> https://careers.novonordisk.com/?locale=ru_RU
-L Türkçe (Türkiye) -> https://careers.novonordisk.com/?locale=tr_TR
-L 简体中文 (中国大陆) -> https://careers.novonordisk.com/?locale=zh_CN
-L View profile -> https://careers.novonordisk.com/#
-L Clear -> https://careers.novonordisk.com/
-JSON 2
-J https://careers.novonordisk.com/services/t/l?referrer=&ctid=588cc2fa-921c-4b1a-b5ee-0b2c6bf25224&landing=https%3A%2F%2Fcareers.novonordisk.com%2F&brand=&_=1791408480635
-   {SUCCESS:true}
-J https://careers.novonordisk.com/services/jobs/options/facetValues/
-   {"facets":{"map":{"customfield1":[{"translated":"","name":"Business Development \u0026 Strategy","count":6},{"translated":"","name":"Business Support \u0026 Administration","count":12},{"translated":"","name":"Clinical Development","count":14},{"translated":"","name":"Commercial Marketing","count":32},{"translated":"","name":"Corporate Affairs","count":3},{"translated":"","name":"Data \u0026 AI","count":7},{"translated":"","name":"Digital \u0026 IT","count":24},{"translated":"","name":"Education","count":7},{"translated":"","name":"Engineering \u0026 Technical","count":14},{"translated":"","name":"Finance","count":13},{"translated":"","name":"Human Resource Management","count":6},{"translate
-TEXT Novo Nordisk By continuing to use and navigate this website, you are agreeing to the use of cookies. Accept Close Home Search jobs Careers Language View profile Show More Options Clear © 2022 Novo Nordisk A/S Disclaimer/Privacy Contact Us
+GET https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark
+STATUS 200 FINAL https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark
+
+TYPE text/html;charset=UTF-8
+TITLE Student AND Denmark - Novo Nordisk Jobs
+LINKS 72
+Skip to main content -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark#content
+Home -> https://careers.novonordisk.com/
+Language -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark
+Dansk (Danmark) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=da_DK
+Deutsch (Deutschland) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=de_DE
+Ελληνικά (Ελλάδα) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=el_GR
+English (United Kingdom) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=en_GB
+English (United States) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=en_US
+Español (España) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=es_ES
+Français (France) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=fr_FR
+Italiano (Italia) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=it_IT
+日本語 (日本) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=ja_JP
+Nederlands (Nederland) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=nl_NL
+Português (Brasil) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=pt_BR
+Русский язык (Россия) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=ru_RU
+Türkçe (Türkiye) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=tr_TR
+简体中文 (中国大陆) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=zh_CN
+View profile -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark
+Home -> https://careers.novonordisk.com/
+Language -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark
+Dansk (Danmark) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=da_DK
+Deutsch (Deutschland) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=de_DE
+Ελληνικά (Ελλάδα) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=el_GR
+English (United Kingdom) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=en_GB
+English (United States) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=en_US
+Español (España) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=es_ES
+Français (France) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=fr_FR
+Italiano (Italia) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=it_IT
+日本語 (日本) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=ja_JP
+Nederlands (Nederland) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=nl_NL
+Português (Brasil) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=pt_BR
+Русский язык (Россия) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=ru_RU
+Türkçe (Türkiye) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=tr_TR
+简体中文 (中国大陆) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=zh_CN
+View profile -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark
+Home -> https://careers.novonordisk.com/
+Search jobs -> https://careers.novonordisk.com/search/
+Careers -> https://www.novonordisk.com/careers
+Language -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark
+Dansk (Danmark) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=da_DK
+Deutsch (Deutschland) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=de_DE
+Ελληνικά (Ελλάδα) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=el_GR
+English (United Kingdom) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=en_GB
+English (United States) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=en_US
+Español (España) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=es_ES
+Français (France) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=fr_FR
+Italiano (Italia) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=it_IT
+日本語 (日本) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=ja_JP
+Nederlands (Nederland) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=nl_NL
+Português (Brasil) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=pt_BR
+Русский язык (Россия) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=ru_RU
+Türkçe (Türkiye) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=tr_TR
+简体中文 (中国大陆) -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&locale=zh_CN
+View profile -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark
+Home -> https://careers.novonordisk.com/
+Show More Options -> javascript:void(0)
+Clear -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark
+Create Alert -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark
+Job Title -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&sortColumn=sort_title&sortDirection=desc#hdrTitleButton
+Location -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&sortColumn=sort_location&sortDirection=desc#hdrLocationButton
+Category -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&sortColumn=sort_facility&sortDirection=desc#hdrFacilityButton
+Published -> https://careers.novonordisk.com/search/?q=student&locationsearch=Denmark&sortColumn=referencedate&sortDirection=desc#hdrDateButton
+Reset -> https://careers.novonordisk.com/search/?q=student#reset
+PhD Student - Biophysical Characterization -> https://careers.novonordisk.com/job/M%C3%A5l%C3%[REDACTED]
+PhD Student - Biophysical Characterization -> https://careers.novonordisk.com/job/M%C3%A5l%C3%[REDACTED]
+Student - Computerised Laboratory Systems -> https://careers.novonordisk.com/job/Hiller%C3%[REDACTED]
+Student - Computerised Laboratory Systems -> https://careers.novonordisk.com/job/Hiller%C3%[REDACTED]
+Computerized Systems Engineer -> https://careers.novonordisk.[REDACTED]
+Computerized Systems Engineer -> https://careers.novonordisk.[REDACTED]
+© 2022 Novo Nordisk A/S -> https://www.novonordisk.com/utils/copyright.html
+Disclaimer/Privacy -> https://www.novonordisk.com/utils/disclaimer.html
+Contact Us -> https://www.novonordisk.com/contact-us.html
+SCRIPTS /platform/js/j2w/j2w.fallbacks.js | https://performancemanager.successfactors.eu/verp/vmod_v1/ui/extlib/jquery_3.5.1/jquery.js | https://performancemanager.successfactors.eu/verp/vmod_v1/ui/extlib/jquery_3.5.1/jquery-migrate.js | /platform/js/jquery/jquery-migrate-1.4.1.js | /platform/js/jquery/jquery.watermark.js | https://careers.novonordisk.com/platform/bootstrap/3.4.8_NES/js/lib/dompurify/purify.min.js | https://careers.novonordisk.com/platform/bootstrap/3.4.8_NES/js/bootstrap.min.js | /platform/js/localized/strings_en_GB.js?h=275f70e9 | /platform/js/j2w/min/j2w.core.min.js?h=275f70e9 | /platform/js/j2w/min/j2w.tc.min.js?h=275f70e9 | /platform/js/search/search.js?h=275f70e9 | /platform/js/j2w/min/j2w.user.min.js?h=275f70e9 | /platform/js/j2w/min/j2w.agent.min.js?h=275f70e9 | /platform/js/jquery/js.cookie-2.2.1.min.js | /platform/js/jquery/jquery.lightbox_me.js | /platform/js/jquery/jquery.placeholder.2.0.7.min.js | /js/override.js?locale=en_GB&i=930183576 | /platform/js/j2w/min/j2w.apply.min.js?h=275f70e9 | /platform/js/tc/subscribeWidget.js?h=275f70e9 | /platform/js/j2w/min/options-search.min.js?h=275f70e9
+JSONLD 0
+TEXT Student AND Denmark - Novo Nordisk Jobs By continuing to use and navigate this website, you are agreeing to the use of cookies. Accept Close Skip to main content Home Language Dansk (Danmark) Deutsch (Deutschland) Ελληνικά (Ελλάδα) English (United Kingdom) English (United States) Español (España) Français (France) Italiano (Italia) 日本語 (日本) Nederlands (Nederland) Português (Brasil) Русский язык (Россия) Türkçe (Türkiye) 简体中文 (中国大陆) View profile Home Language Dansk (Danmark) Deutsch (Deutschland) Ελληνικά (Ελλάδα) English (United Kingdom) English (United States) Español (España) Français (France) Italiano (Italia) 日本語 (日本) Nederlands (Nederland) Português (Brasil) Русский язык (Россия) Türkçe (Türkiye) 简体中文 (中国大陆) View profile Home Search jobs Careers Language Dansk (Danmark) Deutsch (Deutschland) Ελληνικά (Ελλάδα) English (United Kingdom) English (United States) Español (España) Français (France) Italiano (Italia) 日本語 (日本) Nederlands (Nederland) Português (Brasil) Русский язык (Россия) Türkçe (Türkiye) 简体中文 (中国大陆) View profile Home | Student AND Denmark at Novo Nordisk (current page) Career Opportunities for "student AND Denmark". Search by Keyword Search by Location Show More Options Loading... Category All Clear Select how often (in days) to receive an alert: Create Alert × Select how often (in days) to receive an alert: Results 1 – 3 of 3 Page 1 of 1 Job Title Location Category Published Job Title Location Category Published (dd/MM/y) Reset PhD Student - Biophysical Characterization PhD Student - Biophysical Characterization Måløv, Capital Region of Denmark, DK Education Måløv, Capital Region of Denmark, DK Education 25 Sept 2026 Student - Computerised Laboratory Systems Student - Computerised Laboratory Systems Hillerød, Capital Region of Denmark, DK Education Hillerød, Capital Region of Denmark, DK Education 1 Oct 2026 Computerized Systems Engineer Computerized Systems Engineer Kalundborg, Region Zealand, DK Digital & IT Kalundborg, Region Zealand, DK Digital & IT 30 Sept 2026 © 2022 Novo Nordisk A/S Disclaimer/Privacy Contact Us
