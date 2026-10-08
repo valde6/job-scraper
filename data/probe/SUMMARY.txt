@@ -1,4 +1,1 @@
-01 200 331501B | GET https://api.hr-manager.net/jobportal.svc/statensrekrutteringsloesning_tr/positionlist/json/?incads=1
-02 GREP 0 | GREP https://api.hr-manager.net/jobportal.svc/statensrekrutteringsloesning_tr/positionlist/json/?incads=1 (?i)"(?:Name|Title)":"[^"]*(?:student|studie)[^"]*"
-03 GREP 0 | GREP https://aeldresagen.career.emply.com/ledige-stillinger /ad/[\w-]+/[a-z0-9]{6}
-04 GREP 0 | GREP https://kp.career.emply.com/ledige-stillinger /ad/[\w-]+/[a-z0-9]{6}
+01 PYMOD ok | PYMOD scraper.experiments.state_check

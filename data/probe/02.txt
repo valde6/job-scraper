@@ -1,2 +1,0 @@
-GREP https://api.hr-manager.net/jobportal.svc/statensrekrutteringsloesning_tr/positionlist/json/?incads=1 (?i)"(?:Name|Title)":"[^"]*(?:student|studie)[^"]*"
-STATUS 200
