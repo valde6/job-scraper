@@ -1,0 +1,47 @@
+{
+ "sider_testet": 92,
+ "svarer_200": 91,
+ "jsonld_jobposting": 14,
+ "kræver_js": 9,
+ "jsonld_felter": {
+  "title": 13,
+  "description": 13,
+  "datePosted": 13,
+  "validThrough": 10,
+  "hiringOrganization": 13,
+  "jobLocation": 14,
+  "employmentType": 12,
+  "identifier": 12
+ },
+ "jsonld_by_system": {
+  "hr-manager/talentech|nej": 20,
+  "teamtailor (eget domæne)|ja": 6,
+  "egen-karriereside|nej": 32,
+  "emply|nej": 14,
+  "teamtailor|ja": 2,
+  "elvium|nej": 2,
+  "recruitio|nej": 1,
+  "oracle|nej": 6,
+  "jobmatchprofile|nej": 1,
+  "workday|ja": 2,
+  "cornerstone|nej": 1,
+  "cornerstone|ja": 1,
+  "egen-karriereside|ja": 1,
+  "thehub|ja": 2
+ },
+ "robots_tilladt": {
+  "True": 39,
+  "False": 1,
+  "ingen robots.txt": 4
+ },
+ "robots_sitemap": 24,
+ "robots_blokerer_ai_bots": 1,
+ "unikke_værter": 44,
+ "fejl": {
+  "fejl": 1
+ },
+ "kun_jobindex_tjek": {
+  "fundet": 11,
+  "ikke fundet": 12
+ }
+}
