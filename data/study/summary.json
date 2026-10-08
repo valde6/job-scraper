@@ -1,38 +1,50 @@
 {
- "n": 134,
+ "n": 133,
  "kinds": {
-  "kun-jobindex": 116,
-  "ats": 15,
-  "egen-side": 3
+  "egen-side": 77,
+  "ats": 56
  },
  "systems": [
   [
-   "emply",
-   14
+   "hr-manager",
+   22
   ],
   [
-   "hr-manager",
+   "emply",
+   15
+  ],
+  [
+   "teamtailor",
+   8
+  ],
+  [
+   "oracle",
+   6
+  ],
+  [
+   "workday",
+   2
+  ],
+  [
+   "thehub",
+   2
+  ],
+  [
+   "recruitee",
    1
   ]
  ],
  "paid_vs_kind": {
-  "betalt|kun-jobindex": 91,
-  "betalt|ats": 15,
-  "betalt|egen-side": 2,
-  "robot/gratis|kun-jobindex": 25,
-  "robot/gratis|egen-side": 1
+  "betalt|egen-side": 56,
+  "betalt|ats": 52,
+  "robot/gratis|egen-side": 21,
+  "robot/gratis|ats": 4
  },
- "jsonld_by_kind": {
-  "egen-side": 1
- },
+ "jsonld_by_kind": {},
  "egen_side_hosts": [
   [
-   "app.elvium.com",
-   2
-  ],
-  [
-   "www.it-jobbank.dk",
-   1
+   "www.jobindexkurser.dk",
+   77
   ]
  ]
 }

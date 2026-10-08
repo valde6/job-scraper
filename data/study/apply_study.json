@@ -1,14 +1,48 @@
 [
  {
+  "link": "https://www.jobindex.dk/vis-job/h1705687",
+  "title": "Finansbachelorpraktikant til Lån & Spar i Esbjerg, Lån & Spar Bank",
+  "paid": true,
+  "robot": false,
+  "teaser_mail": false,
+  "first_hop": "www.jobindex.dk",
+  "mail": true,
+  "kind": "egen-side",
+  "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.lsb.dk/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
+  "jsonld": false
+ },
+ {
   "link": "https://www.jobindex.dk/vis-job/h1705593",
   "title": "Bliv studentermedhjælper i Udlændingestyrelsen og opnå værdifuld erfaring med asylområdet, Udlændinge- og Integrationsministeriet",
   "paid": true,
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D3010%2526departmentId%253D19028%2526ProjectId%253D169970",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169970&DepartmentId=19028&MediaId=5&Request=true&AdvertisementId=126355",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.uim.dk/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169970&DepartmentId=19028&MediaId=5&Request=true&AdvertisementId=126355",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169970&DepartmentId=19028&MediaId=5&Request=true&AdvertisementId=126355",
+   "http://us.dk",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169970&DepartmentId=19028&MediaId=5&Request=true&AdvertisementId=126355",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169970&DepartmentId=19028&MediaId=5&Request=true&AdvertisementId=126355",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -18,9 +52,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D1433%2526departmentId%253D18956%2526ProjectId%253D143789",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1433&ProjectId=143789&DepartmentId=18956&MediaId=4624",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://iba.dk/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1433&ProjectId=143789&DepartmentId=18956&MediaId=4624",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1433&ProjectId=143789&DepartmentId=18956&MediaId=4624",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1433&ProjectId=143789&DepartmentId=18956&MediaId=4624",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1433&ProjectId=143789&DepartmentId=18956&MediaId=4624",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -30,9 +75,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D3010%2526departmentId%253D19117%2526ProjectId%253D170586",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170586&DepartmentId=19117&MediaId=4823&utm_medium=talentech_publishing&utm_source=custom_email",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://mst.dk/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170586&DepartmentId=19117&MediaId=4823&utm_medium=talentech_publishing&utm_source=custom_email",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170586&DepartmentId=19117&MediaId=4823&utm_medium=talentech_publishing&utm_source=custom_email",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170586&DepartmentId=19117&MediaId=4823&utm_medium=talentech_publishing&utm_source=custom_email",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170586&DepartmentId=19117&MediaId=4823&utm_medium=talentech_publishing&utm_source=custom_email",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -42,9 +98,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1705641",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "teamtailor",
+  "evidence": "https://www.teamtailor.com/?utm_campaign=poweredby&utm_content=karriere.danskespil.dk&utm_medium=referral&utm_source=career-site",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.danskespil.dk/",
+   "https://karriere.danskespil.dk/jobs/8512771-studentermedhjaelper-til-crm?promotion=2234893-jobindex",
+   "https://karriere.danskespil.dk/jobs/8512771-studentermedhjaelper-til-crm?promotion=2234893-jobindex",
+   "https://karriere.danskespil.dk/jobs/8512771-studentermedhjaelper-til-crm?promotion=2234893-jobindex",
+   "https://karriere.danskespil.dk/jobs/8512771-studentermedhjaelper-til-crm?promotion=2234893-jobindex",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -54,9 +121,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1705643",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "teamtailor",
+  "evidence": "https://www.teamtailor.com/?utm_campaign=poweredby&utm_content=karriere.danskespil.dk&utm_medium=referral&utm_source=career-site",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.danskespil.dk/",
+   "https://karriere.danskespil.dk/jobs/8512899-studentermedhjaelper-til-grafisk-produktion?promotion=2234920-jobindex",
+   "https://karriere.danskespil.dk/jobs/8512899-studentermedhjaelper-til-grafisk-produktion?promotion=2234920-jobindex",
+   "https://karriere.danskespil.dk/jobs/8512899-studentermedhjaelper-til-grafisk-produktion?promotion=2234920-jobindex",
+   "https://karriere.danskespil.dk/jobs/8512899-studentermedhjaelper-til-grafisk-produktion?promotion=2234920-jobindex",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -66,9 +144,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D3010%2526departmentId%253D19029%2526ProjectId%253D170089",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170089&DepartmentId=19029&MediaId=5&IsAdPreviewRequest=true&AdvertisementId=126324",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://siri.dk/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170089&DepartmentId=19029&MediaId=5&IsAdPreviewRequest=true&AdvertisementId=126324",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170089&DepartmentId=19029&MediaId=5&IsAdPreviewRequest=true&AdvertisementId=126324",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170089&DepartmentId=19029&MediaId=5&IsAdPreviewRequest=true&AdvertisementId=126324",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170089&DepartmentId=19029&MediaId=5&IsAdPreviewRequest=true&AdvertisementId=126324",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -78,9 +167,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/job/ansoegning/2500807?source=showjob",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.ddd.dk/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -90,9 +190,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704699",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://pet.dk/da",
+   "https://job.politi.dk/job/Studentermedhj%C3%A6lpere-til-Center-for-Analyse-og-Outreach/5681-da_DK",
+   "https://job.politi.dk/job/Studentermedhj%C3%A6lpere-til-Center-for-Analyse-og-Outreach/5681-da_DK",
+   "http://pet.dk",
+   "https://job.politi.dk/job/Studentermedhj%C3%A6lpere-til-Center-for-Analyse-og-Outreach/5681-da_DK",
+   "https://job.politi.dk/job/Studentermedhj%C3%A6lpere-til-Center-for-Analyse-og-Outreach/5681-da_DK",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -102,9 +213,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1705460",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.vejle.dk/borger/mit-liv/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.vejle.dk/da/om-os/job-hos-os/ledige-job/student-assistants-for-digitalization-it-165846/",
+   "http://www.vejle.dk/tilflytter"
+  ],
   "jsonld": false
  },
  {
@@ -114,11 +236,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1705330",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.centrum-personale.dk/",
+   "https://centrum-personale.dk/ledige-stillinger/oekonomiregnskab/ledig-stilling/?refid=5247-4264",
+   "https://centrum-personale.dk/ledige-stillinger/oekonomiregnskab/ledig-stilling/?refid=5247-4264",
+   "https://centrum-personale.dk/ledige-stillinger/oekonomiregnskab/ledig-stilling/?refid=5247-4264",
+   "https://centrum-personale.dk/ledige-stillinger/oekonomiregnskab/ledig-stilling/?refid=5247-4264",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -128,11 +259,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1705300",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "teamtailor",
+  "evidence": "https://www.teamtailor.com/?utm_campaign=poweredby&utm_content=karriere.danskespil.dk&utm_medium=referral&utm_source=career-site",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.danskespil.dk/",
+   "https://karriere.danskespil.dk/jobs/8503282-kickstart-din-karriere-som-kontorelev-i-hr-i-danske-spil?promotion=2233428-jobindex",
+   "https://karriere.danskespil.dk/jobs/8503282-kickstart-din-karriere-som-kontorelev-i-hr-i-danske-spil?promotion=2233428-jobindex",
+   "https://karriere.danskespil.dk/jobs/8503282-kickstart-din-karriere-som-kontorelev-i-hr-i-danske-spil?promotion=2233428-jobindex",
+   "https://karriere.danskespil.dk/jobs/8503282-kickstart-din-karriere-som-kontorelev-i-hr-i-danske-spil?promotion=2233428-jobindex",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -142,9 +282,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D3010%2526departmentId%253D19781%2526ProjectId%253D170544",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170544&DepartmentId=19781&MediaId=5107",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.banedanmark.dk/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170544&DepartmentId=19781&MediaId=5107",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170544&DepartmentId=19781&MediaId=5107",
+   "https://youtu.be/SEMZiftdvcQ",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170544&DepartmentId=19781&MediaId=5107",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170544&DepartmentId=19781&MediaId=5107",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -154,9 +305,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D3010%2526departmentId%253D19040%2526ProjectId%253D170372",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170372&DepartmentId=19040&MediaId=5403",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://laegemiddelstyrelsen.dk/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170372&DepartmentId=19040&MediaId=5403",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170372&DepartmentId=19040&MediaId=5403",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170372&DepartmentId=19040&MediaId=5403",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170372&DepartmentId=19040&MediaId=5403",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -166,9 +328,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/job/ansoegning/2500690?source=showjob",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.teknika.dk/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -178,11 +351,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1704745",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.lsb.dk/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -192,9 +374,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D3010%2526departmentId%253D19040%2526ProjectId%253D170374",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170374&DepartmentId=19040&MediaId=5403",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://laegemiddelstyrelsen.dk/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170374&DepartmentId=19040&MediaId=5403",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170374&DepartmentId=19040&MediaId=5403",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170374&DepartmentId=19040&MediaId=5403",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170374&DepartmentId=19040&MediaId=5403",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -204,9 +397,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://dsr.career.emply.com/apply/studentermedhjaelper-med-blik-for-struktur-service-og-menneskertil-lederforening/ggwllk#jobdk",
+  "mail": true,
   "kind": "ats",
   "system": "emply",
+  "evidence": "https://dsr.career.emply.com/ad/studentermedhjaelper-med-blik-for-struktur-service-og-menneskertil-lederforening/ggwllk/da",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.dsr.dk/",
+   "https://dsr.career.emply.com/ad/studentermedhjaelper-med-blik-for-struktur-service-og-menneskertil-lederforening/ggwllk/da",
+   "https://dsr.career.emply.com/ad/studentermedhjaelper-med-blik-for-struktur-service-og-menneskertil-lederforening/ggwllk/da",
+   "https://dsr.career.emply.com/ad/studentermedhjaelper-med-blik-for-struktur-service-og-menneskertil-lederforening/ggwllk/da",
+   "https://dsr.career.emply.com/ad/studentermedhjaelper-med-blik-for-struktur-service-og-menneskertil-lederforening/ggwllk/da",
+   "https://dsr.career.emply.com/ad/studentermedhjaelper-med-blik-for-struktur-service-og-menneskertil-lederforening/ggwllk/da",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -216,9 +420,18 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704849",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.appension.dk/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://appension.dk/om-ap-pension/job-i-ap-pension/karriere-i-ap-pension"
+  ],
   "jsonld": false
  },
  {
@@ -228,21 +441,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704164",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
-  "jsonld": false
- },
- {
-  "link": "https://www.jobindex.dk/vis-job/h1704381",
-  "title": "Jurastuderende med interesse for forvaltningsret, Styrelsen for Patientsikkerhed",
-  "paid": true,
-  "robot": false,
-  "teaser_mail": false,
-  "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D3010%2526departmentId%253D19041%2526ProjectId%253D170389",
-  "kind": "kun-jobindex",
-  "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://tryg.dk/om-tryg",
+   "https://careers.tryg.com/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -252,9 +464,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/job/ansoegning/2500150?source=showjob",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://innovationdistrictcopenhagen.com/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -264,11 +487,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1705265",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.dataloen.dk/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -278,9 +510,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D2134%2526departmentId%253D19031%2526ProjectId%253D143875",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2134&ProjectId=143875&DepartmentId=19031&MediaId=4615",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.lederne.dk/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2134&ProjectId=143875&DepartmentId=19031&MediaId=4615",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2134&ProjectId=143875&DepartmentId=19031&MediaId=4615",
+   "https://www.lederne.dk/om-lederne/karriere-i-lederne",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2134&ProjectId=143875&DepartmentId=19031&MediaId=4615",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2134&ProjectId=143875&DepartmentId=19031&MediaId=4615",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -290,11 +533,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1704769",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "teamtailor",
+  "evidence": "https://danskindustri.teamtailor.com/jobs/8501409-pa-konsulent-til-di-byggeri?promotion=2230409-jobindex",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.danskindustri.dk/om-di/job-i-di/",
+   "https://danskindustri.teamtailor.com/jobs/8501409-pa-konsulent-til-di-byggeri?promotion=2230409-jobindex",
+   "https://danskindustri.teamtailor.com/jobs/8501409-pa-konsulent-til-di-byggeri?promotion=2230409-jobindex",
+   "https://danskindustri.teamtailor.com/jobs/8501409-pa-konsulent-til-di-byggeri?promotion=2230409-jobindex",
+   "https://danskindustri.teamtailor.com/jobs/8501409-pa-konsulent-til-di-byggeri?promotion=2230409-jobindex",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -304,9 +556,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://aeldresagen.career.emply.com/apply/aeldre-sagen-soger-en-studentermedarbejder-til-analyse-datavisualisering-og-power/z9aebv#jobdk",
+  "mail": true,
   "kind": "ats",
   "system": "emply",
+  "evidence": "https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-en-studentermedarbejder-til-analyse-datavisualisering-og-power/z9aebv",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.aeldresagen.dk/",
+   "https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-en-studentermedarbejder-til-analyse-datavisualisering-og-power/z9aebv",
+   "https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-en-studentermedarbejder-til-analyse-datavisualisering-og-power/z9aebv",
+   "https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-en-studentermedarbejder-til-analyse-datavisualisering-og-power/z9aebv",
+   "https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-en-studentermedarbejder-til-analyse-datavisualisering-og-power/z9aebv",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -316,9 +579,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://aeldresagen.career.emply.com/apply/aeldre-sagen-soger-en-studentermedarbejder-til-hjemmeside/jyb3rc#jobdk",
+  "mail": true,
   "kind": "ats",
   "system": "emply",
+  "evidence": "https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-en-studentermedarbejder-til-hjemmeside/jyb3rc",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.aeldresagen.dk/",
+   "https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-en-studentermedarbejder-til-hjemmeside/jyb3rc",
+   "https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-en-studentermedarbejder-til-hjemmeside/jyb3rc",
+   "https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-en-studentermedarbejder-til-hjemmeside/jyb3rc",
+   "https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-en-studentermedarbejder-til-hjemmeside/jyb3rc",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -328,9 +602,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D1801%2526departmentId%253D18956%2526ProjectId%253D143823",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1801&ProjectId=143823&DepartmentId=18956&MediaId=4614",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://dlf.org/Forside",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1801&ProjectId=143823&DepartmentId=18956&MediaId=4614",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1801&ProjectId=143823&DepartmentId=18956&MediaId=4614",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1801&ProjectId=143823&DepartmentId=18956&MediaId=4614",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1801&ProjectId=143823&DepartmentId=18956&MediaId=4614",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -340,9 +625,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://app.elvium.com/auth_redir/jobindex",
+  "mail": true,
   "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.nymann-hr.dk/",
+   "https://app.elvium.com/da/positions/36506/job_posting",
+   "https://app.elvium.com/da/positions/36506/job_posting",
+   "https://app.elvium.com/da/positions/36506/job_posting",
+   "https://app.elvium.com/da/positions/36506/job_posting",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -352,9 +648,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704537",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.ey.com/da_dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.ey.com/da_dk",
+   "https://www.ey.com/da_dk/careers/revisortrainee",
+   "https://www.ey.com/en_dk/careers/diversity-inclusiveness"
+  ],
   "jsonld": false
  },
  {
@@ -364,9 +671,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://aeldresagen.career.emply.com/apply/studentermedarbejder-til-sociale-medier/epjjwp#jobdk",
+  "mail": true,
   "kind": "ats",
   "system": "emply",
+  "evidence": "https://aeldresagen.career.emply.com/ad/studentermedarbejder-til-sociale-medier/epjjwp",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.aeldresagen.dk/",
+   "https://aeldresagen.career.emply.com/ad/studentermedarbejder-til-sociale-medier/epjjwp",
+   "https://aeldresagen.career.emply.com/ad/studentermedarbejder-til-sociale-medier/epjjwp",
+   "https://aeldresagen.career.emply.com/ad/studentermedarbejder-til-sociale-medier/epjjwp",
+   "https://aeldresagen.career.emply.com/ad/studentermedarbejder-til-sociale-medier/epjjwp",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -376,9 +694,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://aeldresagen.career.emply.com/apply/aeldre-sagen-soger-to-studentermedarbejdere-til-medlemsservice/sf0687#jobdk",
+  "mail": true,
   "kind": "ats",
   "system": "emply",
+  "evidence": "https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-to-studentermedarbejdere-til-medlemsservice/sf0687",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.aeldresagen.dk/",
+   "https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-to-studentermedarbejdere-til-medlemsservice/sf0687",
+   "https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-to-studentermedarbejdere-til-medlemsservice/sf0687",
+   "https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-to-studentermedarbejdere-til-medlemsservice/sf0687",
+   "https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-to-studentermedarbejdere-til-medlemsservice/sf0687",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -388,11 +717,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1691059",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://dfcentre.com/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://dfcentre.com/about/danida-fellowship-centres-strategy/",
+   "https://www.dfcentre.com"
+  ],
   "jsonld": false
  },
  {
@@ -402,11 +740,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1701038",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "teamtailor",
+  "evidence": "https://danskindustri.teamtailor.com/jobs/8438304-vil-du-vaere-med-til-at-skabe-landets-mest-markante-og-strategiske-events-barselsvikariat?promotion=2210579-jobindex",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.danskindustri.dk/om-di/job-i-di/",
+   "https://danskindustri.teamtailor.com/jobs/8438304-vil-du-vaere-med-til-at-skabe-landets-mest-markante-og-strategiske-events-barselsvikariat?promotion=2210579-jobindex",
+   "https://danskindustri.teamtailor.com/jobs/8438304-vil-du-vaere-med-til-at-skabe-landets-mest-markante-og-strategiske-events-barselsvikariat?promotion=2210579-jobindex",
+   "https://danskindustri.teamtailor.com/jobs/8438304-vil-du-vaere-med-til-at-skabe-landets-mest-markante-og-strategiske-events-barselsvikariat?promotion=2210579-jobindex",
+   "https://danskindustri.teamtailor.com/jobs/8438304-vil-du-vaere-med-til-at-skabe-landets-mest-markante-og-strategiske-events-barselsvikariat?promotion=2210579-jobindex",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -416,9 +763,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://app.elvium.com/auth_redir/jobindex",
+  "mail": true,
   "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.skibskredit.dk/",
+   "https://app.elvium.com/da/positions/36512/job_posting",
+   "https://app.elvium.com/da/positions/36512/job_posting",
+   "https://skibskredit.dk/about/career/",
+   "https://app.elvium.com/da/positions/36512/job_posting",
+   "https://app.elvium.com/da/positions/36512/job_posting",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -428,9 +786,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1696523",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://tryg.dk/om-tryg",
+   "https://careers.tryg.com/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -440,11 +809,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1698116",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2797&ProjectId=143621&DepartmentId=18956&SkipAdvertisement=true",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.rockwoolfonden.dk/",
+   "https://rockwoolfonden.dk/stillingsopslag/metodestaerke-studerende-med-interesse-for-forskning-i-familieforhold-og-demografi-soeges/",
+   "https://rockwoolfonden.dk/stillingsopslag/metodestaerke-studerende-med-interesse-for-forskning-i-familieforhold-og-demografi-soeges/",
+   "https://rockwoolfonden.dk/stillingsopslag/metodestaerke-studerende-med-interesse-for-forskning-i-familieforhold-og-demografi-soeges/",
+   "https://rockwoolfonden.dk/stillingsopslag/metodestaerke-studerende-med-interesse-for-forskning-i-familieforhold-og-demografi-soeges/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -454,9 +832,16 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1703569",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -466,9 +851,19 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704736",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.jobunivers.dk/job/?job=8351",
+   "https://www.jobunivers.dk/job/?job=8351",
+   "https://www.jobunivers.dk/job/?job=8351",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -478,22 +873,17 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1703987",
-  "kind": "kun-jobindex",
-  "system": null,
-  "jsonld": false
- },
- {
-  "link": "https://www.jobindex.dk/vis-job/r14011757",
-  "title": "Student Worker | Finance, KMD A/S",
-  "paid": false,
-  "robot": true,
-  "teaser_mail": false,
-  "first_hop": "www.jobindex.dk",
-  "final": "https://www.it-jobbank.dk/jobannonce/h1700826/student-worker-finance?utm_campaign=jobannonce&utm_medium=jobindex&utm_source=partner",
+  "mail": false,
   "kind": "egen-side",
   "system": null,
-  "jsonld": true
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
+  "jsonld": false
  },
  {
   "link": "https://www.jobindex.dk/vis-job/h1705616",
@@ -502,9 +892,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D174%2526departmentId%253D21999%2526ProjectId%253D184437%",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=174&ProjectId=184437&DepartmentId=21999&MediaId=59",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.hofor.dk/privat/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=174&ProjectId=184437&DepartmentId=21999&MediaId=59",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=174&ProjectId=184437&DepartmentId=21999&MediaId=59",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=174&ProjectId=184437&DepartmentId=21999&MediaId=59",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=174&ProjectId=184437&DepartmentId=21999&MediaId=59",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -514,9 +915,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/job/ansoegning/2501429?source=showjob",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://dke.dk/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -526,9 +938,18 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://candidate.hr-manager.net/ApplicationForm/SinglePageApplicationForm.aspx?cid=55&departmentId=1088&ProjectId=182239&MediaId=59",
-  "kind": "ats",
-  "system": "hr-manager",
+  "mail": true,
+  "kind": "egen-side",
+  "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.sos.eu/da/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.sos.eu/da/om-os/karriere/"
+  ],
   "jsonld": false
  },
  {
@@ -538,11 +959,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1705047",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.kristeligt-dagblad.dk/",
+   "https://app.recruitio.dk/selection/zh2774vsfb95?lang=da&from=Jobindex",
+   "https://app.recruitio.dk/selection/zh2774vsfb95?lang=da&from=Jobindex",
+   "https://kristeligtdagblad.recruitio.dk/job-openings/?lang=da",
+   "https://kristeligtdagblad.recruitio.dk/job-openings/?lang=da",
+   "https://app.recruitio.dk/selection/zh2774vsfb95?lang=da&from=Jobindex",
+   "https://app.recruitio.dk/selection/zh2774vsfb95?lang=da&from=Jobindex"
+  ],
   "jsonld": false
  },
  {
@@ -552,9 +982,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://aka.career.emply.com/apply/fleksibelt-vellonnet-og-udviklende-studiejob-i-kobenhavn-eller-aarhus/8apuxr#jobdk",
+  "mail": true,
   "kind": "ats",
   "system": "emply",
+  "evidence": "https://aka.career.emply.com/ad/fleksibelt-vellonnet-og-udviklende-studiejob-i-kobenhavn-eller-aarhus/8apuxr/da",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.aka.dk/",
+   "https://aka.career.emply.com/ad/fleksibelt-vellonnet-og-udviklende-studiejob-i-kobenhavn-eller-aarhus/8apuxr/da",
+   "https://aka.career.emply.com/ad/fleksibelt-vellonnet-og-udviklende-studiejob-i-kobenhavn-eller-aarhus/8apuxr/da",
+   "https://aka.career.emply.com/ad/fleksibelt-vellonnet-og-udviklende-studiejob-i-kobenhavn-eller-aarhus/8apuxr/da",
+   "https://aka.career.emply.com/ad/fleksibelt-vellonnet-og-udviklende-studiejob-i-kobenhavn-eller-aarhus/8apuxr/da",
+   "https://aka.career.emply.com/ad/fleksibelt-vellonnet-og-udviklende-studiejob-i-kobenhavn-eller-aarhus/8apuxr/da",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -564,9 +1005,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://aka.career.emply.com/apply/juniorkonsulent-til-akademikernes-startup-i-kobenhavn-studiejob/bwy9yq#jobdk",
+  "mail": true,
   "kind": "ats",
   "system": "emply",
+  "evidence": "https://aka.career.emply.com/ad/juniorkonsulent-til-akademikernes-startup-i-kobenhavn-studiejob/bwy9yq/da",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.aka.dk/",
+   "https://aka.career.emply.com/ad/juniorkonsulent-til-akademikernes-startup-i-kobenhavn-studiejob/bwy9yq/da",
+   "https://aka.career.emply.com/ad/juniorkonsulent-til-akademikernes-startup-i-kobenhavn-studiejob/bwy9yq/da",
+   "https://aka.career.emply.com/ad/juniorkonsulent-til-akademikernes-startup-i-kobenhavn-studiejob/bwy9yq/da",
+   "https://aka.career.emply.com/ad/juniorkonsulent-til-akademikernes-startup-i-kobenhavn-studiejob/bwy9yq/da",
+   "https://aka.career.emply.com/ad/juniorkonsulent-til-akademikernes-startup-i-kobenhavn-studiejob/bwy9yq/da",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -576,9 +1028,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704355",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.partner-revision.dk/",
+   "https://www.partner-revision.dk/om-os/karriere?hr=show-job%2F109125%26locale%3Dda_DK",
+   "https://www.partner-revision.dk/om-os/karriere?hr=show-job%2F109125%26locale%3Dda_DK",
+   "https://www.partner-revision.dk/om-os/karriere?hr=show-job%2F109125%26locale%3Dda_DK",
+   "https://www.partner-revision.dk/om-os/karriere?hr=show-job%2F109125%26locale%3Dda_DK",
+   "https://www.partner-revision.dk/om-os/karriere?hr=show-job%2F109125%26locale%3Dda_DK",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -588,9 +1051,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704358",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.partner-revision.dk/",
+   "https://www.partner-revision.dk/om-os/karriere?hr=show-job%2F225361%26locale%3Dda_DK",
+   "https://www.partner-revision.dk/om-os/karriere?hr=show-job%2F225361%26locale%3Dda_DK",
+   "https://www.partner-revision.dk/om-os/karriere?hr=show-job%2F225361%26locale%3Dda_DK",
+   "https://www.partner-revision.dk/om-os/karriere?hr=show-job%2F225361%26locale%3Dda_DK",
+   "https://www.partner-revision.dk/om-os/karriere?hr=show-job%2F225361%26locale%3Dda_DK",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -600,9 +1074,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D1572%2526departmentId%253D18962%2526ProjectId%253D145632",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1572&ProjectId=145632&DepartmentId=18962&MediaId=5&SkipAdvertisement=False",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.cancer.dk/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1572&ProjectId=145632&DepartmentId=18962&MediaId=5&SkipAdvertisement=False",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1572&ProjectId=145632&DepartmentId=18962&MediaId=5&SkipAdvertisement=False",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1572&ProjectId=145632&DepartmentId=18962&MediaId=5&SkipAdvertisement=False",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1572&ProjectId=145632&DepartmentId=18962&MediaId=5&SkipAdvertisement=False",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -612,9 +1097,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D3010%2526departmentId%253D19780%2526ProjectId%253D170300",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170300&DepartmentId=19780&MediaId=5107",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.banedanmark.dk/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170300&DepartmentId=19780&MediaId=5107",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170300&DepartmentId=19780&MediaId=5107",
+   "https://youtu.be/SEMZiftdvcQ",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170300&DepartmentId=19780&MediaId=5107",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170300&DepartmentId=19780&MediaId=5107",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -624,11 +1120,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1704411",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.totalkredit.dk/",
+   "https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5480",
+   "https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5480",
+   "https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5480",
+   "https://www.nykredit.com/karriere/stillinger/stilling/?jobId=2026-5480",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -638,9 +1143,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1703121",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.ey.com/da_dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.ey.com/da_dk",
+   "https://www.ey.com/en_dk/careers/diversity-inclusiveness",
+   "https://www.ey.com/da_dk/careers/what-you-can-do-here"
+  ],
   "jsonld": false
  },
  {
@@ -650,9 +1166,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/job/ansoegning/2499250?source=showjob",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.grantthornton.dk/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.grantthornton.dk/",
+   "https://www.grantthornton.dk/karriere/grant-thornton-som-arbejdsplads/",
+   "https://www.grantthornton.dk/om--os/"
+  ],
   "jsonld": false
  },
  {
@@ -662,9 +1189,19 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1703569",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.jobunivers.dk/job/?job=8388",
+   "https://www.jobunivers.dk/job/?job=8388",
+   "https://www.jobunivers.dk/job/?job=8388",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -674,9 +1211,19 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fc%3Ft%3De6320518%26ctx%3Dw&service=click",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": false,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1518&ProjectId=216584&DepartmentId=23763&MediaId=5",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1518&ProjectId=216584&DepartmentId=23763&MediaId=5",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1518&ProjectId=216584&DepartmentId=23763&MediaId=5",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1518&ProjectId=216584&DepartmentId=23763&MediaId=5",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -686,9 +1233,16 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1699951",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -698,9 +1252,19 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1699093",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.jobunivers.dk/job/?job=8269",
+   "https://www.jobunivers.dk/job/?job=8269",
+   "https://www.jobunivers.dk/job/?job=8269",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -710,9 +1274,19 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1703952",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.jobunivers.dk/job/?job=8253",
+   "https://www.jobunivers.dk/job/?job=8253",
+   "https://www.jobunivers.dk/job/?job=8253",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -722,9 +1296,19 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1703145",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.jobunivers.dk/job/?job=8260",
+   "https://www.jobunivers.dk/job/?job=8260",
+   "https://www.jobunivers.dk/job/?job=8260",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -734,9 +1318,19 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1702690",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.jobunivers.dk/job/?job=8231",
+   "https://www.jobunivers.dk/job/?job=8231",
+   "https://www.jobunivers.dk/job/?job=8231",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -746,9 +1340,19 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704736",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.jobunivers.dk/job/?job=8211",
+   "https://www.jobunivers.dk/job/?job=8211",
+   "https://www.jobunivers.dk/job/?job=8211",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -758,9 +1362,19 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fc%3Ft%3De6300506%26ctx%3Dw&service=click",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": false,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1518&ProjectId=216369&DepartmentId=23015&MediaId=5",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1518&ProjectId=216369&DepartmentId=23015&MediaId=5",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1518&ProjectId=216369&DepartmentId=23015&MediaId=5",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1518&ProjectId=216369&DepartmentId=23015&MediaId=5",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -770,9 +1384,19 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704068",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.jobunivers.dk/job/?job=8193",
+   "https://www.jobunivers.dk/job/?job=8193",
+   "https://www.jobunivers.dk/job/?job=8193",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -782,9 +1406,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1697072",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.beumergroup.com/",
+   "https://www.beumergroup.com/jobs-career/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.beumergroup.com/careers/",
+   "https://hrcaseforum.simplero.com/page/240347-beumer-ansoeger"
+  ],
   "jsonld": false
  },
  {
@@ -794,9 +1429,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/job/ansoegning/2501540?source=showjob",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://vikingassistance.dk/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -806,11 +1452,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1697681",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.tss.trelleborg.com/da",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.trelleborg.com/en",
+   "https://www.trelleborg.com/en/anti-vibration-solutions",
+   "https://www.trelleborg.com/en/boots"
+  ],
   "jsonld": false
  },
  {
@@ -820,9 +1475,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1703484",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": false,
+  "kind": "ats",
+  "system": "oracle",
+  "evidence": "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8370",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.dtu.dk/",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8370",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8370",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8370",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8370",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -832,11 +1498,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1705462",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://totalenergies.dk/",
+   "https://totalenergies.com/company",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://corporate.totalenergies.dk/",
+   "https://careers.totalenergies.com/en/who-are-we"
+  ],
   "jsonld": false
  },
  {
@@ -846,11 +1521,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1705454",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "recruitee",
+  "evidence": "https://plukonfoodgroupdenmark.recruitee.com/aboutus",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.rosekylling.dk/",
+   "https://jobs.plukon.dk/#/da/vacancies/36728-ot-elektriker-til-nathold",
+   "https://jobs.plukon.dk/#/da/vacancies/36728-ot-elektriker-til-nathold",
+   "https://jobs.plukon.dk/#/da/vacancies/36728-ot-elektriker-til-nathold",
+   "https://jobs.plukon.dk/#/da/vacancies/36728-ot-elektriker-til-nathold",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -860,9 +1544,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704707",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": false,
+  "kind": "ats",
+  "system": "oracle",
+  "evidence": "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8346",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.dtu.dk/",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8346",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8346",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8346",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8346",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -872,11 +1567,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1705417",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "teamtailor",
+  "evidence": "https://www.teamtailor.com/?utm_campaign=poweredby&utm_content=careers.egsoftware.com&utm_medium=referral&utm_source=career-site",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://eg.dk/",
+   "https://careers.egsoftware.com/jobs/8477740-student-assistant-healthcare?promotion=2233999-jobindex",
+   "https://careers.egsoftware.com/jobs/8477740-student-assistant-healthcare?promotion=2233999-jobindex",
+   "https://careers.egsoftware.com/jobs/8477740-student-assistant-healthcare?promotion=2233999-jobindex",
+   "https://careers.egsoftware.com/jobs/8477740-student-assistant-healthcare?promotion=2233999-jobindex",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -886,9 +1590,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1705460",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.vejle.dk/borger/mit-liv/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "http://www.vejle.dk/tilflytter",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -898,9 +1613,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/r14036722",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/login.aspx?customer=odense-kommune_tr",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.odense.dk/",
+   "https://job.odense.dk/job/4b6d4179c0ac4650919536f338f994ff",
+   "https://job.odense.dk/job/4b6d4179c0ac4650919536f338f994ff",
+   "https://job.odense.dk/job/4b6d4179c0ac4650919536f338f994ff",
+   "https://job.odense.dk/job/4b6d4179c0ac4650919536f338f994ff",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -910,11 +1636,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1705164",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.2care4.eu/",
+   "https://app.jobmatchprofile.com/m5h4qh/2care4-aps/shwtq2/student-assistant---artwork-erpcommercial-ope",
+   "https://app.jobmatchprofile.com/m5h4qh/2care4-aps/shwtq2/student-assistant---artwork-erpcommercial-ope",
+   "https://app.jobmatchprofile.com/m5h4qh/2care4-aps/shwtq2/student-assistant---artwork-erpcommercial-ope",
+   "https://app.jobmatchprofile.com/m5h4qh/2care4-aps/shwtq2/student-assistant---artwork-erpcommercial-ope",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -924,11 +1659,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1705154",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/Agent/Subscription.aspx?_sp=d8f691b3-0a3b-4c75-abd7-3de910e469a6.1773757418653&customer=region-nordjylland_tr",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://rn.dk/",
+   "https://jobs.talentech.com/regionnordjylland/job/8ad98562833e47439dfc7e28e6bde1d3",
+   "https://jobs.talentech.com/regionnordjylland/job/8ad98562833e47439dfc7e28e6bde1d3",
+   "https://jobs.talentech.com/regionnordjylland/job/8ad98562833e47439dfc7e28e6bde1d3",
+   "https://jobs.talentech.com/regionnordjylland/job/8ad98562833e47439dfc7e28e6bde1d3",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -938,11 +1682,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1705100",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": false,
+  "kind": "ats",
+  "system": "workday",
+  "evidence": "https://svitzer.wd3.myworkdayjobs.com/da-DK/Svitzer_Careers/job/Svitzer-Group-Copenhagen-HQ/Student-Assistant_JR4019",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.svitzer.com/",
+   "https://svitzer.wd3.myworkdayjobs.com/da-DK/Svitzer_Careers/job/Svitzer-Group-Copenhagen-HQ/Student-Assistant_JR4019",
+   "https://svitzer.wd3.myworkdayjobs.com/da-DK/Svitzer_Careers/job/Svitzer-Group-Copenhagen-HQ/Student-Assistant_JR4019",
+   "https://svitzer.wd3.myworkdayjobs.com/da-DK/Svitzer_Careers/job/Svitzer-Group-Copenhagen-HQ/Student-Assistant_JR4019",
+   "https://svitzer.wd3.myworkdayjobs.com/da-DK/Svitzer_Careers/job/Svitzer-Group-Copenhagen-HQ/Student-Assistant_JR4019",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -952,9 +1705,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D3010%2526departmentId%253D18978%2526ProjectId%253D170526",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170526&DepartmentId=18978&MediaId=4646",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.fm.dk/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170526&DepartmentId=18978&MediaId=4646",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170526&DepartmentId=18978&MediaId=4646",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170526&DepartmentId=18978&MediaId=4646",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170526&DepartmentId=18978&MediaId=4646",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -964,9 +1728,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704986",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://inglebyfarms.com/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.inglebyfarms.com/",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -976,9 +1751,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D5001%2526departmentId%253D9492%2526ProjectId%253D194426%",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194426&DepartmentId=9492&MediaId=5",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://phabsalon.dk/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194426&DepartmentId=9492&MediaId=5",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194426&DepartmentId=9492&MediaId=5",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194426&DepartmentId=9492&MediaId=5",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194426&DepartmentId=9492&MediaId=5",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -988,9 +1774,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D119%2526departmentId%253D3505%2526ProjectId%253D181910%2",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": false,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181910&DepartmentId=3505&MediaId=5",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.itu.dk/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181910&DepartmentId=3505&MediaId=5",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181910&DepartmentId=3505&MediaId=5",
+   "http://itu.dk",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181910&DepartmentId=3505&MediaId=5",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181910&DepartmentId=3505&MediaId=5",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1000,9 +1797,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D119%2526departmentId%253D3505%2526ProjectId%253D181912%2",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181912&DepartmentId=3505&MediaId=5",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.itu.dk/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181912&DepartmentId=3505&MediaId=5",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181912&DepartmentId=3505&MediaId=5",
+   "http://itu.dk",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181912&DepartmentId=3505&MediaId=5",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181912&DepartmentId=3505&MediaId=5",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1012,9 +1820,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1705479",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": false,
+  "kind": "ats",
+  "system": "oracle",
+  "evidence": "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8366",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.dtu.dk/",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8366",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8366",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8366",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8366",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1024,9 +1843,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://naalakkersuisut.career.emply.com/apply/genopslag-studiesekretaer/sz04zx#jobdk",
+  "mail": true,
   "kind": "ats",
   "system": "emply",
+  "evidence": "https://naalakkersuisut.career.emply.com/ad/genopslag-studiesekretaer/sz04zx/da",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://naalakkersuisut.gl/da",
+   "https://naalakkersuisut.career.emply.com/ad/genopslag-studiesekretaer/sz04zx/da",
+   "https://naalakkersuisut.career.emply.com/ad/genopslag-studiesekretaer/sz04zx/da",
+   "https://naalakkersuisut.career.emply.com/ad/genopslag-studiesekretaer/sz04zx/da",
+   "https://naalakkersuisut.career.emply.com/ad/genopslag-studiesekretaer/sz04zx/da",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1036,9 +1866,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://kp.career.emply.com/apply/serviceassistent-til-musiklokalerne-pa-campus-carlsberg/1656lt#jobdk",
+  "mail": true,
   "kind": "ats",
   "system": "emply",
+  "evidence": "https://kp.career.emply.com/ad/serviceassistent-til-musiklokalerne-pa-campus-carlsberg/1656lt/da",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://kp.dk/",
+   "https://kp.career.emply.com/ad/serviceassistent-til-musiklokalerne-pa-campus-carlsberg/1656lt/da",
+   "https://kp.career.emply.com/ad/serviceassistent-til-musiklokalerne-pa-campus-carlsberg/1656lt/da",
+   "https://kp.career.emply.com/ad/serviceassistent-til-musiklokalerne-pa-campus-carlsberg/1656lt/da",
+   "https://kp.career.emply.com/ad/serviceassistent-til-musiklokalerne-pa-campus-carlsberg/1656lt/da",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1048,9 +1889,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://kp.career.emply.com/apply/serviceassistenter-til-playlab-pa-campus-carlsberg/a7j277#jobdk",
+  "mail": true,
   "kind": "ats",
   "system": "emply",
+  "evidence": "https://kp.career.emply.com/ad/serviceassistenter-til-playlab-pa-campus-carlsberg/a7j277/da",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://kp.dk/",
+   "https://kp.career.emply.com/ad/serviceassistenter-til-playlab-pa-campus-carlsberg/a7j277/da",
+   "https://kp.career.emply.com/ad/serviceassistenter-til-playlab-pa-campus-carlsberg/a7j277/da",
+   "https://kp.career.emply.com/ad/serviceassistenter-til-playlab-pa-campus-carlsberg/a7j277/da",
+   "https://kp.career.emply.com/ad/serviceassistenter-til-playlab-pa-campus-carlsberg/a7j277/da",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1060,9 +1912,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://kp.career.emply.com/apply/serviceassistent-til-idraets-og-bevaegelseslokalerne-pa-campus-carlsberg/h7c7pr#jobdk",
+  "mail": true,
   "kind": "ats",
   "system": "emply",
+  "evidence": "https://kp.career.emply.com/ad/serviceassistent-til-idraets-og-bevaegelseslokalerne-pa-campus-carlsberg/h7c7pr/da",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://kp.dk/",
+   "https://kp.career.emply.com/ad/serviceassistent-til-idraets-og-bevaegelseslokalerne-pa-campus-carlsberg/h7c7pr/da",
+   "https://kp.career.emply.com/ad/serviceassistent-til-idraets-og-bevaegelseslokalerne-pa-campus-carlsberg/h7c7pr/da",
+   "https://kp.career.emply.com/ad/serviceassistent-til-idraets-og-bevaegelseslokalerne-pa-campus-carlsberg/h7c7pr/da",
+   "https://kp.career.emply.com/ad/serviceassistent-til-idraets-og-bevaegelseslokalerne-pa-campus-carlsberg/h7c7pr/da",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1072,9 +1935,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://kp.career.emply.com/apply/serviceassistent-til-dramalokalerne-pa-campus-carlsberg/ij36dy#jobdk",
+  "mail": true,
   "kind": "ats",
   "system": "emply",
+  "evidence": "https://kp.career.emply.com/ad/serviceassistent-til-dramalokalerne-pa-campus-carlsberg/ij36dy/da",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://kp.dk/",
+   "https://kp.career.emply.com/ad/serviceassistent-til-dramalokalerne-pa-campus-carlsberg/ij36dy/da",
+   "https://kp.career.emply.com/ad/serviceassistent-til-dramalokalerne-pa-campus-carlsberg/ij36dy/da",
+   "https://kp.career.emply.com/ad/serviceassistent-til-dramalokalerne-pa-campus-carlsberg/ij36dy/da",
+   "https://kp.career.emply.com/ad/serviceassistent-til-dramalokalerne-pa-campus-carlsberg/ij36dy/da",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1084,9 +1958,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/job/ansoegning/2501126?source=showjob",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.ringstedskovborn.dk/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "http://www.ringstedskovborn.dk/",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1096,9 +1981,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://hedensted.career.emply.com/apply/vi-soger-en-uddannelseskonsulent-til-et-barselsvikariat-i-sundhed-aeldre/ep98kc#jobdk",
+  "mail": true,
   "kind": "ats",
   "system": "emply",
+  "evidence": "https://hedensted.career.emply.com/ad/vi-soger-en-uddannelseskonsulent-til-et-barselsvikariat-i-sundhed-aeldre/ep98kc",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.hedensted.dk/",
+   "https://hedensted.career.emply.com/ad/vi-soger-en-uddannelseskonsulent-til-et-barselsvikariat-i-sundhed-aeldre/ep98kc",
+   "https://hedensted.career.emply.com/ad/vi-soger-en-uddannelseskonsulent-til-et-barselsvikariat-i-sundhed-aeldre/ep98kc",
+   "https://hedensted.career.emply.com/ad/vi-soger-en-uddannelseskonsulent-til-et-barselsvikariat-i-sundhed-aeldre/ep98kc",
+   "https://hedensted.career.emply.com/ad/vi-soger-en-uddannelseskonsulent-til-et-barselsvikariat-i-sundhed-aeldre/ep98kc",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1108,11 +2004,17 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1688888",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.vejlefjordskolen.dk/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1122,9 +2024,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1705566",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "emply",
+  "evidence": "https://emply.com",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.frederiksberg.dk/",
+   "https://job.frederiksberg.dk/ad/paedagogmedhjaelper-til-sfo-nordlys-skolen-pa-grundtvigsvej/kbc8q9/da",
+   "https://job.frederiksberg.dk/ad/paedagogmedhjaelper-til-sfo-nordlys-skolen-pa-grundtvigsvej/kbc8q9/da",
+   "https://job.frederiksberg.dk/ad/paedagogmedhjaelper-til-sfo-nordlys-skolen-pa-grundtvigsvej/kbc8q9/da",
+   "https://job.frederiksberg.dk/ad/paedagogmedhjaelper-til-sfo-nordlys-skolen-pa-grundtvigsvej/kbc8q9/da",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1134,9 +2047,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/r14037560",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.compass-group.dk/",
+   "https://compass-group.dk/job-og-karriere/ledige-jobs-soeg-uopfordret/?hr=show-job/357161&linkref=743967&locale=da_DK",
+   "https://compass-group.dk/job-og-karriere/ledige-jobs-soeg-uopfordret/?hr=show-job/357161&linkref=743967&locale=da_DK",
+   "https://compass-group.dk/job-og-karriere/ledige-jobs-soeg-uopfordret/?hr=show-job/357161&linkref=743967&locale=da_DK",
+   "https://compass-group.dk/job-og-karriere/ledige-jobs-soeg-uopfordret/?hr=show-job/357161&linkref=743967&locale=da_DK",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1146,11 +2070,18 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1705540",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.thansen.dk/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.thansen.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1160,11 +2091,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1705011",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "teamtailor",
+  "evidence": "https://www.teamtailor.com/?utm_campaign=poweredby&utm_content=careers.egsoftware.com&utm_medium=referral&utm_source=career-site",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://eg.dk/",
+   "https://careers.egsoftware.com/jobs/8504766-student-assistant-eg-housing?promotion=2231566-jobindex",
+   "https://careers.egsoftware.com/jobs/8504766-student-assistant-eg-housing?promotion=2231566-jobindex",
+   "https://careers.egsoftware.com/jobs/8504766-student-assistant-eg-housing?promotion=2231566-jobindex",
+   "https://careers.egsoftware.com/jobs/8504766-student-assistant-eg-housing?promotion=2231566-jobindex",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1174,11 +2114,18 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1704988",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.alfalaval.dk/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.alfalaval.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1188,9 +2135,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/job/ansoegning/2499158?source=showjob",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.athenas.dk/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1200,9 +2158,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1705578",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": false,
+  "kind": "ats",
+  "system": "workday",
+  "evidence": "https://photonics.wd103.myworkdayjobs.com/Job_Index/job/Birkerd-Capital-Region-Denmark/Student-Assistant---Product-Compliance_JR100526",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://lf.hamamatsu.com/",
+   "https://photonics.wd103.myworkdayjobs.com/Job_Index/job/Birkerd-Capital-Region-Denmark/Student-Assistant---Product-Compliance_JR100526",
+   "https://photonics.wd103.myworkdayjobs.com/Job_Index/job/Birkerd-Capital-Region-Denmark/Student-Assistant---Product-Compliance_JR100526",
+   "https://photonics.wd103.myworkdayjobs.com/Job_Index/job/Birkerd-Capital-Region-Denmark/Student-Assistant---Product-Compliance_JR100526",
+   "https://photonics.wd103.myworkdayjobs.com/Job_Index/job/Birkerd-Capital-Region-Denmark/Student-Assistant---Product-Compliance_JR100526",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1212,11 +2181,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1703283",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.xellia.com/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.xellia.com/career",
+   "http://www.xellia.com/",
+   "https://www.xellia.com/career"
+  ],
   "jsonld": false
  },
  {
@@ -1226,11 +2204,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1703573",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.nordiskfilm.com/business-areas-0/nordisk-film-interactive",
+   "https://egmont.csod.com/ats/careersite/JobDetails.aspx?site=4&id=2109",
+   "https://egmont.csod.com/ats/careersite/JobDetails.aspx?site=4&id=2109",
+   "https://egmont.csod.com/ats/careersite/JobDetails.aspx?site=4&id=2109",
+   "https://egmont.csod.com/ats/careersite/JobDetails.aspx?site=4&id=2109",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1240,9 +2227,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1705488",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": false,
+  "kind": "ats",
+  "system": "oracle",
+  "evidence": "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8332",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.dtu.dk/",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8332",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8332",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8332",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8332",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1252,9 +2250,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704962",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": false,
+  "kind": "ats",
+  "system": "oracle",
+  "evidence": "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8331",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.dtu.dk/",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8331",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8331",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8331",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8331",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1264,9 +2273,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704513",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.ey.com/da_dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1276,9 +2296,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1705190",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "teamtailor",
+  "evidence": "https://app.teamtailor.com/companies/Qgdy0yQigoY@eu/dashboard",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://careers.nobia.com/",
+   "https://careers.nobia.com/jobs/8475349-internship-employer-branding?promotion=2221096-jobindex",
+   "https://careers.nobia.com/jobs/8475349-internship-employer-branding?promotion=2221096-jobindex",
+   "https://careers.nobia.com/en/",
+   "https://careers.nobia.com/jobs/8475349-internship-employer-branding?promotion=2221096-jobindex",
+   "https://careers.nobia.com/jobs/8475349-internship-employer-branding?promotion=2221096-jobindex",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1288,11 +2319,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1701871",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.nne.com/",
+   "https://nne.csod.com/ux/ats/careersite/4/home/requisition/5110?c=nne",
+   "https://nne.csod.com/ux/ats/careersite/4/home/requisition/5110?c=nne",
+   "https://nne.csod.com/ux/ats/careersite/4/home/requisition/5110?c=nne",
+   "https://nne.csod.com/ux/ats/careersite/4/home/requisition/5110?c=nne",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1302,9 +2342,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/job/ansoegning/2495436?source=showjob",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "http://www.kogs.dk/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1314,9 +2365,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1703871",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.danishcrown.com/da-dk/job-og-karriere/",
+   "https://jobs.danishcrown.com/job/Randers-SV-Student-Assistant-Strategy-and-M&A-8940/1441329933/",
+   "https://jobs.danishcrown.com/job/Randers-SV-Student-Assistant-Strategy-and-M&A-8940/1441329933/",
+   "https://www.danishcrown.com/da-dk/job-og-karriere/",
+   "https://jobs.danishcrown.com/job/Randers-SV-Student-Assistant-Strategy-and-M&A-8940/1441329933/",
+   "https://jobs.danishcrown.com/job/Randers-SV-Student-Assistant-Strategy-and-M&A-8940/1441329933/",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1326,9 +2388,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1697072",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.beumergroup.com/",
+   "https://www.beumergroup.com/jobs-career/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.beumergroup.com/careers/",
+   "https://hrcaseforum.simplero.com/page/240347-beumer-ansoeger"
+  ],
   "jsonld": false
  },
  {
@@ -1338,9 +2411,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1705672",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.beumergroup.com/",
+   "https://www.beumergroup.com/jobs-career/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.beumergroup.com/careers/",
+   "https://www.beumergroup.com/careers/culture-benefits/"
+  ],
   "jsonld": false
  },
  {
@@ -1350,11 +2434,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1703723",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://tryg.dk/om-tryg",
+   "https://careers.tryg.com/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1364,9 +2457,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D6%26redirect_uri%3Dhttps%253A%252F%252Fcandidate.hr-manager.net%252FApplicationForm%252FSinglePageApplicationForm.aspx%253Fcid%253D1877%2526departmentId%253D19149%2526ProjectId%253D146338",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": true,
+  "kind": "ats",
+  "system": "hr-manager",
+  "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1877&ProjectId=146338&DepartmentId=19149&MediaId=4619",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.everllence.com/",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1877&ProjectId=146338&DepartmentId=19149&MediaId=4619",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1877&ProjectId=146338&DepartmentId=19149&MediaId=4619",
+   "https://www.everllence.com/career",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1877&ProjectId=146338&DepartmentId=19149&MediaId=4619",
+   "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1877&ProjectId=146338&DepartmentId=19149&MediaId=4619",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1376,9 +2480,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1687999",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.beumergroup.com/",
+   "https://www.beumergroup.com/jobs-career/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.beumergroup.com/careers/",
+   "https://www.beumergroup.com/careers/culture-benefits/"
+  ],
   "jsonld": false
  },
  {
@@ -1388,9 +2503,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704962",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": false,
+  "kind": "ats",
+  "system": "oracle",
+  "evidence": "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8192",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.dtu.dk/",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8192",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8192",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8192",
+   "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8192",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1400,9 +2526,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1697071",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.beumergroup.com/",
+   "https://www.beumergroup.com/jobs-career/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.beumergroup.com/careers/",
+   "https://hrcaseforum.simplero.com/page/240347-beumer-ansoeger"
+  ],
   "jsonld": false
  },
  {
@@ -1412,9 +2549,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1697071",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.beumergroup.com/",
+   "https://www.beumergroup.com/jobs-career/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.beumergroup.com/careers/",
+   "https://www.beumergroup.com/careers/culture-benefits/"
+  ],
   "jsonld": false
  },
  {
@@ -1424,9 +2572,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://minervaimaging.career.emply.com/apply/junior-python-developer-for-minerva-imaging/1rmgtr/en#jobdk",
+  "mail": true,
   "kind": "ats",
   "system": "emply",
+  "evidence": "https://minervaimaging.career.emply.com/ad/junior-python-developer-for-minerva-imaging/1rmgtr/en",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.minervaimaging.com/",
+   "https://minervaimaging.career.emply.com/ad/junior-python-developer-for-minerva-imaging/1rmgtr/en",
+   "https://minervaimaging.career.emply.com/ad/junior-python-developer-for-minerva-imaging/1rmgtr/en",
+   "https://minervaimaging.career.emply.com/ad/junior-python-developer-for-minerva-imaging/1rmgtr/en",
+   "https://minervaimaging.career.emply.com/ad/junior-python-developer-for-minerva-imaging/1rmgtr/en",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1436,9 +2595,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1705672",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.beumergroup.com/",
+   "https://www.beumergroup.com/jobs-career/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.beumergroup.com/careers/",
+   "https://hrcaseforum.simplero.com/page/240347-beumer-ansoeger"
+  ],
   "jsonld": false
  },
  {
@@ -1448,9 +2618,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1705672",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.beumergroup.com/",
+   "https://www.beumergroup.com/jobs-career/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.beumergroup.com/careers/",
+   "https://hrcaseforum.simplero.com/page/240347-beumer-ansoeger"
+  ],
   "jsonld": false
  },
  {
@@ -1460,9 +2641,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1705672",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.beumergroup.com/",
+   "https://www.beumergroup.com/jobs-career/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.beumergroup.com/careers/",
+   "https://hrcaseforum.simplero.com/page/240347-beumer-ansoeger"
+  ],
   "jsonld": false
  },
  {
@@ -1472,9 +2664,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1699670",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://tryg.dk/om-tryg",
+   "https://careers.tryg.com/",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://careers.tryg.com/job/Studentermedhj%C3%A6lper-m%C3%B8debook-Aarhus/28414-da_DK/"
+  ],
   "jsonld": false
  },
  {
@@ -1484,9 +2687,16 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704489",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1496,9 +2706,19 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1700730",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.lego.com/en-us/careers/job/student-worker-rd-processing-6573497e718b100fd7ecab14bdac0000",
+   "https://www.lego.com/en-us/careers/job/student-worker-rd-processing-6573497e718b100fd7ecab14bdac0000",
+   "https://www.lego.com/en-us/careers/job/student-worker-rd-processing-6573497e718b100fd7ecab14bdac0000",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1508,9 +2728,16 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1701737",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1520,9 +2747,19 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704238",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.devoteam.com/jobs/part-time-data-engineer-consultant-89627656223367878",
+   "https://www.devoteam.com/jobs/part-time-data-engineer-consultant-89627656223367878",
+   "https://www.devoteam.com/jobs/part-time-data-engineer-consultant-89627656223367878",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1532,9 +2769,19 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1701737",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.tesa.com/da-dk/om-tesa/karriere/ledige-stillinger/working-student-finance-and-accounting-m-w-d-12738591.html",
+   "https://www.tesa.com/da-dk/om-tesa/karriere/ledige-stillinger/working-student-finance-and-accounting-m-w-d-12738591.html",
+   "https://www.tesa.com/da-dk/om-tesa/karriere/ledige-stillinger/working-student-finance-and-accounting-m-w-d-12738591.html",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1544,9 +2791,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1704537",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.ey.com/da_dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/",
+   "https://www.jobindexkurser.dk",
+   "https://www.ey.com/en_dk/careers/graduate-in-strategy-and-transactions",
+   "https://www.it-jobbank.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1556,11 +2814,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/h1701353",
-  "kind": "kun-jobindex",
+  "mail": true,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://temp-team.dk/",
+   "https://temp-team.dk/job-search/ultra-high-vacuum-uhv-engineer-488189",
+   "https://temp-team.dk/job-search/ultra-high-vacuum-uhv-engineer-488189",
+   "https://temp-team.dk/job-search/ultra-high-vacuum-uhv-engineer-488189",
+   "https://temp-team.dk/job-search/ultra-high-vacuum-uhv-engineer-488189",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1570,9 +2837,20 @@
   "robot": false,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1703500",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.veromoda.com/dk/da/home",
+   "https://bestseller.com/careers/jobs/job-detail-vero-moda/30071",
+   "https://bestseller.com/careers/jobs/job-detail-vero-moda/30071",
+   "https://bestseller.com/careers/jobs/job-detail-vero-moda/30071",
+   "https://bestseller.com/careers/jobs/job-detail-vero-moda/30071",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1582,9 +2860,16 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1705011",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1594,9 +2879,16 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1703930",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1606,9 +2898,16 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1695139",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1618,9 +2917,16 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1690192",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1630,9 +2936,16 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1703878",
-  "kind": "kun-jobindex",
+  "mail": false,
+  "kind": "egen-side",
   "system": null,
+  "evidence": "https://www.jobindexkurser.dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1642,9 +2955,19 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "final": "https://www.jobindex.dk/vis-job/h1701737",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": false,
+  "kind": "ats",
+  "system": "thehub",
+  "evidence": "https://thehub.io/jobs/6aba3f9bb84a86d63df17302?utm_source=jobindex&utm_medium=jobboard&utm_content=dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://thehub.io/jobs/6aba3f9bb84a86d63df17302?utm_source=jobindex&utm_medium=jobboard&utm_content=dk",
+   "https://thehub.io/jobs/6aba3f9bb84a86d63df17302?utm_source=jobindex&utm_medium=jobboard&utm_content=dk",
+   "https://thehub.io/jobs/6aba3f9bb84a86d63df17302?utm_source=jobindex&utm_medium=jobboard&utm_content=dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  },
  {
@@ -1654,11 +2977,19 @@
   "robot": true,
   "teaser_mail": false,
   "first_hop": "www.jobindex.dk",
-  "apply_mail": false,
-  "apply_form": true,
-  "final": "https://www.jobindex.dk/vis-job/r14011707",
-  "kind": "kun-jobindex",
-  "system": null,
+  "mail": false,
+  "kind": "ats",
+  "system": "thehub",
+  "evidence": "https://thehub.io/jobs/6ab3d45f42804924bd0e1891?utm_source=jobindex&utm_medium=jobboard&utm_content=dk",
+  "ext_links": [
+   "https://www.jobindexkurser.dk",
+   "https://thehub.io/jobs/6ab3d45f42804924bd0e1891?utm_source=jobindex&utm_medium=jobboard&utm_content=dk",
+   "https://thehub.io/jobs/6ab3d45f42804924bd0e1891?utm_source=jobindex&utm_medium=jobboard&utm_content=dk",
+   "https://thehub.io/jobs/6ab3d45f42804924bd0e1891?utm_source=jobindex&utm_medium=jobboard&utm_content=dk",
+   "https://www.it-jobbank.dk/",
+   "https://www.stepstone.dk/",
+   "https://www.computerworld.dk/"
+  ],
   "jsonld": false
  }
 ]
