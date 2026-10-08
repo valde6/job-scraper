@@ -1,77 +1,40 @@
-0 kun-jobindex ['https://www.lsb.dk/']
-20 kun-jobindex ['https://innovationdistrictcopenhagen.com/']
-40 kun-jobindex ['https://dke.dk/']
-60 ats https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1518&ProjectId=216369&
-80 ats https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/
-100 kun-jobindex ['https://www.ey.com/da_dk']
-120 kun-jobindex []
-{
- "sider_testet": 92,
- "svarer_200": 91,
- "jsonld_jobposting": 14,
- "kræver_js": 9,
- "jsonld_felter": {
-  "title": 13,
-  "description": 13,
-  "datePosted": 13,
-  "validThrough": 10,
-  "hiringOrganization": 13,
-  "jobLocation": 14,
-  "employmentType": 12,
-  "identifier": 12
- },
- "jsonld_by_system": {
-  "hr-manager/talentech|nej": 20,
-  "teamtailor (eget domæne)|ja": 6,
-  "egen-karriereside|nej": 32,
-  "emply|nej": 14,
-  "teamtailor|ja": 2,
-  "elvium|nej": 2,
-  "recruitio|nej": 1,
-  "oracle|nej": 6,
-  "jobmatchprofile|nej": 1,
-  "workday|ja": 2,
-  "cornerstone|nej": 1,
-  "cornerstone|ja": 1,
-  "egen-karriereside|ja": 1,
-  "thehub|ja": 2
- },
- "robots_tilladt": {
-  "True": 39,
-  "False": 1,
-  "ingen robots.txt": 4
- },
- "robots_sitemap": 24,
- "robots_blokerer_ai_bots": 1,
- "unikke_værter": 44,
- "fejl": {
-  "fejl": 1
- },
- "kun_jobindex_tjek": {
-  "fundet": 11,
-  "ikke fundet": 12
- }
-}
-ONSITE True Finansbachelorpraktikant til Lån & Spar i Esbjerg, Lån & Spa True [{'url': 'https://www.lsb.dk/privat/dit-liv/livet-som-studerende/job', 'hits': '1/3'}, {'url': 'https://www.lsb.dk/om-laan-og-spar/baeredygtighed', 'hits': '1/3'}, {'url': 'https://www.lsb.dk/privat/dit-liv/livet-som-studerende/job', 'hits': '1/3'}]
-ONSITE True Jurastuderende søges som studentermedhjælper med fokus på GD False [{'url': 'https://www.ddd.dk/nyheder-og-presse/jobannoncer/', 'hits': '1/4'}, {'url': 'https://www.ddd.dk/ansat-dyrlaege/tillidsrepraesentanter/arbejdet-som-tr/tr-og-loentilskudsjob/', 'hits': '1/4'}, {'url': 'https://www.ddd.dk/studerende/studiejob-raad-og-svar/', 'hits': '0/4'}]
-ONSITE True Vil du have et studiejob med både mennesker, administration  False [{'url': 'https://teknika.dk/om-teknika/medarbejdere', 'hits': '0/4'}]
-ONSITE True Finansbachelorpraktikant til Lån & Spar på Stjernepladsen, L True [{'url': 'https://www.lsb.dk/privat/dit-liv/livet-som-studerende/job', 'hits': '1/3'}, {'url': 'https://www.lsb.dk/om-laan-og-spar/baeredygtighed', 'hits': '1/3'}, {'url': 'https://www.lsb.dk/privat/dit-liv/livet-som-studerende/job', 'hits': '1/3'}]
-ONSITE True Studentermedhjælper til Group Accounting, Tryg Forsikring A/ False [{'url': 'https://tryg.dk/om-tryg/tryghed-i-danmark', 'hits': '0/2'}, {'url': 'https://careers.tryg.com/Tryg?locale=da_DK', 'hits': '0/2'}, {'url': 'https://careers.tryg.com/Tryg/search/?createNewAlert=false&q=&locationsearch=&optionsFacetsDD_customfield2=&optionsFacetsDD_facility=', 'hits': '0/2'}]
-ONSITE True Studentermedarbejder, Innovation District Copenhagen False [{'url': 'https://innovationdistrictcopenhagen.com/students/find-jobs-with-start-ups-and-scale-ups/', 'hits': '0/1'}]
-ONSITE True Vil du være vores nye studentermedarbejder?, Visma DataLøn True [{'url': 'https://karriere.datalonprolon.dk/', 'hits': '3/3'}]
-ONSITE True Danida Fellowship Centre søger økonomi- og administrationsch True [{'url': 'https://dfcentre.com/results-reports/what-we-did-in-2025/learning-together-to-address-local-and-global-challenges/', 'hits': '3/4'}]
-ONSITE True Mødebooker (studiejob), Tryg Privat, Tryg Forsikring A/S True [{'url': 'https://tryg.dk/om-tryg/tryghed-i-danmark', 'hits': '2/4'}, {'url': 'https://careers.tryg.com/Tryg?locale=da_DK', 'hits': '2/4'}, {'url': 'https://careers.tryg.com/Tryg/search/?createNewAlert=false&q=&locationsearch=&optionsFacetsDD_customfield2=&optionsFacetsDD_facility=', 'hits': '4/4'}]
-ONSITE True Studiejob som analytiker, DKE Group ApS False []
-ONSITE True Norsktalende vikarer/studenter søkes til Viking Assistances  False [{'url': 'https://www.vikingassistance.dk/ledige-stillinger', 'hits': '0/4'}, {'url': 'https://www.vikingassistance.dk/artikler', 'hits': '0/4'}]
-ONSITE True CNC-operatører / industriteknikere til drejeafdelingen, Trel False [{'url': 'https://www.trelleborg.com/da/seals/products-and-solutions/advanced-composites/news/automated-dynamics-celebrates-grand-opening-will-add-new-jobs', 'hits': '0/3'}, {'url': 'https://www.trelleborg.com/da/seals/about-us/careers', 'hits': '0/3'}, {'url': 'https://www.trelleborg.com/da/seals/products-and-solutions/advanced-composites/news/automated-dynamics-celebrates-grand-opening-will-add-new-jobs', 'hits': '0/3'}]
-ONSITE True OT Elektriker til nathold, ROSE POULTRY A/S True [{'url': 'https://jobs.plukon.dk/vacancy-overview#/?page=1', 'hits': '0/2'}, {'url': 'https://plukonfoodgroupdenmark.recruitee.com/vacancy-overview#/?page=1', 'hits': '2/2'}]
-ONSITE True Student assistants for Digitalization & IT, Vejle Kommune False [{'url': 'https://www.vejle.dk/da/om-os/job-hos-os/', 'hits': '0/2'}, {'url': 'https://www.vejle.dk/da/fritid-og-faellesskaber/bliv-frivillig/job-som-frivillig/bliv-frivillig-til-de-store-events-i-2027/', 'hits': '0/2'}, {'url': 'https://www.vejle.dk/da/om-os/job-hos-os/', 'hits': '0/2'}]
-ONSITE True Student Assistant for Ingleby’s Production & Sustainability  True [{'url': 'https://inglebyfarms.com/our-teams/career/', 'hits': '3/4'}]
-ONSITE True Brænder du for børn, bålmad og udeliv?, Ringsted Private Sko False []
-ONSITE True Vejlefjord børnehave søger engageret og nærværende pædagog,  True [{'url': 'https://vejlefjordskolen.dk/efterskolen/personale/job/', 'hits': '2/4'}, {'url': 'https://vejlefjordskolen.dk/grundskolen/personale/job/', 'hits': '2/4'}, {'url': 'https://vejlefjordskolen.dk/vuggestue-boernehave/laererplan/samarbejde-med-foraeldre-om-boerns-laering/', 'hits': '2/4'}]
-ONSITE True Sælger til butik 37 timer – til filialen Støvring, T. Hansen True [{'url': 'https://job.thansen.dk/', 'hits': '3/4'}]
-ONSITE True Student Assistant – Order Handling, Alfa Laval in Denmark False [{'url': 'https://career.alfalaval.com/da/home?utm_source=alfalaval', 'hits': '0/2'}, {'url': 'https://career.alfalaval.com/da/jobs/search', 'hits': '0/2'}, {'url': 'https://www.alfalaval.dk/om-alfa-laval/baeredygtighed/', 'hits': '0/2'}]
-ONSITE True Vær med til at sætte scenen for aktuelle foredrag på tværs a False [{'url': 'https://www.athenas.dk/blog/42-procent-af-medarbejderne-frygter-at-ai-udhuler-deres-faglighed/', 'hits': '2/4'}]
-ONSITE True Student Assistant - Valuation, Modelling & Economics, EY True [{'url': 'https://www.ey.com/da_dk/services/law/arbejdsmarkeds-og-ansaettelsesret', 'hits': '0/3'}, {'url': 'https://www.ey.com/en_gl/case-studies', 'hits': '2/3'}]
-ONSITE True E-mail Marketing Student Assistant, Kjær & Sommerfeldt True [{'url': 'https://www.kjaersommerfeldt.dk/karriere/', 'hits': '2/2'}]
-ONSITE True Salgstalent til rolle som forsikringsrådgiver, Tryg Forsikri False [{'url': 'https://tryg.dk/om-tryg/tryghed-i-danmark', 'hits': '0/3'}, {'url': 'https://careers.tryg.com/Tryg?locale=da_DK', 'hits': '1/3'}, {'url': 'https://careers.tryg.com/Tryg/search/?createNewAlert=false&q=&locationsearch=&optionsFacetsDD_customfield2=&optionsFacetsDD_facility=', 'hits': '1/3'}]
+GREP https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170544&DepartmentId=19781&MediaId=5107 (?i)customer[=:"' ]+[\w.-]+|jobportal[\w./-]*|hr-manager\.net/[\w./?=&-]{0,80}|<title>[^<]*
+STATUS 200
+<title>
+<title>
+	Talentech - Studentermedhjælper til SAP-sektionen i Banedanmark
+
+hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170544&DepartmentId=19781&MediaId=5107&S
+hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170544&DepartmentId=19781&MediaId=5107&s
+hr-manager.net/ApplicationInit.aspx?cid=3010&amp
+hr-manager.net/Export/Attachments/ViewAdvertisementImage.ashx?AdvertisementId=126247&cid=3010&h
+hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=0e40ecc1-06c2-4161-b89b-88a76
+hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=154cd245-e161-4eec-9de8-5d0e3
+hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=23a5a8cb-523b-40d7-94eb-a9902
+hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=34c9fa5e-feb6-4fe0-a786-51a12
+hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=443b2772-0f12-416b-b757-b8bac
+hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=4c0462cc-8e16-4845-8f2a-1c3c9
+hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=61e02423-132b-4a86-afd2-144dc
+hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=8503a994-aebf-4b30-a398-8494a
+hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=9bf219c6-95dc-4c67-949a-46d8e
+hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=ae4fb668-22df-450f-9b9c-71b01
+hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=cdd98fff-243c-405f-b9b9-da698
+hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=ce80affe-9b64-4956-b44e-cdec3
+hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=e527cd22-4a18-4960-afa8-f1b5d
+hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=e9d8f317-c1a2-41a0-b283-0e36c
+hr-manager.net/Scripts/hrmanager-min.js?q=v3.38.1
+hr-manager.net/Scripts/jQuery/jquery.js
+hr-manager.net/Styles/Site.ClientWeb.css
+hr-manager.net/Themes/HrmSilver/Fonts/FontAwesome/css/font-awesome.css
+hr-manager.net/advprvsm/3010/19781/126247/5107/adImage/0366d2ed5cba495b90ab13d411641033/preview
+hr-manager.net/favicons/android-chrome-192x192.png
+hr-manager.net/favicons/apple-touch-icon.png
+hr-manager.net/favicons/browserconfig.xml
+hr-manager.net/favicons/favicon-16x16.png
+hr-manager.net/favicons/favicon-194x194.png
+hr-manager.net/favicons/favicon-32x32.png
+hr-manager.net/favicons/favicon.ico
+hr-manager.net/favicons/manifest.json
+hr-manager.net/favicons/mstile-144x144.png
+hr-manager.net/favicons/safari-pinned-tab.svg
+hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr
