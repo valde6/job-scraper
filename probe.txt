@@ -1,5 +1,2 @@
-# 1791450500
-GET https://api.hr-manager.net/jobportal.svc/statensrekrutteringsloesning_tr/positionlist/json/?incads=1
-GREP https://api.hr-manager.net/jobportal.svc/statensrekrutteringsloesning_tr/positionlist/json/?incads=1 (?i)"(?:Name|Title)":"[^"]*(?:student|studie)[^"]*"
-GREP https://aeldresagen.career.emply.com/ledige-stillinger /ad/[\w-]+/[a-z0-9]{6}
-GREP https://kp.career.emply.com/ledige-stillinger /ad/[\w-]+/[a-z0-9]{6}
+# 1791449422
+PYMOD scraper.experiments.state_check
