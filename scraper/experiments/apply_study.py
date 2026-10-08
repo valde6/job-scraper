@@ -74,43 +74,57 @@ def main():
                           "teaser_mail": bool(re.search(r"mailto:|@[a-z0-9-]+\.(?:dk|com)", desc, re.I))})
     print("opslag:", len(items))
 
+    NOISE = re.compile(r"jobindex\.dk|facebook|linkedin|twitter|x\.com|instagram|youtube|google|apple\.com|"
+                       r"cookie|onetrust|cloudflare|gstatic|doubleclick|trustpilot|jix|jobindex\.|mailto:", re.I)
     for n, r in enumerate(items):
         time.sleep(0.7)
         try:
+            ext_links = []
+            pages = []
             resp = http("GET", r["link"], retries=1, timeout=20, allow_redirects=True)
-            final, html = resp.url, resp.text
+            pages.append((resp.url, resp.text))
+            jid = re.search(r"(h\d+)", r["link"])
+            if jid and urlparse(resp.url).netloc.endswith("jobindex.dk"):
+                time.sleep(0.5)
+                try:
+                    r2 = http("GET", f"https://www.jobindex.dk/jobannonce/{jid.group(1)}/", retries=1, timeout=20)
+                    pages.append((r2.url, r2.text))
+                except Exception:
+                    pass
+            final, html = pages[0]
+            for u, h in pages:
+                s = BeautifulSoup(h, "lxml")
+                for tag in s.find_all(["a", "iframe"]):
+                    href = tag.get("href") or tag.get("src") or ""
+                    if href.startswith("http") and not NOISE.search(href):
+                        ext_links.append(href[:300])
             r["first_hop"] = urlparse(final).netloc
-            if urlparse(final).netloc.endswith("jobindex.dk"):
-                # betalt opslag hos Jobindex: find "Ansøg"-knappen og følg den
-                s = BeautifulSoup(html, "lxml")
-                a = s.select_one("a[href*='/c?t=']")
-                if a:
-                    href = a["href"] if a["href"].startswith("http") else "https://www.jobindex.dk" + a["href"]
-                    time.sleep(0.5)
-                    try:
-                        r2 = http("GET", href, retries=1, timeout=20, allow_redirects=True)
-                        final, html = r2.url, r2.text
-                    except Exception as e:  # noqa: BLE001
-                        r["apply_error"] = str(e)[:120]
-                        resp2 = getattr(e, "response", None)
-                        if resp2 is not None:
-                            final = resp2.url
-                else:
-                    r["apply_mail"] = bool(s.select_one("a[href^='mailto:']"))
-                    r["apply_form"] = bool(s.select_one("form[action*='ansoeg'], a[href*='ansoeg'], a[href*='apply']"))
-            r["final"] = final[:300]
-            r["kind"], r["system"] = classify(final, html)
+            r["mail"] = any("mailto:" in h for _, h in pages)
+            if not urlparse(final).netloc.endswith("jobindex.dk"):
+                r["kind"], r["system"] = classify(final, html)
+                r["evidence"] = final[:300]
+            else:
+                kind, system, ev = "kun-jobindex", None, None
+                for l in ext_links:
+                    k, sysn = classify(l, "")
+                    if k == "ats":
+                        kind, system, ev = "ats", sysn, l
+                        break
+                    if k == "egen-side" and kind == "kun-jobindex":
+                        kind, ev = "egen-side", l
+                r["kind"], r["system"], r["evidence"] = kind, system, ev
+            r["ext_links"] = ext_links[:8]
             r["jsonld"] = bool(jsonld_jobposting(html)) if r["kind"] != "kun-jobindex" else False
         except Exception as e:  # noqa: BLE001
             r["kind"], r["system"], r["error"] = "fejl", None, str(e)[:160]
         if n % 25 == 0:
-            print(n, r.get("kind"), r.get("system"), r.get("final", "")[:80])
+            print(n, r.get("kind"), r.get("system"), (r.get("evidence") or "")[:80])
 
     kinds = Counter(r["kind"] for r in items)
     systems = Counter(r["system"] for r in items if r["kind"] == "ats")
     paid = Counter((r["paid"], r["kind"]) for r in items)
     jsonld = Counter(r["kind"] for r in items if r.get("jsonld"))
-    hosts = Counter(urlparse(r.get("final", "")).netloc for r in items if r["kind"] == "egen-side")
+    hosts = Counter(urlparse(r.get("evidence") or "").netloc for r in items if r["kind"] == "egen-side")
     summary = {"n": len(items), "kinds": kinds, "systems": systems.most_common(),
                "paid_vs_kind": {f"{'betalt' if k[0] else 'robot/gratis'}|{k[1]}": v for k, v in paid.items()},
                "jsonld_by_kind": jsonld, "egen_side_hosts": hosts.most_common(40)}
