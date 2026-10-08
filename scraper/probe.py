@@ -92,6 +92,14 @@ for i, line in enumerate(lines, 1):
             f.write_text(redact(f"{line}\n" + "\n".join(lines)))
             summary.append(f"{i:02d} BROWSER links={len(r['links'])} json={len(r['json'])} | {r['title'][:60]} | {line}")
             continue
+        if parts[0] == "PYMOD":
+            import importlib, io, contextlib
+            buf = io.StringIO()
+            with contextlib.redirect_stdout(buf):
+                importlib.import_module(parts[1]).main()
+            f.write_text(redact(buf.getvalue()[-60000:]))
+            summary.append(f"{i:02d} PYMOD ok | {line}")
+            continue
         if parts[0] == "GREP":
             r = http("GET", parts[1], retries=0, timeout=25)
             ms = sorted(set(re.findall(parts[2], r.text)))[:200]
