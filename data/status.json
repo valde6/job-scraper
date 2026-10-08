@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T21:53:59+00:00",
+ "updated": "2026-10-08T01:01:09+00:00",
  "companies": [
   {
    "company": "Novo Nordisk",
@@ -8,7 +8,7 @@
    "ok": true,
    "listed": 3,
    "matched": 1,
-   "seconds": 2.0
+   "seconds": 1.8
   },
   {
    "company": "A.P. Møller - Mærsk",
@@ -17,7 +17,7 @@
    "ok": true,
    "listed": 407,
    "matched": 2,
-   "seconds": 16.6
+   "seconds": 19.2
   },
   {
    "company": "McKinsey & Company",
@@ -33,7 +33,7 @@
    "ok": true,
    "listed": 67,
    "matched": 6,
-   "seconds": 12.3
+   "seconds": 14.0
   },
   {
    "company": "Danske Bank",
@@ -42,7 +42,7 @@
    "ok": true,
    "listed": 9,
    "matched": 4,
-   "seconds": 4.3
+   "seconds": 2.9
   },
   {
    "company": "Deloitte",
@@ -51,7 +51,7 @@
    "ok": true,
    "listed": 32,
    "matched": 3,
-   "seconds": 1.7
+   "seconds": 1.9
   },
   {
    "company": "PwC",
@@ -60,7 +60,7 @@
    "ok": true,
    "listed": 14,
    "matched": 3,
-   "seconds": 9.7
+   "seconds": 9.3
   },
   {
    "company": "Carlsberg",
@@ -85,7 +85,7 @@
    "ok": true,
    "listed": 27,
    "matched": 0,
-   "seconds": 0.5
+   "seconds": 0.6
   },
   {
    "company": "Microsoft",
@@ -101,7 +101,7 @@
    "ok": true,
    "listed": 0,
    "matched": 0,
-   "seconds": 1.5
+   "seconds": 1.6
   },
   {
    "company": "Jyske Bank",
@@ -115,9 +115,9 @@
    "rank": 14,
    "source": "browser",
    "ok": true,
-   "listed": 56,
+   "listed": 55,
    "matched": 2,
-   "seconds": 21.4
+   "seconds": 31.7
   },
   {
    "company": "Bestseller",
@@ -147,7 +147,7 @@
    "ok": true,
    "listed": 5,
    "matched": 0,
-   "seconds": 1.3
+   "seconds": 1.5
   },
   {
    "company": "Implement",
@@ -163,7 +163,7 @@
    "ok": true,
    "listed": 20,
    "matched": 0,
-   "seconds": 4.2
+   "seconds": 4.7
   },
   {
    "company": "Finansministeriet",
@@ -193,7 +193,7 @@
    "ok": true,
    "listed": 10,
    "matched": 0,
-   "seconds": 27.0
+   "seconds": 26.0
   },
   {
    "company": "Udenrigsministeriet",
@@ -216,7 +216,7 @@
    "ok": true,
    "listed": 5,
    "matched": 1,
-   "seconds": 0.7
+   "seconds": 2.9
   },
   {
    "company": "Nordnet",
@@ -232,7 +232,7 @@
    "ok": true,
    "listed": 55,
    "matched": 0,
-   "seconds": 7.4
+   "seconds": 7.8
   },
   {
    "company": "KPMG",
@@ -241,7 +241,7 @@
    "ok": true,
    "listed": 17,
    "matched": 0,
-   "seconds": 1.1
+   "seconds": 1.3
   },
   {
    "company": "Matas",
@@ -278,9 +278,9 @@
    "rank": 35,
    "source": "teamtailor",
    "ok": true,
-   "listed": 3,
+   "listed": 2,
    "matched": 0,
-   "seconds": 0.7
+   "seconds": 1.4
   },
   {
    "company": "Netcompany",
@@ -289,7 +289,7 @@
    "ok": true,
    "listed": 32,
    "matched": 3,
-   "seconds": 1.7
+   "seconds": 1.9
   },
   {
    "company": "PFA Pension",
@@ -298,7 +298,7 @@
    "ok": true,
    "listed": 5,
    "matched": 1,
-   "seconds": 16.5
+   "seconds": 24.9
   },
   {
    "company": "SAS",
@@ -314,7 +314,7 @@
    "ok": true,
    "listed": 7,
    "matched": 0,
-   "seconds": 1.0
+   "seconds": 0.4
   },
   {
    "company": "Beierholm",
@@ -344,7 +344,7 @@
    "ok": true,
    "listed": 30,
    "matched": 0,
-   "seconds": 0.9
+   "seconds": 0.6
   },
   {
    "company": "Statsministeriet",
@@ -360,7 +360,7 @@
    "ok": true,
    "listed": 2,
    "matched": 2,
-   "seconds": 11.8
+   "seconds": 12.0
   },
   {
    "company": "Danmarks Radio",
@@ -369,7 +369,7 @@
    "ok": true,
    "listed": 19,
    "matched": 1,
-   "seconds": 0.8
+   "seconds": 0.4
   },
   {
    "company": "DSV",
@@ -392,28 +392,28 @@
    "ok": true,
    "listed": 72,
    "matched": 0,
-   "seconds": 0.4
+   "seconds": 0.5
   },
   {
    "company": "Novonesis",
    "rank": 50,
    "source": "workday",
    "ok": true,
-   "listed": 53,
-   "matched": 4,
-   "seconds": 6.9
+   "listed": 51,
+   "matched": 3,
+   "seconds": 5.5
   },
   {
    "company": "(Jobindex RSS)",
    "source": "jobindex",
    "ok": true,
-   "listed": 398,
+   "listed": 397,
    "matched": 29,
    "fit": {
     "sikker": 27,
     "sandsynlig": 1,
     "mulig": 1,
-    "body_fetch": 2
+    "body_fetch": 3
    }
   }
  ]
