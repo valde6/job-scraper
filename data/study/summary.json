@@ -1,0 +1,38 @@
+{
+ "n": 134,
+ "kinds": {
+  "kun-jobindex": 116,
+  "ats": 15,
+  "egen-side": 3
+ },
+ "systems": [
+  [
+   "emply",
+   14
+  ],
+  [
+   "hr-manager",
+   1
+  ]
+ ],
+ "paid_vs_kind": {
+  "betalt|kun-jobindex": 91,
+  "betalt|ats": 15,
+  "betalt|egen-side": 2,
+  "robot/gratis|kun-jobindex": 25,
+  "robot/gratis|egen-side": 1
+ },
+ "jsonld_by_kind": {
+  "egen-side": 1
+ },
+ "egen_side_hosts": [
+  [
+   "app.elvium.com",
+   2
+  ],
+  [
+   "www.it-jobbank.dk",
+   1
+  ]
+ ]
+}

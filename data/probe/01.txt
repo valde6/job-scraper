@@ -1,7 +1,45 @@
-SCRAPE Ørsted
-OK listed=55 matched=0
-
+opslag: 134
+0 kun-jobindex None https://www.jobindex.dk/bruger/log-ind?request=%2Fapi%2FQA%2Fv1%2Fauthorize%3Fre
+25 ats emply https://aeldresagen.career.emply.com/apply/aeldre-sagen-soger-en-studentermedarb
+50 kun-jobindex None https://www.jobindex.dk/vis-job/h1704411
+75 kun-jobindex None https://www.jobindex.dk/vis-job/h1705100
+100 kun-jobindex None https://www.jobindex.dk/vis-job/h1704962
+125 kun-jobindex None https://www.jobindex.dk/vis-job/h1701353
 {
- "listed": 55,
- "jobs": []
+ "n": 134,
+ "kinds": {
+  "kun-jobindex": 116,
+  "ats": 15,
+  "egen-side": 3
+ },
+ "systems": [
+  [
+   "emply",
+   14
+  ],
+  [
+   "hr-manager",
+   1
+  ]
+ ],
+ "paid_vs_kind": {
+  "betalt|kun-jobindex": 91,
+  "betalt|ats": 15,
+  "betalt|egen-side": 2,
+  "robot/gratis|kun-jobindex": 25,
+  "robot/gratis|egen-side": 1
+ },
+ "jsonld_by_kind": {
+  "egen-side": 1
+ },
+ "egen_side_hosts": [
+  [
+   "app.elvium.com",
+   2
+  ],
+  [
+   "www.it-jobbank.dk",
+   1
+  ]
+ ]
 }
