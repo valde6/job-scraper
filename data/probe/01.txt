@@ -1,40 +1,779 @@
-GREP https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170544&DepartmentId=19781&MediaId=5107 (?i)customer[=:"' ]+[\w.-]+|jobportal[\w./-]*|hr-manager\.net/[\w./?=&-]{0,80}|<title>[^<]*
-STATUS 200
-<title>
-<title>
-	Talentech - Studentermedhjælper til SAP-sektionen i Banedanmark
+GET https://api.hr-manager.net/jobportal.svc/statensrekrutteringsloesning_tr/positionlist/json/?incads=1
+STATUS 200 FINAL https://api.hr-manager.net/jobportal.svc/statensrekrutteringsloesning_tr/positionlist/json/?incads=1
 
-hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170544&DepartmentId=19781&MediaId=5107&S
-hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170544&DepartmentId=19781&MediaId=5107&s
-hr-manager.net/ApplicationInit.aspx?cid=3010&amp
-hr-manager.net/Export/Attachments/ViewAdvertisementImage.ashx?AdvertisementId=126247&cid=3010&h
-hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=0e40ecc1-06c2-4161-b89b-88a76
-hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=154cd245-e161-4eec-9de8-5d0e3
-hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=23a5a8cb-523b-40d7-94eb-a9902
-hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=34c9fa5e-feb6-4fe0-a786-51a12
-hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=443b2772-0f12-416b-b757-b8bac
-hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=4c0462cc-8e16-4845-8f2a-1c3c9
-hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=61e02423-132b-4a86-afd2-144dc
-hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=8503a994-aebf-4b30-a398-8494a
-hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=9bf219c6-95dc-4c67-949a-46d8e
-hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=ae4fb668-22df-450f-9b9c-71b01
-hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=cdd98fff-243c-405f-b9b9-da698
-hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=ce80affe-9b64-4956-b44e-cdec3
-hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=e527cd22-4a18-4960-afa8-f1b5d
-hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=e9d8f317-c1a2-41a0-b283-0e36c
-hr-manager.net/Scripts/hrmanager-min.js?q=v3.38.1
-hr-manager.net/Scripts/jQuery/jquery.js
-hr-manager.net/Styles/Site.ClientWeb.css
-hr-manager.net/Themes/HrmSilver/Fonts/FontAwesome/css/font-awesome.css
-hr-manager.net/advprvsm/3010/19781/126247/5107/adImage/0366d2ed5cba495b90ab13d411641033/preview
-hr-manager.net/favicons/android-chrome-192x192.png
-hr-manager.net/favicons/apple-touch-icon.png
-hr-manager.net/favicons/browserconfig.xml
-hr-manager.net/favicons/favicon-16x16.png
-hr-manager.net/favicons/favicon-194x194.png
-hr-manager.net/favicons/favicon-32x32.png
-hr-manager.net/favicons/favicon.ico
-hr-manager.net/favicons/manifest.json
-hr-manager.net/favicons/mstile-144x144.png
-hr-manager.net/favicons/safari-pinned-tab.svg
-hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr
+JSON
+{
+ "CustomerAlias": "statensrekrutteringsloesning_tr",
+ "CustomerName": "Statens Rekrutteringsløsning",
+ "TransactionStatus": {
+  "Description": "The operation completed successfully.",
+  "StatusCode": 0
+ },
+ "Items": [
+  {
+   "CustomerAlias": "statensrekrutteringsloesning_tr",
+   "CustomerName": "Statens Rekrutteringsløsning",
+   "TransactionStatus": {
+    "Description": "The operation completed successfully.",
+    "StatusCode": 0
+   },
+   "AdvertisementUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170124&DepartmentId=19135&MediaId=5",
+   "AdvertisementUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170124&DepartmentId=19135&MediaId=5",
+   "Advertisements": [
+    {
+     "Content": "<p><em>Har du styr på detaljer, sans for struktur og lyst til at understøtte arbejdet med grøn omstilling og et mere bæredygtigt forbrug? Så er du måske en af vores nye medarbejdere i Energistyrelsens Center for Cirkulær Økonomi.</em></p>\r\n\r\n<h2>Energistyrelsens center for Cirkulær Økonomi</h2>\r\n\r\n<",
+     "Created": "/Date(1790760863000+0200)/",
+     "Description": "",
+     "Id": 125817,
+     "ImageUrl": null,
+     "ImageUrlSecure": null,
+     "Introduction": "",
+     "LastUpdated": "/Date(1790771383000+0200)/",
+     "Video": {
+      "Embed": "",
+      "Url": null
+     }
+    }
+   ],
+   "ApplicationDue": "/Date(1792360799000+0200)/",
+   "ApplicationFormUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170124&DepartmentId=19135&MediaId=5&SkipAdvertisement=true",
+   "ApplicationFormUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170124&DepartmentId=19135&MediaId=5&SkipAdvertisement=true",
+   "Created": "/Date(1790760552000+0200)/",
+   "CustomList1": {
+    "DeepPositionCount": 1,
+    "Id": 18789,
+    "Name": "Fyn",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList10MultiSelection": [],
+   "CustomList10TreeMultiSelection": [],
+   "CustomList11MultiSelection": [],
+   "CustomList11TreeMultiSelection": [],
+   "CustomList12MultiSelection": [],
+   "CustomList12TreeMultiSelection": [],
+   "CustomList13MultiSelection": [],
+   "CustomList13TreeMultiSelection": [],
+   "CustomList14MultiSelection": [],
+   "CustomList14TreeMultiSelection": [],
+   "CustomList15MultiSelection": [],
+   "CustomList15TreeMultiSelection": [],
+   "CustomList1MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18789,
+     "Name": "Fyn",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList1Tree": {
+    "DeepPositionCount": 1,
+    "Id": 18789,
+    "Name": "Fyn",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList1TreeMultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18789,
+     "Name": "Fyn",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList2": {
+    "DeepPositionCount": 1,
+    "Id": 18868,
+    "Name": "Miljø",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList2MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18868,
+     "Name": "Miljø",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList2Tree": {
+    "DeepPositionCount": 1,
+    "Id": 18868,
+    "Name": "Miljø",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList2TreeMultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18868,
+     "Name": "Miljø",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList3": null,
+   "CustomList3MultiSelection": [],
+   "CustomList3Tree": null,
+   "CustomList3TreeMultiSelection": [],
+   "CustomList4MultiSelection": [],
+   "CustomList4TreeMultiSelection": [],
+   "CustomList5MultiSelection": [],
+   "CustomList5TreeMultiSelection": [],
+   "CustomList6MultiSelection": [],
+   "CustomList6TreeMultiSelection": []
+  },
+  {
+   "CustomerAlias": "statensrekrutteringsloesning_tr",
+   "CustomerName": "Statens Rekrutteringsløsning",
+   "TransactionStatus": {
+    "Description": "The operation completed successfully.",
+    "StatusCode": 0
+   },
+   "AdvertisementUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170353&DepartmentId=19152&MediaId=5",
+   "AdvertisementUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170353&DepartmentId=19152&MediaId=5",
+   "Advertisements": [
+    {
+     "Content": "<p><em>Har du erfaring med klassisk sekretariatsarbejde i en politisk styret organisation, og har du gå-på-mod ift. at kaste dig ud i opgaverne? Trives du i en alsidig hverdag præget af et højt fagligt niveau og et stærkt kollegialt fællesskab? Vil du vide, hvad der foregår bag murerne i en samfunds",
+     "Created": "/Date(1791197894000+0200)/",
+     "Description": "",
+     "Id": 126129,
+     "ImageUrl": "https://cdn-recruiter.hr-manager.net/Export/Attachments/ViewAdvertisementImage.ashx?AdvertisementId=126129&cid=3010",
+     "ImageUrlSecure": "https://cdn-recruiter.hr-manager.net/Export/Attachments/ViewAdvertisementImage.ashx?AdvertisementId=126129&cid=3010",
+     "Introduction": "",
+     "LastUpdated": "/Date(1791198036000+0200)/",
+     "Video": {
+      "Embed": "",
+      "Url": null
+     }
+    }
+   ],
+   "ApplicationDue": "/Date(1792619999000+0200)/",
+   "ApplicationFormUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170353&DepartmentId=19152&MediaId=5&SkipAdvertisement=true",
+   "ApplicationFormUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170353&DepartmentId=19152&MediaId=5&SkipAdvertisement=true",
+   "Created": "/Date(1790946263000+0200)/",
+   "CustomList1": {
+    "DeepPositionCount": 1,
+    "Id": 18791,
+    "Name": "Vestjylland",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList10MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18804,
+     "Name": "Ja",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList10TreeMultiSelection": [],
+   "CustomList11MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 21943,
+     "Name": "Hemmeligt",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList11TreeMultiSelection": [],
+   "CustomList12MultiSelection": [],
+   "CustomList12TreeMultiSelection": [],
+   "CustomList13MultiSelection": [],
+   "CustomList13TreeMultiSelection": [],
+   "CustomList14MultiSelection": [],
+   "CustomList14TreeMultiSelection": [],
+   "CustomList15MultiSelection": [],
+   "CustomList15TreeMultiSelection": [],
+   "CustomList1MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18791,
+     "Name": "Vestjylland",
+     "PositionCount": 1,
+     "SubItems": []
+    },
+    {
+     "DeepPositionCount": 1,
+     "Id": 18792,
+     "Name": "Østjylland",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList1Tree": {
+    "DeepPositionCount": 1,
+    "Id": 18791,
+    "Name": "Vestjylland",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList1TreeMultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18791,
+     "Name": "Vestjylland",
+     "PositionCount": 1,
+     "SubItems": []
+    },
+    {
+     "DeepPositionCount": 1,
+     "Id": 18792,
+     "Name": "Østjylland",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList2": {
+    "DeepPositionCount": 1,
+    "Id": 18836,
+    "Name": "Fuldmægtig",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList2MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18836,
+     "Name": "Fuldmægtig",
+     "PositionCount": 1,
+     "SubItems": []
+    },
+    {
+     "DeepPositionCount": 1,
+     "Id": 18837,
+     "Name": "AC'er",
+     "PositionCount": 1,
+     "SubItems": []
+    },
+    {
+     "DeepPositionCount": 1,
+     "Id": 18840,
+     "Name": "Specialkonsulent",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList2Tree": {
+    "DeepPositionCount": 1,
+    "Id": 18836,
+    "Name": "Fuldmægtig",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList2TreeMultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18836,
+     "Name": "Fuldmægtig",
+     "PositionCount": 1,
+     "SubItems": []
+    },
+    {
+     "DeepPositionCount": 1,
+     "Id": 18837,
+     "Name": "AC'er",
+     "PositionCount": 1,
+     "SubItems": []
+    },
+    {
+     "DeepPositionCount": 1,
+     "Id": 18840,
+     "Name": "Specialkonsulent",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList3": {
+    "DeepPositionCount": 1,
+    "Id": 18805,
+    "Name": "Nej",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList3MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18805,
+     "Name": "Nej",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList3Tree": {
+    "DeepPositionCount": 1,
+    "Id": 18805,
+    "Name": "Nej",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList3TreeMultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18805,
+     "Name": "Nej",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList4MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 21362,
+     "Name": "Fængselskreds Vest",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList4TreeMultiSelection": [],
+   "CustomList5MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 22690,
+     "Name": "Genbesættelse",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList5TreeMultiSelection": [],
+   "CustomList6MultiSelection": [],
+   "CustomList6TreeMultiSelection": []
+  },
+  {
+   "CustomerAlias": "statensrekrutteringsloesning_tr",
+   "CustomerName": "Statens Rekrutteringsløsning",
+   "TransactionStatus": {
+    "Description": "The operation completed successfully.",
+    "StatusCode": 0
+   },
+   "AdvertisementUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170174&DepartmentId=19152&MediaId=5",
+   "AdvertisementUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170174&DepartmentId=19152&MediaId=5",
+   "Advertisements": [
+    {
+     "Content": "<p>Vil du være en del af en arbejdsplads i udvikling, hvor din administrative og koordinerende indsats er med til at skabe struktur, overblik og fremdrift?</p>\r\n\r\n<p>Sdr. Ommes fængsler består af et åbent fængsel, et lukket fængsel samt Lyng Udslusningsfængsel. Vi er i gang med en historisk udvidels",
+     "Created": "/Date(1790770581000+0200)/",
+     "Description": "",
+     "Id": 125859,
+     "ImageUrl": "https://cdn-recruiter.hr-manager.net/Export/Attachments/ViewAdvertisementImage.ashx?AdvertisementId=125859&cid=3010",
+     "ImageUrlSecure": "https://cdn-recruiter.hr-manager.net/Export/Attachments/ViewAdvertisementImage.ashx?AdvertisementId=125859&cid=3010",
+     "Introduction": "",
+     "LastUpdated": "/Date(1791200805000+0200)/",
+     "Video": {
+      "Embed": "",
+      "Url": null
+     }
+    }
+   ],
+   "ApplicationDue": "/Date(1792447199000+0200)/",
+   "ApplicationFormUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170174&DepartmentId=19152&MediaId=5&SkipAdvertisement=true",
+   "ApplicationFormUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170174&DepartmentId=19152&MediaId=5&SkipAdvertisement=true",
+   "Created": "/Date(1790770529000+0200)/",
+   "CustomList1": {
+    "DeepPositionCount": 1,
+    "Id": 18790,
+    "Name": "Sydjylland",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList10MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18805,
+     "Name": "Nej",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList10TreeMultiSelection": [],
+   "CustomList11MultiSelection": [],
+   "CustomList11TreeMultiSelection": [],
+   "CustomList12MultiSelection": [],
+   "CustomList12TreeMultiSelection": [],
+   "CustomList13MultiSelection": [],
+   "CustomList13TreeMultiSelection": [],
+   "CustomList14MultiSelection": [],
+   "CustomList14TreeMultiSelection": [],
+   "CustomList15MultiSelection": [],
+   "CustomList15TreeMultiSelection": [],
+   "CustomList1MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18790,
+     "Name": "Sydjylland",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList1Tree": {
+    "DeepPositionCount": 1,
+    "Id": 18790,
+    "Name": "Sydjylland",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList1TreeMultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18790,
+     "Name": "Sydjylland",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList2": {
+    "DeepPositionCount": 1,
+    "Id": 18872,
+    "Name": "Administrativt arbejde",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList2MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18872,
+     "Name": "Administrativt arbejde",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList2Tree": {
+    "DeepPositionCount": 1,
+    "Id": 18872,
+    "Name": "Administrativt arbejde",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList2TreeMultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18872,
+     "Name": "Administrativt arbejde",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList3": {
+    "DeepPositionCount": 1,
+    "Id": 18804,
+    "Name": "Ja",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList3MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18804,
+     "Name": "Ja",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList3Tree": {
+    "DeepPositionCount": 1,
+    "Id": 18804,
+    "Name": "Ja",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList3TreeMultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18804,
+     "Name": "Ja",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList4MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 21362,
+     "Name": "Fængselskreds Vest",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList4TreeMultiSelection": [],
+   "CustomList5MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 22690,
+     "Name": "Genbesættelse",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList5TreeMultiSelection": [],
+   "CustomList6MultiSelection": [],
+   "CustomList6TreeMultiSelection": []
+  },
+  {
+   "CustomerAlias": "statensrekrutteringsloesning_tr",
+   "CustomerName": "Statens Rekrutteringsløsning",
+   "TransactionStatus": {
+    "Description": "The operation completed successfully.",
+    "StatusCode": 0
+   },
+   "AdvertisementUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169065&DepartmentId=19028&MediaId=5",
+   "AdvertisementUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169065&DepartmentId=19028&MediaId=5",
+   "Advertisements": [
+    {
+     "Content": "<p style=\"text-align: justify;\"><em>Har du teknisk forståelse og gode kommunikationsevner? Vil du gerne arbejde med administrative opgaver tæt på en direktion med ambitioner? Så er det måske dig, vi søger til en nyoprettet stilling i Kontoret for Ledelse, Kommunikation og Jura.</em></p>\r\n\r\n<p style=",
+     "Created": "/Date(1791290473000+0200)/",
+     "Description": "",
+     "Id": 126261,
+     "ImageUrl": null,
+     "ImageUrlSecure": null,
+     "Introduction": "",
+     "LastUpdated": null,
+     "Video": {
+      "Embed": "",
+      "Url": null
+     }
+    }
+   ],
+   "ApplicationDue": "/Date(1792533599000+0200)/",
+   "ApplicationFormUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169065&DepartmentId=19028&MediaId=5&SkipAdvertisement=true",
+   "ApplicationFormUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169065&DepartmentId=19028&MediaId=5&SkipAdvertisement=true",
+   "Created": "/Date(1789390738000+0200)/",
+   "CustomList1": null,
+   "CustomList10MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 19769,
+     "Name": "0",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList10TreeMultiSelection": [],
+   "CustomList11MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 19612,
+     "Name": "1",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList11TreeMultiSelection": [],
+   "CustomList12MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 22858,
+     "Name": "Tjenestebrug",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList12TreeMultiSelection": [],
+   "CustomList13MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18805,
+     "Name": "Nej",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList13TreeMultiSelection": [],
+   "CustomList14MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18804,
+     "Name": "Ja",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList14TreeMultiSelection": [],
+   "CustomList15MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 19945,
+     "Name": "Ikke relevant",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList15TreeMultiSelection": [],
+   "CustomList1MultiSelection": [],
+   "CustomList1Tree": null,
+   "CustomList1TreeMultiSelection": [],
+   "CustomList2": null,
+   "CustomList2MultiSelection": [],
+   "CustomList2Tree": null,
+   "CustomList2TreeMultiSelection": [],
+   "CustomList3": null,
+   "CustomList3MultiSelection": [],
+   "CustomList3Tree": null,
+   "CustomList3TreeMultiSelection": [],
+   "CustomList4MultiSelection": [],
+   "CustomList4TreeMultiSelection": [],
+   "CustomList5MultiSelection": [],
+   "CustomList5TreeMultiSelection": [],
+   "CustomList6MultiSelection": [],
+   "CustomList6TreeMultiSelection": []
+  },
+  {
+   "CustomerAlias": "statensrekrutteringsloesning_tr",
+   "CustomerName": "Statens Rekrutteringsløsning",
+   "TransactionStatus": {
+    "Description": "The operation completed successfully.",
+    "StatusCode": 0
+   },
+   "AdvertisementUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169750&DepartmentId=19117&MediaId=5",
+   "AdvertisementUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169750&DepartmentId=19117&MediaId=5",
+   "Advertisements": [
+    {
+     "Content": "<p><em>Har du lyst til at være en del af et stærkt fagligt miljø, hvor vi støtter de virksomheder, som vil investere i fremtidens miljøteknologiske løsninger? Så er det måske dig, der skal være vores nye kollega i kontoret for Internationalt Samarbejde og Bæredygtig udvikling.</em></p>\r\n\r\n<p>Miljøst",
+     "Created": "/Date(1790243371000+0200)/",
+     "Description": "",
+     "Id": 125480,
+     "ImageUrl": "https://cdn-recruiter.hr-manager.net/Export/Attachments/ViewAdvertisementImage.ashx?AdvertisementId=125480&cid=3010",
+     "ImageUrlSecure": "https://cdn-recruiter.hr-manager.net/Export/Attachments/ViewAdvertisementImage.ashx?AdvertisementId=125480&cid=3010",
+     "Introduction": "",
+     "LastUpdated": "/Date(1790243784000+0200)/",
+     "Video": {
+      "Embed": "",
+      "Url": null
+     }
+    }
+   ],
+   "ApplicationDue": "/Date(1792360740000+0200)/",
+   "ApplicationFormUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169750&DepartmentId=19117&MediaId=5&SkipAdvertisement=true",
+   "ApplicationFormUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169750&DepartmentId=19117&MediaId=5&SkipAdvertisement=true",
+   "Created": "/Date(1790239826000+0200)/",
+   "CustomList1": null,
+   "CustomList10MultiSelection": [],
+   "CustomList10TreeMultiSelection": [],
+   "CustomList11MultiSelection": [],
+   "CustomList11TreeMultiSelection": [],
+   "CustomList12MultiSelection": [],
+   "CustomList12TreeMultiSelection": [],
+   "CustomList13MultiSelection": [],
+   "CustomList13TreeMultiSelection": [],
+   "CustomList14MultiSelection": [],
+   "CustomList14TreeMultiSelection": [],
+   "CustomList15MultiSelection": [],
+   "CustomList15TreeMultiSelection": [],
+   "CustomList1MultiSelection": [],
+   "CustomList1Tree": null,
+   "CustomList1TreeMultiSelection": [],
+   "CustomList2": null,
+   "CustomList2MultiSelection": [],
+   "CustomList2Tree": null,
+   "CustomList2TreeMultiSelection": [],
+   "CustomList3": {
+    "DeepPositionCount": 1,
+    "Id": 18805,
+    "Name": "Nej",
+    "PositionCount": 1,
+    "SubItems": []
+   },
+   "CustomList3MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18805,
+     "Name": "Nej",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList3Tree": null,
+   "CustomList3TreeMultiSelection": [],
+   "CustomList4MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 18805,
+     "Name": "Nej",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList4TreeMultiSelection": [],
+   "CustomList5MultiSelection": [
+    {
+     "DeepPositionCount": 1,
+     "Id": 19671,
+     "Name": "Nej",
+     "PositionCount": 1,
+     "SubItems": []
+    }
+   ],
+   "CustomList5TreeMultiSelection": [],
+   "CustomList6MultiSelection": [],
+   "CustomList6TreeMultiSelection": []
+  },
+  {
+   "CustomerAlias": "statensrekrutteringsloesning_tr",
+   "CustomerName": "Statens Rekrutteringsløsning",
+   "TransactionStatus": {
+    "Description": "The operation completed successfully.",
+    "StatusCode": 0
+   },
+   "AdvertisementUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170170&DepartmentId=19927&MediaId=5",
+   "AdvertisementUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170170&DepartmentId=19927&MediaId=5",
+   "Advertisements": [
+    {
+     "Content": "<p><span style=\"color:#333333\">Teleinfrastrukturen er en forudsætning for, at samfundet fungerer – fra alarmopkald og beredskab til virksomheder og borgere. Vil du være med til at styrke sikkerheden og robustheden i den danske telesektor? Som administrativ medarbejder i Telekontoret i Styrelsen for ",
+     "Created": "/Date(1790770199000+0200)/",
+     "Description": "",
+     "Id": 125858,
+     "ImageUrl": "https://cdn-recruiter.hr-manager.net/Export/Attachments/ViewAdvertisementImage.ashx?AdvertisementId=125858&cid=3010",
+     "ImageUrlSecure": "https://cdn-recruiter.hr-manager.net/Export/Attachments/ViewAdvertisementImage.ashx?AdvertisementId=125858&cid=3010",
+     "Introduction": "",
+     "LastUpdated": "/Date(1790771007000+0200)/",
+     "Video": {
+      "Embed": "",
+      "Url": null
+     }
+    }
+   ],
+   "ApplicationDue": "/Date(1792360799000+0200)/",
+   "ApplicationFormUrl": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170170&DepartmentId=19927&MediaId=5&SkipAdvertisement=true",
+   "ApplicationFormUrlSecure": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170170&DepartmentId=19927&MediaId=5&SkipAdvertisement=true",
+   "Created": "/Date(1790770000000+0200)/",
+   "CustomList1": null,
+   "CustomList10MultiSelection": [],
+   "CustomList10TreeMultiSelection": [],
+   "CustomList11MultiSelection": [],
+   "CustomList11TreeMultiSelection": [],
+   "CustomList12MultiSelection": [],
+   "CustomList12TreeMultiSelection": [],
+   "CustomList13MultiSelection": [],
+   "CustomList13TreeMultiSelection": [],
+   "CustomList14MultiSelection": [],
+   "CustomList14TreeMultiSelection": [],
+   "CustomList15MultiSelection": [],
+   "CustomList15TreeMultiSelection": [],
+   "CustomList1MultiSelection": [],
+   "CustomList1Tree": null,
+   "CustomList1TreeMultiSelection": [],
+   "CustomList2": null,
+   "CustomList2MultiSelection": [],
+   "CustomList2Tree": null,
+   "CustomList2TreeMultiSelection": [],
+   "CustomList3": null,
+   "CustomList3MultiSelection": [],
+   "CustomList3Tree": null,
+   "CustomList3TreeMultiSelection": [],
+   "CustomList4MultiSelection": [],
+   "CustomList4TreeMultiSelection": [],
+   "CustomList5MultiSelection": [],
+   "CustomList5TreeMultiSelection": [],
+   "CustomList6MultiSelection": [],
+   "CustomList6TreeMultiSelection": []
+  },
+  "... +19"
+ ],
+ "PositionCountCustomer": 423,
+ "PositionCountList": 25,
+ "PositionCountSearch": 423,
+ "PositionCountSkipped": 0
+}

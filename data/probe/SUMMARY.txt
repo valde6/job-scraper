@@ -1,5 +1,4 @@
-01 GREP 36 | GREP https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170544&DepartmentId=19781&MediaId=5107 (?i)customer[=:"' ]+[\w.-]+|jobportal[\w./-]*|hr-manager\.net/[\w./?=&-]{0,80}|<title>[^<]*
-02 GREP 16 | GREP https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-en-studentermedarbejder-til-analyse-datavisualisering-og-power/z9aebv (?i)https?://[\w.-]*emply[\w./?=&-]{0,100}|/api/[\w./?=&-]{0,100}|rss[\w./?=&-]{0,60}|application/ld\+json
-03 RAW 200 120484B | RAW https://aeldresagen.career.emply.com/ 6000
-04 RAW 200 248B | RAW https://aeldresagen.career.emply.com/sitemap.xml 4000
-05 RAW 200 23B | RAW https://aeldresagen.career.emply.com/robots.txt 2000
+01 200 331501B | GET https://api.hr-manager.net/jobportal.svc/statensrekrutteringsloesning_tr/positionlist/json/?incads=1
+02 GREP 0 | GREP https://api.hr-manager.net/jobportal.svc/statensrekrutteringsloesning_tr/positionlist/json/?incads=1 (?i)"(?:Name|Title)":"[^"]*(?:student|studie)[^"]*"
+03 GREP 0 | GREP https://aeldresagen.career.emply.com/ledige-stillinger /ad/[\w-]+/[a-z0-9]{6}
+04 GREP 0 | GREP https://kp.career.emply.com/ledige-stillinger /ad/[\w-]+/[a-z0-9]{6}
