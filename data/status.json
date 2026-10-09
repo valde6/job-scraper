@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T10:33:43+00:00",
+ "updated": "2026-10-09T18:21:36+00:00",
  "companies": [
   {
    "company": "Novo Nordisk",
@@ -8,16 +8,16 @@
    "ok": true,
    "listed": 3,
    "matched": 1,
-   "seconds": 2.7
+   "seconds": 2.0
   },
   {
    "company": "A.P. Møller - Mærsk",
    "rank": 2,
    "source": "workday",
    "ok": true,
-   "listed": 407,
+   "listed": 406,
    "matched": 2,
-   "seconds": 21.6
+   "seconds": 19.1
   },
   {
    "company": "McKinsey & Company",
@@ -33,7 +33,7 @@
    "ok": true,
    "listed": 66,
    "matched": 6,
-   "seconds": 16.3
+   "seconds": 12.2
   },
   {
    "company": "Danske Bank",
@@ -42,16 +42,16 @@
    "ok": true,
    "listed": 8,
    "matched": 3,
-   "seconds": 6.0
+   "seconds": 2.2
   },
   {
    "company": "Deloitte",
    "rank": 6,
    "source": "smartrecruiters",
    "ok": true,
-   "listed": 32,
+   "listed": 33,
    "matched": 3,
-   "seconds": 2.0
+   "seconds": 1.7
   },
   {
    "company": "PwC",
@@ -60,7 +60,7 @@
    "ok": true,
    "listed": 14,
    "matched": 3,
-   "seconds": 10.8
+   "seconds": 9.0
   },
   {
    "company": "Carlsberg",
@@ -76,7 +76,7 @@
    "ok": true,
    "listed": 4,
    "matched": 0,
-   "seconds": 0.4
+   "seconds": 0.6
   },
   {
    "company": "Nordea",
@@ -101,7 +101,7 @@
    "ok": true,
    "listed": 0,
    "matched": 0,
-   "seconds": 2.6
+   "seconds": 1.6
   },
   {
    "company": "Jyske Bank",
@@ -115,9 +115,9 @@
    "rank": 14,
    "source": "browser",
    "ok": true,
-   "listed": 59,
+   "listed": 61,
    "matched": 2,
-   "seconds": 24.6
+   "seconds": 23.7
   },
   {
    "company": "Bestseller",
@@ -147,7 +147,7 @@
    "ok": true,
    "listed": 5,
    "matched": 0,
-   "seconds": 3.2
+   "seconds": 1.9
   },
   {
    "company": "Implement",
@@ -163,7 +163,7 @@
    "ok": true,
    "listed": 21,
    "matched": 0,
-   "seconds": 5.1
+   "seconds": 4.3
   },
   {
    "company": "Finansministeriet",
@@ -193,7 +193,7 @@
    "ok": true,
    "listed": 10,
    "matched": 0,
-   "seconds": 34.1
+   "seconds": 26.0
   },
   {
    "company": "Udenrigsministeriet",
@@ -216,7 +216,7 @@
    "ok": true,
    "listed": 6,
    "matched": 1,
-   "seconds": 0.7
+   "seconds": 0.6
   },
   {
    "company": "Nordnet",
@@ -230,9 +230,9 @@
    "rank": 29,
    "source": "browser",
    "ok": true,
-   "listed": 55,
+   "listed": 53,
    "matched": 0,
-   "seconds": 8.0
+   "seconds": 7.7
   },
   {
    "company": "KPMG",
@@ -241,7 +241,7 @@
    "ok": true,
    "listed": 17,
    "matched": 0,
-   "seconds": 1.5
+   "seconds": 1.1
   },
   {
    "company": "Matas",
@@ -262,7 +262,7 @@
    "rank": 33,
    "source": "smartrecruiters",
    "ok": true,
-   "listed": 13,
+   "listed": 14,
    "matched": 0,
    "seconds": 0.4
   },
@@ -280,7 +280,7 @@
    "ok": true,
    "listed": 3,
    "matched": 0,
-   "seconds": 0.7
+   "seconds": 0.6
   },
   {
    "company": "Netcompany",
@@ -289,16 +289,16 @@
    "ok": true,
    "listed": 32,
    "matched": 3,
-   "seconds": 1.9
+   "seconds": 1.6
   },
   {
    "company": "PFA Pension",
    "rank": 37,
    "source": "browser",
    "ok": true,
-   "listed": 5,
+   "listed": 6,
    "matched": 1,
-   "seconds": 17.6
+   "seconds": 15.9
   },
   {
    "company": "SAS",
@@ -314,7 +314,7 @@
    "ok": true,
    "listed": 7,
    "matched": 0,
-   "seconds": 0.5
+   "seconds": 0.6
   },
   {
    "company": "Beierholm",
@@ -344,7 +344,7 @@
    "ok": true,
    "listed": 30,
    "matched": 0,
-   "seconds": 1.1
+   "seconds": 0.7
   },
   {
    "company": "Statsministeriet",
@@ -360,16 +360,16 @@
    "ok": true,
    "listed": 2,
    "matched": 2,
-   "seconds": 13.4
+   "seconds": 14.1
   },
   {
    "company": "Danmarks Radio",
    "rank": 46,
    "source": "hrmanager",
    "ok": true,
-   "listed": 19,
+   "listed": 20,
    "matched": 1,
-   "seconds": 0.6
+   "seconds": 0.4
   },
   {
    "company": "DSV",
@@ -392,28 +392,28 @@
    "ok": true,
    "listed": 85,
    "matched": 0,
-   "seconds": 0.5
+   "seconds": 0.4
   },
   {
    "company": "Novonesis",
    "rank": 50,
    "source": "workday",
    "ok": true,
-   "listed": 55,
-   "matched": 3,
-   "seconds": 7.3
+   "listed": 57,
+   "matched": 4,
+   "seconds": 7.2
   },
   {
    "company": "(Jobindex RSS)",
    "source": "jobindex",
    "ok": true,
-   "listed": 391,
-   "matched": 32,
+   "listed": 394,
+   "matched": 30,
    "fit": {
-    "sikker": 28,
+    "sikker": 27,
     "sandsynlig": 2,
-    "mulig": 2,
-    "body_fetch": 17
+    "mulig": 1,
+    "body_fetch": 21
    }
   }
  ]
