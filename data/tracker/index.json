@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-10T00:51:32+00:00",
+ "updated": "2026-10-10T09:50:59+00:00",
  "run": {
-  "updated": "2026-10-10T00:51:32+00:00",
+  "updated": "2026-10-10T09:50:59+00:00",
   "active_count": 99,
   "sources_ok": 26,
   "sources_total": 50,
@@ -9,7 +9,7 @@
  },
  "jobs": [
   {
-   "id": "9e617494657c",
+   "id": "70655d39d2f2",
    "active": true,
    "company": "PFA Pension",
    "title": "Studentermedhjælper til CRM, Marketing Automation og Kundedialog",
@@ -1514,6 +1514,11 @@
    "deadline": "",
    "tags": [],
    "excerpt": ""
+  },
+  {
+   "id": "9e617494657c",
+   "active": false,
+   "deadline": "2026-10-15"
   },
   {
    "id": "5e7e4ffaadd0",
