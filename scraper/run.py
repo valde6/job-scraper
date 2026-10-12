@@ -25,6 +25,42 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 
 
+SOURCE_TIMEOUT = 300   # sekunder pr. kilde, så én hængende side ikke stopper hele kørslen
+
+
+class SourceTimeout(Exception):
+    pass
+
+
+def _with_timeout(fn, seconds):
+    """Kører fn() med en hård tidsgrænse (SIGALRM, kun Linux/macOS hovedtråd)."""
+    import signal
+    if not hasattr(signal, "SIGALRM"):
+        return fn()
+
+    def _raise(*_):
+        raise SourceTimeout(f"over {seconds} s")
+    old = signal.signal(signal.SIGALRM, _raise)
+    signal.alarm(seconds)
+    try:
+        return fn()
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, old)
+
+
+def suspicious(listed: int, prev_listed: int | None) -> str | None:
+    """En kilde der svarer 'ok' men pludselig viser 0 eller langt færre opslag er sandsynligvis gået i stykker
+    (ny side-struktur, bot-mur). Så må vi ikke markere dens job som lukkede."""
+    if not prev_listed:
+        return None
+    if listed == 0:
+        return f"0 opslag (sidst {prev_listed})"
+    if prev_listed >= 10 and listed < 0.3 * prev_listed:
+        return f"fald fra {prev_listed} til {listed} opslag"
+    return None
+
+
 def norm_title(t: str) -> str:
     return re.sub(r"[^a-z0-9æøå]+", " ", t.lower()).strip()
 
@@ -43,6 +79,10 @@ def main():
     if (DATA / "jobs.json").exists():
         old = {j["id"]: j for j in json.loads((DATA / "jobs.json").read_text())["jobs"]}
 
+    prev_status = {}
+    if (DATA / "status.json").exists():
+        prev_status = {c["company"]: c for c in json.loads((DATA / "status.json").read_text())["companies"]}
+
     found, status, ok_companies = [], [], set()
     for c in companies:
         if args.only and c["name"] not in args.only:
@@ -56,12 +96,20 @@ def main():
             status.append(entry)
             continue
         try:
-            listed, jobs = ADAPTERS[typ]({**src, "name": c["name"]})
+            listed, jobs = _with_timeout(lambda: ADAPTERS[typ]({**src, "name": c["name"]}), SOURCE_TIMEOUT)
             found += jobs
-            ok_companies.add(c["name"])
             entry.update(ok=True, listed=listed, matched=len(jobs))
+            prev = prev_status.get(c["name"], {})
+            sus = suspicious(listed, prev.get("listed") or prev.get("last_good_listed"))
+            if sus:
+                entry["suspect"] = sus                 # behold de gamle job som aktive
+                entry["last_good_listed"] = prev.get("listed") or prev.get("last_good_listed")
+            else:
+                ok_companies.add(c["name"])
         except Exception as e:  # noqa: BLE001
             entry.update(ok=False, error=f"{type(e).__name__}: {str(e)[:300]}")
+            pv = prev_status.get(c["name"], {})
+            entry["last_good_listed"] = pv.get("listed") or pv.get("last_good_listed")
             traceback.print_exc(file=sys.stderr)
         entry["seconds"] = round(time.time() - t0, 1)
         print(f"{c['name']:<32} {typ:<15} {entry.get('ok')} {entry.get('listed', '')} {entry.get('matched', '')} {entry.get('error', '')}")
@@ -123,6 +171,11 @@ def main():
         if not prev.get("active") and prev.get("last_seen", now) < cutoff_60:
             continue                 # ryd gamle, lukkede job ud af datafilen
         current[jid] = prev
+
+    if not args.only and old and not found:
+        print("STOP: ingen job fundet i dag fra nogen kilde – beholder gårsdagens data uændret.", file=sys.stderr)
+        (DATA / "status.json").write_text(json.dumps({"updated": now, "companies": status}, ensure_ascii=False, indent=1))
+        sys.exit(2)
 
     jobs_out = sorted(current.values(), key=lambda j: (not j["active"], j["first_seen"]), reverse=False)
     jobs_out.sort(key=lambda j: (j["active"], j["first_seen"]), reverse=True)

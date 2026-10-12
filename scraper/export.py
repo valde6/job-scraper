@@ -35,6 +35,36 @@ def to_platform_job(j: dict, ranks: dict) -> dict:
     return out
 
 
+REQUIRED = {"id": str, "company": str, "title": str, "url": str, "active": bool, "origin": str, "fit": str,
+            "tags": list, "top50": bool, "description_md": str}
+DATE_FIELDS = ("deadline", "posted")
+
+
+def validate_payload(payload: dict) -> list[str]:
+    """Kontrakttjek af eksporten. Returnerer en liste af fejl (tom = gyldig)."""
+    import re
+    errs = []
+    if payload.get("schema_version") != SCHEMA_VERSION:
+        errs.append("forkert schema_version")
+    ids = set()
+    for i, j in enumerate(payload.get("jobs", [])):
+        where = f"job[{i}] {j.get('id')}"
+        for k, t in REQUIRED.items():
+            if not isinstance(j.get(k), t):
+                errs.append(f"{where}: {k} skal være {t.__name__}")
+        if not j.get("title", "").strip() or not str(j.get("url", "")).startswith("http"):
+            errs.append(f"{where}: mangler titel eller gyldig url")
+        for k in DATE_FIELDS:
+            if j.get(k) is not None and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(j[k])):
+                errs.append(f"{where}: {k}={j[k]!r} er ikke en dato")
+        if j.get("fit") not in ("sikker", "sandsynlig", "mulig"):
+            errs.append(f"{where}: ukendt fit {j.get('fit')!r}")
+        if j.get("id") in ids:
+            errs.append(f"{where}: dubleret id")
+        ids.add(j.get("id"))
+    return errs[:50]
+
+
 def export_platform(jobs_out: list[dict], status: list[dict], companies: list[dict], now: str) -> dict:
     ranks = {c["name"]: c.get("rank") for c in companies}
     OUT.mkdir(parents=True, exist_ok=True)
@@ -44,6 +74,10 @@ def export_platform(jobs_out: list[dict], status: list[dict], companies: list[di
     payload = {"schema_version": SCHEMA_VERSION, "generated_at": now,
                "counts": {"total": len(jobs), "active": sum(j["active"] for j in jobs)},
                "jobs": jobs}
+    errs = validate_payload(payload)
+    if errs:
+        (OUT / "jobs.invalid.json").write_text(json.dumps({"errors": errs, **payload}, ensure_ascii=False))
+        raise ValueError("Platform-eksporten er ugyldig og blev IKKE skrevet: " + "; ".join(errs[:5]))
     (OUT / "jobs.json").write_text(json.dumps(payload, ensure_ascii=False))
     (OUT / "sources.json").write_text(json.dumps({"generated_at": now, "sources": sources}, ensure_ascii=False, indent=1))
     return payload

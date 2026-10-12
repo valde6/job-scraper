@@ -1,0 +1,43 @@
+name: record-fixtures
+
+# Optager rigtige HTTP-svar til tests/fixtures (én virksomhed pr. adapter-type, eller én bestemt).
+# Kør manuelt fra Actions-fanen, eller skriv et virksomhedsnavn i triggers/record og push.
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Kun én virksomhed (navn som i companies.yaml) – tom = én pr. type"
+        required: false
+        default: ""
+  push:
+    paths: ["triggers/record"]
+
+permissions:
+  contents: write
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt -r requirements-dev.txt
+      - name: Optag
+        run: |
+          ONLY="${{ inputs.only }}"
+          if [ "${{ github.event_name }}" = "push" ] && [ -f triggers/record ]; then ONLY="$(grep -v '^#' triggers/record | head -1 || true)"; fi
+          if [ -n "$ONLY" ]; then python -m scraper.record --only "$ONLY"; else python -m scraper.record; fi
+      - name: Afspil og test
+        run: python -m pytest -q tests/test_adapters_replay.py
+      - name: Commit fixtures
+        if: always()
+        run: |
+          git config user.name "job-scraper-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add tests/fixtures
+          git diff --cached --quiet || git commit -m "Fixtures optaget $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase --autostash && git push

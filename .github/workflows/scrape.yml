@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: scrape
@@ -44,6 +45,25 @@ jobs:
             python -m scraper.run --only "$ONLY" 2>&1 | tee data/last_run.log
           else
             python -m scraper.run 2>&1 | tee data/last_run.log
+          fi
+      - name: Sundhedstjek
+        if: always()
+        run: python -m scraper.health
+      - name: Alarm som GitHub-issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          NUM=$(gh issue list --label scraper-health --state open --json number -q '.[0].number' 2>/dev/null || true)
+          if [ -f data/health/alert.md ]; then
+            gh label create scraper-health --color D93F0B --description "Automatisk alarm fra scraperen" --force >/dev/null 2>&1 || true
+            if [ -z "$NUM" ]; then
+              gh issue create --title "Scraper-sundhed: kilder fejler" --label scraper-health --body-file data/health/alert.md
+            elif [ -f data/health/alert_changed ]; then
+              gh issue comment "$NUM" --body-file data/health/alert.md
+            fi
+          elif [ -n "$NUM" ]; then
+            gh issue close "$NUM" --comment "Alle kilder er sunde igen ($(date -u +%FT%RZ))."
           fi
       - name: Commit results
         if: always()

@@ -21,7 +21,52 @@ _session = requests.Session()
 _session.headers.update({"User-Agent": UA, "Accept-Language": "da,en;q=0.8"})
 
 
+# ---------------------------------------------------------------- optag / afspil HTTP
+# SCRAPER_RECORD=<mappe>  gemmer alle svar (bruges til test-fixtures)
+# SCRAPER_REPLAY=<mappe>  svarer fra gemte filer uden netværk (bruges i tests)
+def _req_key(method: str, url: str, kw: dict) -> str:
+    body = kw.get("json") if kw.get("json") is not None else kw.get("data")
+    raw = json.dumps([method.upper(), url, sorted((kw.get("params") or {}).items()), body], sort_keys=True,
+                     ensure_ascii=False, default=str)
+    return hashlib.sha1(raw.encode()).hexdigest()[:16]
+
+
+def _fixture_dir(env: str):
+    import os
+    from pathlib import Path
+    d = os.environ.get(env)
+    return Path(d) if d else None
+
+
+def _save_fixture(d, key: str, method: str, url: str, r: requests.Response) -> None:
+    import gzip
+    d.mkdir(parents=True, exist_ok=True)
+    rec = {"method": method, "url": url, "final_url": r.url, "status": r.status_code,
+           "content_type": r.headers.get("content-type", ""), "text": r.text}
+    (d / f"{key}.json.gz").write_bytes(gzip.compress(json.dumps(rec, ensure_ascii=False).encode()))
+
+
+def _load_fixture(d, key: str, method: str, url: str) -> requests.Response:
+    import gzip
+    f = d / f"{key}.json.gz"
+    if not f.exists():
+        raise requests.ConnectionError(f"REPLAY: intet gemt svar for {method} {url} ({key})")
+    rec = json.loads(gzip.decompress(f.read_bytes()))
+    r = requests.Response()
+    r.status_code, r.url, r.encoding = rec["status"], rec.get("final_url") or url, "utf-8"
+    r._content = rec["text"].encode("utf-8")
+    r.headers["content-type"] = rec.get("content_type", "")
+    return r
+
+
 def http(method: str, url: str, *, retries: int = 2, **kw) -> requests.Response:
+    replay = _fixture_dir("SCRAPER_REPLAY")
+    if replay:
+        r = _load_fixture(replay, _req_key(method, url, kw), method, url)
+        r.raise_for_status()
+        return r
+    record = _fixture_dir("SCRAPER_RECORD")
+    key = _req_key(method, url, kw) if record else ""
     kw.setdefault("timeout", 25)
     last = None
     for attempt in range(retries + 1):
@@ -31,6 +76,8 @@ def http(method: str, url: str, *, retries: int = 2, **kw) -> requests.Response:
                 time.sleep(2 + attempt * 3)
                 continue
             r.raise_for_status()
+            if record:
+                _save_fixture(record, key, method, url, r)
             return r
         except requests.RequestException as e:  # noqa: PERF203
             last = e
@@ -51,6 +98,7 @@ def post(url: str, **kw) -> requests.Response:
 def html_to_md(html: str | None) -> str:
     if not html:
         return ""
+    html = re.sub(r"<(script|style|noscript)\b.*?</\1\s*>", " ", html, flags=re.S | re.I)
     html = re.sub(r"&#x[aA];|&#10;", "\n", html)
     md = markdownify(html, heading_style="ATX", strip=["img", "script", "style"])
     md = re.sub(r"\n{3,}", "\n\n", md)
@@ -146,6 +194,8 @@ STUDY_SIGNAL_RE = re.compile(
     r"alongside\s+your\s+(?:studies|degree|education)|while\s+(?:you\s+are\s+)?(?:studying|completing\s+your)|"
     r"(?:du|you)\s+(?:er|are)\s+(?:i\s+gang\s+med|currently\s+(?:enrolled|studying|pursuing))|"
     r"igangværende\s+(?:videregående\s+)?uddannelse|currently\s+enrolled|"
+    r"\b(?:du|you)\s+(?:læser|studerer|study|are\s+studying)\s+(?:på\s+|en\s+|til\s+|a\s+)?(?:relevant\s+)?"
+    r"(?:bachelor|kandidat|cand\.|ha\b|hd\b|universit|videregående|master)|"
     r"(?:fleksib|hensyn)[^.]{0,60}(?:eksamen|eksamens|exam)",
     re.I,
 )
@@ -199,7 +249,7 @@ TOPICS = {
     "SQL": r"\bsql\b|t-sql|postgres|snowflake|bigquery|databricks",
     "Automatisering": r"automati|\brpa\b|power automate|snaplogic|integration|workflow",
     "AI": r"\bai\b|kunstig intelligens|artificial intelligence|machine learning|\bml\b|genai|llm|ai-agent|copilot",
-    "Proces": r"procesoptim|procesudvikl|procesforbedr|process excellence|process improvement|process optimi|continuous improvement|\\blean\\b|optimering|optimi[sz]ation|operations research",
+    "Proces": r"procesoptim|procesudvikl|procesforbedr|process excellence|process improvement|process optimi|continuous improvement|\blean\b|optimering|optimi[sz]ation|operations research",
     "Digitalisering": r"digitali|it[- ]udvikling|it development|requirements|kravindsamling|kravspec|validering|kvalitetssikring",
     "Portfolio & investering": r"porteføl|portfolio management|portfolio analy|asset management|kapitalforvaltning|investment (?:management|analy|team|banking)|investering|fixed income|equities|trading|pension fund",
     "Finans": r"business finance|finance|finans|risk|risiko|controlling|controller|treasury|økonomi|accounting|regnskab|valuation",
