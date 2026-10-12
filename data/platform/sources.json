@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-12T10:49:44+00:00",
+ "generated_at": "2026-10-12T15:49:30+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -45,7 +45,7 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 33,
+   "listed": 34,
    "matched": 3,
    "error": null
   },
@@ -229,7 +229,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 47,
+   "listed": 48,
    "matched": 0,
    "error": null
   },
@@ -237,8 +237,8 @@
    "name": "KPMG",
    "type": "hrmanager",
    "ok": true,
-   "listed": 17,
-   "matched": 0,
+   "listed": 18,
+   "matched": 1,
    "error": null
   },
   {
@@ -261,7 +261,7 @@
    "name": "PA Consulting Group",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 14,
+   "listed": 13,
    "matched": 0,
    "error": null
   },
@@ -293,7 +293,7 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 6,
+   "listed": 7,
    "matched": 1,
    "error": null
   },
@@ -341,7 +341,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 27,
+   "listed": 28,
    "matched": 0,
    "error": null
   },
@@ -389,7 +389,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 94,
+   "listed": 97,
    "matched": 0,
    "error": null
   },
@@ -405,8 +405,8 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 377,
-   "matched": 33,
+   "listed": 383,
+   "matched": 32,
    "error": null
   }
  ]
