@@ -66,3 +66,10 @@ def test_job_id_is_stable():
     a = Job(company="LEGO Group", title="Student", url="https://x/1", external_id="123")
     b = Job(company="lego group", title="Andet navn", url="https://x/2", external_id="123")
     assert a.id == b.id and len(a.id) == 12
+
+
+def test_html_to_md_keeps_text_after_unclosed_br():
+    # regression: med html.parser blev alt efter <br><br> slugt (Workday-opslag mistede det meste af teksten)
+    html = "Intro<br><br>Mere tekst<p style='color:red'><span>You must be currently enrolled at a university</span></p>"
+    md = html_to_md(html)
+    assert "currently enrolled" in md and "Mere tekst" in md

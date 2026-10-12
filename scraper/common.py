@@ -10,7 +10,9 @@ from typing import Optional
 
 import requests
 from bs4 import BeautifulSoup
-from markdownify import markdownify
+from markdownify import MarkdownConverter
+
+_MD = MarkdownConverter(heading_style="ATX", strip=["img"])
 
 UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
@@ -96,11 +98,16 @@ def post(url: str, **kw) -> requests.Response:
 
 # ---------------------------------------------------------------- tekst
 def html_to_md(html: str | None) -> str:
+    """HTML → markdown. Parser = lxml: html.parser behandler <br> uden / som en beholder,
+    og så smider markdownify resten af teksten væk (fundet via Mærsk-fixture)."""
     if not html:
         return ""
-    html = re.sub(r"<(script|style|noscript)\b.*?</\1\s*>", " ", html, flags=re.S | re.I)
     html = re.sub(r"&#x[aA];|&#10;", "\n", html)
-    md = markdownify(html, heading_style="ATX", strip=["img", "script", "style"])
+    s = BeautifulSoup(html, "lxml")
+    for t in s(["script", "style", "noscript"]):
+        t.decompose()
+    md = _MD.convert_soup(s)
+    md = re.sub(r"[ \t]+\n", "\n", md)
     md = re.sub(r"\n{3,}", "\n\n", md)
     return md.strip()
 
