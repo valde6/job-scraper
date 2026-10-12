@@ -96,12 +96,13 @@ employers:
   lines:
   - ha-almen
   career_url: https://www.carlsberggroup.com/careers/
-  status: find-system
+  status: mangler-adapter
   source:
     type: none
   aliases:
   - Carlsberg Group
   - Carlsberg Danmark
+  note: SuccessFactors classic (carlsbergg) – kun få job
 - name: Boston Consulting Group (BCG)
   lines:
   - ha-almen
@@ -249,12 +250,17 @@ employers:
   lines:
   - ha-almen
   career_url: https://www.bang-olufsen.com/en/dk/story/careers
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: browser
+    urls:
+    - https://career5.successfactors.eu/career?company=bangolufse&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK
+    link_pattern: career_job_req_id=\d+
+    dk_only: false
   aliases:
   - B&O
   - Bang & Olufsen A/S
+  note: SuccessFactors classic via browser (fundet af discovery)
 - name: Danmarks Nationalbank
   lines:
   - ha-almen
@@ -291,11 +297,16 @@ employers:
   lines:
   - ha-almen
   career_url: https://pandoragroup.com/careers
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: browser
+    urls:
+    - https://career2.successfactors.eu/career?company=pandoraas&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK
+    link_pattern: career_job_req_id=\d+
+    dk_only: false
   aliases:
   - Pandora A/S
+  note: SuccessFactors classic via browser (fundet af discovery)
 - name: Dansk Industri
   lines:
   - ha-almen
@@ -360,11 +371,12 @@ employers:
   lines:
   - ha-almen
   career_url: https://www.matas.dk/job
-  status: find-system
+  status: mangler-adapter
   source:
     type: none
   aliases:
   - Matas A/S
+  note: Emply (matas.career.emply.com)
 - name: Salling Group
   lines:
   - ha-almen
@@ -460,11 +472,12 @@ employers:
   - ha-almen
   - ha-jura
   career_url: https://www.beierholm.dk/karriere/
-  status: find-system
+  status: mangler-adapter
   source:
     type: none
   aliases:
   - Beierholm Statsautoriseret Revisionspartnerselskab
+  note: Talentsoft (beierholm-career.talent-soft.com)
 - name: AL Sydbank
   lines:
   - ha-almen
@@ -553,11 +566,12 @@ employers:
   - ha-almen
   - ha-jura
   career_url: https://www.bdo.dk/da-dk/karriere
-  status: find-system
+  status: mangler-adapter
   source:
     type: none
   aliases:
   - BDO Statsautoriseret revisionsaktieselskab
+  note: Emply (bdo.career.emply.com)
 - name: Rambøll
   lines:
   - ha-almen
@@ -606,16 +620,19 @@ employers:
   lines:
   - ha-jura
   career_url: https://www.bechbruun.com/da/karriere
-  status: find-system
+  status: mangler-adapter
   source:
     type: none
+  note: Emply (bechbruun.career.emply.com)
 - name: Accura
   lines:
   - ha-jura
   career_url: https://accura.dk/karriere
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: hrmanager
+    customer: accura
+  note: HR-Manager (fundet af discovery)
 - name: Poul Schmith / Kammeradvokaten
   lines:
   - ha-jura
@@ -711,9 +728,10 @@ employers:
   - ha-almen
   - ha-it
   career_url: https://www.skm.dk/job
-  status: find-system
+  status: mangler-adapter
   source:
     type: none
+  note: Statens Rekrutteringsløsning
 - name: Erhvervsstyrelsen
   lines:
   - ha-jura
@@ -738,9 +756,10 @@ employers:
   - ha-jura
   - ha-almen
   career_url: https://www.kfst.dk/om-os/job
-  status: find-system
+  status: mangler-adapter
   source:
     type: none
+  note: Statens Rekrutteringsløsning (departmentid 18989)
 - name: Justitsministeriet
   lines:
   - ha-jura
@@ -773,10 +792,10 @@ employers:
   - ha-jura
   - ha-it
   career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=kk
-  status: find-system
+  status: mangler-adapter
   source:
     type: none
-  note: HR-Manager cid 1518 – find kunde-alias
+  note: HR-Manager (JobPortal-API på siden)
 - name: Frederiksberg Kommune
   lines:
   - ha-almen
@@ -795,8 +814,8 @@ employers:
   status: klar
   source:
     type: successfactors
-    url: https://careers.tryg.com
-  note: SuccessFactors – test
+    url: https://careers.tryg.com/Tryg
+  note: SuccessFactors – rettet til /Tryg 13/10
 - name: Alm. Brand Group
   lines:
   - ha-almen
@@ -899,17 +918,20 @@ employers:
   lines:
   - ha-it
   career_url: https://www.twoday.dk/karriere
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: teamtailor
+    url: https://twodaydenmark.teamtailor.com
+  note: Teamtailor (fundet af discovery)
 - name: Columbus
   lines:
   - ha-it
   - ha-almen
   career_url: https://www.columbusglobal.com/da/karriere
-  status: find-system
+  status: mangler-adapter
   source:
     type: none
+  note: Teamtailor (domæne ukendt)
 - name: Capgemini Danmark
   lines:
   - ha-it
@@ -922,9 +944,10 @@ employers:
   lines:
   - ha-it
   career_url: https://www.ibm.com/careers
-  status: find-system
+  status: mangler-adapter
   source:
     type: none
+  note: Avature
 - name: Devoteam
   lines:
   - ha-it
@@ -938,10 +961,10 @@ employers:
   - ha-it
   - ha-almen
   career_url: https://karriere.datalonprolon.dk/
-  status: find-system
+  status: mangler-adapter
   source:
     type: none
-  note: Set på Jobindex
+  note: Teamtailor (domæne ukendt)
 - name: Danske Spil
   lines:
   - ha-almen
@@ -977,9 +1000,10 @@ employers:
   - ha-jura
   - ha-it
   career_url: https://employment.ku.dk/
-  status: find-system
+  status: mangler-adapter
   source:
     type: none
+  note: Statens Rekrutteringsløsning (departmentid 19064)
 - name: CBS
   lines:
   - ha-almen
@@ -1003,10 +1027,14 @@ employers:
   - ha-almen
   - ha-it
   career_url: https://www.dsb.dk/om-dsb/job-i-dsb/
-  status: find-system
+  status: klar
   source:
-    type: none
-  note: Set på Jobindex
+    type: browser
+    urls:
+    - https://career5.successfactors.eu/career?company=C0000031828P&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK
+    link_pattern: career_job_req_id=\d+
+    dk_only: true
+  note: SuccessFactors classic via browser (fundet af discovery)
 - name: Movia
   lines:
   - ha-almen
@@ -1020,10 +1048,10 @@ employers:
   - ha-almen
   - ha-it
   career_url: https://www.hofor.dk/job
-  status: find-system
+  status: mangler-adapter
   source:
     type: none
-  note: HR-Manager cid 174 – find kunde-alias
+  note: HR-Manager (alias afkortet i discovery)
 - name: Svitzer
   lines:
   - ha-almen
@@ -1087,17 +1115,24 @@ employers:
   lines:
   - ha-almen
   career_url: https://www.royalunibrew.com/careers/
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: browser
+    urls:
+    - https://career2.successfactors.eu/career?company=royalunibr&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK
+    link_pattern: career_job_req_id=\d+
+    dk_only: false
+  note: SuccessFactors classic via browser (fundet af discovery)
 - name: GN Group
   lines:
   - ha-almen
   - ha-it
   career_url: https://www.gn.com/careers
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: workday
+    url: https://gn.wd3.myworkdayjobs.com/GN-Careers
+  note: Workday (fundet af discovery)
 - name: Coloplast
   lines:
   - ha-almen
@@ -1133,9 +1168,10 @@ employers:
   lines:
   - ha-almen
   career_url: https://www.issworld.com/careers
-  status: find-system
+  status: mangler-adapter
   source:
     type: none
+  note: SuccessFactors classic (firma-id ukendt)
 - name: Genmab
   lines:
   - ha-almen

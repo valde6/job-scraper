@@ -129,3 +129,16 @@ def test_main_end_to_end_with_fake_adapter(tmp_path, monkeypatch):
     types = sorted(j["job_type"] for j in data["jobs"])
     assert data["schema_version"] == 2 and types == ["praktik", "studiejob"]   # Aarhus-jobbet er filtreret fra
     assert json.loads((tmp_path / "out" / "keywords.json").read_text())["keywords"][0].get("pattern") is None
+
+
+def test_boilerplate_mentioned_once_is_ignored(rx):
+    body = ("Som studentermedhjælper laver du dataanalyse i Excel og hjælper teamet med rapporter. " * 4
+            + "Om os: Vi er en stor organisation med mange dygtige kolleger. " * 3
+            + "Vi tilbyder fleksible arbejdstider, frokostordning og pension.")
+    k = P.match_keywords(rx, "Student Assistant", body)
+    assert "data-analyse" in k and "forsikring" not in k
+
+
+@pytest.mark.parametrize("title", ["Laborantpraktikant til molekylærbiologi", "Kontorelev i HR", "Elev til regnskab"])
+def test_vocational_roles_are_not_platform_jobs(title):
+    assert C.job_type(title) is None

@@ -59,12 +59,24 @@ def compile_keywords(kws: list[dict]) -> dict[str, re.Pattern]:
 
 
 def match_keywords(rx: dict[str, re.Pattern], title: str, text: str, company: str = "") -> list[str]:
-    """Nøgleord fundet i titel + tekst. Virksomhedens navn fjernes først (ellers får alle Danske Bank-job 'bank')."""
-    blob = f"{title}\n{text[:15000]}"
-    for part in {company, *company.split()}:
-        if len(part) >= 4:
-            blob = re.sub(re.escape(part), " ", blob, flags=re.I)
-    return [k for k, r in rx.items() if r.search(blob)]
+    """Nøgleord i titel + tekst (dansk og engelsk).
+    - Virksomhedens navn fjernes først (ellers får alle Danske Bank-job 'bank').
+    - Et ord tæller, hvis det står i titlen, mindst 2 gange i teksten, eller i den første del af teksten (hvor selve
+      jobbet beskrives). Så fanger vi ikke standardfraser som "vi tilbyder pension" én gang nederst i opslaget."""
+    def strip(s: str) -> str:
+        for part in {company, *company.split()}:
+            if len(part) >= 4:
+                s = re.sub(re.escape(part), " ", s, flags=re.I)
+        return s
+    t, body = strip(title), strip(text[:15000])
+    cut = len(body) if len(body) < 400 else int(len(body) * 0.6)
+
+    def hit(r: re.Pattern) -> bool:
+        if r.search(t):
+            return True
+        found = list(r.finditer(body))
+        return len(found) >= 2 or (bool(found) and found[0].start() < cut)
+    return [k for k, r in rx.items() if hit(r)]
 
 
 def build_record(job: dict, employer: dict, rx: dict, now: str) -> dict | None:

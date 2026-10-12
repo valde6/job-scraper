@@ -144,7 +144,8 @@ PRAKTIK_RE = re.compile(r"\binternship|\bintern\b|praktikant|praktikophold|\bpra
 GRADUATE_RE = re.compile(r"\bgraduate|\btrainee|nyuddannet|young\s+professional", re.I)
 HARD_EXCLUDE_RE = re.compile(
     r"\bph\.?d\b|postdoc|bachelorprojekt|speciale|thesis|"
-    r"student\s+(?:recruit|lead|engagement|advisor|counsel)|studievejled|\bsenior\b",
+    r"student\s+(?:recruit|lead|engagement|advisor|counsel)|studievejled|\bsenior\b|"
+    r"laborant|lærling|\belev\b|kontorelev|elevplads|erhvervsuddannelse|apprentice|skolepraktik",
     re.I,
 )
 _EXTRA_TYPES: set[str] = set()
