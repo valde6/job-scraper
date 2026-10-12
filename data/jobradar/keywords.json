@@ -1,0 +1,346 @@
+{
+ "keywords": [
+  {
+   "id": "data-analyse",
+   "label": "Dataanalyse",
+   "en": "Data analysis",
+   "group": "data"
+  },
+  {
+   "id": "sql",
+   "label": "SQL",
+   "en": "SQL",
+   "group": "data"
+  },
+  {
+   "id": "python",
+   "label": "Python",
+   "en": "Python",
+   "group": "data"
+  },
+  {
+   "id": "power-bi",
+   "label": "Power BI",
+   "en": "Power BI",
+   "group": "data"
+  },
+  {
+   "id": "excel",
+   "label": "Excel",
+   "en": "Excel",
+   "group": "data"
+  },
+  {
+   "id": "bi",
+   "label": "Business Intelligence",
+   "en": "Business intelligence",
+   "group": "data"
+  },
+  {
+   "id": "ai",
+   "label": "AI og machine learning",
+   "en": "AI & machine learning",
+   "group": "data"
+  },
+  {
+   "id": "automatisering",
+   "label": "Automatisering",
+   "en": "Automation",
+   "group": "it"
+  },
+  {
+   "id": "digitalisering",
+   "label": "Digitalisering",
+   "en": "Digitalisation",
+   "group": "it"
+  },
+  {
+   "id": "it-projekt",
+   "label": "IT-projektledelse",
+   "en": "IT project management",
+   "group": "it"
+  },
+  {
+   "id": "erp",
+   "label": "ERP / SAP",
+   "en": "ERP / SAP",
+   "group": "it"
+  },
+  {
+   "id": "crm",
+   "label": "CRM / Salesforce",
+   "en": "CRM / Salesforce",
+   "group": "it"
+  },
+  {
+   "id": "programmering",
+   "label": "Programmering",
+   "en": "Software development",
+   "group": "it"
+  },
+  {
+   "id": "cloud",
+   "label": "Cloud (Azure/AWS)",
+   "en": "Cloud (Azure/AWS)",
+   "group": "it"
+  },
+  {
+   "id": "cybersikkerhed",
+   "label": "IT-sikkerhed",
+   "en": "Cyber security",
+   "group": "it"
+  },
+  {
+   "id": "ux",
+   "label": "UX / brugeroplevelse",
+   "en": "UX / user experience",
+   "group": "it"
+  },
+  {
+   "id": "it-support",
+   "label": "IT-support",
+   "en": "IT support",
+   "group": "it"
+  },
+  {
+   "id": "agil",
+   "label": "Agil / Scrum",
+   "en": "Agile / Scrum",
+   "group": "it"
+  },
+  {
+   "id": "it-konsulent",
+   "label": "IT-konsulent",
+   "en": "IT consulting",
+   "group": "it"
+  },
+  {
+   "id": "finans",
+   "label": "Finans",
+   "en": "Finance",
+   "group": "oekonomi"
+  },
+  {
+   "id": "regnskab",
+   "label": "Regnskab / bogføring",
+   "en": "Accounting",
+   "group": "oekonomi"
+  },
+  {
+   "id": "controlling",
+   "label": "Controlling",
+   "en": "Controlling",
+   "group": "oekonomi"
+  },
+  {
+   "id": "revision",
+   "label": "Revision",
+   "en": "Audit",
+   "group": "oekonomi"
+  },
+  {
+   "id": "skat",
+   "label": "Skat",
+   "en": "Tax",
+   "group": "oekonomi"
+  },
+  {
+   "id": "investering",
+   "label": "Investering og porteføljer",
+   "en": "Investment & portfolios",
+   "group": "oekonomi"
+  },
+  {
+   "id": "risiko",
+   "label": "Risikostyring",
+   "en": "Risk management",
+   "group": "oekonomi"
+  },
+  {
+   "id": "bank",
+   "label": "Bank og kredit",
+   "en": "Banking & credit",
+   "group": "oekonomi"
+  },
+  {
+   "id": "forsikring",
+   "label": "Forsikring og pension",
+   "en": "Insurance & pension",
+   "group": "oekonomi"
+  },
+  {
+   "id": "consulting",
+   "label": "Consulting / rådgivning",
+   "en": "Consulting",
+   "group": "strategi"
+  },
+  {
+   "id": "strategi",
+   "label": "Strategi",
+   "en": "Strategy",
+   "group": "strategi"
+  },
+  {
+   "id": "forretningsudvikling",
+   "label": "Forretningsudvikling",
+   "en": "Business development",
+   "group": "strategi"
+  },
+  {
+   "id": "projektledelse",
+   "label": "Projektledelse",
+   "en": "Project management",
+   "group": "strategi"
+  },
+  {
+   "id": "proces",
+   "label": "Procesoptimering",
+   "en": "Process improvement",
+   "group": "strategi"
+  },
+  {
+   "id": "marketing",
+   "label": "Marketing",
+   "en": "Marketing",
+   "group": "marked"
+  },
+  {
+   "id": "kommunikation",
+   "label": "Kommunikation",
+   "en": "Communications",
+   "group": "marked"
+  },
+  {
+   "id": "salg",
+   "label": "Salg",
+   "en": "Sales",
+   "group": "marked"
+  },
+  {
+   "id": "kundeservice",
+   "label": "Kundeservice",
+   "en": "Customer service",
+   "group": "marked"
+  },
+  {
+   "id": "e-handel",
+   "label": "E-handel",
+   "en": "E-commerce",
+   "group": "marked"
+  },
+  {
+   "id": "hr",
+   "label": "HR og rekruttering",
+   "en": "HR & recruitment",
+   "group": "organisation"
+  },
+  {
+   "id": "supply-chain",
+   "label": "Supply chain og logistik",
+   "en": "Supply chain & logistics",
+   "group": "drift"
+  },
+  {
+   "id": "indkoeb",
+   "label": "Indkøb",
+   "en": "Procurement",
+   "group": "drift"
+  },
+  {
+   "id": "baeredygtighed",
+   "label": "Bæredygtighed / ESG",
+   "en": "Sustainability / ESG",
+   "group": "strategi"
+  },
+  {
+   "id": "administration",
+   "label": "Administration",
+   "en": "Administration",
+   "group": "organisation"
+  },
+  {
+   "id": "offentlig",
+   "label": "Offentlig sektor",
+   "en": "Public sector",
+   "group": "organisation"
+  },
+  {
+   "id": "jura",
+   "label": "Jura",
+   "en": "Law / legal",
+   "group": "jura"
+  },
+  {
+   "id": "kontraktret",
+   "label": "Kontrakter og aftaler",
+   "en": "Contracts",
+   "group": "jura"
+  },
+  {
+   "id": "compliance",
+   "label": "Compliance",
+   "en": "Compliance",
+   "group": "jura"
+  },
+  {
+   "id": "gdpr",
+   "label": "GDPR og persondata",
+   "en": "GDPR & data protection",
+   "group": "jura"
+  },
+  {
+   "id": "hvidvask",
+   "label": "Hvidvask / KYC",
+   "en": "AML / KYC",
+   "group": "jura"
+  },
+  {
+   "id": "selskabsret",
+   "label": "Selskabsret",
+   "en": "Corporate law",
+   "group": "jura"
+  },
+  {
+   "id": "arbejdsret",
+   "label": "Arbejds- og ansættelsesret",
+   "en": "Employment law",
+   "group": "jura"
+  },
+  {
+   "id": "transaktioner",
+   "label": "M&A og transaktioner",
+   "en": "M&A & transactions",
+   "group": "jura"
+  },
+  {
+   "id": "proces-ret",
+   "label": "Retssager og tvister",
+   "en": "Litigation & disputes",
+   "group": "jura"
+  },
+  {
+   "id": "immaterialret",
+   "label": "IP / immaterialret",
+   "en": "IP law",
+   "group": "jura"
+  },
+  {
+   "id": "udbud",
+   "label": "Udbud og offentlig ret",
+   "en": "Procurement & public law",
+   "group": "jura"
+  },
+  {
+   "id": "finansiel-regulering",
+   "label": "Finansiel regulering",
+   "en": "Financial regulation",
+   "group": "jura"
+  },
+  {
+   "id": "legal-assistant",
+   "label": "Juridisk assistance",
+   "en": "Legal assistance",
+   "group": "jura"
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "study_lines": [
+  {
+   "id": "ha-it",
+   "name": "HA (it.)",
+   "school": "CBS",
+   "description": "Erhvervsøkonomi og informationsteknologi",
+   "suggested": [
+    "data-analyse",
+    "sql",
+    "python",
+    "power-bi",
+    "excel",
+    "ai",
+    "automatisering",
+    "digitalisering",
+    "it-projekt",
+    "erp",
+    "it-konsulent",
+    "forretningsudvikling",
+    "bi",
+    "agil",
+    "consulting"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice",
+    "it-support"
+   ]
+  },
+  {
+   "id": "ha-almen",
+   "name": "HA Almen",
+   "school": "CBS",
+   "description": "Erhvervsøkonomi",
+   "suggested": [
+    "finans",
+    "regnskab",
+    "controlling",
+    "investering",
+    "strategi",
+    "consulting",
+    "forretningsudvikling",
+    "marketing",
+    "data-analyse",
+    "excel",
+    "projektledelse",
+    "supply-chain",
+    "hr",
+    "baeredygtighed",
+    "risiko"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice",
+    "revision"
+   ]
+  },
+  {
+   "id": "ha-jura",
+   "name": "HA Jura",
+   "school": "CBS",
+   "description": "Erhvervsøkonomi og erhvervsjura",
+   "suggested": [
+    "jura",
+    "kontraktret",
+    "compliance",
+    "gdpr",
+    "selskabsret",
+    "skat",
+    "hvidvask",
+    "transaktioner",
+    "arbejdsret",
+    "legal-assistant",
+    "finansiel-regulering",
+    "revision",
+    "regnskab",
+    "udbud",
+    "risiko"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  }
+ ]
+}

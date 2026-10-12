@@ -1,0 +1,1217 @@
+{
+ "ts": "2026-10-12T16:39:27+00:00",
+ "sources": [
+  {
+   "name": "Novo Nordisk",
+   "type": "successfactors",
+   "ok": true,
+   "listed": 50,
+   "matched": 1,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "A.P. Møller - Mærsk",
+   "type": "workday",
+   "ok": true,
+   "listed": 626,
+   "matched": 4,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "McKinsey & Company",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "LEGO Group",
+   "type": "workday",
+   "ok": true,
+   "listed": 100,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Danske Bank",
+   "type": "oracle",
+   "ok": true,
+   "listed": 145,
+   "matched": 4,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Deloitte",
+   "type": "smartrecruiters",
+   "ok": true,
+   "listed": 34,
+   "matched": 7,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "PwC",
+   "type": "workday",
+   "ok": true,
+   "listed": 14,
+   "matched": 8,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Carlsberg",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Boston Consulting Group (BCG)",
+   "type": "eightfold",
+   "ok": true,
+   "listed": 4,
+   "matched": 3,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Nordea",
+   "type": "nordea",
+   "ok": true,
+   "listed": 84,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Microsoft",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "EY",
+   "type": "successfactors",
+   "ok": true,
+   "listed": 7,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Jyske Bank",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Nykredit",
+   "type": "browser",
+   "ok": true,
+   "listed": 58,
+   "matched": 7,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Bestseller",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "L'Oréal Groupe",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Bain & Company",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Vestas",
+   "type": "successfactors",
+   "ok": true,
+   "listed": 49,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Implement",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Saxo Bank",
+   "type": "workday",
+   "ok": true,
+   "listed": 49,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Finansministeriet",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Bang & Olufsen",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Danmarks Nationalbank",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Arla Foods",
+   "type": "phenom",
+   "ok": true,
+   "listed": 10,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Udenrigsministeriet",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Pandora",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Dansk Industri",
+   "type": "teamtailor",
+   "ok": true,
+   "listed": 5,
+   "matched": 1,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Nordnet",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Ørsted",
+   "type": "browser",
+   "ok": true,
+   "listed": 48,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "KPMG",
+   "type": "hrmanager",
+   "ok": true,
+   "listed": 18,
+   "matched": 2,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Matas",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Salling Group",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "PA Consulting Group",
+   "type": "smartrecruiters",
+   "ok": true,
+   "listed": 13,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Københavns Lufthavne",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Danske Commodities",
+   "type": "teamtailor",
+   "ok": true,
+   "listed": 3,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Netcompany",
+   "type": "smartrecruiters",
+   "ok": true,
+   "listed": 32,
+   "matched": 5,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "PFA Pension",
+   "type": "browser",
+   "ok": true,
+   "listed": 7,
+   "matched": 2,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "SAS",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Amazon",
+   "type": "amazon",
+   "ok": true,
+   "listed": 7,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Beierholm",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "AL Sydbank",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Forsvaret",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "IKEA",
+   "type": "generic",
+   "ok": true,
+   "listed": 28,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Statsministeriet",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Accenture",
+   "type": "workday",
+   "ok": true,
+   "listed": 2,
+   "matched": 2,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Danmarks Radio",
+   "type": "hrmanager",
+   "ok": true,
+   "listed": 20,
+   "matched": 11,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "DSV",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "BDO",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Rambøll",
+   "type": "smartrecruiters",
+   "ok": true,
+   "listed": 97,
+   "matched": 7,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Novonesis",
+   "type": "workday",
+   "ok": true,
+   "listed": 71,
+   "matched": 3,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Kromann Reumert",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Plesner",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Gorrissen Federspiel",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Bech-Bruun",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Accura",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Poul Schmith / Kammeradvokaten",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Lundgrens",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Horten",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "DLA Piper Denmark",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Mazanti-Andersen",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Norrbom Vinding",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Moalem Weitemeyer",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Lund Elmer Sandager",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Delacour",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Danske Advokater",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Grant Thornton",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Partner Revision",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Skatteministeriet og Skattestyrelsen",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Erhvervsstyrelsen",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Finanstilsynet",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Konkurrence- og Forbrugerstyrelsen",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Justitsministeriet",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Datatilsynet",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Statens Rekrutteringsløsning (staten)",
+   "type": "hrmanager",
+   "ok": true,
+   "listed": 25,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Københavns Kommune",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Frederiksberg Kommune",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Tryg",
+   "type": "successfactors",
+   "ok": true,
+   "listed": 0,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Alm. Brand Group",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "If Skadeforsikring",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "ATP",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "PensionDanmark",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Sampension",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "AP Pension",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Arbejdernes Landsbank",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Lån & Spar Bank",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Danmarks Skibskredit",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Söderberg & Partners",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "KMD",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "EG",
+   "type": "teamtailor",
+   "ok": true,
+   "listed": 36,
+   "matched": 1,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Twoday",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Columbus",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Capgemini Danmark",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "IBM Danmark",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Devoteam",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Visma DataLøn",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Danske Spil",
+   "type": "teamtailor",
+   "ok": true,
+   "listed": 6,
+   "matched": 3,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "DTU",
+   "type": "oracle",
+   "ok": true,
+   "listed": 425,
+   "matched": 13,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "IT-Universitetet",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Københavns Universitet",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "CBS",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Danske Havne",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "DSB",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Movia",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "HOFOR",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Svitzer",
+   "type": "workday",
+   "ok": true,
+   "listed": 43,
+   "matched": 2,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Nordisk Film / Egmont",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Dansk Erhverv",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Akademikernes A-kasse",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Ældre Sagen",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Lederne",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Coop",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Royal Unibrew",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "GN Group",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Coloplast",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Lundbeck",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Demant",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "FLSmidth",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "ISS",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Genmab",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Novo Nordisk Fonden",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Ambu",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  }
+ ],
+ "alerts": [],
+ "active": 86
+}
