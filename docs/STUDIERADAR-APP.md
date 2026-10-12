@@ -52,6 +52,12 @@ Et job i `jobs.json` (schema_version 2):
 | `description_md` | string | fuld opslagstekst (markdown) |
 | `active` | boolean | |
 | `source` | string | rekrutteringssystem |
+| `details` | object \| mangler | AI-struktureret opslag (se nedenfor). Mangler, hvis jobbet ikke er behandlet endnu |
+
+`details` (alle felter valgfrie undtagen `language`, `summary`, `tasks`, `requirements`):
+`language` ("da" | "en" | "other"), `summary` (1-2 sætninger), `tasks` (arbejdsopgaver, liste), `requirements` (hvad de forventer, liste),
+`about` (om arbejdspladsen), `offer` (hvad de tilbyder, liste), `hours_per_week`, `start`, `location`, `deadline`,
+`contacts` (liste af `{name, title?, phone?, email?}`). Teksten er på opslagets eget sprog.
 
 ## 2. Database (allerede migreret 13. oktober 2026)
 **`jobs`** – eksisterende kolonner + nye: `job_type text`, `region text`, `keywords text[] not null default '{}'`,
@@ -70,6 +76,10 @@ Gamle kolonner (`tags`, `top50`, `rank`, `origin`, `also_on`, `fit`) bliver stå
 `unsubscribe_token uuid` (unik, default `gen_random_uuid()`).
 Constraints: når `onboarded_at` er sat, skal `cardinality(keywords) + cardinality(custom_keywords)` være 5-15.
 `custom_keywords` og `excluded_custom` højst 5 hver. De gamle kolonner (`interests`, `excluded_fields`, `preferred_locations`, `study_program`) bruges ikke længere.
+
+**Tilføjet 13. oktober (aften):** `jobs.details jsonb`; `profiles.cv_path text`, `cv_uploaded_at timestamptz`, `cv_parsed_at timestamptz`,
+`cv_suggested_keywords text[]`. Den eksisterende kolonne `profiles.about` bruges til profilteksten fra CV'et.
+Storage-bucket **`cvs`** (privat, maks 5 MB, PDF/DOCX). Brugere kan kun læse/skrive/slette filer under mappen `{deres user id}/`.
 
 **`email_log`** (kun service role): `id bigserial`, `user_id uuid`, `sent_at`, `job_ids text[]`, `ok boolean`, `error text`.
 
@@ -122,18 +132,48 @@ secrets `RESEND_API_KEY` og `MAIL_FROM` (fx `Studieradar <job@studieradar.live>`
 
 ## Opgaver (én ad gangen, i rækkefølge)
 
-- [ ] **Opgave 0 – Opsætning.** Hent denne fil til `docs/STUDIERADAR-SPEC.md`. Tilføj et afsnit øverst i `AGENTS.md`, der siger:
+- [x] **Opgave 0 – Opsætning.** Hent denne fil til `docs/STUDIERADAR-SPEC.md`. Tilføj et afsnit øverst i `AGENTS.md`, der siger:
   "Læs docs/STUDIERADAR-SPEC.md før hver opgave. Commit lokalt, push aldrig." Kør `bun install`, `bun run test`, `bun run build`.
-- [ ] **Opgave 1 – Feed v2.** I `src/lib/sync.server.ts`: skift feed-URL til `…/data/jobradar/jobs.json`, accepter kun `schema_version 2`,
+- [x] **Opgave 1 – Feed v2.** I `src/lib/sync.server.ts`: skift feed-URL til `…/data/jobradar/jobs.json`, accepter kun `schema_version 2`,
   map de nye felter (afsnit 1 → kolonner i afsnit 2, `origin = 'employer'`). Synk også `keywords.json` → `keywords` og
   `study_lines.json` → `study_lines` (upsert) i samme kørsel. Opdatér `FeedJob`/`FeedFile` i `src/lib/types.ts` og `types.ts` (regel 5).
   Færdig: tests og build lykkes.
-- [ ] **Opgave 2 – Nyt jobkort og detaljeside** (afsnit 4). Fjern de gamle emne-chips og "Kun store arbejdsgivere".
+- [x] **Opgave 2 – Nyt jobkort og detaljeside** (afsnit 4). Fjern de gamle emne-chips og "Kun store arbejdsgivere".
   Fjern al tekst om Jobindex. Færdig: `grep -ri jobindex src` giver intet.
-- [ ] **Opgave 3 – Onboarding** (afsnit 5) som ny route `/kom-i-gang`. Brugere uden `onboarded_at` sendes dertil efter login.
-- [ ] **Opgave 4 – Match og "Til dig"** (afsnit 3) i `src/lib/match.ts` med tests. Forsiden får fanerne "Til dig" og "Alle job",
+- [x] **Opgave 3 – Onboarding** (afsnit 5) som ny route `/kom-i-gang`. Brugere uden `onboarded_at` sendes dertil efter login.
+- [x] **Opgave 4 – Match og "Til dig"** (afsnit 3) i `src/lib/match.ts` med tests. Forsiden får fanerne "Til dig" og "Alle job",
   filtre for jobtype, område, frist inden for 7 dage og søgning.
-- [ ] **Opgave 5 – Profilside** (`/profil`) med samme felter som onboarding + e-mail-frekvens og samtykke. Siden `/afmeld?token=`.
+- [x] **Opgave 5 – Profilside** (`/profil`) med samme felter som onboarding + e-mail-frekvens og samtykke. Siden `/afmeld?token=`.
 - [ ] **Opgave 6 – E-mail-udsendelse** (afsnit 6). Skriv SQL til pg_cron-jobbet i `docs/sql/`.
-- [ ] **Opgave 7 – Tom tilstand**: ingen match → forslag ("Tilføj flere nøgleord" / "Vis hele Sjælland").
-- [ ] **Opgave 8 – Arbejdsgiversiden** `/arbejdsgivere`: listen fra `employers.json` med retninger og antal aktive job.
+- [x] **Opgave 7 – Tom tilstand**: ingen match → forslag ("Tilføj flere nøgleord" / "Vis hele Sjælland").
+- [x] **Opgave 8 – Arbejdsgiversiden** `/arbejdsgivere`: listen fra `employers.json` med retninger og antal aktive job.
+
+## Runde 2 (efter testrapporten 13. oktober) – se også `docs/TESTRAPPORT.md`
+
+- [ ] **Opgave 9 – Rettelser fra testen.**
+  a) Navnet: erstat "Jobradar" med "Studieradar" overalt (logo, `<title>`, meta, tekster). Der findes en anden app, der hedder Job Radar.
+  b) Fravalg: på trin 3 og `/profil` skal man kunne vælge **alle** nøgleord fra `keywords` som fravalg (søgefelt som på trin 2), ikke kun retningens forslag.
+     Egne fravalg skal matche som delord i titel **og** `description_md` (case-insensitivt), så "revision" også fanger "revisorpraktikant"
+     (match på ordstammen: brug de første 6 tegn, hvis ordet er længere end 7). Opdatér `src/lib/match.ts` og tests.
+  c) Indlæsning: vis skeleton-kort og skjul "0 aktive opslag", mens job hentes.
+  d) `/profil`: fjern onboarding-tekster ("Vi har forvalgt ord …", "Du kan ændre alt på din profil bagefter").
+  e) `/afmeld?token=abc`: tokens, der ikke er en gyldig UUID, viser straks ugyldig-beskeden.
+- [ ] **Opgave 10 – Login med adgangskode.** Erstat magisk link som standard:
+  `/opret` (e-mail, adgangskode min. 8 tegn, gentag) → `supabase.auth.signUp` med `emailRedirectTo` = `https://studieradar.live/kom-i-gang`
+  og beskeden "Tjek din mail og bekræft din e-mail". `/login` med e-mail + adgangskode (`signInWithPassword`), fejltekster på dansk
+  ("Forkert e-mail eller adgangskode", "Bekræft din e-mail først"). "Glemt adgangskode?" → `resetPasswordForEmail` med redirect til
+  `/nulstil-adgangskode`, hvor man vælger ny adgangskode (`updateUser`). Eksisterende brugere uden adgangskode bruger "Glemt adgangskode?".
+  Sessionen skal huskes (Supabase gør det som standard – tjek at intet logger ud ved genindlæsning).
+- [ ] **Opgave 11 – Struktureret jobside.** Synk `details` (afsnit 1) til `jobs.details`. Detaljesiden:
+  øverst titel, badges og en **kontaktboks** (navn, titel, telefon som `tel:`-link, e-mail som `mailto:`-link) hvis `details.contacts` findes;
+  så fakta (virksomhed, sted, frist, opslået/fundet, timer, start); så `summary`; så sektionerne **Arbejdsopgaver** (`tasks`),
+  **Hvad de forventer** (`requirements`), **Om arbejdspladsen** (`about`), **Det tilbyder de** (`offer`) – kun dem der har indhold.
+  Mærke "Opslaget er på engelsk", når `language = en`. **Vis ikke længere den fulde originaltekst** – kun den store knap til arbejdsgiveren.
+  Mangler `details`: "Vi har ikke læst opslaget endnu" + knappen. Jobkortet på listen viser `summary` som én linje under titlen (afkortet).
+- [ ] **Opgave 12 – CV-upload.** Kræver at Valdemar har lagt secret `ANTHROPIC_API_KEY` ind i Lovable Cloud.
+  På `/profil` (og som valgfrit trin i onboarding): sektion "Dit CV" med upload af PDF (maks 5 MB) til bucket `cvs` som `{user_id}/cv.pdf`.
+  Server-route `src/routes/api/cv-parse.ts` (kræver login): henter filen med service role, sender den til Claude (`claude-haiku-5-5`,
+  PDF som `document`-blok, tool-output) med listen af nøgleord fra `keywords` og beder om: op til 10 `suggested_keywords` (id'er fra listen),
+  op til 5 egne ord, og en profiltekst på 3-4 linjer på dansk. Gem i `cv_suggested_keywords`, `about`, `cv_parsed_at`.
+  UI: "Vi fandt disse kompetencer i dit CV" som chips, brugeren tilføjer med ét klik (stadig maks 15). Profilteksten kan redigeres.
+  Knap "Slet mit CV" fjerner filen og nulstiller felterne. Kort privatlivstekst: "Dit CV gemmes, så vi kan matche job bedre. Du kan slette det når som helst."
