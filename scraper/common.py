@@ -148,6 +148,12 @@ HARD_EXCLUDE_RE = re.compile(
     r"laborant|lærling|\belev\b|kontorelev|elevplads|erhvervsuddannelse|apprentice|skolepraktik",
     re.I,
 )
+# Arrangementer, der ligner job i rekrutteringssystemerne (fx "Graduate Dinner", "Student Event: …")
+EVENT_RE = re.compile(
+    r"\b(?:dinner|webinar|open\s+house|career\s+day|karrieredag|informationsmøde|info[- ]?(?:session|meeting|møde)|"
+    r"networking|evening|night|meetup|bootcamp|hackathon|case\s+competition|workshop)\b|\bevent\b(?!s)|\barrangement\b",
+    re.I,
+)
 _EXTRA_TYPES: set[str] = set()
 
 
@@ -167,7 +173,7 @@ def _extra_type_ok(title: str) -> bool:
 def job_type(title: str, text: str = "") -> str | None:
     """studiejob | praktik | graduate | None. Titlen afgør praktik/graduate; ellers studiejob via student_fit."""
     t = title or ""
-    if HARD_EXCLUDE_RE.search(t):
+    if HARD_EXCLUDE_RE.search(t) or EVENT_RE.search(t):
         return None
     if PRAKTIK_RE.search(t):
         return "praktik"

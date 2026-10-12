@@ -88,6 +88,10 @@ def build_record(job: dict, employer: dict, rx: dict, now: str) -> dict | None:
     if reg is None:
         return None
     desc = job.get("description_md") or ""
+    # "mulig" = deltid uden tegn på studier. Kun med, hvis titlen selv rammer et fagligt nøgleord
+    # (ellers kommer fx "Laboratory Technician" og "Tutti violinist" med som studiejob).
+    if jt == "studiejob" and job.get("fit") == "mulig" and not any(r.search(job["title"]) for r in rx.values()):
+        return None
     deadline = job.get("deadline") or find_deadline(desc, date.today().year) or None
     apply_url = job.get("apply_url") or job.get("url")
     return {
@@ -128,6 +132,10 @@ def validate(payload: dict, keyword_ids: set[str]) -> list[str]:
         unknown = set(j.get("keywords", [])) - keyword_ids
         if unknown:
             errs.append(f"{w}: ukendte nøgleord {sorted(unknown)}")
+        det = j.get("details")
+        if det is not None and not (isinstance(det, dict) and isinstance(det.get("summary", ""), str)
+                                    and all(isinstance(det.get(k, []), list) for k in ("tasks", "requirements", "offer", "contacts"))):
+            errs.append(f"{w}: details har forkert form")
         if j.get("source") == "jobindex":
             errs.append(f"{w}: Jobindex må ikke være kilde i Jobradar")
         if j.get("id") in ids:
@@ -230,6 +238,13 @@ def main(argv=None):
     for j in jobs.values():                       # ældre tilstand uden url-felt (før 13/10)
         j.setdefault("url", j.get("apply_url") or j.get("career_url"))
     ordered = sorted(jobs.values(), key=lambda j: (j["active"], j["first_seen"]), reverse=True)
+    from .enrich import enrich_jobs
+    print("AI-strukturering:", enrich_jobs(ordered))
+    for j in ordered:                             # frist fra AI, hvis kilden ikke havde en
+        dl = (j.get("details") or {}).get("deadline", "")
+        if not j.get("deadline") and re.fullmatch(r"\d{4}-\d{2}-\d{2}", dl or ""):
+            j["deadline"] = dl
+            j["active"] = dl >= today
     payload = {"schema_version": SCHEMA_VERSION, "generated_at": now,
                "counts": {"total": len(ordered), "active": sum(j["active"] for j in ordered)}, "jobs": ordered}
     errs = validate(payload, set(rx))

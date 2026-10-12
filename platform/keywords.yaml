@@ -9,7 +9,7 @@ keywords:
   - {id: python, label: "Python", en: "Python", group: data, pattern: "python|pandas|jupyter"}
   - {id: power-bi, label: "Power BI", en: "Power BI", group: data, pattern: "power\\s*bi|tableau|qlik|looker|dashboards?|visualiser"}
   - {id: excel, label: "Excel", en: "Excel", group: data, pattern: "\\bexcel\\b|regneark|spreadsheet|\\bvba\\b|power query"}
-  - {id: bi, label: "Business Intelligence", en: "Business intelligence", group: data, pattern: "business intelligence|\\bbi[- ]|\\bbi\\b|datawarehouse|data warehouse|rapportering|reporting"}
+  - {id: bi, label: "Business Intelligence", en: "Business intelligence", group: data, pattern: "business intelligence|\\bbi[- ]|\\bbi\\b|datawarehouse|data warehouse|ledelsesrapportering|management reporting|bi-rapport"}
   - {id: ai, label: "AI og machine learning", en: "AI & machine learning", group: data, pattern: "\\bai\\b|kunstig intelligens|artificial intelligence|machine learning|maskinlæring|\\bml\\b|genai|\\bllm|chatgpt|copilot|ai-agent"}
   - {id: automatisering, label: "Automatisering", en: "Automation", group: it, pattern: "automati|\\brpa\\b|power automate|uipath|workflow|robotic process"}
   - {id: digitalisering, label: "Digitalisering", en: "Digitalisation", group: it, pattern: "digitali|digital transformation|digital omstilling|digitale løsninger"}

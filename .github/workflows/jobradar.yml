@@ -39,6 +39,8 @@ jobs:
           key: pw-${{ runner.os }}-1.47
       - run: python -m playwright install --with-deps chromium
       - name: Scrape (Jobradar)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # valgfri: uden den springes AI-struktureringen over
         run: |
           ONLY="${{ inputs.only }}"
           if [ "${{ github.event_name }}" = "push" ] && [ -f triggers/jobradar ]; then ONLY="$(grep -v '^#' triggers/jobradar | head -1 || true)"; fi

@@ -142,3 +142,21 @@ def test_boilerplate_mentioned_once_is_ignored(rx):
 @pytest.mark.parametrize("title", ["Laborantpraktikant til molekylærbiologi", "Kontorelev i HR", "Elev til regnskab"])
 def test_vocational_roles_are_not_platform_jobs(title):
     assert C.job_type(title) is None
+
+
+@pytest.mark.parametrize("title,expected", [
+    ("Deloitte SAP Graduate Dinner 2026 — December 3rd", None),
+    ("Student Event: Join Our Digital Transformation Programme", None),
+    ("Step Inside Accenture: An Evening for IT Students", None),
+    ("Drømmer du om at arbejde med events? Bliv Employer Branding-praktikant i PwC", "praktik"),
+])
+def test_events_are_not_jobs(title, expected):
+    assert C.job_type(title) == expected
+
+
+def test_parttime_without_topic_in_title_is_dropped(rx):
+    base = {"company": "Novonesis", "url": "https://x/1", "location": "Bagsværd", "source": "workday", "id": "x1", "fit": "mulig"}
+    lab = dict(base, title="Laboratory Technician (part-time)", description_md="Du arbejder 15 timer om ugen med data og analyse")
+    analyst = dict(base, title="Analyst (part-time) - Corporate Finance", description_md="15 timer om ugen")
+    assert P.build_record(lab, emp(), rx, "x") is None
+    assert P.build_record(analyst, emp(), rx, "x")["job_type"] == "studiejob"
