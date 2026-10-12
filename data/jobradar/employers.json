@@ -98,7 +98,7 @@
    "lines": [
     "ha-almen"
    ],
-   "status": "find-system",
+   "status": "mangler-adapter",
    "career_url": "https://www.carlsberggroup.com/careers/",
    "source_type": "none",
    "ok": null,
@@ -277,12 +277,12 @@
    "lines": [
     "ha-almen"
    ],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.bang-olufsen.com/en/dk/story/careers",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "browser",
+   "ok": true,
+   "listed": 5,
+   "matched": 0
   },
   {
    "name": "Danmarks Nationalbank",
@@ -328,12 +328,12 @@
    "lines": [
     "ha-almen"
    ],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://pandoragroup.com/careers",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "browser",
+   "ok": true,
+   "listed": 0,
+   "matched": 0
   },
   {
    "name": "Dansk Industri",
@@ -393,7 +393,7 @@
    "lines": [
     "ha-almen"
    ],
-   "status": "find-system",
+   "status": "mangler-adapter",
    "career_url": "https://www.matas.dk/job",
    "source_type": "none",
    "ok": null,
@@ -508,7 +508,7 @@
     "ha-almen",
     "ha-jura"
    ],
-   "status": "find-system",
+   "status": "mangler-adapter",
    "career_url": "https://www.beierholm.dk/karriere/",
    "source_type": "none",
    "ok": null,
@@ -550,7 +550,7 @@
    "career_url": "https://jobs.ikea.com/en/search?location=Denmark",
    "source_type": "generic",
    "ok": true,
-   "listed": 28,
+   "listed": 27,
    "matched": 0
   },
   {
@@ -610,7 +610,7 @@
     "ha-almen",
     "ha-jura"
    ],
-   "status": "find-system",
+   "status": "mangler-adapter",
    "career_url": "https://www.bdo.dk/da-dk/karriere",
    "source_type": "none",
    "ok": null,
@@ -684,7 +684,7 @@
    "lines": [
     "ha-jura"
    ],
-   "status": "find-system",
+   "status": "mangler-adapter",
    "career_url": "https://www.bechbruun.com/da/karriere",
    "source_type": "none",
    "ok": null,
@@ -696,12 +696,12 @@
    "lines": [
     "ha-jura"
    ],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://accura.dk/karriere",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 8,
+   "matched": 3
   },
   {
    "name": "Poul Schmith / Kammeradvokaten",
@@ -856,7 +856,7 @@
     "ha-almen",
     "ha-it"
    ],
-   "status": "find-system",
+   "status": "mangler-adapter",
    "career_url": "https://www.skm.dk/job",
    "source_type": "none",
    "ok": null,
@@ -896,7 +896,7 @@
     "ha-jura",
     "ha-almen"
    ],
-   "status": "find-system",
+   "status": "mangler-adapter",
    "career_url": "https://www.kfst.dk/om-os/job",
    "source_type": "none",
    "ok": null,
@@ -949,7 +949,7 @@
     "ha-jura",
     "ha-it"
    ],
-   "status": "find-system",
+   "status": "mangler-adapter",
    "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=kk",
    "source_type": "none",
    "ok": null,
@@ -1139,12 +1139,12 @@
    "lines": [
     "ha-it"
    ],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.twoday.dk/karriere",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "teamtailor",
+   "ok": true,
+   "listed": 34,
+   "matched": 0
   },
   {
    "name": "Columbus",
@@ -1152,7 +1152,7 @@
     "ha-it",
     "ha-almen"
    ],
-   "status": "find-system",
+   "status": "mangler-adapter",
    "career_url": "https://www.columbusglobal.com/da/karriere",
    "source_type": "none",
    "ok": null,
@@ -1177,7 +1177,7 @@
    "lines": [
     "ha-it"
    ],
-   "status": "find-system",
+   "status": "mangler-adapter",
    "career_url": "https://www.ibm.com/careers",
    "source_type": "none",
    "ok": null,
@@ -1202,7 +1202,7 @@
     "ha-it",
     "ha-almen"
    ],
-   "status": "find-system",
+   "status": "mangler-adapter",
    "career_url": "https://karriere.datalonprolon.dk/",
    "source_type": "none",
    "ok": null,
@@ -1233,7 +1233,7 @@
    "source_type": "oracle",
    "ok": true,
    "listed": 425,
-   "matched": 13
+   "matched": 10
   },
   {
    "name": "IT-Universitetet",
@@ -1254,7 +1254,7 @@
     "ha-jura",
     "ha-it"
    ],
-   "status": "find-system",
+   "status": "mangler-adapter",
    "career_url": "https://employment.ku.dk/",
    "source_type": "none",
    "ok": null,
@@ -1293,12 +1293,12 @@
     "ha-almen",
     "ha-it"
    ],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.dsb.dk/om-dsb/job-i-dsb/",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "browser",
+   "ok": true,
+   "listed": 0,
+   "matched": 0
   },
   {
    "name": "Movia",
@@ -1318,7 +1318,7 @@
     "ha-almen",
     "ha-it"
    ],
-   "status": "find-system",
+   "status": "mangler-adapter",
    "career_url": "https://www.hofor.dk/job",
    "source_type": "none",
    "ok": null,
@@ -1418,12 +1418,12 @@
    "lines": [
     "ha-almen"
    ],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.royalunibrew.com/careers/",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "browser",
+   "ok": true,
+   "listed": 10,
+   "matched": 0
   },
   {
    "name": "GN Group",
@@ -1431,12 +1431,12 @@
     "ha-almen",
     "ha-it"
    ],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.gn.com/careers",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "workday",
+   "ok": true,
+   "listed": 0,
+   "matched": 0
   },
   {
    "name": "Coloplast",
@@ -1494,7 +1494,7 @@
    "lines": [
     "ha-almen"
    ],
-   "status": "find-system",
+   "status": "mangler-adapter",
    "career_url": "https://www.issworld.com/careers",
    "source_type": "none",
    "ok": null,

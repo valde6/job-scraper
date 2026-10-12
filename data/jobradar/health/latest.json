@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-12T16:39:27+00:00",
+ "ts": "2026-10-12T16:50:04+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -213,10 +213,10 @@
   },
   {
    "name": "Bang & Olufsen",
-   "type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null,
+   "type": "browser",
+   "ok": true,
+   "listed": 5,
+   "matched": 0,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -253,10 +253,10 @@
   },
   {
    "name": "Pandora",
-   "type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null,
+   "type": "browser",
+   "ok": true,
+   "listed": 0,
+   "matched": 0,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -425,7 +425,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 28,
+   "listed": 27,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -543,10 +543,10 @@
   },
   {
    "name": "Accura",
-   "type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null,
+   "type": "hrmanager",
+   "ok": true,
+   "listed": 8,
+   "matched": 3,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -893,10 +893,10 @@
   },
   {
    "name": "Twoday",
-   "type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null,
+   "type": "teamtailor",
+   "ok": true,
+   "listed": 34,
+   "matched": 0,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -966,7 +966,7 @@
    "type": "oracle",
    "ok": true,
    "listed": 425,
-   "matched": 13,
+   "matched": 10,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -1013,10 +1013,10 @@
   },
   {
    "name": "DSB",
-   "type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null,
+   "type": "browser",
+   "ok": true,
+   "listed": 0,
+   "matched": 0,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -1113,20 +1113,20 @@
   },
   {
    "name": "Royal Unibrew",
-   "type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null,
+   "type": "browser",
+   "ok": true,
+   "listed": 10,
+   "matched": 0,
    "problem": null,
    "streak": 0,
    "detail": null
   },
   {
    "name": "GN Group",
-   "type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null,
+   "type": "workday",
+   "ok": true,
+   "listed": 0,
+   "matched": 0,
    "problem": null,
    "streak": 0,
    "detail": null
