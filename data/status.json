@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T00:32:40+00:00",
+ "updated": "2026-10-12T10:49:44+00:00",
  "companies": [
   {
    "company": "Novo Nordisk",
@@ -8,7 +8,7 @@
    "ok": true,
    "listed": 2,
    "matched": 1,
-   "seconds": 1.8
+   "seconds": 1.5
   },
   {
    "company": "A.P. Møller - Mærsk",
@@ -17,7 +17,7 @@
    "ok": true,
    "listed": 407,
    "matched": 2,
-   "seconds": 15.5
+   "seconds": 17.5
   },
   {
    "company": "McKinsey & Company",
@@ -32,8 +32,8 @@
    "source": "workday",
    "ok": true,
    "listed": 66,
-   "matched": 6,
-   "seconds": 10.5
+   "matched": 5,
+   "seconds": 18.3
   },
   {
    "company": "Danske Bank",
@@ -42,7 +42,7 @@
    "ok": true,
    "listed": 7,
    "matched": 3,
-   "seconds": 7.4
+   "seconds": 2.5
   },
   {
    "company": "Deloitte",
@@ -51,16 +51,16 @@
    "ok": true,
    "listed": 33,
    "matched": 3,
-   "seconds": 1.7
+   "seconds": 1.6
   },
   {
    "company": "PwC",
    "rank": 7,
    "source": "workday",
    "ok": true,
-   "listed": 13,
+   "listed": 14,
    "matched": 3,
-   "seconds": 7.7
+   "seconds": 9.6
   },
   {
    "company": "Carlsberg",
@@ -76,7 +76,7 @@
    "ok": true,
    "listed": 4,
    "matched": 0,
-   "seconds": 0.6
+   "seconds": 0.7
   },
   {
    "company": "Nordea",
@@ -85,7 +85,7 @@
    "ok": true,
    "listed": 26,
    "matched": 0,
-   "seconds": 2.1
+   "seconds": 0.6
   },
   {
    "company": "Microsoft",
@@ -115,9 +115,9 @@
    "rank": 14,
    "source": "browser",
    "ok": true,
-   "listed": 57,
+   "listed": 58,
    "matched": 2,
-   "seconds": 21.3
+   "seconds": 20.9
   },
   {
    "company": "Bestseller",
@@ -147,7 +147,7 @@
    "ok": true,
    "listed": 5,
    "matched": 0,
-   "seconds": 2.0
+   "seconds": 1.5
   },
   {
    "company": "Implement",
@@ -161,9 +161,9 @@
    "rank": 20,
    "source": "workday",
    "ok": true,
-   "listed": 22,
+   "listed": 23,
    "matched": 0,
-   "seconds": 3.8
+   "seconds": 4.8
   },
   {
    "company": "Finansministeriet",
@@ -193,7 +193,7 @@
    "ok": true,
    "listed": 10,
    "matched": 0,
-   "seconds": 21.6
+   "seconds": 29.0
   },
   {
    "company": "Udenrigsministeriet",
@@ -216,7 +216,7 @@
    "ok": true,
    "listed": 5,
    "matched": 0,
-   "seconds": 0.6
+   "seconds": 0.4
   },
   {
    "company": "Nordnet",
@@ -230,9 +230,9 @@
    "rank": 29,
    "source": "browser",
    "ok": true,
-   "listed": 48,
+   "listed": 47,
    "matched": 0,
-   "seconds": 7.7
+   "seconds": 7.5
   },
   {
    "company": "KPMG",
@@ -241,7 +241,7 @@
    "ok": true,
    "listed": 17,
    "matched": 0,
-   "seconds": 1.5
+   "seconds": 1.2
   },
   {
    "company": "Matas",
@@ -280,7 +280,7 @@
    "ok": true,
    "listed": 3,
    "matched": 0,
-   "seconds": 0.5
+   "seconds": 0.6
   },
   {
    "company": "Netcompany",
@@ -298,7 +298,7 @@
    "ok": true,
    "listed": 6,
    "matched": 1,
-   "seconds": 14.9
+   "seconds": 15.8
   },
   {
    "company": "SAS",
@@ -314,7 +314,7 @@
    "ok": true,
    "listed": 7,
    "matched": 0,
-   "seconds": 0.4
+   "seconds": 0.8
   },
   {
    "company": "Beierholm",
@@ -342,9 +342,9 @@
    "rank": 43,
    "source": "generic",
    "ok": true,
-   "listed": 30,
+   "listed": 27,
    "matched": 0,
-   "seconds": 1.4
+   "seconds": 1.0
   },
   {
    "company": "Statsministeriet",
@@ -360,7 +360,7 @@
    "ok": true,
    "listed": 2,
    "matched": 2,
-   "seconds": 14.0
+   "seconds": 13.0
   },
   {
    "company": "Danmarks Radio",
@@ -390,9 +390,9 @@
    "rank": 49,
    "source": "smartrecruiters",
    "ok": true,
-   "listed": 84,
+   "listed": 94,
    "matched": 0,
-   "seconds": 0.5
+   "seconds": 0.4
   },
   {
    "company": "Novonesis",
@@ -401,19 +401,19 @@
    "ok": true,
    "listed": 53,
    "matched": 2,
-   "seconds": 5.2
+   "seconds": 5.8
   },
   {
    "company": "(Jobindex RSS)",
    "source": "jobindex",
    "ok": true,
-   "listed": 387,
-   "matched": 30,
+   "listed": 377,
+   "matched": 33,
    "fit": {
-    "sikker": 27,
-    "sandsynlig": 2,
+    "sikker": 29,
+    "sandsynlig": 3,
     "mulig": 1,
-    "body_fetch": 4
+    "body_fetch": 17
    }
   }
  ]
