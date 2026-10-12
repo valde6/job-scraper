@@ -1,9 +1,13 @@
 # job-scraper
 
+Scraperen bag **Jobradar**. Udgiver `data/platform/jobs.json`, som appen henter hver time.
+Agenter: læs `AGENTS.md`. Opgaver: `docs/BACKLOG.md`. Læring: `docs/AGENT-GUIDE.md`.
+
 Personlig scraper, der henter **studenterjob i Danmark** fra karrieresiderne hos 50 top-arbejdsgivere
 (Universum-rankingen) og fra Jobindex' RSS-feed.
 
-- Kører automatisk man–fre ca. kl. 06:15 via GitHub Actions (`.github/workflows/scrape.yml`)
+- Kører automatisk hver 3. time via GitHub Actions (`.github/workflows/scrape.yml`), med sundhedstjek og automatisk issue, når en kilde går i stykker
+- Tests: `python -m pytest -q` (kører også i CI på hver push/PR)
 - Resultater i `data/`:
   - `jobs.json` – alle job (aktive + udløbne) med fuld opslagstekst i markdown, ansøgningslink og frist
   - `new.json` – job fundet for første gang i seneste kørsel
