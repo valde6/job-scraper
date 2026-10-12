@@ -164,16 +164,53 @@ secrets `RESEND_API_KEY` og `MAIL_FROM` (fx `Studieradar <job@studieradar.live>`
   ("Forkert e-mail eller adgangskode", "Bekræft din e-mail først"). "Glemt adgangskode?" → `resetPasswordForEmail` med redirect til
   `/nulstil-adgangskode`, hvor man vælger ny adgangskode (`updateUser`). Eksisterende brugere uden adgangskode bruger "Glemt adgangskode?".
   Sessionen skal huskes (Supabase gør det som standard – tjek at intet logger ud ved genindlæsning).
-- [ ] **Opgave 11 – Struktureret jobside.** Synk `details` (afsnit 1) til `jobs.details`. Detaljesiden:
-  øverst titel, badges og en **kontaktboks** (navn, titel, telefon som `tel:`-link, e-mail som `mailto:`-link) hvis `details.contacts` findes;
-  så fakta (virksomhed, sted, frist, opslået/fundet, timer, start); så `summary`; så sektionerne **Arbejdsopgaver** (`tasks`),
-  **Hvad de forventer** (`requirements`), **Om arbejdspladsen** (`about`), **Det tilbyder de** (`offer`) – kun dem der har indhold.
-  Mærke "Opslaget er på engelsk", når `language = en`. **Vis ikke længere den fulde originaltekst** – kun den store knap til arbejdsgiveren.
-  Mangler `details`: "Vi har ikke læst opslaget endnu" + knappen. Jobkortet på listen viser `summary` som én linje under titlen (afkortet).
-- [ ] **Opgave 12 – CV-upload.** Kræver at Valdemar har lagt secret `ANTHROPIC_API_KEY` ind i Lovable Cloud.
-  På `/profil` (og som valgfrit trin i onboarding): sektion "Dit CV" med upload af PDF (maks 5 MB) til bucket `cvs` som `{user_id}/cv.pdf`.
-  Server-route `src/routes/api/cv-parse.ts` (kræver login): henter filen med service role, sender den til Claude (`claude-haiku-5-5`,
-  PDF som `document`-blok, tool-output) med listen af nøgleord fra `keywords` og beder om: op til 10 `suggested_keywords` (id'er fra listen),
-  op til 5 egne ord, og en profiltekst på 3-4 linjer på dansk. Gem i `cv_suggested_keywords`, `about`, `cv_parsed_at`.
-  UI: "Vi fandt disse kompetencer i dit CV" som chips, brugeren tilføjer med ét klik (stadig maks 15). Profilteksten kan redigeres.
-  Knap "Slet mit CV" fjerner filen og nulstiller felterne. Kort privatlivstekst: "Dit CV gemmes, så vi kan matche job bedre. Du kan slette det når som helst."
+## AI i appen: Lovable AI (besluttet 13. oktober)
+AI kører i appen via **Lovable AI** (indbygget gateway, nøglen `LOVABLE_API_KEY` styres af Lovable – ingen egen API-nøgle).
+- **Model: `google/gemini-3.1-flash-lite`** til både strukturering af opslag og CV-læsning. Det er Lovables anbefalede billige model
+  til opsummering/udtræk. Skift kun model ét sted (`AI_MODEL` i `src/lib/ai.server.ts`).
+- **Pris (POC):** ca. 3.000 tokens ind + 500 ud pr. opslag ≈ 0,1-0,3 øre … under 0,01 USD. 80 job nu + ca. 100 nye om ugen ≈ 1-2 credits om måneden,
+  som dækkes af Lovables gratis AI-grant på 4 credits/måned. Se faktisk forbrug under **Cloud → AI → Recent requests**.
+- **CV'er:** PDF-teksten udtrækkes på serveren (npm-pakken `unpdf`) og sendes som tekst – billigere end at sende PDF'en til en dyrere model.
+- **Struktureret output:** brug gatewayens OpenAI-kompatible chat-API med et `tools`-skema og `tool_choice`, så svaret altid er gyldig JSON. Validér med zod.
+- **Persondata:** CV-tekst sendes til modeludbyderen (Google) via Lovable. Nævn det i privatlivsteksten ved upload.
+- Scraperens egen AI-strukturering (`scraper/enrich.py`) er slået fra (ingen nøgle) og bruges ikke.
+
+Databasen er klar: `jobs.details jsonb`, `details_hash text`, `details_model text`, `details_at timestamptz`, `details_error text`.
+
+- [ ] **Lovable-prompt L – Slå Lovable AI til** (gøres i Lovable-editoren, ikke Claude Code – kun Lovable kan oprette nøglen). Se teksten i chatten / afsnittet "Lovable-prompt L" nederst.
+- [ ] **Opgave 11 – Struktureret jobside med Lovable AI.** (Kræver at Lovable-prompt L er kørt og pullet.)
+  a) **Synken må ikke overskrive AI-felterne:** `details*`-kolonnerne udelades af upsert i `src/lib/sync.server.ts`.
+  b) **Berigelse:** `src/lib/enrich.server.ts` med `enrichPendingJobs(limit = 25)`: vælg aktive job, hvor `details is null` eller
+     `details_hash` ≠ sha1(titel + description_md). Kald `callAiJson` (fra `ai.server.ts`) med titel, virksomhed, sted og de første 12.000 tegn af
+     `description_md`. Skema: `language` ("da"|"en"|"other"), `summary` (1-2 sætninger), `tasks[]`, `requirements[]`, `about`, `offer[]`,
+     `hours_per_week`, `start`, `location`, `deadline` (YYYY-MM-DD), `contacts[]` ({name, title?, phone?, email?}).
+     Instruks til modellen: skriv på opslagets eget sprog, kun info fra opslaget, maks 7 korte punkter pr. liste, ignorér menutekst fra hjemmesiden,
+     kontakter kun hvis opslaget nævner dem som kontakt. Gem `details`, `details_hash`, `details_model`, `details_at`; ved fejl `details_error`.
+     Mangler jobbet frist, og modellen fandt en, så sæt `deadline`.
+  c) **Kørsel:** kald `enrichPendingJobs(25)` til sidst i `runJobSync()` (den kører hver time). Så behandles nye job automatisk, og prisen er bundet
+     til antallet af nye job. Log antallet i `sync_runs` (ny tekst i `error`-feltet er ok, eller tilføj intet skema – brug konsollen).
+  d) **Detaljeside og kort:** som beskrevet her: øverst titel, badges og en **kontaktboks** (navn, titel, telefon som `tel:`, e-mail som `mailto:`)
+     hvis `details.contacts` findes; fakta (virksomhed, sted, frist, opslået/fundet, timer, start); `summary`; sektionerne **Arbejdsopgaver**,
+     **Hvad de forventer**, **Om arbejdspladsen**, **Det tilbyder de** – kun dem med indhold. Mærke "Opslaget er på engelsk" ved `language = en`.
+     **Ingen fuld originaltekst** – kun knappen til arbejdsgiveren. Mangler `details`: "Vi har ikke læst opslaget endnu" + knappen.
+     Jobkortet viser `summary` som én linje under titlen.
+- [ ] **Opgave 12 – CV-upload med Lovable AI.** (Kræver Lovable-prompt L.)
+  På `/profil` (og som valgfrit trin i onboarding): sektion "Dit CV" – upload PDF (maks 5 MB) til bucket `cvs` som `{user_id}/cv.pdf`.
+  Server-funktion (kræver login): hent filen med service role, udtræk tekst med `unpdf`, kald `callAiJson` med teksten (maks 15.000 tegn) og listen
+  af nøgleord fra `keywords` (id + label + en). Skema: `suggested_keywords` (op til 10 id'er fra listen), `custom_keywords` (op til 5 egne ord),
+  `profile_text` (3-4 linjer på dansk om uddannelse, erfaring og kompetencer). Gem i `cv_suggested_keywords`, `about`, `cv_uploaded_at`, `cv_parsed_at`.
+  UI: "Vi fandt disse kompetencer i dit CV" som chips, der tilføjes med ét klik (stadig maks 15). Profilteksten kan redigeres. "Slet mit CV" fjerner
+  filen og nulstiller felterne. Privatlivstekst: "Dit CV gemmes, så vi kan matche job bedre. Teksten behandles af en AI-model hos vores
+  leverandør. Du kan slette det når som helst."
+
+## Lovable-prompt L (indsæt i Lovable-editoren)
+```
+Enable Lovable AI for this project. Do not build any user-facing feature.
+Create one server-only helper, src/lib/ai.server.ts, exporting:
+  export const AI_MODEL = "google/gemini-3.1-flash-lite";
+  export async function callAiJson<T>(opts: { system: string; user: string; schemaName: string; schema: object }): Promise<T>
+It must call the Lovable AI gateway with LOVABLE_API_KEY using tool calling (one tool = schemaName with the given JSON schema,
+tool_choice forcing that tool), return the parsed tool arguments, throw a clear Error on 402 (out of credits) and 429 (rate limit),
+and never be imported from client code. Add a short comment block at the top explaining how to use it.
+Keep everything else unchanged. Commit message: "Lovable AI: server-hjælper til struktureret output".
+```
