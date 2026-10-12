@@ -36,8 +36,8 @@ Begge bruger de samme adaptere. Testene beskytter begge.
 
 - [ ] **11. Jobindex i afspilningstests.** Optag et lille sæt RSS-feeds + opslag og test parseren (virksomhed fra titel/logo, top50-flag, praktik-afvisning).
 
-## Appen (Jobradar – repo `valde6/findmy-denmark-jobs`)
-Specifikation og opgaver A1-A9 står i [`docs/JOBRADAR-APP.md`](JOBRADAR-APP.md). Kopiér filen ind i app-repoet (`docs/`), og giv agenten én opgave ad gangen.
+## Appen (Studieradar – det repo, Lovable er forbundet til)
+Specifikation og opgave 0-8 står i [`docs/STUDIERADAR-APP.md`](STUDIERADAR-APP.md). Opgave 0 kopierer filen ind i app-repoet som `docs/STUDIERADAR-SPEC.md`.
 
 ## Senere (efter scraper, UI og backend er på plads)
 - **AI-match-score** (0-100 + én sætning om hvorfor) pr. bruger og job, ud fra profil, nøgleord og fravalg. Erstatter `hits` i `src/lib/match.ts`.

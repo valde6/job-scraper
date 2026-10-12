@@ -33,9 +33,9 @@ Opgave: **Backlog 5 (rens opslagstekst)** – lille, afgrænset og testbar.
 **Det lærer du:** plan mode, projekt-kommandoer, at tests styrer agenten.
 
 ## Øvelse 2 – Samme slags opgave i Codex (ca. 30 min)
-Opgave: **Backlog 6 (Jobindex i afspilningstests)**.
+Opgave: **Backlog 11 (Jobindex i afspilningstests)**.
 1. Start `codex` i repoet. Den læser `AGENTS.md` automatisk.
-2. Skriv: "Løs opgave 6 i docs/BACKLOG.md. Vis mig en plan først."
+2. Skriv: "Løs opgave 11 i docs/BACKLOG.md. Vis mig en plan først."
 3. Sammenlign med Claude Code: Hvordan planlægger de? Hvor tit spørger de? Hvem kører flest tests?
 
 **Det lærer du:** at forskellige agenter har forskellige styrker, og at `AGENTS.md` gør dem udskiftelige.
@@ -51,11 +51,11 @@ Opgave: **Backlog 1 (Emply-adapter)**. Her skal agenten undersøge et ukendt API
 ## Øvelse 4 – To agenter parallelt (ca. 1 time)
 Agenter kan arbejde samtidig, hvis de ikke deler mappe. Brug git worktrees:
 ```bash
-git worktree add ../js-dtu -b dtu-kilde
+git worktree add ../js-hrm -b hrmanager-aliaser
 git worktree add ../js-discovery -b auto-discovery
 ```
-- Terminal 1: `cd ../js-dtu && claude` → `/backlog 2`
-- Terminal 2: `cd ../js-discovery && codex` → "Løs opgave 3 i docs/BACKLOG.md"
+- Terminal 1: `cd ../js-hrm && claude` → `/backlog 3`
+- Terminal 2: `cd ../js-discovery && codex` → "Løs opgave 6 i docs/BACKLOG.md"
 
 Push begge branches og åbn pull requests på GitHub. CI (`tests`-workflowet) kører automatisk på hver PR.
 Merge den ene, og lad den anden agent løse eventuelle konflikter: "Rebase på main og løs konflikterne".
@@ -78,8 +78,8 @@ Læs bagefter `.claude/settings.json` og forstå, hvad den lavede.
 **Det lærer du:** at gøre regler til automatik i stedet for noget, agenten skal huske.
 
 ## Øvelse 7 – Appen (efter GitHub er forbundet i Lovable)
-Klon Jobradar-repoet og lav en `AGENTS.md` dér også (bed agenten skrive den ud fra koden).
-Tag så **Backlog 8 (AI-match-score)** med Claude Code. Lovable henter ændringerne fra GitHub automatisk,
+App-repoet (Studieradar) har allerede en `AGENTS.md` fra Lovable.
+Tag så opgaverne i `docs/STUDIERADAR-APP.md` én ad gangen med Claude Code. Lovable henter ændringerne fra GitHub automatisk,
 så du bruger ikke Lovable-credits på det.
 
 **Det lærer du:** at arbejde med agenter på tværs af to repoer, og at holde Lovable til det visuelle.

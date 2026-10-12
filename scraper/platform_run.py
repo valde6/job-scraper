@@ -91,7 +91,7 @@ def build_record(job: dict, employer: dict, rx: dict, now: str) -> dict | None:
     deadline = job.get("deadline") or find_deadline(desc, date.today().year) or None
     apply_url = job.get("apply_url") or job.get("url")
     return {
-        "id": job["id"], "company": job["company"], "title": job["title"], "job_type": jt, "fit": job.get("fit") or "sikker",
+        "id": job["id"], "company": job["company"], "title": job["title"], "url": job.get("url") or apply_url, "job_type": jt, "fit": job.get("fit") or "sikker",
         "location": job.get("location") or "", "region": reg,
         "posted": (job.get("posted") or "")[:10] or None, "deadline": deadline,
         "apply_url": apply_url, "career_url": employer.get("career_url") or None,

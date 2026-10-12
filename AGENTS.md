@@ -15,7 +15,7 @@ henter filen hver time. **Scraperens kvalitet er hele produktets værdi** – he
 | Arbejdsgivere | `companies.yaml` | `platform/employers.yaml` |
 | Filtre | studiejob, Storkøbenhavn, personlige emner | studiejob + praktik + graduate, Sjælland, `platform/keywords.yaml` (DA/EN) |
 | Jobindex | ja (kun personlig brug) | **aldrig** |
-| Output | `data/jobs.json`, `data/tracker/`, `data/platform/` | `data/jobradar/` (kontrakt v2, se `docs/JOBRADAR-APP.md`) |
+| Output | `data/jobs.json`, `data/tracker/`, `data/platform/` | `data/jobradar/` (kontrakt v2, se `docs/STUDIERADAR-APP.md`) |
 | Workflow | `scrape-jobs` | `jobradar-scrape` |
 
 Adapterne er fælles. Platform-tilstanden slås til med `set_job_types()` og `set_topics()` i `common.py`.
