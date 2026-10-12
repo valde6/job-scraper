@@ -68,7 +68,8 @@ def validate_payload(payload: dict) -> list[str]:
 def export_platform(jobs_out: list[dict], status: list[dict], companies: list[dict], now: str) -> dict:
     ranks = {c["name"]: c.get("rank") for c in companies}
     OUT.mkdir(parents=True, exist_ok=True)
-    jobs = [to_platform_job(j, ranks) for j in jobs_out]
+    # Jobindex-opslag må ikke vises i appen (juridisk). Den personlige tracker bruger dem stadig.
+    jobs = [to_platform_job(j, ranks) for j in jobs_out if j.get("source") != "jobindex"]
     sources = [{"name": s.get("company"), "type": s.get("source"), "ok": s.get("ok"), "listed": s.get("listed"),
                 "matched": s.get("matched"), "error": (s.get("error") or "")[:200] or None} for s in status]
     payload = {"schema_version": SCHEMA_VERSION, "generated_at": now,

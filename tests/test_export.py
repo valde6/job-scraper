@@ -47,3 +47,10 @@ def test_committed_export_is_valid():
     if not f.exists():
         pytest.skip("ingen eksport endnu")
     assert validate_payload(json.loads(f.read_text())) == []
+
+
+def test_export_excludes_jobindex(tmp_path, monkeypatch):
+    import scraper.export as E
+    monkeypatch.setattr(E, "OUT", tmp_path)
+    p = E.export_platform([job(), job(id="zzz999zzz999", source="jobindex", url="https://x/2")], [], [], "2026-10-12T00:00:00+00:00")
+    assert [j["origin"] for j in p["jobs"]] == ["employer"]
