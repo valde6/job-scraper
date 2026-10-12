@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-12T17:16:25+00:00",
+ "ts": "2026-10-12T18:52:38+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -15,7 +15,7 @@
    "name": "A.P. Møller - Mærsk",
    "type": "workday",
    "ok": true,
-   "listed": 629,
+   "listed": 630,
    "matched": 4,
    "problem": null,
    "streak": 0,
@@ -56,7 +56,7 @@
    "type": "smartrecruiters",
    "ok": true,
    "listed": 34,
-   "matched": 7,
+   "matched": 5,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -425,7 +425,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 28,
+   "listed": 30,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -446,7 +446,7 @@
    "type": "workday",
    "ok": true,
    "listed": 2,
-   "matched": 2,
+   "matched": 0,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -456,7 +456,7 @@
    "type": "hrmanager",
    "ok": true,
    "listed": 20,
-   "matched": 11,
+   "matched": 10,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -495,8 +495,8 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 71,
-   "matched": 3,
+   "listed": 72,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -1213,5 +1213,5 @@
   }
  ],
  "alerts": [],
- "active": 86
+ "active": 80
 }
