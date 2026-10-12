@@ -1,7 +1,8 @@
 # Arbejdsgivere i Jobradar (platform-kørslen). Uafhængig af companies.yaml (din personlige scraper).
 # lines: hvilke studieretninger arbejdsgiveren typisk er relevant for (ha-it, ha-almen, ha-jura)
 # career_url: arbejdsgiverens jobside – bruges som "Gå til virksomhedens jobside", når et job mangler direkte link
-# status: klar (har kilde) | find-system (rekrutteringssystem ikke fundet endnu) | mangler-adapter (systemet er kendt, adapter mangler)
+# status: klar (har kilde) | tjek (kilde sat op, men gav 0 opslag – konfigurationen er nok forkert)
+#         | find-system (rekrutteringssystem ikke fundet endnu) | mangler-adapter (systemet er kendt, adapter mangler)
 # source: samme format som companies.yaml (type + parametre). type none = ingen direkte kilde endnu.
 employers:
 - name: Novo Nordisk
@@ -297,7 +298,7 @@ employers:
   lines:
   - ha-almen
   career_url: https://pandoragroup.com/careers
-  status: klar
+  status: tjek
   source:
     type: browser
     urls:
@@ -306,7 +307,7 @@ employers:
     dk_only: false
   aliases:
   - Pandora A/S
-  note: SuccessFactors classic via browser (fundet af discovery)
+  note: SuccessFactors classic via browser (fundet af discovery) – gav 0 opslag 13/10, find den rigtige liste-URL
 - name: Dansk Industri
   lines:
   - ha-almen
@@ -811,11 +812,11 @@ employers:
   - ha-it
   - ha-jura
   career_url: https://careers.tryg.com
-  status: klar
+  status: tjek
   source:
     type: successfactors
     url: https://careers.tryg.com/Tryg
-  note: SuccessFactors – rettet til /Tryg 13/10
+  note: SuccessFactors – rettet til /Tryg 13/10 – gav 0 opslag 13/10, find den rigtige liste-URL
 - name: Alm. Brand Group
   lines:
   - ha-almen
@@ -1027,14 +1028,14 @@ employers:
   - ha-almen
   - ha-it
   career_url: https://www.dsb.dk/om-dsb/job-i-dsb/
-  status: klar
+  status: tjek
   source:
     type: browser
     urls:
     - https://career5.successfactors.eu/career?company=C0000031828P&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK
     link_pattern: career_job_req_id=\d+
     dk_only: true
-  note: SuccessFactors classic via browser (fundet af discovery)
+  note: SuccessFactors classic via browser (fundet af discovery) – gav 0 opslag 13/10, find den rigtige liste-URL
 - name: Movia
   lines:
   - ha-almen
@@ -1128,11 +1129,11 @@ employers:
   - ha-almen
   - ha-it
   career_url: https://www.gn.com/careers
-  status: klar
+  status: tjek
   source:
     type: workday
     url: https://gn.wd3.myworkdayjobs.com/GN-Careers
-  note: Workday (fundet af discovery)
+  note: Workday (fundet af discovery) – gav 0 opslag 13/10, find den rigtige liste-URL
 - name: Coloplast
   lines:
   - ha-almen
