@@ -3,29 +3,43 @@
 Opgaver i agent-størrelse: hver kan løses i én session/PR og har et klart "færdig"-kriterium.
 Tag dem med `/backlog <nr>` i Claude Code eller ved at give Codex teksten. Afkryds med en kort note, når de er merged.
 
-## Scraper
+**To kørsler i samme repo:**
+- *Personlig* (`scraper/run.py`, `companies.yaml`, workflow `scrape-jobs`) – Valdemars egen tracker. Rør kun ved den, hvis opgaven siger det.
+- *Jobradar* (`scraper/platform_run.py`, `platform/*.yaml`, workflow `jobradar-scrape`) – platformen. Ingen Jobindex.
+Begge bruger de samme adaptere. Testene beskytter begge.
 
-- [ ] **1. Emply-adapter.** Emply bruges af kommuner, a-kasser og foreninger (Ældre Sagen, KP, AKA, Hedensted Kommune m.fl.).
+## Jobradar-scraperen (prioriteret)
+
+- [ ] **1. Emply-adapter.** Emply bruges af kommuner, a-kasser og foreninger (Ældre Sagen, AKA, Frederiksberg Kommune m.fl.).
   Listesiden `https://<kunde>.career.emply.com/ledige-stillinger` henter opslag via `/api/integration/vacancy/get-page`.
-  Find request-formatet (browserens netværksfane eller `BROWSER`-probe), byg `scraper/adapters/emply.py` (config: `tenant`),
-  tilføj 2 kunder i `companies.yaml`. Færdig: `run --only` giver opslag, fixtures optaget, tests grønne.
-- [ ] **2. DTU som kilde.** DTU bruger Oracle (`https://efzu.fa.em2.oraclecloud.com`, site `CX_1`) – adapteren findes.
-  Beslut først, hvordan arbejdsgivere uden for top 50 markeres (`top50: false`-felt i `companies.yaml`?). Færdig: DTU-studiejob i eksporten med `top50=false`.
-- [ ] **3. Automatisk kilde-opdagelse.** For hvert Jobindex-opslag: følg linket i opslaget, genkend systemet
-  (HR-Manager `cid=`, Emply `<kunde>.career.emply.com`, Teamtailor, Workday `<kunde>.wdN.myworkdayjobs.com/<site>`, Oracle-host + site)
-  og skriv kandidater til `data/discovered_sources.json` (navn, type, config, antal set). Ingen automatisk ændring af `companies.yaml`.
-  Grundlag: `scraper/experiments/apply_study.py`. Færdig: filen opdateres i hver kørsel, tests for genkendelsen.
-- [ ] **4. Statens Rekrutteringsløsning.** HR-Manager-kunden `statensrekrutteringsloesning_tr` (cid 3010) viste 25 stillinger og ingen
-  studiejob, selvom Jobindex havde 8 studiejob fra samme cid. Find ud af, hvor de publiceres (andre kunde-aliaser? `MediaId`?).
-  Færdig: en forklaring + evt. kilde i `companies.yaml`.
+  Find request-formatet (din browsers netværksfane), byg `scraper/adapters/emply.py` (config: `url`), sæt `status: klar` for Emply-arbejdsgiverne i
+  `platform/employers.yaml`. Færdig: `python -m scraper.platform_run --only "Ældre Sagen"` giver opslag, fixtures optaget, tests grønne.
+- [ ] **2. Udfyld rekrutteringssystemer fra discovery.** Workflowet `discover-ats` med `PLATFORM` i `triggers/discover` skriver
+  `data/jobradar/discovery.json` for alle arbejdsgivere med `status: find-system`. Gå listen igennem, tilføj `source` til dem med et kendt system,
+  og test hver med `platform_run --only`. Færdig: mindst 30 flere arbejdsgivere med `status: klar`.
+- [ ] **3. HR-Manager-aliaser.** Københavns Kommune (cid 1518), ITU (119), HOFOR (174), Lederne (2134) bruger HR-Manager, men adapteren skal bruge
+  kunde-aliaset. Find det i et opslag (`customer=` i HTML'en, se `probe.txt` GREP) og tilføj. Færdig: fire nye kilder virker.
+- [ ] **4. Statens Rekrutteringsløsning.** Kunden `statensrekrutteringsloesning_tr` viste 25 stillinger og ingen studiejob, selvom 8 studiejob fra
+  samme løsning lå på Jobindex. Find ud af, hvor de publiceres (andre aliaser? `MediaId`?). Færdig: forklaring + evt. flere kilder.
 - [ ] **5. Rens opslagstekst.** Browser-kilder (fx PFA) får menutekst med i `description_md` ("Gå til hovedindhold", "Log på" …).
-  Lav en `clean_description()` i `common.py` med tests, og brug den i browser-adapteren.
-- [ ] **6. Jobindex i afspilningstests.** Optag et lille sæt RSS-feeds + opslag og test parseren (virksomhedsnavn fra titel/logo, `top50`-flag, afvisning af praktik).
-- [ ] **7. Kildestatus i eksporten.** Tilføj `data/platform/sources.json` til appens `/status`-side (kræver ændring i app-repoet).
+  `clean_description()` i `common.py` med tests, brugt i browser-adapteren.
+- [ ] **6. Jobindex som intern pejling.** Scriptet læser Jobindex-opslag, følger linket til arbejdsgiverens system og skriver *kandidater* til
+  `data/jobradar/discovered_sources.json` (navn, system, config). **Intet indhold fra Jobindex gemmes eller vises.** Ingen automatisk ændring af
+  `employers.yaml`. Grundlag: `scraper/experiments/apply_study.py`. Færdig: filen opdateres ugentligt, tests for genkendelsen.
+- [ ] **7. Cornerstone-adapter** (Egmont/Nordisk Film, NNE: `*.csod.com`). Færdig: Nordisk Film som kilde.
+- [ ] **8. Jobnet-webservice.** Når STAR har givet adgang: adapter, der henter studiejob i Region Hovedstaden/Sjælland fra Jobnet. Dækker de små arbejdsgivere.
+- [ ] **9. Praktik/graduate-kvalitet.** Gennemgå 50 tilfældige job fra `data/jobradar/jobs.json`: er `job_type`, `region` og `keywords` rigtige?
+  Ret regex i `common.py`/`platform/keywords.yaml` med en test pr. fejl.
+- [ ] **10. Afspilningstests for platform-kørslen.** Optag fixtures med platform-søgeordene (`scraper/record.py --platform`), så `platform_run` kan testes uden netværk.
 
-## App (Jobradar – Lovable-repoet)
+## Den personlige scraper
 
-- [ ] **8. AI-match-score.** Edge function, der for hver bruger scorer nye job 0-100 ud fra profil + `excluded_fields`
-  (fx "Revision" → under 50) og skriver `user_jobs.score` + `score_reason`. Billig model, batch, kun nye job. Kræver en API-nøgle som secret i Lovable Cloud.
-- [ ] **9. AI-resumé pr. job.** Én gang pr. job: 3 linjer "hvad laver man", "krav", "timer". Vises i stedet for de første 800 tegn.
-- [ ] **10. E-mail med nye match** (ugentlig), når score ≥ 70.
+- [ ] **11. Jobindex i afspilningstests.** Optag et lille sæt RSS-feeds + opslag og test parseren (virksomhed fra titel/logo, top50-flag, praktik-afvisning).
+
+## Appen (Jobradar – repo `valde6/findmy-denmark-jobs`)
+Specifikation og opgaver A1-A9 står i [`docs/JOBRADAR-APP.md`](JOBRADAR-APP.md). Kopiér filen ind i app-repoet (`docs/`), og giv agenten én opgave ad gangen.
+
+## Senere (efter scraper, UI og backend er på plads)
+- **AI-match-score** (0-100 + én sætning om hvorfor) pr. bruger og job, ud fra profil, nøgleord og fravalg. Erstatter `hits` i `src/lib/match.ts`.
+- **AI-resumé pr. job** (3 linjer: opgaver, krav, timer) – vises i stedet for opslagsteksten.
+- **AI-hjælp til ansøgning** (udkast ud fra profil + opslag).

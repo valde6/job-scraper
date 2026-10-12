@@ -8,6 +8,18 @@ arbejdsgivernes rekrutteringssystemer (Workday, SuccessFactors, HR-Manager, Team
 Jobindex' RSS, og udgiver dem som `data/platform/jobs.json`. Appen (Lovable + Supabase, separat repo)
 henter filen hver time. **Scraperens kvalitet er hele produktets værdi** – hellere færre job end forkerte job.
 
+## To kørsler i samme repo
+| | Personlig (Valdemars tracker) | Jobradar (platformen) |
+|---|---|---|
+| Kode | `scraper/run.py` | `scraper/platform_run.py` |
+| Arbejdsgivere | `companies.yaml` | `platform/employers.yaml` |
+| Filtre | studiejob, Storkøbenhavn, personlige emner | studiejob + praktik + graduate, Sjælland, `platform/keywords.yaml` (DA/EN) |
+| Jobindex | ja (kun personlig brug) | **aldrig** |
+| Output | `data/jobs.json`, `data/tracker/`, `data/platform/` | `data/jobradar/` (kontrakt v2, se `docs/JOBRADAR-APP.md`) |
+| Workflow | `scrape-jobs` | `jobradar-scrape` |
+
+Adapterne er fælles. Platform-tilstanden slås til med `set_job_types()` og `set_topics()` i `common.py`.
+
 ## Kort over koden
 | Fil | Ansvar |
 |---|---|
