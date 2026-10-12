@@ -19,6 +19,7 @@ import yaml
 from .adapters import ADAPTERS
 from .adapters import jobindex
 from .common import topic_tags, find_deadline
+from .export import export_platform
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -131,6 +132,7 @@ def main():
     (DATA / "new.json").write_text(json.dumps({"updated": now, "count": len(new), "jobs": new}, ensure_ascii=False, indent=1))
     (DATA / "status.json").write_text(json.dumps({"updated": now, "companies": status}, ensure_ascii=False, indent=1))
     export_tracker(jobs_out, status, companies, now)
+    export_platform(jobs_out, status, companies, now)
     print(f"\nFærdig: {len(found)} fundet i dag, {len(new)} nye, {sum(j['active'] for j in jobs_out)} aktive i alt.")
 
 

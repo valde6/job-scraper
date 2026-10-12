@@ -1,0 +1,413 @@
+{
+ "generated_at": "2026-10-12T10:49:44+00:00",
+ "sources": [
+  {
+   "name": "Novo Nordisk",
+   "type": "successfactors",
+   "ok": true,
+   "listed": 2,
+   "matched": 1,
+   "error": null
+  },
+  {
+   "name": "A.P. Møller - Mærsk",
+   "type": "workday",
+   "ok": true,
+   "listed": 407,
+   "matched": 2,
+   "error": null
+  },
+  {
+   "name": "McKinsey & Company",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "LEGO Group",
+   "type": "workday",
+   "ok": true,
+   "listed": 66,
+   "matched": 5,
+   "error": null
+  },
+  {
+   "name": "Danske Bank",
+   "type": "oracle",
+   "ok": true,
+   "listed": 7,
+   "matched": 3,
+   "error": null
+  },
+  {
+   "name": "Deloitte",
+   "type": "smartrecruiters",
+   "ok": true,
+   "listed": 33,
+   "matched": 3,
+   "error": null
+  },
+  {
+   "name": "PwC",
+   "type": "workday",
+   "ok": true,
+   "listed": 14,
+   "matched": 3,
+   "error": null
+  },
+  {
+   "name": "Carlsberg",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Boston Consulting Group (BCG)",
+   "type": "eightfold",
+   "ok": true,
+   "listed": 4,
+   "matched": 0,
+   "error": null
+  },
+  {
+   "name": "Nordea",
+   "type": "nordea",
+   "ok": true,
+   "listed": 26,
+   "matched": 0,
+   "error": null
+  },
+  {
+   "name": "Microsoft",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "EY",
+   "type": "successfactors",
+   "ok": true,
+   "listed": 0,
+   "matched": 0,
+   "error": null
+  },
+  {
+   "name": "Jyske Bank",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Nykredit",
+   "type": "browser",
+   "ok": true,
+   "listed": 58,
+   "matched": 2,
+   "error": null
+  },
+  {
+   "name": "Bestseller",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "L'Oréal Groupe",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Bain & Company",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Vestas",
+   "type": "successfactors",
+   "ok": true,
+   "listed": 5,
+   "matched": 0,
+   "error": null
+  },
+  {
+   "name": "Implement",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Saxo Bank",
+   "type": "workday",
+   "ok": true,
+   "listed": 23,
+   "matched": 0,
+   "error": null
+  },
+  {
+   "name": "Finansministeriet",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Bang & Olufsen",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Danmarks Nationalbank",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Arla Foods",
+   "type": "phenom",
+   "ok": true,
+   "listed": 10,
+   "matched": 0,
+   "error": null
+  },
+  {
+   "name": "Udenrigsministeriet",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Pandora",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Dansk Industri",
+   "type": "teamtailor",
+   "ok": true,
+   "listed": 5,
+   "matched": 0,
+   "error": null
+  },
+  {
+   "name": "Nordnet",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Ørsted",
+   "type": "browser",
+   "ok": true,
+   "listed": 47,
+   "matched": 0,
+   "error": null
+  },
+  {
+   "name": "KPMG",
+   "type": "hrmanager",
+   "ok": true,
+   "listed": 17,
+   "matched": 0,
+   "error": null
+  },
+  {
+   "name": "Matas",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Salling Group",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "PA Consulting Group",
+   "type": "smartrecruiters",
+   "ok": true,
+   "listed": 14,
+   "matched": 0,
+   "error": null
+  },
+  {
+   "name": "Københavns Lufthavne",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Danske Commodities",
+   "type": "teamtailor",
+   "ok": true,
+   "listed": 3,
+   "matched": 0,
+   "error": null
+  },
+  {
+   "name": "Netcompany",
+   "type": "smartrecruiters",
+   "ok": true,
+   "listed": 32,
+   "matched": 3,
+   "error": null
+  },
+  {
+   "name": "PFA Pension",
+   "type": "browser",
+   "ok": true,
+   "listed": 6,
+   "matched": 1,
+   "error": null
+  },
+  {
+   "name": "SAS",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Amazon",
+   "type": "amazon",
+   "ok": true,
+   "listed": 7,
+   "matched": 0,
+   "error": null
+  },
+  {
+   "name": "Beierholm",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "AL Sydbank",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Forsvaret",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "IKEA",
+   "type": "generic",
+   "ok": true,
+   "listed": 27,
+   "matched": 0,
+   "error": null
+  },
+  {
+   "name": "Statsministeriet",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Accenture",
+   "type": "workday",
+   "ok": true,
+   "listed": 2,
+   "matched": 2,
+   "error": null
+  },
+  {
+   "name": "Danmarks Radio",
+   "type": "hrmanager",
+   "ok": true,
+   "listed": 20,
+   "matched": 1,
+   "error": null
+  },
+  {
+   "name": "DSV",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "BDO",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "error": null
+  },
+  {
+   "name": "Rambøll",
+   "type": "smartrecruiters",
+   "ok": true,
+   "listed": 94,
+   "matched": 0,
+   "error": null
+  },
+  {
+   "name": "Novonesis",
+   "type": "workday",
+   "ok": true,
+   "listed": 53,
+   "matched": 2,
+   "error": null
+  },
+  {
+   "name": "(Jobindex RSS)",
+   "type": "jobindex",
+   "ok": true,
+   "listed": 377,
+   "matched": 33,
+   "error": null
+  }
+ ]
+}
