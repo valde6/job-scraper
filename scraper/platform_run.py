@@ -227,6 +227,8 @@ def main(argv=None):
         sys.exit(2)
 
     jobs = merge_state(found, state["jobs"], ok_sources, now, today)
+    for j in jobs.values():                       # ældre tilstand uden url-felt (før 13/10)
+        j.setdefault("url", j.get("apply_url") or j.get("career_url"))
     ordered = sorted(jobs.values(), key=lambda j: (j["active"], j["first_seen"]), reverse=True)
     payload = {"schema_version": SCHEMA_VERSION, "generated_at": now,
                "counts": {"total": len(ordered), "active": sum(j["active"] for j in ordered)}, "jobs": ordered}
