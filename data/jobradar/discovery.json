@@ -1,0 +1,3418 @@
+[
+ {
+  "company": "McKinsey & Company",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.mckinsey.com/careers/search-jobs",
+    "error": "HTTPSConnectionPool(host='www.mckinsey.com', port=443): Read timed out. (read timeout=20)"
+   }
+  ]
+ },
+ {
+  "company": "Carlsberg",
+  "ats": {
+   "successfactors": [
+    "https://career2.successfactors.eu",
+    "https://career2.successfactors.eu/career?career_company=carlsbergg&amp;lang=en_GB&amp;company=carlsbergg&amp;site=&amp;loginFlowRequired=true",
+    "https://career2.successfactors.eu/career?career_company=carlsbergg&lang=en_GB&company=carlsbergg&site=&loginFlowRequired=true",
+    "https://performancemanager.successfactors.eu/verp/vmod_v1/ui/extlib/jquery_3.5.1/jquery-migrate.js",
+    "https://performancemanager.successfactors.eu/verp/vmod_v1/ui/extlib/jquery_3.5.1/jquery.js",
+    "https://rmkcdn.successfactors.com/469aa8a1/46d681b9-f8e9-4db8-abdd-3.png",
+    "https://rmkcdn.successfactors.com/469aa8a1/ca5e5c93-6c70-4224-afd2-d.png"
+   ]
+  },
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://careers.carlsberg.com/",
+    "status": 200,
+    "bytes": 122892,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Microsoft",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://careers.microsoft.com/v2/global/en/home.html",
+    "status": 200,
+    "bytes": 29037,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Jyske Bank",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.jyskebank.dk/om/job",
+    "error": "404 Client Error: Not Found for url: https://www.jyskebank.dk/om/job"
+   }
+  ]
+ },
+ {
+  "company": "Bestseller",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://bestseller.com",
+    "status": 200,
+    "bytes": 35865,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://bestseller.com/careers",
+    "status": 200,
+    "bytes": 39057,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "L'Oréal Groupe",
+  "ats": {},
+  "listing_pages": [
+   {
+    "url": "https://careers.loreal.com/en/marketing",
+    "job_links": 7
+   },
+   {
+    "url": "https://careers.loreal.com/en/operations",
+    "job_links": 7
+   }
+  ],
+  "pages": [
+   {
+    "url": "https://careers.loreal.com/en",
+    "status": 200,
+    "bytes": 122060,
+    "job_links": 1,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.loreal.com/en",
+    "status": 200,
+    "bytes": 122060,
+    "job_links": 1,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.loreal.com/en/",
+    "status": 200,
+    "bytes": 122060,
+    "job_links": 1,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.loreal.com/en/over-coffee",
+    "status": 200,
+    "bytes": 99914,
+    "job_links": 1,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.loreal.com/en/culture-and-values",
+    "status": 200,
+    "bytes": 89491,
+    "job_links": 1,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.loreal.com/en/growth",
+    "status": 200,
+    "bytes": 109843,
+    "job_links": 1,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.loreal.com/en/diversity-equity-inclusion",
+    "status": 200,
+    "bytes": 73683,
+    "job_links": 1,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.loreal.com/en/purpose-at-loreal",
+    "status": 200,
+    "bytes": 66649,
+    "job_links": 1,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.loreal.com/en/entrepreneurial-spirit",
+    "status": 200,
+    "bytes": 75875,
+    "job_links": 1,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.loreal.com/en/benefits-wellbeing",
+    "status": 200,
+    "bytes": 76886,
+    "job_links": 1,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.loreal.com/en/marketing",
+    "status": 200,
+    "bytes": 126814,
+    "job_links": 7,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.loreal.com/en/operations",
+    "status": 200,
+    "bytes": 129336,
+    "job_links": 7,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Bain & Company",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.bain.com/careers/",
+    "error": "403 Client Error: Forbidden for url: https://www.bain.com/careers/"
+   }
+  ]
+ },
+ {
+  "company": "Implement",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://implementconsultinggroup.com/careers",
+    "error": "404 Client Error: Not Found for url: https://implementconsultinggroup.com/careers"
+   }
+  ]
+ },
+ {
+  "company": "Finansministeriet",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://fm.dk/om-os/job-i-finansministeriet/",
+    "error": "404 Client Error: Not Found for url: https://fm.dk/om-os/job-i-finansministeriet/"
+   }
+  ]
+ },
+ {
+  "company": "Bang & Olufsen",
+  "ats": {
+   "successfactors": [
+    "https://career5.successfactors.eu/career?company=bangolufse"
+   ],
+   "hrmanager": [
+    "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1462",
+    "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1462&ProjectId=143972&DepartmentId=18956&MediaId=5",
+    "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1462&amp;ProjectId=143972&amp;DepartmentId=18956&amp;MediaId=5"
+   ]
+  },
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.bang-olufsen.com/en/dk/story/careers",
+    "status": 200,
+    "bytes": 519020,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.bang-olufsen.com/en/dk/story/early-careers",
+    "status": 200,
+    "bytes": 400979,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://stores.bang-olufsen.com/en/search?entry=http%3A%2F%2Fbeoecomprodfewawe.azurewebsites.net%2Fen%2Fdk%2Fstory%2Fcareers",
+    "status": 200,
+    "bytes": 42691,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.bang-olufsen.com/en/dk/story/careers-graduate-program",
+    "status": 200,
+    "bytes": 507126,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://stores.bang-olufsen.com/en/search?entry=http%3A%2F%2Fbeoecomprodfewawe.azurewebsites.net%2Fen%2Fdk%2Fstory%2Fearly-careers",
+    "status": 200,
+    "bytes": 42691,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Danmarks Nationalbank",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.nationalbanken.dk/da/om-nationalbanken/job",
+    "error": "404 Client Error: Not Found for url: https://www.nationalbanken.dk/da/om-nationalbanken/job"
+   }
+  ]
+ },
+ {
+  "company": "Udenrigsministeriet",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://um.dk/om-os/job-i-udenrigsministeriet",
+    "error": "404 Client Error: Not Found for url: https://um.dk/om-os/job-i-udenrigsministeriet"
+   }
+  ]
+ },
+ {
+  "company": "Pandora",
+  "ats": {
+   "successfactors": [
+    "https://career2.successfactors.eu/careers?company=pandoraas&career_ns=job_application&career_job_req_id=35066&lang=en_US",
+    "https://career2.successfactors.eu/careers?company=pandoraas&career_ns=job_application&career_job_req_id=36068&lang=en_US",
+    "https://career2.successfactors.eu/careers?company=pandoraas&career_ns=job_application&career_job_req_id=37810&lang=en_US",
+    "https://career2.successfactors.eu/careers?company=pandoraas&career_ns=job_application&career_job_req_id=37817&lang=en_US",
+    "https://career2.successfactors.eu/careers?company=pandoraas&career_ns=job_application&career_job_req_id=38050&lang=en_US",
+    "https://career2.successfactors.eu/careers?company=pandoraas&career_ns=job_application&career_job_req_id=38775&lang=en_US",
+    "https://career2.successfactors.eu/careers?company=pandoraas&career_ns=job_application&career_job_req_id=39027&lang=en_US",
+    "https://career2.successfactors.eu/careers?company=pandoraas&career_ns=job_application&career_job_req_id=41060&lang=en_US"
+   ]
+  },
+  "listing_pages": [
+   {
+    "url": "https://careers.pandoragroup.com/jobs",
+    "job_links": 32
+   },
+   {
+    "url": "https://careers.pandoragroup.com/jobs?filter%5Bcategory%5D%5B0%5D=Corporate",
+    "job_links": 29
+   },
+   {
+    "url": "https://careers.pandoragroup.com/seasonal-jobs",
+    "job_links": 20
+   },
+   {
+    "url": "https://careers.pandoragroup.com/retail",
+    "job_links": 20
+   },
+   {
+    "url": "https://careers.pandoragroup.com/crafting-and-supply",
+    "job_links": 20
+   }
+  ],
+  "pages": [
+   {
+    "url": "https://careers.pandoragroup.com/",
+    "status": 200,
+    "bytes": 88597,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.pandoragroup.com/",
+    "status": 200,
+    "bytes": 88597,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.pandoragroup.com/seasonal-jobs",
+    "status": 200,
+    "bytes": 212083,
+    "job_links": 20,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.pandoragroup.com/life-at-pandora",
+    "status": 200,
+    "bytes": 98224,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.pandoragroup.com/career-areas",
+    "status": 200,
+    "bytes": 94701,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.pandoragroup.com/jobs",
+    "status": 200,
+    "bytes": 261345,
+    "job_links": 32,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.pandoragroup.com/retail",
+    "status": 200,
+    "bytes": 262322,
+    "job_links": 20,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.pandoragroup.com/crafting-and-supply",
+    "status": 200,
+    "bytes": 165048,
+    "job_links": 20,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.pandoragroup.com/jobs?filter%5Bcategory%5D%5B0%5D=Corporate",
+    "status": 200,
+    "bytes": 159986,
+    "job_links": 29,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.pandoragroup.com/jobs?filter%5Bcategory%5D%5B0%5D=Distribution",
+    "status": 200,
+    "bytes": 126058,
+    "job_links": 12,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.pandoragroup.com/digital-and-tech",
+    "status": 200,
+    "bytes": 155032,
+    "job_links": 18,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.pandoragroup.com/en-gb/",
+    "status": 200,
+    "bytes": 88463,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Nordnet",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.nordnet.dk/dk/om-nordnet/karriere",
+    "error": "404 Client Error: Not Found for url: https://www.nordnet.dk/dk/om-nordnet/karriere"
+   }
+  ]
+ },
+ {
+  "company": "Matas",
+  "ats": {
+   "emply": [
+    "https://matas.career.emply.com/apply/elever/0rtxm5",
+    "https://matas.career.emply.com/apply/manager-trainee/yq4548"
+   ]
+  },
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.jobindex.dk/kundeside/bliv-elev-i-matas/manager-trainee",
+    "status": 200,
+    "bytes": 59611,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Salling Group",
+  "ats": {},
+  "listing_pages": [
+   {
+    "url": "https://sallinggroup.com/job/elev",
+    "job_links": 19
+   },
+   {
+    "url": "https://sallinggroup.com/job/",
+    "job_links": 9
+   },
+   {
+    "url": "https://sallinggroup.com/job",
+    "job_links": 9
+   }
+  ],
+  "pages": [
+   {
+    "url": "https://sallinggroup.com/job/",
+    "status": 200,
+    "bytes": 537048,
+    "job_links": 9,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://sallinggroup.com/job",
+    "status": 200,
+    "bytes": 537104,
+    "job_links": 9,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://sallinggroup.com/job/ledige-stillinger",
+    "status": 200,
+    "bytes": 406614,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://sallinggroup.com/job/job-i-vores-butikker",
+    "status": 200,
+    "bytes": 473520,
+    "job_links": 3,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://sallinggroup.com/job/fritidsjob",
+    "status": 200,
+    "bytes": 467250,
+    "job_links": 3,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://sallinggroup.com/job/job-i-koncernfunktioner",
+    "status": 200,
+    "bytes": 415766,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://sallinggroup.com/job/elev",
+    "status": 200,
+    "bytes": 505085,
+    "job_links": 19,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://sallinggroup.com/job/job-i-lager-og-logistik",
+    "status": 200,
+    "bytes": 377351,
+    "job_links": 1,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://sallinggroup.com/job/praktik",
+    "status": 200,
+    "bytes": 405357,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://sallinggroup.com/arbejdsliv",
+    "status": 200,
+    "bytes": 596322,
+    "job_links": 4,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://sallinggroup.com/kontakt/medarbejdere",
+    "status": 200,
+    "bytes": 393272,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://sallinggroup.com/job/en-god-start/",
+    "status": 200,
+    "bytes": 394304,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Københavns Lufthavne",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.cph.dk/om-cph/job",
+    "error": "403 Client Error: Forbidden for url: https://www.cph.dk/om-cph/job"
+   }
+  ]
+ },
+ {
+  "company": "SAS",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.sasgroup.net/careers/",
+    "error": "404 Client Error: Not Found for url: https://www.sasgroup.net/careers/"
+   }
+  ]
+ },
+ {
+  "company": "Beierholm",
+  "ats": {
+   "talentsoft/cornerstone": [
+    "https://beierholm-career.talent-soft.com/job/job-send-os-en-uopfordret-ans-gning_2.aspx"
+   ]
+  },
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.beierholm.dk/karriere",
+    "status": 200,
+    "bytes": 166279,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.beierholm.dk/services/revision-og-regnskab/revision/assistance-med-opstilling-af-regnskabet",
+    "status": 200,
+    "bytes": 140807,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.beierholm.dk/karriere",
+    "status": 200,
+    "bytes": 166279,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.beierholm.dk/viden-og-indsigt/cases-og-inspiration/faa-tilskud-til-arbejdet-med-baeredygtighed",
+    "status": 200,
+    "bytes": 141963,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.beierholm.dk/karriere/revisor",
+    "status": 200,
+    "bytes": 158432,
+    "job_links": 1,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.beierholm.dk/karriere/outsourcing",
+    "status": 200,
+    "bytes": 135008,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.beierholm.dk/karriere/specialister",
+    "status": 200,
+    "bytes": 153175,
+    "job_links": 1,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.beierholm.dk/karriere/din-fremtid-starter-her",
+    "status": 200,
+    "bytes": 171742,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.beierholm.dk/karriere/start-din-karriere-som-praktikant-i-beierholm",
+    "status": 200,
+    "bytes": 143885,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.beierholm.dk/karriere/ledige-stillinger",
+    "status": 200,
+    "bytes": 135685,
+    "job_links": 1,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.beierholm.dk/karriere/tips-til-ansoegning",
+    "status": 200,
+    "bytes": 158886,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.beierholm.dk/karriere/ansat-i-beierholm",
+    "status": 200,
+    "bytes": 171758,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "AL Sydbank",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.alsydbank.dk/om-os/job",
+    "error": "404 Client Error: Not Found for url: https://www.al-sydbank.dk/om-os/job"
+   }
+  ]
+ },
+ {
+  "company": "Forsvaret",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.forsvaret.dk/da/job-i-forsvaret/",
+    "error": "404 Client Error: Not Found for url: https://www.forsvaret.dk/da/job-i-forsvaret/"
+   }
+  ]
+ },
+ {
+  "company": "Statsministeriet",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://stm.dk/om-os/job/",
+    "error": "404 Client Error: Not Found for url: https://stm.dk/om-os/job/"
+   }
+  ]
+ },
+ {
+  "company": "DSV",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.dsv.com/en/careers",
+    "status": 200,
+    "bytes": 161149,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsv.com/en/careers/job-openings",
+    "status": 200,
+    "bytes": 139428,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsv.com/en/careers/meet-our-people",
+    "status": 200,
+    "bytes": 184344,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsv.com/en/careers/why-dsv",
+    "status": 200,
+    "bytes": 156389,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsv.com/en/careers/job-areas/trainee-programmes",
+    "status": 200,
+    "bytes": 168328,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsv.com/en/careers/job-areas/freight-forwarding",
+    "status": 200,
+    "bytes": 166266,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsv.com/en/careers/job-areas/it",
+    "status": 200,
+    "bytes": 174816,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsv.com/en/careers/job-areas/logistics-sales",
+    "status": 200,
+    "bytes": 166262,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsv.com/en/careers/job-areas/finance",
+    "status": 200,
+    "bytes": 166276,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsv.com/en/careers/job-areas/managers",
+    "status": 200,
+    "bytes": 162818,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsv.com/en/careers/job-areas/supply-chain",
+    "status": 200,
+    "bytes": 162633,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsv.com/en/careers/job-areas/warehouse-operators",
+    "status": 200,
+    "bytes": 143460,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "BDO",
+  "ats": {
+   "emply": [
+    "https://bdo.career.emply.com/da/apply/unsolicited-application/1fbn9e",
+    "https://emply.com"
+   ]
+  },
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.bdo.dk/da-dk/karriere",
+    "status": 200,
+    "bytes": 73553,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.bdo.dk/da-dk/medarbejdere",
+    "status": 200,
+    "bytes": 64473,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.bdo.dk/en-gb/careers",
+    "status": 200,
+    "bytes": 48683,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://jobs.bdo.dk/ledige-stillinger",
+    "status": 200,
+    "bytes": 226851,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.bdo.dk/da-dk/karriere/tidlig-karriere",
+    "status": 200,
+    "bytes": 74523,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://jobs.bdo.dk/sog-uopfordret",
+    "status": 200,
+    "bytes": 227082,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.bdo.dk/da-dk/medarbejdere/claus-rene-roserin",
+    "status": 200,
+    "bytes": 71452,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://jobs.bdo.dk/",
+    "status": 200,
+    "bytes": 226834,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://jobs.bdo.dk/jobagent",
+    "status": 200,
+    "bytes": 55914,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://jobs.bdo.dk/ledige-stillinger-trainee",
+    "status": 200,
+    "bytes": 188801,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://jobs.bdo.dk/",
+    "status": 200,
+    "bytes": 226834,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://jobs.bdo.dk/",
+    "status": 200,
+    "bytes": 226834,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Kromann Reumert",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://kromannreumert.com/karriere",
+    "status": 200,
+    "bytes": 74744,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kromannreumert.com/karriere",
+    "status": 200,
+    "bytes": 74744,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kromannreumert.com/karriere/arbejdsliv-karriereudvikling",
+    "status": 200,
+    "bytes": 77987,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kromannreumert.com/karriere/for-studerende",
+    "status": 200,
+    "bytes": 72435,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kromannreumert.com/karriere/harry-potter-environmental-law-kulturmoeder-hoejdepunkter-fra-udveksling",
+    "status": 200,
+    "bytes": 62084,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kromannreumert.com/karriere/exceed-expectations",
+    "status": 200,
+    "bytes": 59416,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kromannreumert.com/karriere/aargang-22-se-med-bagved-murene",
+    "status": 200,
+    "bytes": 73764,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kromannreumert.com/karriere/aargang-22-se-med-bagved-murene/aargang-22-assistant-associate-lasse-uldall-juhl",
+    "status": 200,
+    "bytes": 43873,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kromannreumert.com/karriere/aargang-22-se-med-bagved-murene/aargang-22-assistant-associate-sophie-heymann-lassen",
+    "status": 200,
+    "bytes": 50062,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kromannreumert.com/karriere/aargang-22-se-med-bagved-murene/aargang-22-assistant-associate-rikke-sandbaek-geertsen",
+    "status": 200,
+    "bytes": 49212,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kromannreumert.com/karriere/aargang-22-se-med-bagved-murene/aargang-22-assistant-associate-nicolai-nielsen",
+    "status": 200,
+    "bytes": 49838,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kromannreumert.com/karriere/exceed",
+    "status": 200,
+    "bytes": 50243,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Plesner",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.plesner.com/karriere",
+    "error": "404 Client Error: Not Found for url: https://plesner.com/karriere"
+   }
+  ]
+ },
+ {
+  "company": "Gorrissen Federspiel",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://gorrissenfederspiel.com/karriere/",
+    "status": 200,
+    "bytes": 71002,
+    "job_links": 3,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://gorrissenfederspiel.com/medarbejdere/",
+    "status": 200,
+    "bytes": 105659,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://gorrissenfederspiel.com/karriere/",
+    "status": 200,
+    "bytes": 71002,
+    "job_links": 3,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://gorrissenfederspiel.com/karriere/ledige-stillinger/",
+    "status": 200,
+    "bytes": 61519,
+    "job_links": 4,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://gorrissenfederspiel.com/karriere/gorrissen-federspiel-som-arbejdsplads/",
+    "status": 200,
+    "bytes": 69402,
+    "job_links": 3,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://gorrissenfederspiel.com/karriere/medarbejderportraetter/",
+    "status": 200,
+    "bytes": 77136,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://gorrissenfederspiel.com/karriere/gorrissen-federspiel-som-arbejdsplads/internationalt-perspektiv/",
+    "status": 200,
+    "bytes": 75701,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://gorrissenfederspiel.com/karriere/vilkaar/",
+    "status": 200,
+    "bytes": 74881,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://gorrissenfederspiel.com/karriere/moed-os/",
+    "status": 200,
+    "bytes": 60344,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://gorrissenfederspiel.com/karriere/projektstudent/",
+    "status": 200,
+    "bytes": 63908,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://gorrissenfederspiel.com/karriere/stud-jur/",
+    "status": 200,
+    "bytes": 65550,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://gorrissenfederspiel.com/karriere/advokatfuldmaegtig/",
+    "status": 200,
+    "bytes": 66715,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Bech-Bruun",
+  "ats": {
+   "emply": [
+    "https://bechbruun.career.emply.com/apply/uopfordrede-ansogninger/zk3cjr/da"
+   ]
+  },
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://bechbruun.com/da/karriere",
+    "status": 200,
+    "bytes": 91130,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://bechbruun.com/da/karriere",
+    "status": 200,
+    "bytes": 91130,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://bechbruun.com/da/medarbejdere/",
+    "status": 200,
+    "bytes": 105274,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://bechbruun.com/da/karriere/",
+    "status": 200,
+    "bytes": 91130,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://bechbruun.com/career/",
+    "status": 200,
+    "bytes": 90624,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://bechbruun.com/da/karriere/ledige-stillinger/",
+    "status": 200,
+    "bytes": 36871,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://bechbruun.com/da/karriere/advokat-erhvervsjuridisk-raadgiver-og-oekonom/",
+    "status": 200,
+    "bytes": 58573,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://bechbruun.com/da/karriere/fuldmaegtig/",
+    "status": 200,
+    "bytes": 60535,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://bechbruun.com/da/karriere/studerende/",
+    "status": 200,
+    "bytes": 51572,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://bechbruun.com/da/karriere/business-support/",
+    "status": 200,
+    "bytes": 42016,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://bechbruun.com/da/om-os/esg/social/",
+    "status": 200,
+    "bytes": 53506,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://bechbruun.com/da/medarbejdere/anne-katrine-hoeg-noerregaard/",
+    "status": 200,
+    "bytes": 28002,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Accura",
+  "ats": {
+   "hrmanager": [
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?customer=accura%20",
+    "https://candidate.hr-manager.net/ApplicationForm/SinglePageApplicationForm.aspx?cid=149&amp;departmentId=10606&amp;ProjectId=175890",
+    "https://candidate.hr-manager.net/ApplicationForm/SinglePageApplicationForm.aspx?cid=149&departmentId=10606&ProjectId=175890",
+    "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=149&#038;ProjectId=176064&#038;DepartmentId=3699&#038;SkipAdvertisement=true",
+    "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=149&#038;ProjectId=176066&#038;DepartmentId=3699&#038;SkipAdvertisement=true",
+    "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=149&#038;ProjectId=176067&#038;DepartmentId=3699&#038;SkipAdvertisement=true",
+    "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=149&#038;ProjectId=176068&#038;DepartmentId=3699&#038;SkipAdvertisement=true",
+    "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=149&#038;ProjectId=176069&#038;DepartmentId=3699&#038;SkipAdvertisement=true"
+   ]
+  },
+  "listing_pages": [
+   {
+    "url": "https://accura.dk/karriere/",
+    "job_links": 5
+   },
+   {
+    "url": "https://accura.dk/karriere/",
+    "job_links": 5
+   }
+  ],
+  "pages": [
+   {
+    "url": "https://accura.dk/karriere/",
+    "status": 200,
+    "bytes": 215576,
+    "job_links": 5,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://accura.dk/karriere/",
+    "status": 200,
+    "bytes": 215576,
+    "job_links": 5,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://accura.dk/en/career/",
+    "status": 200,
+    "bytes": 167704,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://accura.dk/stillinger/it-supporter/",
+    "status": 200,
+    "bytes": 57051,
+    "job_links": 3,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://accura.dk/stillinger/studentermedhjaelpere-med-staerke-ai-kompetencer-og-interesse-for-advokatbranchen/",
+    "status": 200,
+    "bytes": 55633,
+    "job_links": 3,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://accura.dk/stillinger/studentermedhjaelper-til-content-digitale-kanaler-og-marketing/",
+    "status": 200,
+    "bytes": 58514,
+    "job_links": 3,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://accura.dk/stillinger/studentermedhjaelper-til-sagsadministrationen/",
+    "status": 200,
+    "bytes": 60574,
+    "job_links": 3,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://accura.dk/stillinger/ai-consultant-til-accuras-afdeling-for-ai-viden/",
+    "status": 200,
+    "bytes": 60602,
+    "job_links": 3,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://accura.dk/karriere/fuldmaegtig/",
+    "status": 200,
+    "bytes": 205692,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://accura.dk/karriere/student/",
+    "status": 200,
+    "bytes": 269089,
+    "job_links": 3,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://accura.dk/karriere/mentorordning/",
+    "status": 200,
+    "bytes": 148240,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://accura.dk/wp-content/uploads/2026/06/karrieresite-diagram-web.png",
+    "status": 200,
+    "bytes": 10925,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Poul Schmith / Kammeradvokaten",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.poulschmith.dk/karriere",
+    "error": "404 Client Error: Not Found for url: https://poulschmith.dk/karriere"
+   }
+  ]
+ },
+ {
+  "company": "Lundgrens",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://lundgrens.dk/da/frontpage.html",
+    "status": 200,
+    "bytes": 49275,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://lundgrens.dk/da/frontpage.html",
+    "status": 200,
+    "bytes": 49275,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Horten",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.hortendahl.dk/karriere",
+    "status": 200,
+    "bytes": 0,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "DLA Piper Denmark",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://denmark.dlapiper.com/da/karriere",
+    "status": 200,
+    "bytes": 520134,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Mazanti-Andersen",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.mazanti.dk/karriere/",
+    "status": 200,
+    "bytes": 136846,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.mazanti.dk/medarbejdere/",
+    "status": 200,
+    "bytes": 320719,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.mazanti.dk/karriere/",
+    "status": 200,
+    "bytes": 136846,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.mazanti.dk/en/career/",
+    "status": 200,
+    "bytes": 135617,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.mazanti.dk/karriere/ledige-stillinger/",
+    "status": 200,
+    "bytes": 141967,
+    "job_links": 3,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.mazanti.dk/karriere/studjur-hos-mazanti/",
+    "status": 200,
+    "bytes": 142176,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.mazanti.dk/karriere/advokatfuldmaegtig-hos-mazanti/",
+    "status": 200,
+    "bytes": 142037,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.mazanti.dk/medarbejdere/abdul-wahid-mahmood/",
+    "status": 200,
+    "bytes": 135267,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.mazanti.dk/medarbejdere/adrian-daubjerg-fisher/",
+    "status": 200,
+    "bytes": 136178,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.mazanti.dk/medarbejdere/alice-hafjall-balle/",
+    "status": 200,
+    "bytes": 134744,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.mazanti.dk/medarbejdere/allan-bachmann/",
+    "status": 200,
+    "bytes": 135315,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.mazanti.dk/medarbejdere/anders-holsting-sloth/",
+    "status": 200,
+    "bytes": 137338,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Norrbom Vinding",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://schjodt.com/",
+    "status": 200,
+    "bytes": 8088,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Moalem Weitemeyer",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.moalemweitemeyer.com/karriere",
+    "status": 200,
+    "bytes": 70004,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.moalemweitemeyer.com/career",
+    "status": 200,
+    "bytes": 104099,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Lund Elmer Sandager",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://les.dk/da",
+    "status": 200,
+    "bytes": 147535,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Delacour",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://delacour.dk/karriere",
+    "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+   }
+  ]
+ },
+ {
+  "company": "Danske Advokater",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.danskeadvokater.dk/om-os/job",
+    "error": "404 Client Error: Not Found for url: https://www.danskeadvokater.dk/om-os/job"
+   }
+  ]
+ },
+ {
+  "company": "Grant Thornton",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.grantthornton.dk/karriere/",
+    "status": 200,
+    "bytes": 667561,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.grantthornton.dk/services/radgivning/it-revision-og-radgivning/forberedelsesforlob-inden-isae-erklaringsarbejdet/",
+    "status": 200,
+    "bytes": 743282,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.grantthornton.dk/karriere/karriereveje-hos-grant-thornton/",
+    "status": 200,
+    "bytes": 708189,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.grantthornton.dk/karriere/karriereveje-hos-grant-thornton/begyndelsen-af-din-karriere/",
+    "status": 200,
+    "bytes": 714758,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.grantthornton.dk/karriere/karriereveje-hos-grant-thornton/erfarne-profiler/",
+    "status": 200,
+    "bytes": 713665,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.grantthornton.dk/karriere/grant-thornton-som-arbejdsplads/",
+    "status": 200,
+    "bytes": 718623,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.grantthornton.dk/karriere/grant-thornton-som-arbejdsplads/vores-kultur-gor-forskellen/",
+    "status": 200,
+    "bytes": 704130,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.grantthornton.dk/karriere/grant-thornton-som-arbejdsplads/karrierehistorier/",
+    "status": 200,
+    "bytes": 727746,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.grantthornton.dk/karriere/ledige-stillinger/",
+    "status": 200,
+    "bytes": 707119,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.grantthornton.dk/karriere/sadan-foregar-ansattelsesprocessen-hos-grant-thornton/",
+    "status": 200,
+    "bytes": 726000,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.grantthornton.dk/karriere/ledige-stillinger/studentermedhjalper-til-kommunikation-og-marketing/",
+    "status": 200,
+    "bytes": 678442,
+    "job_links": 0,
+    "jsonld_jobposting": true
+   },
+   {
+    "url": "https://www.grantthornton.dk/karriere/ledige-stillinger/erfaren-revisor-til-Grenaa/",
+    "status": 200,
+    "bytes": 679930,
+    "job_links": 0,
+    "jsonld_jobposting": true
+   }
+  ]
+ },
+ {
+  "company": "Partner Revision",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.partner-revision.dk/om-os/karriere",
+    "status": 200,
+    "bytes": 42063,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.partner-revision.dk/hr-medarbejdere",
+    "status": 200,
+    "bytes": 48421,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.partner-revision.dk/medarbejdere-i-fokus",
+    "status": 200,
+    "bytes": 55422,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.partner-revision.dk/om-os/karriere",
+    "status": 200,
+    "bytes": 42062,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.partner-revision.dk/faglig-viden/nyheder/medarbejder-nyheder/detaljer-1/jan-har-50-aars-jubilaeum?Action=1&M=NewsV2&PID=11349",
+    "status": 200,
+    "bytes": 38317,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.partner-revision.dk/faglig-viden/nyheder/medarbejder-nyheder/detaljer-1/tillykke-til-4-nye-revisorer?Action=1&M=NewsV2&PID=11349",
+    "status": 200,
+    "bytes": 38123,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.partner-revision.dk/faglig-viden/nyheder/medarbejder-nyheder/detaljer-1/jesper-har-40-aars-jubilaeum?Action=1&M=NewsV2&PID=11349",
+    "status": 200,
+    "bytes": 41746,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.partner-revision.dk/faglig-viden/nyheder/medarbejder-nyheder/detaljer-1/kenneth-har-10-aars-jubilaeum?Action=1&M=NewsV2&PID=11349",
+    "status": 200,
+    "bytes": 38926,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.partner-revision.dk/faglig-viden/nyheder/medarbejder-nyheder/detaljer-1/anne-har-20-aars-jubilaeum?Action=1&M=NewsV2&PID=11349",
+    "status": 200,
+    "bytes": 38806,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.partner-revision.dk/faglig-viden/nyheder/medarbejder-nyheder/detaljer-1/susanne-har-30-aars-jubilaeum?Action=1&M=NewsV2&PID=11349",
+    "status": 200,
+    "bytes": 39891,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.partner-revision.dk/faglig-viden/nyheder/medarbejder-nyheder/detaljer-1/jonas-er-faerdig-med-sin-kandidat?Action=1&M=NewsV2&PID=11349",
+    "status": 200,
+    "bytes": 38136,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.partner-revision.dk/faglig-viden/nyheder/medarbejder-nyheder/detaljer-1/nomineret-som-danmarks-bedste-praktikplads?Action=1&M=NewsV2&PID=11349",
+    "status": 200,
+    "bytes": 38173,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Skatteministeriet og Skattestyrelsen",
+  "ats": {
+   "hrmanager": [
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?customer=statensrekrutteringsloesning_tr",
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?customer=statensrekrutteringsloesning_tr&amp;departmentid=18969",
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?customer=statensrekrutteringsloesning_tr&departmentid=18969"
+   ]
+  },
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://svmn.dk/ministeriet/job-karriere",
+    "status": 200,
+    "bytes": 105422,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Erhvervsstyrelsen",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://erhvervsstyrelsen.dk/job",
+    "error": "404 Client Error: Not Found for url: https://erhvervsstyrelsen.dk/job"
+   }
+  ]
+ },
+ {
+  "company": "Finanstilsynet",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.finanstilsynet.dk/om-os/job",
+    "error": "404 Client Error: Not Found for url: https://www.finanstilsynet.dk/om-os/job"
+   }
+  ]
+ },
+ {
+  "company": "Konkurrence- og Forbrugerstyrelsen",
+  "ats": {
+   "hrmanager": [
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?customer=statensrekrutteringsloesning_tr&amp;departmentid=18989",
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?customer=statensrekrutteringsloesning_tr&amp;departmentid=18989?cid=5001&amp;departmentId=6208&quot;",
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?customer=statensrekrutteringsloesning_tr&departmentid=18989",
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?customer=statensrekrutteringsloesning_tr&departmentid=18989?cid=5001&departmentId=6208",
+    "https://candidate.hr-manager.net/Login.aspx?cid=5001&amp;departmentId=6208&quot;",
+    "https://candidate.hr-manager.net/Login.aspx?cid=5001&departmentId=6208"
+   ]
+  },
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://kfst.dk/om-os/job",
+    "status": 200,
+    "bytes": 119956,
+    "job_links": 4,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kfst.dk/om-os/job",
+    "status": 200,
+    "bytes": 119956,
+    "job_links": 4,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kfst.dk/forbrugerforhold/forbrugerpolitik/internationalt-samarbejde",
+    "status": 200,
+    "bytes": 112932,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kfst.dk/udbud/offentlig-privat-samarbejde",
+    "status": 200,
+    "bytes": 105757,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kfst.dk/om-os/job/ledige-stillinger",
+    "status": 200,
+    "bytes": 130348,
+    "job_links": 4,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kfst.dk/om-os/job/tilmeld-jobagent",
+    "status": 200,
+    "bytes": 119625,
+    "job_links": 4,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kfst.dk/om-os/job/naar-du-soeger",
+    "status": 200,
+    "bytes": 127862,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kfst.dk/om-os/job/som-arbejdsplads",
+    "status": 200,
+    "bytes": 144895,
+    "job_links": 4,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kfst.dk/udbud/offentlig-privat-samarbejde/om-offentlig-privat-samarbejde-i-danmark",
+    "status": 200,
+    "bytes": 208990,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kfst.dk/udbud/offentlig-privat-samarbejde/status-for-offentlig-konkurrence",
+    "status": 200,
+    "bytes": 105607,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kfst.dk/udbud/offentlig-privat-samarbejde/offentlig-private-partnerskaber",
+    "status": 200,
+    "bytes": 147858,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://kfst.dk/udbud/offentlig-privat-samarbejde/om-offentlig-privat-samarbejde-i-danmark",
+    "status": 200,
+    "bytes": 208990,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Justitsministeriet",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.justitsministeriet.dk/job",
+    "error": "404 Client Error: Not Found for url: https://www.justitsministeriet.dk/job"
+   }
+  ]
+ },
+ {
+  "company": "Datatilsynet",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.datatilsynet.dk/om-datatilsynet/job",
+    "error": "404 Client Error: Not Found for url: https://www.datatilsynet.dk/om-datatilsynet/job"
+   }
+  ]
+ },
+ {
+  "company": "Københavns Kommune",
+  "ats": {
+   "hrmanager": [
+    "http://api.hr-manager.net/JobPortal.svc/",
+    "https://api.hr-manager.net/JobPortal.svc/kimdemo/PositionList/rss/?protype=OpenApplication&amp;depid=10464;11220;18839&amp;incads=true",
+    "https://api.hr-manager.net/JobPortal.svc/kimdemo/PositionList/rss/?protype=OpenApplication&depid=10464;11220;18839&incads=true",
+    "https://api.hr-manager.net/JobPortal.svc/kimdemo/PositionList/rss/?protype=RecruitmentProject&amp;depid=10464;11220;18839&amp;incads=true",
+    "https://api.hr-manager.net/JobPortal.svc/kimdemo/PositionList/rss/?protype=RecruitmentProject&depid=10464;11220;18839&incads=true",
+    "https://candidate.hr-manager.net/",
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?cid=326&uiculture=en",
+    "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=272"
+   ],
+   "hrmanager-embed": [
+    "HrManager",
+    "hr-manager.net/JobPortal",
+    "hrmanager"
+   ]
+  },
+  "listing_pages": [
+   {
+    "url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=kk",
+    "job_links": 7
+   }
+  ],
+  "pages": [
+   {
+    "url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=kk",
+    "status": 200,
+    "bytes": 305690,
+    "job_links": 7,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Alm. Brand Group",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.almbrand.dk/om-os/job",
+    "error": "404 Client Error: Not Found for url: https://www.almbrand.dk/om-os/job"
+   }
+  ]
+ },
+ {
+  "company": "If Skadeforsikring",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.if.dk/om-if/job",
+    "error": "404 Client Error: Not Found for url: https://www.if.dk/om-if/job"
+   }
+  ]
+ },
+ {
+  "company": "ATP",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.atp.dk/job",
+    "error": "404 Client Error: Not Found for url: https://www.atp.dk/job"
+   }
+  ]
+ },
+ {
+  "company": "PensionDanmark",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.pensiondanmark.com/om-pensiondanmark/job/",
+    "error": "404 Client Error: Not Found for url: https://www.pensiondanmark.com/om-pensiondanmark/job/?AspxAutoDetectCookieSupport=1"
+   }
+  ]
+ },
+ {
+  "company": "Sampension",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.sampension.dk:443/om-sampension/karriere",
+    "status": 200,
+    "bytes": 5572,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "AP Pension",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://appension.dk/om-ap-pension/job-i-ap-pension/karriere-i-ap-pension",
+    "status": 200,
+    "bytes": 98376,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://appension.dk/privat/forandringer-i-dit-arbejdsliv/job",
+    "status": 200,
+    "bytes": 929852,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://appension.dk/privat/forandringer-i-dit-arbejdsliv/loen",
+    "status": 200,
+    "bytes": 928380,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://appension.dk/privat/sundhed/sygdom",
+    "status": 200,
+    "bytes": 95869,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://appension.dk/erhverv/virksomhed/firmapension",
+    "status": 200,
+    "bytes": 99683,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://appension.dk/erhverv/virksomhed/til-medarbejderen",
+    "status": 200,
+    "bytes": 96704,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://appension.dk/erhverv/virksomhed/virksomhedsportal",
+    "status": 200,
+    "bytes": 89998,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://appension.dk/om-ap-pension/job-i-ap-pension/ap-pension-som-arbejdsplads",
+    "status": 200,
+    "bytes": 97117,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://appension.dk/om-ap-pension/job-i-ap-pension/ledige-stillinger",
+    "status": 200,
+    "bytes": 920815,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://appension.dk/om-ap-pension/job-i-ap-pension/ansaettelsesprocessen",
+    "status": 200,
+    "bytes": 97669,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://appension.dk/om-ap-pension/job-i-ap-pension/udviklingsmuligheder",
+    "status": 200,
+    "bytes": 95785,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://appension.dk/om-ap-pension/job-i-ap-pension/behandling-af-personoplysninger",
+    "status": 200,
+    "bytes": 99676,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Arbejdernes Landsbank",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.al-bank.dk/om-os/job",
+    "error": "404 Client Error: Not Found for url: https://www.al-bank.dk/om-os/job"
+   }
+  ]
+ },
+ {
+  "company": "Lån & Spar Bank",
+  "ats": {},
+  "listing_pages": [
+   {
+    "url": "https://www.lsb.dk/site/job",
+    "job_links": 7
+   },
+   {
+    "url": "https://www.lsb.dk/site/job/praktikforloeb",
+    "job_links": 6
+   },
+   {
+    "url": "https://www.lsb.dk/site/job/finanstrainee",
+    "job_links": 5
+   }
+  ],
+  "pages": [
+   {
+    "url": "https://www.lsb.dk/privat/dit-liv/livet-som-studerende/job",
+    "status": 200,
+    "bytes": 98410,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.lsb.dk/site/job",
+    "status": 200,
+    "bytes": 47145,
+    "job_links": 7,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.lsb.dk/site/job/finanstrainee",
+    "status": 200,
+    "bytes": 42327,
+    "job_links": 5,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.lsb.dk/site/job/praktikforloeb",
+    "status": 200,
+    "bytes": 41106,
+    "job_links": 6,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.lsb.dk/site/job/arbejdsplads",
+    "status": 200,
+    "bytes": 43251,
+    "job_links": 4,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.lsb.dk/site/job/rekrutteringsforloeb",
+    "status": 200,
+    "bytes": 39945,
+    "job_links": 4,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Söderberg & Partners",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.soderbergpartners.dk/om-os/job",
+    "error": "404 Client Error: Not Found for url: https://www.soderbergpartners.dk:443/om-os/job/"
+   }
+  ]
+ },
+ {
+  "company": "KMD",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.kmd.dk/karriere",
+    "error": "404 Client Error: Not Found for url: https://www.kmd.dk/karriere"
+   }
+  ]
+ },
+ {
+  "company": "Twoday",
+  "ats": {
+   "teamtailor": [
+    "https://twodaydenmark.teamtailor.com/jobs/5653188-program-manager-customer-excellence",
+    "https://twodaydenmark.teamtailor.com/jobs/7445974-senior-clojure-developer",
+    "https://twodaydenmark.teamtailor.com/jobs/8477746-bid-manager-til-offentlige-it-udbud",
+    "https://twodaydenmark.teamtailor.com/jobs/8490682-technical-solution-architect",
+    "https://twodaydenmark.teamtailor.com/jobs/8498849-sitecore-developer-net",
+    "https://twodaydenmark.teamtailor.com/jobs/8514697-senior-devsecops-engineer-kubernetes-software-supply-chain-security",
+    "https://twodayfinland.teamtailor.com/jobs/8510549-liferay-developer"
+   ]
+  },
+  "listing_pages": [
+   {
+    "url": "https://www.twoday.com/careers",
+    "job_links": 8
+   }
+  ],
+  "pages": [
+   {
+    "url": "https://www.twoday.com/careers",
+    "status": 200,
+    "bytes": 496978,
+    "job_links": 8,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Columbus",
+  "ats": {
+   "teamtailor": [
+    "https://app.teamtailor.com/companies/7KiALZnk5ko@eu/dashboard",
+    "https://app.teamtailor.com/companies/B9RrrbYd9HA@eu/dashboard",
+    "https://app.teamtailor.com/companies/LyPapCchXNU@eu/dashboard",
+    "https://app.teamtailor.com/companies/WIuvpA9ec1E@eu/dashboard",
+    "https://app.teamtailor.com/companies/eH0VfXizPNw@eu/dashboard",
+    "https://app.teamtailor.com/companies/k8U3d8XTVOg@eu/dashboard",
+    "https://tt.teamtailor.com/login/sso",
+    "https://www.teamtailor.com"
+   ]
+  },
+  "listing_pages": [
+   {
+    "url": "https://careers.columbusglobal.com/jobs",
+    "job_links": 21
+   },
+   {
+    "url": "https://careers-no.columbusglobal.com/",
+    "job_links": 19
+   },
+   {
+    "url": "https://career.columbusglobal.com/",
+    "job_links": 9
+   },
+   {
+    "url": "https://careers-uk.columbusglobal.com/",
+    "job_links": 5
+   },
+   {
+    "url": "https://careers-dk.columbusglobal.com/",
+    "job_links": 5
+   }
+  ],
+  "pages": [
+   {
+    "url": "https://www.columbusglobal.com/",
+    "status": 200,
+    "bytes": 317942,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.columbusglobal.com/",
+    "status": 200,
+    "bytes": 72792,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.columbusglobal.com/departments/accelerator-programme",
+    "status": 200,
+    "bytes": 112852,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.columbusglobal.com/cookie-policy",
+    "status": 200,
+    "bytes": 44834,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.columbusglobal.com/departments",
+    "status": 200,
+    "bytes": 58369,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.columbusglobal.com/jobs",
+    "status": 200,
+    "bytes": 179302,
+    "job_links": 21,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.columbusglobal.com/",
+    "status": 200,
+    "bytes": 72792,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers-india.columbusglobal.com/",
+    "status": 200,
+    "bytes": 78547,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers-uk.columbusglobal.com/",
+    "status": 200,
+    "bytes": 80745,
+    "job_links": 5,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers-no.columbusglobal.com/",
+    "status": 200,
+    "bytes": 82966,
+    "job_links": 19,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers-dk.columbusglobal.com/",
+    "status": 200,
+    "bytes": 85739,
+    "job_links": 5,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://career.columbusglobal.com/",
+    "status": 200,
+    "bytes": 78927,
+    "job_links": 9,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Capgemini Danmark",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.capgemini.com/dk-en/careers/",
+    "status": 200,
+    "bytes": 251235,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.capgemini.com/dk-en/careers/why-join-capgemini/",
+    "status": 200,
+    "bytes": 266548,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.capgemini.com/dk-en/careers/life-at-capgemini/",
+    "status": 200,
+    "bytes": 258308,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.capgemini.com/dk-en/careers/meet-our-people/",
+    "status": 200,
+    "bytes": 217666,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.capgemini.com/dk-en/careers/career-paths/",
+    "status": 200,
+    "bytes": 246433,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.capgemini.com/dk-en/careers/career-paths/students-and-graduates/",
+    "status": 200,
+    "bytes": 259861,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.capgemini.com/dk-en/careers/career-paths/experienced-professionals/",
+    "status": 200,
+    "bytes": 262441,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.capgemini.com/dk-en/careers/career-paths/executives/",
+    "status": 200,
+    "bytes": 245949,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.capgemini.com/dk-en/careers/career-paths/professional-communities/",
+    "status": 200,
+    "bytes": 244554,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.capgemini.com/dk-en/careers/career-paths/careers-at-capgemini-engineering/",
+    "status": 200,
+    "bytes": 263232,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.capgemini.com/dk-en/careers/career-paths/careers-at-capgemini-invent/",
+    "status": 200,
+    "bytes": 263899,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.capgemini.com/dk-en/careers/join-capgemini/",
+    "status": 200,
+    "bytes": 225446,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "IBM Danmark",
+  "ats": {
+   "avature": [
+    "https://ibmglobal.avature.net/ltrk/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA1NDQ2ODQ3LCJoYXNoIjoiMzAxNDc4MDMxMTc4NzdmYmM4YjIwY2I3ZDYyNmVjZjY3MzVlODU1NWQ5ODAxNDA1ODUyM2FkNWU2YTk1NDA0ZSJ9.SO7EvTP"
+   ]
+  },
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.ibm.com/careers",
+    "status": 200,
+    "bytes": 265368,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.ibm.com/careers/search",
+    "status": 200,
+    "bytes": 124159,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.ibm.com/careers/areas",
+    "status": 200,
+    "bytes": 212226,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.ibm.com/careers/career-opportunities",
+    "status": 200,
+    "bytes": 225220,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.ibm.com/careers/application-process",
+    "status": 200,
+    "bytes": 232344,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.ibm.com/careers/culture",
+    "status": 200,
+    "bytes": 278478,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.ibm.com/careers/blog",
+    "status": 200,
+    "bytes": 116538,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.ibm.com/careers/locations",
+    "status": 200,
+    "bytes": 212813,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.ibm.com/careers/blog/once-an-ibmer-always-an-ibmer",
+    "status": 200,
+    "bytes": 106418,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.ibm.com/en_US/globalform?source=WEB_Search_NA",
+    "status": 200,
+    "bytes": 72990,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://careers.ibm.com/en_US/careers/JobAlerts?source=WEB_Search_NA",
+    "status": 202,
+    "bytes": 0,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.ibm.com/careers/ai-and-watsonx",
+    "status": 200,
+    "bytes": 147093,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Devoteam",
+  "ats": {},
+  "listing_pages": [
+   {
+    "url": "https://www.devoteam.com/jobs/",
+    "job_links": 31
+   },
+   {
+    "url": "https://www.devoteam.com/jobs/",
+    "job_links": 31
+   }
+  ],
+  "pages": [
+   {
+    "url": "https://www.devoteam.com/jobs/",
+    "status": 200,
+    "bytes": 283273,
+    "job_links": 31,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.devoteam.com/join-us/",
+    "status": 200,
+    "bytes": 256541,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.devoteam.com/join-us/our-values/",
+    "status": 200,
+    "bytes": 236068,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.devoteam.com/join-us/perks/",
+    "status": 200,
+    "bytes": 220387,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.devoteam.com/jobs/",
+    "status": 200,
+    "bytes": 283273,
+    "job_links": 31,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.devoteam.com/join-us/aws/",
+    "status": 200,
+    "bytes": 284650,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.devoteam.com/join-us/business-consulting/",
+    "status": 200,
+    "bytes": 273849,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.devoteam.com/join-us/cybersecurity/",
+    "status": 200,
+    "bytes": 269784,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.devoteam.com/join-us/data/",
+    "status": 200,
+    "bytes": 273443,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.devoteam.com/join-us/google-cloud/",
+    "status": 200,
+    "bytes": 282001,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.devoteam.com/join-us/microsoft-cloud-careers/",
+    "status": 200,
+    "bytes": 291065,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.devoteam.com/join-us/multi-cloud/",
+    "status": 200,
+    "bytes": 281728,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Visma DataLøn",
+  "ats": {
+   "teamtailor": [
+    "https://app.teamtailor.com/companies/jbuIJ-8Zf-A@eu/dashboard",
+    "https://tt.teamtailor.com/auth/linkedin?company=vismadatalonogprolon&connect=1",
+    "https://tt.teamtailor.com/auth/linkedin?company=vismadatalonogprolon&connect=1&login=1",
+    "https://tt.teamtailor.com/login/sso",
+    "https://vismadatalonogprolon.teamtailor.com/cookie_policy",
+    "https://vismadatalonogprolon.teamtailor.com/locations/carlsberg-byen",
+    "https://vismadatalonogprolon.teamtailor.com/locations/tronholmen-i-randers",
+    "https://vismadatalonogprolon.teamtailor.com/pages/hr-i-visma-datalon-og-prolon"
+   ]
+  },
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://karriere.datalonprolon.dk/",
+    "status": 200,
+    "bytes": 85680,
+    "job_links": 3,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://karriere.datalonprolon.dk/cookie-policy",
+    "status": 200,
+    "bytes": 43620,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://karriere.datalonprolon.dk/jobs",
+    "status": 200,
+    "bytes": 61095,
+    "job_links": 3,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://karriere.datalonprolon.dk/people",
+    "status": 200,
+    "bytes": 45180,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://karriere.datalonprolon.dk/locations",
+    "status": 200,
+    "bytes": 46130,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://karriere.datalonprolon.dk/stories",
+    "status": 200,
+    "bytes": 44396,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://karriere.datalonprolon.dk/connect/login",
+    "status": 200,
+    "bytes": 17384,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://karriere.datalonprolon.dk/connect",
+    "status": 200,
+    "bytes": 262631,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://karriere.datalonprolon.dk/jobs/8508809-vil-du-vaere-vores-nye-studentermedarbejder",
+    "status": 200,
+    "bytes": 74109,
+    "job_links": 2,
+    "jsonld_jobposting": true
+   },
+   {
+    "url": "https://karriere.datalonprolon.dk/jobs/8499492-vil-du-vaere-vores-nye-ux-designer",
+    "status": 200,
+    "bytes": 72563,
+    "job_links": 2,
+    "jsonld_jobposting": true
+   },
+   {
+    "url": "https://karriere.datalonprolon.dk/jobs/8400631-data-analyst",
+    "status": 200,
+    "bytes": 72231,
+    "job_links": 2,
+    "jsonld_jobposting": true
+   },
+   {
+    "url": "https://karriere.datalonprolon.dk/people/4123807-christina-friisberg",
+    "status": 200,
+    "bytes": 47829,
+    "job_links": 3,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "IT-Universitetet",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=itu",
+    "status": 200,
+    "bytes": 705,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Københavns Universitet",
+  "ats": {
+   "hrmanager": [
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?customer=statensrekrutteringsloesning_tr&amp;departmentid=19064",
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?customer=statensrekrutteringsloesning_tr&departmentid=19064",
+    "https://candidate.hr-manager.net/Login.aspx?customer=statensrekrutteringsloesning_tr&amp;departmentid=19064",
+    "https://candidate.hr-manager.net/Login.aspx?customer=statensrekrutteringsloesning_tr&departmentid=19064"
+   ]
+  },
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://employment.ku.dk/",
+    "status": 200,
+    "bytes": 40294,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://employment.ku.dk/career-for-young-researchers/",
+    "status": 200,
+    "bytes": 40750,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://employment.ku.dk/faculty/",
+    "status": 200,
+    "bytes": 54697,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://employment.ku.dk/tenure-track/",
+    "status": 200,
+    "bytes": 38549,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://employment.ku.dk/phd/",
+    "status": 200,
+    "bytes": 43900,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://employment.ku.dk/teaching-positions/",
+    "status": 200,
+    "bytes": 38864,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://employment.ku.dk/all-vacancies/",
+    "status": 200,
+    "bytes": 68572,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://employment.ku.dk/",
+    "status": 200,
+    "bytes": 40294,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://employment.ku.dk/career-for-young-researchers/career-paths/",
+    "status": 200,
+    "bytes": 44085,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://employment.ku.dk/career-for-young-researchers/career-destinations/",
+    "status": 200,
+    "bytes": 38811,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://employment.ku.dk/career-for-young-researchers/career-paths/meet-our-young-researchers/",
+    "status": 200,
+    "bytes": 41032,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://employment.ku.dk/faculty/career-at-upch/",
+    "status": 200,
+    "bytes": 56297,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "CBS",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.cbs.dk/om-cbs/job-paa-cbs",
+    "error": "404 Client Error: Not Found for url: https://www.cbs.dk/om-cbs/job-paa-cbs"
+   }
+  ]
+ },
+ {
+  "company": "Danske Havne",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://danskehavne.dk/",
+    "status": 200,
+    "bytes": 287673,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://danskehavne.dk/kontakt/",
+    "status": 200,
+    "bytes": 125686,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://danskehavne.dk/nyheder/2026/10/forslag-til-lov-om-aendring-af-straffelovenretsplejeloven-og-forskellige-andre-loveskaerpet-indsats-mod-bandekriminalitetog-kriminelle-familier-m-v-ogbaggrundstjek-af-vissehavnemedarbejdere/",
+    "status": 200,
+    "bytes": 111782,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://danskehavne.dk/nyheder/2026/10/studentermedhjaelper-til-administration-og-sekretariatsarbejde-hos-danske-havne/",
+    "status": 200,
+    "bytes": 114197,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://danskehavne.dk/nyheder/2026/09/lovforslag-om-baggrundstjek-af-havnemedarbejdere/",
+    "status": 200,
+    "bytes": 116358,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://danskehavne.dk/nyheder/2026/01/eus-havnestrategi/",
+    "status": 200,
+    "bytes": 111764,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://danskehavne.dk/nyheder/2026/01/co2-neutrale-erhvervshavne-og-zero-emission-hubs-i-2030/",
+    "status": 200,
+    "bytes": 112582,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "DSB",
+  "ats": {
+   "successfactors": [
+    "https://career5.successfactors.eu/career?company=C0000031828P",
+    "https://career5.successfactors.eu/career?company=C0000031828P&amp;site=&amp;lang=da_DK&amp;requestParams=&amp;login_ns=register&amp;jobPipeline=Direct&amp;clientId=jobs2web&amp;navBarLevel=MY%5fPROFIL",
+    "https://career5.successfactors.eu/career?company=C0000031828P&site=&lang=da_DK&requestParams=&login_ns=register&jobPipeline=Direct&clientId=jobs2web&navBarLevel=MY%5fPROFILE&_s.crb=P5YJtyXGpzqo5YDUCO4"
+   ]
+  },
+  "listing_pages": [
+   {
+    "url": "https://www.dsb.dk/om-dsb/job-og-karriere/alle-ledige-stillinger-i-dsb/",
+    "job_links": 20
+   },
+   {
+    "url": "https://www.dsb.dk/om-dsb/job-og-karriere/alle-ledige-stillinger-i-dsb/?categories=IT&categories=HR&categories=Marketing+%26+Kommunikation&categories=Kundeservice+%26+Salg&categories=Studiejob&categories=Indk%C3%B8b,+jura+og+compliance&categories=Elev,+l%C3%A6rling+%26+graduate&categories=Strategi+%26+Projektledelse&categories=Sikkerhed+%26+Kvalitet&categories=Driftsplanl%C3%A6gning+%26+logistik&categories=Ledelse&categories=Ledelsessupport+%26+administration&categories=Ingeni%C3%B8r+%26+teknik&categories=%C3%98konomi",
+    "job_links": 9
+   }
+  ],
+  "pages": [
+   {
+    "url": "https://www.dsb.dk/om-dsb/job-og-karriere/",
+    "status": 200,
+    "bytes": 51766,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsb.dk/om-dsb/job-og-karriere/",
+    "status": 200,
+    "bytes": 51766,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsb.dk/om-dsb/job-og-karriere/drift/",
+    "status": 200,
+    "bytes": 53190,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsb.dk/om-dsb/job-og-karriere/hovedkontoret/",
+    "status": 200,
+    "bytes": 53927,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsb.dk/om-dsb/job-og-karriere/uddannelse-i-dsb/",
+    "status": 200,
+    "bytes": 52778,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsb.dk/om-dsb/job-og-karriere/dsb-som-arbejdsplads/",
+    "status": 200,
+    "bytes": 55103,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsb.dk/om-dsb/job-og-karriere/alle-ledige-stillinger-i-dsb/",
+    "status": 200,
+    "bytes": 155615,
+    "job_links": 20,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsb.dk/om-dsb/job-og-karriere/ind-og-se/",
+    "status": 200,
+    "bytes": 52564,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsb.dk/om-dsb/job-og-karriere/dsb-som-arbejdsplads/personalegoder/",
+    "status": 200,
+    "bytes": 51895,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsb.dk/om-dsb/job-og-karriere/alle-ledige-stillinger-i-dsb/?categories=IT&categories=HR&categories=Marketing+%26+Kommunikation&categories=Kundeservice+%26+Salg&categories=Studiejob&categories=Indk%C3%B8b,+jura+og+compliance&categories=Elev,+l%C3%A6rling+%26+graduate&categories=Strategi+%26+Projektledelse&categories=Sikkerhed+%26+Kvalitet&categories=Driftsplanl%C3%A6gning+%26+logistik&categories=Ledelse&categories=Ledelsessupport+%26+administration&categories=Ingeni%C3%B8r+%26+teknik&categories=%C3%98konomi",
+    "status": 200,
+    "bytes": 135270,
+    "job_links": 9,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsb.dk/om-dsb/job-og-karriere/uddannelse-i-dsb/studie-og-projektsamarbejder/",
+    "status": 200,
+    "bytes": 60381,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.dsb.dk/om-dsb/job-og-karriere/",
+    "status": 200,
+    "bytes": 51766,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Movia",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.moviatrafik.dk/om-movia/job",
+    "status": 200,
+    "bytes": 20825,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "HOFOR",
+  "ats": {
+   "hrmanager": [
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?_sp=322792d7-6e74-49ee-9836-e28a24d5d335.1719994408266&#038;customer=ke",
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?_sp=322792d7-6e74-49ee-9836-e28a24d5d335.1719994408266&customer=ke",
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?_sp=8e166cd9-6f8f-4b5b-b152-a464393176e5.1782993064639&customer=ke",
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?_sp=ec470f87-eae0-4fa3-b8ea-ff8b7eba3a15.1791461605786&#038;customer=ke",
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?_sp=ec470f87-eae0-4fa3-b8ea-ff8b7eba3a15.1791461605786&customer=ke",
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?_sp=ec470f87-eae0-4fa3-b8ea-ff8b7eba3a15.1791795960309&#038;customer=ke",
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?_sp=ec470f87-eae0-4fa3-b8ea-ff8b7eba3a15.1791795960309&customer=ke",
+    "https://candidate.hr-manager.net/Agent/Subscription.aspx?_sp=ec470f87-eae0-4fa3-b8ea-ff8b7eba3a15.1791796026058&#038;customer=ke"
+   ]
+  },
+  "listing_pages": [
+   {
+    "url": "https://www.hofor.dk/om-hofor/job/ledige-stillinger/",
+    "job_links": 27
+   },
+   {
+    "url": "https://www.hofor.dk/om-hofor/job/hofor-som-arbejdsplads/",
+    "job_links": 27
+   },
+   {
+    "url": "https://www.hofor.dk/om-hofor/job/rekrutteringsprocessen/",
+    "job_links": 24
+   },
+   {
+    "url": "https://www.hofor.dk/om-hofor/job/",
+    "job_links": 22
+   },
+   {
+    "url": "https://www.hofor.dk/om-hofor/job/",
+    "job_links": 22
+   }
+  ],
+  "pages": [
+   {
+    "url": "https://www.hofor.dk/om-hofor/job/",
+    "status": 200,
+    "bytes": 276918,
+    "job_links": 22,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.hofor.dk/om-hofor/job/",
+    "status": 200,
+    "bytes": 276918,
+    "job_links": 22,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.hofor.dk/om-hofor/job/",
+    "status": 200,
+    "bytes": 276918,
+    "job_links": 22,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.hofor.dk/installatoer/vandinstallation/hygiejne-ved-arbejde-med-drikkevand/",
+    "status": 200,
+    "bytes": 277423,
+    "job_links": 7,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.hofor.dk/installatoer/fjernvarmeinstallation/syn-af-fjernvarmeinstallation/ansoegning-bestilling-syn-fjernvarme/",
+    "status": 200,
+    "bytes": 305043,
+    "job_links": 7,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.hofor.dk/installatoer/fjernvarmeinstallation/syn-af-fjernvarmeinstallation/ansoegning-bestilling-syn-fjernvarme/vigtigt-om-syn-af-fjernvarmeanlaeg/",
+    "status": 200,
+    "bytes": 285376,
+    "job_links": 7,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.hofor.dk/installatoer/bygasinstallation/installationsvejledninger/",
+    "status": 200,
+    "bytes": 272498,
+    "job_links": 7,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.hofor.dk/baeredygtige-byer/fremtidens-fjernvarme/bedre-brug-af-kundedata/groen-omstilling-i-etageboliger/",
+    "status": 200,
+    "bytes": 298816,
+    "job_links": 7,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.hofor.dk/om-hofor/leverandoer/naar-du-arbejder-for-hofor/",
+    "status": 200,
+    "bytes": 292295,
+    "job_links": 14,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.hofor.dk/om-hofor/job/ledige-stillinger/",
+    "status": 200,
+    "bytes": 285521,
+    "job_links": 27,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.hofor.dk/om-hofor/job/hofor-som-arbejdsplads/",
+    "status": 200,
+    "bytes": 279741,
+    "job_links": 27,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.hofor.dk/om-hofor/job/rekrutteringsprocessen/",
+    "status": 200,
+    "bytes": 282625,
+    "job_links": 24,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Dansk Erhverv",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.danskerhverv.dk/om-dansk-erhverv/job/",
+    "error": "404 Client Error: Not Found for url: https://www.danskerhverv.dk/om-dansk-erhverv/job/"
+   }
+  ]
+ },
+ {
+  "company": "Lederne",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.lederne.dk/om-lederne/job",
+    "error": "404 Client Error: Not Found for url: https://www.lederne.dk/om-lederne/job"
+   }
+  ]
+ },
+ {
+  "company": "Coop",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://om.coop.dk/job",
+    "error": "404 Client Error: Not Found for url: https://om.coop.dk/job"
+   }
+  ]
+ },
+ {
+  "company": "Royal Unibrew",
+  "ats": {
+   "successfactors": [
+    "https://career2.successfactors.eu/career?company=royalunibr",
+    "https://career2.successfactors.eu/career?company=royalunibr&amp;site=VjQtMC1hMS1qNGRsdUNKSkh0ajhyU1RwVG14dzV6Nm9XRmV5aG96NDJwUEFQZWFVZHc%3d",
+    "https://career2.successfactors.eu/career?company=royalunibr&site=VjQtMC1hMS1qNGRsdUNKSkh0ajhyU1RwVG14dzV6Nm9XRmV5aG96NDJwUEFQZWFVZHc%3d"
+   ]
+  },
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.royalunibrew.com/careers",
+    "status": 200,
+    "bytes": 126298,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.royalunibrew.com/careers",
+    "status": 200,
+    "bytes": 126298,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.royalunibrew.com/careers/build-your-career",
+    "status": 200,
+    "bytes": 157191,
+    "job_links": 2,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.royalunibrew.com/careers/why-join-us",
+    "status": 200,
+    "bytes": 147672,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.royalunibrew.com/careers/meet-our-people",
+    "status": 200,
+    "bytes": 141409,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.royalunibrew.com/careers/why-join-us/recruitment-process",
+    "status": 200,
+    "bytes": 124539,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.royalunibrew.com/careers/meet-our-people/rasmus-fladberg",
+    "status": 200,
+    "bytes": 127653,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.royalunibrew.com/careers/meet-our-people/pernille-sommer",
+    "status": 200,
+    "bytes": 127915,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "GN Group",
+  "ats": {
+   "workday": [
+    "https://gn.wd3.myworkdayjobs.com/GN-Careers",
+    "https://gn.wd3.myworkdayjobs.com/GN-Careers/assets/logo"
+   ]
+  },
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://gn.wd3.myworkdayjobs.com/GN-Careers",
+    "status": 200,
+    "bytes": 8877,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Coloplast",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.coloplast.com/careers/",
+    "error": "403 Client Error: Forbidden for url: https://www.coloplast.com/careers/"
+   }
+  ]
+ },
+ {
+  "company": "Lundbeck",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.lundbeck.com/global/careers",
+    "error": "403 Client Error: Forbidden for url: https://www.lundbeck.com/global/careers"
+   }
+  ]
+ },
+ {
+  "company": "Demant",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.demant.com/careers",
+    "error": "404 Client Error: Not Found for url: https://www.demant.com/careers"
+   }
+  ]
+ },
+ {
+  "company": "FLSmidth",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://fls.com/en/en-gb/company/careers",
+    "status": 200,
+    "bytes": 314841,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "ISS",
+  "ats": {
+   "successfactors": [
+    "https://career2.successfactors.eu",
+    "https://performancemanager.successfactors.eu/doc/custom/issworldseP/Corporate_Jobs.mp4",
+    "https://performancemanager.successfactors.eu/doc/custom/issworldseP/Service_Excellence_Jobs.mp4",
+    "https://performancemanager.successfactors.eu/doc/custom/issworldseP/Tech_Jobs.mp4",
+    "https://performancemanager.successfactors.eu/verp/vmod_v1/ui/extlib/jquery_3.5.1/jquery-migrate.js",
+    "https://performancemanager.successfactors.eu/verp/vmod_v1/ui/extlib/jquery_3.5.1/jquery.js",
+    "https://rmkcdn.successfactors.com/21050db5/0ed7daf4-f800-42b8-95e1-7.png",
+    "https://rmkcdn.successfactors.com/21050db5/0fd5e0ed-ab94-4462-966c-c.jpg"
+   ]
+  },
+  "listing_pages": [
+   {
+    "url": "https://jobs.issworld.com/search/?createNewAlert=false",
+    "job_links": 60
+   },
+   {
+    "url": "https://jobs.issworld.com/go/Service-Excellence-Roles_en_US/8834602/",
+    "job_links": 60
+   },
+   {
+    "url": "https://jobs.issworld.com/search/?createNewAlert=false&locale=da_DK",
+    "job_links": 60
+   },
+   {
+    "url": "https://jobs.issworld.com/go/Corporate-Roles_en_US/8834702/",
+    "job_links": 51
+   },
+   {
+    "url": "https://jobs.issworld.com/go/Technology-Roles_en_US/8834802/",
+    "job_links": 51
+   }
+  ],
+  "pages": [
+   {
+    "url": "https://www.issworld.com/careers/your-career-at-iss",
+    "status": 200,
+    "bytes": 781706,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.issworld.com/careers/your-career-at-iss",
+    "status": 200,
+    "bytes": 781706,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.issworld.com/careers/our-culture",
+    "status": 200,
+    "bytes": 297354,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.issworld.com/careers/technology",
+    "status": 200,
+    "bytes": 293627,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://jobs.issworld.com/search/?createNewAlert=false",
+    "status": 200,
+    "bytes": 432892,
+    "job_links": 60,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://www.issworld.com/careers/management-trainee-programme",
+    "status": 200,
+    "bytes": 311971,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://jobs.issworld.com/go/Service-Excellence-Roles_en_US/8834602/",
+    "status": 200,
+    "bytes": 442303,
+    "job_links": 60,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://jobs.issworld.com/go/Corporate-Roles_en_US/8834702/",
+    "status": 200,
+    "bytes": 403730,
+    "job_links": 51,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://jobs.issworld.com/go/Technology-Roles_en_US/8834802/",
+    "status": 200,
+    "bytes": 403967,
+    "job_links": 51,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://jobs.issworld.com/search/?createNewAlert=false&q=&optionsFacetsDD_customfield1=IT&optionsFacetsDD_customfield2=&optionsFacetsDD_customfield3=&locationsearch=",
+    "status": 200,
+    "bytes": 399215,
+    "job_links": 51,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://jobs.issworld.com/",
+    "status": 200,
+    "bytes": 231783,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   },
+   {
+    "url": "https://jobs.issworld.com/search/?createNewAlert=false&locale=da_DK",
+    "status": 200,
+    "bytes": 432628,
+    "job_links": 60,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Genmab",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.genmab.com/",
+    "status": 200,
+    "bytes": 150942,
+    "job_links": 0,
+    "jsonld_jobposting": false
+   }
+  ]
+ },
+ {
+  "company": "Novo Nordisk Fonden",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://novonordiskfonden.dk/om-fonden/job/",
+    "error": "404 Client Error: Not Found for url: https://novonordiskfonden.dk/om-fonden/job/"
+   }
+  ]
+ },
+ {
+  "company": "Ambu",
+  "ats": {},
+  "listing_pages": [],
+  "pages": [
+   {
+    "url": "https://www.ambu.com/careers",
+    "error": "404 Client Error: Not Found for url: https://www.ambu.com/careers"
+   }
+  ]
+ }
+]
