@@ -75,10 +75,23 @@ def evaluate(status: list[dict], history_rows: list[dict], active_now: int) -> d
     return {"sources": sources, "alerts": alerts, "active": active_now}
 
 
-def main():
+def main(argv=None):
+    """Standard: den personlige kørsel (data/). Med --dir data/jobradar: platform-kørslen."""
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--dir", default=None, help="datamappe for platform-kørslen, fx data/jobradar")
+    args = ap.parse_args(argv)
+    if args.dir:
+        base = ROOT / args.dir
+        status_file, plat, hdir = base / "status.json", base / "jobs.json", base / "health"
+    else:
+        status_file, plat, hdir = DATA / "status.json", DATA / "platform" / "jobs.json", HDIR
+    run(status_file, plat, hdir)
+
+
+def run(status_file: Path, plat: Path, HDIR: Path):
     HDIR.mkdir(parents=True, exist_ok=True)
-    status = json.loads((DATA / "status.json").read_text())
-    plat = DATA / "platform" / "jobs.json"
+    status = json.loads(status_file.read_text())
     active = json.loads(plat.read_text())["counts"]["active"] if plat.exists() else 0
     hfile = HDIR / "history.jsonl"
     rows = [json.loads(l) for l in hfile.read_text().splitlines() if l.strip()] if hfile.exists() else []
@@ -113,7 +126,7 @@ def main():
     if res["alerts"]:
         alert.write_text("Scraperen har kilder, der ser ud til at være gået i stykker:\n\n"
                          + "\n".join(f"- {a}" for a in res["alerts"])
-                         + "\n\nSe `data/health/report.md`. Tip: giv dette issue til en kode-agent (se AGENTS.md).\n")
+                         + f"\n\nSe `{HDIR.relative_to(ROOT)}/report.md`. Tip: giv dette issue til en kode-agent (se AGENTS.md).\n")
     elif alert.exists():
         alert.unlink()
     print("\n".join(lines))

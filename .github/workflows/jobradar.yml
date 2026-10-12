@@ -1,0 +1,78 @@
+name: jobradar-scrape
+
+# Platform-kørslen til Jobradar-appen. Uafhængig af scrape-jobs (din personlige scraper).
+on:
+  schedule:
+    - cron: "47 */3 * * *"
+  push:
+    paths: ["triggers/jobradar"]
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Kun én arbejdsgiver (navn som i platform/employers.yaml) – tom = alle"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: scrape            # deles med den personlige kørsel, så de ikke rammer de samme sider samtidig
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Cache Playwright-browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: pw-${{ runner.os }}-1.47
+      - run: python -m playwright install --with-deps chromium
+      - name: Scrape (Jobradar)
+        run: |
+          ONLY="${{ inputs.only }}"
+          if [ "${{ github.event_name }}" = "push" ] && [ -f triggers/jobradar ]; then ONLY="$(grep -v '^#' triggers/jobradar | head -1 || true)"; fi
+          mkdir -p data/jobradar
+          if [ -n "$ONLY" ]; then
+            python -m scraper.platform_run --only "$ONLY" 2>&1 | tee data/jobradar/last_run.log
+          else
+            python -m scraper.platform_run 2>&1 | tee data/jobradar/last_run.log
+          fi
+      - name: Sundhedstjek
+        if: always()
+        run: python -m scraper.health --dir data/jobradar
+      - name: Alarm som GitHub-issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          H=data/jobradar/health
+          NUM=$(gh issue list --label jobradar-health --state open --json number -q '.[0].number' 2>/dev/null || true)
+          if [ -f $H/alert.md ]; then
+            gh label create jobradar-health --color B60205 --description "Automatisk alarm fra Jobradar-scraperen" --force >/dev/null 2>&1 || true
+            if [ -z "$NUM" ]; then
+              gh issue create --title "Jobradar-scraper: kilder fejler" --label jobradar-health --body-file $H/alert.md
+            elif [ -f $H/alert_changed ]; then
+              gh issue comment "$NUM" --body-file $H/alert.md
+            fi
+          elif [ -n "$NUM" ]; then
+            gh issue close "$NUM" --comment "Alle kilder er sunde igen ($(date -u +%FT%RZ))."
+          fi
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name "job-scraper-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/jobradar
+          git diff --cached --quiet || git commit -m "Jobradar opdateret $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase --autostash && git push

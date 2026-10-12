@@ -1,0 +1,65 @@
+# Nøgleordsordbog for Jobradar. Ét nøgleord = ét begreb med danske og engelske varianter.
+# Scraperen finder nøgleordene i titel + opslagstekst og sender id'erne til appen (job.keywords).
+# Brugerens profil består af 5-15 af disse id'er (+ evt. fritekst). Regex er case-insensitive.
+# Tilføj gerne flere, men skift ALDRIG et eksisterende id (brugerprofiler peger på dem).
+keywords:
+  # --- data, it og digitalisering ---
+  - {id: data-analyse, label: "Dataanalyse", en: "Data analysis", group: data, pattern: "data\\s*anal|dataanalys|analyse af data|analytics|analytiker|analyst|data[- ]drevet|data[- ]driven|indsigt(?:er)? fra data"}
+  - {id: sql, label: "SQL", en: "SQL", group: data, pattern: "\\bsql\\b|t-sql|postgres|snowflake|bigquery|databricks|\\bdatabaser?\\b"}
+  - {id: python, label: "Python", en: "Python", group: data, pattern: "python|pandas|jupyter"}
+  - {id: power-bi, label: "Power BI", en: "Power BI", group: data, pattern: "power\\s*bi|tableau|qlik|looker|dashboards?|visualiser"}
+  - {id: excel, label: "Excel", en: "Excel", group: data, pattern: "\\bexcel\\b|regneark|spreadsheet|\\bvba\\b|power query"}
+  - {id: bi, label: "Business Intelligence", en: "Business intelligence", group: data, pattern: "business intelligence|\\bbi[- ]|\\bbi\\b|datawarehouse|data warehouse|rapportering|reporting"}
+  - {id: ai, label: "AI og machine learning", en: "AI & machine learning", group: data, pattern: "\\bai\\b|kunstig intelligens|artificial intelligence|machine learning|maskinlæring|\\bml\\b|genai|\\bllm|chatgpt|copilot|ai-agent"}
+  - {id: automatisering, label: "Automatisering", en: "Automation", group: it, pattern: "automati|\\brpa\\b|power automate|uipath|workflow|robotic process"}
+  - {id: digitalisering, label: "Digitalisering", en: "Digitalisation", group: it, pattern: "digitali|digital transformation|digital omstilling|digitale løsninger"}
+  - {id: it-projekt, label: "IT-projektledelse", en: "IT project management", group: it, pattern: "it[- ]projekt|projektkoordinat|project coordinat|it project|implementering af (?:it|system)|systemimplementering|implementation project"}
+  - {id: erp, label: "ERP / SAP", en: "ERP / SAP", group: it, pattern: "\\berp\\b|\\bsap\\b|dynamics 365|navision|business central|oracle fusion"}
+  - {id: crm, label: "CRM / Salesforce", en: "CRM / Salesforce", group: it, pattern: "\\bcrm\\b|salesforce|hubspot|dynamics crm"}
+  - {id: programmering, label: "Programmering", en: "Software development", group: it, pattern: "programmering|softwareudvikl|software develop|developer|udvikler|javascript|typescript|\\bc#|\\.net\\b|\\bjava\\b|frontend|backend|full[- ]stack"}
+  - {id: cloud, label: "Cloud (Azure/AWS)", en: "Cloud (Azure/AWS)", group: it, pattern: "\\bcloud\\b|azure|\\baws\\b|google cloud|\\bgcp\\b"}
+  - {id: cybersikkerhed, label: "IT-sikkerhed", en: "Cyber security", group: it, pattern: "cyber|it[- ]sikkerhed|informationssikkerhed|information security|security analyst|iso 27001|\\bnis2\\b"}
+  - {id: ux, label: "UX / brugeroplevelse", en: "UX / user experience", group: it, pattern: "\\bux\\b|\\bui\\b|brugeroplevelse|user experience|brugerrejse|customer journey|figma"}
+  - {id: it-support, label: "IT-support", en: "IT support", group: it, pattern: "it[- ]support|helpdesk|service ?desk|servicedesk|first[- ]line|1st line"}
+  - {id: agil, label: "Agil / Scrum", en: "Agile / Scrum", group: it, pattern: "\\bagil|\\bagile\\b|scrum|kanban|jira"}
+  - {id: it-konsulent, label: "IT-konsulent", en: "IT consulting", group: it, pattern: "it[- ]konsulent|it consult|technology consult|tech consult|digital consult"}
+  # --- erhvervsøkonomi (HA almen) ---
+  - {id: finans, label: "Finans", en: "Finance", group: oekonomi, pattern: "\\bfinans|\\bfinance\\b|financial|corporate finance|treasury|kapitalmarked|capital market"}
+  - {id: regnskab, label: "Regnskab / bogføring", en: "Accounting", group: oekonomi, pattern: "regnskab|bogføring|bogholder|accounting|accountant|bookkeep|kreditor|debitor|accounts (?:payable|receivable)|årsrapport|financial reporting"}
+  - {id: controlling, label: "Controlling", en: "Controlling", group: oekonomi, pattern: "controll|budget|forecast|fp&a|økonomistyring|business partner"}
+  - {id: revision, label: "Revision", en: "Audit", group: oekonomi, pattern: "revision|revisor|\\baudit|assurance"}
+  - {id: skat, label: "Skat", en: "Tax", group: oekonomi, pattern: "\\bskat|\\btax\\b|transfer pricing|moms|\\bvat\\b|told\\b|customs"}
+  - {id: investering, label: "Investering og porteføljer", en: "Investment & portfolios", group: oekonomi, pattern: "investering|investment|porteføl|portfolio|asset management|kapitalforvaltning|aktier|equities|fixed income|\\bfund\\b|fonde?\\b|private equity|venture"}
+  - {id: risiko, label: "Risikostyring", en: "Risk management", group: oekonomi, pattern: "risiko|\\brisk\\b|risk management|kreditrisiko|credit risk|market risk"}
+  - {id: bank, label: "Bank og kredit", en: "Banking & credit", group: oekonomi, pattern: "\\bbank|kredit|credit|lån\\b|lending|realkredit|mortgage"}
+  - {id: forsikring, label: "Forsikring og pension", en: "Insurance & pension", group: oekonomi, pattern: "forsikring|insurance|pension|skadebehandl|claims"}
+  - {id: consulting, label: "Consulting / rådgivning", en: "Consulting", group: strategi, pattern: "consulting|consultant|management consult|advisory|(?<!salgs)(?<!kunde)(?<!personale)(?<!service)(?<!butiks)(?<!it-)(?<!it )konsulent|rådgivning"}
+  - {id: strategi, label: "Strategi", en: "Strategy", group: strategi, pattern: "strategi|strategy|strategic|corporate development|m&a"}
+  - {id: forretningsudvikling, label: "Forretningsudvikling", en: "Business development", group: strategi, pattern: "forretningsudvikl|business develop|business analyst|forretningsanalyt|commercial excellence"}
+  - {id: projektledelse, label: "Projektledelse", en: "Project management", group: strategi, pattern: "projektled|projektkoordin|project manag|project coordinat|pmo\\b|program management"}
+  - {id: proces, label: "Procesoptimering", en: "Process improvement", group: strategi, pattern: "procesoptim|procesforbedr|process improvement|process optimi|continuous improvement|\\blean\\b|six sigma|operational excellence"}
+  - {id: marketing, label: "Marketing", en: "Marketing", group: marked, pattern: "marketing|markedsføring|brand|seo\\b|\\bsem\\b|some\\b|sociale medier|social media|kampagne|campaign|growth"}
+  - {id: kommunikation, label: "Kommunikation", en: "Communications", group: marked, pattern: "kommunikation|communication|presse|\\bpr\\b|content|indhold|copywrit|redaktør|editor"}
+  - {id: salg, label: "Salg", en: "Sales", group: marked, pattern: "\\bsalg|\\bsales\\b|sælger|salgskonsulent|account manag|key account|telemarketing|mødebook|lead generation"}
+  - {id: kundeservice, label: "Kundeservice", en: "Customer service", group: marked, pattern: "kundeservice|customer service|kundesupport|customer support|kundecenter|contact center|medlemsservice"}
+  - {id: e-handel, label: "E-handel", en: "E-commerce", group: marked, pattern: "e-?handel|e-?commerce|webshop|online shop|marketplace"}
+  - {id: hr, label: "HR og rekruttering", en: "HR & recruitment", group: organisation, pattern: "\\bhr\\b|human resources|rekrutter|recruit|talent acquisition|employer branding|personale(?:administration|afdeling)|people & culture|onboarding"}
+  - {id: supply-chain, label: "Supply chain og logistik", en: "Supply chain & logistics", group: drift, pattern: "supply chain|logistik|logistics|forsyningskæde|lager|warehouse|transport|shipping|freight"}
+  - {id: indkoeb, label: "Indkøb", en: "Procurement", group: drift, pattern: "indkøb|procurement|purchas|sourcing|leverandør|supplier"}
+  - {id: baeredygtighed, label: "Bæredygtighed / ESG", en: "Sustainability / ESG", group: strategi, pattern: "bæredygtig|sustainab|\\besg\\b|klima|climate|\\bcsrd\\b|grøn omstilling|green transition"}
+  - {id: administration, label: "Administration", en: "Administration", group: organisation, pattern: "administrat|sekretær|secretar|kontorassistent|office assistant|journalisering|sagsbehandl"}
+  - {id: offentlig, label: "Offentlig sektor", en: "Public sector", group: organisation, pattern: "ministeri|styrelse|kommune|region\\b|offentlig forvaltning|public sector|folketing|politisk"}
+  # --- jura (HA Jura) ---
+  - {id: jura, label: "Jura", en: "Law / legal", group: jura, pattern: "\\bjura|juridisk|jurist|\\blegal\\b|advokat|lawyer|law firm|advokatfirma|retlig|\\blaw\\b"}
+  - {id: kontraktret, label: "Kontrakter og aftaler", en: "Contracts", group: jura, pattern: "kontrakt|contract|aftaler\\b|aftaleret|agreements?\\b|forhandling af aftaler"}
+  - {id: compliance, label: "Compliance", en: "Compliance", group: jura, pattern: "compliance|regelefterlev|regulatory|regulering|tilsyn\\b|governance"}
+  - {id: gdpr, label: "GDPR og persondata", en: "GDPR & data protection", group: jura, pattern: "gdpr|persondata|databeskyttelse|data protection|privacy|dpo\\b"}
+  - {id: hvidvask, label: "Hvidvask / KYC", en: "AML / KYC", group: jura, pattern: "hvidvask|\\baml\\b|\\bkyc\\b|know your customer|anti[- ]money|sanktions?screen|financial crime"}
+  - {id: selskabsret, label: "Selskabsret", en: "Corporate law", group: jura, pattern: "selskabsret|corporate law|selskabsretlig|company law|erhvervsret|business law|corporate legal"}
+  - {id: arbejdsret, label: "Arbejds- og ansættelsesret", en: "Employment law", group: jura, pattern: "arbejdsret|ansættelsesret|employment law|labour law|overenskomst"}
+  - {id: transaktioner, label: "M&A og transaktioner", en: "M&A & transactions", group: jura, pattern: "\\bm&a\\b|transaktion|transaction|due diligence|opkøb|acquisition|fusion\\b|merger"}
+  - {id: proces-ret, label: "Retssager og tvister", en: "Litigation & disputes", group: jura, pattern: "retssag|procedure|litigation|tvist|dispute|voldgift|arbitration|rettergang"}
+  - {id: immaterialret, label: "IP / immaterialret", en: "IP law", group: jura, pattern: "immaterialret|intellectual property|\\bip\\b|varemærke|trademark|patent|ophavsret|copyright"}
+  - {id: udbud, label: "Udbud og offentlig ret", en: "Procurement & public law", group: jura, pattern: "udbud|tender|offentlig ret|forvaltningsret|public law|udbudsret"}
+  - {id: finansiel-regulering, label: "Finansiel regulering", en: "Financial regulation", group: jura, pattern: "finansiel regulering|financial regulation|mifid|\\bpsd2|basel|solvens|solvency|\\bdora\\b"}
+  - {id: legal-assistant, label: "Juridisk assistance", en: "Legal assistance", group: jura, pattern: "juridisk (?:student|medhjælper|assistent)|legal (?:assistant|trainee|student|intern)|stud\\.\\s*jur|advokatsekretær|dokumenthåndtering"}

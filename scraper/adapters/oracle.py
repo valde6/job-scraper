@@ -8,7 +8,7 @@ from ..common import Job, get, html_to_md, is_denmark, is_student, clean
 def scrape(cfg):
     host, site = cfg["host"].rstrip("/"), cfg["site"]
     listed, jobs = 0, []
-    for kw in ("student", "studentermedhjælper"):
+    for kw in cfg.get("search_terms", ("student", "studentermedhjælper")):
         r = get(f"{host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions", params={
             "onlyData": "true", "expand": "requisitionList",
             "finder": f'findReqs;siteNumber={site},keyword="{kw}",limit=200,sortBy=POSTING_DATES_DESC'}).json()

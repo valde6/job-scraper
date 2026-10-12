@@ -137,6 +137,44 @@ EXCLUDE_RE = re.compile(
     re.I,
 )
 
+# ---------------------------------------------------------------- jobtyper (platform-kørslen)
+# Den personlige kørsel vil kun have studiejob. Platform-kørslen (Jobradar) slår praktik og graduate til med
+# set_job_types(), så adapterne også beholder dem. Jobtypen bestemmes bagefter med job_type().
+PRAKTIK_RE = re.compile(r"\binternship|\bintern\b|praktikant|praktikophold|\bpraktik\b|sommerpraktik|summer\s+intern", re.I)
+GRADUATE_RE = re.compile(r"\bgraduate|\btrainee|nyuddannet|young\s+professional", re.I)
+HARD_EXCLUDE_RE = re.compile(
+    r"\bph\.?d\b|postdoc|bachelorprojekt|speciale|thesis|"
+    r"student\s+(?:recruit|lead|engagement|advisor|counsel)|studievejled|\bsenior\b",
+    re.I,
+)
+_EXTRA_TYPES: set[str] = set()
+
+
+def set_job_types(types) -> None:
+    """Fx set_job_types({"studiejob", "praktik", "graduate"}). Påvirker student_fit/is_student i hele processen."""
+    global _EXTRA_TYPES
+    _EXTRA_TYPES = set(types) - {"studiejob"}
+
+
+def _extra_type_ok(title: str) -> bool:
+    if not _EXTRA_TYPES or not title or HARD_EXCLUDE_RE.search(title):
+        return False
+    return bool(("praktik" in _EXTRA_TYPES and PRAKTIK_RE.search(title))
+                or ("graduate" in _EXTRA_TYPES and GRADUATE_RE.search(title)))
+
+
+def job_type(title: str, text: str = "") -> str | None:
+    """studiejob | praktik | graduate | None. Titlen afgør praktik/graduate; ellers studiejob via student_fit."""
+    t = title or ""
+    if HARD_EXCLUDE_RE.search(t):
+        return None
+    if PRAKTIK_RE.search(t):
+        return "praktik"
+    if GRADUATE_RE.search(t):
+        return "graduate"
+    return "studiejob" if student_fit(t, text) else None
+
+
 DK_PLACES = [
     "denmark", "danmark", "dänemark", "copenhagen", "københavn", "kobenhavn",
     "aarhus", "århus", "odense", "aalborg", "billund", "bagsværd", "bagsvaerd",
@@ -173,6 +211,33 @@ def is_cph(loc: str | None, title: str = "") -> bool:
         tl = (title or "").lower()
         return not any(c in tl for c in NON_CPH) or any(p in tl for p in CPH_PLACES)
     return False
+
+
+# Sjælland (inkl. Storkøbenhavn) til platform-kørslen
+SJ_PLACES = [
+    "køge", "koge", "ringsted", "slagelse", "næstved", "naestved", "holbæk", "holbaek", "kalundborg", "sorø", "soro",
+    "helsingør", "helsingor", "fredensborg", "humlebæk", "humlebaek", "allerød", "allerod", "frederikssund",
+    "frederiksværk", "hundested", "gilleleje", "solrød", "solrod", "stenløse", "stenlose", "smørum", "smorum",
+    "vordingborg", "faxe", "haslev", "lejre", "stevns", "odsherred", "nykøbing sj", "rungsted", "kokkedal", "nivå",
+    "zealand", "sjælland", "sjaelland", "region hovedstaden", "capital region", "bornholm", "rønne",
+]
+NON_SJ = ["aarhus", "århus", "odense", "aalborg", "esbjerg", "vejle", "kolding", "horsens", "herning", "silkeborg",
+          "randers", "billund", "fredericia", "viborg", "sønderborg", "svendborg", "holstebro", "skive", "struer",
+          "aabenraa", "haderslev", "thisted", "hjørring", "frederikshavn", "middelfart", "nyborg", "nordborg",
+          "skanderborg", "grenaa", "ikast", "brande", "varde", "ribe", "tønder", "jylland", "fyn", "jutland", "funen"]
+
+
+def region(loc: str | None, title: str = "") -> str | None:
+    """'storkbh' | 'sjaelland' | 'ukendt' (fx bare "Danmark") | None (uden for Sjælland)."""
+    t = f"{loc or ''}".lower()
+    if any(p in t for p in CPH_PLACES):
+        return "storkbh"
+    if any(p in t for p in SJ_PLACES):
+        return "sjaelland"
+    tl = (title or "").lower()
+    if any(p in t for p in NON_SJ) or any(p in tl for p in NON_SJ):
+        return None
+    return "ukendt"
 
 
 def is_denmark(*texts: str | None) -> bool:
@@ -232,6 +297,8 @@ def student_fit(title: str, text: str = "") -> str | None:
     'mulig'      – deltid/≤25 timer om ugen og ikke en senior-/lederstilling
     None         – ingen tegn på studiejob (eller praktik/graduate/ph.d.)
     """
+    if _extra_type_ok(title):
+        return "sikker"
     if EXCLUDE_RE.search(title or ""):
         return None
     if is_student(title):
@@ -248,6 +315,8 @@ def student_fit(title: str, text: str = "") -> str | None:
 
 
 def is_student(title: str) -> bool:
+    if _extra_type_ok(title):
+        return True
     return bool(STUDENT_RE.search(title or "")) and not EXCLUDE_RE.search(title or "")
 
 
@@ -265,6 +334,12 @@ TOPICS = {
     "Python": r"python|pandas",
 }
 _TOPIC_RE = {k: re.compile(v, re.I) for k, v in TOPICS.items()}
+
+
+def set_topics(topics: dict[str, str]) -> None:
+    """Skift emne-ordbogen (platform-kørslen bruger den brede nøgleordsordbog for alle studieretninger)."""
+    global _TOPIC_RE
+    _TOPIC_RE = {k: re.compile(v, re.I) for k, v in topics.items()}
 
 
 def topic_tags(*texts: str) -> list[str]:

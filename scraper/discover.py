@@ -27,6 +27,8 @@ SIGS = {
     "teamtailor": r"https?://[a-z0-9-]+\.teamtailor\.com[^\s\"'<>\\]*|teamtailor-cdn",
     "hrmanager": r"https?://[a-z0-9.-]*hr-manager\.net/[^\s\"'<>\\]*",
     "emply": r"https?://[a-z0-9.-]*emply\.(?:net|com|dk)[^\s\"'<>\\]*",
+    "elvium": r"https?://app\.elvium\.com/[^\s\"'<>\\]*",
+    "hrmanager-embed": r"[?&]hr=show-job|hr-manager\.net/jobportal|hrmanager",
     "oracle": r"https?://[a-z0-9.-]+\.oraclecloud\.com/hcmUI/CandidateExperience[^\s\"'<>\\]*",
     "eightfold": r"https?://[a-z0-9.-]*eightfold\.ai[^\s\"'<>\\]*|/api/apply/v2/jobs",
     "avature": r"https?://[a-z0-9.-]+\.avature\.net[^\s\"'<>\\]*",
@@ -104,17 +106,26 @@ def crawl(company: dict, max_pages=30):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", action="append")
+    ap.add_argument("--file", help="fx platform/employers.yaml (Jobradar) i stedet for companies.yaml")
+    ap.add_argument("--status", help="kun arbejdsgivere med denne status, fx find-system")
     a = ap.parse_args()
-    companies = yaml.safe_load((ROOT / "companies.yaml").read_text())["companies"]
+    if a.file:
+        emps = yaml.safe_load((ROOT / a.file).read_text())["employers"]
+        companies = [{"name": e["name"], "start_urls": [e["career_url"]] if e.get("career_url") else []}
+                     for e in emps if not a.status or e.get("status") == a.status]
+        out_file = ROOT / "data" / "jobradar" / "discovery.json"
+    else:
+        companies = yaml.safe_load((ROOT / "companies.yaml").read_text())["companies"]
+        out_file = ROOT / "data" / "discovery.json"
     out = []
     for c in companies:
         if a.only and c["name"] not in a.only:
             continue
-        res = crawl(c)
+        res = crawl(c, max_pages=12 if a.file else 30)
         print(f"{c['name']:<32} {', '.join(res['ats']) or '-':<40} lists={len(res['listing_pages'])}")
         out.append(res)
-    (ROOT / "data").mkdir(exist_ok=True)
-    (ROOT / "data" / "discovery.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
+    out_file.parent.mkdir(parents=True, exist_ok=True)
+    out_file.write_text(json.dumps(out, ensure_ascii=False, indent=1))
 
 
 if __name__ == "__main__":

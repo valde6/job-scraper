@@ -1,0 +1,1160 @@
+# Arbejdsgivere i Jobradar (platform-kørslen). Uafhængig af companies.yaml (din personlige scraper).
+# lines: hvilke studieretninger arbejdsgiveren typisk er relevant for (ha-it, ha-almen, ha-jura)
+# career_url: arbejdsgiverens jobside – bruges som "Gå til virksomhedens jobside", når et job mangler direkte link
+# status: klar (har kilde) | find-system (rekrutteringssystem ikke fundet endnu) | mangler-adapter (systemet er kendt, adapter mangler)
+# source: samme format som companies.yaml (type + parametre). type none = ingen direkte kilde endnu.
+employers:
+- name: Novo Nordisk
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.novonordisk.com/careers.html
+  status: klar
+  source:
+    type: successfactors
+    url: https://careers.novonordisk.com
+  aliases:
+  - Novo Nordisk A/S
+- name: A.P. Møller - Mærsk
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.maersk.com/careers
+  status: klar
+  source:
+    type: workday
+    url: https://maersk.wd3.myworkdayjobs.com/Maersk_Careers
+  aliases:
+  - Maersk
+  - Mærsk
+  - A.P. Moller - Maersk
+  - APM Terminals
+- name: McKinsey & Company
+  lines:
+  - ha-almen
+  career_url: https://www.mckinsey.com/careers/search-jobs
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - McKinsey
+- name: LEGO Group
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.lego.com/en-us/careers
+  status: klar
+  source:
+    type: workday
+    url: https://lego.wd103.myworkdayjobs.com/LEGO_External
+  aliases:
+  - LEGO
+  - LEGO System A/S
+- name: Danske Bank
+  lines:
+  - ha-almen
+  - ha-it
+  - ha-jura
+  career_url: https://danskebank.com/careers
+  status: klar
+  source:
+    type: oracle
+    host: https://ejqi.fa.ocs.oraclecloud.eu
+    site: CX_1001
+  aliases:
+  - Danske Bank A/S
+- name: Deloitte
+  lines:
+  - ha-almen
+  - ha-it
+  - ha-jura
+  career_url: https://www.deloitte.com/dk/da/careers.html
+  status: klar
+  source:
+    type: smartrecruiters
+    company_id: DeloitteNordic
+  aliases:
+  - Deloitte Statsautoriseret Revisionspartnerselskab
+- name: PwC
+  lines:
+  - ha-almen
+  - ha-it
+  - ha-jura
+  career_url: https://www.pwc.dk/da/karriere.html
+  status: klar
+  source:
+    type: workday
+    url: https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers
+    search_terms:
+    - Denmark
+    - København
+    - Copenhagen
+    - studentermedhjælper
+  aliases:
+  - PricewaterhouseCoopers
+- name: Carlsberg
+  lines:
+  - ha-almen
+  career_url: https://www.carlsberggroup.com/careers/
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Carlsberg Group
+  - Carlsberg Danmark
+- name: Boston Consulting Group (BCG)
+  lines:
+  - ha-almen
+  career_url: https://careers.bcg.com/
+  status: klar
+  source:
+    type: eightfold
+    url: https://bcg.eightfold.ai
+    domain: bcg.com
+  aliases:
+  - BCG
+  - Boston Consulting Group
+- name: Nordea
+  lines:
+  - ha-almen
+  - ha-it
+  - ha-jura
+  career_url: https://www.nordea.com/en/careers
+  status: klar
+  source:
+    type: nordea
+  aliases:
+  - Nordea Danmark
+- name: Microsoft
+  lines:
+  - ha-it
+  career_url: https://careers.microsoft.com/
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Microsoft Danmark
+  - Microsoft Development Center Copenhagen
+- name: EY
+  lines:
+  - ha-almen
+  - ha-it
+  - ha-jura
+  career_url: https://www.ey.com/da_dk/careers
+  status: klar
+  source:
+    type: successfactors
+    url: https://careers.ey.com
+  aliases:
+  - EY Godkendt Revisionspartnerselskab
+  - Ernst & Young
+- name: Jyske Bank
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.jyskebank.dk/om/job
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Jyske Bank A/S
+  - Jyske Realkredit
+- name: Nykredit
+  lines:
+  - ha-almen
+  - ha-it
+  - ha-jura
+  career_url: https://www.nykredit.com/karriere/
+  status: klar
+  source:
+    type: browser
+    urls:
+    - https://www.nykredit.com/karriere/stillinger/
+    link_pattern: stilling/\?jobId=
+    dk_only: true
+  aliases:
+  - Nykredit Bank
+  - Totalkredit
+- name: Bestseller
+  lines:
+  - ha-almen
+  career_url: https://about.bestseller.com/careers
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - BESTSELLER A/S
+- name: L'Oréal Groupe
+  lines:
+  - ha-almen
+  career_url: https://careers.loreal.com/
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - L'Oréal
+  - L'Oreal
+  - L’Oréal Danmark
+- name: Bain & Company
+  lines:
+  - ha-almen
+  career_url: https://www.bain.com/careers/
+  status: find-system
+  source:
+    type: none
+- name: Vestas
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://careers.vestas.com/
+  status: klar
+  source:
+    type: successfactors
+    url: https://careers.vestas.com
+  aliases:
+  - Vestas Wind Systems
+- name: Implement
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://implementconsultinggroup.com/careers
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Implement Consulting Group
+- name: Saxo Bank
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.home.saxo/about-us/careers
+  status: klar
+  source:
+    type: workday
+    url: https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank
+  aliases:
+  - Saxo Bank A/S
+- name: Finansministeriet
+  lines:
+  - ha-almen
+  - ha-jura
+  career_url: https://fm.dk/om-os/job-i-finansministeriet/
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Finansministeriet
+  - Ministry of Finance
+- name: Bang & Olufsen
+  lines:
+  - ha-almen
+  career_url: https://www.bang-olufsen.com/en/dk/story/careers
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - B&O
+  - Bang & Olufsen A/S
+- name: Danmarks Nationalbank
+  lines:
+  - ha-almen
+  - ha-it
+  - ha-jura
+  career_url: https://www.nationalbanken.dk/da/om-nationalbanken/job
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Nationalbanken
+- name: Arla Foods
+  lines:
+  - ha-almen
+  career_url: https://www.arla.com/careers/
+  status: klar
+  source:
+    type: phenom
+    url: https://jobs.arla.com/global/en
+  aliases:
+  - Arla
+- name: Udenrigsministeriet
+  lines:
+  - ha-almen
+  - ha-jura
+  career_url: https://um.dk/om-os/job-i-udenrigsministeriet
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Udenrigsministeriet
+  - Ministry of Foreign Affairs of Denmark
+- name: Pandora
+  lines:
+  - ha-almen
+  career_url: https://pandoragroup.com/careers
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Pandora A/S
+- name: Dansk Industri
+  lines:
+  - ha-almen
+  - ha-jura
+  career_url: https://www.danskindustri.dk/om-di/job-i-di/
+  status: klar
+  source:
+    type: teamtailor
+    url: https://danskindustri.teamtailor.com
+    dk_only: true
+  aliases:
+  - DI - Dansk Industri
+- name: Nordnet
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.nordnet.dk/dk/om-nordnet/karriere
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Nordnet Bank
+- name: Ørsted
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://orsted.com/en/careers
+  status: klar
+  source:
+    type: browser
+    urls:
+    - https://orsted.com/en/careers/vacancies-list
+    capture:
+      url_contains: api/jobs/jobList
+      items: data
+      title: JobName
+      link: Link
+      location:
+      - PositionLocation
+      - PositionWorkPlace
+      extra:
+      - EmploymentType
+      - AreaOfWork
+      deadline: ApplicationDue
+  aliases:
+  - Orsted
+  - Ørsted A/S
+- name: KPMG
+  lines:
+  - ha-almen
+  - ha-it
+  - ha-jura
+  career_url: https://kpmg.com/dk/da/home/careers.html
+  status: klar
+  source:
+    type: hrmanager
+    customer: kpmg
+  aliases:
+  - KPMG P/S
+  - KPMG Acor Tax
+- name: Matas
+  lines:
+  - ha-almen
+  career_url: https://www.matas.dk/job
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Matas A/S
+- name: Salling Group
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://sallinggroup.com/job/
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Salling Group A/S
+  - Netto
+  - Føtex
+  - Bilka
+- name: PA Consulting Group
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.paconsulting.com/careers
+  status: klar
+  source:
+    type: smartrecruiters
+    company_id: PAConsulting
+  aliases:
+  - PA Consulting
+- name: Københavns Lufthavne
+  lines:
+  - ha-almen
+  career_url: https://www.cph.dk/om-cph/job
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Copenhagen Airport
+  - Københavns Lufthavne A/S
+- name: Danske Commodities
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://danskecommodities.com/careers/
+  status: klar
+  source:
+    type: teamtailor
+    url: https://danskecommoditiesas.teamtailor.com
+  aliases:
+  - Danske Commodities A/S
+- name: Netcompany
+  lines:
+  - ha-it
+  career_url: https://www.netcompany.com/da/karriere
+  status: klar
+  source:
+    type: smartrecruiters
+    company_id: Netcompany1
+  aliases:
+  - Netcompany A/S
+- name: PFA Pension
+  lines:
+  - ha-almen
+  - ha-it
+  - ha-jura
+  career_url: https://www.pfa.dk/om-pfa/job-og-karriere/
+  status: klar
+  source:
+    type: browser
+    urls:
+    - https://career2.successfactors.eu/career?company=pfapensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK
+    link_pattern: career_job_req_id=\d+
+    dk_only: true
+  aliases:
+  - PFA
+- name: SAS
+  lines:
+  - ha-almen
+  career_url: https://www.sasgroup.net/careers/
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - SAS Scandinavian Airlines
+  - Scandinavian Airlines
+- name: Amazon
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.amazon.jobs/en/locations/copenhagen-area-denmark
+  status: klar
+  source:
+    type: amazon
+  aliases:
+  - Amazon Development Center Denmark
+- name: Beierholm
+  lines:
+  - ha-almen
+  - ha-jura
+  career_url: https://www.beierholm.dk/karriere/
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Beierholm Statsautoriseret Revisionspartnerselskab
+- name: AL Sydbank
+  lines:
+  - ha-almen
+  career_url: https://www.alsydbank.dk/om-os/job
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Sydbank
+  - Arbejdernes Landsbank
+  - AL Bank
+- name: Forsvaret
+  lines:
+  - ha-almen
+  - ha-it
+  - ha-jura
+  career_url: https://www.forsvaret.dk/da/job-i-forsvaret/
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Forsvarsministeriet
+  - Forsvarsministeriets
+- name: IKEA
+  lines:
+  - ha-almen
+  career_url: https://jobs.ikea.com/en/search?location=Denmark
+  status: klar
+  source:
+    type: generic
+    list_urls:
+    - https://jobs.ikea.com/da/soeg-jobs/student/Danmark/
+    - https://jobs.ikea.com/da/soeg-jobs/Danmark/
+    link_pattern: /da/job/
+    dk_only: false
+  aliases:
+  - IKEA Danmark
+  - Ingka
+  - Inter IKEA
+- name: Statsministeriet
+  lines:
+  - ha-almen
+  - ha-jura
+  career_url: https://stm.dk/om-os/job/
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - Statsministeriet
+  - Prime Minister's Office
+- name: Accenture
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.accenture.com/dk-en/careers
+  status: klar
+  source:
+    type: workday
+    url: https://accenture.wd103.myworkdayjobs.com/AccentureCareers
+    search_terms:
+    - student Denmark
+    - Copenhagen student
+    - studentermedhjælper
+  aliases:
+  - Accenture A/S
+- name: Danmarks Radio
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.dr.dk/om-dr/job-i-dr
+  status: klar
+  source:
+    type: hrmanager
+    customer: danmarksradio
+- name: DSV
+  lines:
+  - ha-almen
+  career_url: https://www.dsv.com/en/careers
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - DSV A/S
+- name: BDO
+  lines:
+  - ha-almen
+  - ha-jura
+  career_url: https://www.bdo.dk/da-dk/karriere
+  status: find-system
+  source:
+    type: none
+  aliases:
+  - BDO Statsautoriseret revisionsaktieselskab
+- name: Rambøll
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.ramboll.com/careers
+  status: klar
+  source:
+    type: smartrecruiters
+    company_id: Ramboll3
+  aliases:
+  - Ramboll
+- name: Novonesis
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.novonesis.com/en/careers
+  status: klar
+  source:
+    type: workday
+    url: https://novonesis.wd103.myworkdayjobs.com/Novonesis_Careers
+  aliases:
+  - Novozymes
+  - Chr. Hansen
+- name: Kromann Reumert
+  lines:
+  - ha-jura
+  career_url: https://www.kromannreumert.com/karriere
+  status: find-system
+  source:
+    type: none
+- name: Plesner
+  lines:
+  - ha-jura
+  career_url: https://www.plesner.com/karriere
+  status: find-system
+  source:
+    type: none
+- name: Gorrissen Federspiel
+  lines:
+  - ha-jura
+  career_url: https://gorrissenfederspiel.com/karriere
+  status: find-system
+  source:
+    type: none
+- name: Bech-Bruun
+  lines:
+  - ha-jura
+  career_url: https://www.bechbruun.com/da/karriere
+  status: find-system
+  source:
+    type: none
+- name: Accura
+  lines:
+  - ha-jura
+  career_url: https://accura.dk/karriere
+  status: find-system
+  source:
+    type: none
+- name: Poul Schmith / Kammeradvokaten
+  lines:
+  - ha-jura
+  career_url: https://www.poulschmith.dk/karriere
+  status: find-system
+  source:
+    type: none
+- name: Lundgrens
+  lines:
+  - ha-jura
+  career_url: https://www.lundgrens.dk/karriere
+  status: find-system
+  source:
+    type: none
+- name: Horten
+  lines:
+  - ha-jura
+  career_url: https://www.horten.dk/karriere
+  status: find-system
+  source:
+    type: none
+- name: DLA Piper Denmark
+  lines:
+  - ha-jura
+  career_url: https://www.dlapiper.dk/karriere
+  status: find-system
+  source:
+    type: none
+- name: Mazanti-Andersen
+  lines:
+  - ha-jura
+  career_url: https://www.mazanti.dk/karriere
+  status: find-system
+  source:
+    type: none
+- name: Norrbom Vinding
+  lines:
+  - ha-jura
+  career_url: https://www.norrbomvinding.com/karriere
+  status: find-system
+  source:
+    type: none
+- name: Moalem Weitemeyer
+  lines:
+  - ha-jura
+  career_url: https://www.moalemweitemeyer.com/karriere
+  status: find-system
+  source:
+    type: none
+- name: Lund Elmer Sandager
+  lines:
+  - ha-jura
+  career_url: https://www.lundelmersandager.dk/karriere
+  status: find-system
+  source:
+    type: none
+- name: Delacour
+  lines:
+  - ha-jura
+  career_url: https://delacour.dk/karriere
+  status: find-system
+  source:
+    type: none
+- name: Danske Advokater
+  lines:
+  - ha-jura
+  - ha-almen
+  career_url: https://www.danskeadvokater.dk/om-os/job
+  status: find-system
+  source:
+    type: none
+  note: Set på Jobindex
+- name: Grant Thornton
+  lines:
+  - ha-almen
+  - ha-jura
+  career_url: https://www.grantthornton.dk/karriere/
+  status: find-system
+  source:
+    type: none
+  note: Set på Jobindex
+- name: Partner Revision
+  lines:
+  - ha-almen
+  career_url: https://www.partner-revision.dk/om-os/karriere
+  status: find-system
+  source:
+    type: none
+  note: HR-Manager indlejret (?hr=show-job)
+- name: Skatteministeriet og Skattestyrelsen
+  lines:
+  - ha-jura
+  - ha-almen
+  - ha-it
+  career_url: https://www.skm.dk/job
+  status: find-system
+  source:
+    type: none
+- name: Erhvervsstyrelsen
+  lines:
+  - ha-jura
+  - ha-almen
+  - ha-it
+  career_url: https://erhvervsstyrelsen.dk/job
+  status: find-system
+  source:
+    type: none
+  note: Evt. via Statens Rekrutteringsløsning
+- name: Finanstilsynet
+  lines:
+  - ha-jura
+  - ha-almen
+  career_url: https://www.finanstilsynet.dk/om-os/job
+  status: find-system
+  source:
+    type: none
+  note: Set på Jobindex (studiejob, juridisk kontor)
+- name: Konkurrence- og Forbrugerstyrelsen
+  lines:
+  - ha-jura
+  - ha-almen
+  career_url: https://www.kfst.dk/om-os/job
+  status: find-system
+  source:
+    type: none
+- name: Justitsministeriet
+  lines:
+  - ha-jura
+  career_url: https://www.justitsministeriet.dk/job
+  status: find-system
+  source:
+    type: none
+- name: Datatilsynet
+  lines:
+  - ha-jura
+  - ha-it
+  career_url: https://www.datatilsynet.dk/om-datatilsynet/job
+  status: find-system
+  source:
+    type: none
+- name: Statens Rekrutteringsløsning (staten)
+  lines:
+  - ha-jura
+  - ha-almen
+  - ha-it
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr
+  status: klar
+  source:
+    type: hrmanager
+    customer: statensrekrutteringsloesning_tr
+  note: Dækker mange ministerier/styrelser. Studiejob manglede i feedet 8/10 – se backlog 4
+- name: Københavns Kommune
+  lines:
+  - ha-almen
+  - ha-jura
+  - ha-it
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=kk
+  status: find-system
+  source:
+    type: none
+  note: HR-Manager cid 1518 – find kunde-alias
+- name: Frederiksberg Kommune
+  lines:
+  - ha-almen
+  - ha-jura
+  career_url: https://job.frederiksberg.dk/
+  status: mangler-adapter
+  source:
+    type: none
+  note: Emply (eget domæne)
+- name: Tryg
+  lines:
+  - ha-almen
+  - ha-it
+  - ha-jura
+  career_url: https://careers.tryg.com
+  status: klar
+  source:
+    type: successfactors
+    url: https://careers.tryg.com
+  note: SuccessFactors – test
+- name: Alm. Brand Group
+  lines:
+  - ha-almen
+  - ha-jura
+  career_url: https://www.almbrand.dk/om-os/job
+  status: find-system
+  source:
+    type: none
+- name: If Skadeforsikring
+  lines:
+  - ha-almen
+  career_url: https://www.if.dk/om-if/job
+  status: find-system
+  source:
+    type: none
+- name: ATP
+  lines:
+  - ha-almen
+  - ha-it
+  - ha-jura
+  career_url: https://www.atp.dk/job
+  status: find-system
+  source:
+    type: none
+- name: PensionDanmark
+  lines:
+  - ha-almen
+  - ha-it
+  - ha-jura
+  career_url: https://www.pensiondanmark.com/om-pensiondanmark/job/
+  status: find-system
+  source:
+    type: none
+- name: Sampension
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.sampension.dk/om-sampension/job
+  status: find-system
+  source:
+    type: none
+- name: AP Pension
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://appension.dk/om-ap-pension/job-i-ap-pension/karriere-i-ap-pension
+  status: find-system
+  source:
+    type: none
+  note: Set på Jobindex
+- name: Arbejdernes Landsbank
+  lines:
+  - ha-almen
+  career_url: https://www.al-bank.dk/om-os/job
+  status: find-system
+  source:
+    type: none
+- name: Lån & Spar Bank
+  lines:
+  - ha-almen
+  career_url: https://www.lsb.dk/privat/dit-liv/livet-som-studerende/job
+  status: find-system
+  source:
+    type: none
+  note: Set på Jobindex
+- name: Danmarks Skibskredit
+  lines:
+  - ha-almen
+  career_url: https://app.elvium.com/da
+  status: mangler-adapter
+  source:
+    type: none
+  note: Elvium – robots.txt forbyder; brug career_url
+- name: Söderberg & Partners
+  lines:
+  - ha-almen
+  career_url: https://www.soderbergpartners.dk/om-os/job
+  status: find-system
+  source:
+    type: none
+  note: Set på Jobindex
+- name: KMD
+  lines:
+  - ha-it
+  career_url: https://www.kmd.dk/karriere
+  status: find-system
+  source:
+    type: none
+  note: Set på Jobindex
+- name: EG
+  lines:
+  - ha-it
+  career_url: https://careers.egsoftware.com
+  status: klar
+  source:
+    type: teamtailor
+    url: https://careers.egsoftware.com
+  note: Teamtailor (eget domæne)
+- name: Twoday
+  lines:
+  - ha-it
+  career_url: https://www.twoday.dk/karriere
+  status: find-system
+  source:
+    type: none
+- name: Columbus
+  lines:
+  - ha-it
+  - ha-almen
+  career_url: https://www.columbusglobal.com/da/karriere
+  status: find-system
+  source:
+    type: none
+- name: Capgemini Danmark
+  lines:
+  - ha-it
+  - ha-almen
+  career_url: https://www.capgemini.com/dk-en/careers/
+  status: find-system
+  source:
+    type: none
+- name: IBM Danmark
+  lines:
+  - ha-it
+  career_url: https://www.ibm.com/careers
+  status: find-system
+  source:
+    type: none
+- name: Devoteam
+  lines:
+  - ha-it
+  career_url: https://www.devoteam.com/jobs/
+  status: find-system
+  source:
+    type: none
+  note: Set på Jobindex
+- name: Visma DataLøn
+  lines:
+  - ha-it
+  - ha-almen
+  career_url: https://karriere.datalonprolon.dk/
+  status: find-system
+  source:
+    type: none
+  note: Set på Jobindex
+- name: Danske Spil
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://karriere.danskespil.dk
+  status: klar
+  source:
+    type: teamtailor
+    url: https://karriere.danskespil.dk
+  note: Teamtailor (eget domæne)
+- name: DTU
+  lines:
+  - ha-it
+  - ha-almen
+  career_url: https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1
+  status: klar
+  source:
+    type: oracle
+    host: https://efzu.fa.em2.oraclecloud.com
+    site: CX_1
+  note: Oracle
+- name: IT-Universitetet
+  lines:
+  - ha-it
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=itu
+  status: find-system
+  source:
+    type: none
+  note: HR-Manager cid 119 – find kunde-alias
+- name: Københavns Universitet
+  lines:
+  - ha-almen
+  - ha-jura
+  - ha-it
+  career_url: https://employment.ku.dk/
+  status: find-system
+  source:
+    type: none
+- name: CBS
+  lines:
+  - ha-almen
+  - ha-jura
+  - ha-it
+  career_url: https://www.cbs.dk/om-cbs/job-paa-cbs
+  status: find-system
+  source:
+    type: none
+  note: Mange studiejob for egne studerende
+- name: Danske Havne
+  lines:
+  - ha-almen
+  career_url: https://www.danskehavne.dk/
+  status: find-system
+  source:
+    type: none
+  note: Set på Jobindex
+- name: DSB
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.dsb.dk/om-dsb/job-i-dsb/
+  status: find-system
+  source:
+    type: none
+  note: Set på Jobindex
+- name: Movia
+  lines:
+  - ha-almen
+  career_url: https://www.moviatrafik.dk/om-movia/job
+  status: find-system
+  source:
+    type: none
+  note: Set på Jobindex
+- name: HOFOR
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.hofor.dk/job
+  status: find-system
+  source:
+    type: none
+  note: HR-Manager cid 174 – find kunde-alias
+- name: Svitzer
+  lines:
+  - ha-almen
+  career_url: https://svitzer.wd3.myworkdayjobs.com/Svitzer_Careers
+  status: klar
+  source:
+    type: workday
+    url: https://svitzer.wd3.myworkdayjobs.com/Svitzer_Careers
+  note: Workday
+- name: Nordisk Film / Egmont
+  lines:
+  - ha-almen
+  career_url: https://egmont.csod.com/ux/ats/careersite/4/home
+  status: mangler-adapter
+  source:
+    type: none
+  note: Cornerstone
+- name: Dansk Erhverv
+  lines:
+  - ha-almen
+  - ha-jura
+  career_url: https://www.danskerhverv.dk/om-dansk-erhverv/job/
+  status: find-system
+  source:
+    type: none
+- name: Akademikernes A-kasse
+  lines:
+  - ha-almen
+  career_url: https://aka.career.emply.com/
+  status: mangler-adapter
+  source:
+    type: none
+  note: Emply
+- name: Ældre Sagen
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://aeldresagen.career.emply.com/
+  status: mangler-adapter
+  source:
+    type: none
+  note: Emply
+- name: Lederne
+  lines:
+  - ha-almen
+  - ha-jura
+  career_url: https://www.lederne.dk/om-lederne/job
+  status: find-system
+  source:
+    type: none
+  note: HR-Manager cid 2134
+- name: Coop
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://om.coop.dk/job
+  status: find-system
+  source:
+    type: none
+- name: Royal Unibrew
+  lines:
+  - ha-almen
+  career_url: https://www.royalunibrew.com/careers/
+  status: find-system
+  source:
+    type: none
+- name: GN Group
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.gn.com/careers
+  status: find-system
+  source:
+    type: none
+- name: Coloplast
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.coloplast.com/careers/
+  status: find-system
+  source:
+    type: none
+- name: Lundbeck
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.lundbeck.com/global/careers
+  status: find-system
+  source:
+    type: none
+- name: Demant
+  lines:
+  - ha-almen
+  - ha-it
+  career_url: https://www.demant.com/careers
+  status: find-system
+  source:
+    type: none
+- name: FLSmidth
+  lines:
+  - ha-almen
+  career_url: https://www.flsmidth.com/en-gb/company/careers
+  status: find-system
+  source:
+    type: none
+- name: ISS
+  lines:
+  - ha-almen
+  career_url: https://www.issworld.com/careers
+  status: find-system
+  source:
+    type: none
+- name: Genmab
+  lines:
+  - ha-almen
+  career_url: https://www.genmab.com/careers
+  status: find-system
+  source:
+    type: none
+- name: Novo Nordisk Fonden
+  lines:
+  - ha-almen
+  - ha-jura
+  career_url: https://novonordiskfonden.dk/om-fonden/job/
+  status: find-system
+  source:
+    type: none
+- name: Ambu
+  lines:
+  - ha-almen
+  career_url: https://www.ambu.com/careers
+  status: find-system
+  source:
+    type: none

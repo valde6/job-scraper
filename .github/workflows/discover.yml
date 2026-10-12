@@ -16,7 +16,7 @@ permissions:
 jobs:
   discover:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -28,7 +28,9 @@ jobs:
         run: |
           mkdir -p data
           ONLY="${{ inputs.only }}"; [ -z "$ONLY" ] && [ -f triggers/discover ] && ONLY="$(grep -v '^#' triggers/discover | head -1 || true)"
-          if [ -n "$ONLY" ]; then
+          if [ "$ONLY" = "PLATFORM" ]; then
+            python -m scraper.discover --file platform/employers.yaml --status find-system 2>&1 | tee data/discover.log
+          elif [ -n "$ONLY" ]; then
             python -m scraper.discover --only "$ONLY" 2>&1 | tee data/discover.log
           else
             python -m scraper.discover 2>&1 | tee data/discover.log
