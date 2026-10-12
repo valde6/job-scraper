@@ -168,7 +168,7 @@ secrets `RESEND_API_KEY` og `MAIL_FROM` (fx `Studieradar <job@studieradar.live>`
 AI kører i appen via **Lovable AI** (indbygget gateway, nøglen `LOVABLE_API_KEY` styres af Lovable – ingen egen API-nøgle).
 - **Model: `google/gemini-3.1-flash-lite`** til både strukturering af opslag og CV-læsning. Det er Lovables anbefalede billige model
   til opsummering/udtræk. Skift kun model ét sted (`AI_MODEL` i `src/lib/ai.server.ts`).
-- **Pris (POC):** ca. 3.000 tokens ind + 500 ud pr. opslag ≈ 0,1-0,3 øre … under 0,01 USD. 80 job nu + ca. 100 nye om ugen ≈ 1-2 credits om måneden,
+- **Pris (POC):** ca. 3.000 tokens ind + 500 ud pr. opslag ≈ 0,0015 USD (ca. 1 øre). 80 job nu + ca. 100 nye om ugen ≈ 1-2 credits om måneden,
   som dækkes af Lovables gratis AI-grant på 4 credits/måned. Se faktisk forbrug under **Cloud → AI → Recent requests**.
 - **CV'er:** PDF-teksten udtrækkes på serveren (npm-pakken `unpdf`) og sendes som tekst – billigere end at sende PDF'en til en dyrere model.
 - **Struktureret output:** brug gatewayens OpenAI-kompatible chat-API med et `tools`-skema og `tool_choice`, så svaret altid er gyldig JSON. Validér med zod.
