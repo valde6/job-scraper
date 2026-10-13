@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-12T21:16:48+00:00",
+ "ts": "2026-10-13T02:36:49+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -135,7 +135,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 58,
+   "listed": 55,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 48,
+   "listed": 47,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -365,7 +365,7 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 7,
+   "listed": 6,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -425,7 +425,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 28,
+   "listed": 29,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -505,7 +505,7 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 383,
+   "listed": 386,
    "matched": 32,
    "problem": null,
    "streak": 0,
@@ -513,7 +513,7 @@
   }
  ],
  "alerts": [
-  "**Samlet:** kun 29 aktive job mod normalt ca. 101"
+  "**Samlet:** kun 29 aktive job mod normalt ca. 65"
  ],
  "active": 29
 }
