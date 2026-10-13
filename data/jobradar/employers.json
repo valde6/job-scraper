@@ -37,7 +37,7 @@
    "career_url": "https://www.lego.com/en-us/careers",
    "source_type": "workday",
    "ok": true,
-   "listed": 100,
+   "listed": 107,
    "matched": 0
   },
   {
@@ -47,7 +47,7 @@
    "career_url": "https://danskebank.com/careers",
    "source_type": "oracle",
    "ok": true,
-   "listed": 134,
+   "listed": 135,
    "matched": 4
   },
   {
@@ -57,7 +57,7 @@
    "career_url": "https://www.deloitte.com/dk/da/careers.html",
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 34,
+   "listed": 33,
    "matched": 5
   },
   {
@@ -117,8 +117,8 @@
    "career_url": "https://www.ey.com/da_dk/careers",
    "source_type": "yello",
    "ok": true,
-   "listed": 7,
-   "matched": 0
+   "listed": 10,
+   "matched": 6
   },
   {
    "name": "Jyske Bank",
@@ -137,7 +137,7 @@
    "career_url": "https://www.nykredit.com/karriere/",
    "source_type": "browser",
    "ok": true,
-   "listed": 55,
+   "listed": 56,
    "matched": 7
   },
   {
@@ -306,9 +306,9 @@
    "status": "klar",
    "career_url": "https://www.matas.dk/job",
    "source_type": "emply",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "ok": true,
+   "listed": 6,
+   "matched": 0
   },
   {
    "name": "Salling Group",
@@ -356,9 +356,9 @@
    "status": "klar",
    "career_url": "https://www.netcompany.com/da/karriere",
    "source_type": "smartrecruiters",
-   "ok": true,
-   "listed": 32,
-   "matched": 5
+   "ok": false,
+   "listed": null,
+   "matched": null
   },
   {
    "name": "PFA Pension",
@@ -427,7 +427,7 @@
    "career_url": "https://jobs.ikea.com/en/search?location=Denmark",
    "source_type": "generic",
    "ok": true,
-   "listed": 30,
+   "listed": 29,
    "matched": 0
   },
   {
@@ -447,7 +447,7 @@
    "career_url": "https://www.accenture.com/dk-en/careers",
    "source_type": "workday",
    "ok": true,
-   "listed": 2,
+   "listed": 3,
    "matched": 0
   },
   {
@@ -476,9 +476,9 @@
    "status": "klar",
    "career_url": "https://www.bdo.dk/da-dk/karriere",
    "source_type": "emply",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "ok": true,
+   "listed": 6,
+   "matched": 0
   },
   {
    "name": "Rambøll",
@@ -486,9 +486,9 @@
    "status": "klar",
    "career_url": "https://www.ramboll.com/careers",
    "source_type": "smartrecruiters",
-   "ok": true,
-   "listed": 97,
-   "matched": 7
+   "ok": false,
+   "listed": null,
+   "matched": null
   },
   {
    "name": "Novonesis",
@@ -497,7 +497,7 @@
    "career_url": "https://www.novonesis.com/en/careers",
    "source_type": "workday",
    "ok": true,
-   "listed": 72,
+   "listed": 74,
    "matched": 2
   },
   {
@@ -536,9 +536,9 @@
    "status": "klar",
    "career_url": "https://www.bechbruun.com/da/karriere",
    "source_type": "emply",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "ok": true,
+   "listed": 0,
+   "matched": 0
   },
   {
    "name": "Accura",
@@ -756,9 +756,9 @@
    "status": "klar",
    "career_url": "https://job.frederiksberg.dk/",
    "source_type": "emply",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "ok": true,
+   "listed": 30,
+   "matched": 2
   },
   {
    "name": "Tryg",
@@ -967,7 +967,7 @@
    "career_url": "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1",
    "source_type": "oracle",
    "ok": true,
-   "listed": 397,
+   "listed": 405,
    "matched": 9
   },
   {
@@ -1047,7 +1047,7 @@
    "career_url": "https://svitzer.wd3.myworkdayjobs.com/Svitzer_Careers",
    "source_type": "workday",
    "ok": true,
-   "listed": 43,
+   "listed": 38,
    "matched": 2
   },
   {
@@ -1076,9 +1076,9 @@
    "status": "klar",
    "career_url": "https://aka.career.emply.com/",
    "source_type": "emply",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "ok": true,
+   "listed": 3,
+   "matched": 1
   },
   {
    "name": "Ældre Sagen",
@@ -1209,6 +1209,236 @@
    "ok": null,
    "listed": null,
    "matched": null
+  },
+  {
+   "name": "DM",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://dm-v2.career.emply.com",
+   "source_type": "emply",
+   "ok": true,
+   "listed": 4,
+   "matched": 2
+  },
+  {
+   "name": "Energinet",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=316&ProjectId=188796&DepartmentId=21679&MediaId=5",
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 25,
+   "matched": 0
+  },
+  {
+   "name": "Landau Headhunting",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://landauheadhunting.teamtailor.com",
+   "source_type": "teamtailor",
+   "ok": true,
+   "listed": 17,
+   "matched": 1
+  },
+  {
+   "name": "Whiteaway Group",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://whiteawaygroup.career.emply.com",
+   "source_type": "emply",
+   "ok": true,
+   "listed": 5,
+   "matched": 0
+  },
+  {
+   "name": "Telenor",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://telenorlinx-1750856670.teamtailor.com",
+   "source_type": "teamtailor",
+   "ok": true,
+   "listed": 1,
+   "matched": 0
+  },
+  {
+   "name": "Landal",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://roompot.wd103.myworkdayjobs.com/Landal",
+   "source_type": "workday",
+   "ok": true,
+   "listed": 131,
+   "matched": 0
+  },
+  {
+   "name": "Nyborg Kommune",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://nyborg.career.emply.com",
+   "source_type": "emply",
+   "ok": true,
+   "listed": 15,
+   "matched": 0
+  },
+  {
+   "name": "GML A/S",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://gmlhr.teamtailor.com",
+   "source_type": "teamtailor",
+   "ok": true,
+   "listed": 43,
+   "matched": 0
+  },
+  {
+   "name": "Medicinrådet",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://medicinraadet.career.emply.com",
+   "source_type": "emply",
+   "ok": true,
+   "listed": 1,
+   "matched": 1
+  },
+  {
+   "name": "HOFOR (hrmanager)",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=174&ProjectId=184437&DepartmentId=21999&MediaId=59",
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 15,
+   "matched": 0
+  },
+  {
+   "name": "Entreprenørfirmaet Nordkysten A/S",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://karriere.nordkysten.dk",
+   "source_type": "teamtailor",
+   "ok": true,
+   "listed": 13,
+   "matched": 2
+  },
+  {
+   "name": "Danmarks Tekniske Universitet",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://efzu.fa.em2.oraclecloud.com",
+   "source_type": "oracle",
+   "ok": true,
+   "listed": 405,
+   "matched": 9
+  },
+  {
+   "name": "Grønlands Selvstyre",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://naalakkersuisut.career.emply.com",
+   "source_type": "emply",
+   "ok": true,
+   "listed": 35,
+   "matched": 1
+  },
+  {
+   "name": "Eurofins",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://jobs.smartrecruiters.com/Eurofins/744000155202220-praktikant-til-salg-support-kundeudvikling?trid=855d0792-8b64-4b61-8b9b-b6ead421d748",
+   "source_type": "smartrecruiters",
+   "ok": false,
+   "listed": null,
+   "matched": null
+  },
+  {
+   "name": "Faxe Kommune",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1372&ProjectId=147348&DepartmentId=20025&MediaId=4616",
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 25,
+   "matched": 0
+  },
+  {
+   "name": "Haderslev Kommune",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://haderslev.career.emply.com",
+   "source_type": "emply",
+   "ok": true,
+   "listed": 18,
+   "matched": 0
+  },
+  {
+   "name": "Scantox A/S",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://scantox.career.emply.com",
+   "source_type": "emply",
+   "ok": true,
+   "listed": 6,
+   "matched": 2
+  },
+  {
+   "name": "Würth Danmark A/S",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://wuerth.career.emply.com",
+   "source_type": "emply",
+   "ok": true,
+   "listed": 24,
+   "matched": 9
+  },
+  {
+   "name": "HTH",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://nobiaab-hth.teamtailor.com",
+   "source_type": "teamtailor",
+   "ok": true,
+   "listed": 12,
+   "matched": 0
+  },
+  {
+   "name": "Everllence",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1877&ProjectId=146338&DepartmentId=19149&MediaId=4619",
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 3,
+   "matched": 1
+  },
+  {
+   "name": "Erhvervsakademi København",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://ek.career.emply.com",
+   "source_type": "emply",
+   "ok": true,
+   "listed": 6,
+   "matched": 0
+  },
+  {
+   "name": "Assens Kommune",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=231&ProjectId=193256&DepartmentId=18452&MediaId=5545",
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 25,
+   "matched": 0
+  },
+  {
+   "name": "Danske Professionshøjskoler",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://dkprof.career.emply.com",
+   "source_type": "emply",
+   "ok": true,
+   "listed": 1,
+   "matched": 0
   }
  ]
 }

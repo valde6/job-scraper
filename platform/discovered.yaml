@@ -1,0 +1,239 @@
+# Maskinvedligeholdt: arbejdsgivere fundet automatisk via links i studiejob-opslag (scraper/discover_jobindex.py).
+# Ret gerne navne. Flyt en arbejdsgiver til employers.yaml, hvis den skal have særlige indstillinger.
+employers:
+- name: DM
+  career_url: https://dm-v2.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://dm-v2.career.emply.com
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://dm-v2.career.emply.com/ad/student-til-fagforeningen-dms-medieteam/jmxttw/da
+- name: Energinet
+  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=316&ProjectId=188796&DepartmentId=21679&MediaId=5
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: energinet
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=316&ProjectId=188796&DepartmentId=21679&MediaId=5
+  cid: '316'
+- name: Landau Headhunting
+  career_url: https://landauheadhunting.teamtailor.com
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://landauheadhunting.teamtailor.com
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://landauheadhunting.teamtailor.com/jobs
+- name: Whiteaway Group
+  career_url: https://whiteawaygroup.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://whiteawaygroup.career.emply.com
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://whiteawaygroup.career.emply.com/career-site
+- name: Telenor
+  career_url: https://telenorlinx-1750856670.teamtailor.com
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://telenorlinx-1750856670.teamtailor.com
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://telenorlinx-1750856670.teamtailor.com
+- name: Landal
+  career_url: https://roompot.wd103.myworkdayjobs.com/Landal
+  status: opdaget
+  source:
+    type: workday
+    url: https://roompot.wd103.myworkdayjobs.com/Landal
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://roompot.wd103.myworkdayjobs.com/Landal/job/Landal-Seawest/Servicemedarbejder_JR103055-1/apply
+- name: Nyborg Kommune
+  career_url: https://nyborg.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://nyborg.career.emply.com
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://nyborg.career.emply.com/ad/biblioteksleder-til-nyborg-bibliotek/ul41va/da
+- name: GML A/S
+  career_url: https://gmlhr.teamtailor.com
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://gmlhr.teamtailor.com
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://gmlhr.teamtailor.com/jobs/8513262-studentermedhjaelper-til-gml-a-s?promotion=2239228-jobindex
+- name: Medicinrådet
+  career_url: https://medicinraadet.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://medicinraadet.career.emply.com
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://medicinraadet.career.emply.com/ad/studentermedhjaelpere-til-medicinradets-sekretariat/e6j7y4/da
+- name: HOFOR (hrmanager)
+  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=174&ProjectId=184437&DepartmentId=21999&MediaId=59
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: ke
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=174&ProjectId=184437&DepartmentId=21999&MediaId=59
+  cid: '174'
+- name: Entreprenørfirmaet Nordkysten A/S
+  career_url: https://karriere.nordkysten.dk
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://karriere.nordkysten.dk
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://karriere.nordkysten.dk/jobs/8518215-studentermedhjaelper-til-strategisk-indkoeb-analyse-og-ai?promotion=2236747-jobindex
+- name: Danmarks Tekniske Universitet
+  career_url: https://efzu.fa.em2.oraclecloud.com
+  status: opdaget
+  source:
+    type: oracle
+    host: https://efzu.fa.em2.oraclecloud.com
+    site: CX_2001
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_2001/job/8368
+- name: Grønlands Selvstyre
+  career_url: https://naalakkersuisut.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://naalakkersuisut.career.emply.com
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://naalakkersuisut.career.emply.com/ad/kontorchef-til-kollegieadministrationens-faelleskontor/ddbpyk/da
+- name: Eurofins
+  career_url: https://jobs.smartrecruiters.com/Eurofins/744000155202220-praktikant-til-salg-support-kundeudvikling?trid=855d0792-8b64-4b61-8b9b-b6ead421d748
+  status: opdaget
+  source:
+    type: smartrecruiters
+    company_id: Eurofins
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://jobs.smartrecruiters.com/Eurofins/744000155202220-praktikant-til-salg-support-kundeudvikling?trid=855d0792-8b64-4b61-8b9b-b6ead421d748
+- name: Faxe Kommune
+  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1372&ProjectId=147348&DepartmentId=20025&MediaId=4616
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: ofir_faxekommune
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1372&ProjectId=147348&DepartmentId=20025&MediaId=4616
+  cid: '1372'
+- name: Haderslev Kommune
+  career_url: https://haderslev.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://haderslev.career.emply.com
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://haderslev.career.emply.com/ad/dagplejer-til-starup-omradet/x52m6y/da
+- name: Scantox A/S
+  career_url: https://scantox.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://scantox.career.emply.com
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://Scantox.career.emply.com/ad/dyrepasserelev-med-opstart-januar-2027/qgcia9/da
+- name: Würth Danmark A/S
+  career_url: https://wuerth.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://wuerth.career.emply.com
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://wuerth.career.emply.com/ad/ambitios-nyuddannet-og-drevet-af-salg-sa-bliv-sales-management-graduate-hos-wur/o1x87l/da
+- name: HTH
+  career_url: https://nobiaab-hth.teamtailor.com
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://nobiaab-hth.teamtailor.com
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://nobiaab-hth.teamtailor.com/jobs/8496996-vi-soger-en-ny-kollega-til-hth-holstebro-maske-er-det-dig?promotion=2229209-jobindex
+- name: Everllence
+  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1877&ProjectId=146338&DepartmentId=19149&MediaId=4619
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: Everllence
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1877&ProjectId=146338&DepartmentId=19149&MediaId=4619
+  cid: '1877'
+- name: Erhvervsakademi København
+  career_url: https://ek.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://ek.career.emply.com
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://ek.career.emply.com/ad/specialkonsulent-til-erhvervsakademi-kobenhavns-studieadministration/myye0k/da
+- name: Assens Kommune
+  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=231&ProjectId=193256&DepartmentId=18452&MediaId=5545
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: assens
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=231&ProjectId=193256&DepartmentId=18452&MediaId=5545
+  cid: '231'
+- name: Danske Professionshøjskoler
+  career_url: https://dkprof.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://dkprof.career.emply.com
+  discovered:
+    at: '2026-10-13'
+    via: jobindex-link
+    evidence: https://dkprof.career.emply.com/ad/kommunikationskonsulent-med-politisk-blik-til-danske-professionshojskoler/tpuadk

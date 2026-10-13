@@ -1,4 +1,201 @@
-Ældre Sagen                          emply           True 3 3 
-AI-strukturering: {'cached': 0, 'new': 0, 'failed': 0, 'skipped_no_key': 82, 'over_limit': 0}
+Traceback (most recent call last):
+  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 213, in main
+    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
+    return fn()
+           ^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 213, in <lambda>
+    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
+                                         ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/smartrecruiters.py", line 18, in scrape
+    d = get(f"{API.format(cid=cid)}/{p['id']}").json()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 92, in get
+    return http("GET", url, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 88, in http
+    raise last  # type: ignore[misc]
+    ^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 80, in http
+    r.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: https://api.smartrecruiters.com/v1/companies/Netcompany1/postings/744000148933299
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/urllib3/connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/http/client.py", line 1478, in getresponse
+    response.begin()
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/http/client.py", line 343, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/http/client.py", line 304, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/ssl.py", line 1264, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/ssl.py", line 1116, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
 
-Færdig: 3 fundet i dag, 82 aktive. Pr. type: {'studiejob': 39, 'praktik': 37, 'graduate': 6}
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/adapters.py", line 645, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/urllib3/util/retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 542, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.smartrecruiters.com', port=443): Read timed out. (read timeout=25)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 213, in main
+    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
+    return fn()
+           ^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 213, in <lambda>
+    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
+                                         ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/smartrecruiters.py", line 18, in scrape
+    d = get(f"{API.format(cid=cid)}/{p['id']}").json()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 92, in get
+    return http("GET", url, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 88, in http
+    raise last  # type: ignore[misc]
+    ^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 76, in http
+    r = _session.request(method, url, **kw)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/adapters.py", line 691, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.smartrecruiters.com', port=443): Read timed out. (read timeout=25)
+Traceback (most recent call last):
+  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 213, in main
+    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
+    return fn()
+           ^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 213, in <lambda>
+    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
+                                         ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/smartrecruiters.py", line 18, in scrape
+    d = get(f"{API.format(cid=cid)}/{p['id']}").json()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 92, in get
+    return http("GET", url, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 88, in http
+    raise last  # type: ignore[misc]
+    ^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 80, in http
+    r.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.smartrecruiters.com/v1/companies/Eurofins/postings/744000141450339
+Novo Nordisk                         successfactors  True 48 1 
+A.P. Møller - Mærsk                  workday         True 632 4 
+LEGO Group                           workday         True 107 0 
+Danske Bank                          oracle          True 135 4 
+Deloitte                             smartrecruiters True 33 5 
+PwC                                  workday         True 14 8 
+Boston Consulting Group (BCG)        eightfold       True 4 3 
+Nordea                               nordea          True 81 0 
+EY                                   yello           True 10 6 
+Nykredit                             browser         True 56 7 
+Vestas                               successfactors  True 48 0 
+Saxo Bank                            workday         True 49 0 
+Bang & Olufsen                       browser         True 5 0 
+Arla Foods                           phenom          True 10 0 
+Pandora                              browser         True 0 0 
+Dansk Industri                       teamtailor      True 5 1 
+Ørsted                               browser         True 47 0 
+KPMG                                 hrmanager       True 18 2 
+Matas                                emply           True 6 0 
+PA Consulting Group                  smartrecruiters True 13 0 
+Danske Commodities                   teamtailor      True 3 0 
+Netcompany                           smartrecruiters False   HTTPError: 500 Server Error: Internal Server Error for url: https://api.smartrecruiters.com/v1/companies/Netcompany1/postings/744000148933299
+PFA Pension                          browser         True 6 2 
+Amazon                               amazon          True 7 0 
+IKEA                                 generic         True 29 0 
+Accenture                            workday         True 3 0 
+Danmarks Radio                       hrmanager       True 20 10 
+BDO                                  emply           True 6 0 
+Rambøll                              smartrecruiters False   ReadTimeout: HTTPSConnectionPool(host='api.smartrecruiters.com', port=443): Read timed out. (read timeout=25)
+Novonesis                            workday         True 74 2 
+Bech-Bruun                           emply           True 0 0 
+Accura                               hrmanager       True 8 3 
+Statens Rekrutteringsløsning (staten) hrmanager       True 25 0 
+Frederiksberg Kommune                emply           True 30 2 
+Tryg                                 successfactors  True 0 0 
+EG                                   teamtailor      True 36 1 
+Twoday                               teamtailor      True 34 0 
+Danske Spil                          teamtailor      True 6 3 
+DTU                                  oracle          True 405 9 
+DSB                                  browser         True 0 0 
+Svitzer                              workday         True 38 2 
+Akademikernes A-kasse                emply           True 3 1 
+Ældre Sagen                          emply           True 3 3 
+Royal Unibrew                        browser         True 10 0 
+GN Group                             workday         True 0 0 
+DM                                   emply           True 4 2 
+Energinet                            hrmanager       True 25 0 
+Landau Headhunting                   teamtailor      True 17 1 
+Whiteaway Group                      emply           True 5 0 
+Telenor                              teamtailor      True 1 0 
+Landal                               workday         True 131 0 
+Nyborg Kommune                       emply           True 15 0 
+GML A/S                              teamtailor      True 43 0 
+Medicinrådet                         emply           True 1 1 
+HOFOR (hrmanager)                    hrmanager       True 15 0 
+Entreprenørfirmaet Nordkysten A/S    teamtailor      True 13 2 
+Danmarks Tekniske Universitet        oracle          True 405 9 
+Grønlands Selvstyre                  emply           True 35 1 
+Eurofins                             smartrecruiters False   HTTPError: 400 Client Error: Bad Request for url: https://api.smartrecruiters.com/v1/companies/Eurofins/postings/744000141450339
+Faxe Kommune                         hrmanager       True 25 0 
+Haderslev Kommune                    emply           True 18 0 
+Scantox A/S                          emply           True 6 2 
+Würth Danmark A/S                    emply           True 24 9 
+HTH                                  teamtailor      True 12 0 
+Everllence                           hrmanager       True 3 1 
+Erhvervsakademi København            emply           True 6 0 
+Assens Kommune                       hrmanager       True 25 0 
+Danske Professionshøjskoler          emply           True 1 0 
+AI-strukturering: {'cached': 0, 'new': 0, 'failed': 0, 'skipped_no_key': 119, 'over_limit': 0}
+
+Færdig: 107 fundet i dag, 119 aktive. Pr. type: {'graduate': 11, 'studiejob': 59, 'praktik': 49}
