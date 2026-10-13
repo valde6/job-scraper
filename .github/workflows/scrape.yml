@@ -2,7 +2,7 @@ name: scrape-jobs
 
 on:
   schedule:
-    - cron: "17 */3 * * *"   # hver 3. time (gratis på GitHub; Claude-synken kører stadig kun 1 gang dagligt)
+    - cron: "47 0 * * *"   # én gang i døgnet (ca. 02:47 dansk tid), før Studieradar-kørslen
   push:
     paths: ["triggers/scrape"]
   workflow_dispatch:

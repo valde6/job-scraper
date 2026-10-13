@@ -88,6 +88,8 @@ for i, line in enumerate(lines, 1):
             lines.append(f"JSON {len(r['json'])}")
             for u, body in r["json"][:25]:
                 lines.append(f"J {u[:300]}\n   {clean(body)[:700]}")
+            for m, u, body in r.get("requests", [])[:30]:
+                lines.append(f"R {m} {u[:300]}" + (f"\n   BODY {body[:1500]}" if body else ""))
             lines.append("TEXT " + clean(r["text"])[:5000])
             f.write_text(redact(f"{line}\n" + "\n".join(lines)))
             summary.append(f"{i:02d} BROWSER links={len(r['links'])} json={len(r['json'])} | {r['title'][:60]} | {line}")

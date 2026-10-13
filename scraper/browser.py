@@ -63,8 +63,15 @@ def render(url: str, wait_ms: int = 2500, scroll: int = 4, more_clicks: int = 3,
     """Åbner siden og returnerer {url, title, html, text, links:[(tekst, href)], json:[(url, body)]}."""
     ctx = _ensure()
     page = ctx.new_page()
-    captured = []
+    captured, requests_seen = [], []
     if capture_json:
+        def on_req(req):
+            try:
+                if req.resource_type in ("xhr", "fetch"):
+                    requests_seen.append((req.method, req.url[:400], (req.post_data or "")[:3000]))
+            except Exception:
+                pass
+        page.on("request", on_req)
         def on_resp(r):
             try:
                 ct = r.headers.get("content-type", "")
@@ -96,7 +103,8 @@ def render(url: str, wait_ms: int = 2500, scroll: int = 4, more_clicks: int = 3,
         links = page.eval_on_selector_all(
             "a[href]", "els => els.map(e => [(e.innerText || e.getAttribute('aria-label') || '').trim(), e.href])")
         out = {"url": page.url, "title": page.title(), "html": page.content(),
-               "text": page.inner_text("body")[:200000], "links": links, "json": captured}
+               "text": page.inner_text("body")[:200000], "links": links, "json": captured,
+               "requests": requests_seen}
         return out
     finally:
         page.close()
