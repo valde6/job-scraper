@@ -160,3 +160,11 @@ def test_parttime_without_topic_in_title_is_dropped(rx):
     analyst = dict(base, title="Analyst (part-time) - Corporate Finance", description_md="15 timer om ugen")
     assert P.build_record(lab, emp(), rx, "x") is None
     assert P.build_record(analyst, emp(), rx, "x")["job_type"] == "studiejob"
+
+
+def test_company_domain_from_career_page_and_override():
+    from scraper.platform_run import company_domain
+    assert company_domain({"career_url": "https://careers.bcg.com/x"}) == "bcg.com"
+    assert company_domain({"career_url": "https://www.pfa.dk/om-pfa/job/"}) == "pfa.dk"
+    assert company_domain({"career_url": "https://candidate.hr-manager.net/x"}) is None
+    assert company_domain({"career_url": "https://x.wd3.myworkdayjobs.com/", "domain": "svitzer.com"}) == "svitzer.com"

@@ -22,6 +22,7 @@ import time
 import traceback
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 import yaml
 
@@ -86,6 +87,24 @@ def match_keywords(rx: dict[str, re.Pattern], title: str, text: str, company: st
         found = list(r.finditer(body))
         return len(found) >= 2 or (bool(found) and found[0].start() < cut)
     return [k for k, r in rx.items() if hit(r)]
+
+
+
+# Hosts, der tilhører et rekrutteringssystem og ikke arbejdsgiveren (giver forkert logo).
+ATS_HOSTS = ("hr-manager.net", "oraclecloud.com", "myworkdayjobs.com", "csod.com", "emply.com", "elvium.com",
+             "successfactors.com", "successfactors.eu", "teamtailor.com", "smartrecruiters.com", "yello.co",
+             "eightfold.ai", "phenompeople.com", "amazon.jobs", "jobindex.dk")
+
+
+def company_domain(employer: dict) -> str | None:
+    """Arbejdsgiverens eget domæne (til logo i appen): `domain` i yaml, ellers udledt af karrieresiden."""
+    if employer.get("domain"):
+        return employer["domain"]
+    host = urlparse(employer.get("career_url") or "").netloc.lower().split(":")[0]
+    if not host or any(host == h or host.endswith("." + h) for h in ATS_HOSTS):
+        return None
+    labels = host.split(".")
+    return ".".join(labels[-2:]) if len(labels) >= 2 else None
 
 
 def build_record(job: dict, employer: dict, rx: dict, now: str) -> dict | None:
@@ -247,6 +266,9 @@ def main(argv=None):
     jobs = merge_state(found, state["jobs"], ok_sources, now, today)
     for j in jobs.values():                       # ældre tilstand uden url-felt (før 13/10)
         j.setdefault("url", j.get("apply_url") or j.get("career_url"))
+    domains = {e["name"]: company_domain(e) for e in employers}
+    for j in jobs.values():                       # logo-domæne (13/10) – også for ældre job i tilstanden
+        j["company_domain"] = domains.get(j["company"]) or j.get("company_domain")
     ordered = sorted(jobs.values(), key=lambda j: (j["active"], j["first_seen"]), reverse=True)
     from .enrich import enrich_jobs
     print("AI-strukturering:", enrich_jobs(ordered))
@@ -271,6 +293,7 @@ def main(argv=None):
     (OUT / "study_lines.json").write_text(json.dumps({"study_lines": load_study_lines()}, ensure_ascii=False, indent=1))
     (OUT / "employers.json").write_text(json.dumps({"employers": [
         {"name": e["name"], "lines": [], "status": e.get("status"), "career_url": e.get("career_url"),
+         "domain": company_domain(e),
          "source_type": (e.get("source") or {}).get("type", "none"),
          **{k: merged_sources.get(e["name"], {}).get(k) for k in ("ok", "listed", "matched")}} for e in employers]},
         ensure_ascii=False, indent=1))

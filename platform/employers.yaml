@@ -169,6 +169,7 @@ employers:
   aliases:
   - Implement Consulting Group
 - name: Saxo Bank
+  domain: home.saxo
   career_url: https://www.home.saxo/about-us/careers
   status: klar
   source:
@@ -350,6 +351,7 @@ employers:
   - SAS Scandinavian Airlines
   - Scandinavian Airlines
 - name: Amazon
+  domain: amazon.com
   career_url: https://www.amazon.jobs/en/locations/copenhagen-area-denmark
   status: klar
   source:
@@ -588,6 +590,7 @@ employers:
     customer: statensrekrutteringsloesning_tr
   note: Dækker mange ministerier/styrelser. Studiejob manglede i feedet 8/10 – se backlog 4
 - name: Københavns Kommune
+  domain: kk.dk
   career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=kk
   status: mangler-adapter
   source:
@@ -650,6 +653,7 @@ employers:
     type: none
   note: Set på Jobindex
 - name: Danmarks Skibskredit
+  domain: skibskredit.dk
   career_url: https://app.elvium.com/da
   status: mangler-adapter
   source:
@@ -705,6 +709,7 @@ employers:
     type: none
   note: Set på Jobindex
 - name: Visma DataLøn
+  domain: visma.dk
   career_url: https://karriere.datalonprolon.dk/
   status: mangler-adapter
   source:
@@ -718,6 +723,7 @@ employers:
     url: https://karriere.danskespil.dk
   note: Teamtailor (eget domæne)
 - name: DTU
+  domain: dtu.dk
   career_url: https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1
   status: klar
   source:
@@ -726,6 +732,7 @@ employers:
     site: CX_1
   note: Oracle
 - name: IT-Universitetet
+  domain: itu.dk
   career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=itu
   status: find-system
   source:
@@ -772,6 +779,7 @@ employers:
     type: none
   note: HR-Manager (alias afkortet i discovery)
 - name: Svitzer
+  domain: svitzer.com
   career_url: https://svitzer.wd3.myworkdayjobs.com/Svitzer_Careers
   status: klar
   source:
@@ -779,6 +787,7 @@ employers:
     url: https://svitzer.wd3.myworkdayjobs.com/Svitzer_Careers
   note: Workday
 - name: Nordisk Film / Egmont
+  domain: egmont.com
   career_url: https://egmont.csod.com/ux/ats/careersite/4/home
   status: mangler-adapter
   source:
@@ -797,6 +806,7 @@ employers:
     url: https://aka.career.emply.com
   note: Emply (13/10)
 - name: Ældre Sagen
+  domain: aeldresagen.dk
   career_url: https://aeldresagen.career.emply.com/
   status: klar
   source:
