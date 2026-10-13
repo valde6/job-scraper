@@ -4,7 +4,7 @@ Hver adapter tager en virksomheds-config (dict fra companies.yaml) og returnerer
 (antal_opslag_set, [Job, ...]) hvor listen kun indeholder danske studenterjob.
 """
 from . import workday, successfactors, smartrecruiters, greenhouse, lever, teamtailor, \
-    hrmanager, amazon, eightfold, oracle, generic, jobindex, phenom, browser, nordea
+    hrmanager, amazon, eightfold, oracle, generic, jobindex, phenom, browser, nordea, yello
 
 ADAPTERS = {
     "workday": workday.scrape,
@@ -22,4 +22,5 @@ ADAPTERS = {
     "phenom": phenom.scrape,
     "browser": browser.scrape,
     "nordea": nordea.scrape,
+    "yello": yello.scrape,
 }
