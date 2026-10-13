@@ -1,3 +1,1 @@
-01 GREP 43 | GREP https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=en (?i)href="[^"]*(?:jobs|job_board|search)[^"]*"|<a[^>]*search-results[^>]*>[^<]*|Denmark[^<]{0,80}|data-[a-z-]*url="[^"]*"|/api/[^"' ]{0,80}
-02 GREP 4 | GREP https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q/search?query=Denmark (?i)href="/jobs/[^"]*"[^>]*>[^<]{0,150}|<h[1-4][^>]*>[^<]{3,150}|Denmark[^<]{0,80}|Copenhagen[^<]{0,80}
-03 BROWSER links=0 json=0 |  | BROWSER https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q/search?query=Denmark
+01 OK listed=10 matched=3 | SCRAPE EY
