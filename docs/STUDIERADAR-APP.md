@@ -214,3 +214,88 @@ tool_choice forcing that tool), return the parsed tool arguments, throw a clear 
 and never be imported from client code. Add a short comment block at the top explaining how to use it.
 Keep everything else unchanged. Commit message: "Lovable AI: server-hjælper til struktureret output".
 ```
+
+## Runde 3 (13. oktober): nyt udseende, ny introduktion, AI-match
+
+Status før runden (kontrolleret i koden 13/10): opgave 9-12 er lavet. Det, der **ikke** passer med ønskerne:
+introduktionen har 6 trin, og CV ligger som trin 5 (skal være trin 2); `/profil` starter med de fire studieretninger som store
+kort (ser ud som noget, man skifter hele tiden); `/arbejdsgivere` viser og filtrerer på studieretnings-mærker (skal væk);
+headeren viser ikke, hvilken retning man er logget ind med; der er ingen logoer.
+
+Databasen er klar (migreret 13/10): `jobs.company_domain text` og tabellen `job_matches` (se opgave 19).
+Opdatér `src/integrations/supabase/types.ts` i hånden, så den kender dem.
+
+### Designretning: rolig og præcis
+Ingen "AI-look": ingen gradienter, ingen farvede bobler, ingen skygger på kort, ingen emoji, ingen farvet venstrekant.
+- **Skrift:** systemfonten (`-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif`). Fjern ekstra webfonte.
+  Overskrifter 600-700 med `letter-spacing: -0.02em`; brødtekst 15 px på mobil, 14 px i lister.
+- **Farver (tokens i den globale CSS, find den med `grep -rn "\.chip" src`):** tekst `#15181D`, sekundær tekst `#4A525D`,
+  dæmpet `#5A626D`, skillelinjer `#E6E8EC`, flade `#F0F2F5`, accent (links, primærknap) `#0B57C4`, haster (frist ≤ 7 dage) `#B42318`.
+  Hvid baggrund. Én accentfarve – intet andet farvet.
+- **Bevægelse:** knapper `transform: scale(0.97)` ved `:active`; overgange under 200 ms med `cubic-bezier(0.2, 0.8, 0.2, 1)`;
+  respektér `prefers-reduced-motion`. Headeren er gennemsigtig hvid med `backdrop-filter: blur(20px)` og en 1 px skillelinje.
+- **Tæthed som Indeed/LinkedIn:** rækker med tynde skillelinjer i stedet for kort. Klikflader mindst 44 px på mobil.
+
+- [ ] **Opgave 13 – Logoer.**
+  a) `src/lib/sync.server.ts`: tag feltet `company_domain` (tekst eller null) med fra feedet til `jobs.company_domain`.
+  b) Server-route `src/routes/api/public/logo.$domain.ts`: tjek at `domain` matcher `^[a-z0-9.-]+\.[a-z]{2,}$`, hent
+     `https://www.google.com/s2/favicons?domain={domain}&sz=64`, svar med billedet og `Cache-Control: public, max-age=604800`; 404 ved fejl.
+     (Så brugerens browser ikke selv kalder Google.)
+  c) Komponent `CompanyLogo` (36 px, afrundet 8 px, flade `#F0F2F5`, 1 px kant `#E3E6EA`): viser logoet via routen; mangler domæne,
+     eller fejler billedet (`onError`), vises initialerne (1-3 store bogstaver af firmanavnet). Brug den i joblisten, på jobsiden og på `/arbejdsgivere`.
+- [ ] **Opgave 14 – Ny jobvisning: liste og detalje side om side.**
+  a) Design-tokens og header som beskrevet ovenfor. Header: logo + "Studieradar", menu **Job · Gemte · Arbejdsgivere**, til højre
+     "Tilpasset **HA (it.)**" (brugerens studieretning, ingen knap) og profil-link. Ikke logget ind: "Log ind" og "Opret profil".
+  b) `/` på skærme ≥ 1024 px: venstre kolonne (ca. 420 px) med listen, højre kolonne med det valgte job (samme indhold som `/job/$id`,
+     genbrug komponenten). Første job er valgt fra start. Valgt række markeres med flade `#F0F2F5`. URL'en opdateres med `?job=<id>`,
+     så et link kan deles. Under 1024 px: kun listen; et klik åbner `/job/$id`.
+  c) Over listen: faner **Til dig (21)** / **Alle job (97)**, søgefelt, typer som skifteknapper (Studiejob, Praktik, Graduate),
+     område-valg, "Frist inden for 7 dage" og sortering (Bedste match · Nyeste · Frist).
+  d) Listerække: logo · titel (600) · "Firma · sted" · linje med type, frist (rød og fed hvis ≤ 7 dage, ellers grå), "Ny" i accentfarve hvis
+     fundet inden for 2 døgn · "Matcher Python · SQL" i accentfarve (højst 3 ord). Ingen badges med baggrundsfarve.
+  e) Detaljen: firma (lille, grå) · titel (22-26 px) · faktaliste i to kolonner (Frist, Sted, Timer, Opslået/Fundet) · knapperne
+     **"Søg hos {firma}"** (primær) og **Gem** · kontaktboks hvis der er kontakter · resumé · sektionerne fra opgave 11.
+- [ ] **Opgave 15 – Introduktion i 5 trin med CV som trin 2.** `src/lib/onboarding.ts` (`STEPS = 5`) og `src/components/Onboarding.tsx`:
+  1 **Hvad læser du?** (studieretning) · 2 **Upload dit CV** (valgfrit: "Spring over"; efter upload vises "Vi fandt disse kompetencer" og
+  profilteksten) · 3 **Hvad interesserer dig?** (nøgleord: forudfyldt med CV-forslagene først, derefter retningens forslag, i alt højst 15) ·
+  4 **Hvad vil du slippe for?** · 5 **Hvilke job, hvor og hvor tit på mail?** (jobtyper, område og mailfrekvens på samme side).
+  Fremskridt som "Trin 2 af 5" og en tynd streg (ingen farvet bjælke med runde ender). Opdatér tests.
+- [ ] **Opgave 16 – Profilside med studieretningen stort.** `/profil`:
+  øverst lille grå "Din profil", derunder retningen som stor overskrift (40 px, fx **HA (it.)** og "· CBS" i grå) og til højre et lille link
+  **"Skift studieretning"**, der åbner en dialog med de tre retninger (skift nulstiller ikke nøgleordene). Under overskriften:
+  "{e-mail} · {n} job matcher dig lige nu". Sektioner adskilt af tynde linjer: **Dit CV** (filnavn/dato, Erstat, Slet, redigerbar "Om dig"),
+  **Nøgleord** ("11 af 15", chips med ×, "+ Tilføj", "Fra dit CV:" med forslag som links), **Fravalg**, **Job og område** (typer, område, mail).
+  Én knap "Gem ændringer" nederst. Retningskortene fra introduktionen bruges ikke på profilsiden.
+- [ ] **Opgave 17 – Arbejdsgivere uden studieretnings-mærker.** `/arbejdsgivere`: fjern filterchips og mærker for studieretninger
+  (feltet `lines` er tomt fra nu af). Logget ind: sortér efter antal aktive job, der matcher brugeren (samme regel som "Til dig"),
+  derefter antal aktive job; vis "3 job til dig · 7 i alt". Ikke logget ind: sortér efter antal aktive job. Række: logo, navn, tallene,
+  link "Se job" (filtrerer `/` på firmaet) og "Karriereside". Fjern også brug af `lines` i `src/lib/match.ts`, hvis den findes.
+- [ ] **Opgave 18 – AI-nøgleord til bedre match.** I dag tagges job med ord fundet i hele teksten, hvilket giver støj.
+  a) `src/lib/job-details.ts` + `enrich.server.ts`: skemaet får `keywords` (op til 8 id'er fra tabellen `keywords`; send listen id + label + en
+     med i prompten) og `location` som "By" eller "By, område" uden adresse. Instruks: "Vælg kun nøgleord, der beskriver selve arbejdet,
+     ikke virksomhedens øvrige forretning." Filtrér svaret, så kun kendte id'er gemmes.
+  b) Sæt `details_model` til `"<model>#v2"`, og læs alle job igen, hvis `details_model` ikke ender på `#v2` (25 pr. kørsel er fint).
+  c) `src/lib/match.ts`: brug `details.keywords`, når de findes, ellers `jobs.keywords`. Titlen tæller stadig. Opdatér tests.
+- [ ] **Opgave 19 – AI-match med begrundelse.** (Efter 18.) Tabellen `job_matches` findes:
+  `user_id, job_id, score (0-100), reason, gaps, profile_hash, job_hash, model, created_at`; brugeren kan læse og slette sine egne rækker,
+  kun serveren skriver (service role).
+  a) Server-funktion `getAiMatches()` (kræver login): tag brugerens "Til dig"-job (højst 30, bedste regel-match først). `profile_hash` =
+     sha1 af retning + nøgleord + egne ord + fravalg + `about`. Mangler en række, eller er `profile_hash`/`job_hash` (= `details_hash`)
+     ændret, så kald `callAiJson` med profilen (retning, nøgleord, `about`) og op til 10 job pr. kald (titel, firma, `summary`, `tasks`,
+     `requirements`). Skema pr. job: `job_id`, `score`, `reason` (højst 160 tegn, dansk, til "du": hvorfor det passer), `gaps` (højst 120 tegn,
+     hvad der mangler, eller tom). Instruks: vær ærlig, giv lav score hvis kravene ikke passer, nævn konkrete ord fra opslaget, ingen ros.
+     Upsert med service role. Højst 60 nye vurderinger pr. bruger pr. døgn (tæl `created_at`).
+  b) UI: i detaljen en boks "**Hvorfor det passer dig**" med `reason` og evt. "Mangler måske: {gaps}" (grå). I listen vises score ikke som tal,
+     men sortering "Bedste match" bruger `score` (fald tilbage til regel-match). Vis "Vurderes …" mens den regner, og intet ved fejl.
+  c) "Slet mit CV" og ændringer i profilen gør gamle vurderinger forældede automatisk (hash). Nævn i privatlivsteksten, at profilen
+     sendes til AI-modellen for at vurdere job.
+
+### Prompt til Claude Code (én opgave ad gangen)
+Kør i **app-repoet** `findmy-denmark-jobs` (mappen med `src/routes/`), ikke i job-scraper:
+```
+Du arbejder i repoet findmy-denmark-jobs (Studieradar-appen). Kør først:
+curl -sL https://raw.githubusercontent.com/valde6/job-scraper/main/docs/STUDIERADAR-APP.md -o docs/STUDIERADAR-SPEC.md
+Læs docs/STUDIERADAR-SPEC.md: "Arbejdsregler for kode-agenten", "Runde 3" og "Designretning".
+Lav KUN Opgave <NR>. Vis en kort plan først. Kør bun run test og bun run build – begge skal lykkes.
+Commit lokalt med en dansk commit-besked. Push IKKE. Afslut med: hvad er ændret, hvordan jeg tester det i browseren, og hvad der ikke er testet.
+```
