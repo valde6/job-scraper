@@ -1,0 +1,2 @@
+GREP https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark (?i)<a[^>]*jobTitle-link[^>]*>[^<]*</a>|<span class="jobLocation">[^<]*|of <b>[0-9]+</b>
+STATUS 200

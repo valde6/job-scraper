@@ -1,1 +1,5 @@
-01 PYMOD ok | PYMOD scraper.experiments.state_check
+01 GREP 0 | GREP https://careers.ey.com/search/?q=student&locationsearch=Denmark (?i)<a[^>]*jobTitle-link[^>]*>[^<]*</a>|<span class="jobLocation">[^<]*|results [0-9]+ – [0-9]+ of [0-9]+|of <b>[0-9]+</b>
+02 GREP 0 | GREP https://careers.ey.com/search/?q=&locationsearch=Copenhagen (?i)<a[^>]*jobTitle-link[^>]*>[^<]*</a>|<span class="jobLocation">[^<]*|of <b>[0-9]+</b>
+03 GREP 0 | GREP https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark (?i)<a[^>]*jobTitle-link[^>]*>[^<]*</a>|<span class="jobLocation">[^<]*|of <b>[0-9]+</b>
+04 GREP 8 | GREP https://www.ey.com/da_dk/careers (?i)https?://[a-z0-9.-]*(?:successfactors|careers\.ey\.com|eyglobal|myworkday|avature|phenom|jobs\.ey)[^"' <>]{0,120}
+05 GREP 0 | GREP https://careers.ey.com/ey/search/?q=studentermedarbejder&locationsearch= (?i)<a[^>]*jobTitle-link[^>]*>[^<]*</a>|<span class="jobLocation">[^<]*|of <b>[0-9]+</b>
