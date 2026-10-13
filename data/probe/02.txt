@@ -1,16 +1,6 @@
-POST https://careers.ey.com/services/recruiting/v1/jobs {"locale":"da_DK","pageNumber":0,"sortBy":"","keywords":"","location":"Copenhagen","facetFilters":{},"brand":"","skills":[],"categoryId":0,"alertId":"","rcmCandidateId":""}
-ERROR HTTPError: 401 Client Error: 401 for url: https://careers.ey.com/services/recruiting/v1/jobs
-Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/probe.py", line 127, in <module>
-    r = http(parts[0], parts[1], **kw)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 88, in http
-    raise last  # type: ignore[misc]
-    ^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 80, in http
-    r.raise_for_status()
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 401 Client Error: 401 for url: https://careers.ey.com/services/recruiting/v1/jobs
-
-{"error":{"code":"Error","message":"Error retrieving jobs"},"totalJobs":0}
+GREP https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q/search?query=Denmark (?i)href="/jobs/[^"]*"[^>]*>[^<]{0,150}|<h[1-4][^>]*>[^<]{3,150}|Denmark[^<]{0,80}|Copenhagen[^<]{0,80}
+STATUS 200
+Copenhagen \u0026amp; Aarhus\u003c/a\u003e\u003cdiv\u003e\u003cspan\u003e1748840\u003c/spa
+Copenhagen and Aarhus)\u003c/a\u003e\u003cdiv\u003e\u003cspan\u003e1740119\u003c/span\u003
+Copenhagen)\u003c/a\u003e\u003cdiv\u003e\u003cspan\u003e1748910\u003c/span\u003e\u003c/div
+Denmark","filters":"[]","text_filters":"[]","display_count_text":"9 Results"}

@@ -1,16 +1,45 @@
-POST https://careers.ey.com/services/recruiting/v1/jobs {"locale":"en_US","pageNumber":0,"sortBy":"","keywords":"student","location":"Denmark","facetFilters":{},"brand":"","skills":[],"categoryId":0,"alertId":"","rcmCandidateId":""}
-ERROR HTTPError: 401 Client Error: 401 for url: https://careers.ey.com/services/recruiting/v1/jobs
-Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/probe.py", line 127, in <module>
-    r = http(parts[0], parts[1], **kw)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 88, in http
-    raise last  # type: ignore[misc]
-    ^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 80, in http
-    r.raise_for_status()
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 401 Client Error: 401 for url: https://careers.ey.com/services/recruiting/v1/jobs
-
-{"error":{"code":"Error","message":"Error retrieving jobs"},"totalJobs":0}
+GREP https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=en (?i)href="[^"]*(?:jobs|job_board|search)[^"]*"|<a[^>]*search-results[^>]*>[^<]*|Denmark[^<]{0,80}|data-[a-z-]*url="[^"]*"|/api/[^"' ]{0,80}
+STATUS 200
+<a class="search-results__req_title" lang="en" href="/jobs/9njgin78Se2lWvrFs7-HLw?job_board_id=c1riT--B2O-KySgYWsZO1Q">Junior Technology Consultant - Microsoft / Digital Transformation - Industries
+<a class="search-results__req_title" lang="en" href="/jobs/AFS-oYr4Fuk3nGbu6xQ8nA?job_board_id=c1riT--B2O-KySgYWsZO1Q">Campus Recruiter
+<a class="search-results__req_title" lang="en" href="/jobs/CI9Z-sbqyZiaQVMCQSaPXA?job_board_id=c1riT--B2O-KySgYWsZO1Q">Consultant(e) Stagiaire en Restructuring - Paris - F/H
+<a class="search-results__req_title" lang="en" href="/jobs/FM-xNoYWQpxkIUOSN3MVMA?job_board_id=c1riT--B2O-KySgYWsZO1Q">Junior Enterprise Risk Consultant - Industries
+<a class="search-results__req_title" lang="en" href="/jobs/F_-6_VLxVXOg5C8KLkJOtA?job_board_id=c1riT--B2O-KySgYWsZO1Q">Audit Támogató Asszisztens -	Pécs
+<a class="search-results__req_title" lang="en" href="/jobs/Iqpc9xLtM_kbH7VXmRxfHw?job_board_id=c1riT--B2O-KySgYWsZO1Q">Talent AI &amp; Technology | Curricular Internship
+<a class="search-results__req_title" lang="en" href="/jobs/N3cN_ei1idgFKC3noAZ5lA?job_board_id=c1riT--B2O-KySgYWsZO1Q">Juniora revisionskonsulter | Assurance | Malmö
+<a class="search-results__req_title" lang="en" href="/jobs/Pd0ArmhEl_UJ3yjUStI0Ww?job_board_id=c1riT--B2O-KySgYWsZO1Q">Assurance Internship Program - Uganda 1
+<a class="search-results__req_title" lang="en" href="/jobs/PkhJ-qze47-koJ0JtF9i3w?job_board_id=c1riT--B2O-KySgYWsZO1Q">Junior Consultant- ESG Advisory, Climate Change &amp; Sustainability Services
+<a class="search-results__req_title" lang="en" href="/jobs/Q8T_hlNz12kfFkMp84JzZw?job_board_id=c1riT--B2O-KySgYWsZO1Q">FAAS_Junior Consultant Digital Transformation - Verona
+<a class="search-results__req_title" lang="en" href="/jobs/RL1EmcSFOW-31J_Z_ro0xQ?job_board_id=c1riT--B2O-KySgYWsZO1Q">Consultant débutant en implémentation d&#39;entreprises à l&#39;étranger - Paris F/H
+<a class="search-results__req_title" lang="en" href="/jobs/SMEaOmQJxodsR6VQZgkBTg?job_board_id=c1riT--B2O-KySgYWsZO1Q">EY Graduate Programme - Assurance (Audit Services)
+<a class="search-results__req_title" lang="en" href="/jobs/SVarX8MYF7kI6pFta-hkZg?job_board_id=c1riT--B2O-KySgYWsZO1Q">Junior HR Transformation &amp; Technology Consultant - Industries
+<a class="search-results__req_title" lang="en" href="/jobs/U09G-LTkEwQ8MY-pejxk0A?job_board_id=c1riT--B2O-KySgYWsZO1Q">Internship Technology Risk - 2027
+<a class="search-results__req_title" lang="en" href="/jobs/XotYAd-uS0C1O6Pw3v5Thg?job_board_id=c1riT--B2O-KySgYWsZO1Q">USA - Tax - Indirect Tax - Value Added Tax (VAT) - Miami - Analyst
+<a class="search-results__req_title" lang="en" href="/jobs/dc8DbtBuWjtRZ__lqlNwDw?job_board_id=c1riT--B2O-KySgYWsZO1Q">Junior Digital Government Consultant - Industries
+<a class="search-results__req_title" lang="en" href="/jobs/hlNG7ELjLKlwpBP6YITMxw?job_board_id=c1riT--B2O-KySgYWsZO1Q">Consultant(e) Stagiaire Private Equity &amp; Deal Origination - F/H
+<a class="search-results__req_title" lang="en" href="/jobs/jBhzN3GbGmjPCRf1aQIYwA?job_board_id=c1riT--B2O-KySgYWsZO1Q">New Graduates - Janeiro 2027 | Assurance (Lisboa &amp; Porto)
+<a class="search-results__req_title" lang="en" href="/jobs/lqORVUGisHr5Xz9LfnJoEw?job_board_id=c1riT--B2O-KySgYWsZO1Q">Consultant(e) Débutant(e) en Évaluation Financière - Lyon - F/H
+<a class="search-results__req_title" lang="en" href="/jobs/oRmvYnbhKdF5b7dFiTxgSw?job_board_id=c1riT--B2O-KySgYWsZO1Q">Junior Applied AI Engineer Consultant - Industries
+<a class="search-results__req_title" lang="en" href="/jobs/pPacuJ-4w1zy2NGsIULDgg?job_board_id=c1riT--B2O-KySgYWsZO1Q">Junior Digital Risk Consultant - Industries
+<a class="search-results__req_title" lang="en" href="/jobs/qLYq44UDKwMxm4W8IAnqqg?job_board_id=c1riT--B2O-KySgYWsZO1Q">FY27_FAAS_Junior Consultant Digital Transformation - Treviso
+<a class="search-results__req_title" lang="en" href="/jobs/vAPuQf_xtcf47jmKXiMgiw?job_board_id=c1riT--B2O-KySgYWsZO1Q">FY27 Tax, Associate
+<a class="search-results__req_title" lang="en" href="/jobs/yPKJgzuTjxEQsEfX5MQwuw?job_board_id=c1riT--B2O-KySgYWsZO1Q">Junior Technology Consultant - Digital Finance and Transformation - Industries
+<a class="search-results__req_title" lang="en" href="/jobs/z9-HRMqgPKUFBcmP2K4A1Q?job_board_id=c1riT--B2O-KySgYWsZO1Q">Junior Talent Consultant - Industries
+Denmark&quot;},{&quot;id&quot;:29985,&quot;label&quot;:&quot;Dominican Republic&quot;},
+data-filter-search-url="https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q/filter_fields/search/245"
+data-filter-search-url="https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q/filter_fields/search/835"
+data-filter-search-url="https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q/filter_fields/search/970"
+data-filter-search-url="https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q/filter_fields/search/971"
+data-search-url="https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q/search"
+href="/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=de"
+href="/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=en"
+href="/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=es"
+href="/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=fr"
+href="/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=it"
+href="/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=ja"
+href="/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=ko"
+href="/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=pl"
+href="/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=pt"
+href="/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=zh_CN"
+href="/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=zh_TW"
+href="https://assets.eu.recsolu.com/assets/pages/job_boards-7a16809cf2a98e6b3433c4f01731ee6480d8acab706a9701086bb3d486d93ad0.css"

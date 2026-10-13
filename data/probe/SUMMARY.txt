@@ -1,3 +1,3 @@
-01 ERR HTTPError: 401 Client Error: 401 for url: https://careers.ey.com/services/recruiting/v1/jobs | POST https://careers.ey.com/services/recruiting/v1/jobs {"locale":"en_US","pageNumber":0,"sortBy":"","keywords":"student","location":"Denmark","facetFilters":{},"brand":"","skills":[],"categoryId":0,"alertId":"","rcmCandidateId":""}
-02 ERR HTTPError: 401 Client Error: 401 for url: https://careers.ey.com/services/recruiting/v1/jobs | POST https://careers.ey.com/services/recruiting/v1/jobs {"locale":"da_DK","pageNumber":0,"sortBy":"","keywords":"","location":"Copenhagen","facetFilters":{},"brand":"","skills":[],"categoryId":0,"alertId":"","rcmCandidateId":""}
-03 BROWSER links=99 json=2 | EY Job Search | BROWSER https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark
+01 GREP 43 | GREP https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q?locale=en (?i)href="[^"]*(?:jobs|job_board|search)[^"]*"|<a[^>]*search-results[^>]*>[^<]*|Denmark[^<]{0,80}|data-[a-z-]*url="[^"]*"|/api/[^"' ]{0,80}
+02 GREP 4 | GREP https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q/search?query=Denmark (?i)href="/jobs/[^"]*"[^>]*>[^<]{0,150}|<h[1-4][^>]*>[^<]{3,150}|Denmark[^<]{0,80}|Copenhagen[^<]{0,80}
+03 BROWSER links=0 json=0 |  | BROWSER https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q/search?query=Denmark
