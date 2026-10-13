@@ -3,7 +3,7 @@ name: jobradar-scrape
 # Platform-kørslen til Jobradar-appen. Uafhængig af scrape-jobs (din personlige scraper).
 on:
   schedule:
-    - cron: "47 */3 * * *"
+    - cron: "17 1 * * *"     # én gang i døgnet kl. ca. 03:17 dansk tid; appen henter data kl. 07:00-07:50
   push:
     paths: ["triggers/jobradar"]
   workflow_dispatch:
