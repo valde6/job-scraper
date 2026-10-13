@@ -1,2 +1,16 @@
-GREP https://careers.ey.com/search/?q=student&locationsearch=Denmark (?i)<a[^>]*jobTitle-link[^>]*>[^<]*</a>|<span class="jobLocation">[^<]*|results [0-9]+ – [0-9]+ of [0-9]+|of <b>[0-9]+</b>
-STATUS 200
+POST https://careers.ey.com/services/recruiting/v1/jobs {"locale":"en_US","pageNumber":0,"sortBy":"","keywords":"student","location":"Denmark","facetFilters":{},"brand":"","skills":[],"categoryId":0,"alertId":"","rcmCandidateId":""}
+ERROR HTTPError: 401 Client Error: 401 for url: https://careers.ey.com/services/recruiting/v1/jobs
+Traceback (most recent call last):
+  File "/home/runner/work/job-scraper/job-scraper/scraper/probe.py", line 127, in <module>
+    r = http(parts[0], parts[1], **kw)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 88, in http
+    raise last  # type: ignore[misc]
+    ^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 80, in http
+    r.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: 401 for url: https://careers.ey.com/services/recruiting/v1/jobs
+
+{"error":{"code":"Error","message":"Error retrieving jobs"},"totalJobs":0}

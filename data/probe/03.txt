@@ -1,2 +1,83 @@
-GREP https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark (?i)<a[^>]*jobTitle-link[^>]*>[^<]*</a>|<span class="jobLocation">[^<]*|of <b>[0-9]+</b>
-STATUS 200
+BROWSER https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark
+FINAL https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark
+TITLE EY Job Search
+LINKS 99
+L Menu -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark#
+L Careers at EY -> https://www.ey.com/en_gl/careers
+L What you can do here -> https://www.ey.com/en_gl/careers/what-you-can-do-here
+L What it's like to work here -> https://www.ey.com/en_gl/careers/what-its-like-to-work-here
+L How to join us -> https://www.ey.com/en_gl/careers/how-to-join-us
+L Job search -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark#
+L Experienced professionals -> https://careers.ey.com/ey/search/?createNewAlert=false&q=&locationsearch=&optionsFacetsDD_country=&optionsFacetsDD_customfield1=&locale=en_US
+L Early careers -> https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q
+L Language -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark#
+L Deutsch (Deutschland) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=de_DE
+L English (United Kingdom) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=en_GB
+L English (United States) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=en_US
+L Español (México) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=es_MX
+L Français (Canada) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=fr_CA
+L Français (France) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=fr_FR
+L עִבְרִית (יִשְׂרָאֵל) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=he_IL
+L 日本語 (日本) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=ja_JP
+L 한국어 (대한민국) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=ko_KR
+L Português (Brasil) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=pt_BR
+L 简体中文 -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=zh_CN
+L 繁體中文 -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=zh_TW
+L Sign in -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark#
+L Talent Community -> https://careers.ey.com/ey/lp/TC/f7abb34d58e4b33e/?locale=en_US
+L Menu -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark#
+L Careers at EY -> https://www.ey.com/en_gl/careers
+L What you can do here -> https://www.ey.com/en_gl/careers/what-you-can-do-here
+L What it's like to work here -> https://www.ey.com/en_gl/careers/what-its-like-to-work-here
+L How to join us -> https://www.ey.com/en_gl/careers/how-to-join-us
+L Job search -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark#
+L Experienced professionals -> https://careers.ey.com/ey/search/?createNewAlert=false&q=&locationsearch=&optionsFacetsDD_country=&optionsFacetsDD_customfield1=&locale=en_US
+L Early careers -> https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q
+L Language -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark#
+L Deutsch (Deutschland) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=de_DE
+L English (United Kingdom) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=en_GB
+L English (United States) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=en_US
+L Español (México) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=es_MX
+L Français (Canada) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=fr_CA
+L Français (France) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=fr_FR
+L עִבְרִית (יִשְׂרָאֵל) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=he_IL
+L 日本語 (日本) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=ja_JP
+L 한국어 (대한민국) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=ko_KR
+L Português (Brasil) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=pt_BR
+L 简体中文 -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=zh_CN
+L 繁體中文 -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=zh_TW
+L Sign in -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark#
+L Talent Community -> https://careers.ey.com/ey/lp/TC/f7abb34d58e4b33e/?locale=en_US
+L Language -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark#
+L Deutsch (Deutschland) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=de_DE
+L English (United Kingdom) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=en_GB
+L English (United States) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=en_US
+L Español (México) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=es_MX
+L Français (Canada) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=fr_CA
+L Français (France) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=fr_FR
+L עִבְרִית (יִשְׂרָאֵל) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=he_IL
+L 日本語 (日本) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=ja_JP
+L 한국어 (대한민국) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=ko_KR
+L Português (Brasil) -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=pt_BR
+L 简体中文 -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=zh_CN
+L 繁體中文 -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark&locale=zh_TW
+L Sign in -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark#
+L Talent Community -> https://careers.ey.com/ey/lp/TC/f7abb34d58e4b33e/?locale=en_US
+L Careers at EY -> https://www.ey.com/en_gl/careers
+L What you can do here -> https://www.ey.com/en_gl/careers/what-you-can-do-here
+L What it's like to work here -> https://www.ey.com/en_gl/careers/what-its-like-to-work-here
+L How to join us -> https://www.ey.com/en_gl/careers/how-to-join-us
+L Job search -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark#
+L Experienced professionals -> https://careers.ey.com/ey/search/?createNewAlert=false&q=&locationsearch=&optionsFacetsDD_country=&optionsFacetsDD_customfield1=&locale=en_US
+L Early careers -> https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q
+L Home -> https://careers.ey.com/ey/
+L Clear -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark
+L Labor condition applications -> https://www.ey.com/en_us/careers/labor-condition-applications
+L Cookie Consent Manager -> https://careers.ey.com/ey/search/?q=student&locationsearch=Denmark#cookieManagerModal
+L Opens in a new tab. -> https://www.facebook.com/EYCareers
+JSON 2
+J https://careers.ey.com/services/t/l?referrer=&ctid=be0a6415-c7e9-4e53-b10c-79118f5a46e7&landing=https%3A%2F%2Fcareers.ey.com%2Fey%2Fsearch%2F%3Fq%3Dstudent%26locationsearch%3DDenmark&brand=ey&_=1791885635133
+   {SUCCESS:true}
+J https://careers.ey.com/services/jobs/options/facetValues/
+   {"facets":{"map":{"country":[{"translated":"United Arab Emirates","name":"AE","count":22},{"translated":"Argentina","name":"AR","count":141},{"translated":"Australia","name":"AU","count":8},{"translated":"Aruba","name":"AW","count":10},{"translated":"Belgium","name":"BE","count":30},{"translated":"Bulgaria","name":"BG","count":4},{"translated":"Bahrain","name":"BH","count":1},{"translated":"Bermuda","name":"BM","count":18},{"translated":"Bahamas","name":"BS","count":15},{"translated":"Botswana","name":"BW","count":1},{"translated":"Canada","name":"CA","count":275},{"translated":"Switzerland","name":"CH","count":69},{"translated":"Chile","name":"CL","count":38},{"translated":"China","name":"C
+TEXT Cookie information Welcome to the EY careers job search site. This website is based on the SuccessFactors software provided by SAP. On this page, functional and optional cookies are used to improve your experience and design our careers site more user-friendly and in line with your needs. In this context, cookies from providers in third countries may also be used and data may be transmitted to providers such as social media services outside the EU. For this we require your consent. By clicking "Accept All Cookies", you agree to these. This also includes your consent to the transmission of certain personal data to third countries, including the USA, in accordance with Art. 49 (1) (a) GDPR. You can select your settings by clicking “Modify Cookie Preferences” to confirm your choices from the optional cookie tracking and selecting the required cookies required to remain on the site. You can change your selection at any time by clicking the link at the bottom of the page. Modify Cookie Preferences Reject All Cookies Accept All Cookies Language Sign in Talent Community Careers at EY What you can do here What it's like to work here How to join us Job search There are currently no open positions matching "student AND Denmark". The 0 most recent jobs posted are listed below for your convenience. More options Clear Connect with us Our locations My EY Site map Legal and privacy Labor condition applications Cookie Consent Manager Opens in a new tab. Opens in a new tab. Opens in a new tab. Opens in a new tab. Opens in a new tab. EY refers to the global organization, and may refer to one or more, of the member firms of Ernst & Young Global Limited, each of which is a separate legal entity. Ernst & Young Global Limited, a UK company limited by guarantee, does not provide services to clients.
