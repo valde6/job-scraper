@@ -1,1 +1,2 @@
-01 OK listed=10 matched=3 | SCRAPE EY
+01 BROWSER links=30 json=3 | Ledige stillinger I Career Site | BROWSER https://aeldresagen.career.emply.com/ledige-stillinger
+02 BROWSER links=46 json=3 | Jobagent I Bech-Bruun | BROWSER https://bechbruun.career.emply.com/ledige-stillinger
