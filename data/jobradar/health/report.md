@@ -1,4 +1,4 @@
-# Scraper-sundhed 2026-10-12T18:52:38+00:00
+# Scraper-sundhed 2026-10-13T00:59:17+00:00
 
-Aktive job: 80. Kilder med problemer: 0.
+Aktive job: 79. Kilder med problemer: 0.
 

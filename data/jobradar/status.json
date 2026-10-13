@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T18:52:38+00:00",
+ "updated": "2026-10-13T00:59:17+00:00",
  "companies": [
   {
    "company": "Novo Nordisk",
@@ -9,9 +9,9 @@
     "ha-it"
    ],
    "ok": true,
-   "listed": 50,
+   "listed": 48,
    "matched": 1,
-   "seconds": 4.3
+   "seconds": 5.7
   },
   {
    "company": "A.P. Møller - Mærsk",
@@ -21,9 +21,9 @@
     "ha-it"
    ],
    "ok": true,
-   "listed": 630,
+   "listed": 632,
    "matched": 4,
-   "seconds": 29.2
+   "seconds": 33.6
   },
   {
    "company": "McKinsey & Company",
@@ -44,7 +44,7 @@
    "ok": true,
    "listed": 100,
    "matched": 0,
-   "seconds": 17.7
+   "seconds": 21.8
   },
   {
    "company": "Danske Bank",
@@ -55,9 +55,9 @@
     "ha-jura"
    ],
    "ok": true,
-   "listed": 145,
+   "listed": 134,
    "matched": 4,
-   "seconds": 5.4
+   "seconds": 14.1
   },
   {
    "company": "Deloitte",
@@ -70,7 +70,7 @@
    "ok": true,
    "listed": 34,
    "matched": 5,
-   "seconds": 4.7
+   "seconds": 5.3
   },
   {
    "company": "PwC",
@@ -83,7 +83,7 @@
    "ok": true,
    "listed": 14,
    "matched": 8,
-   "seconds": 10.3
+   "seconds": 9.9
   },
   {
    "company": "Carlsberg",
@@ -103,7 +103,7 @@
    "ok": true,
    "listed": 4,
    "matched": 3,
-   "seconds": 1.7
+   "seconds": 1.9
   },
   {
    "company": "Nordea",
@@ -114,9 +114,9 @@
     "ha-jura"
    ],
    "ok": true,
-   "listed": 84,
+   "listed": 81,
    "matched": 0,
-   "seconds": 0.4
+   "seconds": 9.8
   },
   {
    "company": "Microsoft",
@@ -138,7 +138,7 @@
    "ok": true,
    "listed": 7,
    "matched": 0,
-   "seconds": 4.0
+   "seconds": 6.0
   },
   {
    "company": "Jyske Bank",
@@ -159,9 +159,9 @@
     "ha-jura"
    ],
    "ok": true,
-   "listed": 58,
+   "listed": 55,
    "matched": 7,
-   "seconds": 57.6
+   "seconds": 71.5
   },
   {
    "company": "Bestseller",
@@ -198,9 +198,9 @@
     "ha-it"
    ],
    "ok": true,
-   "listed": 49,
+   "listed": 48,
    "matched": 0,
-   "seconds": 5.8
+   "seconds": 7.9
   },
   {
    "company": "Implement",
@@ -222,7 +222,7 @@
    "ok": true,
    "listed": 49,
    "matched": 0,
-   "seconds": 8.5
+   "seconds": 9.9
   },
   {
    "company": "Finansministeriet",
@@ -243,7 +243,7 @@
    "ok": true,
    "listed": 5,
    "matched": 0,
-   "seconds": 9.3
+   "seconds": 10.4
   },
   {
    "company": "Danmarks Nationalbank",
@@ -265,7 +265,7 @@
    "ok": true,
    "listed": 10,
    "matched": 0,
-   "seconds": 138.1
+   "seconds": 134.4
   },
   {
    "company": "Udenrigsministeriet",
@@ -286,7 +286,7 @@
    "ok": true,
    "listed": 0,
    "matched": 0,
-   "seconds": 10.0
+   "seconds": 11.8
   },
   {
    "company": "Dansk Industri",
@@ -298,7 +298,7 @@
    "ok": true,
    "listed": 5,
    "matched": 1,
-   "seconds": 0.5
+   "seconds": 0.6
   },
   {
    "company": "Nordnet",
@@ -318,9 +318,9 @@
     "ha-it"
    ],
    "ok": true,
-   "listed": 48,
+   "listed": 47,
    "matched": 0,
-   "seconds": 7.4
+   "seconds": 8.3
   },
   {
    "company": "KPMG",
@@ -333,7 +333,7 @@
    "ok": true,
    "listed": 18,
    "matched": 2,
-   "seconds": 1.3
+   "seconds": 1.5
   },
   {
    "company": "Matas",
@@ -364,7 +364,7 @@
    "ok": true,
    "listed": 13,
    "matched": 0,
-   "seconds": 0.4
+   "seconds": 0.7
   },
   {
    "company": "Københavns Lufthavne",
@@ -385,7 +385,7 @@
    "ok": true,
    "listed": 3,
    "matched": 0,
-   "seconds": 0.5
+   "seconds": 0.6
   },
   {
    "company": "Netcompany",
@@ -396,7 +396,7 @@
    "ok": true,
    "listed": 32,
    "matched": 5,
-   "seconds": 2.8
+   "seconds": 3.1
   },
   {
    "company": "PFA Pension",
@@ -407,9 +407,9 @@
     "ha-jura"
    ],
    "ok": true,
-   "listed": 7,
+   "listed": 6,
    "matched": 2,
-   "seconds": 20.9
+   "seconds": 22.6
   },
   {
    "company": "SAS",
@@ -430,7 +430,7 @@
    "ok": true,
    "listed": 7,
    "matched": 0,
-   "seconds": 0.6
+   "seconds": 0.7
   },
   {
    "company": "Beierholm",
@@ -471,7 +471,7 @@
    "ok": true,
    "listed": 30,
    "matched": 0,
-   "seconds": 0.6
+   "seconds": 2.3
   },
   {
    "company": "Statsministeriet",
@@ -493,7 +493,7 @@
    "ok": true,
    "listed": 2,
    "matched": 0,
-   "seconds": 12.8
+   "seconds": 14.6
   },
   {
    "company": "Danmarks Radio",
@@ -536,7 +536,7 @@
    "ok": true,
    "listed": 97,
    "matched": 7,
-   "seconds": 6.9
+   "seconds": 8.1
   },
   {
    "company": "Novonesis",
@@ -548,7 +548,7 @@
    "ok": true,
    "listed": 72,
    "matched": 2,
-   "seconds": 9.8
+   "seconds": 11.3
   },
   {
    "company": "Kromann Reumert",
@@ -595,7 +595,7 @@
    "ok": true,
    "listed": 8,
    "matched": 3,
-   "seconds": 0.4
+   "seconds": 0.3
   },
   {
    "company": "Poul Schmith / Kammeradvokaten",
@@ -779,7 +779,7 @@
    "ok": true,
    "listed": 25,
    "matched": 0,
-   "seconds": 0.7
+   "seconds": 0.8
   },
   {
    "company": "Københavns Kommune",
@@ -813,7 +813,7 @@
    "ok": true,
    "listed": 0,
    "matched": 0,
-   "seconds": 4.4
+   "seconds": 6.7
   },
   {
    "company": "Alm. Brand Group",
@@ -930,7 +930,7 @@
    "ok": true,
    "listed": 36,
    "matched": 1,
-   "seconds": 0.5
+   "seconds": 1.0
   },
   {
    "company": "Twoday",
@@ -941,7 +941,7 @@
    "ok": true,
    "listed": 34,
    "matched": 0,
-   "seconds": 0.7
+   "seconds": 1.1
   },
   {
    "company": "Columbus",
@@ -1001,7 +1001,7 @@
    "ok": true,
    "listed": 6,
    "matched": 3,
-   "seconds": 0.2
+   "seconds": 1.2
   },
   {
    "company": "DTU",
@@ -1011,9 +1011,9 @@
     "ha-almen"
    ],
    "ok": true,
-   "listed": 425,
-   "matched": 10,
-   "seconds": 10.6
+   "listed": 397,
+   "matched": 9,
+   "seconds": 13.5
   },
   {
    "company": "IT-Universitetet",
@@ -1065,7 +1065,7 @@
    "ok": true,
    "listed": 0,
    "matched": 0,
-   "seconds": 9.6
+   "seconds": 10.4
   },
   {
    "company": "Movia",
@@ -1095,7 +1095,7 @@
    "ok": true,
    "listed": 43,
    "matched": 2,
-   "seconds": 6.6
+   "seconds": 7.0
   },
   {
    "company": "Nordisk Film / Egmont",
@@ -1164,7 +1164,7 @@
    "ok": true,
    "listed": 10,
    "matched": 0,
-   "seconds": 12.8
+   "seconds": 12.7
   },
   {
    "company": "GN Group",
@@ -1176,7 +1176,7 @@
    "ok": true,
    "listed": 0,
    "matched": 0,
-   "seconds": 6.9
+   "seconds": 7.4
   },
   {
    "company": "Coloplast",
