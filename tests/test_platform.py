@@ -72,7 +72,7 @@ def test_employers_file_is_sane():
     names = [e["name"] for e in emps]
     assert len(names) == len(set(names)) and len(emps) >= 100
     for e in emps:
-        assert set(e["lines"]) <= {"ha-it", "ha-almen", "ha-jura"} and e["lines"]
+        assert "lines" not in e          # 13/10: ingen arbejdsgiver mærkes med én studieretning
         assert (e.get("source") or {}).get("type") != "jobindex"
 
 

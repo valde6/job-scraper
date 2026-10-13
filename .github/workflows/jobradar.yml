@@ -38,6 +38,12 @@ jobs:
           path: ~/.cache/ms-playwright
           key: pw-${{ runner.os }}-1.47
       - run: python -m playwright install --with-deps chromium
+      - name: Opdag nye arbejdsgivere (firma-niveau via links i studiejob-opslag)
+        continue-on-error: true
+        run: |
+          mkdir -p data/jobradar
+          ONLY="$(grep -v '^#' triggers/jobradar 2>/dev/null | head -1 || true)"
+          if [ -z "$ONLY" ] || [ "${{ github.event_name }}" != "push" ]; then python -m scraper.discover_jobindex 2>&1 | tee data/jobradar/discovery.log; fi
       - name: Scrape (Jobradar)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # valgfri: uden den springes AI-struktureringen over
@@ -75,6 +81,6 @@ jobs:
         run: |
           git config user.name "job-scraper-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/jobradar
+          git add data/jobradar platform/discovered.yaml 2>/dev/null || git add data/jobradar
           git diff --cached --quiet || git commit -m "Jobradar opdateret $(date -u +%Y-%m-%dT%H:%MZ)"
           git pull --rebase --autostash && git push

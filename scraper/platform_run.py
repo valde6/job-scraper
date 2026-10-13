@@ -51,7 +51,16 @@ def load_study_lines() -> list[dict]:
 
 
 def load_employers() -> list[dict]:
-    return yaml.safe_load((PLAT / "employers.yaml").read_text())["employers"]
+    """Håndplukkede (employers.yaml) + automatisk opdagede (discovered.yaml). Navne er unikke; håndplukkede vinder."""
+    emps = yaml.safe_load((PLAT / "employers.yaml").read_text())["employers"]
+    disc_f = PLAT / "discovered.yaml"
+    if disc_f.exists():
+        names = {e["name"].lower() for e in emps}
+        for e in yaml.safe_load(disc_f.read_text()).get("employers") or []:
+            if e["name"].lower() not in names:
+                emps.append(e)
+                names.add(e["name"].lower())
+    return emps
 
 
 def compile_keywords(kws: list[dict]) -> dict[str, re.Pattern]:
@@ -101,7 +110,8 @@ def build_record(job: dict, employer: dict, rx: dict, now: str) -> dict | None:
         "apply_url": apply_url, "career_url": employer.get("career_url") or None,
         "apply_is_direct": bool(apply_url),
         "keywords": match_keywords(rx, job["title"], desc, job["company"]),
-        "lines": employer.get("lines", []), "source": job.get("source"),
+        "lines": [],   # 13/10: arbejdsgivere mærkes ikke længere med studieretninger
+        "source": job.get("source"),
         "description_md": desc[:MAX_DESC],
     }
 
@@ -260,7 +270,7 @@ def main(argv=None):
         {"keywords": [{k: v for k, v in kw.items() if k != "pattern"} for kw in kws]}, ensure_ascii=False, indent=1))
     (OUT / "study_lines.json").write_text(json.dumps({"study_lines": load_study_lines()}, ensure_ascii=False, indent=1))
     (OUT / "employers.json").write_text(json.dumps({"employers": [
-        {"name": e["name"], "lines": e.get("lines", []), "status": e.get("status"), "career_url": e.get("career_url"),
+        {"name": e["name"], "lines": [], "status": e.get("status"), "career_url": e.get("career_url"),
          "source_type": (e.get("source") or {}).get("type", "none"),
          **{k: merged_sources.get(e["name"], {}).get(k) for k in ("ok", "listed", "matched")}} for e in employers]},
         ensure_ascii=False, indent=1))
