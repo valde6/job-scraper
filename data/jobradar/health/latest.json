@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-13T10:32:20+00:00",
+ "ts": "2026-10-13T10:54:05+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -354,12 +354,12 @@
   {
    "name": "Netcompany",
    "type": "smartrecruiters",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "HTTPError: 500 Server Error: Internal Server Error for url: https://api.smartrecruiters.com/v1/companies/Netcompany1/postings/744000148933299"
+   "ok": true,
+   "listed": 32,
+   "matched": 5,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "PFA Pension",
@@ -425,7 +425,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 29,
+   "listed": 28,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -484,12 +484,12 @@
   {
    "name": "Rambøll",
    "type": "smartrecruiters",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "ReadTimeout: HTTPSConnectionPool(host='api.smartrecruiters.com', port=443): Read timed out. (read timeout=25)"
+   "ok": true,
+   "listed": 93,
+   "matched": 6,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "Novonesis",
@@ -756,7 +756,7 @@
    "type": "emply",
    "ok": true,
    "listed": 30,
-   "matched": 2,
+   "matched": 1,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -966,7 +966,7 @@
    "type": "oracle",
    "ok": true,
    "listed": 405,
-   "matched": 9,
+   "matched": 5,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -1023,16 +1023,6 @@
   },
   {
    "name": "Movia",
-   "type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null,
-   "problem": null,
-   "streak": 0,
-   "detail": null
-  },
-  {
-   "name": "HOFOR",
    "type": "none",
    "ok": null,
    "listed": null,
@@ -1264,9 +1254,9 @@
   {
    "name": "Landal",
    "type": "workday",
-   "ok": true,
-   "listed": 131,
-   "matched": 0,
+   "ok": null,
+   "listed": null,
+   "matched": null,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -1274,9 +1264,9 @@
   {
    "name": "Nyborg Kommune",
    "type": "emply",
-   "ok": true,
-   "listed": 15,
-   "matched": 0,
+   "ok": null,
+   "listed": null,
+   "matched": null,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -1285,7 +1275,7 @@
    "name": "GML A/S",
    "type": "teamtailor",
    "ok": true,
-   "listed": 43,
+   "listed": 44,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -1302,7 +1292,7 @@
    "detail": null
   },
   {
-   "name": "HOFOR (hrmanager)",
+   "name": "HOFOR",
    "type": "hrmanager",
    "ok": true,
    "listed": 15,
@@ -1322,21 +1312,11 @@
    "detail": null
   },
   {
-   "name": "Danmarks Tekniske Universitet",
-   "type": "oracle",
-   "ok": true,
-   "listed": 405,
-   "matched": 9,
-   "problem": null,
-   "streak": 0,
-   "detail": null
-  },
-  {
    "name": "Grønlands Selvstyre",
    "type": "emply",
-   "ok": true,
-   "listed": 35,
-   "matched": 1,
+   "ok": null,
+   "listed": null,
+   "matched": null,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -1344,12 +1324,12 @@
   {
    "name": "Eurofins",
    "type": "smartrecruiters",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "HTTPError: 400 Client Error: Bad Request for url: https://api.smartrecruiters.com/v1/companies/Eurofins/postings/744000141450339"
+   "ok": true,
+   "listed": 18,
+   "matched": 3,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "Faxe Kommune",
@@ -1364,9 +1344,9 @@
   {
    "name": "Haderslev Kommune",
    "type": "emply",
-   "ok": true,
-   "listed": 18,
-   "matched": 0,
+   "ok": null,
+   "listed": null,
+   "matched": null,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -1384,9 +1364,9 @@
   {
    "name": "Würth Danmark A/S",
    "type": "emply",
-   "ok": true,
-   "listed": 24,
-   "matched": 9,
+   "ok": null,
+   "listed": null,
+   "matched": null,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -1424,9 +1404,9 @@
   {
    "name": "Assens Kommune",
    "type": "hrmanager",
-   "ok": true,
-   "listed": 25,
-   "matched": 0,
+   "ok": null,
+   "listed": null,
+   "matched": null,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -1443,5 +1423,5 @@
   }
  ],
  "alerts": [],
- "active": 119
+ "active": 97
 }
