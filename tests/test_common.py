@@ -73,3 +73,21 @@ def test_html_to_md_keeps_text_after_unclosed_br():
     html = "Intro<br><br>Mere tekst<p style='color:red'><span>You must be currently enrolled at a university</span></p>"
     md = html_to_md(html)
     assert "currently enrolled" in md and "Mere tekst" in md
+
+
+def test_intern_only_as_english_noun():
+    from scraper.common import job_type, set_job_types
+    set_job_types({"studiejob", "praktik", "graduate"})
+    assert job_type("Intern - Finance") == "praktik"
+    assert job_type("Summer Intern") == "praktik"
+    assert job_type("Intern for Group Treasury") == "praktik"
+    assert job_type("Intern sælger til håndværkere") is None
+    assert job_type("Kvalitetssygeplejerske med fokus på intern kontrol") is None
+
+
+def test_department_for_students_is_not_a_student_job():
+    from scraper.common import job_type, set_job_types
+    set_job_types({"studiejob", "praktik", "graduate"})
+    assert job_type("International Partnership Manager (barselsvikar) - Afd. for Uddannelse og Studerende",
+                    "Afdelingen for Uddannelse og Studerende søger …") is None
+    assert job_type("Studerende til kundeservice", "Vi søger studerende 15 timer om ugen") == "studiejob"

@@ -15,7 +15,10 @@ def scrape(cfg):
             title = clean(p.get("name"))
             if not is_student(title):
                 continue
-            d = get(f"{API.format(cid=cid)}/{p['id']}").json()
+            try:
+                d = get(f"{API.format(cid=cid)}/{p['id']}").json()
+            except Exception:  # noqa: BLE001 – ét ødelagt opslag (400/500) må ikke vælte hele kilden
+                d = {}
             secs = (d.get("jobAd") or {}).get("sections") or {}
             desc = "\n\n".join(html_to_md(v.get("text")) for v in secs.values() if isinstance(v, dict))
             loc = d.get("location") or {}

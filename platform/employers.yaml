@@ -104,6 +104,7 @@ employers:
   - Microsoft Danmark
   - Microsoft Development Center Copenhagen
 - name: EY
+  region: storkbh
   career_url: https://www.ey.com/da_dk/careers
   status: klar
   source:
@@ -281,6 +282,7 @@ employers:
   - KPMG P/S
   - KPMG Acor Tax
 - name: Matas
+  region: sjaelland
   career_url: https://www.matas.dk/job
   status: klar
   source:
@@ -431,6 +433,7 @@ employers:
   aliases:
   - DSV A/S
 - name: BDO
+  region: storkbh
   career_url: https://www.bdo.dk/da-dk/karriere
   status: klar
   source:
@@ -472,6 +475,7 @@ employers:
   source:
     type: none
 - name: Bech-Bruun
+  region: storkbh
   career_url: https://www.bechbruun.com/da/karriere
   status: klar
   source:
@@ -590,6 +594,7 @@ employers:
     customer: statensrekrutteringsloesning_tr
   note: Dækker mange ministerier/styrelser. Studiejob manglede i feedet 8/10 – se backlog 4
 - name: Københavns Kommune
+  region: storkbh
   domain: kk.dk
   career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=kk
   status: mangler-adapter
@@ -597,6 +602,7 @@ employers:
     type: none
   note: HR-Manager (JobPortal-API på siden)
 - name: Frederiksberg Kommune
+  region: storkbh
   career_url: https://job.frederiksberg.dk/
   status: klar
   source:
@@ -772,12 +778,6 @@ employers:
   source:
     type: none
   note: Set på Jobindex
-- name: HOFOR
-  career_url: https://www.hofor.dk/job
-  status: mangler-adapter
-  source:
-    type: none
-  note: HR-Manager (alias afkortet i discovery)
 - name: Svitzer
   domain: svitzer.com
   career_url: https://svitzer.wd3.myworkdayjobs.com/Svitzer_Careers
@@ -799,6 +799,7 @@ employers:
   source:
     type: none
 - name: Akademikernes A-kasse
+  region: storkbh
   career_url: https://aka.career.emply.com/
   status: klar
   source:
@@ -806,6 +807,7 @@ employers:
     url: https://aka.career.emply.com
   note: Emply (13/10)
 - name: Ældre Sagen
+  region: storkbh
   domain: aeldresagen.dk
   career_url: https://aeldresagen.career.emply.com/
   status: klar

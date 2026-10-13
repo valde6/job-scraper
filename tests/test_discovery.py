@@ -10,7 +10,7 @@ from scraper.discover_jobindex import recognize, known_keys, company_from_title
     ("https://danskindustri.teamtailor.com/jobs/8501409-pa-konsulent?promotion=2230409-jobindex", "teamtailor", "teamtailor:danskindustri.teamtailor.com"),
     ("https://karriere.danskespil.dk/jobs/8512771-studentermedhjaelper-til-crm?promotion=2234893-jobindex", "teamtailor", "teamtailor:karriere.danskespil.dk"),
     ("https://svitzer.wd3.myworkdayjobs.com/da-DK/Svitzer_Careers/job/Copenhagen/Student-Assistant_R1", "workday", "workday:svitzer.wd3.myworkdayjobs.com/svitzer_careers"),
-    ("https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8370", "oracle", "oracle:efzu.fa.em2.oraclecloud.com/cx_1"),
+    ("https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1/job/8370", "oracle", "oracle:efzu.fa.em2.oraclecloud.com"),
     ("https://jobs.smartrecruiters.com/Ramboll3/744000153497080-praktikant", "smartrecruiters", "smartrecruiters:ramboll3"),
     ("https://eyglobal.yello.co/jobs/-c3pdhRbykXkBsX0HXY2Zg?job_board_id=c1riT--B2O-KySgYWsZO1Q", "yello", "yello:c1riT--B2O-KySgYWsZO1Q"),
 ])

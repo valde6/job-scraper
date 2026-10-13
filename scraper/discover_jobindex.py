@@ -55,7 +55,7 @@ def recognize(url: str) -> tuple[str, dict, str] | None:
         if segs:
             return "workday", {"url": f"https://{host}/{segs[0]}"}, f"workday:{host}/{segs[0]}".lower()
     if host.endswith(".oraclecloud.com") and (m := re.search(r"/sites/([^/?#]+)", path)):
-        return "oracle", {"host": f"https://{host}", "site": m.group(1)}, f"oracle:{host}/{m.group(1)}".lower()
+        return "oracle", {"host": f"https://{host}", "site": m.group(1)}, f"oracle:{host}".lower()
     if host in ("jobs.smartrecruiters.com", "careers.smartrecruiters.com"):
         segs = [s for s in path.split("/") if s]
         if segs:
@@ -149,7 +149,7 @@ def known_keys(employers: list[dict]) -> set[str]:
             p = urlparse(s["url"])
             keys.add(f"workday:{p.netloc}/{p.path.strip('/').split('/')[0]}".lower())
         elif t == "oracle":
-            keys.add(f"oracle:{urlparse(s['host']).netloc}/{s['site']}".lower())
+            keys.add(f"oracle:{urlparse(s['host']).netloc}".lower())
         elif t == "smartrecruiters":
             keys.add(f"smartrecruiters:{s['company_id'].lower()}")
         elif t == "yello":

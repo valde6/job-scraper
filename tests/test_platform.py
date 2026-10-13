@@ -168,3 +168,14 @@ def test_company_domain_from_career_page_and_override():
     assert company_domain({"career_url": "https://www.pfa.dk/om-pfa/job/"}) == "pfa.dk"
     assert company_domain({"career_url": "https://candidate.hr-manager.net/x"}) is None
     assert company_domain({"career_url": "https://x.wd3.myworkdayjobs.com/", "domain": "svitzer.com"}) == "svitzer.com"
+
+
+def test_employer_region_fills_unknown_location():
+    from scraper.platform_run import build_record, compile_keywords, load_keywords
+    from scraper.common import set_job_types
+    set_job_types({"studiejob", "praktik", "graduate"})
+    rx = compile_keywords(load_keywords())
+    job = {"id": "x1", "company": "EY", "title": "Student Assistant - Valuation", "location": "Danmark",
+           "description_md": "Student assistant 15-20 hours a week", "fit": "sikker"}
+    assert build_record(job, {"region": "storkbh"}, rx, "2026-10-13")["region"] == "storkbh"
+    assert build_record(job, {}, rx, "2026-10-13")["region"] == "ukendt"

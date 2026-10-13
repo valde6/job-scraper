@@ -2,6 +2,7 @@
 # Ret gerne navne. Flyt en arbejdsgiver til employers.yaml, hvis den skal have særlige indstillinger.
 employers:
 - name: DM
+  region: storkbh
   career_url: https://dm-v2.career.emply.com
   status: opdaget
   source:
@@ -23,6 +24,7 @@ employers:
     evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=316&ProjectId=188796&DepartmentId=21679&MediaId=5
   cid: '316'
 - name: Landau Headhunting
+  region: storkbh
   career_url: https://landauheadhunting.teamtailor.com
   status: opdaget
   source:
@@ -53,6 +55,7 @@ employers:
     via: jobindex-link
     evidence: https://telenorlinx-1750856670.teamtailor.com
 - name: Landal
+  region: udenfor
   career_url: https://roompot.wd103.myworkdayjobs.com/Landal
   status: opdaget
   source:
@@ -63,6 +66,7 @@ employers:
     via: jobindex-link
     evidence: https://roompot.wd103.myworkdayjobs.com/Landal/job/Landal-Seawest/Servicemedarbejder_JR103055-1/apply
 - name: Nyborg Kommune
+  region: udenfor
   career_url: https://nyborg.career.emply.com
   status: opdaget
   source:
@@ -83,6 +87,7 @@ employers:
     via: jobindex-link
     evidence: https://gmlhr.teamtailor.com/jobs/8513262-studentermedhjaelper-til-gml-a-s?promotion=2239228-jobindex
 - name: Medicinrådet
+  region: storkbh
   career_url: https://medicinraadet.career.emply.com
   status: opdaget
   source:
@@ -92,7 +97,7 @@ employers:
     at: '2026-10-13'
     via: jobindex-link
     evidence: https://medicinraadet.career.emply.com/ad/studentermedhjaelpere-til-medicinradets-sekretariat/e6j7y4/da
-- name: HOFOR (hrmanager)
+- name: HOFOR
   career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=174&ProjectId=184437&DepartmentId=21999&MediaId=59
   status: opdaget
   source:
@@ -113,18 +118,8 @@ employers:
     at: '2026-10-13'
     via: jobindex-link
     evidence: https://karriere.nordkysten.dk/jobs/8518215-studentermedhjaelper-til-strategisk-indkoeb-analyse-og-ai?promotion=2236747-jobindex
-- name: Danmarks Tekniske Universitet
-  career_url: https://efzu.fa.em2.oraclecloud.com
-  status: opdaget
-  source:
-    type: oracle
-    host: https://efzu.fa.em2.oraclecloud.com
-    site: CX_2001
-  discovered:
-    at: '2026-10-13'
-    via: jobindex-link
-    evidence: https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_2001/job/8368
 - name: Grønlands Selvstyre
+  region: udenfor
   career_url: https://naalakkersuisut.career.emply.com
   status: opdaget
   source:
@@ -145,6 +140,7 @@ employers:
     via: jobindex-link
     evidence: https://jobs.smartrecruiters.com/Eurofins/744000155202220-praktikant-til-salg-support-kundeudvikling?trid=855d0792-8b64-4b61-8b9b-b6ead421d748
 - name: Faxe Kommune
+  region: sjaelland
   career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1372&ProjectId=147348&DepartmentId=20025&MediaId=4616
   status: opdaget
   source:
@@ -156,6 +152,7 @@ employers:
     evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1372&ProjectId=147348&DepartmentId=20025&MediaId=4616
   cid: '1372'
 - name: Haderslev Kommune
+  region: udenfor
   career_url: https://haderslev.career.emply.com
   status: opdaget
   source:
@@ -166,6 +163,7 @@ employers:
     via: jobindex-link
     evidence: https://haderslev.career.emply.com/ad/dagplejer-til-starup-omradet/x52m6y/da
 - name: Scantox A/S
+  region: sjaelland
   career_url: https://scantox.career.emply.com
   status: opdaget
   source:
@@ -176,6 +174,7 @@ employers:
     via: jobindex-link
     evidence: https://Scantox.career.emply.com/ad/dyrepasserelev-med-opstart-januar-2027/qgcia9/da
 - name: Würth Danmark A/S
+  region: udenfor
   career_url: https://wuerth.career.emply.com
   status: opdaget
   source:
@@ -196,6 +195,7 @@ employers:
     via: jobindex-link
     evidence: https://nobiaab-hth.teamtailor.com/jobs/8496996-vi-soger-en-ny-kollega-til-hth-holstebro-maske-er-det-dig?promotion=2229209-jobindex
 - name: Everllence
+  region: storkbh
   career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1877&ProjectId=146338&DepartmentId=19149&MediaId=4619
   status: opdaget
   source:
@@ -207,6 +207,7 @@ employers:
     evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1877&ProjectId=146338&DepartmentId=19149&MediaId=4619
   cid: '1877'
 - name: Erhvervsakademi København
+  region: storkbh
   career_url: https://ek.career.emply.com
   status: opdaget
   source:
@@ -217,6 +218,7 @@ employers:
     via: jobindex-link
     evidence: https://ek.career.emply.com/ad/specialkonsulent-til-erhvervsakademi-kobenhavns-studieadministration/myye0k/da
 - name: Assens Kommune
+  region: udenfor
   career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=231&ProjectId=193256&DepartmentId=18452&MediaId=5545
   status: opdaget
   source:
@@ -228,6 +230,7 @@ employers:
     evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=231&ProjectId=193256&DepartmentId=18452&MediaId=5545
   cid: '231'
 - name: Danske Professionshøjskoler
+  region: storkbh
   career_url: https://dkprof.career.emply.com
   status: opdaget
   source:

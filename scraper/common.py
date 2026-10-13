@@ -140,7 +140,11 @@ EXCLUDE_RE = re.compile(
 # ---------------------------------------------------------------- jobtyper (platform-kørslen)
 # Den personlige kørsel vil kun have studiejob. Platform-kørslen (Jobradar) slår praktik og graduate til med
 # set_job_types(), så adapterne også beholder dem. Jobtypen bestemmes bagefter med job_type().
-PRAKTIK_RE = re.compile(r"\binternship|\bintern\b|praktikant|praktikophold|\bpraktik\b|sommerpraktik|summer\s+intern", re.I)
+# "intern" kun som engelsk navneord ("Intern - Finance", "Summer Intern"), ikke dansk tillægsord ("intern kontrol", "Intern sælger")
+PRAKTIK_RE = re.compile(r"\binternship|\bintern\b(?=\s*(?:$|[-–(),|/:]|(?:for|in|at|to|with|within|på|hos|til|i)\b))|"
+                        r"praktikant|praktikophold|\bpraktik\b|sommerpraktik|summer\s+intern", re.I)
+# Afdelingsnavne som "Afd. for Uddannelse og Studerende" er ikke tegn på et studiejob
+STUDENT_SERVICE_RE = re.compile(r"\b(?:for|og|and)\s+studerende\b|\bstudent\s+(?:services|affairs|centre|center)\b", re.I)
 GRADUATE_RE = re.compile(r"\bgraduate|\btrainee|nyuddannet|young\s+professional", re.I)
 HARD_EXCLUDE_RE = re.compile(
     r"\bph\.?d\b|postdoc|bachelorprojekt|speciale|thesis|"
@@ -179,7 +183,10 @@ def job_type(title: str, text: str = "") -> str | None:
         return "praktik"
     if GRADUATE_RE.search(t):
         return "graduate"
-    return "studiejob" if student_fit(t, text) else None
+    t2 = STUDENT_SERVICE_RE.sub(" ", t)
+    if t2 != t and not STUDENT_RE.search(t2):
+        return None
+    return "studiejob" if student_fit(t2, text) else None
 
 
 DK_PLACES = [

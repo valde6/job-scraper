@@ -56,8 +56,11 @@ def load_employers() -> list[dict]:
     emps = yaml.safe_load((PLAT / "employers.yaml").read_text())["employers"]
     disc_f = PLAT / "discovered.yaml"
     if disc_f.exists():
+        from .discover_jobindex import known_keys
         names = {e["name"].lower() for e in emps}
         for e in yaml.safe_load(disc_f.read_text()).get("employers") or []:
+            if known_keys([e]) & known_keys(emps):
+                continue                  # samme kilde som en håndplukket arbejdsgiver
             if e["name"].lower() not in names:
                 emps.append(e)
                 names.add(e["name"].lower())
@@ -115,6 +118,8 @@ def build_record(job: dict, employer: dict, rx: dict, now: str) -> dict | None:
     reg = region(job.get("location"), job["title"])
     if reg is None:
         return None
+    if reg == "ukendt" and employer.get("region") in ("storkbh", "sjaelland"):
+        reg = employer["region"]          # fx Emply/Yello, der kun skriver "Danmark"
     desc = job.get("description_md") or ""
     # "mulig" = deltid uden tegn på studier. Kun med, hvis titlen selv rammer et fagligt nøgleord
     # (ellers kommer fx "Laboratory Technician" og "Tutti violinist" med som studiejob).
@@ -220,6 +225,9 @@ def main(argv=None):
         src = dict(e.get("source") or {})
         typ = src.get("type", "none")
         entry = {"company": e["name"], "source": typ, "lines": e.get("lines", [])}
+        if e.get("region") == "udenfor":
+            typ = "none"                  # arbejdsgiveren ligger uden for Sjælland – gamle job lukkes
+            ok_sources.add(e["name"])
         if typ not in ADAPTERS or typ == "jobindex":
             entry.update(ok=None, note=e.get("note") or e.get("status"))
             status.append(entry)
@@ -263,6 +271,11 @@ def main(argv=None):
         print("STOP: ingen job fundet – beholder forrige data.", file=sys.stderr)
         sys.exit(2)
 
+    if not args.only:                             # job fra arbejdsgivere, der ikke længere er med (fx dubletter)
+        current = {e["name"] for e in employers}
+        for j in state["jobs"].values():
+            if j["company"] not in current:
+                j["active"] = False
     jobs = merge_state(found, state["jobs"], ok_sources, now, today)
     for j in jobs.values():                       # ældre tilstand uden url-felt (før 13/10)
         j.setdefault("url", j.get("apply_url") or j.get("career_url"))
