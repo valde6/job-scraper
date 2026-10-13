@@ -2,10 +2,7 @@
  "employers": [
   {
    "name": "Novo Nordisk",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.novonordisk.com/careers.html",
    "source_type": "successfactors",
@@ -15,10 +12,7 @@
   },
   {
    "name": "A.P. Møller - Mærsk",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.maersk.com/careers",
    "source_type": "workday",
@@ -28,9 +22,7 @@
   },
   {
    "name": "McKinsey & Company",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.mckinsey.com/careers/search-jobs",
    "source_type": "none",
@@ -40,10 +32,7 @@
   },
   {
    "name": "LEGO Group",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.lego.com/en-us/careers",
    "source_type": "workday",
@@ -53,11 +42,7 @@
   },
   {
    "name": "Danske Bank",
-   "lines": [
-    "ha-almen",
-    "ha-it",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://danskebank.com/careers",
    "source_type": "oracle",
@@ -67,11 +52,7 @@
   },
   {
    "name": "Deloitte",
-   "lines": [
-    "ha-almen",
-    "ha-it",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.deloitte.com/dk/da/careers.html",
    "source_type": "smartrecruiters",
@@ -81,11 +62,7 @@
   },
   {
    "name": "PwC",
-   "lines": [
-    "ha-almen",
-    "ha-it",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.pwc.dk/da/karriere.html",
    "source_type": "workday",
@@ -95,9 +72,7 @@
   },
   {
    "name": "Carlsberg",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "mangler-adapter",
    "career_url": "https://www.carlsberggroup.com/careers/",
    "source_type": "none",
@@ -107,9 +82,7 @@
   },
   {
    "name": "Boston Consulting Group (BCG)",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://careers.bcg.com/",
    "source_type": "eightfold",
@@ -119,11 +92,7 @@
   },
   {
    "name": "Nordea",
-   "lines": [
-    "ha-almen",
-    "ha-it",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.nordea.com/en/careers",
    "source_type": "nordea",
@@ -133,9 +102,7 @@
   },
   {
    "name": "Microsoft",
-   "lines": [
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://careers.microsoft.com/",
    "source_type": "none",
@@ -145,24 +112,17 @@
   },
   {
    "name": "EY",
-   "lines": [
-    "ha-almen",
-    "ha-it",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.ey.com/da_dk/careers",
-   "source_type": "successfactors",
+   "source_type": "yello",
    "ok": true,
    "listed": 7,
    "matched": 0
   },
   {
    "name": "Jyske Bank",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.jyskebank.dk/om/job",
    "source_type": "none",
@@ -172,11 +132,7 @@
   },
   {
    "name": "Nykredit",
-   "lines": [
-    "ha-almen",
-    "ha-it",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.nykredit.com/karriere/",
    "source_type": "browser",
@@ -186,9 +142,7 @@
   },
   {
    "name": "Bestseller",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://about.bestseller.com/careers",
    "source_type": "none",
@@ -198,9 +152,7 @@
   },
   {
    "name": "L'Oréal Groupe",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://careers.loreal.com/",
    "source_type": "none",
@@ -210,9 +162,7 @@
   },
   {
    "name": "Bain & Company",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.bain.com/careers/",
    "source_type": "none",
@@ -222,10 +172,7 @@
   },
   {
    "name": "Vestas",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://careers.vestas.com/",
    "source_type": "successfactors",
@@ -235,10 +182,7 @@
   },
   {
    "name": "Implement",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://implementconsultinggroup.com/careers",
    "source_type": "none",
@@ -248,10 +192,7 @@
   },
   {
    "name": "Saxo Bank",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.home.saxo/about-us/careers",
    "source_type": "workday",
@@ -261,10 +202,7 @@
   },
   {
    "name": "Finansministeriet",
-   "lines": [
-    "ha-almen",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://fm.dk/om-os/job-i-finansministeriet/",
    "source_type": "none",
@@ -274,9 +212,7 @@
   },
   {
    "name": "Bang & Olufsen",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.bang-olufsen.com/en/dk/story/careers",
    "source_type": "browser",
@@ -286,11 +222,7 @@
   },
   {
    "name": "Danmarks Nationalbank",
-   "lines": [
-    "ha-almen",
-    "ha-it",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.nationalbanken.dk/da/om-nationalbanken/job",
    "source_type": "none",
@@ -300,9 +232,7 @@
   },
   {
    "name": "Arla Foods",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.arla.com/careers/",
    "source_type": "phenom",
@@ -312,10 +242,7 @@
   },
   {
    "name": "Udenrigsministeriet",
-   "lines": [
-    "ha-almen",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://um.dk/om-os/job-i-udenrigsministeriet",
    "source_type": "none",
@@ -325,9 +252,7 @@
   },
   {
    "name": "Pandora",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "tjek",
    "career_url": "https://pandoragroup.com/careers",
    "source_type": "browser",
@@ -337,10 +262,7 @@
   },
   {
    "name": "Dansk Industri",
-   "lines": [
-    "ha-almen",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.danskindustri.dk/om-di/job-i-di/",
    "source_type": "teamtailor",
@@ -350,10 +272,7 @@
   },
   {
    "name": "Nordnet",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.nordnet.dk/dk/om-nordnet/karriere",
    "source_type": "none",
@@ -363,10 +282,7 @@
   },
   {
    "name": "Ørsted",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://orsted.com/en/careers",
    "source_type": "browser",
@@ -376,11 +292,7 @@
   },
   {
    "name": "KPMG",
-   "lines": [
-    "ha-almen",
-    "ha-it",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://kpmg.com/dk/da/home/careers.html",
    "source_type": "hrmanager",
@@ -390,22 +302,17 @@
   },
   {
    "name": "Matas",
-   "lines": [
-    "ha-almen"
-   ],
-   "status": "mangler-adapter",
+   "lines": [],
+   "status": "klar",
    "career_url": "https://www.matas.dk/job",
-   "source_type": "none",
+   "source_type": "emply",
    "ok": null,
    "listed": null,
    "matched": null
   },
   {
    "name": "Salling Group",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://sallinggroup.com/job/",
    "source_type": "none",
@@ -415,10 +322,7 @@
   },
   {
    "name": "PA Consulting Group",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.paconsulting.com/careers",
    "source_type": "smartrecruiters",
@@ -428,9 +332,7 @@
   },
   {
    "name": "Københavns Lufthavne",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.cph.dk/om-cph/job",
    "source_type": "none",
@@ -440,10 +342,7 @@
   },
   {
    "name": "Danske Commodities",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://danskecommodities.com/careers/",
    "source_type": "teamtailor",
@@ -453,9 +352,7 @@
   },
   {
    "name": "Netcompany",
-   "lines": [
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.netcompany.com/da/karriere",
    "source_type": "smartrecruiters",
@@ -465,11 +362,7 @@
   },
   {
    "name": "PFA Pension",
-   "lines": [
-    "ha-almen",
-    "ha-it",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.pfa.dk/om-pfa/job-og-karriere/",
    "source_type": "browser",
@@ -479,9 +372,7 @@
   },
   {
    "name": "SAS",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.sasgroup.net/careers/",
    "source_type": "none",
@@ -491,10 +382,7 @@
   },
   {
    "name": "Amazon",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.amazon.jobs/en/locations/copenhagen-area-denmark",
    "source_type": "amazon",
@@ -504,10 +392,7 @@
   },
   {
    "name": "Beierholm",
-   "lines": [
-    "ha-almen",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "mangler-adapter",
    "career_url": "https://www.beierholm.dk/karriere/",
    "source_type": "none",
@@ -517,9 +402,7 @@
   },
   {
    "name": "AL Sydbank",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.alsydbank.dk/om-os/job",
    "source_type": "none",
@@ -529,11 +412,7 @@
   },
   {
    "name": "Forsvaret",
-   "lines": [
-    "ha-almen",
-    "ha-it",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.forsvaret.dk/da/job-i-forsvaret/",
    "source_type": "none",
@@ -543,9 +422,7 @@
   },
   {
    "name": "IKEA",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://jobs.ikea.com/en/search?location=Denmark",
    "source_type": "generic",
@@ -555,10 +432,7 @@
   },
   {
    "name": "Statsministeriet",
-   "lines": [
-    "ha-almen",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://stm.dk/om-os/job/",
    "source_type": "none",
@@ -568,10 +442,7 @@
   },
   {
    "name": "Accenture",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.accenture.com/dk-en/careers",
    "source_type": "workday",
@@ -581,10 +452,7 @@
   },
   {
    "name": "Danmarks Radio",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.dr.dk/om-dr/job-i-dr",
    "source_type": "hrmanager",
@@ -594,9 +462,7 @@
   },
   {
    "name": "DSV",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.dsv.com/en/careers",
    "source_type": "none",
@@ -606,23 +472,17 @@
   },
   {
    "name": "BDO",
-   "lines": [
-    "ha-almen",
-    "ha-jura"
-   ],
-   "status": "mangler-adapter",
+   "lines": [],
+   "status": "klar",
    "career_url": "https://www.bdo.dk/da-dk/karriere",
-   "source_type": "none",
+   "source_type": "emply",
    "ok": null,
    "listed": null,
    "matched": null
   },
   {
    "name": "Rambøll",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.ramboll.com/careers",
    "source_type": "smartrecruiters",
@@ -632,10 +492,7 @@
   },
   {
    "name": "Novonesis",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.novonesis.com/en/careers",
    "source_type": "workday",
@@ -645,9 +502,7 @@
   },
   {
    "name": "Kromann Reumert",
-   "lines": [
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.kromannreumert.com/karriere",
    "source_type": "none",
@@ -657,9 +512,7 @@
   },
   {
    "name": "Plesner",
-   "lines": [
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.plesner.com/karriere",
    "source_type": "none",
@@ -669,9 +522,7 @@
   },
   {
    "name": "Gorrissen Federspiel",
-   "lines": [
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://gorrissenfederspiel.com/karriere",
    "source_type": "none",
@@ -681,21 +532,17 @@
   },
   {
    "name": "Bech-Bruun",
-   "lines": [
-    "ha-jura"
-   ],
-   "status": "mangler-adapter",
+   "lines": [],
+   "status": "klar",
    "career_url": "https://www.bechbruun.com/da/karriere",
-   "source_type": "none",
+   "source_type": "emply",
    "ok": null,
    "listed": null,
    "matched": null
   },
   {
    "name": "Accura",
-   "lines": [
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://accura.dk/karriere",
    "source_type": "hrmanager",
@@ -705,9 +552,7 @@
   },
   {
    "name": "Poul Schmith / Kammeradvokaten",
-   "lines": [
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.poulschmith.dk/karriere",
    "source_type": "none",
@@ -717,9 +562,7 @@
   },
   {
    "name": "Lundgrens",
-   "lines": [
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.lundgrens.dk/karriere",
    "source_type": "none",
@@ -729,9 +572,7 @@
   },
   {
    "name": "Horten",
-   "lines": [
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.horten.dk/karriere",
    "source_type": "none",
@@ -741,9 +582,7 @@
   },
   {
    "name": "DLA Piper Denmark",
-   "lines": [
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.dlapiper.dk/karriere",
    "source_type": "none",
@@ -753,9 +592,7 @@
   },
   {
    "name": "Mazanti-Andersen",
-   "lines": [
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.mazanti.dk/karriere",
    "source_type": "none",
@@ -765,9 +602,7 @@
   },
   {
    "name": "Norrbom Vinding",
-   "lines": [
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.norrbomvinding.com/karriere",
    "source_type": "none",
@@ -777,9 +612,7 @@
   },
   {
    "name": "Moalem Weitemeyer",
-   "lines": [
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.moalemweitemeyer.com/karriere",
    "source_type": "none",
@@ -789,9 +622,7 @@
   },
   {
    "name": "Lund Elmer Sandager",
-   "lines": [
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.lundelmersandager.dk/karriere",
    "source_type": "none",
@@ -801,9 +632,7 @@
   },
   {
    "name": "Delacour",
-   "lines": [
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://delacour.dk/karriere",
    "source_type": "none",
@@ -813,10 +642,7 @@
   },
   {
    "name": "Danske Advokater",
-   "lines": [
-    "ha-jura",
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.danskeadvokater.dk/om-os/job",
    "source_type": "none",
@@ -826,10 +652,7 @@
   },
   {
    "name": "Grant Thornton",
-   "lines": [
-    "ha-almen",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.grantthornton.dk/karriere/",
    "source_type": "none",
@@ -839,9 +662,7 @@
   },
   {
    "name": "Partner Revision",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.partner-revision.dk/om-os/karriere",
    "source_type": "none",
@@ -851,11 +672,7 @@
   },
   {
    "name": "Skatteministeriet og Skattestyrelsen",
-   "lines": [
-    "ha-jura",
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "mangler-adapter",
    "career_url": "https://www.skm.dk/job",
    "source_type": "none",
@@ -865,11 +682,7 @@
   },
   {
    "name": "Erhvervsstyrelsen",
-   "lines": [
-    "ha-jura",
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://erhvervsstyrelsen.dk/job",
    "source_type": "none",
@@ -879,10 +692,7 @@
   },
   {
    "name": "Finanstilsynet",
-   "lines": [
-    "ha-jura",
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.finanstilsynet.dk/om-os/job",
    "source_type": "none",
@@ -892,10 +702,7 @@
   },
   {
    "name": "Konkurrence- og Forbrugerstyrelsen",
-   "lines": [
-    "ha-jura",
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "mangler-adapter",
    "career_url": "https://www.kfst.dk/om-os/job",
    "source_type": "none",
@@ -905,9 +712,7 @@
   },
   {
    "name": "Justitsministeriet",
-   "lines": [
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.justitsministeriet.dk/job",
    "source_type": "none",
@@ -917,10 +722,7 @@
   },
   {
    "name": "Datatilsynet",
-   "lines": [
-    "ha-jura",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.datatilsynet.dk/om-datatilsynet/job",
    "source_type": "none",
@@ -930,11 +732,7 @@
   },
   {
    "name": "Statens Rekrutteringsløsning (staten)",
-   "lines": [
-    "ha-jura",
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
    "source_type": "hrmanager",
@@ -944,11 +742,7 @@
   },
   {
    "name": "Københavns Kommune",
-   "lines": [
-    "ha-almen",
-    "ha-jura",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "mangler-adapter",
    "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=kk",
    "source_type": "none",
@@ -958,24 +752,17 @@
   },
   {
    "name": "Frederiksberg Kommune",
-   "lines": [
-    "ha-almen",
-    "ha-jura"
-   ],
-   "status": "mangler-adapter",
+   "lines": [],
+   "status": "klar",
    "career_url": "https://job.frederiksberg.dk/",
-   "source_type": "none",
+   "source_type": "emply",
    "ok": null,
    "listed": null,
    "matched": null
   },
   {
    "name": "Tryg",
-   "lines": [
-    "ha-almen",
-    "ha-it",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "tjek",
    "career_url": "https://careers.tryg.com",
    "source_type": "successfactors",
@@ -985,10 +772,7 @@
   },
   {
    "name": "Alm. Brand Group",
-   "lines": [
-    "ha-almen",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.almbrand.dk/om-os/job",
    "source_type": "none",
@@ -998,9 +782,7 @@
   },
   {
    "name": "If Skadeforsikring",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.if.dk/om-if/job",
    "source_type": "none",
@@ -1010,11 +792,7 @@
   },
   {
    "name": "ATP",
-   "lines": [
-    "ha-almen",
-    "ha-it",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.atp.dk/job",
    "source_type": "none",
@@ -1024,11 +802,7 @@
   },
   {
    "name": "PensionDanmark",
-   "lines": [
-    "ha-almen",
-    "ha-it",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.pensiondanmark.com/om-pensiondanmark/job/",
    "source_type": "none",
@@ -1038,10 +812,7 @@
   },
   {
    "name": "Sampension",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.sampension.dk/om-sampension/job",
    "source_type": "none",
@@ -1051,10 +822,7 @@
   },
   {
    "name": "AP Pension",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://appension.dk/om-ap-pension/job-i-ap-pension/karriere-i-ap-pension",
    "source_type": "none",
@@ -1064,9 +832,7 @@
   },
   {
    "name": "Arbejdernes Landsbank",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.al-bank.dk/om-os/job",
    "source_type": "none",
@@ -1076,9 +842,7 @@
   },
   {
    "name": "Lån & Spar Bank",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.lsb.dk/privat/dit-liv/livet-som-studerende/job",
    "source_type": "none",
@@ -1088,9 +852,7 @@
   },
   {
    "name": "Danmarks Skibskredit",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "mangler-adapter",
    "career_url": "https://app.elvium.com/da",
    "source_type": "none",
@@ -1100,9 +862,7 @@
   },
   {
    "name": "Söderberg & Partners",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.soderbergpartners.dk/om-os/job",
    "source_type": "none",
@@ -1112,9 +872,7 @@
   },
   {
    "name": "KMD",
-   "lines": [
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.kmd.dk/karriere",
    "source_type": "none",
@@ -1124,9 +882,7 @@
   },
   {
    "name": "EG",
-   "lines": [
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://careers.egsoftware.com",
    "source_type": "teamtailor",
@@ -1136,9 +892,7 @@
   },
   {
    "name": "Twoday",
-   "lines": [
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.twoday.dk/karriere",
    "source_type": "teamtailor",
@@ -1148,10 +902,7 @@
   },
   {
    "name": "Columbus",
-   "lines": [
-    "ha-it",
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "mangler-adapter",
    "career_url": "https://www.columbusglobal.com/da/karriere",
    "source_type": "none",
@@ -1161,10 +912,7 @@
   },
   {
    "name": "Capgemini Danmark",
-   "lines": [
-    "ha-it",
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.capgemini.com/dk-en/careers/",
    "source_type": "none",
@@ -1174,9 +922,7 @@
   },
   {
    "name": "IBM Danmark",
-   "lines": [
-    "ha-it"
-   ],
+   "lines": [],
    "status": "mangler-adapter",
    "career_url": "https://www.ibm.com/careers",
    "source_type": "none",
@@ -1186,9 +932,7 @@
   },
   {
    "name": "Devoteam",
-   "lines": [
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.devoteam.com/jobs/",
    "source_type": "none",
@@ -1198,10 +942,7 @@
   },
   {
    "name": "Visma DataLøn",
-   "lines": [
-    "ha-it",
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "mangler-adapter",
    "career_url": "https://karriere.datalonprolon.dk/",
    "source_type": "none",
@@ -1211,10 +952,7 @@
   },
   {
    "name": "Danske Spil",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://karriere.danskespil.dk",
    "source_type": "teamtailor",
@@ -1224,10 +962,7 @@
   },
   {
    "name": "DTU",
-   "lines": [
-    "ha-it",
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/da/sites/CX_1",
    "source_type": "oracle",
@@ -1237,9 +972,7 @@
   },
   {
    "name": "IT-Universitetet",
-   "lines": [
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=itu",
    "source_type": "none",
@@ -1249,11 +982,7 @@
   },
   {
    "name": "Københavns Universitet",
-   "lines": [
-    "ha-almen",
-    "ha-jura",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "mangler-adapter",
    "career_url": "https://employment.ku.dk/",
    "source_type": "none",
@@ -1263,11 +992,7 @@
   },
   {
    "name": "CBS",
-   "lines": [
-    "ha-almen",
-    "ha-jura",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.cbs.dk/om-cbs/job-paa-cbs",
    "source_type": "none",
@@ -1277,9 +1002,7 @@
   },
   {
    "name": "Danske Havne",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.danskehavne.dk/",
    "source_type": "none",
@@ -1289,10 +1012,7 @@
   },
   {
    "name": "DSB",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "tjek",
    "career_url": "https://www.dsb.dk/om-dsb/job-i-dsb/",
    "source_type": "browser",
@@ -1302,9 +1022,7 @@
   },
   {
    "name": "Movia",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.moviatrafik.dk/om-movia/job",
    "source_type": "none",
@@ -1314,10 +1032,7 @@
   },
   {
    "name": "HOFOR",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "mangler-adapter",
    "career_url": "https://www.hofor.dk/job",
    "source_type": "none",
@@ -1327,9 +1042,7 @@
   },
   {
    "name": "Svitzer",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://svitzer.wd3.myworkdayjobs.com/Svitzer_Careers",
    "source_type": "workday",
@@ -1339,9 +1052,7 @@
   },
   {
    "name": "Nordisk Film / Egmont",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "mangler-adapter",
    "career_url": "https://egmont.csod.com/ux/ats/careersite/4/home",
    "source_type": "none",
@@ -1351,10 +1062,7 @@
   },
   {
    "name": "Dansk Erhverv",
-   "lines": [
-    "ha-almen",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.danskerhverv.dk/om-dansk-erhverv/job/",
    "source_type": "none",
@@ -1364,35 +1072,27 @@
   },
   {
    "name": "Akademikernes A-kasse",
-   "lines": [
-    "ha-almen"
-   ],
-   "status": "mangler-adapter",
+   "lines": [],
+   "status": "klar",
    "career_url": "https://aka.career.emply.com/",
-   "source_type": "none",
+   "source_type": "emply",
    "ok": null,
    "listed": null,
    "matched": null
   },
   {
    "name": "Ældre Sagen",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
-   "status": "mangler-adapter",
+   "lines": [],
+   "status": "klar",
    "career_url": "https://aeldresagen.career.emply.com/",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "emply",
+   "ok": true,
+   "listed": 3,
+   "matched": 3
   },
   {
    "name": "Lederne",
-   "lines": [
-    "ha-almen",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.lederne.dk/om-lederne/job",
    "source_type": "none",
@@ -1402,10 +1102,7 @@
   },
   {
    "name": "Coop",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://om.coop.dk/job",
    "source_type": "none",
@@ -1415,9 +1112,7 @@
   },
   {
    "name": "Royal Unibrew",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "klar",
    "career_url": "https://www.royalunibrew.com/careers/",
    "source_type": "browser",
@@ -1427,10 +1122,7 @@
   },
   {
    "name": "GN Group",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "tjek",
    "career_url": "https://www.gn.com/careers",
    "source_type": "workday",
@@ -1440,10 +1132,7 @@
   },
   {
    "name": "Coloplast",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.coloplast.com/careers/",
    "source_type": "none",
@@ -1453,10 +1142,7 @@
   },
   {
    "name": "Lundbeck",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.lundbeck.com/global/careers",
    "source_type": "none",
@@ -1466,10 +1152,7 @@
   },
   {
    "name": "Demant",
-   "lines": [
-    "ha-almen",
-    "ha-it"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.demant.com/careers",
    "source_type": "none",
@@ -1479,9 +1162,7 @@
   },
   {
    "name": "FLSmidth",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.flsmidth.com/en-gb/company/careers",
    "source_type": "none",
@@ -1491,9 +1172,7 @@
   },
   {
    "name": "ISS",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "mangler-adapter",
    "career_url": "https://www.issworld.com/careers",
    "source_type": "none",
@@ -1503,9 +1182,7 @@
   },
   {
    "name": "Genmab",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.genmab.com/careers",
    "source_type": "none",
@@ -1515,10 +1192,7 @@
   },
   {
    "name": "Novo Nordisk Fonden",
-   "lines": [
-    "ha-almen",
-    "ha-jura"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://novonordiskfonden.dk/om-fonden/job/",
    "source_type": "none",
@@ -1528,9 +1202,7 @@
   },
   {
    "name": "Ambu",
-   "lines": [
-    "ha-almen"
-   ],
+   "lines": [],
    "status": "find-system",
    "career_url": "https://www.ambu.com/careers",
    "source_type": "none",
