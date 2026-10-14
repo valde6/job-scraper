@@ -8,7 +8,7 @@
    "domain": "novonordisk.com",
    "source_type": "successfactors",
    "ok": true,
-   "listed": 48,
+   "listed": 57,
    "matched": 1
   },
   {
@@ -19,7 +19,7 @@
    "domain": "maersk.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 632,
+   "listed": 635,
    "matched": 4
   },
   {
@@ -41,7 +41,7 @@
    "domain": "lego.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 107,
+   "listed": 103,
    "matched": 0
   },
   {
@@ -52,7 +52,7 @@
    "domain": "danskebank.com",
    "source_type": "oracle",
    "ok": true,
-   "listed": 135,
+   "listed": 136,
    "matched": 4
   },
   {
@@ -63,7 +63,7 @@
    "domain": "deloitte.com",
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 33,
+   "listed": 32,
    "matched": 5
   },
   {
@@ -107,7 +107,7 @@
    "domain": "nordea.com",
    "source_type": "nordea",
    "ok": true,
-   "listed": 81,
+   "listed": 94,
    "matched": 0
   },
   {
@@ -151,7 +151,7 @@
    "domain": "nykredit.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 56,
+   "listed": 59,
    "matched": 7
   },
   {
@@ -195,7 +195,7 @@
    "domain": "vestas.com",
    "source_type": "successfactors",
    "ok": true,
-   "listed": 48,
+   "listed": 49,
    "matched": 0
   },
   {
@@ -239,7 +239,7 @@
    "domain": "bang-olufsen.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 5,
+   "listed": 6,
    "matched": 0
   },
   {
@@ -294,7 +294,7 @@
    "domain": "danskindustri.dk",
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 5,
+   "listed": 6,
    "matched": 1
   },
   {
@@ -316,7 +316,7 @@
    "domain": "orsted.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 47,
+   "listed": 51,
    "matched": 0
   },
   {
@@ -360,7 +360,7 @@
    "domain": "paconsulting.com",
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 13,
+   "listed": 12,
    "matched": 0
   },
   {
@@ -470,7 +470,7 @@
    "domain": "ikea.com",
    "source_type": "generic",
    "ok": true,
-   "listed": 28,
+   "listed": 30,
    "matched": 0
   },
   {
@@ -503,7 +503,7 @@
    "domain": "dr.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 20,
+   "listed": 21,
    "matched": 10
   },
   {
@@ -536,7 +536,7 @@
    "domain": "ramboll.com",
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 93,
+   "listed": 94,
    "matched": 6
   },
   {
@@ -1064,7 +1064,7 @@
    "domain": "dtu.dk",
    "source_type": "oracle",
    "ok": true,
-   "listed": 405,
+   "listed": 418,
    "matched": 5
   },
   {
@@ -1141,7 +1141,7 @@
    "domain": "svitzer.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 38,
+   "listed": 35,
    "matched": 2
   },
   {
@@ -1405,7 +1405,7 @@
    "domain": null,
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 44,
+   "listed": 45,
    "matched": 0
   },
   {
@@ -1427,7 +1427,7 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 15,
+   "listed": 16,
    "matched": 0
   },
   {
@@ -1460,8 +1460,8 @@
    "domain": null,
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 18,
-   "matched": 3
+   "listed": 19,
+   "matched": 4
   },
   {
    "name": "Faxe Kommune",
@@ -1560,6 +1560,39 @@
    "source_type": "emply",
    "ok": true,
    "listed": 1,
+   "matched": 0
+  },
+  {
+   "name": "Jobboozt ApS",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2135&ProjectId=143996&DepartmentId=19216&MediaId=5",
+   "domain": null,
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 17,
+   "matched": 1
+  },
+  {
+   "name": "VIA University College",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://via.career.emply.com",
+   "domain": null,
+   "source_type": "emply",
+   "ok": true,
+   "listed": 17,
+   "matched": 1
+  },
+  {
+   "name": "Professionshøjskolen UCN",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://ucn.career.emply.com",
+   "domain": null,
+   "source_type": "emply",
+   "ok": true,
+   "listed": 5,
    "matched": 0
   }
  ]

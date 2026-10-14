@@ -1,7 +1,70 @@
 {
- "started": "2026-10-13T10:53:02+00:00",
- "ads_read": 0,
- "candidates": [],
- "added": [],
- "rejected": []
+ "started": "2026-10-14T06:13:38+00:00",
+ "ads_read": 25,
+ "candidates": [
+  {
+   "name": "Jobboozt ApS",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "2135",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2135&ProjectId=143996&DepartmentId=19216&MediaId=5"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2135&ProjectId=143996&DepartmentId=19216&MediaId=5",
+   "cid": "2135",
+   "listed": 17,
+   "matched": 1
+  },
+  {
+   "name": "VIA University College",
+   "type": "emply",
+   "cfg": {
+    "url": "https://via.career.emply.com"
+   },
+   "evidence": "https://via.career.emply.com/ad/udviklingsorienteret-og-relationel-uddannelsesleder-til-fremtidens-sygeplejerskeu/sag1zp/da",
+   "listed": 17,
+   "matched": 2
+  },
+  {
+   "name": "Professionshøjskolen UCN",
+   "type": "emply",
+   "cfg": {
+    "url": "https://ucn.career.emply.com"
+   },
+   "evidence": "https://ucn.career.emply.com/ad/afdelingsleder-i-ucns-forsknings-og-udviklingsafdeling/oik5sn/da",
+   "listed": 5,
+   "matched": 0
+  }
+ ],
+ "added": [
+  {
+   "name": "Jobboozt ApS",
+   "type": "hrmanager",
+   "listed": 17,
+   "matched": 1
+  },
+  {
+   "name": "VIA University College",
+   "type": "emply",
+   "listed": 17,
+   "matched": 2
+  },
+  {
+   "name": "Professionshøjskolen UCN",
+   "type": "emply",
+   "listed": 5,
+   "matched": 0
+  }
+ ],
+ "rejected": [
+  {
+   "name": "Odense Kommune",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3256",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144777&DepartmentId=18956&MediaId=4630&SkipAdvertisement=true"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144777&DepartmentId=18956&MediaId=4630&SkipAdvertisement=true",
+   "reason": "HR-Manager-alias ikke fundet"
+  }
+ ]
 }
