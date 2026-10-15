@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-14T05:28:48+00:00",
+ "generated_at": "2026-10-15T05:18:07+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
    "ok": true,
    "listed": 3,
-   "matched": 1,
+   "matched": 2,
    "error": null
   },
   {
@@ -29,8 +29,8 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 61,
-   "matched": 4,
+   "listed": 60,
+   "matched": 3,
    "error": null
   },
   {
@@ -109,7 +109,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 59,
+   "listed": 60,
    "matched": 2,
    "error": null
   },
@@ -157,7 +157,7 @@
    "name": "Saxo Bank",
    "type": "workday",
    "ok": true,
-   "listed": 23,
+   "listed": 25,
    "matched": 0,
    "error": null
   },
@@ -229,7 +229,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 47,
+   "listed": 54,
    "matched": 0,
    "error": null
   },
@@ -341,7 +341,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 30,
+   "listed": 28,
    "matched": 0,
    "error": null
   },
@@ -365,7 +365,7 @@
    "name": "Danmarks Radio",
    "type": "hrmanager",
    "ok": true,
-   "listed": 21,
+   "listed": 20,
    "matched": 1,
    "error": null
   },
@@ -389,7 +389,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 94,
+   "listed": 91,
    "matched": 0,
    "error": null
   },
@@ -397,7 +397,7 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 56,
+   "listed": 57,
    "matched": 2,
    "error": null
   },
@@ -405,8 +405,8 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 401,
-   "matched": 30,
+   "listed": 389,
+   "matched": 27,
    "error": null
   }
  ]
