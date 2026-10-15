@@ -205,6 +205,36 @@ def merge_state(found: dict[str, dict], old: dict[str, dict], ok_sources: set[st
     return out
 
 
+def employer_list(employers: list[dict], jobs: list[dict], sources: dict) -> list[dict]:
+    """Arbejdsgiverlisten til appen (/arbejdsgivere).
+
+    Fælles portaler (fx Statens Rekrutteringsløsning) giver job med den rigtige arbejdsgivers navn. Portalen selv vises
+    ikke; i stedet får hver arbejdsgiver med aktive job fra portalen sin egen række (status klar, portalens kilde), så
+    tallene i appen passer med jobbene."""
+    known = {n.lower() for e in employers for n in [e["name"], *(e.get("aliases") or [])]}
+    portals, subs = set(), {}
+    for j in jobs:
+        src = j.get("source_employer")
+        if src and src != j["company"]:
+            portals.add(src)
+            if j.get("active") and j["company"].lower() not in known:
+                subs.setdefault(j["company"], {"via": src, "domain": j.get("company_domain"), "career_url": j.get("career_url")})
+    by_name = {e["name"]: e for e in employers}
+    out = []
+    for e in employers:
+        if e["name"] in portals and (e.get("source") or {}).get("type") != "none":
+            continue
+        out.append({"name": e["name"], "lines": [], "status": e.get("status"), "career_url": e.get("career_url"),
+                    "domain": company_domain(e), "source_type": (e.get("source") or {}).get("type", "none"),
+                    **{k: sources.get(e["name"], {}).get(k) for k in ("ok", "listed", "matched")}})
+    for name, sub in sorted(subs.items()):
+        portal = by_name.get(sub["via"], {})
+        out.append({"name": name, "lines": [], "status": "klar", "career_url": sub["career_url"] or portal.get("career_url"),
+                    "domain": sub["domain"], "source_type": (portal.get("source") or {}).get("type", "none"),
+                    "via": sub["via"], "ok": True})
+    return out
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", action="append")
@@ -314,12 +344,8 @@ def main(argv=None):
     (OUT / "keywords.json").write_text(json.dumps(
         {"keywords": [{k: v for k, v in kw.items() if k != "pattern"} for kw in kws]}, ensure_ascii=False, indent=1))
     (OUT / "study_lines.json").write_text(json.dumps({"study_lines": load_study_lines()}, ensure_ascii=False, indent=1))
-    (OUT / "employers.json").write_text(json.dumps({"employers": [
-        {"name": e["name"], "lines": [], "status": e.get("status"), "career_url": e.get("career_url"),
-         "domain": company_domain(e),
-         "source_type": (e.get("source") or {}).get("type", "none"),
-         **{k: merged_sources.get(e["name"], {}).get(k) for k in ("ok", "listed", "matched")}} for e in employers]},
-        ensure_ascii=False, indent=1))
+    (OUT / "employers.json").write_text(json.dumps({"employers": employer_list(employers, ordered, merged_sources)},
+                                                   ensure_ascii=False, indent=1))
     by_type = {}
     for j in ordered:
         if j["active"]:

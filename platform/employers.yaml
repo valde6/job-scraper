@@ -595,7 +595,9 @@ employers:
   source:
     type: hrmanager
     customer: statensrekrutteringsloesning_tr
-  note: Dækker mange ministerier/styrelser. Studiejob manglede i feedet 8/10 – se backlog 4
+    multi_employer: true
+  note: Fælles portal for ca. 100 statslige arbejdsgivere (ca. 500 opslag). Firmanavnet tages fra afdelingstræet
+    (fx Banedanmark, Skatteforvaltningen, Finanstilsynet). Gav kun 25 opslag før 15/10 (HR-Manager-API'ets standard)
 - name: Københavns Kommune
   region: storkbh
   domain: kk.dk
@@ -921,15 +923,6 @@ employers:
     type: none
 
 # --- Tilføjet 15/10 (Cowork): offentlige og organisationer via HR-Manager (alias fundet i JobPortal-API'et) ---
-- name: Statens Rekrutteringsløsning
-  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr
-  status: klar
-  source:
-    type: hrmanager
-    customer: statensrekrutteringsloesning_tr
-    multi_employer: true
-  note: Fælles portal for ca. 100 statslige arbejdsgivere (ca. 500 opslag). Firmanavnet tages fra afdelingstræet
-    (fx Banedanmark, Skatteforvaltningen, Finanstilsynet, Det Danske Filminstitut). Dækker bl.a. Skatteministeriet og KFST
 - name: Region Hovedstaden
   region: storkbh
   domain: regionh.dk

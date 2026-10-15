@@ -20,3 +20,11 @@ PORTAL = "Statens Rekrutteringsløsning"
 ])
 def test_employer_from_tree(path, expected):
     assert employer_from_tree(path, PORTAL) == expected
+
+
+@pytest.mark.parametrize("path,expected", [
+    (["Statens Rekrutteringsløsning", "§13 MSSB (K-HR) Ministeriet for Samfund og Beredskab"], "Ministeriet for Samfund og Beredskab"),
+    (["Statens Rekrutteringsløsning", "§27 (F-HR) Ministeriet for Natur og Dyrevelfærd"], "Ministeriet for Natur og Dyrevelfærd"),
+])
+def test_ministry_without_dash(path, expected):
+    assert employer_from_tree(path, PORTAL) == expected

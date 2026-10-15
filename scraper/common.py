@@ -149,7 +149,8 @@ GRADUATE_RE = re.compile(r"\bgraduate|\btrainee|nyuddannet|young\s+professional"
 HARD_EXCLUDE_RE = re.compile(
     r"\bph\.?d\b|postdoc|bachelorprojekt|speciale|thesis|"
     r"student\s+(?:recruit|lead|engagement|advisor|counsel)|studievejled|\bsenior\b|"
-    r"laborant|lærling|\belev\b|kontorelev|elevplads|erhvervsuddannelse|apprentice|skolepraktik",
+    r"laborant|lærling|\belev\b|kontorelev|elevplads|erhvervsuddannelse|apprentice|skolepraktik|"
+    r"pensionerede|genansættelse",
     re.I,
 )
 # Arrangementer, der ligner job i rekrutteringssystemerne (fx "Graduate Dinner", "Student Event: …")
@@ -238,7 +239,9 @@ SJ_PLACES = [
 NON_SJ = ["aarhus", "århus", "odense", "aalborg", "esbjerg", "vejle", "kolding", "horsens", "herning", "silkeborg",
           "randers", "billund", "fredericia", "viborg", "sønderborg", "svendborg", "holstebro", "skive", "struer",
           "aabenraa", "haderslev", "thisted", "hjørring", "frederikshavn", "middelfart", "nyborg", "nordborg",
-          "skanderborg", "grenaa", "ikast", "brande", "varde", "ribe", "tønder", "jylland", "fyn", "jutland", "funen"]
+          "skanderborg", "grenaa", "ikast", "brande", "varde", "ribe", "tønder", "jylland", "fyn", "jutland", "funen",
+          "region syddanmark", "region midtjylland", "region nordjylland", "southern denmark", "central denmark",
+          "north denmark", "færøerne", "grønland", "nuuk", "tórshavn"]
 
 
 def region(loc: str | None, title: str = "") -> str | None:

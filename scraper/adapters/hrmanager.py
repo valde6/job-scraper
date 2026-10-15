@@ -61,7 +61,10 @@ def _tree(p) -> list[str]:
 
 def _ministry_name(node: str) -> str:
     """'§7 FM (F-HR) - Finansministeriet' → 'Finansministeriet'."""
-    return clean(node.split(" - ", 1)[1]) if " - " in node else clean(_PARAGRAPH_RE.sub("", node))
+    if " - " in node:
+        return clean(node.split(" - ", 1)[1])
+    # "§13 MSSB (K-HR) Ministeriet for Samfund og Beredskab" → alt til og med sidste ')' fjernes
+    return clean(re.sub(r"^§[^)]*\)+\s*", "", node)) if ")" in node else clean(_PARAGRAPH_RE.sub("", node))
 
 
 def employer_from_tree(path: list[str], fallback: str) -> str:

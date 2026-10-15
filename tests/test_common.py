@@ -91,3 +91,11 @@ def test_department_for_students_is_not_a_student_job():
     assert job_type("International Partnership Manager (barselsvikar) - Afd. for Uddannelse og Studerende",
                     "Afdelingen for Uddannelse og Studerende søger …") is None
     assert job_type("Studerende til kundeservice", "Vi søger studerende 15 timer om ugen") == "studiejob"
+
+
+def test_region_outside_zealand_regions():
+    from scraper.common import region
+    assert region("Region Syddanmark") is None
+    assert region("Region Midtjylland") is None
+    assert region("Region Hovedstaden") == "storkbh" or region("Region Hovedstaden") == "sjaelland"
+    assert region("Hele landet (inkl. Færøerne)") is None

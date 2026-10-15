@@ -191,3 +191,19 @@ def test_merge_state_shared_portal_uses_source_employer():
     assert out["a"]["active"] is False
     out = P.merge_state({}, copy.deepcopy(old), {"Andre"}, "2026-10-15T00:00:00+00:00", "2026-10-15")
     assert out["a"]["active"] is True
+
+
+def test_employer_list_expands_shared_portal():
+    employers = [{"name": "Statens Rekrutteringsløsning", "career_url": "https://x", "status": "klar",
+                  "source": {"type": "hrmanager", "customer": "statensrekrutteringsloesning_tr"}},
+                 {"name": "Finanstilsynet", "career_url": "https://www.finanstilsynet.dk/job", "status": "find-system",
+                  "source": {"type": "none"}},
+                 {"name": "KPMG", "career_url": "https://kpmg.dk", "status": "klar", "source": {"type": "hrmanager"}}]
+    jobs = [{"company": "Banedanmark", "source_employer": "Statens Rekrutteringsløsning", "active": True},
+            {"company": "Finanstilsynet", "source_employer": "Statens Rekrutteringsløsning", "active": True},
+            {"company": "Lukket Styrelse", "source_employer": "Statens Rekrutteringsløsning", "active": False},
+            {"company": "KPMG", "source_employer": "KPMG", "active": True}]
+    names = [e["name"] for e in P.employer_list(employers, jobs, {})]
+    assert "Statens Rekrutteringsløsning" not in names        # portalen selv vises ikke
+    assert "Banedanmark" in names and names.count("Finanstilsynet") == 1   # kendt navn genbruges, ingen dublet
+    assert "Lukket Styrelse" not in names and "KPMG" in names
