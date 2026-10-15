@@ -341,6 +341,108 @@
    "label": "Juridisk assistance",
    "en": "Legal assistance",
    "group": "jura"
+  },
+  {
+   "id": "statistik",
+   "label": "Statistik og kvantitativ analyse",
+   "en": "Statistics & quantitative analysis",
+   "group": "data"
+  },
+  {
+   "id": "organisationsudvikling",
+   "label": "Organisationsudvikling",
+   "en": "Organisational development",
+   "group": "organisation"
+  },
+  {
+   "id": "trivsel",
+   "label": "Arbejdsmiljø og trivsel",
+   "en": "Wellbeing & work environment",
+   "group": "organisation"
+  },
+  {
+   "id": "forandringsledelse",
+   "label": "Forandringsledelse",
+   "en": "Change management",
+   "group": "organisation"
+  },
+  {
+   "id": "brugerundersoegelse",
+   "label": "Bruger- og spørgeskemaundersøgelser",
+   "en": "User research & surveys",
+   "group": "marked"
+  },
+  {
+   "id": "pr",
+   "label": "PR og presse",
+   "en": "PR & press",
+   "group": "marked"
+  },
+  {
+   "id": "some",
+   "label": "Sociale medier (SoMe)",
+   "en": "Social media",
+   "group": "marked"
+  },
+  {
+   "id": "events",
+   "label": "Events og arrangementer",
+   "en": "Events",
+   "group": "marked"
+  },
+  {
+   "id": "etik",
+   "label": "Etik og samfundsansvar (CSR)",
+   "en": "Ethics & CSR",
+   "group": "strategi"
+  },
+  {
+   "id": "markedsanalyse",
+   "label": "Markedsanalyse",
+   "en": "Market research",
+   "group": "marked"
+  },
+  {
+   "id": "forbrugerindsigt",
+   "label": "Forbrugerindsigt",
+   "en": "Consumer insight",
+   "group": "marked"
+  },
+  {
+   "id": "public-affairs",
+   "label": "EU og public affairs",
+   "en": "EU & public affairs",
+   "group": "organisation"
+  },
+  {
+   "id": "international-handel",
+   "label": "International handel",
+   "en": "International trade",
+   "group": "drift"
+  },
+  {
+   "id": "sprog",
+   "label": "Sprog (tysk, fransk, spansk, asiatiske)",
+   "en": "Languages",
+   "group": "organisation"
+  },
+  {
+   "id": "turisme",
+   "label": "Turisme og oplevelser",
+   "en": "Tourism & hospitality",
+   "group": "marked"
+  },
+  {
+   "id": "kundeoplevelse",
+   "label": "Kundeoplevelse (CX)",
+   "en": "Customer experience",
+   "group": "marked"
+  },
+  {
+   "id": "shipping",
+   "label": "Shipping og maritim",
+   "en": "Shipping & maritime",
+   "group": "drift"
   }
  ]
 }
