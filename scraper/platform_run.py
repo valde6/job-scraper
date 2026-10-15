@@ -52,8 +52,13 @@ def load_study_lines() -> list[dict]:
 
 
 def load_employers() -> list[dict]:
-    """Håndplukkede (employers.yaml) + automatisk opdagede (discovered.yaml). Navne er unikke; håndplukkede vinder."""
+    """Håndplukkede (employers.yaml) + automatisk opdagede (discovered.yaml). Navne er unikke; håndplukkede vinder.
+    Arbejdsgivere i blocked.yaml (fx rekrutteringsbureauer) springes altid over."""
     emps = yaml.safe_load((PLAT / "employers.yaml").read_text())["employers"]
+    blocked_f = PLAT / "blocked.yaml"
+    blocked = {b["name"].lower() for b in (yaml.safe_load(blocked_f.read_text()) or {}).get("blocked") or []} \
+        if blocked_f.exists() else set()
+    emps = [e for e in emps if e["name"].lower() not in blocked]
     disc_f = PLAT / "discovered.yaml"
     if disc_f.exists():
         from .discover_jobindex import known_keys
@@ -61,7 +66,7 @@ def load_employers() -> list[dict]:
         for e in yaml.safe_load(disc_f.read_text()).get("employers") or []:
             if known_keys([e]) & known_keys(emps):
                 continue                  # samme kilde som en håndplukket arbejdsgiver
-            if e["name"].lower() not in names:
+            if e["name"].lower() not in names and e["name"].lower() not in blocked:
                 emps.append(e)
                 names.add(e["name"].lower())
     return emps
@@ -191,7 +196,8 @@ def merge_state(found: dict[str, dict], old: dict[str, dict], ok_sources: set[st
     for jid, prev in old.items():
         if jid in out:
             continue
-        if prev["company"] in ok_sources or (prev.get("deadline") and prev["deadline"] < today):
+        source = prev.get("source_employer") or prev["company"]   # fælles portaler: kilden ≠ firmanavnet
+        if source in ok_sources or (prev.get("deadline") and prev["deadline"] < today):
             prev["active"] = False
         if not prev.get("active") and prev.get("last_seen", now) < cutoff:
             continue
@@ -243,6 +249,7 @@ def main(argv=None):
                 rec = build_record(j.to_dict(), e, rx, now)
                 if not rec:
                     continue
+                rec["source_employer"] = e["name"]   # hvilken kilde jobbet kom fra (appen bruger ikke feltet)
                 key = f"{rec['company']}|{norm_title(rec['title'])}"
                 if key in by_key:
                     continue
@@ -274,12 +281,15 @@ def main(argv=None):
     if not args.only:                             # job fra arbejdsgivere, der ikke længere er med (fx dubletter)
         current = {e["name"] for e in employers}
         for j in state["jobs"].values():
-            if j["company"] not in current:
+            if (j.get("source_employer") or j["company"]) not in current:
                 j["active"] = False
     jobs = merge_state(found, state["jobs"], ok_sources, now, today)
     for j in jobs.values():                       # ældre tilstand uden url-felt (før 13/10)
         j.setdefault("url", j.get("apply_url") or j.get("career_url"))
-    domains = {e["name"]: company_domain(e) for e in employers}
+    domains = {}
+    for e in employers:                           # også aliaser, så job fra fælles portaler får logo (fx "Banedanmark")
+        for n in [e["name"], *(e.get("aliases") or [])]:
+            domains.setdefault(n, company_domain(e))
     for j in jobs.values():                       # logo-domæne (13/10) – også for ældre job i tilstanden
         j["company_domain"] = domains.get(j["company"]) or j.get("company_domain")
     ordered = sorted(jobs.values(), key=lambda j: (j["active"], j["first_seen"]), reverse=True)

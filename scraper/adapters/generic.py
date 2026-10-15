@@ -4,6 +4,8 @@ Config:
   list_urls: [https://..../ledige-stillinger]   side(r) med links til opslag
   link_pattern: "/job/|/stilling/"              regex på links til opslag
   dk_only: true                                 virksomheden har kun danske job (så springes lokationstjek over)
+  pages: {param: page, start: 0, max: 30}       (valgfri) bladr i listen med ?page=N, til en side ikke giver nye links
+  title_prefix: "^Om stillingen\\s+"            (valgfri) regex der fjernes fra link-teksten (fx CBS)
 Detaljesiden læses via schema.org JobPosting (JSON-LD) og ellers sidens hovedtekst.
 """
 import re
@@ -44,25 +46,50 @@ def detail(company, title, href, dk_only, list_loc=""):
                description_md=desc_md, source="generic", external_id=href)
 
 
+def _list_pages(cfg):
+    """Listesiderne: list_urls, og – med `pages` – hver af dem med ?page=start, start+1, …"""
+    pg = cfg.get("pages")
+    for lu in cfg["list_urls"]:
+        if not pg:
+            yield lu, None
+            continue
+        sep = "&" if "?" in lu else "?"
+        for n in range(pg.get("start", 0), pg.get("start", 0) + pg.get("max", 30)):
+            yield f"{lu}{sep}{pg.get('param', 'page')}={n}", lu
+
+
+def clean_title(raw: str, prefix: str | None = None) -> str:
+    t = clean((raw or "").replace("\u00ad", ""))       # bløde bindestreger (CBS)
+    if prefix:
+        t = clean(re.sub(prefix, "", t, flags=re.I))
+    return t[7:] if t.lower().startswith("se job ") else t
+
+
 def scrape(cfg):
     pat = re.compile(cfg.get("link_pattern", r"job|stilling|vacanc|position|career"), re.I)
     dk_only = cfg.get("dk_only", False)
     seen, listed, jobs = set(), 0, []
-    for lu in cfg["list_urls"]:
+    done = set()                                    # listesider, hvor vi har bladret til enden
+    for lu, base in _list_pages(cfg):
+        if base in done:
+            continue
         s = soup(get(lu).text)
+        new_links = 0
         for a in s.find_all("a", href=True):
             href = urldefrag(urljoin(lu, a["href"]))[0]
             if href in seen or href.rstrip("/") == lu.rstrip("/") or not pat.search(href):
                 continue
-            title = clean(a.get_text())
-            title = title[7:] if title.lower().startswith("se job ") else title
+            title = clean_title(a.get_text(), cfg.get("title_prefix"))
             if len(title) < 6:
                 continue
             seen.add(href)
             listed += 1
+            new_links += 1
             if not is_student(title):
                 continue
             j = detail(cfg["name"], title, href, dk_only)
             if j:
                 jobs.append(j)
+        if base and new_links == 0:
+            done.add(base)                          # sidste side nået (eller samme side igen)
     return listed, jobs

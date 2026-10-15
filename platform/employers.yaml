@@ -541,11 +541,14 @@ employers:
     type: none
   note: Set på Jobindex
 - name: Grant Thornton
+  region: storkbh
+  domain: grantthornton.dk
   career_url: https://www.grantthornton.dk/karriere/
-  status: find-system
+  status: klar
   source:
-    type: none
-  note: Set på Jobindex
+    type: hrmanager
+    customer: grantthornton
+  note: HR-Manager alias "grantthornton" (52 opslag 15/10)
 - name: Partner Revision
   career_url: https://www.partner-revision.dk/om-os/karriere
   status: find-system
@@ -596,11 +599,18 @@ employers:
 - name: Københavns Kommune
   region: storkbh
   domain: kk.dk
-  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=kk
-  status: mangler-adapter
+  career_url: https://www.kk.dk/ledigestillinger
+  status: klar
   source:
-    type: none
-  note: HR-Manager (JobPortal-API på siden)
+    type: generic
+    list_urls:
+    - https://www.kk.dk/ledigestillinger
+    pages: {param: page, start: 0, max: 30}
+    link_pattern: /ledigestillinger/[^?#/]+$
+    dk_only: true
+  aliases:
+  - KK
+  note: Egen liste på kk.dk (ca. 440 opslag, 24 pr. side). Alias "kk" i HR-Manager er Karlskrona Kommun, ikke KK (15/10)
 - name: Frederiksberg Kommune
   region: storkbh
   career_url: https://job.frederiksberg.dk/
@@ -627,10 +637,14 @@ employers:
   source:
     type: none
 - name: ATP
+  region: storkbh
+  domain: atp.dk
   career_url: https://www.atp.dk/job
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: hrmanager
+    customer: atp
+  note: HR-Manager alias "atp" (21 opslag 15/10)
 - name: PensionDanmark
   career_url: https://www.pensiondanmark.com/om-pensiondanmark/job/
   status: find-system
@@ -745,17 +759,34 @@ employers:
     type: none
   note: HR-Manager cid 119 – find kunde-alias
 - name: Københavns Universitet
-  career_url: https://employment.ku.dk/
-  status: mangler-adapter
+  region: storkbh
+  domain: ku.dk
+  career_url: https://employment.ku.dk/all-vacancies/
+  status: klar
   source:
-    type: none
-  note: Statens Rekrutteringsløsning (departmentid 19064)
+    type: generic
+    list_urls:
+    - https://employment.ku.dk/all-vacancies/
+    link_pattern: all-vacancies/?\?show=\d+
+    dk_only: true
+  aliases:
+  - KU
+  note: Tabel på employment.ku.dk (15/10). KU er ikke med i Statens Rekrutteringsløsnings fælles liste
 - name: CBS
-  career_url: https://www.cbs.dk/om-cbs/job-paa-cbs
-  status: find-system
+  region: storkbh
+  domain: cbs.dk
+  career_url: https://www.cbs.dk/om-cbs/job-og-karriere/ledige-stillinger
+  status: klar
   source:
-    type: none
-  note: Mange studiejob for egne studerende
+    type: generic
+    list_urls:
+    - https://www.cbs.dk/om-cbs/job-og-karriere/ledige-stillinger
+    link_pattern: /ledige-stillinger/[a-z0-9-]+$
+    title_prefix: ^Om stillingen\s+
+    dk_only: true
+  aliases:
+  - Copenhagen Business School
+  note: Egen liste på cbs.dk (15/10). Ansøgning i Statens Rekrutteringsløsning, men CBS er ikke med i den fælles liste
 - name: Danske Havne
   career_url: https://www.danskehavne.dk/
   status: find-system
@@ -794,10 +825,14 @@ employers:
     type: none
   note: Cornerstone
 - name: Dansk Erhverv
+  region: storkbh
+  domain: danskerhverv.dk
   career_url: https://www.danskerhverv.dk/om-dansk-erhverv/job/
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: hrmanager
+    customer: danskerhverv
+  note: HR-Manager alias "danskerhverv" (15 opslag 15/10)
 - name: Akademikernes A-kasse
   region: storkbh
   career_url: https://aka.career.emply.com/
@@ -884,3 +919,99 @@ employers:
   status: find-system
   source:
     type: none
+
+# --- Tilføjet 15/10 (Cowork): offentlige og organisationer via HR-Manager (alias fundet i JobPortal-API'et) ---
+- name: Statens Rekrutteringsløsning
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr
+  status: klar
+  source:
+    type: hrmanager
+    customer: statensrekrutteringsloesning_tr
+    multi_employer: true
+  note: Fælles portal for ca. 100 statslige arbejdsgivere (ca. 500 opslag). Firmanavnet tages fra afdelingstræet
+    (fx Banedanmark, Skatteforvaltningen, Finanstilsynet, Det Danske Filminstitut). Dækker bl.a. Skatteministeriet og KFST
+- name: Region Hovedstaden
+  region: storkbh
+  domain: regionh.dk
+  career_url: https://www.regionh.dk/job
+  status: klar
+  source:
+    type: hrmanager
+    customer: regionh
+    exclude_title: medicinstud|lægestud|sygeplejestud|jordemoderstud|farmaceutstud|tandlægestud|radiograf|bioanalytiker|fysioterapeut|ergoterapeut|sosu|social- og sundhed|portør|nattevagt|vagter?\b|plejer|sygehjælper|lægevikar
+  note: HR-Manager alias "regionh" (ca. 480 opslag 15/10). Sundhedsfaglige studenterstillinger frasorteres
+- name: Hvidovre Kommune
+  region: storkbh
+  domain: hvidovre.dk
+  career_url: https://www.hvidovre.dk/job
+  status: klar
+  source:
+    type: hrmanager
+    customer: hvidovre
+- name: Vallensbæk Kommune
+  region: storkbh
+  domain: vallensbaek.dk
+  career_url: https://www.vallensbaek.dk/job
+  status: klar
+  source:
+    type: hrmanager
+    customer: vallensbaek
+- name: Red Barnet
+  region: storkbh
+  domain: redbarnet.dk
+  career_url: https://redbarnet.dk/om-red-barnet/job
+  status: klar
+  source:
+    type: hrmanager
+    customer: redbarnet
+- name: Kræftens Bekæmpelse
+  region: storkbh
+  domain: cancer.dk
+  career_url: https://www.cancer.dk/om-os/job
+  status: klar
+  source:
+    type: hrmanager
+    customer: cancer
+- name: KL
+  region: storkbh
+  domain: kl.dk
+  career_url: https://www.kl.dk/om-kl/job-i-kl
+  status: klar
+  source:
+    type: hrmanager
+    customer: kl
+  aliases:
+  - Kommunernes Landsforening
+- name: SOS International
+  region: storkbh
+  domain: sos.dk
+  career_url: https://www.sos.dk/job
+  status: klar
+  source:
+    type: hrmanager
+    customer: sos
+  aliases:
+  - SOS International A/S
+- name: Andel
+  domain: andel.dk
+  career_url: https://andel.dk/job
+  status: klar
+  source:
+    type: hrmanager
+    customer: andel
+- name: TORM
+  region: storkbh
+  domain: torm.com
+  career_url: https://www.torm.com/careers
+  status: klar
+  source:
+    type: hrmanager
+    customer: torm
+- name: Tivoli
+  region: storkbh
+  domain: tivoli.dk
+  career_url: https://www.tivoli.dk/job
+  status: klar
+  source:
+    type: hrmanager
+    customer: tivoli

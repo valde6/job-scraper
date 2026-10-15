@@ -1,0 +1,7 @@
+# Arbejdsgivere, der aldrig skal med i Studieradar (heller ikke når discovery finder dem igen).
+# Typisk rekrutteringsbureauer, der slår andres stillinger op, eller arbejdsgivere, der har bedt om at blive fjernet.
+blocked:
+  - name: Jobboozt ApS
+    reason: rekrutteringsbureau (opslag for andre virksomheder)
+  - name: Landau Headhunting
+    reason: rekrutteringsbureau

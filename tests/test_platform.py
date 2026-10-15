@@ -179,3 +179,15 @@ def test_employer_region_fills_unknown_location():
            "description_md": "Student assistant 15-20 hours a week", "fit": "sikker"}
     assert build_record(job, {"region": "storkbh"}, rx, "2026-10-13")["region"] == "storkbh"
     assert build_record(job, {}, rx, "2026-10-13")["region"] == "ukendt"
+
+
+def test_merge_state_shared_portal_uses_source_employer():
+    """Job fra en fælles portal har firmanavnet fra opslaget (fx Banedanmark), men kilden er portalen.
+    Forsvinder jobbet, og portalen virkede, skal det lukkes, selvom firmanavnet ikke er en kilde."""
+    old = {"a": {"id": "a", "company": "Banedanmark", "source_employer": "Statens Rekrutteringsløsning",
+                 "first_seen": "2026-10-01T00:00:00+00:00", "last_seen": "2026-10-14T00:00:00+00:00", "active": True}}
+    import copy
+    out = P.merge_state({}, copy.deepcopy(old), {"Statens Rekrutteringsløsning"}, "2026-10-15T00:00:00+00:00", "2026-10-15")
+    assert out["a"]["active"] is False
+    out = P.merge_state({}, copy.deepcopy(old), {"Andre"}, "2026-10-15T00:00:00+00:00", "2026-10-15")
+    assert out["a"]["active"] is True
