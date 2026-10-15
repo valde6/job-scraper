@@ -82,6 +82,196 @@
     "salg",
     "kundeservice"
    ]
+  },
+  {
+   "id": "ha-mat",
+   "name": "HA (mat.)",
+   "school": "CBS",
+   "description": "Erhvervsøkonomi og matematik",
+   "suggested": [
+    "statistik",
+    "data-analyse",
+    "python",
+    "sql",
+    "excel",
+    "finans",
+    "risiko",
+    "investering",
+    "controlling",
+    "bi",
+    "power-bi",
+    "consulting",
+    "forretningsudvikling",
+    "ai",
+    "bank"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice",
+    "it-support"
+   ]
+  },
+  {
+   "id": "ha-psyk",
+   "name": "HA (psyk.)",
+   "school": "CBS",
+   "description": "Erhvervsøkonomi og psykologi",
+   "suggested": [
+    "hr",
+    "organisationsudvikling",
+    "trivsel",
+    "forandringsledelse",
+    "brugerundersoegelse",
+    "kommunikation",
+    "projektledelse",
+    "ux",
+    "consulting",
+    "strategi",
+    "data-analyse",
+    "administration",
+    "offentlig",
+    "kundeoplevelse",
+    "proces"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "ha-kom",
+   "name": "HA (kom.)",
+   "school": "CBS",
+   "description": "Erhvervsøkonomi og virksomhedskommunikation",
+   "suggested": [
+    "kommunikation",
+    "marketing",
+    "pr",
+    "some",
+    "events",
+    "strategi",
+    "hr",
+    "brugerundersoegelse",
+    "forbrugerindsigt",
+    "e-handel",
+    "ux",
+    "projektledelse",
+    "offentlig",
+    "baeredygtighed",
+    "forretningsudvikling"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "ha-fil",
+   "name": "HA (fil.)",
+   "school": "CBS",
+   "description": "Erhvervsøkonomi og filosofi",
+   "suggested": [
+    "etik",
+    "baeredygtighed",
+    "strategi",
+    "compliance",
+    "consulting",
+    "offentlig",
+    "public-affairs",
+    "kommunikation",
+    "organisationsudvikling",
+    "data-analyse",
+    "forretningsudvikling",
+    "projektledelse",
+    "hr",
+    "risiko",
+    "finans"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "ha-mak",
+   "name": "HA MAK",
+   "school": "CBS",
+   "description": "Erhvervsøkonomi og markeds- og kulturanalyse",
+   "suggested": [
+    "markedsanalyse",
+    "forbrugerindsigt",
+    "marketing",
+    "kommunikation",
+    "some",
+    "e-handel",
+    "ux",
+    "brugerundersoegelse",
+    "data-analyse",
+    "kundeoplevelse",
+    "forretningsudvikling",
+    "strategi",
+    "events",
+    "excel",
+    "power-bi"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "ha-pro",
+   "name": "HA Pro",
+   "school": "CBS",
+   "description": "Erhvervsøkonomi og projektledelse",
+   "suggested": [
+    "projektledelse",
+    "proces",
+    "agil",
+    "it-projekt",
+    "forandringsledelse",
+    "strategi",
+    "consulting",
+    "administration",
+    "forretningsudvikling",
+    "controlling",
+    "supply-chain",
+    "indkoeb",
+    "digitalisering",
+    "baeredygtighed",
+    "offentlig"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "ha-eb",
+   "name": "HA EB",
+   "school": "CBS",
+   "description": "Erhvervsøkonomi og europæisk business",
+   "suggested": [
+    "public-affairs",
+    "international-handel",
+    "offentlig",
+    "strategi",
+    "sprog",
+    "kommunikation",
+    "consulting",
+    "compliance",
+    "baeredygtighed",
+    "finans",
+    "forretningsudvikling",
+    "supply-chain",
+    "marketing",
+    "projektledelse",
+    "data-analyse"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
   }
  ]
 }

@@ -8,8 +8,8 @@
    "domain": "novonordisk.com",
    "source_type": "successfactors",
    "ok": true,
-   "listed": 53,
-   "matched": 2
+   "listed": 54,
+   "matched": 3
   },
   {
    "name": "A.P. Møller - Mærsk",
@@ -52,7 +52,7 @@
    "domain": "danskebank.com",
    "source_type": "oracle",
    "ok": true,
-   "listed": 131,
+   "listed": 133,
    "matched": 4
   },
   {
@@ -107,7 +107,7 @@
    "domain": "nordea.com",
    "source_type": "nordea",
    "ok": true,
-   "listed": 99,
+   "listed": 100,
    "matched": 0
   },
   {
@@ -151,8 +151,8 @@
    "domain": "nykredit.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 60,
-   "matched": 7
+   "listed": 64,
+   "matched": 8
   },
   {
    "name": "Bestseller",
@@ -195,7 +195,7 @@
    "domain": "vestas.com",
    "source_type": "successfactors",
    "ok": true,
-   "listed": 53,
+   "listed": 54,
    "matched": 0
   },
   {
@@ -217,7 +217,7 @@
    "domain": "home.saxo",
    "source_type": "workday",
    "ok": true,
-   "listed": 50,
+   "listed": 49,
    "matched": 0
   },
   {
@@ -239,7 +239,7 @@
    "domain": "bang-olufsen.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 6,
+   "listed": 8,
    "matched": 0
   },
   {
@@ -338,8 +338,8 @@
    "domain": "matas.dk",
    "source_type": "emply",
    "ok": true,
-   "listed": 6,
-   "matched": 0
+   "listed": 17,
+   "matched": 2
   },
   {
    "name": "Salling Group",
@@ -393,7 +393,7 @@
    "domain": "netcompany.com",
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 32,
+   "listed": 30,
    "matched": 5
   },
   {
@@ -470,7 +470,7 @@
    "domain": "ikea.com",
    "source_type": "generic",
    "ok": true,
-   "listed": 28,
+   "listed": 15,
    "matched": 0
   },
   {
@@ -525,8 +525,8 @@
    "domain": "bdo.dk",
    "source_type": "emply",
    "ok": true,
-   "listed": 6,
-   "matched": 0
+   "listed": 24,
+   "matched": 3
   },
   {
    "name": "Rambøll",
@@ -547,7 +547,7 @@
    "domain": "novonesis.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 77,
+   "listed": 78,
    "matched": 3
   },
   {
@@ -718,13 +718,13 @@
   {
    "name": "Grant Thornton",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.grantthornton.dk/karriere/",
    "domain": "grantthornton.dk",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 52,
+   "matched": 2
   },
   {
    "name": "Partner Revision",
@@ -811,19 +811,19 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 25,
-   "matched": 0
+   "listed": 511,
+   "matched": 58
   },
   {
    "name": "Københavns Kommune",
    "lines": [],
-   "status": "mangler-adapter",
-   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=kk",
+   "status": "klar",
+   "career_url": "https://www.kk.dk/ledigestillinger",
    "domain": "kk.dk",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "generic",
+   "ok": true,
+   "listed": 347,
+   "matched": 9
   },
   {
    "name": "Frederiksberg Kommune",
@@ -833,8 +833,8 @@
    "domain": "frederiksberg.dk",
    "source_type": "emply",
    "ok": true,
-   "listed": 30,
-   "matched": 1
+   "listed": 70,
+   "matched": 4
   },
   {
    "name": "Tryg",
@@ -872,13 +872,13 @@
   {
    "name": "ATP",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.atp.dk/job",
    "domain": "atp.dk",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 21,
+   "matched": 2
   },
   {
    "name": "PensionDanmark",
@@ -976,7 +976,7 @@
    "domain": "egsoftware.com",
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 36,
+   "listed": 38,
    "matched": 1
   },
   {
@@ -1064,7 +1064,7 @@
    "domain": "dtu.dk",
    "source_type": "oracle",
    "ok": true,
-   "listed": 416,
+   "listed": 419,
    "matched": 5
   },
   {
@@ -1081,24 +1081,24 @@
   {
    "name": "Københavns Universitet",
    "lines": [],
-   "status": "mangler-adapter",
-   "career_url": "https://employment.ku.dk/",
+   "status": "klar",
+   "career_url": "https://employment.ku.dk/all-vacancies/",
    "domain": "ku.dk",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "generic",
+   "ok": true,
+   "listed": 94,
+   "matched": 9
   },
   {
    "name": "CBS",
    "lines": [],
-   "status": "find-system",
-   "career_url": "https://www.cbs.dk/om-cbs/job-paa-cbs",
+   "status": "klar",
+   "career_url": "https://www.cbs.dk/om-cbs/job-og-karriere/ledige-stillinger",
    "domain": "cbs.dk",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "generic",
+   "ok": true,
+   "listed": 36,
+   "matched": 1
   },
   {
    "name": "Danske Havne",
@@ -1158,13 +1158,13 @@
   {
    "name": "Dansk Erhverv",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.danskerhverv.dk/om-dansk-erhverv/job/",
    "domain": "danskerhverv.dk",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 15,
+   "matched": 4
   },
   {
    "name": "Akademikernes A-kasse",
@@ -1175,7 +1175,7 @@
    "source_type": "emply",
    "ok": true,
    "listed": 3,
-   "matched": 1
+   "matched": 3
   },
   {
    "name": "Ældre Sagen",
@@ -1321,6 +1321,127 @@
    "matched": null
   },
   {
+   "name": "Statens Rekrutteringsløsning",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 511,
+   "matched": 0
+  },
+  {
+   "name": "Region Hovedstaden",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://www.regionh.dk/job",
+   "domain": "regionh.dk",
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 481,
+   "matched": 8
+  },
+  {
+   "name": "Hvidovre Kommune",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://www.hvidovre.dk/job",
+   "domain": "hvidovre.dk",
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 50,
+   "matched": 0
+  },
+  {
+   "name": "Vallensbæk Kommune",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://www.vallensbaek.dk/job",
+   "domain": "vallensbaek.dk",
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 13,
+   "matched": 0
+  },
+  {
+   "name": "Red Barnet",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://redbarnet.dk/om-red-barnet/job",
+   "domain": "redbarnet.dk",
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 7,
+   "matched": 4
+  },
+  {
+   "name": "Kræftens Bekæmpelse",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://www.cancer.dk/om-os/job",
+   "domain": "cancer.dk",
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 5,
+   "matched": 2
+  },
+  {
+   "name": "KL",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://www.kl.dk/om-kl/job-i-kl",
+   "domain": "kl.dk",
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 7,
+   "matched": 3
+  },
+  {
+   "name": "SOS International",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://www.sos.dk/job",
+   "domain": "sos.dk",
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 14,
+   "matched": 4
+  },
+  {
+   "name": "Andel",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://andel.dk/job",
+   "domain": "andel.dk",
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 14,
+   "matched": 0
+  },
+  {
+   "name": "TORM",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://www.torm.com/careers",
+   "domain": "torm.com",
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 3,
+   "matched": 0
+  },
+  {
+   "name": "Tivoli",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://www.tivoli.dk/job",
+   "domain": "tivoli.dk",
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 4,
+   "matched": 1
+  },
+  {
    "name": "DM",
    "lines": [],
    "status": "opdaget",
@@ -1329,7 +1450,7 @@
    "source_type": "emply",
    "ok": true,
    "listed": 4,
-   "matched": 2
+   "matched": 3
   },
   {
    "name": "Energinet",
@@ -1339,19 +1460,8 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 25,
+   "listed": 40,
    "matched": 0
-  },
-  {
-   "name": "Landau Headhunting",
-   "lines": [],
-   "status": "opdaget",
-   "career_url": "https://landauheadhunting.teamtailor.com",
-   "domain": null,
-   "source_type": "teamtailor",
-   "ok": true,
-   "listed": 15,
-   "matched": 1
   },
   {
    "name": "Whiteaway Group",
@@ -1427,7 +1537,7 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 17,
+   "listed": 18,
    "matched": 0
   },
   {
@@ -1438,7 +1548,7 @@
    "domain": "nordkysten.dk",
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 13,
+   "listed": 12,
    "matched": 2
   },
   {
@@ -1460,7 +1570,7 @@
    "domain": null,
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 19,
+   "listed": 21,
    "matched": 4
   },
   {
@@ -1471,7 +1581,7 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 25,
+   "listed": 45,
    "matched": 0
   },
   {
@@ -1537,7 +1647,7 @@
    "domain": null,
    "source_type": "emply",
    "ok": true,
-   "listed": 6,
+   "listed": 8,
    "matched": 1
   },
   {
@@ -1563,17 +1673,6 @@
    "matched": 0
   },
   {
-   "name": "Jobboozt ApS",
-   "lines": [],
-   "status": "opdaget",
-   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2135&ProjectId=143996&DepartmentId=19216&MediaId=5",
-   "domain": null,
-   "source_type": "hrmanager",
-   "ok": true,
-   "listed": 17,
-   "matched": 1
-  },
-  {
    "name": "VIA University College",
    "lines": [],
    "status": "opdaget",
@@ -1581,8 +1680,8 @@
    "domain": null,
    "source_type": "emply",
    "ok": true,
-   "listed": 17,
-   "matched": 1
+   "listed": 19,
+   "matched": 0
   },
   {
    "name": "Professionshøjskolen UCN",
@@ -1603,8 +1702,8 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 25,
-   "matched": 2
+   "listed": 87,
+   "matched": 5
   },
   {
    "name": "Nine United A/S",
@@ -1615,7 +1714,7 @@
    "source_type": "hrmanager",
    "ok": true,
    "listed": 7,
-   "matched": 2
+   "matched": 1
   },
   {
    "name": "Folkekirkens Nødhjælp",
@@ -1647,7 +1746,7 @@
    "domain": "nordiccomputer.com",
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 2,
+   "listed": 3,
    "matched": 0
   },
   {
@@ -1658,8 +1757,41 @@
    "domain": "normal.dk",
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 13,
+   "listed": 12,
    "matched": 0
+  },
+  {
+   "name": "NetNordic Denmark A/S",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://netnordicdenmark.teamtailor.com",
+   "domain": null,
+   "source_type": "teamtailor",
+   "ok": true,
+   "listed": 2,
+   "matched": 1
+  },
+  {
+   "name": "LGC Biosearch Technologies A/S",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://jobs.smartrecruiters.com/LGCGroup/744000155686603-oligonucleotide-development-scientist-specialist?trid=f08184f8-6b3c-479d-9d54-ea2d3674ed91",
+   "domain": null,
+   "source_type": "smartrecruiters",
+   "ok": true,
+   "listed": 2,
+   "matched": 0
+  },
+  {
+   "name": "Solrød Kommune",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://solrod.career.emply.com",
+   "domain": null,
+   "source_type": "emply",
+   "ok": true,
+   "listed": 25,
+   "matched": 1
   }
  ]
 }

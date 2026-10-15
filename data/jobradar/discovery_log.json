@@ -1,167 +1,68 @@
 {
- "started": "2026-10-15T05:57:12+00:00",
- "ads_read": 41,
+ "started": "2026-10-15T15:37:58+00:00",
+ "ads_read": 22,
  "candidates": [
   {
-   "name": "Udviklings- og Forenklingsstyrelsen",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "3010",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130",
-   "cid": "3010",
-   "listed": 25,
-   "matched": 2
-  },
-  {
-   "name": "Nine United A/S",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "2182",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2182&ProjectId=144017&DepartmentId=18969&MediaId=4624"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2182&ProjectId=144017&DepartmentId=18969&MediaId=4624",
-   "cid": "2182",
-   "listed": 7,
-   "matched": 2
-  },
-  {
-   "name": "Folkekirkens Nødhjælp",
-   "type": "emply",
-   "cfg": {
-    "url": "https://dca.career.emply.com"
-   },
-   "evidence": "https://dca.career.emply.com/ad/hr-studentermedhjaelper-soges-til-folkekirkens-nodhjaelp/2in0gm/da",
-   "listed": 4,
-   "matched": 4
-  },
-  {
-   "name": "KAB",
-   "type": "emply",
-   "cfg": {
-    "url": "https://kab.career.emply.com"
-   },
-   "evidence": "https://kab.career.emply.com/ad/studentermedhjaelper-til-okonomi-og-administration/ft4d9y/da",
-   "listed": 0,
-   "matched": 0
-  },
-  {
-   "name": "Orkla Danmark",
-   "type": "smartrecruiters",
-   "cfg": {
-    "company_id": "Orkla"
-   },
-   "evidence": "https://jobs.smartrecruiters.com/Orkla/744000155268808-studentermedhj-lper-marketing",
-   "listed": 7,
-   "matched": 1
-  },
-  {
-   "name": "Københavns Professionshøjskole",
-   "type": "emply",
-   "cfg": {
-    "url": "https://kp.career.emply.com"
-   },
-   "evidence": "https://kp.career.emply.com/ad/kommunikationsmedarbejder-kan-du-fa-skolefaglighed-til-at-leve-pa-sociale-medie/hi260v/da",
-   "listed": 0,
-   "matched": 0
-  },
-  {
-   "name": "Nordic Computer A/S",
+   "name": "NetNordic Denmark A/S",
    "type": "teamtailor",
    "cfg": {
-    "url": "https://career.nordiccomputer.com"
+    "url": "https://netnordicdenmark.teamtailor.com"
    },
-   "evidence": "https://career.nordiccomputer.com/da/jobs/8227944-graduate-i-sourcing-solutions?promotion=2149198-jobindex",
+   "evidence": "https://netnordicdenmark.teamtailor.com/jobs/8546383-student-assistant-til-sales-support",
    "listed": 2,
    "matched": 1
   },
   {
-   "name": "Normal A/S",
-   "type": "teamtailor",
+   "name": "LGC Biosearch Technologies A/S",
+   "type": "smartrecruiters",
    "cfg": {
-    "url": "https://jobs.hq.normal.dk"
+    "company_id": "LGCGroup"
    },
-   "evidence": "https://jobs.hq.normal.dk/jobs/8545056-grafisk-designer-emballage-og-produkt-design?promotion=2245983-jobindex",
-   "listed": 13,
+   "evidence": "https://jobs.smartrecruiters.com/LGCGroup/744000155686603-oligonucleotide-development-scientist-specialist?trid=f08184f8-6b3c-479d-9d54-ea2d3674ed91",
+   "listed": 2,
    "matched": 0
   },
   {
-   "name": "European LifeCare Group A/S",
-   "type": "teamtailor",
+   "name": "Solrød Kommune",
+   "type": "emply",
    "cfg": {
-    "url": "https://app.teamtailor.com"
+    "url": "https://solrod.career.emply.com"
    },
-   "evidence": "https://app.teamtailor.com/companies/49erv9uAeEU@eu/dashboard",
-   "listed": 0,
-   "matched": 0
+   "evidence": "https://solrod.career.emply.com/ad/nattevagt-til-rehabiliteringsafdeling/h9a86x/da",
+   "listed": 25,
+   "matched": 1
   }
  ],
  "added": [
   {
-   "name": "Udviklings- og Forenklingsstyrelsen",
-   "type": "hrmanager",
-   "listed": 25,
-   "matched": 2
-  },
-  {
-   "name": "Nine United A/S",
-   "type": "hrmanager",
-   "listed": 7,
-   "matched": 2
-  },
-  {
-   "name": "Folkekirkens Nødhjælp",
-   "type": "emply",
-   "listed": 4,
-   "matched": 4
-  },
-  {
-   "name": "Orkla Danmark",
-   "type": "smartrecruiters",
-   "listed": 7,
-   "matched": 1
-  },
-  {
-   "name": "Nordic Computer A/S",
+   "name": "NetNordic Denmark A/S",
    "type": "teamtailor",
    "listed": 2,
    "matched": 1
   },
   {
-   "name": "Normal A/S",
-   "type": "teamtailor",
-   "listed": 13,
+   "name": "LGC Biosearch Technologies A/S",
+   "type": "smartrecruiters",
+   "listed": 2,
    "matched": 0
+  },
+  {
+   "name": "Solrød Kommune",
+   "type": "emply",
+   "listed": 25,
+   "matched": 1
   }
  ],
  "rejected": [
   {
-   "name": "KAB",
-   "type": "emply",
+   "name": "Polytech A/S",
+   "type": "hrmanager",
    "cfg": {
-    "url": "https://kab.career.emply.com"
+    "cid": "1906",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1906&ProjectId=143982&DepartmentId=18956&MediaId=4630"
    },
-   "evidence": "https://kab.career.emply.com/ad/studentermedhjaelper-til-okonomi-og-administration/ft4d9y/da",
-   "reason": "0 opslag"
-  },
-  {
-   "name": "Københavns Professionshøjskole",
-   "type": "emply",
-   "cfg": {
-    "url": "https://kp.career.emply.com"
-   },
-   "evidence": "https://kp.career.emply.com/ad/kommunikationsmedarbejder-kan-du-fa-skolefaglighed-til-at-leve-pa-sociale-medie/hi260v/da",
-   "reason": "0 opslag"
-  },
-  {
-   "name": "European LifeCare Group A/S",
-   "type": "teamtailor",
-   "cfg": {
-    "url": "https://app.teamtailor.com"
-   },
-   "evidence": "https://app.teamtailor.com/companies/49erv9uAeEU@eu/dashboard",
-   "reason": "0 opslag"
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1906&ProjectId=143982&DepartmentId=18956&MediaId=4630",
+   "reason": "HR-Manager-alias ikke fundet"
   }
  ]
 }

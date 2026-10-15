@@ -333,3 +333,33 @@ employers:
     at: '2026-10-15'
     via: jobindex-link
     evidence: https://jobs.hq.normal.dk/jobs/8545056-grafisk-designer-emballage-og-produkt-design?promotion=2245983-jobindex
+- name: NetNordic Denmark A/S
+  career_url: https://netnordicdenmark.teamtailor.com
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://netnordicdenmark.teamtailor.com
+  discovered:
+    at: '2026-10-15'
+    via: jobindex-link
+    evidence: https://netnordicdenmark.teamtailor.com/jobs/8546383-student-assistant-til-sales-support
+- name: LGC Biosearch Technologies A/S
+  career_url: https://jobs.smartrecruiters.com/LGCGroup/744000155686603-oligonucleotide-development-scientist-specialist?trid=f08184f8-6b3c-479d-9d54-ea2d3674ed91
+  status: opdaget
+  source:
+    type: smartrecruiters
+    company_id: LGCGroup
+  discovered:
+    at: '2026-10-15'
+    via: jobindex-link
+    evidence: https://jobs.smartrecruiters.com/LGCGroup/744000155686603-oligonucleotide-development-scientist-specialist?trid=f08184f8-6b3c-479d-9d54-ea2d3674ed91
+- name: Solrød Kommune
+  career_url: https://solrod.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://solrod.career.emply.com
+  discovered:
+    at: '2026-10-15'
+    via: jobindex-link
+    evidence: https://solrod.career.emply.com/ad/nattevagt-til-rehabiliteringsafdeling/h9a86x/da
