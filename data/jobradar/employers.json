@@ -8,8 +8,8 @@
    "domain": "novonordisk.com",
    "source_type": "successfactors",
    "ok": true,
-   "listed": 57,
-   "matched": 1
+   "listed": 53,
+   "matched": 2
   },
   {
    "name": "A.P. Møller - Mærsk",
@@ -19,7 +19,7 @@
    "domain": "maersk.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 635,
+   "listed": 634,
    "matched": 4
   },
   {
@@ -41,7 +41,7 @@
    "domain": "lego.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 103,
+   "listed": 107,
    "matched": 0
   },
   {
@@ -52,7 +52,7 @@
    "domain": "danskebank.com",
    "source_type": "oracle",
    "ok": true,
-   "listed": 136,
+   "listed": 131,
    "matched": 4
   },
   {
@@ -107,7 +107,7 @@
    "domain": "nordea.com",
    "source_type": "nordea",
    "ok": true,
-   "listed": 94,
+   "listed": 99,
    "matched": 0
   },
   {
@@ -151,7 +151,7 @@
    "domain": "nykredit.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 59,
+   "listed": 60,
    "matched": 7
   },
   {
@@ -195,7 +195,7 @@
    "domain": "vestas.com",
    "source_type": "successfactors",
    "ok": true,
-   "listed": 49,
+   "listed": 53,
    "matched": 0
   },
   {
@@ -217,7 +217,7 @@
    "domain": "home.saxo",
    "source_type": "workday",
    "ok": true,
-   "listed": 49,
+   "listed": 50,
    "matched": 0
   },
   {
@@ -316,7 +316,7 @@
    "domain": "orsted.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 51,
+   "listed": 54,
    "matched": 0
   },
   {
@@ -470,7 +470,7 @@
    "domain": "ikea.com",
    "source_type": "generic",
    "ok": true,
-   "listed": 30,
+   "listed": 28,
    "matched": 0
   },
   {
@@ -503,7 +503,7 @@
    "domain": "dr.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 21,
+   "listed": 20,
    "matched": 10
   },
   {
@@ -536,7 +536,7 @@
    "domain": "ramboll.com",
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 94,
+   "listed": 91,
    "matched": 6
   },
   {
@@ -547,8 +547,8 @@
    "domain": "novonesis.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 74,
-   "matched": 2
+   "listed": 77,
+   "matched": 3
   },
   {
    "name": "Kromann Reumert",
@@ -602,8 +602,8 @@
    "domain": "accura.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 8,
-   "matched": 3
+   "listed": 7,
+   "matched": 2
   },
   {
    "name": "Poul Schmith / Kammeradvokaten",
@@ -1064,7 +1064,7 @@
    "domain": "dtu.dk",
    "source_type": "oracle",
    "ok": true,
-   "listed": 418,
+   "listed": 416,
    "matched": 5
   },
   {
@@ -1141,7 +1141,7 @@
    "domain": "svitzer.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 35,
+   "listed": 36,
    "matched": 2
   },
   {
@@ -1185,7 +1185,7 @@
    "domain": "aeldresagen.dk",
    "source_type": "emply",
    "ok": true,
-   "listed": 3,
+   "listed": 4,
    "matched": 3
   },
   {
@@ -1350,7 +1350,7 @@
    "domain": null,
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 17,
+   "listed": 15,
    "matched": 1
   },
   {
@@ -1372,7 +1372,7 @@
    "domain": null,
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 1,
+   "listed": 2,
    "matched": 0
   },
   {
@@ -1427,7 +1427,7 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 16,
+   "listed": 17,
    "matched": 0
   },
   {
@@ -1515,7 +1515,7 @@
    "domain": null,
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 12,
+   "listed": 14,
    "matched": 0
   },
   {
@@ -1538,7 +1538,7 @@
    "source_type": "emply",
    "ok": true,
    "listed": 6,
-   "matched": 0
+   "matched": 1
   },
   {
    "name": "Assens Kommune",
@@ -1593,6 +1593,72 @@
    "source_type": "emply",
    "ok": true,
    "listed": 5,
+   "matched": 0
+  },
+  {
+   "name": "Udviklings- og Forenklingsstyrelsen",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130",
+   "domain": null,
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 25,
+   "matched": 2
+  },
+  {
+   "name": "Nine United A/S",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2182&ProjectId=144017&DepartmentId=18969&MediaId=4624",
+   "domain": null,
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 7,
+   "matched": 2
+  },
+  {
+   "name": "Folkekirkens Nødhjælp",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://dca.career.emply.com",
+   "domain": null,
+   "source_type": "emply",
+   "ok": true,
+   "listed": 4,
+   "matched": 4
+  },
+  {
+   "name": "Orkla Danmark",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://jobs.smartrecruiters.com/Orkla/744000155268808-studentermedhj-lper-marketing",
+   "domain": null,
+   "source_type": "smartrecruiters",
+   "ok": true,
+   "listed": 7,
+   "matched": 1
+  },
+  {
+   "name": "Nordic Computer A/S",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://career.nordiccomputer.com",
+   "domain": "nordiccomputer.com",
+   "source_type": "teamtailor",
+   "ok": true,
+   "listed": 2,
+   "matched": 0
+  },
+  {
+   "name": "Normal A/S",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://jobs.hq.normal.dk",
+   "domain": "normal.dk",
+   "source_type": "teamtailor",
+   "ok": true,
+   "listed": 13,
    "matched": 0
   }
  ]

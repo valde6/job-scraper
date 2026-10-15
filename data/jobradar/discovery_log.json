@@ -1,70 +1,167 @@
 {
- "started": "2026-10-14T06:13:38+00:00",
- "ads_read": 25,
+ "started": "2026-10-15T05:57:12+00:00",
+ "ads_read": 41,
  "candidates": [
   {
-   "name": "Jobboozt ApS",
+   "name": "Udviklings- og Forenklingsstyrelsen",
    "type": "hrmanager",
    "cfg": {
-    "cid": "2135",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2135&ProjectId=143996&DepartmentId=19216&MediaId=5"
+    "cid": "3010",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2135&ProjectId=143996&DepartmentId=19216&MediaId=5",
-   "cid": "2135",
-   "listed": 17,
-   "matched": 1
-  },
-  {
-   "name": "VIA University College",
-   "type": "emply",
-   "cfg": {
-    "url": "https://via.career.emply.com"
-   },
-   "evidence": "https://via.career.emply.com/ad/udviklingsorienteret-og-relationel-uddannelsesleder-til-fremtidens-sygeplejerskeu/sag1zp/da",
-   "listed": 17,
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130",
+   "cid": "3010",
+   "listed": 25,
    "matched": 2
   },
   {
-   "name": "Professionshøjskolen UCN",
+   "name": "Nine United A/S",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "2182",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2182&ProjectId=144017&DepartmentId=18969&MediaId=4624"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2182&ProjectId=144017&DepartmentId=18969&MediaId=4624",
+   "cid": "2182",
+   "listed": 7,
+   "matched": 2
+  },
+  {
+   "name": "Folkekirkens Nødhjælp",
    "type": "emply",
    "cfg": {
-    "url": "https://ucn.career.emply.com"
+    "url": "https://dca.career.emply.com"
    },
-   "evidence": "https://ucn.career.emply.com/ad/afdelingsleder-i-ucns-forsknings-og-udviklingsafdeling/oik5sn/da",
-   "listed": 5,
+   "evidence": "https://dca.career.emply.com/ad/hr-studentermedhjaelper-soges-til-folkekirkens-nodhjaelp/2in0gm/da",
+   "listed": 4,
+   "matched": 4
+  },
+  {
+   "name": "KAB",
+   "type": "emply",
+   "cfg": {
+    "url": "https://kab.career.emply.com"
+   },
+   "evidence": "https://kab.career.emply.com/ad/studentermedhjaelper-til-okonomi-og-administration/ft4d9y/da",
+   "listed": 0,
+   "matched": 0
+  },
+  {
+   "name": "Orkla Danmark",
+   "type": "smartrecruiters",
+   "cfg": {
+    "company_id": "Orkla"
+   },
+   "evidence": "https://jobs.smartrecruiters.com/Orkla/744000155268808-studentermedhj-lper-marketing",
+   "listed": 7,
+   "matched": 1
+  },
+  {
+   "name": "Københavns Professionshøjskole",
+   "type": "emply",
+   "cfg": {
+    "url": "https://kp.career.emply.com"
+   },
+   "evidence": "https://kp.career.emply.com/ad/kommunikationsmedarbejder-kan-du-fa-skolefaglighed-til-at-leve-pa-sociale-medie/hi260v/da",
+   "listed": 0,
+   "matched": 0
+  },
+  {
+   "name": "Nordic Computer A/S",
+   "type": "teamtailor",
+   "cfg": {
+    "url": "https://career.nordiccomputer.com"
+   },
+   "evidence": "https://career.nordiccomputer.com/da/jobs/8227944-graduate-i-sourcing-solutions?promotion=2149198-jobindex",
+   "listed": 2,
+   "matched": 1
+  },
+  {
+   "name": "Normal A/S",
+   "type": "teamtailor",
+   "cfg": {
+    "url": "https://jobs.hq.normal.dk"
+   },
+   "evidence": "https://jobs.hq.normal.dk/jobs/8545056-grafisk-designer-emballage-og-produkt-design?promotion=2245983-jobindex",
+   "listed": 13,
+   "matched": 0
+  },
+  {
+   "name": "European LifeCare Group A/S",
+   "type": "teamtailor",
+   "cfg": {
+    "url": "https://app.teamtailor.com"
+   },
+   "evidence": "https://app.teamtailor.com/companies/49erv9uAeEU@eu/dashboard",
+   "listed": 0,
    "matched": 0
   }
  ],
  "added": [
   {
-   "name": "Jobboozt ApS",
+   "name": "Udviklings- og Forenklingsstyrelsen",
    "type": "hrmanager",
-   "listed": 17,
-   "matched": 1
-  },
-  {
-   "name": "VIA University College",
-   "type": "emply",
-   "listed": 17,
+   "listed": 25,
    "matched": 2
   },
   {
-   "name": "Professionshøjskolen UCN",
+   "name": "Nine United A/S",
+   "type": "hrmanager",
+   "listed": 7,
+   "matched": 2
+  },
+  {
+   "name": "Folkekirkens Nødhjælp",
    "type": "emply",
-   "listed": 5,
+   "listed": 4,
+   "matched": 4
+  },
+  {
+   "name": "Orkla Danmark",
+   "type": "smartrecruiters",
+   "listed": 7,
+   "matched": 1
+  },
+  {
+   "name": "Nordic Computer A/S",
+   "type": "teamtailor",
+   "listed": 2,
+   "matched": 1
+  },
+  {
+   "name": "Normal A/S",
+   "type": "teamtailor",
+   "listed": 13,
    "matched": 0
   }
  ],
  "rejected": [
   {
-   "name": "Odense Kommune",
-   "type": "hrmanager",
+   "name": "KAB",
+   "type": "emply",
    "cfg": {
-    "cid": "3256",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144777&DepartmentId=18956&MediaId=4630&SkipAdvertisement=true"
+    "url": "https://kab.career.emply.com"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144777&DepartmentId=18956&MediaId=4630&SkipAdvertisement=true",
-   "reason": "HR-Manager-alias ikke fundet"
+   "evidence": "https://kab.career.emply.com/ad/studentermedhjaelper-til-okonomi-og-administration/ft4d9y/da",
+   "reason": "0 opslag"
+  },
+  {
+   "name": "Københavns Professionshøjskole",
+   "type": "emply",
+   "cfg": {
+    "url": "https://kp.career.emply.com"
+   },
+   "evidence": "https://kp.career.emply.com/ad/kommunikationsmedarbejder-kan-du-fa-skolefaglighed-til-at-leve-pa-sociale-medie/hi260v/da",
+   "reason": "0 opslag"
+  },
+  {
+   "name": "European LifeCare Group A/S",
+   "type": "teamtailor",
+   "cfg": {
+    "url": "https://app.teamtailor.com"
+   },
+   "evidence": "https://app.teamtailor.com/companies/49erv9uAeEU@eu/dashboard",
+   "reason": "0 opslag"
   }
  ]
 }

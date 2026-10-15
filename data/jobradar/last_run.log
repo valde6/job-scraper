@@ -1,20 +1,20 @@
-Novo Nordisk                         successfactors  True 57 1 
-A.P. Møller - Mærsk                  workday         True 635 4 
-LEGO Group                           workday         True 103 0 
-Danske Bank                          oracle          True 136 4 
+Novo Nordisk                         successfactors  True 53 2 
+A.P. Møller - Mærsk                  workday         True 634 4 
+LEGO Group                           workday         True 107 0 
+Danske Bank                          oracle          True 131 4 
 Deloitte                             smartrecruiters True 32 5 
 PwC                                  workday         True 14 8 
 Boston Consulting Group (BCG)        eightfold       True 4 3 
-Nordea                               nordea          True 94 0 
+Nordea                               nordea          True 99 0 
 EY                                   yello           True 10 6 
-Nykredit                             browser         True 59 7 
-Vestas                               successfactors  True 49 0 
-Saxo Bank                            workday         True 49 0 
+Nykredit                             browser         True 60 7 
+Vestas                               successfactors  True 53 0 
+Saxo Bank                            workday         True 50 0 
 Bang & Olufsen                       browser         True 6 0 
 Arla Foods                           phenom          True 10 0 
 Pandora                              browser         True 0 0 
 Dansk Industri                       teamtailor      True 6 1 
-Ørsted                               browser         True 51 0 
+Ørsted                               browser         True 54 0 
 KPMG                                 hrmanager       True 18 2 
 Matas                                emply           True 6 0 
 PA Consulting Group                  smartrecruiters True 12 0 
@@ -22,46 +22,52 @@ Danske Commodities                   teamtailor      True 3 0
 Netcompany                           smartrecruiters True 32 5 
 PFA Pension                          browser         True 6 2 
 Amazon                               amazon          True 7 0 
-IKEA                                 generic         True 30 0 
+IKEA                                 generic         True 28 0 
 Accenture                            workday         True 3 0 
-Danmarks Radio                       hrmanager       True 21 10 
+Danmarks Radio                       hrmanager       True 20 10 
 BDO                                  emply           True 6 0 
-Rambøll                              smartrecruiters True 94 6 
-Novonesis                            workday         True 74 2 
+Rambøll                              smartrecruiters True 91 6 
+Novonesis                            workday         True 77 3 
 Bech-Bruun                           emply           True 0 0 
-Accura                               hrmanager       True 8 3 
+Accura                               hrmanager       True 7 2 
 Statens Rekrutteringsløsning (staten) hrmanager       True 25 0 
 Frederiksberg Kommune                emply           True 30 1 
 Tryg                                 successfactors  True 0 0 
 EG                                   teamtailor      True 36 1 
 Twoday                               teamtailor      True 34 0 
 Danske Spil                          teamtailor      True 6 3 
-DTU                                  oracle          True 418 5 
+DTU                                  oracle          True 416 5 
 DSB                                  browser         True 0 0 
-Svitzer                              workday         True 35 2 
+Svitzer                              workday         True 36 2 
 Akademikernes A-kasse                emply           True 3 1 
-Ældre Sagen                          emply           True 3 3 
+Ældre Sagen                          emply           True 4 3 
 Royal Unibrew                        browser         True 10 0 
 GN Group                             workday         True 0 0 
 DM                                   emply           True 4 2 
 Energinet                            hrmanager       True 25 0 
-Landau Headhunting                   teamtailor      True 17 1 
+Landau Headhunting                   teamtailor      True 15 1 
 Whiteaway Group                      emply           True 5 0 
-Telenor                              teamtailor      True 1 0 
+Telenor                              teamtailor      True 2 0 
 GML A/S                              teamtailor      True 45 0 
 Medicinrådet                         emply           True 1 1 
-HOFOR                                hrmanager       True 16 0 
+HOFOR                                hrmanager       True 17 0 
 Entreprenørfirmaet Nordkysten A/S    teamtailor      True 13 2 
 Eurofins                             smartrecruiters True 19 4 
 Faxe Kommune                         hrmanager       True 25 0 
 Scantox A/S                          emply           True 6 2 
-HTH                                  teamtailor      True 12 0 
+HTH                                  teamtailor      True 14 0 
 Everllence                           hrmanager       True 3 1 
-Erhvervsakademi København            emply           True 6 0 
+Erhvervsakademi København            emply           True 6 1 
 Danske Professionshøjskoler          emply           True 1 0 
 Jobboozt ApS                         hrmanager       True 17 1 
 VIA University College               emply           True 17 1 
 Professionshøjskolen UCN             emply           True 5 0 
-AI-strukturering: {'cached': 0, 'new': 0, 'failed': 0, 'skipped_no_key': 100, 'over_limit': 0}
+Udviklings- og Forenklingsstyrelsen  hrmanager       True 25 2 
+Nine United A/S                      hrmanager       True 7 2 
+Folkekirkens Nødhjælp                emply           True 4 4 
+Orkla Danmark                        smartrecruiters True 7 1 
+Nordic Computer A/S                  teamtailor      True 2 0 
+Normal A/S                           teamtailor      True 13 0 
+AI-strukturering: {'cached': 0, 'new': 0, 'failed': 0, 'skipped_no_key': 111, 'over_limit': 0}
 
-Færdig: 100 fundet i dag, 100 aktive. Pr. type: {'studiejob': 48, 'praktik': 41, 'graduate': 11}
+Færdig: 111 fundet i dag, 111 aktive. Pr. type: {'studiejob': 56, 'praktik': 44, 'graduate': 11}

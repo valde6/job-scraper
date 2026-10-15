@@ -271,3 +271,65 @@ employers:
     at: '2026-10-14'
     via: jobindex-link
     evidence: https://ucn.career.emply.com/ad/afdelingsleder-i-ucns-forsknings-og-udviklingsafdeling/oik5sn/da
+- name: Udviklings- og Forenklingsstyrelsen
+  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: statens_erekruttering
+  discovered:
+    at: '2026-10-15'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130
+  cid: '3010'
+- name: Nine United A/S
+  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2182&ProjectId=144017&DepartmentId=18969&MediaId=4624
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: Nineunitedas_tr
+  discovered:
+    at: '2026-10-15'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2182&ProjectId=144017&DepartmentId=18969&MediaId=4624
+  cid: '2182'
+- name: Folkekirkens Nødhjælp
+  career_url: https://dca.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://dca.career.emply.com
+  discovered:
+    at: '2026-10-15'
+    via: jobindex-link
+    evidence: https://dca.career.emply.com/ad/hr-studentermedhjaelper-soges-til-folkekirkens-nodhjaelp/2in0gm/da
+- name: Orkla Danmark
+  career_url: https://jobs.smartrecruiters.com/Orkla/744000155268808-studentermedhj-lper-marketing
+  status: opdaget
+  source:
+    type: smartrecruiters
+    company_id: Orkla
+  discovered:
+    at: '2026-10-15'
+    via: jobindex-link
+    evidence: https://jobs.smartrecruiters.com/Orkla/744000155268808-studentermedhj-lper-marketing
+- name: Nordic Computer A/S
+  career_url: https://career.nordiccomputer.com
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://career.nordiccomputer.com
+  discovered:
+    at: '2026-10-15'
+    via: jobindex-link
+    evidence: https://career.nordiccomputer.com/da/jobs/8227944-graduate-i-sourcing-solutions?promotion=2149198-jobindex
+- name: Normal A/S
+  career_url: https://jobs.hq.normal.dk
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://jobs.hq.normal.dk
+  discovered:
+    at: '2026-10-15'
+    via: jobindex-link
+    evidence: https://jobs.hq.normal.dk/jobs/8545056-grafisk-designer-emballage-og-produkt-design?promotion=2245983-jobindex
