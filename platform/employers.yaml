@@ -71,13 +71,14 @@ employers:
   - PricewaterhouseCoopers
 - name: Carlsberg
   career_url: https://www.carlsberggroup.com/careers/
-  status: mangler-adapter
+  status: klar
   source:
-    type: none
+    type: sitemap
+    url: https://careers.carlsberg.com
   aliases:
   - Carlsberg Group
   - Carlsberg Danmark
-  note: SuccessFactors classic (carlsbergg) – kun få job
+  note: 'SuccessFactors CSB via sitemap (verificeret 16/10 i browser: studentermedhjælper i Valby)'
 - name: Boston Consulting Group (BCG)
   career_url: https://careers.bcg.com/
   status: klar
@@ -96,13 +97,16 @@ employers:
   aliases:
   - Nordea Danmark
 - name: Microsoft
-  career_url: https://careers.microsoft.com/
-  status: find-system
+  career_url: https://apply.careers.microsoft.com
+  status: klar
   source:
-    type: none
+    type: eightfold
+    url: https://apply.careers.microsoft.com
+    domain: microsoft.com
   aliases:
   - Microsoft Danmark
   - Microsoft Development Center Copenhagen
+  note: Eightfold siden nov. 2025 (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: EY
   region: storkbh
   career_url: https://www.ey.com/da_dk/careers
@@ -135,25 +139,32 @@ employers:
   - Totalkredit
 - name: Bestseller
   career_url: https://about.bestseller.com/careers
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: sitemap
+    url: https://opportunities.bestseller.com
   aliases:
   - BESTSELLER A/S
-- name: L'Oréal Groupe
+  note: SuccessFactors CSB via sitemap (fundet 16/10 via web-søgning – ikke verificeret endnu). Mest Aarhus/Brande
+- name: 'L''Oréal Groupe'
   career_url: https://careers.loreal.com/
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: sitemap
+    url: https://careers.loreal.com
+    sitemap: https://careers.loreal.com/sitemap.xml
   aliases:
-  - L'Oréal
-  - L'Oreal
+  - 'L''Oréal'
+  - 'L''Oreal'
   - L’Oréal Danmark
+  note: 'Radancy/TalentBrew via sitemap (verificeret 16/10 i browser: 5 opslag i København). robots.txt forbyder søgesiden, ikke jobsiderne'
 - name: Bain & Company
-  career_url: https://www.bain.com/careers/
-  status: find-system
+  career_url: https://careers.bain.com/jobs/SearchJobs/
+  status: klar
   source:
-    type: none
+    type: avature
+    url: https://careers.bain.com/jobs
+  note: 'Avature (verificeret 16/10 i browser: Student Assistant, Recruiting i København). bain.com har bot-mur, men careers.bain.com er åben (robots: Allow /jobs)'
 - name: Vestas
   career_url: https://careers.vestas.com/
   status: klar
@@ -164,11 +175,13 @@ employers:
   - Vestas Wind Systems
 - name: Implement
   career_url: https://implementconsultinggroup.com/careers
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: smartrecruiters
+    company_id: ImplementConsultingGroup
   aliases:
   - Implement Consulting Group
+  note: SmartRecruiters (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: Saxo Bank
   domain: home.saxo
   career_url: https://www.home.saxo/about-us/careers
@@ -180,12 +193,13 @@ employers:
   - Saxo Bank A/S
 - name: Finansministeriet
   career_url: https://fm.dk/om-os/job-i-finansministeriet/
-  status: find-system
+  status: via-portal
   source:
     type: none
   aliases:
   - Finansministeriet
   - Ministry of Finance
+  note: Hentes via Statens Rekrutteringsløsning (fælles portal)
 - name: Bang & Olufsen
   career_url: https://www.bang-olufsen.com/en/dk/story/careers
   status: klar
@@ -216,24 +230,22 @@ employers:
   - Arla
 - name: Udenrigsministeriet
   career_url: https://um.dk/om-os/job-i-udenrigsministeriet
-  status: find-system
+  status: via-portal
   source:
     type: none
   aliases:
   - Udenrigsministeriet
   - Ministry of Foreign Affairs of Denmark
+  note: Hentes via Statens Rekrutteringsløsning (fælles portal)
 - name: Pandora
   career_url: https://pandoragroup.com/careers
   status: tjek
   source:
-    type: browser
-    urls:
-    - https://career2.successfactors.eu/career?company=pandoraas&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK
-    link_pattern: career_job_req_id=\d+
-    dk_only: false
+    type: sitemap
+    url: https://careers.pandoragroup.com
   aliases:
   - Pandora A/S
-  note: SuccessFactors classic via browser (fundet af discovery) – gav 0 opslag 13/10, find den rigtige liste-URL
+  note: Ny karriereside careers.pandoragroup.com (22 DK-opslag). Sitemap fundet 16/10 via web-søgning – ikke verificeret endnu
 - name: Dansk Industri
   career_url: https://www.danskindustri.dk/om-di/job-i-di/
   status: klar
@@ -245,11 +257,13 @@ employers:
   - DI - Dansk Industri
 - name: Nordnet
   career_url: https://www.nordnet.dk/dk/om-nordnet/karriere
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: teamtailor
+    url: https://career.nordnetab.com
   aliases:
   - Nordnet Bank
+  note: Teamtailor (fundet 16/10 via web-søgning – ikke verificeret endnu). Oftest kun job i Stockholm
 - name: Ørsted
   career_url: https://orsted.com/en/careers
   status: klar
@@ -346,12 +360,14 @@ employers:
   - PFA
 - name: SAS
   career_url: https://www.sasgroup.net/careers/
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: sitemap
+    url: https://careers.sasgroup.net
   aliases:
   - SAS Scandinavian Airlines
   - Scandinavian Airlines
+  note: SuccessFactors CSB via sitemap (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: Amazon
   domain: amazon.com
   career_url: https://www.amazon.jobs/en/locations/copenhagen-area-denmark
@@ -370,13 +386,15 @@ employers:
   note: Talentsoft (beierholm-career.talent-soft.com)
 - name: AL Sydbank
   career_url: https://www.alsydbank.dk/om-os/job
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: teamtailor
+    url: https://karriere.al-sydbank.dk
   aliases:
   - Sydbank
   - Arbejdernes Landsbank
   - AL Bank
+  note: Teamtailor (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: Forsvaret
   career_url: https://www.forsvaret.dk/da/job-i-forsvaret/
   status: find-system
@@ -401,12 +419,13 @@ employers:
   - Inter IKEA
 - name: Statsministeriet
   career_url: https://stm.dk/om-os/job/
-  status: find-system
+  status: via-portal
   source:
     type: none
   aliases:
   - Statsministeriet
-  - Prime Minister's Office
+  - 'Prime Minister''s Office'
+  note: Hentes via Statens Rekrutteringsløsning (fælles portal)
 - name: Accenture
   career_url: https://www.accenture.com/dk-en/careers
   status: klar
@@ -427,11 +446,13 @@ employers:
     customer: danmarksradio
 - name: DSV
   career_url: https://www.dsv.com/en/careers
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: sitemap
+    url: https://jobs.dsv.com
   aliases:
   - DSV A/S
+  note: SuccessFactors CSB via sitemap (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: BDO
   region: storkbh
   career_url: https://www.bdo.dk/da-dk/karriere
@@ -491,19 +512,25 @@ employers:
   note: HR-Manager (fundet af discovery)
 - name: Poul Schmith / Kammeradvokaten
   career_url: https://www.poulschmith.dk/karriere
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: emply
+    url: https://jobs.poulschmith.dk
+    path: /da/ledige-stillinger
+  note: Emply på eget domæne (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: Lundgrens
   career_url: https://www.lundgrens.dk/karriere
   status: find-system
   source:
     type: none
-- name: Horten
-  career_url: https://www.horten.dk/karriere
+- name: HortenDahl
+  career_url: https://hortendahl.dk/karriere
   status: find-system
   source:
     type: none
+  aliases:
+  - Horten
+  note: Horten og DAHL fusionerede dec. 2025. Listen indlæses med JavaScript – system ukendt
 - name: DLA Piper Denmark
   career_url: https://www.dlapiper.dk/karriere
   status: find-system
@@ -514,11 +541,14 @@ employers:
   status: find-system
   source:
     type: none
-- name: Norrbom Vinding
-  career_url: https://www.norrbomvinding.com/karriere
+- name: Schjødt
+  career_url: https://schjodt.com/career
   status: find-system
   source:
     type: none
+  aliases:
+  - Norrbom Vinding
+  note: Norrbom Vinding er nu Schjødt. HR-Manager cid 1295 – kunde-alias ukendt
 - name: Moalem Weitemeyer
   career_url: https://www.moalemweitemeyer.com/karriere
   status: find-system
@@ -529,17 +559,6 @@ employers:
   status: find-system
   source:
     type: none
-- name: Delacour
-  career_url: https://delacour.dk/karriere
-  status: find-system
-  source:
-    type: none
-- name: Danske Advokater
-  career_url: https://www.danskeadvokater.dk/om-os/job
-  status: find-system
-  source:
-    type: none
-  note: Set på Jobindex
 - name: Grant Thornton
   region: storkbh
   domain: grantthornton.dk
@@ -555,40 +574,45 @@ employers:
   source:
     type: none
   note: HR-Manager indlejret (?hr=show-job)
-- name: Skatteministeriet og Skattestyrelsen
-  career_url: https://www.skm.dk/job
-  status: mangler-adapter
+- name: Skatte- og Vækstministeriet
+  career_url: https://svmn.dk/ministeriet/job-karriere/ledige-stillinger
+  status: via-portal
   source:
     type: none
-  note: Statens Rekrutteringsløsning
+  aliases:
+  - Skatteministeriet og Skattestyrelsen
+  - Skatteministeriet
+  note: Hentes via Statens Rekrutteringsløsning (ministeriet hed før Skatteministeriet). Skatteforvaltningen vises som egen arbejdsgiver
 - name: Erhvervsstyrelsen
   career_url: https://erhvervsstyrelsen.dk/job
-  status: find-system
+  status: via-portal
   source:
     type: none
-  note: Evt. via Statens Rekrutteringsløsning
+  note: Hentes via Statens Rekrutteringsløsning (fælles portal)
 - name: Finanstilsynet
   career_url: https://www.finanstilsynet.dk/om-os/job
-  status: find-system
+  status: via-portal
   source:
     type: none
-  note: Set på Jobindex (studiejob, juridisk kontor)
+  note: Hentes via Statens Rekrutteringsløsning (fælles portal)
 - name: Konkurrence- og Forbrugerstyrelsen
   career_url: https://www.kfst.dk/om-os/job
-  status: mangler-adapter
+  status: via-portal
   source:
     type: none
-  note: Statens Rekrutteringsløsning (departmentid 18989)
+  note: Hentes via Statens Rekrutteringsløsning (fælles portal)
 - name: Justitsministeriet
   career_url: https://www.justitsministeriet.dk/job
-  status: find-system
+  status: via-portal
   source:
     type: none
+  note: Hentes via Statens Rekrutteringsløsning (fælles portal)
 - name: Datatilsynet
   career_url: https://www.datatilsynet.dk/om-datatilsynet/job
-  status: find-system
+  status: via-portal
   source:
     type: none
+  note: Hentes via Statens Rekrutteringsløsning (fælles portal)
 - name: Statens Rekrutteringsløsning (staten)
   career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr
   status: klar
@@ -623,11 +647,11 @@ employers:
   note: Emply (13/10)
 - name: Tryg
   career_url: https://careers.tryg.com
-  status: tjek
+  status: klar
   source:
-    type: successfactors
-    url: https://careers.tryg.com/Tryg
-  note: SuccessFactors – rettet til /Tryg 13/10 – gav 0 opslag 13/10, find den rigtige liste-URL
+    type: sitemap
+    url: https://careers.tryg.com
+  note: 'SuccessFactors CSB via sitemap (verificeret 16/10 i browser: studentermedhjælper i Ballerup). Søgesiden gav 0'
 - name: Alm. Brand Group
   career_url: https://www.almbrand.dk/om-os/job
   status: find-system
@@ -635,9 +659,11 @@ employers:
     type: none
 - name: If Skadeforsikring
   career_url: https://www.if.dk/om-if/job
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: workday
+    url: https://if.wd502.myworkdayjobs.com/Careers
+  note: Workday (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: ATP
   region: storkbh
   domain: atp.dk
@@ -709,21 +735,24 @@ employers:
   note: Teamtailor (fundet af discovery)
 - name: Columbus
   career_url: https://www.columbusglobal.com/da/karriere
-  status: mangler-adapter
+  status: klar
   source:
-    type: none
-  note: Teamtailor (domæne ukendt)
+    type: teamtailor
+    url: https://careers-dk.columbusglobal.com
+  note: Teamtailor (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: Capgemini Danmark
   career_url: https://www.capgemini.com/dk-en/careers/
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: sitemap
+    url: https://careers.capgemini.com
+  note: SuccessFactors CSB via sitemap, kun adresser med dansk by (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: IBM Danmark
   career_url: https://www.ibm.com/careers
   status: mangler-adapter
   source:
     type: none
-  note: Avature
+  note: Avature på careers.ibm.com, men joblisten svarer 202 uden indhold (bot-beskyttelse) – omgås ikke. Tjekket 16/10
 - name: Devoteam
   career_url: https://www.devoteam.com/jobs/
   status: find-system
@@ -731,12 +760,13 @@ employers:
     type: none
   note: Set på Jobindex
 - name: Visma DataLøn
-  domain: visma.dk
   career_url: https://karriere.datalonprolon.dk/
-  status: mangler-adapter
+  domain: visma.dk
+  status: klar
   source:
-    type: none
-  note: Teamtailor (domæne ukendt)
+    type: teamtailor
+    url: https://karriere.datalonprolon.dk
+  note: Teamtailor (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: Danske Spil
   career_url: https://karriere.danskespil.dk
   status: klar
@@ -754,12 +784,13 @@ employers:
     site: CX_1
   note: Oracle
 - name: IT-Universitetet
-  domain: itu.dk
   career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=itu
-  status: find-system
+  domain: itu.dk
+  status: klar
   source:
-    type: none
-  note: HR-Manager cid 119 – find kunde-alias
+    type: hrmanager
+    customer: ituniversitetet
+  note: HR-Manager cid 119 (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: Københavns Universitet
   region: storkbh
   domain: ku.dk
@@ -797,14 +828,11 @@ employers:
   note: Set på Jobindex
 - name: DSB
   career_url: https://www.dsb.dk/om-dsb/job-i-dsb/
-  status: tjek
+  status: klar
   source:
-    type: browser
-    urls:
-    - https://career5.successfactors.eu/career?company=C0000031828P&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK
-    link_pattern: career_job_req_id=\d+
-    dk_only: true
-  note: SuccessFactors classic via browser (fundet af discovery) – gav 0 opslag 13/10, find den rigtige liste-URL
+    type: sitemap
+    url: https://dsb.jobs.hr.cloud.sap
+  note: 'SuccessFactors på nyt SAP-domæne via sitemap (verificeret 16/10 i browser: 23 opslag)'
 - name: Movia
   career_url: https://www.moviatrafik.dk/om-movia/job
   status: find-system
@@ -860,9 +888,11 @@ employers:
   note: HR-Manager cid 2134
 - name: Coop
   career_url: https://om.coop.dk/job
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: sitemap
+    url: https://jobs.coop.dk
+  note: SuccessFactors CSB via sitemap (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: Royal Unibrew
   career_url: https://www.royalunibrew.com/careers/
   status: klar
@@ -879,12 +909,14 @@ employers:
   source:
     type: workday
     url: https://gn.wd3.myworkdayjobs.com/GN-Careers
-  note: Workday (fundet af discovery) – gav 0 opslag 13/10, find den rigtige liste-URL
+  note: Workday-siden er lukket til start november 2026 (salg af Hearing til Amplifon) – tjek igen
 - name: Coloplast
   career_url: https://www.coloplast.com/careers/
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: sitemap
+    url: https://careers.coloplast.com
+  note: 'SuccessFactors CSB via sitemap (verificeret 16/10 i browser: 4 studiejob i Humlebæk)'
 - name: Lundbeck
   career_url: https://www.lundbeck.com/global/careers
   status: find-system
@@ -892,9 +924,11 @@ employers:
     type: none
 - name: Demant
   career_url: https://www.demant.com/careers
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: sitemap
+    url: https://careers.demant.com
+  note: SuccessFactors CSB via sitemap (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: FLSmidth
   career_url: https://www.flsmidth.com/en-gb/company/careers
   status: find-system
@@ -902,15 +936,18 @@ employers:
     type: none
 - name: ISS
   career_url: https://www.issworld.com/careers
-  status: mangler-adapter
+  status: klar
   source:
-    type: none
-  note: SuccessFactors classic (firma-id ukendt)
+    type: sitemap
+    url: https://jobs.issworld.com
+  note: SuccessFactors CSB via sitemap (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: Genmab
   career_url: https://www.genmab.com/careers
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: workday
+    url: https://genmab.wd3.myworkdayjobs.com/Genmab_Careers_Site
+  note: Workday (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: Novo Nordisk Fonden
   career_url: https://novonordiskfonden.dk/om-fonden/job/
   status: find-system
@@ -918,9 +955,11 @@ employers:
     type: none
 - name: Ambu
   career_url: https://www.ambu.com/careers
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: sitemap
+    url: https://jobs.ambu.com
+  note: SuccessFactors CSB via sitemap (fundet 16/10 via web-søgning – ikke verificeret endnu)
 
 # --- Tilføjet 15/10 (Cowork): offentlige og organisationer via HR-Manager (alias fundet i JobPortal-API'et) ---
 - name: Region Hovedstaden

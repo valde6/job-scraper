@@ -5,7 +5,7 @@ Config: url: https://lego.wd103.myworkdayjobs.com/LEGO_External
 import re
 from urllib.parse import urlparse
 
-from ..common import Job, post, get, html_to_md, is_denmark, is_student, is_student_body, clean, student_fit, topic_tags
+from ..common import Job, post, get, html_to_md, is_denmark, is_student, is_student_body, clean, student_fit, topic_tags, reject
 
 SEARCH_TERMS = ["student", "studentermedhjælper", "student assistant", "studiejob", "part-time", "deltid"]
 
@@ -38,8 +38,8 @@ def scrape(cfg):
                 listed += 1
                 title = clean(p.get("title"))
                 loc = clean(p.get("locationsText"))
-                # "2 Locations" skjuler landet -> tjek detaljer
-                if not is_denmark(loc, path) and not re.search(r"\d+\s+locations?", loc, re.I):
+                # "2 Locations" skjuler landet, og nogle opslag har slet ingen locationsText -> tjek detaljer
+                if loc and not is_denmark(loc, path) and not re.search(r"\d+\s+locations?", loc, re.I):
                     continue
                 if not is_student(title) and not cfg.get("check_body", True):
                     continue
@@ -52,6 +52,7 @@ def scrape(cfg):
                 desc = html_to_md(info.get("jobDescription"))
                 fit = student_fit(title, desc)
                 if not fit or (fit != "sikker" and not topic_tags(title, desc[:3000])):
+                    reject(cfg["name"], title, "ikke studiejob")
                     continue
                 jobs.append(Job(
                     company=cfg["name"], title=title,

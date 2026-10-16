@@ -13,7 +13,7 @@ Findes sectionId ikke (anderledes side), falder vi tilbage til browseren.
 """
 import re
 
-from ..common import Job, clean, get, html_to_md, is_denmark, post, student_fit, topic_tags
+from ..common import Job, clean, get, html_to_md, is_denmark, post, student_fit, topic_tags, reject
 from . import browser as browser_adapter
 
 LINK_PATTERN = r"/ad/[^/?#]+/[a-z0-9]{5,8}"
@@ -78,6 +78,7 @@ def scrape(cfg):
         content = html_to_md(content_html)
         fit = student_fit(title, content)
         if not fit or (fit != "sikker" and not topic_tags(title, content[:3000])):
+            reject(cfg["name"], title, "ikke studiejob")
             continue
         loc = clean(v.get("location"))
         if loc and not cfg.get("dk_only", True) and not is_denmark(loc):

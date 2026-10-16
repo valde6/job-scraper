@@ -4,6 +4,9 @@ Config:
   url: https://careers.vestas.com          (CSB-domænet)
   location: Denmark                         (valgfri, sendes som locationsearch)
 Søgesiden /search/?q=...&locationsearch=... er server-renderet HTML.
+
+NYE arbejdsgivere på SuccessFactors: brug `type: sitemap` i stedet (16/10). Søgningen afhænger af søgeord og af, at
+stedet hedder "Denmark" (fx "Humlebæk, DK" rammes ikke), mens sitemap'en altid har alle opslag med by i adressen.
 """
 from urllib.parse import urljoin, quote
 

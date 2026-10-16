@@ -18,6 +18,7 @@ DATA = ROOT / "data"
 HDIR = DATA / "health"
 KEEP = 240          # ca. 30 dage ved kørsel hver 3. time
 ALERT_AFTER = 2     # en kilde skal fejle i 2 kørsler i træk, før vi slår alarm (enkeltfejl er ofte midlertidige)
+NEVER_ALERT_AFTER = 5   # "aldrig data": små arbejdsgivere kan have 0 opslag i perioder, så først alarm efter 5 kørsler
 
 
 def classify(entry: dict, history: list[dict]) -> str | None:
@@ -36,6 +37,8 @@ def classify(entry: dict, history: list[dict]) -> str | None:
             return "tom"
         if m >= 10 and listed < 0.3 * m:
             return "fald"
+    elif listed == 0 and not any(h.get("listed") for h in history):
+        return "aldrig data"          # ny eller forkert opsat kilde, der aldrig har vist et eneste opslag
     return None
 
 
@@ -66,7 +69,7 @@ def evaluate(status: list[dict], history_rows: list[dict], active_now: int) -> d
         sources.append({"name": name, "type": e.get("source"), "ok": e.get("ok"), "listed": e.get("listed"),
                         "matched": e.get("matched"), "problem": prob, "streak": st,
                         "detail": e.get("error") or e.get("suspect")})
-        if prob and st >= ALERT_AFTER:
+        if prob and st >= (NEVER_ALERT_AFTER if prob == "aldrig data" else ALERT_AFTER):
             alerts.append(f"**{name}** ({e.get('source')}): {prob} i {st} kørsler i træk"
                           + (f" – {(e.get('error') or e.get('suspect'))[:200]}" if (e.get('error') or e.get('suspect')) else ""))
     prev_active = [r.get("active") for r in history_rows[-5:] if r.get("active")]

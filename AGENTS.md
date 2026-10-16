@@ -51,6 +51,8 @@ Kan du ikke nå job-siderne fra dit miljø (fx cloud-sandkasse med blokeret netv
 3. **Ændr ikke eksportens felter** uden at hæve `SCHEMA_VERSION` og skrive det i din opsummering – appen afhænger af dem.
 4. **Én adapter pr. system, ikke pr. virksomhed.** Ny arbejdsgiver på et kendt system = kun en linje i `companies.yaml`.
 5. **Foretræk officielle JSON-API'er/feeds** frem for HTML, og HTML frem for browser (Playwright). Browser er sidste udvej.
+   Har siden ingen API, så prøv `type: sitemap` først (sitemap.xml + schema.org `JobPosting`, se nedenfor) – den er
+   uafhængig af layout og virker for SuccessFactors, Radancy og mange egne CMS-sider uden ny kode.
 6. **Respektér robots.txt** og hold lav frekvens. Ingen omgåelse af bot-mure, CAPTCHA eller login.
 7. **Filtrene i `common.py` er produktets definition af et studiejob.** Ændrer du dem, så tilføj/ret tests i `tests/test_common.py`, der viser hvorfor.
 8. Små, fokuserede ændringer. Én opgave pr. branch/PR. Skriv commit-beskeder på dansk.
@@ -67,6 +69,18 @@ tilføj i `companies.yaml` → `python -m scraper.run --only "<navn>"` → `pyth
 
 **Ny adapter:** kopiér den mest lignende adapter, behold signaturen, brug `get/post` fra `common.py`
 (så optag/afspil virker), sæt `fit=student_fit(...)`, registrér i `scraper/adapters/__init__.py`, optag fixtures.
+
+## Robusthed (16/10)
+- **Læs data, ikke layout.** Rækkefølge: JSON-API/RSS → `sitemap` + `JobPosting` (JSON-LD/microdata) → `generic` (kun
+  link-mønstre) → `browser`. Brug `extract_posting()` i `common.py` til jobsider; den falder selv tilbage fra JSON-LD
+  til microdata, etiket/værdi-felter og til sidst `<h1>` + hovedtekst.
+- Vælg aldrig ét CSS-klassenavn som eneste kilde. Match på URL-mønstre, `itemprop`, JSON-felter eller dele af klassenavne.
+- Ét opslag, der fejler, må ikke vælte kilden (`try/except` pr. opslag). En kilde, der fejler eller pludselig viser
+  0/langt færre opslag, lukker ikke sine job (`suspicious()` i `run.py`).
+- Kald `reject(firma, titel, årsag)` når et opslag frasorteres. Det ender i `data/jobradar/rejected.json`, så for stramme
+  filtre kan findes.
+- Sundhedstjekket slår alarm ved fejl/tomme kilder (2 kørsler) og ved kilder, der **aldrig** har vist et opslag (5 kørsler).
+- Respektér robots.txt (`robots_allows()`), og omgå aldrig bot-mure (Cloudflare, 202-svar uden indhold, CAPTCHA).
 
 ## Definition of done
 - `python -m pytest -q` er grønt

@@ -246,7 +246,7 @@ NON_SJ = ["aarhus", "århus", "odense", "aalborg", "esbjerg", "vejle", "kolding"
 
 def region(loc: str | None, title: str = "") -> str | None:
     """'storkbh' | 'sjaelland' | 'ukendt' (fx bare "Danmark") | None (uden for Sjælland)."""
-    t = f"{loc or ''}".lower()
+    t = f"{loc or ''}".lower().replace("new zealand", "nz")   # "zealand" = Sjælland, men ikke New Zealand
     if any(p in t for p in CPH_PLACES):
         return "storkbh"
     if any(p in t for p in SJ_PLACES):
@@ -435,7 +435,7 @@ def jsonld_jobposting(html: str) -> dict | None:
     s = soup(html)
     for tag in s.find_all("script", type="application/ld+json"):
         try:
-            data = json.loads(tag.string or tag.text or "")
+            data = json.loads(tag.string or tag.text or "", strict=False)   # nogle sider har linjeskift i strenge
         except Exception:
             continue
         items = data if isinstance(data, list) else [data]
@@ -460,3 +460,142 @@ def jsonld_location(jp: dict) -> str:
         elif isinstance(a, str):
             out.append(a)
     return " | ".join(o for o in out if o)
+
+
+# ---------------------------------------------------------------- strukturerede jobdata (robust, uafhængig af layout)
+_DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2})")
+_MONTH_ABBR = {m: i + 1 for i, m in enumerate("jan feb mar apr may jun jul aug sep oct nov dec".split())}
+
+
+def _iso_date(v) -> str:
+    """'2026-10-14', '2026-10-14T00:00Z' eller SuccessFactors' 'Mon Oct 12 00:00:00 UTC 2026' → '2026-10-12'."""
+    t = str(v or "")
+    m = _DATE_RE.search(t)
+    if m:
+        return m.group(1)
+    m = re.search(r"\b([A-Z][a-z]{2})\s+(\d{1,2})\b.*?\b(\d{4})\b", t)
+    if m and m.group(1).lower() in _MONTH_ABBR:
+        return f"{m.group(3)}-{_MONTH_ABBR[m.group(1).lower()]:02d}-{int(m.group(2)):02d}"
+    return ""
+
+
+def _microdata(s: BeautifulSoup) -> dict | None:
+    scope = s.find(attrs={"itemtype": re.compile(r"schema\.org/JobPosting", re.I)})
+    if not scope:
+        return None
+    def prop(name):
+        el = scope.find(attrs={"itemprop": name})
+        if not el:
+            return ""
+        return el.get("content") if el.get("content") is not None else (el.decode_contents() if name == "description" else el.get_text(" "))
+    loc_bits = [el.get("content") or el.get_text(" ") for el in scope.select(
+        "[itemprop=jobLocation] [itemprop=streetAddress], [itemprop=jobLocation] [itemprop=addressLocality], "
+        "[itemprop=jobLocation] [itemprop=addressRegion], [itemprop=jobLocation] [itemprop=addressCountry]")]
+    return {"title": clean(prop("title")), "description_html": prop("description") or "",
+            "location": clean(", ".join(b for b in loc_bits if clean(b))),
+            "posted": _iso_date(prop("datePosted")), "deadline": _iso_date(prop("validThrough"))}
+
+
+def _label_fields(s: BeautifulSoup) -> dict:
+    """Felter vist som 'etiket: værdi' (fx Avature: article__content__view__field). Matcher på klassenavne, der indeholder
+    'label'/'value', så små layoutændringer ikke ødelægger noget."""
+    out, free = {}, []
+    for box in s.find_all(class_=re.compile(r"(?:^|_)field$|__field\b|\bfield\b")):
+        lab = box.find(class_=re.compile(r"label", re.I))
+        val = box.find(class_=re.compile(r"value", re.I))
+        if not val:
+            continue
+        if lab:
+            out[clean(lab.get_text(" ")).lower()] = val
+        else:
+            free.append(val)
+    if free:
+        out["_description"] = max(free, key=lambda v: len(v.get_text(" ")))
+    return out
+
+
+def extract_posting(html: str) -> dict:
+    """Ét jobopslag → {title, description_html, location, posted, deadline}.
+
+    Rækkefølge: schema.org JSON-LD → schema.org microdata → etiket/værdi-felter → <h1>/og:title + sidens hovedtekst.
+    JSON-LD og microdata findes for at Google for Jobs kan læse opslaget, så de ændres sjældent – i modsætning til layoutet.
+    Felter, der mangler i én kilde, udfyldes fra den næste."""
+    s = soup(html)
+    res = {"title": "", "description_html": "", "location": "", "posted": "", "deadline": ""}
+
+    def fill(d):
+        for k, v in (d or {}).items():
+            if v and not res.get(k):
+                res[k] = v
+
+    jp = jsonld_jobposting(html)
+    if jp:
+        fill({"title": clean(jp.get("title")), "description_html": jp.get("description") or "",
+              "location": jsonld_location(jp), "posted": _iso_date(jp.get("datePosted")),
+              "deadline": _iso_date(jp.get("validThrough"))})
+    fill(_microdata(s))
+    f = _label_fields(s)
+    if f:
+        def fv(*names):
+            for n in names:
+                for k, v in f.items():
+                    if k.startswith(n):
+                        return clean(v.get_text(" "))
+            return ""
+        fill({"title": fv("job title", "stillingsbetegnelse", "titel"),
+              "location": fv("location", "lokation", "arbejdssted", "sted"),
+              "description_html": f["_description"].decode_contents() if "_description" in f else "",
+              "deadline": _iso_date(fv("application deadline", "ansøgningsfrist", "deadline"))})
+        etype = fv("employment type", "ansættelsestype", "stillingstype")
+        if etype:
+            res["employment_type"] = etype
+    og = s.find("meta", attrs={"property": "og:title"})
+    h1 = s.find("h1")
+    fill({"title": clean((og or {}).get("content") if og else "") or clean(h1.get_text(" ") if h1 else "")})
+    if not res["description_html"]:
+        main = s.find("main") or s.find("article") or s.body
+        if main:
+            for t in main.find_all(["script", "style", "nav", "header", "footer", "form"]):
+                t.decompose()
+            res["description_html"] = main.decode_contents()
+    return res
+
+
+# ---------------------------------------------------------------- frasorterede opslag (til fejlfinding af filtrene)
+REJECTED: list[dict] = []
+
+
+def reject(company: str, title: str, reason: str, url: str = "") -> None:
+    """Notér et opslag, som en adapter så men valgte fra. Skrives til data/jobradar/rejected.json efter kørslen,
+    så vi kan se, om filtrene smider rigtige studiejob væk (fx 'ikke studiejob', 'uden for Danmark')."""
+    if len(REJECTED) < 5000:
+        REJECTED.append({"company": company, "title": clean(title)[:160], "reason": reason, "url": url})
+
+
+# ---------------------------------------------------------------- robots.txt
+_ROBOTS: dict[str, object] = {}
+
+
+def robots_allows(url: str) -> bool:
+    """Respektér robots.txt (regel 6 i AGENTS.md). Kan robots.txt ikke hentes, er alt tilladt (standard)."""
+    from urllib.parse import urlparse
+    from urllib.robotparser import RobotFileParser
+    u = urlparse(url)
+    base = f"{u.scheme}://{u.netloc}"
+    rp = _ROBOTS.get(base)
+    if rp is None:
+        rp = RobotFileParser()
+        try:
+            rp.parse(get(base + "/robots.txt", retries=0).text.splitlines())
+        except Exception:  # noqa: BLE001
+            rp.parse([])
+        _ROBOTS[base] = rp
+    return rp.can_fetch("*", url)  # type: ignore[attr-defined]
+
+
+def robots_sitemaps(base: str) -> list[str]:
+    try:
+        txt = get(base.rstrip("/") + "/robots.txt", retries=0).text
+    except Exception:  # noqa: BLE001
+        return []
+    return re.findall(r"(?im)^\s*sitemap:\s*(\S+)", txt)

@@ -38,3 +38,15 @@ def test_suspicious_guard():
     assert not suspicious(35, 40)
     assert not suspicious(0, None)      # ny kilde uden historik
     assert not suspicious(2, 4)         # små kilder svinger naturligt
+
+
+def test_never_had_data():
+    from scraper.health import classify, evaluate
+    e = {"company": "Ny kilde", "source": "sitemap", "ok": True, "listed": 0, "matched": 0}
+    assert classify(e, []) == "aldrig data"
+    assert classify(e, [{"ok": True, "listed": 0}]) == "aldrig data"
+    assert classify(e, [{"ok": True, "listed": 12}]) == "tom"
+    hist = [{"sources": [{"name": "Ny kilde", "ok": True, "listed": 0, "problem": "aldrig data"}]} for _ in range(3)]
+    assert evaluate([e], hist, 100)["alerts"] == []                  # 4 kørsler: endnu ingen alarm
+    hist.append(hist[0])
+    assert "aldrig data" in evaluate([e], hist, 100)["alerts"][0]    # 5. kørsel: alarm

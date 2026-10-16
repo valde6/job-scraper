@@ -27,7 +27,7 @@ from urllib.parse import urlparse
 import yaml
 
 from .adapters import ADAPTERS
-from .common import find_deadline, job_type, region, set_job_types, set_topics
+from .common import REJECTED, find_deadline, job_type, region, reject, set_job_types, set_topics
 from .run import SOURCE_TIMEOUT, _with_timeout, norm_title, suspicious
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -149,6 +149,28 @@ REQUIRED = {"id": str, "company": str, "title": str, "job_type": str, "region": 
             "active": bool, "first_seen": str, "description_md": str}
 
 
+def why_rejected(job: dict, rx: dict) -> str:
+    """Kort årsag til, at build_record sagde nej (til rejected.json)."""
+    if not job_type(job["title"], job.get("description_md", "")):
+        return "ikke studiejob/praktik/graduate"
+    if region(job.get("location"), job["title"]) is None:
+        return f"uden for Sjælland ({(job.get('location') or '')[:40]})"
+    return "deltid uden fagligt nøgleord i titlen"
+
+
+def write_rejected(path: Path, rejected: list[dict]) -> None:
+    """data/jobradar/rejected.json: pr. arbejdsgiver antal frasorterede opslag pr. årsag + op til 40 eksempler.
+    Bruges til at finde filtre, der er for stramme, og kilder, der ser opslag men aldrig giver job."""
+    by: dict[str, dict] = {}
+    for r in rejected:
+        c = by.setdefault(r["company"], {"count": 0, "reasons": {}, "examples": []})
+        c["count"] += 1
+        c["reasons"][r["reason"].split(" (")[0]] = c["reasons"].get(r["reason"].split(" (")[0], 0) + 1
+        if len(c["examples"]) < 40:
+            c["examples"].append({k: r[k] for k in ("title", "reason", "url") if r.get(k)})
+    path.write_text(json.dumps({"companies": dict(sorted(by.items()))}, ensure_ascii=False, indent=1))
+
+
 def validate(payload: dict, keyword_ids: set[str]) -> list[str]:
     errs = []
     if payload.get("schema_version") != SCHEMA_VERSION:
@@ -220,13 +242,28 @@ def employer_list(employers: list[dict], jobs: list[dict], sources: dict) -> lis
             if j.get("active") and j["company"].lower() not in known:
                 subs.setdefault(j["company"], {"via": src, "domain": j.get("company_domain"), "career_url": j.get("career_url")})
     by_name = {e["name"]: e for e in employers}
+    via_portal: dict[str, tuple[str, int]] = {}      # arbejdsgiver uden egen kilde, men med aktive job fra en portal
+    for j in jobs:
+        src = j.get("source_employer")
+        if j.get("active") and src and src != j["company"]:
+            n = j["company"].lower()
+            via_portal[n] = (src, via_portal.get(n, (src, 0))[1] + 1)
     out = []
     for e in employers:
         if e["name"] in portals and (e.get("source") or {}).get("type") != "none":
             continue
-        out.append({"name": e["name"], "lines": [], "status": e.get("status"), "career_url": e.get("career_url"),
-                    "domain": company_domain(e), "source_type": (e.get("source") or {}).get("type", "none"),
-                    **{k: sources.get(e["name"], {}).get(k) for k in ("ok", "listed", "matched")}})
+        if e.get("region") == "udenfor":
+            continue                                  # springes over i kørslen, så de skal heller ikke vises i appen
+        row = {"name": e["name"], "lines": [], "status": e.get("status"), "career_url": e.get("career_url"),
+               "domain": company_domain(e), "source_type": (e.get("source") or {}).get("type", "none"),
+               **{k: sources.get(e["name"], {}).get(k) for k in ("ok", "listed", "matched")}}
+        if row["source_type"] == "none":
+            hit = next((via_portal[n.lower()] for n in [e["name"], *(e.get("aliases") or [])] if n.lower() in via_portal), None)
+            if hit:
+                portal = by_name.get(hit[0], {})
+                row.update(status="klar", via=hit[0], ok=True, matched=hit[1],
+                           source_type=(portal.get("source") or {}).get("type", "none"))
+        out.append(row)
     for name, sub in sorted(subs.items()):
         portal = by_name.get(sub["via"], {})
         out.append({"name": name, "lines": [], "status": "klar", "career_url": sub["career_url"] or portal.get("career_url"),
@@ -248,6 +285,7 @@ def main(argv=None):
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     today = date.today().isoformat()
     OUT.mkdir(parents=True, exist_ok=True)
+    REJECTED.clear()
 
     state_f = OUT / "state.json"
     state = json.loads(state_f.read_text()) if state_f.exists() else {"jobs": {}, "sources": {}}
@@ -278,6 +316,7 @@ def main(argv=None):
             for j in jobs:
                 rec = build_record(j.to_dict(), e, rx, now)
                 if not rec:
+                    reject(e["name"], j.title, why_rejected(j.to_dict(), rx), j.url)
                     continue
                 rec["source_employer"] = e["name"]   # hvilken kilde jobbet kom fra (appen bruger ikke feltet)
                 key = f"{rec['company']}|{norm_title(rec['title'])}"
@@ -340,6 +379,7 @@ def main(argv=None):
     merged_sources = {**state.get("sources", {}), **{s["company"]: s for s in status}}
     (OUT / "jobs.json").write_text(json.dumps(payload, ensure_ascii=False))
     (OUT / "state.json").write_text(json.dumps({"jobs": jobs, "sources": merged_sources}, ensure_ascii=False))
+    write_rejected(OUT / "rejected.json", REJECTED)
     (OUT / "status.json").write_text(json.dumps({"updated": now, "companies": status}, ensure_ascii=False, indent=1))
     (OUT / "keywords.json").write_text(json.dumps(
         {"keywords": [{k: v for k, v in kw.items() if k != "pattern"} for kw in kws]}, ensure_ascii=False, indent=1))

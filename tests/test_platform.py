@@ -207,3 +207,38 @@ def test_employer_list_expands_shared_portal():
     assert "Statens Rekrutteringsløsning" not in names        # portalen selv vises ikke
     assert "Banedanmark" in names and names.count("Finanstilsynet") == 1   # kendt navn genbruges, ingen dublet
     assert "Lukket Styrelse" not in names and "KPMG" in names
+
+
+def test_employer_list_portal_status_and_outside_region():
+    employers = [{"name": "Statens Rekrutteringsløsning", "status": "klar", "source": {"type": "hrmanager"}},
+                 {"name": "Skatteministeriet og Skattestyrelsen", "status": "via-portal", "source": {"type": "none"},
+                  "aliases": ["Skatte- og Vækstministeriet"]},
+                 {"name": "Datatilsynet", "status": "via-portal", "source": {"type": "none"}},
+                 {"name": "Würth Danmark A/S", "region": "udenfor", "status": "opdaget", "source": {"type": "emply"}}]
+    jobs = [{"company": "Skatte- og Vækstministeriet", "source_employer": "Statens Rekrutteringsløsning", "active": True},
+            {"company": "Skatte- og Vækstministeriet", "source_employer": "Statens Rekrutteringsløsning", "active": True}]
+    rows = {e["name"]: e for e in P.employer_list(employers, jobs, {})}
+    skm = rows["Skatteministeriet og Skattestyrelsen"]
+    assert skm["status"] == "klar" and skm["via"] == "Statens Rekrutteringsløsning" and skm["matched"] == 2
+    assert skm["source_type"] == "hrmanager"
+    assert rows["Datatilsynet"]["status"] == "via-portal"       # ingen aktive job lige nu
+    assert "Würth Danmark A/S" not in rows                       # uden for Sjælland vises ikke
+    assert "Skatte- og Vækstministeriet" not in rows             # alias → ingen dublet-række
+
+
+def test_rejected_report(tmp_path):
+    rej = [{"company": "Novo", "title": "Senior Scientist", "reason": "ikke studiejob", "url": "u1"},
+           {"company": "Novo", "title": "Student i Kalundborg", "reason": "uden for Sjælland (Aarhus)", "url": "u2"},
+           {"company": "Novo", "title": "Student 2", "reason": "uden for Sjælland (Odense)", "url": ""}]
+    P.write_rejected(tmp_path / "r.json", rej)
+    import json
+    d = json.loads((tmp_path / "r.json").read_text())["companies"]["Novo"]
+    assert d["count"] == 3 and d["reasons"] == {"ikke studiejob": 1, "uden for Sjælland": 2}
+    assert d["examples"][2] == {"title": "Student 2", "reason": "uden for Sjælland (Odense)"}
+
+
+def test_why_rejected():
+    assert P.why_rejected({"title": "Senior Manager", "description_md": "", "location": "København"}, {}) \
+        .startswith("ikke studiejob")
+    assert P.why_rejected({"title": "Studentermedhjælper", "description_md": "", "location": "Aarhus"}, {}) \
+        .startswith("uden for Sjælland")

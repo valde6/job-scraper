@@ -16,7 +16,7 @@ hvis kundenavn indeholder "rekruttering", eller når `multi_employer: true` er s
 import re
 from datetime import datetime, timezone
 
-from ..common import Job, get, clean, html_to_md, is_denmark, student_fit, topic_tags
+from ..common import Job, get, clean, html_to_md, is_denmark, student_fit, topic_tags, reject
 
 API = "https://api.hr-manager.net/jobportal.svc/{c}/positionlist/json/"
 PAGE = 200
@@ -132,6 +132,7 @@ def scrape(cfg):
         content = html_to_md(adv0.get("Content", ""))
         fit = student_fit(title, content)
         if not fit or (fit != "sikker" and not topic_tags(title, content[:3000])):
+            reject(cfg["name"], title, "ikke studiejob")
             continue
         loc = _location(p)
         if loc and not is_denmark(loc, "denmark" if cfg.get("dk_only", True) else ""):
