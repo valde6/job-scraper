@@ -1,68 +1,7 @@
 {
- "started": "2026-10-15T15:37:58+00:00",
- "ads_read": 22,
- "candidates": [
-  {
-   "name": "NetNordic Denmark A/S",
-   "type": "teamtailor",
-   "cfg": {
-    "url": "https://netnordicdenmark.teamtailor.com"
-   },
-   "evidence": "https://netnordicdenmark.teamtailor.com/jobs/8546383-student-assistant-til-sales-support",
-   "listed": 2,
-   "matched": 1
-  },
-  {
-   "name": "LGC Biosearch Technologies A/S",
-   "type": "smartrecruiters",
-   "cfg": {
-    "company_id": "LGCGroup"
-   },
-   "evidence": "https://jobs.smartrecruiters.com/LGCGroup/744000155686603-oligonucleotide-development-scientist-specialist?trid=f08184f8-6b3c-479d-9d54-ea2d3674ed91",
-   "listed": 2,
-   "matched": 0
-  },
-  {
-   "name": "Solrød Kommune",
-   "type": "emply",
-   "cfg": {
-    "url": "https://solrod.career.emply.com"
-   },
-   "evidence": "https://solrod.career.emply.com/ad/nattevagt-til-rehabiliteringsafdeling/h9a86x/da",
-   "listed": 25,
-   "matched": 1
-  }
- ],
- "added": [
-  {
-   "name": "NetNordic Denmark A/S",
-   "type": "teamtailor",
-   "listed": 2,
-   "matched": 1
-  },
-  {
-   "name": "LGC Biosearch Technologies A/S",
-   "type": "smartrecruiters",
-   "listed": 2,
-   "matched": 0
-  },
-  {
-   "name": "Solrød Kommune",
-   "type": "emply",
-   "listed": 25,
-   "matched": 1
-  }
- ],
- "rejected": [
-  {
-   "name": "Polytech A/S",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "1906",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1906&ProjectId=143982&DepartmentId=18956&MediaId=4630"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1906&ProjectId=143982&DepartmentId=18956&MediaId=4630",
-   "reason": "HR-Manager-alias ikke fundet"
-  }
- ]
+ "started": "2026-10-16T05:56:07+00:00",
+ "ads_read": 1,
+ "candidates": [],
+ "added": [],
+ "rejected": []
 }

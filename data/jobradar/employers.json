@@ -8,7 +8,7 @@
    "domain": "novonordisk.com",
    "source_type": "successfactors",
    "ok": true,
-   "listed": 54,
+   "listed": 52,
    "matched": 3
   },
   {
@@ -19,7 +19,7 @@
    "domain": "maersk.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 634,
+   "listed": 631,
    "matched": 4
   },
   {
@@ -41,7 +41,7 @@
    "domain": "lego.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 107,
+   "listed": 106,
    "matched": 0
   },
   {
@@ -52,7 +52,7 @@
    "domain": "danskebank.com",
    "source_type": "oracle",
    "ok": true,
-   "listed": 133,
+   "listed": 129,
    "matched": 4
   },
   {
@@ -107,7 +107,7 @@
    "domain": "nordea.com",
    "source_type": "nordea",
    "ok": true,
-   "listed": 100,
+   "listed": 77,
    "matched": 0
   },
   {
@@ -151,7 +151,7 @@
    "domain": "nykredit.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 64,
+   "listed": 60,
    "matched": 8
   },
   {
@@ -195,7 +195,7 @@
    "domain": "vestas.com",
    "source_type": "successfactors",
    "ok": true,
-   "listed": 54,
+   "listed": 52,
    "matched": 0
   },
   {
@@ -239,7 +239,7 @@
    "domain": "bang-olufsen.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 8,
+   "listed": 7,
    "matched": 0
   },
   {
@@ -316,7 +316,7 @@
    "domain": "orsted.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 54,
+   "listed": 52,
    "matched": 0
   },
   {
@@ -404,8 +404,8 @@
    "domain": "pfa.dk",
    "source_type": "browser",
    "ok": true,
-   "listed": 6,
-   "matched": 2
+   "listed": 5,
+   "matched": 1
   },
   {
    "name": "SAS",
@@ -469,9 +469,9 @@
    "career_url": "https://jobs.ikea.com/en/search?location=Denmark",
    "domain": "ikea.com",
    "source_type": "generic",
-   "ok": true,
-   "listed": 15,
-   "matched": 0
+   "ok": false,
+   "listed": null,
+   "matched": null
   },
   {
    "name": "Statsministeriet",
@@ -536,7 +536,7 @@
    "domain": "ramboll.com",
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 91,
+   "listed": 88,
    "matched": 6
   },
   {
@@ -547,7 +547,7 @@
    "domain": "novonesis.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 78,
+   "listed": 73,
    "matched": 3
   },
   {
@@ -804,17 +804,6 @@
    "matched": null
   },
   {
-   "name": "Statens Rekrutteringsløsning (staten)",
-   "lines": [],
-   "status": "klar",
-   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
-   "domain": null,
-   "source_type": "hrmanager",
-   "ok": true,
-   "listed": 511,
-   "matched": 58
-  },
-  {
    "name": "Københavns Kommune",
    "lines": [],
    "status": "klar",
@@ -822,8 +811,8 @@
    "domain": "kk.dk",
    "source_type": "generic",
    "ok": true,
-   "listed": 347,
-   "matched": 9
+   "listed": 325,
+   "matched": 8
   },
   {
    "name": "Frederiksberg Kommune",
@@ -833,7 +822,7 @@
    "domain": "frederiksberg.dk",
    "source_type": "emply",
    "ok": true,
-   "listed": 70,
+   "listed": 67,
    "matched": 4
   },
   {
@@ -976,7 +965,7 @@
    "domain": "egsoftware.com",
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 38,
+   "listed": 39,
    "matched": 1
   },
   {
@@ -1064,8 +1053,8 @@
    "domain": "dtu.dk",
    "source_type": "oracle",
    "ok": true,
-   "listed": 419,
-   "matched": 5
+   "listed": 388,
+   "matched": 4
   },
   {
    "name": "IT-Universitetet",
@@ -1086,7 +1075,7 @@
    "domain": "ku.dk",
    "source_type": "generic",
    "ok": true,
-   "listed": 94,
+   "listed": 87,
    "matched": 9
   },
   {
@@ -1141,7 +1130,7 @@
    "domain": "svitzer.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 36,
+   "listed": 37,
    "matched": 2
   },
   {
@@ -1321,17 +1310,6 @@
    "matched": null
   },
   {
-   "name": "Statens Rekrutteringsløsning",
-   "lines": [],
-   "status": "klar",
-   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
-   "domain": null,
-   "source_type": "hrmanager",
-   "ok": true,
-   "listed": 511,
-   "matched": 0
-  },
-  {
    "name": "Region Hovedstaden",
    "lines": [],
    "status": "klar",
@@ -1339,7 +1317,7 @@
    "domain": "regionh.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 481,
+   "listed": 456,
    "matched": 8
   },
   {
@@ -1361,7 +1339,7 @@
    "domain": "vallensbaek.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 13,
+   "listed": 14,
    "matched": 0
   },
   {
@@ -1405,7 +1383,7 @@
    "domain": "sos.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 14,
+   "listed": 13,
    "matched": 4
   },
   {
@@ -1460,7 +1438,7 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 40,
+   "listed": 35,
    "matched": 0
   },
   {
@@ -1537,7 +1515,7 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 18,
+   "listed": 17,
    "matched": 0
   },
   {
@@ -1570,7 +1548,7 @@
    "domain": null,
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 21,
+   "listed": 20,
    "matched": 4
   },
   {
@@ -1581,7 +1559,7 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 45,
+   "listed": 44,
    "matched": 0
   },
   {
@@ -1636,8 +1614,8 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 3,
-   "matched": 1
+   "listed": 2,
+   "matched": 0
   },
   {
    "name": "Erhvervsakademi København",
@@ -1680,7 +1658,7 @@
    "domain": null,
    "source_type": "emply",
    "ok": true,
-   "listed": 19,
+   "listed": 18,
    "matched": 0
   },
   {
@@ -1695,17 +1673,6 @@
    "matched": 0
   },
   {
-   "name": "Udviklings- og Forenklingsstyrelsen",
-   "lines": [],
-   "status": "opdaget",
-   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130",
-   "domain": null,
-   "source_type": "hrmanager",
-   "ok": true,
-   "listed": 87,
-   "matched": 5
-  },
-  {
    "name": "Nine United A/S",
    "lines": [],
    "status": "opdaget",
@@ -1713,7 +1680,7 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 7,
+   "listed": 6,
    "matched": 1
   },
   {
@@ -1724,8 +1691,8 @@
    "domain": null,
    "source_type": "emply",
    "ok": true,
-   "listed": 4,
-   "matched": 4
+   "listed": 3,
+   "matched": 3
   },
   {
    "name": "Orkla Danmark",
@@ -1790,8 +1757,298 @@
    "domain": null,
    "source_type": "emply",
    "ok": true,
-   "listed": 25,
+   "listed": 24,
    "matched": 1
+  },
+  {
+   "name": "Banedanmark",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Børne- Undervisningsministeriet",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "DMI - Danmarks Meteorologiske Institut",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Danmarks Domstole",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Danmarks Fængsler",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Det Danske Filminstitut",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Det Kgl. Bibliotek",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Det Kongelige Akademi - Arkitektur, Design, Konservering",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Udviklings- og Forenklingsstyrelsen",
+   "ok": true
+  },
+  {
+   "name": "Det Kongelige Teater og Kapel",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Digitaliseringsstyrelsen",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Energistyrelsen",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Fødevarestyrelsen",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "HF & VUC København Syd",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Udviklings- og Forenklingsstyrelsen",
+   "ok": true
+  },
+  {
+   "name": "Institut for Menneskerettigheder",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Udviklings- og Forenklingsstyrelsen",
+   "ok": true
+  },
+  {
+   "name": "Ministeriet for Natur og Dyrevelfærd",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Ministeriet for Samfund og Beredskab",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "SOSU Nykøbing Falster",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Udviklings- og Forenklingsstyrelsen",
+   "ok": true
+  },
+  {
+   "name": "SSI - Statens Serum Institut",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Skatte- og Vækstministeriet",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Skatteforvaltningen",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Styrelsen for Arbejdsmarked og Rekruttering",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Styrelsen for International Rekruttering og Integration",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Styrelsen for Patientsikkerhed",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Styrelsen for Undervisning og Kvalitet",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Sundhedsdatastyrelsen",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Sundhedsstyrelsen",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "TEC",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Udviklings- og Forenklingsstyrelsen",
+   "ok": true
+  },
+  {
+   "name": "Udlændingestyrelsen",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
+  },
+  {
+   "name": "Økonomistyrelsen",
+   "lines": [],
+   "status": "klar",
+   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
+   "domain": null,
+   "source_type": "hrmanager",
+   "via": "Statens Rekrutteringsløsning (staten)",
+   "ok": true
   }
  ]
 }
