@@ -8,7 +8,7 @@
    "domain": "novonordisk.com",
    "source_type": "successfactors",
    "ok": true,
-   "listed": 52,
+   "listed": 53,
    "matched": 3
   },
   {
@@ -19,8 +19,8 @@
    "domain": "maersk.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 631,
-   "matched": 4
+   "listed": 629,
+   "matched": 6
   },
   {
    "name": "McKinsey & Company",
@@ -52,7 +52,7 @@
    "domain": "danskebank.com",
    "source_type": "oracle",
    "ok": true,
-   "listed": 129,
+   "listed": 136,
    "matched": 4
   },
   {
@@ -80,13 +80,13 @@
   {
    "name": "Carlsberg",
    "lines": [],
-   "status": "mangler-adapter",
+   "status": "klar",
    "career_url": "https://www.carlsberggroup.com/careers/",
    "domain": "carlsberggroup.com",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "sitemap",
+   "ok": true,
+   "listed": 129,
+   "matched": 1
   },
   {
    "name": "Boston Consulting Group (BCG)",
@@ -107,17 +107,17 @@
    "domain": "nordea.com",
    "source_type": "nordea",
    "ok": true,
-   "listed": 77,
+   "listed": 78,
    "matched": 0
   },
   {
    "name": "Microsoft",
    "lines": [],
-   "status": "find-system",
-   "career_url": "https://careers.microsoft.com/",
+   "status": "klar",
+   "career_url": "https://apply.careers.microsoft.com",
    "domain": "microsoft.com",
-   "source_type": "none",
-   "ok": null,
+   "source_type": "eightfold",
+   "ok": false,
    "listed": null,
    "matched": null
   },
@@ -151,41 +151,41 @@
    "domain": "nykredit.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 60,
+   "listed": 61,
    "matched": 8
   },
   {
    "name": "Bestseller",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://about.bestseller.com/careers",
    "domain": "bestseller.com",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "sitemap",
+   "ok": true,
+   "listed": 990,
+   "matched": 2
   },
   {
    "name": "L'Oréal Groupe",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://careers.loreal.com/",
    "domain": "loreal.com",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "sitemap",
+   "ok": true,
+   "listed": 1703,
+   "matched": 1
   },
   {
    "name": "Bain & Company",
    "lines": [],
-   "status": "find-system",
-   "career_url": "https://www.bain.com/careers/",
+   "status": "klar",
+   "career_url": "https://careers.bain.com/jobs/SearchJobs/",
    "domain": "bain.com",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "avature",
+   "ok": true,
+   "listed": 265,
+   "matched": 1
   },
   {
    "name": "Vestas",
@@ -195,19 +195,19 @@
    "domain": "vestas.com",
    "source_type": "successfactors",
    "ok": true,
-   "listed": 52,
+   "listed": 54,
    "matched": 0
   },
   {
    "name": "Implement",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://implementconsultinggroup.com/careers",
    "domain": "implementconsultinggroup.com",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "smartrecruiters",
+   "ok": true,
+   "listed": 18,
+   "matched": 3
   },
   {
    "name": "Saxo Bank",
@@ -223,13 +223,14 @@
   {
    "name": "Finansministeriet",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://fm.dk/om-os/job-i-finansministeriet/",
    "domain": "fm.dk",
-   "source_type": "none",
-   "ok": null,
+   "source_type": "hrmanager",
+   "ok": true,
    "listed": null,
-   "matched": null
+   "matched": 3,
+   "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
    "name": "Bang & Olufsen",
@@ -267,13 +268,14 @@
   {
    "name": "Udenrigsministeriet",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://um.dk/om-os/job-i-udenrigsministeriet",
    "domain": "um.dk",
-   "source_type": "none",
-   "ok": null,
+   "source_type": "hrmanager",
+   "ok": true,
    "listed": null,
-   "matched": null
+   "matched": 2,
+   "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
    "name": "Pandora",
@@ -281,9 +283,9 @@
    "status": "tjek",
    "career_url": "https://pandoragroup.com/careers",
    "domain": "pandoragroup.com",
-   "source_type": "browser",
+   "source_type": "sitemap",
    "ok": true,
-   "listed": 0,
+   "listed": 13946,
    "matched": 0
   },
   {
@@ -300,13 +302,13 @@
   {
    "name": "Nordnet",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.nordnet.dk/dk/om-nordnet/karriere",
    "domain": "nordnet.dk",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "teamtailor",
+   "ok": true,
+   "listed": 13,
+   "matched": 0
   },
   {
    "name": "Ørsted",
@@ -316,7 +318,7 @@
    "domain": "orsted.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 52,
+   "listed": 53,
    "matched": 0
   },
   {
@@ -404,19 +406,19 @@
    "domain": "pfa.dk",
    "source_type": "browser",
    "ok": true,
-   "listed": 5,
+   "listed": 6,
    "matched": 1
   },
   {
    "name": "SAS",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.sasgroup.net/careers/",
    "domain": "sasgroup.net",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "sitemap",
+   "ok": true,
+   "listed": 13,
+   "matched": 0
   },
   {
    "name": "Amazon",
@@ -443,13 +445,13 @@
   {
    "name": "AL Sydbank",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.alsydbank.dk/om-os/job",
    "domain": "alsydbank.dk",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "teamtailor",
+   "ok": true,
+   "listed": 27,
+   "matched": 1
   },
   {
    "name": "Forsvaret",
@@ -469,20 +471,21 @@
    "career_url": "https://jobs.ikea.com/en/search?location=Denmark",
    "domain": "ikea.com",
    "source_type": "generic",
-   "ok": false,
-   "listed": null,
-   "matched": null
+   "ok": true,
+   "listed": 27,
+   "matched": 0
   },
   {
    "name": "Statsministeriet",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://stm.dk/om-os/job/",
    "domain": "stm.dk",
-   "source_type": "none",
-   "ok": null,
+   "source_type": "hrmanager",
+   "ok": true,
    "listed": null,
-   "matched": null
+   "matched": 1,
+   "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
    "name": "Accenture",
@@ -509,13 +512,13 @@
   {
    "name": "DSV",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.dsv.com/en/careers",
    "domain": "dsv.com",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "sitemap",
+   "ok": true,
+   "listed": 2241,
+   "matched": 0
   },
   {
    "name": "BDO",
@@ -608,13 +611,13 @@
   {
    "name": "Poul Schmith / Kammeradvokaten",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.poulschmith.dk/karriere",
    "domain": "poulschmith.dk",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "emply",
+   "ok": true,
+   "listed": 3,
+   "matched": 0
   },
   {
    "name": "Lundgrens",
@@ -628,11 +631,11 @@
    "matched": null
   },
   {
-   "name": "Horten",
+   "name": "HortenDahl",
    "lines": [],
    "status": "find-system",
-   "career_url": "https://www.horten.dk/karriere",
-   "domain": "horten.dk",
+   "career_url": "https://hortendahl.dk/karriere",
+   "domain": "hortendahl.dk",
    "source_type": "none",
    "ok": null,
    "listed": null,
@@ -661,11 +664,11 @@
    "matched": null
   },
   {
-   "name": "Norrbom Vinding",
+   "name": "Schjødt",
    "lines": [],
    "status": "find-system",
-   "career_url": "https://www.norrbomvinding.com/karriere",
-   "domain": "norrbomvinding.com",
+   "career_url": "https://schjodt.com/career",
+   "domain": "schjodt.com",
    "source_type": "none",
    "ok": null,
    "listed": null,
@@ -694,28 +697,6 @@
    "matched": null
   },
   {
-   "name": "Delacour",
-   "lines": [],
-   "status": "find-system",
-   "career_url": "https://delacour.dk/karriere",
-   "domain": "delacour.dk",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
-  },
-  {
-   "name": "Danske Advokater",
-   "lines": [],
-   "status": "find-system",
-   "career_url": "https://www.danskeadvokater.dk/om-os/job",
-   "domain": "danskeadvokater.dk",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
-  },
-  {
    "name": "Grant Thornton",
    "lines": [],
    "status": "klar",
@@ -738,20 +719,21 @@
    "matched": null
   },
   {
-   "name": "Skatteministeriet og Skattestyrelsen",
+   "name": "Skatte- og Vækstministeriet",
    "lines": [],
-   "status": "mangler-adapter",
-   "career_url": "https://www.skm.dk/job",
-   "domain": "skm.dk",
-   "source_type": "none",
-   "ok": null,
+   "status": "klar",
+   "career_url": "https://svmn.dk/ministeriet/job-karriere/ledige-stillinger",
+   "domain": "svmn.dk",
+   "source_type": "hrmanager",
+   "ok": true,
    "listed": null,
-   "matched": null
+   "matched": 2,
+   "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
    "name": "Erhvervsstyrelsen",
    "lines": [],
-   "status": "find-system",
+   "status": "via-portal",
    "career_url": "https://erhvervsstyrelsen.dk/job",
    "domain": "erhvervsstyrelsen.dk",
    "source_type": "none",
@@ -762,18 +744,19 @@
   {
    "name": "Finanstilsynet",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.finanstilsynet.dk/om-os/job",
    "domain": "finanstilsynet.dk",
-   "source_type": "none",
-   "ok": null,
+   "source_type": "hrmanager",
+   "ok": true,
    "listed": null,
-   "matched": null
+   "matched": 1,
+   "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
    "name": "Konkurrence- og Forbrugerstyrelsen",
    "lines": [],
-   "status": "mangler-adapter",
+   "status": "via-portal",
    "career_url": "https://www.kfst.dk/om-os/job",
    "domain": "kfst.dk",
    "source_type": "none",
@@ -784,18 +767,19 @@
   {
    "name": "Justitsministeriet",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.justitsministeriet.dk/job",
    "domain": "justitsministeriet.dk",
-   "source_type": "none",
-   "ok": null,
+   "source_type": "hrmanager",
+   "ok": true,
    "listed": null,
-   "matched": null
+   "matched": 1,
+   "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
    "name": "Datatilsynet",
    "lines": [],
-   "status": "find-system",
+   "status": "via-portal",
    "career_url": "https://www.datatilsynet.dk/om-datatilsynet/job",
    "domain": "datatilsynet.dk",
    "source_type": "none",
@@ -811,8 +795,8 @@
    "domain": "kk.dk",
    "source_type": "generic",
    "ok": true,
-   "listed": 325,
-   "matched": 8
+   "listed": 363,
+   "matched": 9
   },
   {
    "name": "Frederiksberg Kommune",
@@ -822,19 +806,19 @@
    "domain": "frederiksberg.dk",
    "source_type": "emply",
    "ok": true,
-   "listed": 67,
+   "listed": 69,
    "matched": 4
   },
   {
    "name": "Tryg",
    "lines": [],
-   "status": "tjek",
+   "status": "klar",
    "career_url": "https://careers.tryg.com",
    "domain": "tryg.com",
-   "source_type": "successfactors",
+   "source_type": "sitemap",
    "ok": true,
-   "listed": 0,
-   "matched": 0
+   "listed": 34,
+   "matched": 2
   },
   {
    "name": "Alm. Brand Group",
@@ -850,13 +834,13 @@
   {
    "name": "If Skadeforsikring",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.if.dk/om-if/job",
    "domain": "if.dk",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "workday",
+   "ok": true,
+   "listed": 47,
+   "matched": 1
   },
   {
    "name": "ATP",
@@ -866,7 +850,7 @@
    "domain": "atp.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 21,
+   "listed": 23,
    "matched": 2
   },
   {
@@ -965,7 +949,7 @@
    "domain": "egsoftware.com",
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 39,
+   "listed": 40,
    "matched": 1
   },
   {
@@ -976,30 +960,30 @@
    "domain": "twoday.dk",
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 34,
+   "listed": 31,
    "matched": 0
   },
   {
    "name": "Columbus",
    "lines": [],
-   "status": "mangler-adapter",
+   "status": "klar",
    "career_url": "https://www.columbusglobal.com/da/karriere",
    "domain": "columbusglobal.com",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "teamtailor",
+   "ok": true,
+   "listed": 13,
+   "matched": 0
   },
   {
    "name": "Capgemini Danmark",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.capgemini.com/dk-en/careers/",
    "domain": "capgemini.com",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "sitemap",
+   "ok": true,
+   "listed": 6554,
+   "matched": 0
   },
   {
    "name": "IBM Danmark",
@@ -1026,13 +1010,13 @@
   {
    "name": "Visma DataLøn",
    "lines": [],
-   "status": "mangler-adapter",
+   "status": "klar",
    "career_url": "https://karriere.datalonprolon.dk/",
    "domain": "visma.dk",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "teamtailor",
+   "ok": true,
+   "listed": 3,
+   "matched": 1
   },
   {
    "name": "Danske Spil",
@@ -1053,19 +1037,19 @@
    "domain": "dtu.dk",
    "source_type": "oracle",
    "ok": true,
-   "listed": 388,
+   "listed": 392,
    "matched": 4
   },
   {
    "name": "IT-Universitetet",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=itu",
    "domain": "itu.dk",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "hrmanager",
+   "ok": true,
+   "listed": 8,
+   "matched": 1
   },
   {
    "name": "Københavns Universitet",
@@ -1075,8 +1059,8 @@
    "domain": "ku.dk",
    "source_type": "generic",
    "ok": true,
-   "listed": 87,
-   "matched": 9
+   "listed": 89,
+   "matched": 10
   },
   {
    "name": "CBS",
@@ -1086,7 +1070,7 @@
    "domain": "cbs.dk",
    "source_type": "generic",
    "ok": true,
-   "listed": 36,
+   "listed": 30,
    "matched": 1
   },
   {
@@ -1103,13 +1087,13 @@
   {
    "name": "DSB",
    "lines": [],
-   "status": "tjek",
+   "status": "klar",
    "career_url": "https://www.dsb.dk/om-dsb/job-i-dsb/",
    "domain": "dsb.dk",
-   "source_type": "browser",
+   "source_type": "sitemap",
    "ok": true,
-   "listed": 0,
-   "matched": 0
+   "listed": 23,
+   "matched": 1
   },
   {
    "name": "Movia",
@@ -1130,7 +1114,7 @@
    "domain": "svitzer.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 37,
+   "listed": 34,
    "matched": 2
   },
   {
@@ -1152,8 +1136,8 @@
    "domain": "danskerhverv.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 15,
-   "matched": 4
+   "listed": 14,
+   "matched": 3
   },
   {
    "name": "Akademikernes A-kasse",
@@ -1191,13 +1175,13 @@
   {
    "name": "Coop",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://om.coop.dk/job",
    "domain": "coop.dk",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "sitemap",
+   "ok": true,
+   "listed": 231,
+   "matched": 6
   },
   {
    "name": "Royal Unibrew",
@@ -1224,13 +1208,13 @@
   {
    "name": "Coloplast",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.coloplast.com/careers/",
    "domain": "coloplast.com",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "sitemap",
+   "ok": true,
+   "listed": 289,
+   "matched": 4
   },
   {
    "name": "Lundbeck",
@@ -1246,13 +1230,13 @@
   {
    "name": "Demant",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.demant.com/careers",
    "domain": "demant.com",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "sitemap",
+   "ok": true,
+   "listed": 327,
+   "matched": 1
   },
   {
    "name": "FLSmidth",
@@ -1268,24 +1252,24 @@
   {
    "name": "ISS",
    "lines": [],
-   "status": "mangler-adapter",
+   "status": "klar",
    "career_url": "https://www.issworld.com/careers",
    "domain": "issworld.com",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "sitemap",
+   "ok": true,
+   "listed": 60,
+   "matched": 0
   },
   {
    "name": "Genmab",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.genmab.com/careers",
    "domain": "genmab.com",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "workday",
+   "ok": true,
+   "listed": 0,
+   "matched": 0
   },
   {
    "name": "Novo Nordisk Fonden",
@@ -1301,13 +1285,13 @@
   {
    "name": "Ambu",
    "lines": [],
-   "status": "find-system",
+   "status": "klar",
    "career_url": "https://www.ambu.com/careers",
    "domain": "ambu.com",
-   "source_type": "none",
-   "ok": null,
-   "listed": null,
-   "matched": null
+   "source_type": "sitemap",
+   "ok": true,
+   "listed": 136,
+   "matched": 1
   },
   {
    "name": "Region Hovedstaden",
@@ -1317,7 +1301,7 @@
    "domain": "regionh.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 456,
+   "listed": 468,
    "matched": 8
   },
   {
@@ -1339,7 +1323,7 @@
    "domain": "vallensbaek.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 14,
+   "listed": 15,
    "matched": 0
   },
   {
@@ -1350,7 +1334,7 @@
    "domain": "redbarnet.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 7,
+   "listed": 8,
    "matched": 4
   },
   {
@@ -1394,7 +1378,7 @@
    "domain": "andel.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 14,
+   "listed": 15,
    "matched": 0
   },
   {
@@ -1438,7 +1422,7 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 35,
+   "listed": 37,
    "matched": 0
   },
   {
@@ -1462,28 +1446,6 @@
    "ok": true,
    "listed": 2,
    "matched": 0
-  },
-  {
-   "name": "Landal",
-   "lines": [],
-   "status": "opdaget",
-   "career_url": "https://roompot.wd103.myworkdayjobs.com/Landal",
-   "domain": null,
-   "source_type": "workday",
-   "ok": null,
-   "listed": null,
-   "matched": null
-  },
-  {
-   "name": "Nyborg Kommune",
-   "lines": [],
-   "status": "opdaget",
-   "career_url": "https://nyborg.career.emply.com",
-   "domain": null,
-   "source_type": "emply",
-   "ok": null,
-   "listed": null,
-   "matched": null
   },
   {
    "name": "GML A/S",
@@ -1515,7 +1477,7 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 17,
+   "listed": 19,
    "matched": 0
   },
   {
@@ -1530,17 +1492,6 @@
    "matched": 2
   },
   {
-   "name": "Grønlands Selvstyre",
-   "lines": [],
-   "status": "opdaget",
-   "career_url": "https://naalakkersuisut.career.emply.com",
-   "domain": null,
-   "source_type": "emply",
-   "ok": null,
-   "listed": null,
-   "matched": null
-  },
-  {
    "name": "Eurofins",
    "lines": [],
    "status": "opdaget",
@@ -1548,7 +1499,7 @@
    "domain": null,
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 20,
+   "listed": 19,
    "matched": 4
   },
   {
@@ -1563,17 +1514,6 @@
    "matched": 0
   },
   {
-   "name": "Haderslev Kommune",
-   "lines": [],
-   "status": "opdaget",
-   "career_url": "https://haderslev.career.emply.com",
-   "domain": null,
-   "source_type": "emply",
-   "ok": null,
-   "listed": null,
-   "matched": null
-  },
-  {
    "name": "Scantox A/S",
    "lines": [],
    "status": "opdaget",
@@ -1583,17 +1523,6 @@
    "ok": true,
    "listed": 6,
    "matched": 2
-  },
-  {
-   "name": "Würth Danmark A/S",
-   "lines": [],
-   "status": "opdaget",
-   "career_url": "https://wuerth.career.emply.com",
-   "domain": null,
-   "source_type": "emply",
-   "ok": null,
-   "listed": null,
-   "matched": null
   },
   {
    "name": "HTH",
@@ -1627,17 +1556,6 @@
    "ok": true,
    "listed": 8,
    "matched": 1
-  },
-  {
-   "name": "Assens Kommune",
-   "lines": [],
-   "status": "opdaget",
-   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=231&ProjectId=193256&DepartmentId=18452&MediaId=5545",
-   "domain": null,
-   "source_type": "hrmanager",
-   "ok": null,
-   "listed": null,
-   "matched": null
   },
   {
    "name": "Danske Professionshøjskoler",
@@ -1746,7 +1664,7 @@
    "domain": null,
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 2,
+   "listed": 3,
    "matched": 0
   },
   {
@@ -1757,7 +1675,18 @@
    "domain": null,
    "source_type": "emply",
    "ok": true,
-   "listed": 24,
+   "listed": 22,
+   "matched": 1
+  },
+  {
+   "name": "Metroselskabet I/S",
+   "lines": [],
+   "status": "opdaget",
+   "career_url": "https://metroselskabet.career.emply.com",
+   "domain": null,
+   "source_type": "emply",
+   "ok": true,
+   "listed": 5,
    "matched": 1
   },
   {
@@ -1932,16 +1861,6 @@
   },
   {
    "name": "SSI - Statens Serum Institut",
-   "lines": [],
-   "status": "klar",
-   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
-   "domain": null,
-   "source_type": "hrmanager",
-   "via": "Statens Rekrutteringsløsning (staten)",
-   "ok": true
-  },
-  {
-   "name": "Skatte- og Vækstministeriet",
    "lines": [],
    "status": "klar",
    "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",

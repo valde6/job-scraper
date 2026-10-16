@@ -1,7 +1,10 @@
-# Scraper-sundhed 2026-10-16T06:00:54+00:00
+# Scraper-sundhed 2026-10-16T14:20:29+00:00
 
-Aktive job: 221. Kilder med problemer: 1.
+Aktive job: 252. Kilder med problemer: 4.
 
 | Kilde | Type | Problem | I træk | Detalje |
 |---|---|---|---|---|
-| IKEA | generic | fejl | 1 | HTTPError: 504 Server Error: Gateway Time-out for url: https://jobs.ikea.com/da/soeg-jobs/student/Danmark/ |
+| Microsoft | eightfold | fejl | 1 | HTTPError: 403 Client Error: Forbidden for url: https://apply.careers.microsoft.com/api/apply/v2/jobs?domain=microsoft.c |
+| Bech-Bruun | emply | aldrig data | 1 |  |
+| GN Group | workday | aldrig data | 1 |  |
+| Genmab | workday | aldrig data | 1 |  |

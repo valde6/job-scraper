@@ -1,23 +1,23 @@
 {
- "updated": "2026-10-16T06:00:54+00:00",
+ "updated": "2026-10-16T14:20:29+00:00",
  "companies": [
   {
    "company": "Novo Nordisk",
    "source": "successfactors",
    "lines": [],
    "ok": true,
-   "listed": 52,
+   "listed": 53,
    "matched": 3,
-   "seconds": 6.5
+   "seconds": 5.2
   },
   {
    "company": "A.P. Møller - Mærsk",
    "source": "workday",
    "lines": [],
    "ok": true,
-   "listed": 631,
-   "matched": 4,
-   "seconds": 43.2
+   "listed": 629,
+   "matched": 6,
+   "seconds": 34.3
   },
   {
    "company": "McKinsey & Company",
@@ -33,16 +33,16 @@
    "ok": true,
    "listed": 106,
    "matched": 0,
-   "seconds": 21.5
+   "seconds": 42.2
   },
   {
    "company": "Danske Bank",
    "source": "oracle",
    "lines": [],
    "ok": true,
-   "listed": 129,
+   "listed": 136,
    "matched": 4,
-   "seconds": 8.1
+   "seconds": 10.1
   },
   {
    "company": "Deloitte",
@@ -51,7 +51,7 @@
    "ok": true,
    "listed": 32,
    "matched": 5,
-   "seconds": 5.9
+   "seconds": 45.3
   },
   {
    "company": "PwC",
@@ -60,14 +60,16 @@
    "ok": true,
    "listed": 14,
    "matched": 8,
-   "seconds": 11.7
+   "seconds": 11.9
   },
   {
    "company": "Carlsberg",
-   "source": "none",
+   "source": "sitemap",
    "lines": [],
-   "ok": null,
-   "note": "SuccessFactors classic (carlsbergg) – kun få job"
+   "ok": true,
+   "listed": 129,
+   "matched": 1,
+   "seconds": 8.0
   },
   {
    "company": "Boston Consulting Group (BCG)",
@@ -76,23 +78,25 @@
    "ok": true,
    "listed": 4,
    "matched": 3,
-   "seconds": 1.3
+   "seconds": 1.6
   },
   {
    "company": "Nordea",
    "source": "nordea",
    "lines": [],
    "ok": true,
-   "listed": 77,
+   "listed": 78,
    "matched": 0,
-   "seconds": 8.5
+   "seconds": 9.7
   },
   {
    "company": "Microsoft",
-   "source": "none",
+   "source": "eightfold",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": false,
+   "error": "HTTPError: 403 Client Error: Forbidden for url: https://apply.careers.microsoft.com/api/apply/v2/jobs?domain=microsoft.com&start=0&num=50&location=Denmark&sort_by=timestamp",
+   "last_good_listed": null,
+   "seconds": 5.6
   },
   {
    "company": "EY",
@@ -101,7 +105,7 @@
    "ok": true,
    "listed": 10,
    "matched": 6,
-   "seconds": 3.9
+   "seconds": 3.1
   },
   {
    "company": "Jyske Bank",
@@ -115,46 +119,54 @@
    "source": "browser",
    "lines": [],
    "ok": true,
-   "listed": 60,
+   "listed": 61,
    "matched": 8,
-   "seconds": 63.8
+   "seconds": 66.3
   },
   {
    "company": "Bestseller",
-   "source": "none",
+   "source": "sitemap",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 990,
+   "matched": 2,
+   "seconds": 26.5
   },
   {
    "company": "L'Oréal Groupe",
-   "source": "none",
+   "source": "sitemap",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 1703,
+   "matched": 1,
+   "seconds": 57.1
   },
   {
    "company": "Bain & Company",
-   "source": "none",
+   "source": "avature",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 265,
+   "matched": 1,
+   "seconds": 46.3
   },
   {
    "company": "Vestas",
    "source": "successfactors",
    "lines": [],
    "ok": true,
-   "listed": 52,
+   "listed": 54,
    "matched": 0,
-   "seconds": 7.4
+   "seconds": 6.7
   },
   {
    "company": "Implement",
-   "source": "none",
+   "source": "smartrecruiters",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 18,
+   "matched": 3,
+   "seconds": 32.4
   },
   {
    "company": "Saxo Bank",
@@ -163,14 +175,14 @@
    "ok": true,
    "listed": 49,
    "matched": 0,
-   "seconds": 11.8
+   "seconds": 8.2
   },
   {
    "company": "Finansministeriet",
    "source": "none",
    "lines": [],
    "ok": null,
-   "note": "find-system"
+   "note": "Hentes via Statens Rekrutteringsløsning (fælles portal)"
   },
   {
    "company": "Bang & Olufsen",
@@ -179,7 +191,7 @@
    "ok": true,
    "listed": 7,
    "matched": 0,
-   "seconds": 10.2
+   "seconds": 9.7
   },
   {
    "company": "Danmarks Nationalbank",
@@ -195,23 +207,23 @@
    "ok": true,
    "listed": 10,
    "matched": 0,
-   "seconds": 150.0
+   "seconds": 145.8
   },
   {
    "company": "Udenrigsministeriet",
    "source": "none",
    "lines": [],
    "ok": null,
-   "note": "find-system"
+   "note": "Hentes via Statens Rekrutteringsløsning (fælles portal)"
   },
   {
    "company": "Pandora",
-   "source": "browser",
+   "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 0,
+   "listed": 13946,
    "matched": 0,
-   "seconds": 11.2
+   "seconds": 45.2
   },
   {
    "company": "Dansk Industri",
@@ -220,21 +232,23 @@
    "ok": true,
    "listed": 6,
    "matched": 1,
-   "seconds": 0.7
+   "seconds": 0.5
   },
   {
    "company": "Nordnet",
-   "source": "none",
+   "source": "teamtailor",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 13,
+   "matched": 0,
+   "seconds": 0.5
   },
   {
    "company": "Ørsted",
    "source": "browser",
    "lines": [],
    "ok": true,
-   "listed": 52,
+   "listed": 53,
    "matched": 0,
    "seconds": 7.5
   },
@@ -245,7 +259,7 @@
    "ok": true,
    "listed": 18,
    "matched": 2,
-   "seconds": 1.6
+   "seconds": 1.4
   },
   {
    "company": "Matas",
@@ -254,7 +268,7 @@
    "ok": true,
    "listed": 17,
    "matched": 2,
-   "seconds": 2.8
+   "seconds": 4.0
   },
   {
    "company": "Salling Group",
@@ -270,7 +284,7 @@
    "ok": true,
    "listed": 12,
    "matched": 0,
-   "seconds": 0.8
+   "seconds": 36.8
   },
   {
    "company": "Københavns Lufthavne",
@@ -286,7 +300,7 @@
    "ok": true,
    "listed": 3,
    "matched": 0,
-   "seconds": 0.7
+   "seconds": 0.4
   },
   {
    "company": "Netcompany",
@@ -295,23 +309,25 @@
    "ok": true,
    "listed": 30,
    "matched": 5,
-   "seconds": 3.0
+   "seconds": 32.6
   },
   {
    "company": "PFA Pension",
    "source": "browser",
    "lines": [],
    "ok": true,
-   "listed": 5,
+   "listed": 6,
    "matched": 1,
-   "seconds": 16.7
+   "seconds": 15.8
   },
   {
    "company": "SAS",
-   "source": "none",
+   "source": "sitemap",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 13,
+   "matched": 0,
+   "seconds": 3.4
   },
   {
    "company": "Amazon",
@@ -320,7 +336,7 @@
    "ok": true,
    "listed": 7,
    "matched": 0,
-   "seconds": 0.8
+   "seconds": 0.4
   },
   {
    "company": "Beierholm",
@@ -331,10 +347,12 @@
   },
   {
    "company": "AL Sydbank",
-   "source": "none",
+   "source": "teamtailor",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 27,
+   "matched": 1,
+   "seconds": 0.9
   },
   {
    "company": "Forsvaret",
@@ -347,17 +365,17 @@
    "company": "IKEA",
    "source": "generic",
    "lines": [],
-   "ok": false,
-   "error": "HTTPError: 504 Server Error: Gateway Time-out for url: https://jobs.ikea.com/da/soeg-jobs/student/Danmark/",
-   "last_good_listed": 15,
-   "seconds": 17.6
+   "ok": true,
+   "listed": 27,
+   "matched": 0,
+   "seconds": 1.0
   },
   {
    "company": "Statsministeriet",
    "source": "none",
    "lines": [],
    "ok": null,
-   "note": "find-system"
+   "note": "Hentes via Statens Rekrutteringsløsning (fælles portal)"
   },
   {
    "company": "Accenture",
@@ -366,7 +384,7 @@
    "ok": true,
    "listed": 3,
    "matched": 0,
-   "seconds": 15.0
+   "seconds": 15.1
   },
   {
    "company": "Danmarks Radio",
@@ -375,14 +393,16 @@
    "ok": true,
    "listed": 20,
    "matched": 10,
-   "seconds": 0.6
+   "seconds": 0.7
   },
   {
    "company": "DSV",
-   "source": "none",
+   "source": "sitemap",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 2241,
+   "matched": 0,
+   "seconds": 10.3
   },
   {
    "company": "BDO",
@@ -400,7 +420,7 @@
    "ok": true,
    "listed": 88,
    "matched": 6,
-   "seconds": 7.8
+   "seconds": 154.5
   },
   {
    "company": "Novonesis",
@@ -409,7 +429,7 @@
    "ok": true,
    "listed": 73,
    "matched": 3,
-   "seconds": 14.1
+   "seconds": 12.6
   },
   {
    "company": "Kromann Reumert",
@@ -439,7 +459,7 @@
    "ok": true,
    "listed": 0,
    "matched": 0,
-   "seconds": 10.4
+   "seconds": 10.7
   },
   {
    "company": "Accura",
@@ -452,10 +472,12 @@
   },
   {
    "company": "Poul Schmith / Kammeradvokaten",
-   "source": "none",
+   "source": "emply",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 3,
+   "matched": 0,
+   "seconds": 2.0
   },
   {
    "company": "Lundgrens",
@@ -465,11 +487,11 @@
    "note": "find-system"
   },
   {
-   "company": "Horten",
+   "company": "HortenDahl",
    "source": "none",
    "lines": [],
    "ok": null,
-   "note": "find-system"
+   "note": "Horten og DAHL fusionerede dec. 2025. Listen indlæses med JavaScript – system ukendt"
   },
   {
    "company": "DLA Piper Denmark",
@@ -486,11 +508,11 @@
    "note": "find-system"
   },
   {
-   "company": "Norrbom Vinding",
+   "company": "Schjødt",
    "source": "none",
    "lines": [],
    "ok": null,
-   "note": "find-system"
+   "note": "Norrbom Vinding er nu Schjødt. HR-Manager cid 1295 – kunde-alias ukendt"
   },
   {
    "company": "Moalem Weitemeyer",
@@ -507,27 +529,13 @@
    "note": "find-system"
   },
   {
-   "company": "Delacour",
-   "source": "none",
-   "lines": [],
-   "ok": null,
-   "note": "find-system"
-  },
-  {
-   "company": "Danske Advokater",
-   "source": "none",
-   "lines": [],
-   "ok": null,
-   "note": "Set på Jobindex"
-  },
-  {
    "company": "Grant Thornton",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
    "listed": 52,
    "matched": 2,
-   "seconds": 1.1
+   "seconds": 0.9
   },
   {
    "company": "Partner Revision",
@@ -537,82 +545,82 @@
    "note": "HR-Manager indlejret (?hr=show-job)"
   },
   {
-   "company": "Skatteministeriet og Skattestyrelsen",
+   "company": "Skatte- og Vækstministeriet",
    "source": "none",
    "lines": [],
    "ok": null,
-   "note": "Statens Rekrutteringsløsning"
+   "note": "Hentes via Statens Rekrutteringsløsning (ministeriet hed før Skatteministeriet). Skatteforvaltningen vises som egen arbejdsgiver"
   },
   {
    "company": "Erhvervsstyrelsen",
    "source": "none",
    "lines": [],
    "ok": null,
-   "note": "Evt. via Statens Rekrutteringsløsning"
+   "note": "Hentes via Statens Rekrutteringsløsning (fælles portal)"
   },
   {
    "company": "Finanstilsynet",
    "source": "none",
    "lines": [],
    "ok": null,
-   "note": "Set på Jobindex (studiejob, juridisk kontor)"
+   "note": "Hentes via Statens Rekrutteringsløsning (fælles portal)"
   },
   {
    "company": "Konkurrence- og Forbrugerstyrelsen",
    "source": "none",
    "lines": [],
    "ok": null,
-   "note": "Statens Rekrutteringsløsning (departmentid 18989)"
+   "note": "Hentes via Statens Rekrutteringsløsning (fælles portal)"
   },
   {
    "company": "Justitsministeriet",
    "source": "none",
    "lines": [],
    "ok": null,
-   "note": "find-system"
+   "note": "Hentes via Statens Rekrutteringsløsning (fælles portal)"
   },
   {
    "company": "Datatilsynet",
    "source": "none",
    "lines": [],
    "ok": null,
-   "note": "find-system"
+   "note": "Hentes via Statens Rekrutteringsløsning (fælles portal)"
   },
   {
    "company": "Statens Rekrutteringsløsning (staten)",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 496,
+   "listed": 509,
    "matched": 52,
-   "seconds": 13.9
+   "seconds": 13.2
   },
   {
    "company": "Københavns Kommune",
    "source": "generic",
    "lines": [],
    "ok": true,
-   "listed": 325,
-   "matched": 8,
-   "seconds": 7.3
+   "listed": 363,
+   "matched": 9,
+   "seconds": 14.0
   },
   {
    "company": "Frederiksberg Kommune",
    "source": "emply",
    "lines": [],
    "ok": true,
-   "listed": 67,
+   "listed": 69,
    "matched": 4,
-   "seconds": 3.7
+   "seconds": 3.1
   },
   {
    "company": "Tryg",
-   "source": "successfactors",
+   "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 0,
-   "matched": 0,
-   "seconds": 6.0
+   "listed": 34,
+   "matched": 2,
+   "seconds": 13.0
   },
   {
    "company": "Alm. Brand Group",
@@ -623,17 +631,19 @@
   },
   {
    "company": "If Skadeforsikring",
-   "source": "none",
+   "source": "workday",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 47,
+   "matched": 1,
+   "seconds": 17.2
   },
   {
    "company": "ATP",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 21,
+   "listed": 23,
    "matched": 2,
    "seconds": 0.6
   },
@@ -698,39 +708,43 @@
    "source": "teamtailor",
    "lines": [],
    "ok": true,
-   "listed": 39,
+   "listed": 40,
    "matched": 1,
-   "seconds": 1.5
+   "seconds": 0.5
   },
   {
    "company": "Twoday",
    "source": "teamtailor",
    "lines": [],
    "ok": true,
-   "listed": 34,
+   "listed": 31,
    "matched": 0,
-   "seconds": 0.8
+   "seconds": 0.6
   },
   {
    "company": "Columbus",
-   "source": "none",
+   "source": "teamtailor",
    "lines": [],
-   "ok": null,
-   "note": "Teamtailor (domæne ukendt)"
+   "ok": true,
+   "listed": 13,
+   "matched": 0,
+   "seconds": 0.2
   },
   {
    "company": "Capgemini Danmark",
-   "source": "none",
+   "source": "sitemap",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 6554,
+   "matched": 0,
+   "seconds": 42.9
   },
   {
    "company": "IBM Danmark",
    "source": "none",
    "lines": [],
    "ok": null,
-   "note": "Avature"
+   "note": "Avature på careers.ibm.com, men joblisten svarer 202 uden indhold (bot-beskyttelse) – omgås ikke. Tjekket 16/10"
   },
   {
    "company": "Devoteam",
@@ -741,10 +755,12 @@
   },
   {
    "company": "Visma DataLøn",
-   "source": "none",
+   "source": "teamtailor",
    "lines": [],
-   "ok": null,
-   "note": "Teamtailor (domæne ukendt)"
+   "ok": true,
+   "listed": 3,
+   "matched": 1,
+   "seconds": 0.2
   },
   {
    "company": "Danske Spil",
@@ -753,41 +769,43 @@
    "ok": true,
    "listed": 6,
    "matched": 3,
-   "seconds": 0.2
+   "seconds": 0.3
   },
   {
    "company": "DTU",
    "source": "oracle",
    "lines": [],
    "ok": true,
-   "listed": 388,
+   "listed": 392,
    "matched": 4,
-   "seconds": 14.7
+   "seconds": 9.3
   },
   {
    "company": "IT-Universitetet",
-   "source": "none",
+   "source": "hrmanager",
    "lines": [],
-   "ok": null,
-   "note": "HR-Manager cid 119 – find kunde-alias"
+   "ok": true,
+   "listed": 8,
+   "matched": 1,
+   "seconds": 0.3
   },
   {
    "company": "Københavns Universitet",
    "source": "generic",
    "lines": [],
    "ok": true,
-   "listed": 87,
-   "matched": 9,
-   "seconds": 6.4
+   "listed": 89,
+   "matched": 10,
+   "seconds": 6.6
   },
   {
    "company": "CBS",
    "source": "generic",
    "lines": [],
    "ok": true,
-   "listed": 36,
+   "listed": 30,
    "matched": 1,
-   "seconds": 1.8
+   "seconds": 1.4
   },
   {
    "company": "Danske Havne",
@@ -798,12 +816,12 @@
   },
   {
    "company": "DSB",
-   "source": "browser",
+   "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 0,
-   "matched": 0,
-   "seconds": 11.0
+   "listed": 23,
+   "matched": 1,
+   "seconds": 15.6
   },
   {
    "company": "Movia",
@@ -817,9 +835,9 @@
    "source": "workday",
    "lines": [],
    "ok": true,
-   "listed": 37,
+   "listed": 34,
    "matched": 2,
-   "seconds": 10.5
+   "seconds": 7.3
   },
   {
    "company": "Nordisk Film / Egmont",
@@ -833,9 +851,9 @@
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 15,
-   "matched": 4,
-   "seconds": 0.6
+   "listed": 14,
+   "matched": 3,
+   "seconds": 0.5
   },
   {
    "company": "Akademikernes A-kasse",
@@ -853,7 +871,7 @@
    "ok": true,
    "listed": 4,
    "matched": 3,
-   "seconds": 2.0
+   "seconds": 1.5
   },
   {
    "company": "Lederne",
@@ -864,10 +882,12 @@
   },
   {
    "company": "Coop",
-   "source": "none",
+   "source": "sitemap",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 231,
+   "matched": 6,
+   "seconds": 50.8
   },
   {
    "company": "Royal Unibrew",
@@ -876,7 +896,7 @@
    "ok": true,
    "listed": 10,
    "matched": 0,
-   "seconds": 8.3
+   "seconds": 8.4
   },
   {
    "company": "GN Group",
@@ -885,14 +905,16 @@
    "ok": true,
    "listed": 0,
    "matched": 0,
-   "seconds": 8.3
+   "seconds": 6.7
   },
   {
    "company": "Coloplast",
-   "source": "none",
+   "source": "sitemap",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 289,
+   "matched": 4,
+   "seconds": 11.5
   },
   {
    "company": "Lundbeck",
@@ -903,10 +925,12 @@
   },
   {
    "company": "Demant",
-   "source": "none",
+   "source": "sitemap",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 327,
+   "matched": 1,
+   "seconds": 14.7
   },
   {
    "company": "FLSmidth",
@@ -917,17 +941,21 @@
   },
   {
    "company": "ISS",
-   "source": "none",
+   "source": "sitemap",
    "lines": [],
-   "ok": null,
-   "note": "SuccessFactors classic (firma-id ukendt)"
+   "ok": true,
+   "listed": 60,
+   "matched": 0,
+   "seconds": 9.2
   },
   {
    "company": "Genmab",
-   "source": "none",
+   "source": "workday",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 0,
+   "matched": 0,
+   "seconds": 6.2
   },
   {
    "company": "Novo Nordisk Fonden",
@@ -938,19 +966,21 @@
   },
   {
    "company": "Ambu",
-   "source": "none",
+   "source": "sitemap",
    "lines": [],
-   "ok": null,
-   "note": "find-system"
+   "ok": true,
+   "listed": 136,
+   "matched": 1,
+   "seconds": 19.5
   },
   {
    "company": "Region Hovedstaden",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 456,
+   "listed": 468,
    "matched": 8,
-   "seconds": 12.6
+   "seconds": 10.6
   },
   {
    "company": "Hvidovre Kommune",
@@ -959,25 +989,25 @@
    "ok": true,
    "listed": 50,
    "matched": 0,
-   "seconds": 1.1
+   "seconds": 0.9
   },
   {
    "company": "Vallensbæk Kommune",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 14,
+   "listed": 15,
    "matched": 0,
-   "seconds": 0.4
+   "seconds": 0.3
   },
   {
    "company": "Red Barnet",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 7,
+   "listed": 8,
    "matched": 4,
-   "seconds": 0.3
+   "seconds": 0.4
   },
   {
    "company": "Kræftens Bekæmpelse",
@@ -1011,7 +1041,7 @@
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 14,
+   "listed": 15,
    "matched": 0,
    "seconds": 0.4
   },
@@ -1040,16 +1070,16 @@
    "ok": true,
    "listed": 4,
    "matched": 3,
-   "seconds": 2.5
+   "seconds": 2.9
   },
   {
    "company": "Energinet",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 35,
+   "listed": 37,
    "matched": 0,
-   "seconds": 0.9
+   "seconds": 0.7
   },
   {
    "company": "Whiteaway Group",
@@ -1058,7 +1088,7 @@
    "ok": true,
    "listed": 5,
    "matched": 0,
-   "seconds": 3.4
+   "seconds": 3.7
   },
   {
    "company": "Telenor",
@@ -1067,7 +1097,7 @@
    "ok": true,
    "listed": 2,
    "matched": 0,
-   "seconds": 0.6
+   "seconds": 0.5
   },
   {
    "company": "Landal",
@@ -1090,7 +1120,7 @@
    "ok": true,
    "listed": 45,
    "matched": 0,
-   "seconds": 1.1
+   "seconds": 0.8
   },
   {
    "company": "Medicinrådet",
@@ -1099,14 +1129,14 @@
    "ok": true,
    "listed": 1,
    "matched": 1,
-   "seconds": 2.3
+   "seconds": 2.4
   },
   {
    "company": "HOFOR",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 17,
+   "listed": 19,
    "matched": 0,
    "seconds": 0.4
   },
@@ -1117,7 +1147,7 @@
    "ok": true,
    "listed": 12,
    "matched": 2,
-   "seconds": 0.7
+   "seconds": 0.3
   },
   {
    "company": "Grønlands Selvstyre",
@@ -1131,9 +1161,9 @@
    "source": "smartrecruiters",
    "lines": [],
    "ok": true,
-   "listed": 20,
+   "listed": 19,
    "matched": 4,
-   "seconds": 2.6
+   "seconds": 41.7
   },
   {
    "company": "Faxe Kommune",
@@ -1142,7 +1172,7 @@
    "ok": true,
    "listed": 44,
    "matched": 0,
-   "seconds": 1.1
+   "seconds": 0.9
   },
   {
    "company": "Haderslev Kommune",
@@ -1158,7 +1188,7 @@
    "ok": true,
    "listed": 6,
    "matched": 2,
-   "seconds": 2.5
+   "seconds": 2.1
   },
   {
    "company": "Würth Danmark A/S",
@@ -1192,7 +1222,7 @@
    "ok": true,
    "listed": 8,
    "matched": 1,
-   "seconds": 3.4
+   "seconds": 3.3
   },
   {
    "company": "Assens Kommune",
@@ -1208,7 +1238,7 @@
    "ok": true,
    "listed": 1,
    "matched": 0,
-   "seconds": 2.2
+   "seconds": 1.5
   },
   {
    "company": "VIA University College",
@@ -1217,7 +1247,7 @@
    "ok": true,
    "listed": 18,
    "matched": 0,
-   "seconds": 2.2
+   "seconds": 2.3
   },
   {
    "company": "Professionshøjskolen UCN",
@@ -1226,16 +1256,16 @@
    "ok": true,
    "listed": 5,
    "matched": 0,
-   "seconds": 2.5
+   "seconds": 1.8
   },
   {
    "company": "Udviklings- og Forenklingsstyrelsen",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 86,
+   "listed": 88,
    "matched": 5,
-   "seconds": 2.0
+   "seconds": 1.8
   },
   {
    "company": "Nine United A/S",
@@ -1253,7 +1283,7 @@
    "ok": true,
    "listed": 3,
    "matched": 3,
-   "seconds": 2.7
+   "seconds": 2.0
   },
   {
    "company": "Orkla Danmark",
@@ -1262,7 +1292,7 @@
    "ok": true,
    "listed": 7,
    "matched": 1,
-   "seconds": 1.0
+   "seconds": 26.2
   },
   {
    "company": "Nordic Computer A/S",
@@ -1271,7 +1301,7 @@
    "ok": true,
    "listed": 3,
    "matched": 0,
-   "seconds": 1.0
+   "seconds": 0.5
   },
   {
    "company": "Normal A/S",
@@ -1280,7 +1310,7 @@
    "ok": true,
    "listed": 12,
    "matched": 0,
-   "seconds": 0.2
+   "seconds": 0.5
   },
   {
    "company": "NetNordic Denmark A/S",
@@ -1289,25 +1319,34 @@
    "ok": true,
    "listed": 2,
    "matched": 1,
-   "seconds": 0.6
+   "seconds": 0.7
   },
   {
    "company": "LGC Biosearch Technologies A/S",
    "source": "smartrecruiters",
    "lines": [],
    "ok": true,
-   "listed": 2,
+   "listed": 3,
    "matched": 0,
-   "seconds": 0.4
+   "seconds": 2.8
   },
   {
    "company": "Solrød Kommune",
    "source": "emply",
    "lines": [],
    "ok": true,
-   "listed": 24,
+   "listed": 22,
    "matched": 1,
-   "seconds": 2.8
+   "seconds": 6.9
+  },
+  {
+   "company": "Metroselskabet I/S",
+   "source": "emply",
+   "lines": [],
+   "ok": true,
+   "listed": 5,
+   "matched": 1,
+   "seconds": 1.8
   }
  ]
 }

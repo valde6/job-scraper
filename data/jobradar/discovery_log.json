@@ -1,7 +1,36 @@
 {
- "started": "2026-10-16T05:56:07+00:00",
- "ads_read": 1,
- "candidates": [],
- "added": [],
- "rejected": []
+ "started": "2026-10-16T14:19:42+00:00",
+ "ads_read": 12,
+ "candidates": [
+  {
+   "name": "Metroselskabet I/S",
+   "type": "emply",
+   "cfg": {
+    "url": "https://metroselskabet.career.emply.com"
+   },
+   "evidence": "https://metroselskabet.career.emply.com/ad/studentermedhjaelper-til-metroselskabet-enheden-baeredygtighed-og-mobilitet/1dyh0r/da",
+   "listed": 5,
+   "matched": 1
+  }
+ ],
+ "added": [
+  {
+   "name": "Metroselskabet I/S",
+   "type": "emply",
+   "listed": 5,
+   "matched": 1
+  }
+ ],
+ "rejected": [
+  {
+   "name": "Aarhus Kommune",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3112",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144567&DepartmentId=19853&MediaId=4768"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144567&DepartmentId=19853&MediaId=4768",
+   "reason": "HR-Manager-alias ikke fundet"
+  }
+ ]
 }
