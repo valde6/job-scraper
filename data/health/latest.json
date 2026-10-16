@@ -1,12 +1,12 @@
 {
- "ts": "2026-10-15T05:18:07+00:00",
+ "ts": "2026-10-16T05:07:50+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
    "ok": true,
-   "listed": 3,
-   "matched": 2,
+   "listed": 4,
+   "matched": 3,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -95,7 +95,7 @@
    "name": "Nordea",
    "type": "nordea",
    "ok": true,
-   "listed": 29,
+   "listed": 9,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -136,7 +136,7 @@
    "type": "browser",
    "ok": true,
    "listed": 60,
-   "matched": 2,
+   "matched": 3,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 54,
+   "listed": 52,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -355,7 +355,7 @@
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 32,
+   "listed": 30,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -365,8 +365,8 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 6,
-   "matched": 1,
+   "listed": 5,
+   "matched": 0,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -425,7 +425,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 28,
+   "listed": 30,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -485,7 +485,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 91,
+   "listed": 88,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -495,7 +495,7 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 57,
+   "listed": 55,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -505,13 +505,13 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 389,
-   "matched": 27,
+   "listed": 381,
+   "matched": 28,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [],
- "active": 32
+ "active": 33
 }
