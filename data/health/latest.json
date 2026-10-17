@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-16T05:07:50+00:00",
+ "ts": "2026-10-17T05:02:31+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -16,7 +16,7 @@
    "type": "workday",
    "ok": true,
    "listed": 407,
-   "matched": 2,
+   "matched": 3,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -35,8 +35,8 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 60,
-   "matched": 3,
+   "listed": 61,
+   "matched": 4,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -45,7 +45,7 @@
    "name": "Danske Bank",
    "type": "oracle",
    "ok": true,
-   "listed": 7,
+   "listed": 6,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -56,7 +56,7 @@
    "type": "smartrecruiters",
    "ok": true,
    "listed": 32,
-   "matched": 3,
+   "matched": 5,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -135,7 +135,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 60,
+   "listed": 58,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -265,7 +265,7 @@
    "name": "Dansk Industri",
    "type": "teamtailor",
    "ok": true,
-   "listed": 6,
+   "listed": 4,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 52,
+   "listed": 51,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -365,7 +365,7 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 5,
+   "listed": 6,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -424,12 +424,12 @@
   {
    "name": "IKEA",
    "type": "generic",
-   "ok": true,
-   "listed": 30,
-   "matched": 0,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "problem": "fejl",
+   "streak": 1,
+   "detail": "HTTPError: 504 Server Error: Gateway Time-out for url: https://jobs.ikea.com/da/soeg-jobs/student/Danmark/"
   },
   {
    "name": "Statsministeriet",
@@ -455,7 +455,7 @@
    "name": "Danmarks Radio",
    "type": "hrmanager",
    "ok": true,
-   "listed": 20,
+   "listed": 16,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -495,7 +495,7 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 55,
+   "listed": 52,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -505,13 +505,13 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 381,
-   "matched": 28,
+   "listed": 378,
+   "matched": 30,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [],
- "active": 33
+ "active": 37
 }
