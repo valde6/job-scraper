@@ -19,7 +19,7 @@
    "domain": "maersk.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 628,
+   "listed": 627,
    "matched": 6
   },
   {
@@ -113,11 +113,11 @@
   {
    "name": "Microsoft",
    "lines": [],
-   "status": "klar",
+   "status": "tjek",
    "career_url": "https://apply.careers.microsoft.com",
    "domain": "microsoft.com",
-   "source_type": "eightfold",
-   "ok": false,
+   "source_type": "none",
+   "ok": null,
    "listed": null,
    "matched": null
   },
@@ -163,7 +163,7 @@
    "source_type": "sitemap",
    "ok": true,
    "listed": 984,
-   "matched": 2
+   "matched": 0
   },
   {
    "name": "L'Oréal Groupe",
@@ -173,7 +173,7 @@
    "domain": "loreal.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 1695,
+   "listed": 1701,
    "matched": 1
   },
   {
@@ -318,7 +318,7 @@
    "domain": "orsted.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 51,
+   "listed": 0,
    "matched": 0
   },
   {
@@ -341,7 +341,7 @@
    "source_type": "emply",
    "ok": true,
    "listed": 17,
-   "matched": 2
+   "matched": 1
   },
   {
    "name": "Salling Group",
@@ -471,9 +471,9 @@
    "career_url": "https://jobs.ikea.com/en/search?location=Denmark",
    "domain": "ikea.com",
    "source_type": "generic",
-   "ok": false,
-   "listed": null,
-   "matched": null
+   "ok": true,
+   "listed": 27,
+   "matched": 0
   },
   {
    "name": "Statsministeriet",
@@ -795,8 +795,8 @@
    "domain": "kk.dk",
    "source_type": "generic",
    "ok": true,
-   "listed": 344,
-   "matched": 8
+   "listed": 336,
+   "matched": 7
   },
   {
    "name": "Frederiksberg Kommune",
@@ -982,7 +982,7 @@
    "domain": "capgemini.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 6522,
+   "listed": 6512,
    "matched": 0
   },
   {
@@ -1069,9 +1069,9 @@
    "career_url": "https://www.cbs.dk/om-cbs/job-og-karriere/ledige-stillinger",
    "domain": "cbs.dk",
    "source_type": "generic",
-   "ok": false,
-   "listed": null,
-   "matched": null
+   "ok": true,
+   "listed": 30,
+   "matched": 0
   },
   {
    "name": "Danske Havne",
@@ -1093,7 +1093,7 @@
    "source_type": "sitemap",
    "ok": true,
    "listed": 23,
-   "matched": 1
+   "matched": 0
   },
   {
    "name": "Movia",
@@ -1181,7 +1181,7 @@
    "source_type": "sitemap",
    "ok": true,
    "listed": 225,
-   "matched": 7
+   "matched": 2
   },
   {
    "name": "Royal Unibrew",
@@ -1263,7 +1263,7 @@
   {
    "name": "Genmab",
    "lines": [],
-   "status": "klar",
+   "status": "tjek",
    "career_url": "https://www.genmab.com/careers",
    "domain": "genmab.com",
    "source_type": "workday",
@@ -1301,7 +1301,7 @@
    "domain": "regionh.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 440,
+   "listed": 441,
    "matched": 8
   },
   {
@@ -1500,7 +1500,7 @@
    "source_type": "smartrecruiters",
    "ok": true,
    "listed": 19,
-   "matched": 4
+   "matched": 3
   },
   {
    "name": "Faxe Kommune",
