@@ -98,15 +98,13 @@ employers:
   - Nordea Danmark
 - name: Microsoft
   career_url: https://apply.careers.microsoft.com
-  status: klar
+  status: tjek
   source:
-    type: eightfold
-    url: https://apply.careers.microsoft.com
-    domain: microsoft.com
+    type: none
   aliases:
   - Microsoft Danmark
   - Microsoft Development Center Copenhagen
-  note: Eightfold siden nov. 2025 (fundet 16/10 via web-søgning – ikke verificeret endnu)
+  note: Eightfold-API'et svarer 403 (bot-beskyttelse) fra GitHub Actions 17/10 – omgås ikke
 - name: EY
   region: storkbh
   career_url: https://www.ey.com/da_dk/careers
@@ -746,6 +744,7 @@ employers:
   source:
     type: sitemap
     url: https://careers.capgemini.com
+    url_filter: (?i)/job/(?:Copenhagen|K%C3%B8benhavn|Kobenhavn|København|Ballerup|Aarhus|Denmark)
   note: SuccessFactors CSB via sitemap, kun adresser med dansk by (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: IBM Danmark
   career_url: https://www.ibm.com/careers
@@ -943,11 +942,11 @@ employers:
   note: SuccessFactors CSB via sitemap (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: Genmab
   career_url: https://www.genmab.com/careers
-  status: klar
+  status: tjek
   source:
     type: workday
     url: https://genmab.wd3.myworkdayjobs.com/Genmab_Careers_Site
-  note: Workday (fundet 16/10 via web-søgning – ikke verificeret endnu)
+  note: Workday-adressen fra web-søgning gav 0 opslag 17/10 – find det rigtige site-navn (fx via et opslag)
 - name: Novo Nordisk Fonden
   career_url: https://novonordiskfonden.dk/om-fonden/job/
   status: find-system

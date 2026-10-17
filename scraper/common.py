@@ -159,6 +159,15 @@ EVENT_RE = re.compile(
     r"networking|evening|night|meetup|bootcamp|hackathon|case\s+competition|workshop)\b|\bevent\b(?!s)|\barrangement\b",
     re.I,
 )
+# Butiks-, kantine- og servicejob (Coop, Bestseller, 7-Eleven …). Ofte deltid "for studerende", men ikke relevante
+# studiejob for Studieradars målgruppe. Kun i platform-kørslen (job_type), 17/10.
+RETAIL_RE = re.compile(
+    r"salgsassistent|sales\s+(?:assistant|advisor|associate)|butiks?(?:assistent|medarbejder|ansat|elev)|"
+    r"kassemedarbejder|kasse/kiosk|\bkiosk\b|ferskvare|lukkeansvarlig|servicemedarbejder|[ou]\w*\s+18\s+år|sabb?atår|"
+    r"7-eleven|\bcashier|(?:store|retail)\s+(?:assistant|associate)|opfyldning|varepåfyld|lagermedarbejder|"
+    r"rengøring|\bafløser|\bkok\b|\bcater|\btjener\b|opvask|chauffør|pakkemedarbejder|ufaglært",
+    re.I,
+)
 _EXTRA_TYPES: set[str] = set()
 
 
@@ -178,7 +187,7 @@ def _extra_type_ok(title: str) -> bool:
 def job_type(title: str, text: str = "") -> str | None:
     """studiejob | praktik | graduate | None. Titlen afgør praktik/graduate; ellers studiejob via student_fit."""
     t = title or ""
-    if HARD_EXCLUDE_RE.search(t) or EVENT_RE.search(t):
+    if HARD_EXCLUDE_RE.search(t) or EVENT_RE.search(t) or RETAIL_RE.search(t):
         return None
     if PRAKTIK_RE.search(t):
         return "praktik"

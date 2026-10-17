@@ -35,3 +35,27 @@ def test_pages_stop_when_no_new_links(monkeypatch):
     assert listed == 3
     assert jobs == ["Studentermedhjælper til HR", "Studentermedhjælper til IT"]
     assert len(fetched) == 3                          # side 2 gav ingen nye links → stop
+
+
+def test_generic_one_bad_detail_page_does_not_fail_source(monkeypatch):
+    """17/10: CBS-kilden fejlede helt, fordi ét opslag gav 404."""
+    import requests
+    from scraper.adapters import generic
+
+    class R:
+        def __init__(self, text):
+            self.text = text
+
+    listing = ('<a href="/job/studentermedhjaelper-til-hr">Studentermedhjælper til HR</a>'
+               '<a href="/job/student-assistant-gone">Student assistant til marketing</a>')
+
+    def g(url, **kw):
+        if url.endswith("/job/"):
+            return R(listing)
+        if "gone" in url:
+            raise requests.HTTPError("404 Client Error: Not Found")
+        return R("<html><body><h1>Studentermedhjælper til HR</h1><main><p>15 timer om ugen ved siden af dit studie, København.</p></main></body></html>")
+
+    monkeypatch.setattr(generic, "get", g)
+    listed, jobs = generic.scrape({"name": "CBS", "list_urls": ["https://x.dk/job/"], "link_pattern": r"/job/[a-z-]+$", "dk_only": True})
+    assert listed == 2 and [j.title for j in jobs] == ["Studentermedhjælper til HR"]

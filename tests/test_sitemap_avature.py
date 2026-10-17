@@ -118,7 +118,7 @@ def test_sitemap_adapter(monkeypatch):
     assert j.location == "Valby, DK" and j.deadline == "2026-11-01" and j.external_id == "1446335033"
     assert not any("Milano" in c for c in calls)        # hverken studieord eller dansk sted i adressen → hentes ikke
     reasons = {r["title"]: r["reason"] for r in common.REJECTED}
-    assert reasons["Senior Accountant"] == "ikke studiejob"
+    assert not any("1444408833" in c for c in calls)    # "Senior" i adressen → hentes ikke
     assert reasons["AP Intern with German"].startswith("uden for Danmark")
 
 
@@ -175,3 +175,18 @@ def test_avature_adapter(monkeypatch):
     assert j.location == "Copenhagen" and j.external_id == "111066" and j.posted == "2026-10-08"
     assert not any("110080" in c[0] for c in calls)      # Mexico City: detaljesiden hentes ikke
     assert [c[1] for c in calls if "SearchJobs" in c[0]] == [0, 10]   # stopper, når en side ikke har nye opslag
+
+
+def test_sitemap_candidates_order_and_skips():
+    urls = ["https://c.x.com/job/Poznan-AP-Intern/1/",
+            "https://c.x.com/job/K%C3%B8benhavn-Controller/2/",
+            "https://c.x.com/de-de/werkstudent-regul%C3%A4r/job/P22-3",
+            "https://c.x.com/da-dk/studentermedhjaelper-til-hr/job/P22-4",
+            "https://c.x.com/job/Brande-Butikselev-2026/5/",
+            "https://c.x.com/job/Hanau-Werkstudent-%28mwd%29/6/",
+            "https://c.x.com/about"]
+    got = sitemap.candidates(urls, sitemap.JOB_PATTERN, None)
+    assert got == ["https://c.x.com/job/K%C3%B8benhavn-Controller/2/",          # dansk sted først
+                   "https://c.x.com/job/Poznan-AP-Intern/1/",
+                   "https://c.x.com/da-dk/studentermedhjaelper-til-hr/job/P22-4"]
+    assert sitemap.candidates(urls, sitemap.JOB_PATTERN, "Poznan") == ["https://c.x.com/job/Poznan-AP-Intern/1/"]

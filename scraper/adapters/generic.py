@@ -12,7 +12,7 @@ import re
 from datetime import date
 from urllib.parse import urljoin, urldefrag
 
-from ..common import Job, get, soup, clean, html_to_md, is_denmark, is_student, jsonld_jobposting, jsonld_location, find_deadline
+from ..common import Job, get, soup, clean, html_to_md, is_denmark, is_student, jsonld_jobposting, jsonld_location, find_deadline, reject
 
 
 def _main_html(s):
@@ -73,7 +73,13 @@ def scrape(cfg):
     for lu, base in _list_pages(cfg):
         if base in done:
             continue
-        s = soup(get(lu).text)
+        try:
+            s = soup(get(lu).text)
+        except Exception:  # noqa: BLE001
+            if base and listed:                     # en senere side i bladringen fejler → stop bladringen
+                done.add(base)
+                continue
+            raise                                   # første liste-side fejler → kilden er reelt nede
         new_links = 0
         for a in s.find_all("a", href=True):
             href = urldefrag(urljoin(lu, a["href"]))[0]
@@ -86,8 +92,13 @@ def scrape(cfg):
             listed += 1
             new_links += 1
             if not is_student(title):
+                reject(cfg["name"], title, "ikke studiejob (titel)", href)
                 continue
-            j = detail(cfg["name"], title, href, dk_only)
+            try:
+                j = detail(cfg["name"], title, href, dk_only)
+            except Exception:  # noqa: BLE001 – ét opslag, der fejler (fx 404), må ikke vælte kilden (CBS 17/10)
+                reject(cfg["name"], title, "jobsiden kunne ikke hentes", href)
+                continue
             if j:
                 jobs.append(j)
         if base and new_links == 0:

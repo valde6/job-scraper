@@ -21,12 +21,12 @@ import html as htmllib
 import re
 from urllib.parse import unquote, urljoin
 
-from ..common import (CPH_PLACES, DK_PLACES, SJ_PLACES, Job, clean, extract_posting, get, html_to_md, is_denmark,
+from ..common import (CPH_PLACES, DK_PLACES, HARD_EXCLUDE_RE, RETAIL_RE, SJ_PLACES, Job, clean, extract_posting, get, html_to_md, is_denmark,
                       reject, robots_allows, robots_sitemaps, student_fit, topic_tags)
 
 JOB_PATTERN = r"/job/|/jobs?/[^/?#]+/\d{3,}|/JobDetail/|/FolderDetail/|/ad/[^/]+/[a-z0-9]{5,8}|/vacanc|/stilling|/position/"
 STUDY_URL_RE = re.compile(r"student|studerende|studie|intern|praktik|graduate|trainee|deltid|part-?time|working-student|"
-                          r"elev\b|thesis|speciale", re.I)
+                          r"thesis|speciale", re.I)
 _PLACE_TOKENS = sorted({p.strip(" ,-") for p in CPH_PLACES + SJ_PLACES + DK_PLACES if len(p.strip(" ,-")) >= 4}, key=len)
 _PLACE_RE = re.compile("|".join(re.escape(p).replace(r"\ ", "[-_ ]") for p in _PLACE_TOKENS), re.I)
 MAX_SITEMAPS = 25
@@ -60,20 +60,39 @@ def sitemap_urls(base: str, explicit=None) -> list[str]:
     return list(dict.fromkeys(out))
 
 
+# Sprogudgaver i adressen (/de-de/, /fr_FR/): kun dansk og engelsk hentes – resten er samme opslag på andre sprog
+# eller udenlandske opslag.
+_LOCALE_RE = re.compile(r"/([a-z]{2})[-_][a-zA-Z]{2}(?:/|$)")
+_FOREIGN_RE = re.compile(r"werkstudent|praktikum|ausbildung|stagiaire|\bstage\b|alternance|becario|tirocinio|stagiair|"
+                         r"\blia\b|praktikanter\s+till|sommarjobb|\bm/w/d\b|\(mwd\)", re.I)
+
+
 def candidates(urls: list[str], job_pattern: str, url_filter: str | None) -> list[str]:
+    """Jobsider, der er værd at hente, sorteret: adresser med et dansk sted først, derefter adresser med et studieord.
+    Store sitemaps (DSV 2.000+, Capgemini 6.000+) har mest udenlandske opslag, og loftet `max_details` må ikke
+    bruges op på dem."""
     jp = re.compile(job_pattern, re.I)
     flt = re.compile(url_filter, re.I) if url_filter else None
-    out = []
+    first, second = [], []
     for u in urls:
         if not jp.search(u):
             continue
-        text = unquote(u).replace("-", " ").replace("_", " ")
+        raw = unquote(u)
+        text = raw.replace("-", " ").replace("_", " ")
+        loc = _LOCALE_RE.search(raw)
+        if loc and loc.group(1).lower() not in ("da", "en"):
+            continue
         if flt:
-            if flt.search(unquote(u)):
-                out.append(u)
-        elif STUDY_URL_RE.search(text) or _PLACE_RE.search(text):
-            out.append(u)
-    return out
+            if flt.search(raw):
+                first.append(u)
+            continue
+        if _FOREIGN_RE.search(text) or RETAIL_RE.search(text) or HARD_EXCLUDE_RE.search(text):
+            continue
+        if _PLACE_RE.search(text):
+            first.append(u)
+        elif STUDY_URL_RE.search(text):
+            second.append(u)
+    return first + second
 
 
 def url_place(url: str) -> str:

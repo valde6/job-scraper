@@ -99,3 +99,19 @@ def test_region_outside_zealand_regions():
     assert region("Region Midtjylland") is None
     assert region("Region Hovedstaden") == "storkbh" or region("Region Hovedstaden") == "sjaelland"
     assert region("Hele landet (inkl. Færøerne)") is None
+
+
+def test_retail_and_service_jobs_are_not_studiejob():
+    """17/10: butiks-/servicejob fra Coop, Bestseller, DSB 7-Eleven kom med som "studiejob" via sitemap-kilderne."""
+    from scraper.common import job_type
+    for t in ["Salgsassistent, SuperBrugsen Egebjerg Købmandsgård, Amagerbrogade",
+              "Studerende til kiosk, over 18 år, Kvickly Sundby",
+              "Region Hovedstaden Servicemedarbejder deltid, under 18 år, 365discount",
+              "Salgsassistenter til DSB 7-Eleven Holbæk Station (15 timer)",
+              "PIECES Holbæk - Sales Assistant 25 timer per uge", "Sales Advisor Rødovre",
+              "Ufaglærte laboratoriemedhjælpere til studiejob, weekend- og ferieafløsning, samt sabbatår"]:
+        assert job_type(t) is None, t
+    for t in ["Studentermedhjælper, marketing, hovedkontoret, Albertslund", "Student Assistant - HR Coordinator, GEM",
+              "Studentermedhjælper til Category Management", "Student Assistant to Customer Service Excellence",
+              "Studentermedhjælper til Business Development i Claims Center"]:
+        assert job_type(t) == "studiejob", t
