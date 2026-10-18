@@ -1,27 +1,3 @@
-Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 99, in main
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ]({**src, "name": c["name"]}), SOURCE_TIMEOUT)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
-    return fn()
-           ^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 99, in <lambda>
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ]({**src, "name": c["name"]}), SOURCE_TIMEOUT)
-                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/generic.py", line 76, in scrape
-    s = soup(get(lu).text)
-             ^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 92, in get
-    return http("GET", url, **kw)
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 88, in http
-    raise last  # type: ignore[misc]
-    ^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 80, in http
-    r.raise_for_status()
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 504 Server Error: Gateway Time-out for url: https://jobs.ikea.com/da/soeg-jobs/student/Danmark/
 Novo Nordisk                     successfactors  True 4 3 
 A.P. Møller - Mærsk              workday         True 407 3 
 LEGO Group                       workday         True 61 4 
@@ -35,7 +11,7 @@ Nykredit                         browser         True 58 3
 Vestas                           successfactors  True 5 0 
 Saxo Bank                        workday         True 25 0 
 Arla Foods                       phenom          True 10 0 
-Dansk Industri                   teamtailor      True 4 0 
+Dansk Industri                   teamtailor      True 3 0 
 Ørsted                           browser         True 51 0 
 KPMG                             hrmanager       True 18 1 
 PA Consulting Group              smartrecruiters True 12 0 
@@ -43,11 +19,11 @@ Danske Commodities               teamtailor      True 3 0
 Netcompany                       smartrecruiters True 30 3 
 PFA Pension                      browser         True 6 0 
 Amazon                           amazon          True 7 0 
-IKEA                             generic         False   HTTPError: 504 Server Error: Gateway Time-out for url: https://jobs.ikea.com/da/soeg-jobs/student/Danmark/
+IKEA                             generic         True 28 0 
 Accenture                        workday         True 3 3 
-Danmarks Radio                   hrmanager       True 16 1 
+Danmarks Radio                   hrmanager       True 0 0 
 Rambøll                          smartrecruiters True 88 0 
 Novonesis                        workday         True 52 2 
-Jobindex: {'sikker': 26, 'sandsynlig': 1, 'mulig': 3, 'body_fetch': 11}
+Jobindex: {'sikker': 26, 'sandsynlig': 1, 'mulig': 3, 'body_fetch': 1}
 
-Færdig: 67 fundet i dag, 6 nye, 125 aktive i alt.
+Færdig: 66 fundet i dag, 0 nye, 124 aktive i alt.

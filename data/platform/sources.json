@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T05:02:31+00:00",
+ "generated_at": "2026-10-18T05:11:37+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -213,7 +213,7 @@
    "name": "Dansk Industri",
    "type": "teamtailor",
    "ok": true,
-   "listed": 4,
+   "listed": 3,
    "matched": 0,
    "error": null
   },
@@ -340,10 +340,10 @@
   {
    "name": "IKEA",
    "type": "generic",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "error": "HTTPError: 504 Server Error: Gateway Time-out for url: https://jobs.ikea.com/da/soeg-jobs/student/Danmark/"
+   "ok": true,
+   "listed": 28,
+   "matched": 0,
+   "error": null
   },
   {
    "name": "Statsministeriet",
@@ -365,8 +365,8 @@
    "name": "Danmarks Radio",
    "type": "hrmanager",
    "ok": true,
-   "listed": 16,
-   "matched": 1,
+   "listed": 0,
+   "matched": 0,
    "error": null
   },
   {
@@ -405,7 +405,7 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 378,
+   "listed": 381,
    "matched": 30,
    "error": null
   }

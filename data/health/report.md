@@ -1,7 +1,7 @@
-# Scraper-sundhed 2026-10-17T05:02:31+00:00
+# Scraper-sundhed 2026-10-18T05:11:37+00:00
 
-Aktive job: 37. Kilder med problemer: 1.
+Aktive job: 36. Kilder med problemer: 1.
 
 | Kilde | Type | Problem | I træk | Detalje |
 |---|---|---|---|---|
-| IKEA | generic | fejl | 1 | HTTPError: 504 Server Error: Gateway Time-out for url: https://jobs.ikea.com/da/soeg-jobs/student/Danmark/ |
+| Danmarks Radio | hrmanager | mistænkelig | 1 | 0 opslag (sidst 16) |
