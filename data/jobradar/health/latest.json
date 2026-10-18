@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-17T09:58:20+00:00",
+ "ts": "2026-10-18T06:02:14+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -95,7 +95,7 @@
    "name": "Nordea",
    "type": "nordea",
    "ok": true,
-   "listed": 71,
+   "listed": 70,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -145,7 +145,7 @@
    "name": "Bestseller",
    "type": "sitemap",
    "ok": true,
-   "listed": 984,
+   "listed": 983,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -155,7 +155,7 @@
    "name": "L'Oréal Groupe",
    "type": "sitemap",
    "ok": true,
-   "listed": 1701,
+   "listed": 1690,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -175,7 +175,7 @@
    "name": "Vestas",
    "type": "successfactors",
    "ok": true,
-   "listed": 54,
+   "listed": 53,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -255,7 +255,7 @@
    "name": "Pandora",
    "type": "sitemap",
    "ok": true,
-   "listed": 13880,
+   "listed": 13890,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -265,7 +265,7 @@
    "name": "Dansk Industri",
    "type": "teamtailor",
    "ok": true,
-   "listed": 4,
+   "listed": 3,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -285,11 +285,11 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 0,
+   "listed": 51,
    "matched": 0,
-   "problem": "mistænkelig",
-   "streak": 1,
-   "detail": "0 opslag (sidst 51)"
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "KPMG",
@@ -425,7 +425,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 27,
+   "listed": 28,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -455,17 +455,17 @@
    "name": "Danmarks Radio",
    "type": "hrmanager",
    "ok": true,
-   "listed": 16,
-   "matched": 8,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "listed": 0,
+   "matched": 0,
+   "problem": "mistænkelig",
+   "streak": 1,
+   "detail": "0 opslag (sidst 16)"
   },
   {
    "name": "DSV",
    "type": "sitemap",
    "ok": true,
-   "listed": 2259,
+   "listed": 2260,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -538,7 +538,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "aldrig data",
-   "streak": 3,
+   "streak": 4,
    "detail": null
   },
   {
@@ -725,7 +725,7 @@
    "name": "Københavns Kommune",
    "type": "generic",
    "ok": true,
-   "listed": 336,
+   "listed": 304,
    "matched": 7,
    "problem": null,
    "streak": 0,
@@ -895,7 +895,7 @@
    "name": "Capgemini Danmark",
    "type": "sitemap",
    "ok": true,
-   "listed": 6512,
+   "listed": 6503,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -945,7 +945,7 @@
    "name": "DTU",
    "type": "oracle",
    "ok": true,
-   "listed": 386,
+   "listed": 383,
    "matched": 4,
    "problem": null,
    "streak": 0,
@@ -1075,7 +1075,7 @@
    "name": "Coop",
    "type": "sitemap",
    "ok": true,
-   "listed": 225,
+   "listed": 224,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -1098,7 +1098,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "aldrig data",
-   "streak": 3,
+   "streak": 4,
    "detail": null
   },
   {
@@ -1145,7 +1145,7 @@
    "name": "ISS",
    "type": "sitemap",
    "ok": true,
-   "listed": 60,
+   "listed": 59,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -1158,7 +1158,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "aldrig data",
-   "streak": 3,
+   "streak": 4,
    "detail": null
   },
   {
@@ -1595,7 +1595,7 @@
    "name": "Solrød Kommune",
    "type": "emply",
    "ok": true,
-   "listed": 21,
+   "listed": 20,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -1613,5 +1613,5 @@
   }
  ],
  "alerts": [],
- "active": 229
+ "active": 221
 }

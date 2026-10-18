@@ -6,21 +6,21 @@ Deloitte                             smartrecruiters True 32 5
 PwC                                  workday         True 14 8 
 Carlsberg                            sitemap         True 128 1 
 Boston Consulting Group (BCG)        eightfold       True 4 3 
-Nordea                               nordea          True 71 0 
+Nordea                               nordea          True 70 0 
 EY                                   yello           True 10 6 
 Nykredit                             browser         True 58 8 
-Bestseller                           sitemap         True 984 0 
-L'Oréal Groupe                       sitemap         True 1701 1 
+Bestseller                           sitemap         True 983 0 
+L'Oréal Groupe                       sitemap         True 1690 1 
 Bain & Company                       avature         True 264 1 
-Vestas                               successfactors  True 54 0 
+Vestas                               successfactors  True 53 0 
 Implement                            smartrecruiters True 18 3 
 Saxo Bank                            workday         True 49 0 
 Bang & Olufsen                       browser         True 6 0 
 Arla Foods                           phenom          True 10 0 
-Pandora                              sitemap         True 13880 0 
-Dansk Industri                       teamtailor      True 4 0 
+Pandora                              sitemap         True 13890 0 
+Dansk Industri                       teamtailor      True 3 0 
 Nordnet                              teamtailor      True 13 0 
-Ørsted                               browser         True 0 0 0 opslag (sidst 51)
+Ørsted                               browser         True 51 0 
 KPMG                                 hrmanager       True 18 2 
 Matas                                emply           True 17 1 
 PA Consulting Group                  smartrecruiters True 12 0 
@@ -30,10 +30,10 @@ PFA Pension                          browser         True 6 1
 SAS                                  sitemap         True 12 0 
 Amazon                               amazon          True 7 0 
 AL Sydbank                           teamtailor      True 23 1 
-IKEA                                 generic         True 27 0 
+IKEA                                 generic         True 28 0 
 Accenture                            workday         True 3 0 
-Danmarks Radio                       hrmanager       True 16 8 
-DSV                                  sitemap         True 2259 0 
+Danmarks Radio                       hrmanager       True 0 0 0 opslag (sidst 16)
+DSV                                  sitemap         True 2260 0 
 BDO                                  emply           True 24 3 
 Rambøll                              smartrecruiters True 88 6 
 Novonesis                            workday         True 74 2 
@@ -42,7 +42,7 @@ Accura                               hrmanager       True 7 2
 Poul Schmith / Kammeradvokaten       emply           True 2 0 
 Grant Thornton                       hrmanager       True 52 2 
 Statens Rekrutteringsløsning (staten) hrmanager       True 399 48 
-Københavns Kommune                   generic         True 336 7 
+Københavns Kommune                   generic         True 304 7 
 Frederiksberg Kommune                emply           True 67 4 
 Tryg                                 sitemap         True 35 2 
 If Skadeforsikring                   workday         True 46 1 
@@ -50,10 +50,10 @@ ATP                                  hrmanager       True 23 2
 EG                                   teamtailor      True 40 1 
 Twoday                               teamtailor      True 31 0 
 Columbus                             teamtailor      True 13 0 
-Capgemini Danmark                    sitemap         True 6512 0 
+Capgemini Danmark                    sitemap         True 6503 0 
 Visma DataLøn                        teamtailor      True 3 1 
 Danske Spil                          teamtailor      True 6 3 
-DTU                                  oracle          True 386 4 
+DTU                                  oracle          True 383 4 
 IT-Universitetet                     hrmanager       True 8 1 
 Københavns Universitet               generic         True 85 10 
 CBS                                  generic         True 30 0 
@@ -62,12 +62,12 @@ Svitzer                              workday         True 34 2
 Dansk Erhverv                        hrmanager       True 14 3 
 Akademikernes A-kasse                emply           True 3 3 
 Ældre Sagen                          emply           True 4 3 
-Coop                                 sitemap         True 225 2 
+Coop                                 sitemap         True 224 2 
 Royal Unibrew                        browser         True 10 0 
 GN Group                             workday         True 0 0 
 Coloplast                            sitemap         True 291 4 
 Demant                               sitemap         True 328 1 
-ISS                                  sitemap         True 60 0 
+ISS                                  sitemap         True 59 0 
 Genmab                               workday         True 0 0 
 Ambu                                 sitemap         True 138 1 
 Region Hovedstaden                   hrmanager       True 441 8 
@@ -105,8 +105,8 @@ Nordic Computer A/S                  teamtailor      True 3 0
 Normal A/S                           teamtailor      True 12 0 
 NetNordic Denmark A/S                teamtailor      True 2 1 
 LGC Biosearch Technologies A/S       smartrecruiters True 3 0 
-Solrød Kommune                       emply           True 21 1 
+Solrød Kommune                       emply           True 20 1 
 Metroselskabet I/S                   emply           True 5 1 
-AI-strukturering: {'cached': 0, 'new': 0, 'failed': 0, 'skipped_no_key': 229, 'over_limit': 0}
+AI-strukturering: {'cached': 0, 'new': 0, 'failed': 0, 'skipped_no_key': 221, 'over_limit': 0}
 
-Færdig: 229 fundet i dag, 229 aktive. Pr. type: {'praktik': 59, 'studiejob': 153, 'graduate': 17}
+Færdig: 221 fundet i dag, 221 aktive. Pr. type: {'praktik': 52, 'studiejob': 152, 'graduate': 17}
