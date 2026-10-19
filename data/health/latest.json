@@ -1,12 +1,12 @@
 {
- "ts": "2026-10-18T05:11:37+00:00",
+ "ts": "2026-10-19T05:23:28+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
    "ok": true,
-   "listed": 4,
-   "matched": 3,
+   "listed": 3,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -15,8 +15,8 @@
    "name": "A.P. Møller - Mærsk",
    "type": "workday",
    "ok": true,
-   "listed": 407,
-   "matched": 3,
+   "listed": 404,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -65,7 +65,7 @@
    "name": "PwC",
    "type": "workday",
    "ok": true,
-   "listed": 14,
+   "listed": 12,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -135,7 +135,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 58,
+   "listed": 50,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 51,
+   "listed": 44,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -345,7 +345,7 @@
    "name": "Danske Commodities",
    "type": "teamtailor",
    "ok": true,
-   "listed": 3,
+   "listed": 2,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 1,
+   "streak": 2,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -495,8 +495,8 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 52,
-   "matched": 2,
+   "listed": 51,
+   "matched": 1,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -512,6 +512,8 @@
    "detail": null
   }
  ],
- "alerts": [],
- "active": 36
+ "alerts": [
+  "**Danmarks Radio** (hrmanager): mistænkelig i 2 kørsler i træk – 0 opslag (sidst 16)"
+ ],
+ "active": 33
 }
