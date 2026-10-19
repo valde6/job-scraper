@@ -1,7 +1,18 @@
 {
- "started": "2026-10-18T06:01:40+00:00",
+ "started": "2026-10-19T06:18:32+00:00",
  "ads_read": 4,
  "candidates": [],
  "added": [],
- "rejected": []
+ "rejected": [
+  {
+   "name": "Odense Kommune",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3256",
+    "probe_url": "https://recruiter.hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=42825533-9fe8-493e-b0f0-24be10aa5b74&cid=3256"
+   },
+   "evidence": "https://recruiter.hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=42825533-9fe8-493e-b0f0-24be10aa5b74&cid=3256",
+   "reason": "HR-Manager-alias ikke fundet"
+  }
+ ]
 }
