@@ -373,3 +373,13 @@ employers:
     at: '2026-10-16'
     via: jobindex-link
     evidence: https://metroselskabet.career.emply.com/ad/studentermedhjaelper-til-metroselskabet-enheden-baeredygtighed-og-mobilitet/1dyh0r/da
+- name: OK a.m.b.a.
+  career_url: https://karriere.ok.dk
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://karriere.ok.dk
+  discovered:
+    at: '2026-10-20'
+    via: jobindex-link
+    evidence: https://karriere.ok.dk/jobs/8438127-studentermedhjaelper-til-ok-s-screeningsteam-salg-kundeservice?promotion=2254827-jobindex

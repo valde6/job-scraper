@@ -1,14 +1,35 @@
 {
  "companies": {
   "A.P. Møller - Mærsk": {
-   "count": 20,
+   "count": 35,
    "reasons": {
+    "uden for Danmark": 15,
     "ikke studiejob": 20
    },
    "examples": [
     {
+     "title": "Customer Experience Associate (Recent Graduates)",
+     "reason": "uden for Danmark (MX - Mexico City)"
+    },
+    {
      "title": "Visiting Consultant - Maersk Management Consulting (Early Careers)",
      "reason": "ikke studiejob"
+    },
+    {
+     "title": "Graduate Programme UK&I 2027",
+     "reason": "uden for Danmark (GBLPL04 - Liverpool - 12th floor the Pla)"
+    },
+    {
+     "title": "Maersk SEED Internship 2026 - Second Intake",
+     "reason": "uden for Danmark (Thailand, Bangkok, Bangkok, 10120)"
+    },
+    {
+     "title": "Lead Logistics – System Intern",
+     "reason": "uden for Danmark (VNSGN16 - Ho Chi Minh City - Maersk Viet)"
+    },
+    {
+     "title": "Intern (Early Careers)",
+     "reason": "uden for Danmark (Panama, Panamá, Panama City)"
     },
     {
      "title": "Global Operational Excellence PMO – The Maersk Way Deployment",
@@ -23,12 +44,36 @@
      "reason": "ikke studiejob"
     },
     {
+     "title": "Intern - MGF NCS Specialist",
+     "reason": "uden for Danmark (India, Chennai, 600116)"
+    },
+    {
+     "title": "Intern - MGF NCS Specialist",
+     "reason": "uden for Danmark (India, Chennai, 600116)"
+    },
+    {
+     "title": "Intern - MGF NCS Specialist",
+     "reason": "uden for Danmark (India, Chennai, 600116)"
+    },
+    {
+     "title": "Intern - MGF NCS Specialist",
+     "reason": "uden for Danmark (India, Chennai, 600116)"
+    },
+    {
      "title": "Teknisk instruktør med elektrisk baggrund",
      "reason": "ikke studiejob"
     },
     {
+     "title": "Lead Logistics Intern",
+     "reason": "uden for Danmark (Philippines, Pasig, 1600)"
+    },
+    {
      "title": "Head of L&S Category Management Automation, Storage and Packing Solutions",
      "reason": "ikke studiejob"
+    },
+    {
+     "title": "Lubricants, Paints and Chemicals Technical Intern (6 months)",
+     "reason": "uden for Danmark (Singapore, Singapore, 408533)"
     },
     {
      "title": "LCL Operations agent",
@@ -67,6 +112,10 @@
      "reason": "ikke studiejob"
     },
     {
+     "title": "Intern",
+     "reason": "uden for Danmark (Brazil, Santa Catarina, Itajai, 88317-10)"
+    },
+    {
      "title": "Maintenance Systems & Digitalisation Engineer",
      "reason": "ikke studiejob"
     },
@@ -85,15 +134,31 @@
     {
      "title": "Project Associate – (Aid & Relief)",
      "reason": "ikke studiejob"
+    },
+    {
+     "title": "Dispatcher Intern (Tirocinio)",
+     "reason": "uden for Danmark (Italy, Savona, Savona, 17028)"
+    },
+    {
+     "title": "Praktik/LIA – Underhållstekniker",
+     "reason": "uden for Danmark (Sweden, Gothenburg, S-403 13)"
+    },
+    {
+     "title": "Pathways Of The Future Graduate Program",
+     "reason": "uden for Danmark (Czech Republic, Prague, 186 00)"
     }
    ]
   },
   "AL Sydbank": {
-   "count": 20,
+   "count": 21,
    "reasons": {
-    "ikke studiejob": 20
+    "ikke studiejob": 21
    },
    "examples": [
+    {
+     "title": "IT supporter",
+     "reason": "ikke studiejob"
+    },
     {
      "title": "Private Banking rådgiver",
      "reason": "ikke studiejob"
@@ -177,9 +242,9 @@
    ]
   },
   "ATP": {
-   "count": 19,
+   "count": 21,
    "reasons": {
-    "ikke studiejob": 19
+    "ikke studiejob": 21
    },
    "examples": [
     {
@@ -188,6 +253,10 @@
     },
     {
      "title": "Data Privacy Manager til Koncernjura & Databeskyttelse",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Elev til it-support",
      "reason": "ikke studiejob"
     },
     {
@@ -243,6 +312,10 @@
      "reason": "ikke studiejob"
     },
     {
+     "title": "Senior Platform Engineer til at sætte retningen for Observabilty i ATP",
+     "reason": "ikke studiejob"
+    },
+    {
      "title": "Senior Solution Architect til løsninger med samfundsmæssig betydning",
      "reason": "ikke studiejob"
     },
@@ -261,15 +334,11 @@
    ]
   },
   "Accura": {
-   "count": 5,
+   "count": 4,
    "reasons": {
-    "ikke studiejob": 5
+    "ikke studiejob": 4
    },
    "examples": [
-    {
-     "title": "AI consultant til Accuras afdeling for AI & Viden",
-     "reason": "ikke studiejob"
-    },
     {
      "title": "IT-supporter til advokatvirksomheden Accura – Nordhavn",
      "reason": "ikke studiejob"
@@ -289,10 +358,10 @@
    ]
   },
   "Ambu": {
-   "count": 27,
+   "count": 28,
    "reasons": {
     "ikke studiejob": 25,
-    "uden for Danmark": 2
+    "uden for Danmark": 3
    },
    "examples": [
     {
@@ -371,19 +440,9 @@
      "url": "https://jobs.ambu.com/job/Ballerup-Solution-Architect%2C-EndoIntelligence-Hardware%2C-Global-R&D/1442705833/"
     },
     {
-     "title": "Data Engineer",
-     "reason": "ikke studiejob",
-     "url": "https://jobs.ambu.com/job/Ballerup-Data-Engineer/1411183133/"
-    },
-    {
      "title": "CMO Manager, Global Planning",
      "reason": "ikke studiejob",
      "url": "https://jobs.ambu.com/job/Ballerup-CMO-Manager%2C-Global-Planning/1438065833/"
-    },
-    {
-     "title": "BI Consultant",
-     "reason": "ikke studiejob",
-     "url": "https://jobs.ambu.com/job/Ballerup-BI-Consultant/1434554533/"
     },
     {
      "title": "Project Manager, Anaesthesia & Patient Monitoring Solutions",
@@ -406,11 +465,6 @@
      "url": "https://jobs.ambu.com/job/Ballerup-Global-Process-Owner%2C-Order-to-Cash%2C-ERP-Transformation/1441389233/"
     },
     {
-     "title": "Distribution Specialist, Global Supply Chain",
-     "reason": "ikke studiejob",
-     "url": "https://jobs.ambu.com/job/Ballerup-Distribution-Specialist%2C-Global-Supply-Chain/1442823533/"
-    },
-    {
      "title": "Functional Program Director, ERP Transformation (Global Operations)",
      "reason": "ikke studiejob",
      "url": "https://jobs.ambu.com/job/Ballerup-Functional-Program-Director%2C-ERP-Transformation-%28Global-Operations%29/1437587033/"
@@ -421,6 +475,21 @@
      "url": "https://jobs.ambu.com/job/Ballerup-Medical-Advisor%2C-Anaesthesiology/1395111433/"
     },
     {
+     "title": "BI Consultant",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.ambu.com/job/Ballerup-BI-Consultant/1434554533/"
+    },
+    {
+     "title": "Distribution Specialist, Global Supply Chain",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.ambu.com/job/Ballerup-Distribution-Specialist%2C-Global-Supply-Chain/1442823533/"
+    },
+    {
+     "title": "Data Engineer",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.ambu.com/job/Ballerup-Data-Engineer/1411183133/"
+    },
+    {
      "title": "R&D Intern",
      "reason": "uden for Danmark ()",
      "url": "https://jobs.ambu.com/job/Penang-R&D-Intern/1435082333/"
@@ -429,6 +498,11 @@
      "title": "R&D Intern",
      "reason": "uden for Danmark ()",
      "url": "https://jobs.ambu.com/job/Penang-R&D-Intern/1430761233/"
+    },
+    {
+     "title": "NPI Intern",
+     "reason": "uden for Danmark ()",
+     "url": "https://jobs.ambu.com/job/Penang-NPI-Intern/1449270633/"
     }
    ]
   },
@@ -603,6 +677,162 @@
      "title": "Practice Senior Manager – Performance Improvement Commercial Practice",
      "reason": "ikke studiejob",
      "url": "https://careers.bain.com/jobs/FolderDetail/Practice-Senior-Manager-Performance-Improvement-Commercial-Practice/110286"
+    }
+   ]
+  },
+  "Bech-Bruun": {
+   "count": 5,
+   "reasons": {
+    "ikke studiejob": 5
+   },
+   "examples": [
+    {
+     "title": "Fuldmægtige hos Bech-Bruun",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://bechbruun.com/da/karriere/ledige-stillinger/fuldmaegtige-hos-bech-bruun/"
+    },
+    {
+     "title": "Erfaren fuldmægtig til IP & Technology",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://bechbruun.com/da/karriere/ledige-stillinger/erfaren-fuldmaegtig-til-ip-technology/"
+    },
+    {
+     "title": "Senior Finance Business Partner",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://bechbruun.com/da/karriere/ledige-stillinger/senior-finance-business-partner/"
+    },
+    {
+     "title": "Legal Tech Operations Consultant",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://bechbruun.com/da/karriere/ledige-stillinger/legal-tech-operations-consultant/"
+    },
+    {
+     "title": "IT Service Specialist til IT",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://bechbruun.com/da/karriere/ledige-stillinger/it-service-specialist-til-it/"
+    }
+   ]
+  },
+  "Beierholm": {
+   "count": 23,
+   "reasons": {
+    "ikke studiejob": 23
+   },
+   "examples": [
+    {
+     "title": "Erfaren revisor til Ringkøbing",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-erfaren-revisor-til-ringk-bing_847.aspx"
+    },
+    {
+     "title": "Engageret og samarbejdsorienteret revisor søges til Beierholm i Randers",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-engageret-og-samarbejdsorienteret-revisor-s-ges-til-beierholm-i-randers_1064.aspx"
+    },
+    {
+     "title": "Konsulent til Skat & Jura, Beierholm Kolding",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-konsulent-til-skat-jura-beierholm-kolding_1065.aspx"
+    },
+    {
+     "title": "Regnskabskonsulent til Beierholm Horsens",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-regnskabskonsulent-til-beierholm-horsens_1063.aspx"
+    },
+    {
+     "title": "Rekrutteringskonsulent med stærke evner inden for talenttiltrækning - Aalborg eller Aarhus",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-rekrutteringskonsulent-med-st-rke-evner-inden-for-talenttiltr-kning-aalborg-eller-aarhus_1061.aspx"
+    },
+    {
+     "title": "Regnskabskonsulent til Beierholm Søborg",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-regnskabskonsulent-til-beierholm-s-borg_1054.aspx"
+    },
+    {
+     "title": "Beierholm Vordingborg søger erfaren revisor",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-beierholm-vordingborg-s-ger-erfaren-revisor_730.aspx"
+    },
+    {
+     "title": "Erfaren revisor med partnerambitioner søges til Beierholm i Aars",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-erfaren-revisor-med-partnerambitioner-s-ges-til-beierholm-i-aars_1062.aspx"
+    },
+    {
+     "title": "Økonomikonsulent til outsourcing hos Beierholm i Aars",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job--konomikonsulent-til-outsourcing-hos-beierholm-i-aars_994.aspx"
+    },
+    {
+     "title": "Grafiker med sans for design, branding og digitale medier",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-grafiker-med-sans-for-design-branding-og-digitale-medier_1060.aspx"
+    },
+    {
+     "title": "Revisor med ambitioner om et arbejdsliv i balance til vores kontor i Søborg",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-revisor-med-ambitioner-om-et-arbejdsliv-i-balance-til-vores-kontor-i-s-borg_629.aspx"
+    },
+    {
+     "title": "Lønkonsulent til Beierholm Outsourcing",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-l-nkonsulent-til-beierholm-outsourcing_1059.aspx"
+    },
+    {
+     "title": "Engageret revisor til stærkt og veletableret miljø i Viborg",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-engageret-revisor-til-st-rkt-og-veletableret-milj-i-viborg_1024.aspx"
+    },
+    {
+     "title": "Revisor til Mariagerfjord",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-revisor-til-mariagerfjord-_784.aspx"
+    },
+    {
+     "title": "Sæt fart på din revisorkarriere hos Beierholm i Skive",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-s-t-fart-pa-din-revisorkarriere-hos-beierholm-i-skive_913.aspx"
+    },
+    {
+     "title": "Lønkonsulent til Beierholm Aarhus",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-l-nkonsulent-til-beierholm-aarhus_1045.aspx"
+    },
+    {
+     "title": "Bliv revisortrainee i 2027 hos Danmarks bedste arbejdsplads for unge",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-bliv-revisortrainee-i-2027-hos-danmarks-bedste-arbejdsplads-for-unge_1037.aspx"
+    },
+    {
+     "title": "Bliv outsourcingtrainee i 2027 hos Danmarks bedste arbejdsplads for unge",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-bliv-outsourcingtrainee-i-2027-hos-danmarks-bedste-arbejdsplads-for-unge_1038.aspx"
+    },
+    {
+     "title": "Investerings- og formuerådgiver til Beierholm Finansiel Rådgivning, Aarhus",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-investerings-og-formueradgiver-til-beierholm-finansiel-radgivning-aarhus_1036.aspx"
+    },
+    {
+     "title": "Erfaren revisor søges til Beierholm Aarhus",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-erfaren-revisor-s-ges-til-beierholm-aarhus_1018.aspx"
+    },
+    {
+     "title": "Revisor til Beierholm i Næstved",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-revisor-til-beierholm-i-n-stved_857.aspx"
+    },
+    {
+     "title": "Regnskabskonsulent til Outsourcing, Beierholm Kolding",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-regnskabskonsulent-til-outsourcing-beierholm-kolding_985.aspx"
+    },
+    {
+     "title": "Send os en uopfordret ansøgning",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://beierholm-career.talent-soft.com/job/job-send-os-en-uopfordret-ans-gning_2.aspx"
     }
    ]
   },
@@ -818,10 +1048,9 @@
    ]
   },
   "CBS": {
-   "count": 26,
+   "count": 25,
    "reasons": {
-    "ikke studiejob": 25,
-    "uden for Sjælland": 1
+    "ikke studiejob": 25
    },
    "examples": [
     {
@@ -948,11 +1177,6 @@
      "title": "PhD scholarship in the intellectual history of corporate politics at CBS",
      "reason": "ikke studiejob (titel)",
      "url": "https://www.cbs.dk/om-cbs/job-og-karriere/ledige-stillinger/phd-scholarship-intellectual-history-corporate-politics"
-    },
-    {
-     "title": "Studerende (IT-vejledere) til IT-supporten på Copenhagen Business School",
-     "reason": "uden for Sjælland (Danmark)",
-     "url": "https://www.cbs.dk/om-cbs/job-og-karriere/ledige-stillinger/studerende-it-vejledere-til-it-supporten-paa-copenhagen"
     }
    ]
   },
@@ -1005,10 +1229,10 @@
    ]
   },
   "Carlsberg": {
-   "count": 14,
+   "count": 15,
    "reasons": {
     "ikke studiejob": 3,
-    "uden for Danmark": 10,
+    "uden for Danmark": 11,
     "uden for Sjælland": 1
    },
    "examples": [
@@ -1076,6 +1300,11 @@
      "title": "Transport & Distribution Intern with German",
      "reason": "uden for Danmark (Poznan, PL)",
      "url": "https://careers.carlsberg.com/job/Poznan-Transport-&-Distribution-Intern-with-German/1398294133/"
+    },
+    {
+     "title": "Internship Trainee, Carlsberg Excellence",
+     "reason": "uden for Danmark (Shah Alam, Selangor, MY)",
+     "url": "https://careers.carlsberg.com/job/Shah-Alam%2C-Selangor-Internship-Trainee%2C-Carlsberg-Excellence/1449312233/"
     },
     {
      "title": "Ingeniørpraktikant til Carlsberg Supply Company Danmark, Fredericia",
@@ -1254,9 +1483,9 @@
    ]
   },
   "Coop": {
-   "count": 103,
+   "count": 108,
    "reasons": {
-    "ikke studiejob": 100,
+    "ikke studiejob": 105,
     "uden for Danmark": 3
    },
    "examples": [
@@ -1462,6 +1691,24 @@
     }
    ]
   },
+  "DLA Piper Denmark": {
+   "count": 2,
+   "reasons": {
+    "ikke studiejob": 2
+   },
+   "examples": [
+    {
+     "title": "Head of IT DLA Piper",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://denmark.dlapiper.com/da/landing/jobbeskrivelse?VID=09102026"
+    },
+    {
+     "title": "Kok- Nordic Cooking & Catering. København",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://denmark.dlapiper.com/da/landing/jobbeskrivelse?VID=05092016"
+    }
+   ]
+  },
   "DM": {
    "count": 2,
    "reasons": {
@@ -1548,9 +1795,9 @@
    ]
   },
   "DSV": {
-   "count": 18,
+   "count": 19,
    "reasons": {
-    "ikke studiejob": 5,
+    "ikke studiejob": 6,
     "uden for Danmark": 12,
     "uden for Sjælland": 1
    },
@@ -1579,6 +1826,11 @@
      "title": "Contract Manager til DSV Road Control Tower Danmark",
      "reason": "ikke studiejob",
      "url": "https://jobs.dsv.com/job/Horsens-Contract-Manager-til-DSV-Road-Control-Tower-Danmark-82-8700/1442780133/"
+    },
+    {
+     "title": "Head of Training - European Control Tower Platform (Kinaxis SCE)",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.dsv.com/job/Horsens-Head-of-Training-European-Control-Tower-Platform-%28Kinaxis-SCE%29-82-8700/1449253333/"
     },
     {
      "title": "Intern",
@@ -1648,11 +1900,16 @@
    ]
   },
   "DTU": {
-   "count": 1,
+   "count": 2,
    "reasons": {
-    "ikke studiejob/praktik/graduate": 1
+    "ikke studiejob/praktik/graduate": 2
    },
    "examples": [
+    {
+     "title": "STADS-ansvarlig med blik for sammenhæng, udvikling og governance - Afd. for Uddannelse og Studerende",
+     "reason": "ikke studiejob/praktik/graduate",
+     "url": "https://efzu.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/8441"
+    },
     {
      "title": "Evalueringsmedarbejdere til uddannelsesudvikling - Afd. for Uddannelse og Studerende",
      "reason": "ikke studiejob/praktik/graduate",
@@ -2044,9 +2301,9 @@
    ]
   },
   "EG": {
-   "count": 38,
+   "count": 37,
    "reasons": {
-    "ikke studiejob": 36,
+    "ikke studiejob": 35,
     "uden for Sjælland": 2
    },
    "examples": [
@@ -2072,10 +2329,6 @@
     },
     {
      "title": "Lead Database Administrator",
-     "reason": "ikke studiejob"
-    },
-    {
-     "title": "Treasury Analyst - Global Finance Processes & Nordic Finance",
      "reason": "ikke studiejob"
     },
     {
@@ -2440,9 +2693,9 @@
    ]
   },
   "Erhvervsakademi København": {
-   "count": 7,
+   "count": 8,
    "reasons": {
-    "ikke studiejob": 7
+    "ikke studiejob": 8
    },
    "examples": [
     {
@@ -2470,16 +2723,21 @@
      "reason": "ikke studiejob"
     },
     {
+     "title": "Forskningskonsulent (barselsvikariat) til projekt om virksomheders bæredygtighed",
+     "reason": "ikke studiejob"
+    },
+    {
      "title": "Energikonsulent med blik for grøn omstilling og kvalitet",
      "reason": "ikke studiejob"
     }
    ]
   },
   "Eurofins": {
-   "count": 16,
+   "count": 17,
    "reasons": {
     "ikke studiejob": 14,
-    "ikke studiejob/praktik/graduate": 2
+    "ikke studiejob/praktik/graduate": 1,
+    "uden for Sjælland": 2
    },
    "examples": [
     {
@@ -2539,14 +2797,19 @@
      "reason": "ikke studiejob"
     },
     {
-     "title": "Chauffør på 12 timer ugentligt søges til Ishøj",
-     "reason": "ikke studiejob/praktik/graduate",
-     "url": "https://jobs.smartrecruiters.com/Eurofins/744000153420559-chauff-r-pa-12-timer-ugentligt-s-ges-til-ish-j"
-    },
-    {
      "title": "Ufaglærte laboratoriemedhjælpere til studiejob, weekend- og ferieafløsning, samt sabbatår",
      "reason": "ikke studiejob/praktik/graduate",
      "url": "https://jobs.smartrecruiters.com/Eurofins/744000141452599-ufagl-rte-laboratoriemedhj-lpere-til-studiejob-weekend-og-ferieafl-sning-samt-sabbatar"
+    },
+    {
+     "title": "Studiejob i laboratoriet hos Eurofins i Vejen – for dig med naturvidenskabelig interesse",
+     "reason": "uden for Sjælland (Vejen, dk)",
+     "url": "https://jobs.smartrecruiters.com/Eurofins/744000141449241-studiejob-i-laboratoriet-hos-eurofins-i-vejen-for-dig-med-naturvidenskabelig-interesse"
+    },
+    {
+     "title": "Studiejob i Eurofins VBM Laboratoriet A/S som Laboratoriemedhjælper",
+     "reason": "uden for Sjælland (Aabybro, dk)",
+     "url": "https://jobs.smartrecruiters.com/Eurofins/744000141450339-studiejob-i-eurofins-vbm-laboratoriet-a-s-som-laboratoriemedhj-lper"
     }
    ]
   },
@@ -2566,10 +2829,30 @@
     }
    ]
   },
-  "Faxe Kommune": {
-   "count": 36,
+  "FLSmidth": {
+   "count": 3,
    "reasons": {
-    "ikke studiejob": 34,
+    "ikke studiejob": 3
+   },
+   "examples": [
+    {
+     "title": "Head of Distribution - Crushing, Screening and Sizing",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Product Line Manager - Jaw & Cone Crushing",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Global Product Line Manager - Screens",
+     "reason": "ikke studiejob"
+    }
+   ]
+  },
+  "Faxe Kommune": {
+   "count": 38,
+   "reasons": {
+    "ikke studiejob": 36,
     "deltid uden fagligt nøgleord i titlen": 2
    },
    "examples": [
@@ -2587,6 +2870,10 @@
     },
     {
      "title": "Dansklærer med blik for deltagelsesmuligheder og elevinddragelse",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Datakonsulent til ledelsesinformation og datastyring",
      "reason": "ikke studiejob"
     },
     {
@@ -2647,6 +2934,10 @@
     },
     {
      "title": "Social- og sundhedsassistent søges til dagvagts stilling i hjemmepleje øst Faxe kommune",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Social- og sundhedsassistent søges til hjemmeplejen distrikt Nord, Haslev",
      "reason": "ikke studiejob"
     },
     {
@@ -2721,10 +3012,218 @@
     }
    ]
   },
-  "Frederiksberg Kommune": {
-   "count": 54,
+  "Forsvaret": {
+   "count": 52,
    "reasons": {
-    "ikke studiejob": 53,
+    "ikke studiejob": 52
+   },
+   "examples": [
+    {
+     "title": "Maskinmester til tekniske løsninger og materieludvikling i Forsvaret",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=167159&DepartmentId=19336&MediaId=4735"
+    },
+    {
+     "title": "Administrativ medarbejder til Forsvarets Køreskole i Aalborg",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169377&DepartmentId=19338&MediaId=4735"
+    },
+    {
+     "title": "Administrativ medarbejder til Personeladministrationen ved Trænregimentet",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169382&DepartmentId=19338&MediaId=4735"
+    },
+    {
+     "title": "Danmark i internationale sammenhænge - Operationsstaben",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169336&DepartmentId=19301&MediaId=4735"
+    },
+    {
+     "title": "Forsyningshjælper til Jægerkorpset",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169607&DepartmentId=19353&MediaId=4735"
+    },
+    {
+     "title": "Næstkommanderende til J1 personel ved Operativ Støttekommando",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169292&DepartmentId=20220&MediaId=4735"
+    },
+    {
+     "title": "Institut for Ledelse og Organisation søger underviser til kurser for Koncernens sagsbehandlere",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=168670&DepartmentId=19307&MediaId=4735"
+    },
+    {
+     "title": "Mekaniker ved Forsvarets Vedligeholdelsestjeneste Værksted i Holstebro",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=167566&DepartmentId=20224&MediaId=4735"
+    },
+    {
+     "title": "Hærens koordinerende sikkerhedsrådgiver",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169696&DepartmentId=19302&MediaId=4735"
+    },
+    {
+     "title": "Sagsbehandler Maritim Kapacitetssektion",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169211&DepartmentId=19301&MediaId=4735"
+    },
+    {
+     "title": "Administrator til unik arbejdsplads på Forsyningscenter Høvelte",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=168743&DepartmentId=20222&MediaId=4735"
+    },
+    {
+     "title": "Udstationering til Belgien - Assisterende forsvarsrådgiver til Forsvarsministeriets kontor ved Danmarks Faste Repræsentation ved NATO (DANATO)",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=168453&DepartmentId=19700&MediaId=4735"
+    },
+    {
+     "title": "Den Kongelige Livgardes Musikkorps søger basunist",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=167601&DepartmentId=19331&MediaId=4735"
+    },
+    {
+     "title": "Divisionskoordinator til Operationsdivisionen i Hjemmeværnskommandoen",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169871&DepartmentId=19423&MediaId=4735"
+    },
+    {
+     "title": "Mekanikere til værksted Oksbøl ved Forsvarets Vedligeholdelsestjeneste i Oksbøl",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170216&DepartmentId=20224&MediaId=4735"
+    },
+    {
+     "title": "Sagsbehandlere til Driftssektionen i Økonomi- og Driftsstaben i Forsvarskommandoen",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170476&DepartmentId=19301&MediaId=4735"
+    },
+    {
+     "title": "Våbenmekaniker til værksted i Holstebro ved Forsvarets Vedligeholdelsestjeneste",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169136&DepartmentId=20224&MediaId=4735"
+    },
+    {
+     "title": "Mekaniker til Værksted Skive ved Forsvarets Vedligeholdelsestjeneste",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169960&DepartmentId=20224&MediaId=4735"
+    },
+    {
+     "title": "Gruppefører (oversergent) for EOD gruppe, EOD- & Searchkompagniet i Skive",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170092&DepartmentId=19336&MediaId=4735"
+    },
+    {
+     "title": "Automatiktekniker til Kanonværkstedet i Korsør ved Forsvarets Vedligeholdelsestjeneste",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169620&DepartmentId=20224&MediaId=4735"
+    },
+    {
+     "title": "Operatører til nyt droneelement for maritime overfladedroner ved Søværnets Overvågningsenhed",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=167796&DepartmentId=19343&MediaId=4735"
+    },
+    {
+     "title": "Administrativ medarbejder til Frømandskorpset ved Etablissement- og Terrænkommandoen",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171015&DepartmentId=19354&MediaId=4735"
+    },
+    {
+     "title": "Afløser som Udkig til Kystudkigsstation Drogden",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170425&DepartmentId=19343&MediaId=4735"
+    },
+    {
+     "title": "Elektronikfagtekniker til C4-værkstedet ved Forsvarets Vedligeholdelsestjeneste i Korsør",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169888&DepartmentId=20224&MediaId=4735"
+    },
+    {
+     "title": "Faglærer til Søværnets Center for Våben i Odsherred",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=165642&DepartmentId=19344&MediaId=4735"
+    },
+    {
+     "title": "Har du tidligere været i Søværnets konstabelgruppe og nysgerrig på, om der findes en vej tilbage? Så læs med her",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=158398&DepartmentId=19303&MediaId=4735"
+    },
+    {
+     "title": "Har du tidligere været i Søværnets sergentgruppe og nysgerrig på, om der findes en vej tilbage? Så læs med her",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=156232&DepartmentId=19303&MediaId=4735"
+    },
+    {
+     "title": "Vil du være med til at opbygge og udvikle Forsvarets kapaciteter til beskyttelse imod droner?",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169276&DepartmentId=20131&MediaId=4735"
+    },
+    {
+     "title": "Kontorfunktionær til Flyvevåbnets Sergentskole",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170375&DepartmentId=19362&MediaId=4735"
+    },
+    {
+     "title": "Sagsbehandler til Flyvestation Skrydstrup i afdelingen Military security",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169005&DepartmentId=19346&MediaId=4735"
+    },
+    {
+     "title": "Værkmestre til Helicopter Wing, Karup",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170752&DepartmentId=19348&MediaId=4735"
+    },
+    {
+     "title": "DKMAR Examination Manager ved Forsvarets Flytekniske Uddannelseseskadrille i Karup",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169156&DepartmentId=20224&MediaId=4735"
+    },
+    {
+     "title": "C4 tekniker til Vedligeholdelsesområde Jordbaseret Luftforsvar",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170692&DepartmentId=20224&MediaId=4735"
+    },
+    {
+     "title": "Leder af Jordudstyrsværkstedet til Vedligeholdelsesområde Jordbaseret Luftforsvar, Vest",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171068&DepartmentId=20224&MediaId=4735"
+    },
+    {
+     "title": "Flymekanikere/flyteknikere til SAAB T-17 Supporter værkstedet i Karup",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=162751&DepartmentId=20224&MediaId=4735"
+    },
+    {
+     "title": "Flyteknikere/flymekanikere til Helikopterværkstedet i Aalborg ved Forsvarets Vedligeholdelsestjeneste",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=168175&DepartmentId=20224&MediaId=4735"
+    },
+    {
+     "title": "Visuel content creator og webdesigner til nyoprettet stilling ved Operations Support Wing, Karup",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=169482&DepartmentId=19350&MediaId=4735"
+    },
+    {
+     "title": "Arbejdsmiljøkoordinator til Helicopter Wing",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=170416&DepartmentId=19348&MediaId=4735"
+    },
+    {
+     "title": "Mekaniker til køretøjer/støtteudstyr på Jordudstyrsværksted for Jordbaseret Luftforsvar på Flyvestation Skalstrup",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=165402&DepartmentId=20224&MediaId=4735"
+    },
+    {
+     "title": "Mekaniker til køretøjer/støtteudstyr på Jordudstyrsværkstedet til Vedligeholdelsesområde Jordbaseret Luftforsvar, Vest",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=166477&DepartmentId=20224&MediaId=4735"
+    }
+   ]
+  },
+  "Frederiksberg Kommune": {
+   "count": 53,
+   "reasons": {
+    "ikke studiejob": 52,
     "deltid uden fagligt nøgleord i titlen": 1
    },
    "examples": [
@@ -2857,10 +3356,6 @@
      "reason": "ikke studiejob"
     },
     {
-     "title": "Ingeborggården en søger social- og sundhedsassistent som aftenvagt på 28 timer.",
-     "reason": "ikke studiejob"
-    },
-    {
      "title": "Gør en forskel for børn og unge med ufrivilligt skolefravær på Skolen ved Bülowsvej",
      "reason": "ikke studiejob"
     },
@@ -2887,16 +3382,24 @@
     {
      "title": "Familie- og netværkskonsulent til Frederiksberg Kommune",
      "reason": "ikke studiejob"
+    },
+    {
+     "title": "Faglig og omsorgsfuld pædagog søges til vores lille børnehus på Frederiksberg",
+     "reason": "ikke studiejob"
     }
    ]
   },
   "GML A/S": {
-   "count": 43,
+   "count": 44,
    "reasons": {
-    "ikke studiejob": 42,
+    "ikke studiejob": 43,
     "uden for Sjælland": 1
    },
    "examples": [
+    {
+     "title": "Gram Clean Air - Teamleder til fremstilling",
+     "reason": "ikke studiejob"
+    },
     {
      "title": "Business Controller",
      "reason": "ikke studiejob"
@@ -3052,10 +3555,19 @@
     {
      "title": "SKAKO Concrete - Project Manager",
      "reason": "ikke studiejob"
-    },
+    }
+   ]
+  },
+  "Gorrissen Federspiel": {
+   "count": 1,
+   "reasons": {
+    "ikke studiejob": 1
+   },
+   "examples": [
     {
-     "title": "Projekteringsleder/Chef",
-     "reason": "ikke studiejob"
+     "title": "Advokatfuldmægtig Aarhus",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://gorrissenfederspiel.com/jobs/advokatfuldmaegtig-aarhus-2/"
     }
    ]
   },
@@ -3356,9 +3868,9 @@
    ]
   },
   "Hvidovre Kommune": {
-   "count": 38,
+   "count": 39,
    "reasons": {
-    "ikke studiejob": 38
+    "ikke studiejob": 39
    },
    "examples": [
     {
@@ -3395,6 +3907,10 @@
     },
     {
      "title": "Engstrandskolen søger en matematiklærer",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Er du uddannet sosu-assistent, aftenmenneske med stærk faglighed og en lyst til at gøre en forskel?",
      "reason": "ikke studiejob"
     },
     {
@@ -3522,24 +4038,44 @@
    },
    "examples": [
     {
-     "title": "Colaborador de Interior Design - 40h Matosinhos, Porto, Portugal Grafik og Indretning Fuldtid",
+     "title": "Carts Co-worker Richmond, British Columbia, Canada Kundeservice Deltid",
      "reason": "ikke studiejob (titel)",
-     "url": "https://jobs.ikea.com/da/job/matosinhos/colaborador-de-interior-design-40h/24107/102039081168"
+     "url": "https://jobs.ikea.com/da/job/richmond/carts-co-worker/24107/100834564320"
     },
     {
-     "title": "Medewerker Visual Merchandising IKEA Haarlem (38 uur) Haarlem, Noord-Holland, Netherlands Grafik og Indretning Fuldtid",
+     "title": "Forklift Driver for Goods Receiving for morning shifts, 10 hours pr. week, Aalborg Aalborg, Nordjylland, Denmark Logistik Deltid",
      "reason": "ikke studiejob (titel)",
-     "url": "https://jobs.ikea.com/da/job/haarlem/medewerker-visual-merchandising-ikea-haarlem-38-uur/24107/101745743136"
+     "url": "https://jobs.ikea.com/da/job/aalborg/forklift-driver-for-goods-receiving-for-morning-shifts-10-hours-pr-week-aalborg/24107/101074375968"
     },
     {
-     "title": "IKEA Food Kitchen Production Manager Vollzeit 40h/W - IKEA Vösendorf Vösendorf, Niederösterreich, Austria Restaurant (IKEA Food) Fuldtid",
+     "title": "【IKEA新三郷/埼玉】カスタマーリレーションズ（レジ・サービスカウンター対応）短時間正社員/学生契約【11/1 10:00-13:00対面ジョブフェア開催！】 Misato-Shi, Saitama, Japan Kundeservice Deltid",
      "reason": "ikke studiejob (titel)",
-     "url": "https://jobs.ikea.com/da/job/vosendorf/ikea-food-kitchen-production-manager-vollzeit-40h-w-ikea-vosendorf/24107/101040093168"
+     "url": "https://jobs.ikea.com/da/job/saitama-ken/ikea%e6%96%b0%e4%b8%89%e9%83%b7-%e5%9f%bc%e7%8e%89-%e3%82%ab%e3%82%b9%e3%82%bf%e3%83%9e%e3%83%bc%e3%83%aa%e3%83%ac%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%82%b9-%e3%83%ac%e3%82%b7-%e3%82%b5%e3%83%bc%e3%83%92%e3%82%b9%e3%82%ab%e3%82%a6%e3%83%b3%e3%82%bf%e3%83%bc%e5%af%be%e5%bf%9c-%e7%9f%ad%e6%99%82%e9%96%93%e6%ad%a3%e7%a4%be%e5%93%a1-%e5%ad%a6%e7%94%9f%e5%a5%91%e7%b4%84-11-1-10-00-13-00%e5%af%be%e9%9d%a2%e3%82%b7%e3%83%a7%e3%83%95%e3%83%95%e3%82%a7%e3%82%a2%e9%96%8b%e5%82%ac/24107/97271723344"
     },
     {
-     "title": "Stivuitorist Dumbravita, Timisoara, Timis, Romania Logistik Fuldtid",
+     "title": "Especialista Ventas B2B Junior (Remoto) Ciudad de México, mx Salg Fuldtid",
      "reason": "ikke studiejob (titel)",
-     "url": "https://jobs.ikea.com/da/job/dumbravita/stivuitorist/24107/99792710016"
+     "url": "https://jobs.ikea.com/da/job/aeropuerto-internacional-de-la-ciudad-de-mexico/especialista-ventas-b2b-junior-remoto/24107/100181992496"
+    },
+    {
+     "title": "Cariste (H/F)expérimenté-80% Aubonne, Vaud, Switzerland Logistik Deltid",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://jobs.ikea.com/da/job/aubonne/cariste-h-f-experimente-80/24107/99700325136"
+    },
+    {
+     "title": "Xplore Design & Innovation Leader - IKEA Korea Service Office (8 months contract) Gwangmyeong-Si, Gyeonggido, South Korea Ekspansion Fuldtid",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://jobs.ikea.com/da/job/gyeonggi-do/xplore-design-and-innovation-leader-ikea-korea-service-office-8-months-contract/24107/102190384176"
+    },
+    {
+     "title": "Xplore Creative Leader - IKEA Korea Service Office (8 months contract) Gwangmyeong-Si, Gyeonggido, South Korea Ekspansion Fuldtid",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://jobs.ikea.com/da/job/gyeonggi-do/xplore-creative-leader-ikea-korea-service-office-8-months-contract/24107/102190384128"
+    },
+    {
+     "title": "Warehouse Team Leader Marsden Park, New South Wales, Australia Logistik Fuldtid",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://jobs.ikea.com/da/job/marsden-park/warehouse-team-leader/24107/102190379584"
     },
     {
      "title": "Verkäufer (w/m/d) - Teilzeit (8 Std./Woche) Düsseldorf, Nordrhein-Westfalen, Germany Salg Deltid",
@@ -3575,26 +4111,6 @@
      "title": "【IKEA立川 /東京】カスタマーリレーションズ（レジ・サービスカウンター対応） 短時間正社員/学生契約 Tachikawa-Shi, Tokyo, Japan Kundeservice Deltid",
      "reason": "ikke studiejob (titel)",
      "url": "https://jobs.ikea.com/da/job/tachikawa/ikea%e7%ab%8b%e5%b7%9d-%e6%9d%b1%e4%ba%ac-%e3%82%ab%e3%82%b9%e3%82%bf%e3%83%9e%e3%83%bc%e3%83%aa%e3%83%ac%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%82%b9-%e3%83%ac%e3%82%b7-%e3%82%b5%e3%83%bc%e3%83%92%e3%82%b9%e3%82%ab%e3%82%a6%e3%83%b3%e3%82%bf%e3%83%bc%e5%af%be%e5%bf%9c-%e7%9f%ad%e6%99%82%e9%96%93%e6%ad%a3%e7%a4%be%e5%93%a1-%e5%ad%a6%e7%94%9f%e5%a5%91%e7%b4%84/24107/100330224352"
-    },
-    {
-     "title": "【IKEA福岡新宮】 セールス (販売) 短時間正社員 Kasuya-Gun, Fukuoka, Japan Salg Deltid",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://jobs.ikea.com/da/job/kasuya-gun/ikea%e7%a6%8f%e5%b2%a1%e6%96%b0%e5%ae%ae-%e3%82%bb%e3%83%bc%e3%83%ab%e3%82%b9-%e8%b2%a9%e5%a3%b2-%e7%9f%ad%e6%99%82%e9%96%93%e6%ad%a3%e7%a4%be%e5%93%a1/24107/98115531776"
-    },
-    {
-     "title": "【IKEA渋谷/東京】IKEA Food（飲食）短時間正社員 Shibuya-Ku, Tokyo, Japan Restaurant (IKEA Food) Deltid",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://jobs.ikea.com/da/job/shibuya/ikea%e6%b8%8b%e8%b0%b7-%e6%9d%b1%e4%ba%ac-ikea-food-%e9%a3%b2%e9%a3%9f-%e7%9f%ad%e6%99%82%e9%96%93%e6%ad%a3%e7%a4%be%e5%93%a1/24107/97410435248"
-    },
-    {
-     "title": "【IKEA長久手/愛知】 フルフィルメントオペレーション (物流/商品補充、荷受け)*深夜・早朝勤務 短時間正社員 Nagakute-Shi, Aichi, Japan Logistik Deltid",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://jobs.ikea.com/da/job/aichi-ken/ikea%e9%95%b7%e4%b9%85%e6%89%8b-%e6%84%9b%e7%9f%a5-%e3%83%95%e3%83%ab%e3%83%95%e3%82%a3%e3%83%ab%e3%83%a1%e3%83%b3%e3%83%88%e3%82%aa%e3%83%98%e3%83%ac%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3-%e7%89%a9%e6%b5%81-%e5%95%86%e5%93%81%e8%a3%9c%e5%85%85-%e8%8d%b7%e5%8f%97%e3%81%91-%e6%b7%b1%e5%a4%9c-%e6%97%a9%e6%9c%9d%e5%8b%a4%e5%8b%99-%e7%9f%ad%e6%99%82%e9%96%93%e6%ad%a3%e7%a4%be%e5%93%a1/24107/97264081456"
-    },
-    {
-     "title": "【IKEA長久手/愛知】 IKEA Food（飲食） 短時間正社員 Nagakute-Shi, Aichi, Japan Restaurant (IKEA Food) Deltid",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://jobs.ikea.com/da/job/aichi-ken/ikea%e9%95%b7%e4%b9%85%e6%89%8b-%e6%84%9b%e7%9f%a5-ikea-food-%e9%a3%b2%e9%a3%9f-%e7%9f%ad%e6%99%82%e9%96%93%e6%ad%a3%e7%a4%be%e5%93%a1/24107/97264081424"
     },
     {
      "title": "Kundeservicemedarbejder, 37 timer pr. uge, IKEAs Kontaktcenter - Tåstrup Taastrup, København, Denmark Kundeservice Fuldtid",
@@ -3637,16 +4153,6 @@
      "url": "https://jobs.ikea.com/da/job/odense/kvlitetsmedarbejder-til-cirkular-og-recovery-30-timer-pr-uge-ikea-odense/24107/102005222672"
     },
     {
-     "title": "Sales Location Management Specialist – Logistics, 30 hours per week, IKEA Odense Odense, Fyn, Denmark Logistik Deltid",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://jobs.ikea.com/da/job/odense/sales-location-management-specialist-logistics-30-hours-per-week-ikea-odense/24107/102005207344"
-    },
-    {
-     "title": "Vareopfylder af boligtilbehør til morgenarbejde, 30 timer pr. uge, Odense Odense, Fyn, Denmark Logistik Deltid",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://jobs.ikea.com/da/job/odense/vareopfylder-af-boligtilbeh%c3%b8r-til-morgenarbejde-30-timer-pr-uge-odense/24107/102005184208"
-    },
-    {
      "title": "Salgsmedarbejder til afdelingerne for Opbevaring & Organisering og Badeværelser, 8 - 15 timer, pr. uge Taastrup, København, Denmark Salg Deltid",
      "reason": "ikke studiejob (titel)",
      "url": "https://jobs.ikea.com/da/job/taastrup/salgsmedarbejder-til-afdelingerne-for-opbevaring-and-organisering-og-badev%c3%a6relser-8-15-timer-pr-uge/24107/101962003312"
@@ -3665,6 +4171,16 @@
      "title": "Køkkensælger, 37 timer pr. uge, IKEA Odense Odense, Fyn, Denmark Salg Fuldtid",
      "reason": "ikke studiejob (titel)",
      "url": "https://jobs.ikea.com/da/job/odense/k%c3%b8kkens%c3%a6lger-37-timer-pr-uge-ikea-odense/24107/101734355312"
+    },
+    {
+     "title": "Køkkenmedarbejder til Restauranten og opvasken, 8 timer pr. uge, Aalborg Aalborg, Nordjylland, Denmark Restaurant (IKEA Food) Deltid",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://jobs.ikea.com/da/job/aalborg/k%c3%b8kkenmedarbejder-til-restauranten-og-opvasken-8-timer-pr-uge-aalborg/24107/101669532896"
+    },
+    {
+     "title": "Butiksmedarbejder med ansvar for Swedish Food Market, 32 timer pr. uge, Aarhus Aarhus, Århus, Denmark Restaurant (IKEA Food) Deltid",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://jobs.ikea.com/da/job/aarhus/butiksmedarbejder-med-ansvar-for-swedish-food-market-32-timer-pr-uge-aarhus/24107/101660255680"
     }
    ]
   },
@@ -3710,11 +4226,6 @@
      "url": "https://jobs.issworld.com/job/Odense-M-Bliv-Tilsynsfunktion%C3%A6r-og-v%C3%A6r-med-til-at-sikre-topkvalitet-hos-vores-kunde-i-Odense-5230/1374552957/"
     },
     {
-     "title": "Global Sales Operations Specialist",
-     "reason": "ikke studiejob",
-     "url": "https://jobs.issworld.com/job/S%C3%B8borg-Global-Sales-Operations-Specialist-2860/821223402/"
-    },
-    {
      "title": "ISS søger Site Manager til stor pharmakunde i Kalundborg",
      "reason": "ikke studiejob",
      "url": "https://jobs.issworld.com/job/Kalundborg-ISS-s%C3%B8ger-Site-Manager-til-stor-pharmakunde-i-Kalundborg/1373707657/"
@@ -3743,6 +4254,11 @@
      "title": "Skab rene og indbydende rammer - bliv en del af ISS hos vores kunde i Hillerød",
      "reason": "ikke studiejob",
      "url": "https://jobs.issworld.com/job/Hiller%C3%B8d-Skab-rene-og-indbydende-rammer-bliv-en-del-af-ISS-hos-vores-kunde-i-Hiller%C3%B8d-3400/1374951557/"
+    },
+    {
+     "title": "Global Sales Operations Specialist",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.issworld.com/job/S%C3%B8borg-Global-Sales-Operations-Specialist-2860/821223402/"
     }
    ]
   },
@@ -3781,9 +4297,10 @@
    ]
   },
   "If Skadeforsikring": {
-   "count": 15,
+   "count": 16,
    "reasons": {
-    "ikke studiejob": 15
+    "ikke studiejob": 15,
+    "uden for Danmark": 1
    },
    "examples": [
     {
@@ -3797,6 +4314,10 @@
     {
      "title": "Business Development Manager Agriculture",
      "reason": "ikke studiejob"
+    },
+    {
+     "title": "Legal Summer Internship 2027",
+     "reason": "uden for Danmark (Stockholm)"
     },
     {
      "title": "Manager Liability, Legal Expense and Claims Development, Denmark",
@@ -3918,6 +4439,154 @@
     }
    ]
   },
+  "Jyske Bank": {
+   "count": 28,
+   "reasons": {
+    "ikke studiejob": 28
+   },
+   "examples": [
+    {
+     "title": "Privatrådgiver til Jyske Bank i København",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191418"
+    },
+    {
+     "title": "Privatrådgiver til Viborg eller Bjerringbro",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191421"
+    },
+    {
+     "title": "Privatrådgiver til vores markedsområde på Vestegnen",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191328"
+    },
+    {
+     "title": "Privatrådgiver til Medarbejderbanken",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191434"
+    },
+    {
+     "title": "Privatrådgiver til virksomhedsejere og formuende kunder",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191432"
+    },
+    {
+     "title": "Privatrådgiver",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191429"
+    },
+    {
+     "title": "Privatkundedirektør til Jyske Bank på Sydsjælland og Lolland-Falster",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191416"
+    },
+    {
+     "title": "Markedsdirektør til Landbrug Vest",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191404"
+    },
+    {
+     "title": "Afdelingsdirektør til Compliance, Finansielle Risici",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191401"
+    },
+    {
+     "title": "Director til Renewable Energy",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191411"
+    },
+    {
+     "title": "Erhvervskundedirektør til Jyske Bank, Trekantområdet Erhverv",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191417"
+    },
+    {
+     "title": "Erhvervskundedirektør til Nordsjælland Erhverv",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191423"
+    },
+    {
+     "title": "Teknisk projektleder til Ejendomsdrift",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191420"
+    },
+    {
+     "title": "Bankspecialist til erhvervskunder og finansielle institutioner",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191427"
+    },
+    {
+     "title": "Performance & Governance Lead",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191430"
+    },
+    {
+     "title": "Kandidatbank",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191345"
+    },
+    {
+     "title": "Operations Specialist Jyske Bank Hamburg",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191298"
+    },
+    {
+     "title": "Kunderådgivere til Jyske Banks Kundecenter i København",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191433"
+    },
+    {
+     "title": "Senior Credit Manager til Kredit, Large Corporates",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191415"
+    },
+    {
+     "title": "Vurderingsansvarlig til Ry/Galten området - med mennesker og ejendomme i centrum",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191428"
+    },
+    {
+     "title": "Kvalitetsspecialist til Vurderingskvalitet",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191431"
+    },
+    {
+     "title": "Account Manager til Jyske Bank i Hamborg",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191287"
+    },
+    {
+     "title": "Relationship Manager/Senior Relationship Manager til Large Commercial Clients i København",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191439"
+    },
+    {
+     "title": "Erhvervsrådgiver til nationale og internationale virksomheder",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191437"
+    },
+    {
+     "title": "Senior Analytiker",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191426"
+    },
+    {
+     "title": "Senior forretningsudvikler – sæt retning for prissætningen i Jyske Bank",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191424"
+    },
+    {
+     "title": "Private Banker / Senior Private Banker til et voksende marked på Sjælland",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191422"
+    },
+    {
+     "title": "CV-Bank: Kantine",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=188943"
+    }
+   ]
+  },
   "KL": {
    "count": 3,
    "reasons": {
@@ -3935,6 +4604,55 @@
     {
      "title": "Uopfordret ansøgning",
      "reason": "ikke studiejob"
+    }
+   ]
+  },
+  "KMD": {
+   "count": 8,
+   "reasons": {
+    "ikke studiejob": 6,
+    "uden for Danmark": 2
+   },
+   "examples": [
+    {
+     "title": "Corporate Communications Advisor med fokus på strategi og intern kommunikation",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.kmd.net/job/Ballerup-Corporate-Communications-Advisor-med-fokus-p%C3%A5-strategi-og-intern-kommunikation-2750/1445996533/"
+    },
+    {
+     "title": "Business Specialist",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.kmd.net/job/Odense-M-Business-Specialist-5230/1443224433/"
+    },
+    {
+     "title": "Lead Business Consultant",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.kmd.net/job/Ballerup-Lead-Business-Consultant-2750/1447591633/"
+    },
+    {
+     "title": "Commercial Excellence Manager",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.kmd.net/job/Ballerup-Commercial-Excellence-Manager-2750/1440438033/"
+    },
+    {
+     "title": "Product Data Insights Lead",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.kmd.net/job/Ballerup-Product-Data-Insights-Lead-2750/1443632833/"
+    },
+    {
+     "title": "Test Consultant",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.kmd.net/job/Odense-M-Test-Consultant-5230/1443192333/"
+    },
+    {
+     "title": "Student Worker - AI Tools Administration & Governance Support",
+     "reason": "uden for Danmark (Warsaw, PL, 00-189)",
+     "url": "https://jobs.kmd.net/job/Warsaw-Student-Worker-AI-Tools-Administration-&-Governance-Support-00-189/1443032733/"
+    },
+    {
+     "title": "People Operations Student Worker",
+     "reason": "uden for Danmark (Warsaw, PL, 00-189)",
+     "url": "https://jobs.kmd.net/job/Warsaw-People-Operations-Student-Worker-00-189/1448021533/"
     }
    ]
   },
@@ -4010,6 +4728,24 @@
     }
    ]
   },
+  "Kromann Reumert": {
+   "count": 2,
+   "reasons": {
+    "ikke studiejob": 2
+   },
+   "examples": [
+    {
+     "title": "Full Stack Developer til Legal Tech og AI i Kromann Reumert",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://kromannreumert.com/karriere/ledige-stillinger/full-stack-developer-til-legal-tech-ai-kromann-reumert-09-26"
+    },
+    {
+     "title": "Finance Accountant med solid økonomisk værktøjskasse til et af Danmarks største advokathuse",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://kromannreumert.com/karriere/ledige-stillinger/finance-accountant-med-solid-oekonomisk-vaerktoejskasse-til-danmarks-stoerste-advokathuse-09-26"
+    }
+   ]
+  },
   "Kræftens Bekæmpelse": {
    "count": 2,
    "reasons": {
@@ -4027,11 +4763,46 @@
    ]
   },
   "Københavns Kommune": {
-   "count": 282,
+   "count": 265,
    "reasons": {
-    "ikke studiejob": 282
+    "ikke studiejob": 265
    },
    "examples": [
+    {
+     "title": "Sundhedsfaglig koordinator til Jacob Michaelsens Minde – en døgninstitution for psykisk sårbare børn og unge i Skodsborg",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.kk.dk/ledigestillinger/sundhedsfaglig-koordinator-til-jacob-michaelsens-minde-en-doegninstitution-for-psykisk-saarbare-boern-og-unge-i-skodsborg"
+    },
+    {
+     "title": "Idrætsprojektet søger to psykologer til kvalificering af SkoleflexPLUS-indsatser i de københavnske folkeskoler",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.kk.dk/ledigestillinger/idraetsprojektet-soeger-to-psykologer-til-kvalificering-af-skoleflexplus-indsatser-i-de-koebenhavnske-folkeskoler"
+    },
+    {
+     "title": "Pædagogisk leder til Snorretoppen på Islands Brygge – stå i spidsen for et stort børnehus med store ambitioner",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.kk.dk/ledigestillinger/paedagogisk-leder-til-snorretoppen-paa-islands-brygge-staa-i-spidsen-for-et-stort-boernehus-med-store-ambitioner"
+    },
+    {
+     "title": "Engageret pædagogmedhjælper til flyverrolle i Solstrålen",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.kk.dk/ledigestillinger/engageret-paedagogmedhjaelper-til-flyverrolle-i-solstraalen"
+    },
+    {
+     "title": "Pædagogmedhjælper til indskolingen på Langelinieskolen",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.kk.dk/ledigestillinger/paedagogmedhjaelper-til-indskolingen-paa-langelinieskolen"
+    },
+    {
+     "title": "Køkkenmedarbejder til Arena Skole og Fritid",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.kk.dk/ledigestillinger/koekkenmedarbejder-til-arena-skole-og-fritid"
+    },
+    {
+     "title": "Engageret og pålidelig opvasker til Arena Skole og Fritid",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.kk.dk/ledigestillinger/engageret-og-paalidelig-opvasker-til-arena-skole-og-fritid"
+    },
     {
      "title": "Pædagoger med blik for stærke børnefællesskaber til Børnehuset Svanemøllen",
      "reason": "ikke studiejob (titel)",
@@ -4083,54 +4854,14 @@
      "url": "https://www.kk.dk/ledigestillinger/to-engagerede-klassepaedagoger-til-korsager-skoles-kkfo-nordlyset-34-timer-ugentligt"
     },
     {
-     "title": "Erfarne børne- og ungerådgivere til nyt tværgående myndighedsteam på børneområdet i Din Sociale Indgang",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/erfarne-boerne-og-ungeraadgivere-til-nyt-tvaergaaende-myndighedsteam-paa-boerneomraadet-i-din-sociale-indgang"
-    },
-    {
      "title": "Pædagogmedhjælpere til Bakketoppen i nordvest – vil du være med til at gøre en forskel?",
      "reason": "ikke studiejob (titel)",
      "url": "https://www.kk.dk/ledigestillinger/paedagogmedhjaelpere-til-bakketoppen-i-nordvest-vil-du-vaere-med-til-at-goere-en-forskel%3F"
     },
     {
-     "title": "Sundhedsfaglig koordinator til Jacob Michaelsens Minde – en døgninstitution for psykisk sårbare børn og unge i Skodsborg",
+     "title": "Erfarne børne- og ungerådgivere til nyt tværgående myndighedsteam på børneområdet i Din Sociale Indgang",
      "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/sundhedsfaglig-koordinator-til-jacob-michaelsens-minde-en-doegninstitution-for-psykisk-saarbare-boern-og-unge-i-skodsborg"
-    },
-    {
-     "title": "Idrætsprojektet søger to psykologer til kvalificering af SkoleflexPLUS-indsatser i de københavnske folkeskoler",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/idraetsprojektet-soeger-to-psykologer-til-kvalificering-af-skoleflexplus-indsatser-i-de-koebenhavnske-folkeskoler"
-    },
-    {
-     "title": "Pædagogisk leder til Snorretoppen på Islands Brygge – stå i spidsen for et stort børnehus med store ambitioner",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/paedagogisk-leder-til-snorretoppen-paa-islands-brygge-staa-i-spidsen-for-et-stort-boernehus-med-store-ambitioner"
-    },
-    {
-     "title": "Engageret pædagogmedhjælper til flyverrolle i Solstrålen",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/engageret-paedagogmedhjaelper-til-flyverrolle-i-solstraalen"
-    },
-    {
-     "title": "Pædagogmedhjælper til indskolingen på Langelinieskolen",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/paedagogmedhjaelper-til-indskolingen-paa-langelinieskolen"
-    },
-    {
-     "title": "Køkkenmedarbejder til Arena Skole og Fritid",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/koekkenmedarbejder-til-arena-skole-og-fritid"
-    },
-    {
-     "title": "Engageret og pålidelig opvasker til Arena Skole og Fritid",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/engageret-og-paalidelig-opvasker-til-arena-skole-og-fritid"
-    },
-    {
-     "title": "Teamleder af Digitalisering og Pædagogisk Udvikling i Børne- og Ungdomsforvaltningen",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/teamleder-af-digitalisering-og-paedagogisk-udvikling-i-boerne-og-ungdomsforvaltningen"
+     "url": "https://www.kk.dk/ledigestillinger/erfarne-boerne-og-ungeraadgivere-til-nyt-tvaergaaende-myndighedsteam-paa-boerneomraadet-i-din-sociale-indgang"
     },
     {
      "title": "Dansklærer til indskolingen på Sortedamskolen",
@@ -4143,9 +4874,9 @@
      "url": "https://www.kk.dk/ledigestillinger/uddannet-paedagog-eller-paedagogisk-assistent-til-kkfo-tidsmaskinen-ved-lergravsparkens-skole-31-timer-om-ugen"
     },
     {
-     "title": "Pædagogmedhjælper til børnehuset Regnskovens børnehave",
+     "title": "Teamleder af Digitalisering og Pædagogisk Udvikling i Børne- og Ungdomsforvaltningen",
      "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/paedagogmedhjaelper-til-boernehuset-regnskovens-boernehave"
+     "url": "https://www.kk.dk/ledigestillinger/teamleder-af-digitalisering-og-paedagogisk-udvikling-i-boerne-og-ungdomsforvaltningen"
     },
     {
      "title": "Pædagog til vuggestuen i daginstitutionen Landsbyen",
@@ -4153,19 +4884,9 @@
      "url": "https://www.kk.dk/ledigestillinger/paedagog-til-vuggestuen-i-daginstitutionen-landsbyen"
     },
     {
-     "title": "Afdelingsleder til det socialpsykiatriske botilbud Stubberupgård beliggende i naturskønne omgivelser ved Borup på Midtsjælland",
+     "title": "Pædagogmedhjælper til børnehuset Regnskovens børnehave",
      "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/afdelingsleder-til-det-socialpsykiatriske-botilbud-stubberupgaard-beliggende-i-naturskoenne-omgivelser-ved-borup-paa-midtsjaelland"
-    },
-    {
-     "title": "Konsulent til Miljømæssige Bæredygtige Indkøb",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/konsulent-til-miljoemaessige-baeredygtige-indkoeb"
-    },
-    {
-     "title": "Uddannet pædagog til Specialfritidsinstitutionen ved Engskolen (barselsvikariat)",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/uddannet-paedagog-til-specialfritidsinstitutionen-ved-engskolen-barselsvikariat"
+     "url": "https://www.kk.dk/ledigestillinger/paedagogmedhjaelper-til-boernehuset-regnskovens-boernehave"
     },
     {
      "title": "Socialfaglige ICM-bostøttemedarbejdere til Housing First i Center for Aktivitet, Beskæftigelse og Støtte i Egen Bolig",
@@ -4183,29 +4904,9 @@
      "url": "https://www.kk.dk/ledigestillinger/laerer-der-braender-for-matematik-og-de-naturvidenskabelig-fag-til-mellemtrinnet-paa-katrinedals-skole"
     },
     {
-     "title": "Vores udenbysteam søger en fleksibel og samarbejdsvillig gårdmand til BUF Teknik og Ejendomsservice i Københavns Kommune",
+     "title": "Uddannet pædagog til Specialfritidsinstitutionen ved Engskolen (barselsvikariat)",
      "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/vores-udenbysteam-soeger-en-fleksibel-og-samarbejdsvillig-gaardmand-til-buf-teknik-og-ejendomsservice-i-koebenhavns-kommune"
-    },
-    {
-     "title": "Pædagoger til vuggestue og børnehave i Mosaikken",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/paedagoger-til-vuggestue-og-boernehave-i-mosaikken"
-    },
-    {
-     "title": "Udviklere og automatiseringsspecialister til digital omstilling i Danmarks største forvaltning",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/udviklere-og-automatiseringsspecialister-til-digital-omstilling-i-danmarks-stoerste-forvaltning"
-    },
-    {
-     "title": "Socialfaglig nattemedarbejder til Kvindeherberget Bocentret Sundholm (barselsvikariat)",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/socialfaglig-nattemedarbejder-til-kvindeherberget-bocentret-sundholm-barselsvikariat"
-    },
-    {
-     "title": "IT-sikkerhedskonsulent til team Teknisk Risikostyring i Koncern IT",
-     "reason": "ikke studiejob (titel)",
-     "url": "https://www.kk.dk/ledigestillinger/it-sikkerhedskonsulent-til-team-teknisk-risikostyring-i-koncern-it"
+     "url": "https://www.kk.dk/ledigestillinger/uddannet-paedagog-til-specialfritidsinstitutionen-ved-engskolen-barselsvikariat"
     },
     {
      "title": "Pædagog – skab en tryg hverdag for mennesker med demens på Lindehusene eller Kastanjehusene",
@@ -4231,13 +4932,96 @@
      "title": "Køkkenmedarbejder til Børnehuset Badutski (16 timer om ugen)",
      "reason": "ikke studiejob (titel)",
      "url": "https://www.kk.dk/ledigestillinger/koekkenmedarbejder-til-boernehuset-badutski-16-timer-om-ugen"
+    },
+    {
+     "title": "Udvalgssekretær til Socialforvaltningen i Københavns Kommune",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.kk.dk/ledigestillinger/udvalgssekretaer-til-socialforvaltningen-i-koebenhavns-kommune"
+    },
+    {
+     "title": "Pædagog med teamkoordinatorfunktion til Børnehuset Mundis børnehave i Vanløse – hos os får du forberedelsestid, faglighed og rigtig gode pædagogkollegaer",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.kk.dk/ledigestillinger/paedagog-med-teamkoordinatorfunktion-til-boernehuset-mundis-boernehave-i-vanloese-hos-os-faar-du-forberedelsestid-faglighed-og-rigtig-gode-paedagogkollegaer"
+    },
+    {
+     "title": "Ernæringsassistent til køkkenet på Plejecenteret Sølund (barselsvikariat)",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.kk.dk/ledigestillinger/ernaeringsassistent-til-koekkenet-paa-plejecenteret-soelund-barselsvikariat"
+    },
+    {
+     "title": "Skarp generalist til sekretariats- og udviklingsopgaver på det digitale område i Københavns Kommune",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.kk.dk/ledigestillinger/skarp-generalist-til-sekretariats-og-udviklingsopgaver-paa-det-digitale-omraade-i-koebenhavns-kommune"
+    },
+    {
+     "title": "Vores udenbysteam søger en fleksibel og samarbejdsvillig gårdmand til BUF Teknik og Ejendomsservice i Københavns Kommune",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.kk.dk/ledigestillinger/vores-udenbysteam-soeger-en-fleksibel-og-samarbejdsvillig-gaardmand-til-buf-teknik-og-ejendomsservice-i-koebenhavns-kommune"
+    },
+    {
+     "title": "Pædagoger til vuggestue og børnehave i Mosaikken",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.kk.dk/ledigestillinger/paedagoger-til-vuggestue-og-boernehave-i-mosaikken"
+    },
+    {
+     "title": "Udviklere og automatiseringsspecialister til digital omstilling i Danmarks største forvaltning",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.kk.dk/ledigestillinger/udviklere-og-automatiseringsspecialister-til-digital-omstilling-i-danmarks-stoerste-forvaltning"
+    }
+   ]
+  },
+  "Københavns Lufthavne": {
+   "count": 8,
+   "reasons": {
+    "ikke studiejob": 8
+   },
+   "examples": [
+    {
+     "title": "Manager, Infrastructure Change Services",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.cph.dk/job/K%C3%B8benhavns-Lufthavn-Manager%2C-Infrastructure-Change-Services/1445975733/"
+    },
+    {
+     "title": "Programleder - North West",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.cph.dk/job/K%C3%B8benhavns-Lufthavn-Programleder-North-West/1441434233/"
+    },
+    {
+     "title": "Finance Assistant - Erhvervsudlejning og energi",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.cph.dk/job/K%C3%B8benhavns-Lufthavn-Finance-Assistant-Erhvervsudlejning-og-energi/1446334133/"
+    },
+    {
+     "title": "SoMe Content Manager",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.cph.dk/job/K%C3%B8benhavns-Lufthavn-SoMe-Content-Manager/1444835133/"
+    },
+    {
+     "title": "Associate Manager til Security Check Passengers",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.cph.dk/job/K%C3%B8benhavns-Lufthavn-Associate-Manager-til-Security-Check-Passengers/1447570233/"
+    },
+    {
+     "title": "Aviation Services Coordinator",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.cph.dk/job/Roskilde-Lufthavn-Aviation-Services-Coordinator/1444593833/"
+    },
+    {
+     "title": "Procesoptimeringsspecialist",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.cph.dk/job/K%C3%B8benhavns-Lufthavn-Procesoptimeringsspecialist/1447602833/"
+    },
+    {
+     "title": "Asset Manager, Aeronautiske Anlæg",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.cph.dk/job/K%C3%B8benhavns-Lufthavn-Asset-Manager%2C-Aeronautiske-Anl%C3%A6g/1443585133/"
     }
    ]
   },
   "Københavns Universitet": {
-   "count": 70,
+   "count": 72,
    "reasons": {
-    "ikke studiejob": 70
+    "ikke studiejob": 72
    },
    "examples": [
     {
@@ -4443,10 +5227,10 @@
    ]
   },
   "L'Oréal Groupe": {
-   "count": 104,
+   "count": 107,
    "reasons": {
     "ikke studiejob": 7,
-    "uden for Danmark": 97
+    "uden for Danmark": 100
    },
    "examples": [
     {
@@ -4488,6 +5272,21 @@
      "title": "Dir. Sales - WEST SkinBetter Science",
      "reason": "ikke studiejob",
      "url": "https://careers.loreal.com/en/job/remote/dir-sales-west-skinbetter-science/3456/45195806400"
+    },
+    {
+     "title": "[OneSG] 1H2027 Operations Intern",
+     "reason": "uden for Danmark (Singapore, Central Singapore, Singapore)",
+     "url": "https://careers.loreal.com/en/job/singapore/onesg-1h2027-operations-intern/3456/42700057600"
+    },
+    {
+     "title": "[OneSG] 1H2027 Finance Intern",
+     "reason": "uden for Danmark (Singapore, Central Singapore, Singapore)",
+     "url": "https://careers.loreal.com/en/job/singapore/onesg-1h2027-finance-intern/3456/42700057536"
+    },
+    {
+     "title": "[OneSG] 1H2027 Human Resources Intern",
+     "reason": "uden for Danmark (Singapore, Central Singapore, Singapore)",
+     "url": "https://careers.loreal.com/en/job/singapore/onesg-1h2027-human-resources-intern/3456/42700057472"
     },
     {
      "title": "Advocacy Intern",
@@ -4633,28 +5432,14 @@
      "title": "Marketing WINtern, LP Skin, Consumer Products",
      "reason": "uden for Danmark (İstanbul, Istanbul, Turkey)",
      "url": "https://careers.loreal.com/en/job/istanbul/marketing-wintern-lp-skin-consumer-products/3456/45734919232"
-    },
-    {
-     "title": "[UAE] Communications Graduate Trainee- January 2027",
-     "reason": "uden for Danmark (Dubai, Dubai, United Arab Emirates)",
-     "url": "https://careers.loreal.com/en/job/dubai/uae-communications-graduate-trainee-january-2027/3456/45734918336"
-    },
-    {
-     "title": "[UAE] Commercial Graduate Trainee- January 2027",
-     "reason": "uden for Danmark (Dubai, Dubai, United Arab Emirates)",
-     "url": "https://careers.loreal.com/en/job/dubai/uae-commercial-graduate-trainee-january-2027/3456/45734918080"
-    },
-    {
-     "title": "[UAE] Operations Graduate Trainee- January 2027",
-     "reason": "uden for Danmark (Dubai, Dubai, United Arab Emirates)",
-     "url": "https://careers.loreal.com/en/job/dubai/uae-operations-graduate-trainee-january-2027/3456/45734918016"
     }
    ]
   },
   "LEGO Group": {
-   "count": 29,
+   "count": 31,
    "reasons": {
-    "ikke studiejob": 16,
+    "ikke studiejob": 17,
+    "uden for Danmark": 1,
     "uden for Sjælland": 13
    },
    "examples": [
@@ -4683,7 +5468,11 @@
      "reason": "ikke studiejob"
     },
     {
-     "title": "Head of LEGO Discovery Center Operations",
+     "title": "Supply Chain Intern",
+     "reason": "uden for Danmark (United States of America)"
+    },
+    {
+     "title": "Digital Audit and Assurance Director",
      "reason": "ikke studiejob"
     },
     {
@@ -4691,7 +5480,7 @@
      "reason": "ikke studiejob"
     },
     {
-     "title": "Project Manager, Branded Channels Construction",
+     "title": "Head of LEGO Discovery Center Operations",
      "reason": "ikke studiejob"
     },
     {
@@ -4712,6 +5501,10 @@
     },
     {
      "title": "Værktøjsmager-/Industriteknikerlærling",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Product Manager - connected product apps",
      "reason": "ikke studiejob"
     },
     {
@@ -4805,10 +5598,70 @@
     }
    ]
   },
-  "Matas": {
-   "count": 15,
+  "Lund Elmer Sandager": {
+   "count": 1,
    "reasons": {
-    "ikke studiejob": 14,
+    "ikke studiejob": 1
+   },
+   "examples": [
+    {
+     "title": "Uopfordret ansøgning",
+     "reason": "ikke studiejob"
+    }
+   ]
+  },
+  "Lundbeck": {
+   "count": 8,
+   "reasons": {
+    "ikke studiejob": 8
+   },
+   "examples": [
+    {
+     "title": "Director, Head of Global Talent Acquisition",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.lundbeck/job/Copenhagen-Director%2C-Head-of-Global-Talent-Acquisition-Dani/1448360133/"
+    },
+    {
+     "title": "Veeva Platform Specialist / Solution Architect",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.lundbeck/job/Copenhagen-Veeva-Platform-Specialist-Solution-Architect-Dani/1445144433/"
+    },
+    {
+     "title": "Global Regulatory Strategy Lead",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.lundbeck/job/Copenhagen-Global-Regulatory-Strategy-Lead-Dani/1448844533/"
+    },
+    {
+     "title": "Manager - Utility & Ventilation Team",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.lundbeck/job/Copenhagen-Manager-Utility-&-Ventilation-Team-Dani/1445913733/"
+    },
+    {
+     "title": "Dagsholds-operatør til Ampul & Dråbe (Steril/non steril) produktion",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.lundbeck/job/Copenhagen-Dagsholds-operat%C3%B8r-til-Ampul-&-Dr%C3%A5be-%28Sterilnon-steril%29-produktion-Dani/1444783133/"
+    },
+    {
+     "title": "Data/ML Engineer",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.lundbeck/job/Copenhagen-DataML-Engineer-Dani/1445612433/"
+    },
+    {
+     "title": "Procesoperatørelev, Chemical Manufacturing, Lumsås",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.lundbeck/job/Nyk%C3%B8bing-Sj%C3%A6lland-Procesoperat%C3%B8relev%2C-Chemical-Manufacturing%2C-Lums%C3%A5s-Zeal/1447118633/"
+    },
+    {
+     "title": "AI Engineer",
+     "reason": "ikke studiejob",
+     "url": "https://jobs.lundbeck/job/Copenhagen-AI-Engineer-Dani/1446590933/"
+    }
+   ]
+  },
+  "Matas": {
+   "count": 13,
+   "reasons": {
+    "ikke studiejob": 12,
     "ikke studiejob/praktik/graduate": 1
    },
    "examples": [
@@ -4841,14 +5694,6 @@
      "reason": "ikke studiejob"
     },
     {
-     "title": "Matas Group - Head of In-House Brands, Skin & Hair",
-     "reason": "ikke studiejob"
-    },
-    {
-     "title": "Matas Group - Head of Brand Strategy & Marketing, In-House Brands",
-     "reason": "ikke studiejob"
-    },
-    {
      "title": "Faglært materialist/Sales Assistant til 37 timer/ugen i Matas Åbenrå",
      "reason": "ikke studiejob"
     },
@@ -4872,6 +5717,80 @@
      "title": "Sales Assistant til 15-20 timer/ugen i Matas Padborg",
      "reason": "ikke studiejob/praktik/graduate",
      "url": "https://matas.career.emply.com/ad/sales-assistant-til-15-20-timer-ugen-i-matas-padborg/vupvna"
+    }
+   ]
+  },
+  "Mazanti-Andersen": {
+   "count": 2,
+   "reasons": {
+    "ikke studiejob": 2
+   },
+   "examples": [
+    {
+     "title": "Advokat med erfaring inden for fund formation til vores Venture & Growth-team",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.mazanti.dk/karriere/ledige-stillinger/advokat-med-erfaring-inden-for-fund-formation-til-vores-venture-growth-team/"
+    },
+    {
+     "title": "Advokat med erfaring inden for direct investments til vores Venture & Growth-team",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://www.mazanti.dk/karriere/ledige-stillinger/advokat-med-erfaring-inden-for-direct-investments-til-vores-venture-growth-team/"
+    }
+   ]
+  },
+  "McKinsey & Company": {
+   "count": 12,
+   "reasons": {
+    "ikke studiejob": 12
+   },
+   "examples": [
+    {
+     "title": "Associate",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Business Analyst",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Junior Associate",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "AI Engineer - QuantumBlack, AI by McKinsey",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Data Engineer - QuantumBlack, AI by McKinsey",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Data Scientist - QuantumBlack, AI by McKinsey",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Junior Associate - Tech & AI",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Senior AI Engineer - QuantumBlack, AI by McKinsey",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Senior Executive Assistant",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Senior Fellow - Scientific AI (Clinical Biostatistician)",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Senior Forward Deployed Engineer - QuantumBlack, AI by McKinsey",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Software Engineer - QuantumBlack, AI by McKinsey",
+     "reason": "ikke studiejob"
     }
    ]
   },
@@ -5060,11 +5979,15 @@
    ]
   },
   "Nordnet": {
-   "count": 13,
+   "count": 14,
    "reasons": {
-    "ikke studiejob": 13
+    "ikke studiejob": 14
    },
    "examples": [
+    {
+     "title": "Product Owner- Customer Risk",
+     "reason": "ikke studiejob"
+    },
     {
      "title": "Data Scientist",
      "reason": "ikke studiejob"
@@ -5171,13 +6094,42 @@
     }
    ]
   },
-  "Novonesis": {
-   "count": 12,
+  "Novo Nordisk Fonden": {
+   "count": 3,
    "reasons": {
+    "ikke studiejob": 3
+   },
+   "examples": [
+    {
+     "title": "Grant manager/specialist",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Clinical Immunologist",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "People & Operations Manager",
+     "reason": "ikke studiejob"
+    }
+   ]
+  },
+  "Novonesis": {
+   "count": 22,
+   "reasons": {
+    "uden for Danmark": 10,
     "ikke studiejob": 11,
     "ikke studiejob/praktik/graduate": 1
    },
    "examples": [
+    {
+     "title": "Technical Service - Baking Intern",
+     "reason": "uden for Danmark (Franklinton)"
+    },
+    {
+     "title": "Microbial Manufacturing Internships",
+     "reason": "uden for Danmark (Salem - Virginia)"
+    },
     {
      "title": "Laborant til QC-laboratorium, Bagsværd – 12 måneders vikariat, Novonesis",
      "reason": "ikke studiejob"
@@ -5185,6 +6137,26 @@
     {
      "title": "Strategy Project Manager",
      "reason": "ikke studiejob"
+    },
+    {
+     "title": "Process & Technology Intern",
+     "reason": "uden for Danmark (Milwaukee)"
+    },
+    {
+     "title": "Product Specialist Intern",
+     "reason": "uden for Danmark (Wausau)"
+    },
+    {
+     "title": "Process Engineering Intern",
+     "reason": "uden for Danmark (Wausau)"
+    },
+    {
+     "title": "Data Science / Software Development Intern",
+     "reason": "uden for Danmark (Morrisville)"
+    },
+    {
+     "title": "Household Care Technical Service Intern",
+     "reason": "uden for Danmark (Araucária - PR)"
     },
     {
      "title": "Team Manager, Applied R&D Cheese, Novonesis",
@@ -5223,6 +6195,18 @@
      "reason": "ikke studiejob"
     },
     {
+     "title": "Reliability Engineering Intern",
+     "reason": "uden for Danmark (Blair)"
+    },
+    {
+     "title": "Phage Laboratory Intern",
+     "reason": "uden for Danmark (West Allis)"
+    },
+    {
+     "title": "Human Health Regulatory Affairs Intern",
+     "reason": "uden for Danmark (West Allis)"
+    },
+    {
      "title": "Procesoperatørlærling til Bagsværd",
      "reason": "ikke studiejob/praktik/graduate",
      "url": "https://novonesis.wd103.myworkdayjobs.com/Novonesis_Careers/job/Bagsvrd/Procesoperatrlrling-til-Bagsvrd_JR113654"
@@ -5247,10 +6231,115 @@
     }
    ]
   },
-  "Orkla Danmark": {
-   "count": 6,
+  "OK a.m.b.a.": {
+   "count": 22,
    "reasons": {
-    "ikke studiejob": 6
+    "ikke studiejob": 16,
+    "uden for Sjælland": 3,
+    "ikke studiejob/praktik/graduate": 3
+   },
+   "examples": [
+    {
+     "title": "Uopfordret ansøgning - Chauffør-elever",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "OK, Manager, Cloud Platform-teamet",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Team Lead, til Salg & Outbound i OK",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Strategy Manager til Strategy Office i OK",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Senior Strategy Consultant til Strategy Office i OK",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Kunderådgiver til OK’s Salgs- og kundecenter",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "OK søger en Teknisk Salgskonsulent – til salg af varmepumper til private på Sjælland",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Store Assistant til aften og weekend – Ejerbavnehøj Ø",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Commercial Insights Manager til Salg & Fastholdelse",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Technical Demand Manager",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "AI Transformation & Delivery Lead til OK a.m.b.a.",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Product Owner & Analytics Engineer",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Salgskonsulent til OK",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Tankvognschauffør til Nørre Alslev",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "IT Network Architect",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Uopfordret ansøgning OK Plus",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Studentermedhjælper til OK's screeningsteam, Salg & Kundeservice",
+     "reason": "uden for Sjælland (OK a.m.b.a. (HQ - Viby J) Åhave Parkvej )",
+     "url": "https://karriere.ok.dk/jobs/8438127-studentermedhjaelper-til-ok-s-screeningsteam-salg-kundeservice"
+    },
+    {
+     "title": "Store Assistant til Karlslunde V",
+     "reason": "ikke studiejob/praktik/graduate",
+     "url": "https://karriere.ok.dk/jobs/8535068-store-assistant-til-karlslunde-v"
+    },
+    {
+     "title": "Store Assistant til nattevagter på OK Servicestationen i Karlslunde Ø",
+     "reason": "ikke studiejob/praktik/graduate",
+     "url": "https://karriere.ok.dk/jobs/8531559-store-assistant-til-nattevagter-paa-ok-servicestationen-i-karlslunde-oe"
+    },
+    {
+     "title": "Studentermedhjælper til udvikling af AI i Product Management hos OK",
+     "reason": "uden for Sjælland (OK a.m.b.a. (HQ - Viby J) Åhave Parkvej )",
+     "url": "https://karriere.ok.dk/jobs/8514842-studentermedhjaelper-til-udvikling-af-ai-i-product-management-hos-ok"
+    },
+    {
+     "title": "Store Assistants til Ejerbavnehøj Vest",
+     "reason": "ikke studiejob/praktik/graduate",
+     "url": "https://karriere.ok.dk/jobs/8388655-store-assistants-til-ejerbavnehoej-vest"
+    },
+    {
+     "title": "Studentermedhjælper til Kreditafdelingen hos OK",
+     "reason": "uden for Sjælland (OK a.m.b.a. (HQ - Viby J) Åhave Parkvej )",
+     "url": "https://karriere.ok.dk/jobs/8241621-studentermedhjaelper-til-kreditafdelingen-hos-ok"
+    }
+   ]
+  },
+  "Orkla Danmark": {
+   "count": 7,
+   "reasons": {
+    "ikke studiejob": 6,
+    "uden for Sjælland": 1
    },
    "examples": [
     {
@@ -5276,6 +6365,11 @@
     {
      "title": "Category Manager (vikar)",
      "reason": "ikke studiejob"
+    },
+    {
+     "title": "Studentermedhjælper - Marketing",
+     "reason": "uden for Sjælland (Søndersø, dk)",
+     "url": "https://jobs.smartrecruiters.com/Orkla/744000154926950-studentermedhj-lper-marketing"
     }
    ]
   },
@@ -5481,6 +6575,47 @@
      "title": "Retail Standarts & Operations Trainee",
      "reason": "uden for Danmark (Madrid, M, ES)",
      "url": "https://careers.pandoragroup.com/th/retail-standarts-operations-trainee/job/BA09D596604A43AE9CC5BB784423F38C__th"
+    }
+   ]
+  },
+  "PensionDanmark": {
+   "count": 1,
+   "reasons": {
+    "ikke studiejob": 1
+   },
+   "examples": [
+    {
+     "title": "Marketing Automation Analyst",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://pensiondanmark-career.talent-soft.com/job/job-marketing-automation-analyst_137.aspx"
+    }
+   ]
+  },
+  "Plesner": {
+   "count": 4,
+   "reasons": {
+    "ikke studiejob": 4
+   },
+   "examples": [
+    {
+     "title": "Assistant Attorneys",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://plesner.com/en/open-positions/assistant-attorneys"
+    },
+    {
+     "title": "Trademark Attorney/Paralegal",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://plesner.com/en/open-positions/trademark-attorneyparalegal"
+    },
+    {
+     "title": "Data and Integration Architect at Plesner",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://plesner.com/en/open-positions/data-and-integration-architect-plesner"
+    },
+    {
+     "title": "Unsolicited application",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://plesner.com/en/open-positions/unsolicited-application"
     }
    ]
   },
@@ -5763,9 +6898,9 @@
    ]
   },
   "Region Hovedstaden": {
-   "count": 238,
+   "count": 243,
    "reasons": {
-    "ikke studiejob": 234,
+    "ikke studiejob": 239,
     "deltid uden fagligt nøgleord i titlen": 4
    },
    "examples": [
@@ -5799,6 +6934,10 @@
     },
     {
      "title": "4-5 Introduktionsstillinger ved Afdeling for Øjensygdomme, Rigshospitalet-Glostrup.",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "AC-konsulent med juridisk flair eller jurist til Bornholms Hospital",
      "reason": "ikke studiejob"
     },
     {
@@ -5924,10 +7063,6 @@
     {
      "title": "CTS/BMS-specialist til Hvidovre Hospital - Center for Ejendomme",
      "reason": "ikke studiejob"
-    },
-    {
-     "title": "Drifts- og kvalitetsansvarlig til bageriet på Rigshospitalet",
-     "reason": "ikke studiejob"
     }
    ]
   },
@@ -6017,6 +7152,97 @@
     }
    ]
   },
+  "Saxo Bank": {
+   "count": 20,
+   "reasons": {
+    "uden for Danmark": 2,
+    "ikke studiejob": 17,
+    "ikke studiejob/praktik/graduate": 1
+   },
+   "examples": [
+    {
+     "title": "Student Assistant - Digital Czech Language Support",
+     "reason": "uden for Danmark (Prague)"
+    },
+    {
+     "title": "Audit Manager/Senior Manager",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Senior ICT Compliance Officer",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Senior Privileged Access Management (PAM) Engineer",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Employee Relations Specialist",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Compliance Officer for Financial and Non-Financial Risk Areas",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Senior Governance Manager, Group Governance",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Business Risk Manager, Onboarding and Ongoing Due Diligence (ODD) team",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Senior Tax Reporting Specialist for Global Tax Reporting",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Head of FCP GWRA & Policies",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Digital Sales Assistant (Intern)",
+     "reason": "uden for Danmark (Paris)"
+    },
+    {
+     "title": "Quantitative Risk Analyst",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Financial Controller",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Client Service Associate, Danish speaker",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "PR & Communications Manager",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "IT Audit Manager",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Senior Legal Counsel",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Senior Data Scientist",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Senior Software/Data Engineer",
+     "reason": "ikke studiejob"
+    },
+    {
+     "title": "Student Digital Sales Associate",
+     "reason": "ikke studiejob/praktik/graduate",
+     "url": "https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank/job/Headquarters/Student-Digital-Sales-Associate_R-15566"
+    }
+   ]
+  },
   "Scantox A/S": {
    "count": 5,
    "reasons": {
@@ -6041,6 +7267,18 @@
     },
     {
      "title": "Apprenticeship: Animal keeper (m/f/d)",
+     "reason": "ikke studiejob"
+    }
+   ]
+  },
+  "Schjødt": {
+   "count": 1,
+   "reasons": {
+    "ikke studiejob": 1
+   },
+   "examples": [
+    {
+     "title": "Receptionist/Servicemedarbejder (København)",
      "reason": "ikke studiejob"
     }
    ]
@@ -6112,9 +7350,9 @@
    ]
   },
   "Statens Rekrutteringsløsning (staten)": {
-   "count": 353,
+   "count": 352,
    "reasons": {
-    "ikke studiejob": 327,
+    "ikke studiejob": 326,
     "uden for Sjælland": 25,
     "ikke studiejob/praktik/graduate": 1
    },
@@ -6145,10 +7383,6 @@
     },
     {
      "title": "Administrative medarbejder Tilsynsafdeling Holstebro, Lokalkontor Viborg",
-     "reason": "ikke studiejob"
-    },
-    {
-     "title": "Advokaturchef til anklagemyndigheden ved Sydsjællands og Lolland-Falsters Politi",
      "reason": "ikke studiejob"
     },
     {
@@ -6278,13 +7512,18 @@
     {
      "title": "Critical Operations Technicians (MEK) søges til FE’s nye datacentre",
      "reason": "ikke studiejob"
+    },
+    {
+     "title": "Datakonsulenter med skarpt brugerfokus",
+     "reason": "ikke studiejob"
     }
    ]
   },
   "Svitzer": {
-   "count": 2,
+   "count": 3,
    "reasons": {
-    "ikke studiejob": 2
+    "ikke studiejob": 2,
+    "uden for Danmark": 1
    },
    "examples": [
     {
@@ -6292,21 +7531,64 @@
      "reason": "ikke studiejob"
     },
     {
+     "title": "Chief Officer/Trainee Master",
+     "reason": "uden for Danmark (Hosvik Operations - Harbour)"
+    },
+    {
      "title": "Group Financial Controller",
      "reason": "ikke studiejob"
     }
    ]
   },
-  "TORM": {
-   "count": 4,
+  "Söderberg & Partners": {
+   "count": 7,
    "reasons": {
-    "ikke studiejob": 4
+    "ikke studiejob": 7
    },
    "examples": [
     {
-     "title": "Office Manager - Houston, Texas",
-     "reason": "ikke studiejob"
+     "title": "Projektleder til Moderne Rådgivning",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://emp.jobylon.com/jobs/385451-soderberg-partners-danmark-projektleder-til-moderne-radgivning/"
     },
+    {
+     "title": "Pensionskundechef med ansvar for danske og internationale virksomheder",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://emp.jobylon.com/jobs/382888-soderberg-partners-danmark-pensionskundechef-med-ansvar-for-danske-og-internationale-virksomheder/"
+    },
+    {
+     "title": "Söderberg og Partners søger passionerede pensionsmæglere/partnere i hele landet",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://emp.jobylon.com/jobs/142978-soderberg-partners-danmark-soderberg-og-partners-soger-passionerede-pensionsmaeglerepartnere-i-hele-landet/"
+    },
+    {
+     "title": "Pensionsrådgiver",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://emp.jobylon.com/jobs/379889-soderberg-partners-danmark-pensionsradgiver/"
+    },
+    {
+     "title": "Pensionsrådgiver - frihed, ansvar og højt indtjeningspotentiale",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://emp.jobylon.com/jobs/379013-soderberg-partners-danmark-pensionsradgiver-frihed-ansvar-og-hojt-indtjeningspotentiale/"
+    },
+    {
+     "title": "Bliv selvstændig forsikringsmægler hos Söderberg & Partners - Sjælland, Fyn eller Jylland",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://emp.jobylon.com/jobs/369409-soderberg-partners-danmark-bliv-selvstaendig-forsikringsmaegler-hos-soderberg-partners-sjaelland-fyn-eller-jylland/"
+    },
+    {
+     "title": "Uopfordret ansøgning",
+     "reason": "ikke studiejob (titel)",
+     "url": "https://emp.jobylon.com/jobs/19949-soderberg-partners-danmark-uopfordret-ansogning/"
+    }
+   ]
+  },
+  "TORM": {
+   "count": 3,
+   "reasons": {
+    "ikke studiejob": 3
+   },
+   "examples": [
     {
      "title": "Technical Decarbonization Performance Manager",
      "reason": "ikke studiejob"
@@ -6378,11 +7660,6 @@
      "url": "https://careers.tryg.com/Tryg/job/Ballerup-Bygningskonsulent/1446037933/"
     },
     {
-     "title": "Bliv en af de første privatassurandører i vores nye salgskanal",
-     "reason": "ikke studiejob",
-     "url": "https://careers.tryg.com/Tryg/job/Ballerup-Bliv-en-af-de-f%C3%B8rste-privatassurand%C3%B8rer-i-vores-nye-salgskanal/1429162133/"
-    },
-    {
      "title": "Strategy Manager, Strategi & Eksekvering, Commercial Lines",
      "reason": "ikke studiejob",
      "url": "https://careers.tryg.com/Tryg/job/Ballerup-Strategy-Manager%2C-Strategi-&-Eksekvering%2C-Commercial-Lines/1444636133/"
@@ -6431,6 +7708,11 @@
      "title": "Kunderådgiver med salgstalent til Alka Outbound",
      "reason": "ikke studiejob",
      "url": "https://careers.tryg.com/Alka/job/Ballerup-Kunder%C3%A5dgiver-med-salgstalent-til-Alka-Outbound/1444399333/"
+    },
+    {
+     "title": "Bliv en af de første privatassurandører i vores nye salgskanal",
+     "reason": "ikke studiejob",
+     "url": "https://careers.tryg.com/Tryg/job/Ballerup-Bliv-en-af-de-f%C3%B8rste-privatassurand%C3%B8rer-i-vores-nye-salgskanal/1429162133/"
     },
     {
      "title": "HR-studentmedarbetare, deltid",
@@ -6577,9 +7859,9 @@
    ]
   },
   "Udviklings- og Forenklingsstyrelsen": {
-   "count": 68,
+   "count": 69,
    "reasons": {
-    "ikke studiejob": 67,
+    "ikke studiejob": 68,
     "deltid uden fagligt nøgleord i titlen": 1
    },
    "examples": [
@@ -6632,11 +7914,11 @@
      "reason": "ikke studiejob"
     },
     {
-     "title": "Faglærer til VVS-uddannelsen på AARHUS TECH",
+     "title": "Faglærer til Ejendomsserviceteknikeruddannelsen",
      "reason": "ikke studiejob"
     },
     {
-     "title": "FGU-lærer til fagtemaet Byg, bolig og anlæg",
+     "title": "Faglærer til VVS-uddannelsen på AARHUS TECH",
      "reason": "ikke studiejob"
     },
     {
@@ -6708,6 +7990,10 @@
      "reason": "ikke studiejob"
     },
     {
+     "title": "Regnskabschef til Nordsøfonden",
+     "reason": "ikke studiejob"
+    },
+    {
      "title": "Selvstændig og relationsstærk konsulent til SOSU H's Kompetencecenter",
      "reason": "ikke studiejob"
     },
@@ -6733,10 +8019,6 @@
     },
     {
      "title": "Sygeplejerske til Røde Kors asylafdeling Modtagecenter Sandholm",
-     "reason": "ikke studiejob"
-    },
-    {
-     "title": "Søg uopfordret",
      "reason": "ikke studiejob"
     },
     {

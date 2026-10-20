@@ -1,48 +1,25 @@
 {
- "started": "2026-10-20T06:06:57+00:00",
- "ads_read": 37,
+ "started": "2026-10-20T10:25:47+00:00",
+ "ads_read": 9,
  "candidates": [
   {
-   "name": "NTI A/S",
-   "type": "emply",
+   "name": "OK a.m.b.a.",
+   "type": "teamtailor",
    "cfg": {
-    "url": "https://nti.career.emply.com"
+    "url": "https://karriere.ok.dk"
    },
-   "evidence": "https://nti.career.emply.com/ad/nyuddannet-maskiningenior-eller-maskinmester/zkx5s3/en",
-   "listed": 0,
-   "matched": 0
+   "evidence": "https://karriere.ok.dk/jobs/8438127-studentermedhjaelper-til-ok-s-screeningsteam-salg-kundeservice?promotion=2254827-jobindex",
+   "listed": 24,
+   "matched": 3
   }
  ],
- "added": [],
- "rejected": [
+ "added": [
   {
-   "name": "NTI A/S",
-   "type": "emply",
-   "cfg": {
-    "url": "https://nti.career.emply.com"
-   },
-   "evidence": "https://nti.career.emply.com/ad/nyuddannet-maskiningenior-eller-maskinmester/zkx5s3/en",
-   "reason": "0 opslag"
-  },
-  {
-   "name": "Professionshøjskolen Absalon",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "5001",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194460&DepartmentId=9396&MediaId=5"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194460&DepartmentId=9396&MediaId=5",
-   "reason": "HR-Manager-alias ikke fundet"
-  },
-  {
-   "name": "Aarhus Kommune",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "3112",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144564&DepartmentId=20910&MediaId=4768"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144564&DepartmentId=20910&MediaId=4768",
-   "reason": "HR-Manager-alias ikke fundet"
+   "name": "OK a.m.b.a.",
+   "type": "teamtailor",
+   "listed": 24,
+   "matched": 3
   }
- ]
+ ],
+ "rejected": []
 }
