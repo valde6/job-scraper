@@ -250,7 +250,26 @@ NON_SJ = ["aarhus", "århus", "odense", "aalborg", "esbjerg", "vejle", "kolding"
           "aabenraa", "haderslev", "thisted", "hjørring", "frederikshavn", "middelfart", "nyborg", "nordborg",
           "skanderborg", "grenaa", "ikast", "brande", "varde", "ribe", "tønder", "jylland", "fyn", "jutland", "funen",
           "region syddanmark", "region midtjylland", "region nordjylland", "southern denmark", "central denmark",
-          "north denmark", "færøerne", "grønland", "nuuk", "tórshavn"]
+          "north denmark", "færøerne", "grønland", "nuuk", "tórshavn",
+          # 18/10: byer, der gav "ukendt" i stedet for "uden for Sjælland" (Eurofins, Orkla, Matas)
+          "aabybro", "vejen", "søndersø", "padborg", "grindsted", "give", "hobro", "hadsund", "hedensted", "tarm",
+          "ringkøbing", "lemvig", "struer", "thisted", "nykøbing mors", "brønderslev", "sæby", "skagen", "løgstør",
+          "kjellerup", "bjerringbro", "hammel", "odder", "ebeltoft", "rønde", "kalø", "galten", "hinnerup", "lystrup",
+          "vojens", "gram", "rødding", "kolding", "bramming", "ølgod", "fåborg", "faaborg", "assens", "bogense",
+          "kerteminde", "nyborg", "ringe", "glamsbjerg", "otterup", "munkebo", "langeland", "ærø", "tranbjerg",
+          "egå", "åbyhøj", "hasselager", "skødstrup", "sabro", "hørning", "låsby", "vamdrup", "lunderskov",
+          "sønderjylland", "nordjylland", "vestjylland", "østjylland", "midtjylland", "sydjylland", "sydfyn", "nordfyn",
+          "vestfyn", "østfyn"]
+_POSTCODE_RE = re.compile(r"\b(?:dk-?)?([1-9]\d{3})\s+[A-ZÆØÅa-zæøå]")
+
+
+def _postcode_region(t: str) -> str | None:
+    """Danske postnumre: 1000-2999 Storkøbenhavn, 3000-4999 resten af Sjælland/øerne, 5000+ Fyn og Jylland."""
+    m = _POSTCODE_RE.search(t)
+    if not m:
+        return None
+    n = int(m.group(1))
+    return "storkbh" if n < 3000 else "sjaelland" if n < 5000 else "udenfor"
 
 
 def region(loc: str | None, title: str = "") -> str | None:
@@ -261,9 +280,12 @@ def region(loc: str | None, title: str = "") -> str | None:
     if any(p in t for p in SJ_PLACES):
         return "sjaelland"
     tl = (title or "").lower()
-    if any(p in t for p in NON_SJ) or any(p in tl for p in NON_SJ):
+    if any(re.search(rf"\b{re.escape(p)}\b", t) for p in NON_SJ) or any(re.search(rf"\b{re.escape(p)}\b", tl) for p in NON_SJ):
         return None
-    return "ukendt"
+    pc = _postcode_region(loc or "")
+    if pc == "udenfor":
+        return None
+    return pc or "ukendt"
 
 
 def is_denmark(*texts: str | None) -> bool:

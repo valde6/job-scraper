@@ -115,3 +115,28 @@ def test_retail_and_service_jobs_are_not_studiejob():
               "Studentermedhjælper til Category Management", "Student Assistant to Customer Service Excellence",
               "Studentermedhjælper til Business Development i Claims Center"]:
         assert job_type(t) == "studiejob", t
+
+
+def test_region_more_towns_and_postcodes():
+    """18/10: Eurofins i Aabybro/Vejen og Orkla i Søndersø stod som 'ukendt' i stedet for uden for Sjælland."""
+    from scraper.common import region
+    assert region("Aabybro, dk") is None and region("Vejen, dk") is None and region("Søndersø, dk") is None
+    assert region("Hovedgaden 1, 8600 Silkeborg") is None
+    assert region("Vestensborg Allé 78 4800 Nykøbing F") == "sjaelland"
+    assert region("Holmen, 1433 København K") == "storkbh"
+    assert region("Danmark") == "ukendt"
+    assert region("Give Away Street, København") == "storkbh"        # "give" kun som helt ord
+    assert region("Gentofte") == "storkbh" and region("Kolding Storcenter") is None
+
+
+def test_region_compound_jutland_names():
+    from scraper.common import region
+    for loc in ["Sønderjylland", "Region Nordjylland", "Sydfyn", "Midtjylland, Danmark"]:
+        assert region(loc) is None, loc
+
+
+def test_region_town_names_inside_words():
+    """20/10: CBS' "Studerende (IT-vejledere)" blev frasorteret, fordi "vejle" stod inde i "vejledere"."""
+    from scraper.common import region
+    assert region("Danmark", "Studerende (IT-vejledere) til IT-supporten på Copenhagen Business School") == "ukendt"
+    assert region("Danmark", "Studentermedhjælper til Vejle-kontoret") is None

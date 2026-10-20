@@ -190,3 +190,10 @@ def test_sitemap_candidates_order_and_skips():
                    "https://c.x.com/job/Poznan-AP-Intern/1/",
                    "https://c.x.com/da-dk/studentermedhjaelper-til-hr/job/P22-4"]
     assert sitemap.candidates(urls, sitemap.JOB_PATTERN, "Poznan") == ["https://c.x.com/job/Poznan-AP-Intern/1/"]
+
+
+def test_sitemap_candidates_dedupe_language_suffix():
+    urls = ["https://careers.pandoragroup.com/seasonal-help-copenhagen-airport/job/51B8B3",
+            "https://careers.pandoragroup.com/seasonal-help-copenhagen-airport/job/51B8B3__en-gb",
+            "https://careers.pandoragroup.com/seasonal-help-copenhagen-airport/job/51B8B3__pl"]
+    assert sitemap.candidates(urls, sitemap.JOB_PATTERN, None) == urls[:1]

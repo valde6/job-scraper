@@ -63,6 +63,7 @@ def sitemap_urls(base: str, explicit=None) -> list[str]:
 # Sprogudgaver i adressen (/de-de/, /fr_FR/): kun dansk og engelsk hentes – resten er samme opslag på andre sprog
 # eller udenlandske opslag.
 _LOCALE_RE = re.compile(r"/([a-z]{2})[-_][a-zA-Z]{2}(?:/|$)")
+_LANG_SUFFIX_RE = re.compile(r"__[a-z]{2}(?:-[a-z]{2})?$", re.I)
 _FOREIGN_RE = re.compile(r"werkstudent|praktikum|ausbildung|stagiaire|\bstage\b|alternance|becario|tirocinio|stagiair|"
                          r"\blia\b|praktikanter\s+till|sommarjobb|\bm/w/d\b|\(mwd\)", re.I)
 
@@ -73,10 +74,14 @@ def candidates(urls: list[str], job_pattern: str, url_filter: str | None) -> lis
     bruges op på dem."""
     jp = re.compile(job_pattern, re.I)
     flt = re.compile(url_filter, re.I) if url_filter else None
-    first, second = [], []
+    first, second, seen = [], [], set()
     for u in urls:
         if not jp.search(u):
             continue
+        key = _LANG_SUFFIX_RE.sub("", u.rstrip("/"))          # Pandora: samme opslag som …__en-gb, …__pl
+        if key in seen:
+            continue
+        seen.add(key)
         raw = unquote(u)
         text = raw.replace("-", " ").replace("_", " ")
         loc = _LOCALE_RE.search(raw)
