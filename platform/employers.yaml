@@ -915,8 +915,6 @@ employers:
     urls:
     - https://movia.recruiting.mindkey-app.com/da-DK/open-vacancies
     link_pattern: /da-DK/vacancy/[A-Za-z0-9]+$
-    search_terms:
-    - ''
     dk_only: true
   aliases:
   - Trafikselskabet Movia
