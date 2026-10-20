@@ -2,6 +2,9 @@
 # career_url: arbejdsgiverens jobside – bruges som "Gå til virksomhedens jobside", når et job mangler direkte link
 # status: klar (har kilde) | tjek (kilde sat op, men gav 0 opslag – konfigurationen er nok forkert)
 #         | find-system (rekrutteringssystem ikke fundet endnu) | mangler-adapter (systemet er kendt, adapter mangler)
+#         | ikke-tilladt (robots.txt, bot-mur eller login – læses ikke efter vores regler)
+#         status er intern. Appen viser "læses" / "læses ikke endnu" ud fra, om kilden faktisk har givet opslag
+#         (employers.json: reading/last_data, se platform_run.is_read) – ikke ud fra status.
 # source: samme format som companies.yaml (type + parametre). type none = ingen direkte kilde endnu.
 employers:
 - name: Novo Nordisk
@@ -24,12 +27,14 @@ employers:
   - A.P. Moller - Maersk
   - APM Terminals
 - name: McKinsey & Company
-  career_url: https://www.mckinsey.com/careers/search-jobs
-  status: find-system
+  career_url: https://www.mckinsey.com/careers/search-jobs?cities=Copenhagen
+  status: klar
   source:
-    type: none
+    type: mckinsey
+    city: Copenhagen
   aliases:
   - McKinsey
+  note: Eget JSON-API (gateway.mckinsey.com), samme kald som karrieresiden (fundet i browseren 20/10)
 - name: LEGO Group
   career_url: https://www.lego.com/en-us/careers
   status: klar
@@ -116,13 +121,19 @@ employers:
   - EY Godkendt Revisionspartnerselskab
   - Ernst & Young
 - name: Jyske Bank
-  career_url: https://www.jyskebank.dk/om/job
-  status: find-system
+  career_url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs
+  status: klar
   source:
-    type: none
+    type: generic
+    list_urls:
+    - https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs
+    link_pattern: /ledige-jobs/jobopslag\?id=\d+
+    title_from: detail
+    dk_only: true
   aliases:
   - Jyske Bank A/S
   - Jyske Realkredit
+  note: Egen liste (HR-Manager-API'et for jyskebank er tomt) (fundet i browseren 20/10). Link-teksten indeholder by og frist, derfor title_from
 - name: Nykredit
   career_url: https://www.nykredit.com/karriere/
   status: klar
@@ -187,8 +198,11 @@ employers:
   source:
     type: workday
     url: https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank
+    location_map:
+      Headquarters: Hellerup
   aliases:
   - Saxo Bank A/S
+  note: 20/10 – Workday skriver "Headquarters" om hovedkontoret i Hellerup; uden location_map blev studiejobbene smidt væk
 - name: Finansministeriet
   career_url: https://fm.dk/om-os/job-i-finansministeriet/
   status: via-portal
@@ -322,13 +336,15 @@ employers:
   aliases:
   - PA Consulting
 - name: Københavns Lufthavne
-  career_url: https://www.cph.dk/om-cph/job
-  status: find-system
+  career_url: https://jobs.cph.dk/search/
+  status: klar
   source:
-    type: none
+    type: sitemap
+    url: https://jobs.cph.dk
   aliases:
   - Copenhagen Airport
   - Københavns Lufthavne A/S
+  note: SuccessFactors Career Site Builder på jobs.cph.dk; robots.txt tillader /job/ (fundet i browseren 20/10)
 - name: Danske Commodities
   career_url: https://danskecommodities.com/careers/
   status: klar
@@ -376,12 +392,16 @@ employers:
   - Amazon Development Center Denmark
 - name: Beierholm
   career_url: https://www.beierholm.dk/karriere/
-  status: mangler-adapter
+  status: klar
   source:
-    type: none
+    type: generic
+    list_urls:
+    - https://beierholm-career.talent-soft.com/job/list-of-all-jobs.aspx?all=1&mode=layer
+    link_pattern: /job/job-[^/?#]+_\d+\.aspx
+    dk_only: true
   aliases:
   - Beierholm Statsautoriseret Revisionspartnerselskab
-  note: Talentsoft (beierholm-career.talent-soft.com)
+  note: Talentsoft, server-renderet liste (fundet i browseren 20/10)
 - name: AL Sydbank
   career_url: https://www.alsydbank.dk/om-os/job
   status: klar
@@ -395,12 +415,20 @@ employers:
   note: Teamtailor (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: Forsvaret
   career_url: https://www.forsvaret.dk/da/job-i-forsvaret/
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: generic
+    list_urls:
+    - https://www.forsvaret.dk/da/karrieresider/ledige-stillinger-haeren/
+    - https://www.forsvaret.dk/da/karrieresider/ledige-stillinger-soevaernet/
+    - https://www.forsvaret.dk/da/karrieresider/ledige-stillinger-flyvevaabnet/
+    - https://www.forsvaret.dk/da/karrieresider/ledige-stillinger-vaernsfaelles/
+    link_pattern: candidate\.hr-manager\.net/ApplicationInit\.aspx\?cid=3010&ProjectId=\d+
+    dk_only: true
   aliases:
   - Forsvarsministeriet
   - Forsvarsministeriets
+  note: Lister på forsvaret.dk, opslag i HR-Manager cid 3010 (kunde-alias ukendt) (fundet i browseren 20/10)
 - name: IKEA
   career_url: https://jobs.ikea.com/en/search?location=Denmark
   status: klar
@@ -434,8 +462,10 @@ employers:
     - student Denmark
     - Copenhagen student
     - studentermedhjælper
+    pause: 2
   aliases:
   - Accenture A/S
+  note: 20/10 – Workday svarede 429; pause mellem kaldene
 - name: Danmarks Radio
   career_url: https://www.dr.dk/om-dr/job-i-dr
   status: klar
@@ -479,28 +509,48 @@ employers:
   - Novozymes
   - Chr. Hansen
 - name: Kromann Reumert
-  career_url: https://www.kromannreumert.com/karriere
-  status: find-system
-  source:
-    type: none
-- name: Plesner
-  career_url: https://www.plesner.com/karriere
-  status: find-system
-  source:
-    type: none
-- name: Gorrissen Federspiel
-  career_url: https://gorrissenfederspiel.com/karriere
-  status: find-system
-  source:
-    type: none
-- name: Bech-Bruun
-  region: storkbh
-  career_url: https://www.bechbruun.com/da/karriere
+  career_url: https://kromannreumert.com/karriere/ledige-stillinger
   status: klar
   source:
-    type: emply
-    url: https://bechbruun.career.emply.com
-  note: Emply (13/10)
+    type: generic
+    list_urls:
+    - https://kromannreumert.com/karriere/ledige-stillinger
+    link_pattern: /karriere/ledige-stillinger/(?!jobagent|soeg-stilling)[a-z0-9-]{12,}$
+    dk_only: true
+  note: Egen Drupal-side; robots.txt forbyder ikke /karriere (fundet i browseren 20/10)
+- name: Plesner
+  career_url: https://plesner.com/en/open-positions
+  status: klar
+  source:
+    type: generic
+    list_urls:
+    - https://plesner.com/en/open-positions
+    link_pattern: /open-positions/[a-z0-9-]+$
+    dk_only: true
+  note: Egen liste på plesner.com (fundet i browseren 20/10; Student – HA(jur.), Law Student)
+- name: Gorrissen Federspiel
+  career_url: https://gorrissenfederspiel.com/jobs/
+  status: klar
+  source:
+    type: generic
+    list_urls:
+    - https://gorrissenfederspiel.com/jobs/
+    link_pattern: gorrissenfederspiel\.com/jobs/[a-z0-9-]+/?$
+    title_from: detail
+    dk_only: true
+  note: Egen WordPress-liste (fundet i browseren 20/10)
+- name: Bech-Bruun
+  region: storkbh
+  career_url: https://bechbruun.com/da/karriere/ledige-stillinger/
+  status: klar
+  source:
+    type: generic
+    list_urls:
+    - https://bechbruun.com/da/karriere/ledige-stillinger/
+    link_pattern: /da/karriere/ledige-stillinger/[a-z0-9-]+/?$
+    title_from: detail
+    dk_only: true
+  note: Egen liste på bechbruun.com (fundet i browseren 20/10). Emply bruges kun til ansøgningsformularen, derfor gav Emply-kilden 0
 - name: Accura
   career_url: https://accura.dk/karriere
   status: klar
@@ -516,11 +566,6 @@ employers:
     url: https://jobs.poulschmith.dk
     path: /da/ledige-stillinger
   note: Emply på eget domæne (fundet 16/10 via web-søgning – ikke verificeret endnu)
-- name: Lundgrens
-  career_url: https://www.lundgrens.dk/karriere
-  status: find-system
-  source:
-    type: none
 - name: HortenDahl
   career_url: https://hortendahl.dk/karriere
   status: find-system
@@ -530,33 +575,53 @@ employers:
   - Horten
   note: Horten og DAHL fusionerede dec. 2025. Listen indlæses med JavaScript – system ukendt
 - name: DLA Piper Denmark
-  career_url: https://www.dlapiper.dk/karriere
-  status: find-system
+  career_url: https://denmark.dlapiper.com/da/landing/soeger-du-job-hos-dla-piper
+  status: klar
   source:
-    type: none
+    type: generic
+    list_urls:
+    - https://mkjobdlapiper.azurewebsites.net/da-dk/default.aspx
+    link_pattern: /landing/jobbeskrivelse\?VID=
+    dk_only: true
+  note: MindKey (klassisk, server-renderet) (fundet i browseren 20/10)
 - name: Mazanti-Andersen
-  career_url: https://www.mazanti.dk/karriere
-  status: find-system
+  career_url: https://www.mazanti.dk/karriere/ledige-stillinger/
+  status: klar
   source:
-    type: none
+    type: generic
+    list_urls:
+    - https://www.mazanti.dk/karriere/ledige-stillinger/
+    link_pattern: mazanti\.dk/karriere/ledige-stillinger/(?!mazantis-behandling)[a-z0-9-]{20,}
+    title_from: detail
+    dk_only: true
+  note: Egen liste; linkene hedder "Læs mere", derfor title_from (fundet i browseren 20/10)
 - name: Schjødt
   career_url: https://schjodt.com/career
-  status: find-system
+  status: klar
   source:
-    type: none
+    type: hrmanager
+    customer: schjodt
+    dk_only: false
+    exclude_title: oslo|stockholm|bergen|stavanger|ålesund|trondheim|london|summer trainee|fullmektig|søknad
   aliases:
   - Norrbom Vinding
-  note: Norrbom Vinding er nu Schjødt. HR-Manager cid 1295 – kunde-alias ukendt
+  note: HR-Manager schjodt (fundet i browseren 20/10). Mest norske opslag – kun København medtages
 - name: Moalem Weitemeyer
-  career_url: https://www.moalemweitemeyer.com/karriere
-  status: find-system
+  career_url: https://www.moalemweitemeyer.com/career
+  status: ikke-tilladt
   source:
     type: none
+  note: HR-ON (recruit.hr-on.com) – robots.txt forbyder alt for almindelige crawlere (20/10). Læses ikke
 - name: Lund Elmer Sandager
-  career_url: https://www.lundelmersandager.dk/karriere
-  status: find-system
+  domain: les.dk
+  career_url: https://les.dk/da/ledige-stillinger
+  status: klar
   source:
-    type: none
+    type: hrmanager
+    customer: les_tr
+  aliases:
+  - LES
+  note: HR-Manager les_tr (fundet i browseren 20/10; nyt domæne les.dk)
 - name: Grant Thornton
   region: storkbh
   domain: grantthornton.dk
@@ -568,10 +633,10 @@ employers:
   note: HR-Manager alias "grantthornton" (52 opslag 15/10)
 - name: Partner Revision
   career_url: https://www.partner-revision.dk/om-os/karriere
-  status: find-system
+  status: ikke-tilladt
   source:
     type: none
-  note: HR-Manager indlejret (?hr=show-job)
+  note: HR-ON (recruit.hr-on.com) – robots.txt forbyder alt for almindelige crawlere (20/10). Læses ikke
 - name: Skatte- og Vækstministeriet
   career_url: https://svmn.dk/ministeriet/job-karriere/ledige-stillinger
   status: via-portal
@@ -672,32 +737,43 @@ employers:
     customer: atp
   note: HR-Manager alias "atp" (21 opslag 15/10)
 - name: PensionDanmark
-  career_url: https://www.pensiondanmark.com/om-pensiondanmark/job/
-  status: find-system
+  career_url: https://pensiondanmark-career.talent-soft.com/job/list-of-all-jobs.aspx?all=1&mode=layer
+  status: klar
   source:
-    type: none
+    type: generic
+    list_urls:
+    - https://pensiondanmark-career.talent-soft.com/job/list-of-all-jobs.aspx?all=1&mode=layer
+    link_pattern: /job/job-[^/?#]+_\d+\.aspx
+    dk_only: true
+  note: Talentsoft (fundet i browseren 20/10)
 - name: Sampension
-  career_url: https://www.sampension.dk/om-sampension/job
-  status: find-system
+  career_url: https://www.sampension.dk/om-sampension/karriere/ledige-stillinger/
+  status: klar
   source:
-    type: none
+    type: browser
+    urls:
+    - https://career5.successfactors.eu/career?company=sampensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK
+    link_pattern: career_job_req_id=\d+
+    dk_only: true
+  note: SuccessFactors classic (sampensionP) som PFA (fundet i browseren 20/10)
 - name: AP Pension
-  career_url: https://appension.dk/om-ap-pension/job-i-ap-pension/karriere-i-ap-pension
-  status: find-system
+  career_url: https://appension.dk/om-ap-pension/job-i-ap-pension/ledige-stillinger
+  status: ikke-tilladt
   source:
     type: none
-  note: Set på Jobindex
-- name: Arbejdernes Landsbank
-  career_url: https://www.al-bank.dk/om-os/job
-  status: find-system
-  source:
-    type: none
+  note: HR-ON (recruit.hr-on.com) – robots.txt forbyder alt for almindelige crawlere (20/10). Læses ikke
 - name: Lån & Spar Bank
-  career_url: https://www.lsb.dk/privat/dit-liv/livet-som-studerende/job
-  status: find-system
+  career_url: https://www.lsb.dk/site/job
+  status: klar
   source:
-    type: none
-  note: Set på Jobindex
+    type: generic
+    list_urls:
+    - https://lsb.easycruit.com/
+    link_pattern: /vacancy/\d+/\d+
+    dk_only: true
+  aliases:
+  - Lån & Spar
+  note: Easycruit lsb.easycruit.com (fundet i browseren 20/10)
 - name: Danmarks Skibskredit
   domain: skibskredit.dk
   career_url: https://app.elvium.com/da
@@ -706,17 +782,22 @@ employers:
     type: none
   note: Elvium – robots.txt forbyder; brug career_url
 - name: Söderberg & Partners
-  career_url: https://www.soderbergpartners.dk/om-os/job
-  status: find-system
+  career_url: https://www.soderbergpartners.dk/om-os/karriere/ledige-stillinger/
+  status: klar
   source:
-    type: none
-  note: Set på Jobindex
+    type: generic
+    list_urls:
+    - https://www.soderbergpartners.dk/om-os/karriere/ledige-stillinger/
+    link_pattern: emp\.jobylon\.com/jobs/\d+-
+    dk_only: true
+  note: Liste på egen side, opslagene ligger i Jobylon med schema.org JobPosting (fundet i browseren 20/10)
 - name: KMD
-  career_url: https://www.kmd.dk/karriere
-  status: find-system
+  career_url: https://www.kmd.net/career/available-jobs
+  status: klar
   source:
-    type: none
-  note: Set på Jobindex
+    type: sitemap
+    url: https://jobs.kmd.net
+  note: SuccessFactors Career Site Builder på jobs.kmd.net (fundet i browseren 20/10; Student Workers i Ballerup)
 - name: EG
   career_url: https://careers.egsoftware.com
   status: klar
@@ -819,12 +900,6 @@ employers:
   aliases:
   - Copenhagen Business School
   note: Egen liste på cbs.dk (15/10). Ansøgning i Statens Rekrutteringsløsning, men CBS er ikke med i den fælles liste
-- name: Danske Havne
-  career_url: https://www.danskehavne.dk/
-  status: find-system
-  source:
-    type: none
-  note: Set på Jobindex
 - name: DSB
   career_url: https://www.dsb.dk/om-dsb/job-i-dsb/
   status: klar
@@ -833,11 +908,19 @@ employers:
     url: https://dsb.jobs.hr.cloud.sap
   note: 'SuccessFactors på nyt SAP-domæne via sitemap (verificeret 16/10 i browser: 23 opslag)'
 - name: Movia
-  career_url: https://www.moviatrafik.dk/om-movia/job
-  status: find-system
+  career_url: https://www.moviatrafik.dk/om-os/job-i-movia/ledige-stillinger
+  status: klar
   source:
-    type: none
-  note: Set på Jobindex
+    type: browser
+    urls:
+    - https://movia.recruiting.mindkey-app.com/da-DK/open-vacancies
+    link_pattern: /da-DK/vacancy/[A-Za-z0-9]+$
+    search_terms:
+    - ''
+    dk_only: true
+  aliases:
+  - Trafikselskabet Movia
+  note: MindKey (ny app, kræver browser) (fundet i browseren 20/10)
 - name: Svitzer
   domain: svitzer.com
   career_url: https://svitzer.wd3.myworkdayjobs.com/Svitzer_Careers
@@ -917,10 +1000,14 @@ employers:
     url: https://careers.coloplast.com
   note: 'SuccessFactors CSB via sitemap (verificeret 16/10 i browser: 4 studiejob i Humlebæk)'
 - name: Lundbeck
-  career_url: https://www.lundbeck.com/global/careers
-  status: find-system
+  career_url: https://www.lundbeck.com/global/careers/your-job/job-opportunities
+  status: klar
   source:
-    type: none
+    type: sitemap
+    url: https://jobs.lundbeck
+  aliases:
+  - H. Lundbeck A/S
+  note: SuccessFactors Career Site Builder på jobs.lundbeck (fundet i browseren 20/10; 73 opslag, 3 studie-/intern-job i Kbh)
 - name: Demant
   career_url: https://www.demant.com/careers
   status: klar
@@ -929,10 +1016,15 @@ employers:
     url: https://careers.demant.com
   note: SuccessFactors CSB via sitemap (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: FLSmidth
-  career_url: https://www.flsmidth.com/en-gb/company/careers
-  status: find-system
+  domain: fls.com
+  career_url: https://www.fls.com/en/company/careers/open-positions/
+  status: klar
   source:
-    type: none
+    type: workday
+    url: https://flsmidth.wd3.myworkdayjobs.com/FLS_Global
+  aliases:
+  - FLS
+  note: Workday FLS_Global (fundet i browseren 20/10)
 - name: ISS
   career_url: https://www.issworld.com/careers
   status: klar
@@ -941,17 +1033,21 @@ employers:
     url: https://jobs.issworld.com
   note: SuccessFactors CSB via sitemap (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: Genmab
-  career_url: https://www.genmab.com/careers
-  status: tjek
+  career_url: https://careers.genmab.com/global/en
+  status: klar
   source:
-    type: workday
-    url: https://genmab.wd3.myworkdayjobs.com/Genmab_Careers_Site
-  note: Workday-adressen fra web-søgning gav 0 opslag 17/10 – find det rigtige site-navn (fx via et opslag)
+    type: phenom
+    url: https://careers.genmab.com/global/en
+  note: Phenom på careers.genmab.com, ikke Workday (fundet i browseren 20/10; 2 Student Workers i Kbh)
 - name: Novo Nordisk Fonden
-  career_url: https://novonordiskfonden.dk/om-fonden/job/
-  status: find-system
+  career_url: https://apply.workable.com/novonordiskfoundation/
+  status: klar
   source:
-    type: none
+    type: workable
+    account: novonordiskfoundation
+  aliases:
+  - Novo Nordisk Foundation
+  note: Workable (fundet i browseren 20/10)
 - name: Ambu
   career_url: https://www.ambu.com/careers
   status: klar
