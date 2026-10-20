@@ -29,7 +29,7 @@ Scraperen (`valde6/job-scraper`, offentligt repo) udgiver hver 3. time:
 | `https://raw.githubusercontent.com/valde6/job-scraper/main/data/jobradar/jobs.json` | `{schema_version: 2, generated_at, counts, jobs[]}` |
 | `https://raw.githubusercontent.com/valde6/job-scraper/main/data/jobradar/keywords.json` | `{keywords: [{id, label, en, group}]}` |
 | `https://raw.githubusercontent.com/valde6/job-scraper/main/data/jobradar/study_lines.json` | `{study_lines: [{id, name, school, description, suggested[], avoid[]}]}` |
-| `https://raw.githubusercontent.com/valde6/job-scraper/main/data/jobradar/employers.json` | `{employers: [{name, lines[], status, career_url, source_type, ok, listed, matched}]}` |
+| `https://raw.githubusercontent.com/valde6/job-scraper/main/data/jobradar/employers.json` | `{employers: [{name, lines[], status, career_url, source_type, ok, listed, matched, reading, last_data, via?}]}`. **`reading`** (fra 20/10): `"læses"` når kilden har givet opslag inden for 30 dage, ellers `"læses-ikke-endnu"`; `last_data` = dato (YYYY-MM-DD) for seneste opslag fra kilden. Brug kun `reading` til at sige, om en arbejdsgiver læses – ikke `ok`/`status`/`source_type`. |
 
 Et job i `jobs.json` (schema_version 2):
 
