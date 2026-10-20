@@ -1,29 +1,53 @@
+Traceback (most recent call last):
+  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 99, in main
+    listed, jobs = _with_timeout(lambda: ADAPTERS[typ]({**src, "name": c["name"]}), SOURCE_TIMEOUT)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
+    return fn()
+           ^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 99, in <lambda>
+    listed, jobs = _with_timeout(lambda: ADAPTERS[typ]({**src, "name": c["name"]}), SOURCE_TIMEOUT)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/workday.py", line 29, in scrape
+    r = post(f"{api}/jobs", json={"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": term},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 96, in post
+    return http("POST", url, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 88, in http
+    raise last  # type: ignore[misc]
+    ^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 80, in http
+    r.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs
 Novo Nordisk                     successfactors  True 3 2 
-A.P. Møller - Mærsk              workday         True 404 2 
-LEGO Group                       workday         True 61 4 
+A.P. Møller - Mærsk              workday         True 406 2 
+LEGO Group                       workday         True 62 4 
 Danske Bank                      oracle          True 6 3 
-Deloitte                         smartrecruiters True 32 5 
-PwC                              workday         True 12 3 
+Deloitte                         smartrecruiters True 37 5 
+PwC                              workday         True 10 3 
 Boston Consulting Group (BCG)    eightfold       True 4 0 
-Nordea                           nordea          True 9 0 
+Nordea                           nordea          True 10 0 
 EY                               yello           True 10 3 
-Nykredit                         browser         True 50 3 
+Nykredit                         browser         True 44 3 
 Vestas                           successfactors  True 5 0 
 Saxo Bank                        workday         True 25 0 
 Arla Foods                       phenom          True 10 0 
 Dansk Industri                   teamtailor      True 3 0 
-Ørsted                           browser         True 44 0 
+Ørsted                           browser         True 42 0 
 KPMG                             hrmanager       True 18 1 
 PA Consulting Group              smartrecruiters True 12 0 
 Danske Commodities               teamtailor      True 2 0 
-Netcompany                       smartrecruiters True 30 3 
+Netcompany                       smartrecruiters True 27 2 
 PFA Pension                      browser         True 6 0 
 Amazon                           amazon          True 7 0 
 IKEA                             generic         True 28 0 
-Accenture                        workday         True 3 3 
+Accenture                        workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs
 Danmarks Radio                   hrmanager       True 0 0 
-Rambøll                          smartrecruiters True 88 0 
+Rambøll                          smartrecruiters True 81 0 
 Novonesis                        workday         True 51 1 
-Jobindex: {'sikker': 26, 'sandsynlig': 1, 'mulig': 3, 'body_fetch': 3}
+Jobindex: {'sikker': 24, 'sandsynlig': 1, 'mulig': 3, 'body_fetch': 9}
 
-Færdig: 63 fundet i dag, 0 nye, 120 aktive i alt.
+Færdig: 57 fundet i dag, 1 nye, 118 aktive i alt.

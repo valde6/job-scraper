@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-19T05:23:28+00:00",
+ "ts": "2026-10-20T05:22:55+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -15,7 +15,7 @@
    "name": "A.P. Møller - Mærsk",
    "type": "workday",
    "ok": true,
-   "listed": 404,
+   "listed": 406,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -35,7 +35,7 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 61,
+   "listed": 62,
    "matched": 4,
    "problem": null,
    "streak": 0,
@@ -55,7 +55,7 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 32,
+   "listed": 37,
    "matched": 5,
    "problem": null,
    "streak": 0,
@@ -65,7 +65,7 @@
    "name": "PwC",
    "type": "workday",
    "ok": true,
-   "listed": 12,
+   "listed": 10,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -95,7 +95,7 @@
    "name": "Nordea",
    "type": "nordea",
    "ok": true,
-   "listed": 9,
+   "listed": 10,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -135,7 +135,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 50,
+   "listed": 44,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 44,
+   "listed": 42,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -355,8 +355,8 @@
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 30,
-   "matched": 3,
+   "listed": 27,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -444,12 +444,12 @@
   {
    "name": "Accenture",
    "type": "workday",
-   "ok": true,
-   "listed": 3,
-   "matched": 3,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "problem": "fejl",
+   "streak": 1,
+   "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs"
   },
   {
    "name": "Danmarks Radio",
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 2,
+   "streak": 3,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -485,7 +485,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 88,
+   "listed": 81,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -505,15 +505,15 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 381,
-   "matched": 30,
+   "listed": 384,
+   "matched": 28,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 2 kørsler i træk – 0 opslag (sidst 16)"
+  "**Danmarks Radio** (hrmanager): mistænkelig i 3 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 33
+ "active": 31
 }
