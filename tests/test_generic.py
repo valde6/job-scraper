@@ -59,3 +59,24 @@ def test_generic_one_bad_detail_page_does_not_fail_source(monkeypatch):
     monkeypatch.setattr(generic, "get", g)
     listed, jobs = generic.scrape({"name": "CBS", "list_urls": ["https://x.dk/job/"], "link_pattern": r"/job/[a-z-]+$", "dk_only": True})
     assert listed == 2 and [j.title for j in jobs] == ["Studentermedhjælper til HR"]
+
+
+def test_title_from_detail(monkeypatch):
+    """Mazanti: linkene hedder "Læs mere"; titlen står kun på opslaget. Bech-Bruun: link-teksten har frist og by."""
+    pages = {
+        "https://m.dk/karriere/ledige-stillinger/":
+            '<a href="/karriere/ledige-stillinger/stud-jur-til-ma-afdelingen">Læs mere</a>'
+            '<a href="/karriere/ledige-stillinger/advokat-med-erfaring-inden-for-fund-formation">Læs mere</a>',
+        "https://m.dk/karriere/ledige-stillinger/stud-jur-til-ma-afdelingen":
+            "<html><body><main><h1>Stud.jur. til M&amp;A-afdelingen</h1><p>" + "Som studentermedhjælper " * 20
+            + "</p></main></body></html>",
+        "https://m.dk/karriere/ledige-stillinger/advokat-med-erfaring-inden-for-fund-formation":
+            "<html><body><main><h1>Advokat med erfaring inden for fund formation</h1><p>" + "Erfaren advokat " * 20
+            + "</p></main></body></html>",
+    }
+    monkeypatch.setattr(generic, "get", lambda url, **kw: R(pages[url]))
+    listed, jobs = generic.scrape({"name": "Mazanti-Andersen", "list_urls": ["https://m.dk/karriere/ledige-stillinger/"],
+                                   "link_pattern": r"/ledige-stillinger/[a-z0-9-]{12,}", "dk_only": True,
+                                   "title_from": "detail"})
+    assert listed == 2
+    assert [j.title for j in jobs] == ["Stud.jur. til M&A-afdelingen"]

@@ -1,8 +1,13 @@
 """Workday (myworkdayjobs.com). Bruger det samme JSON-API som Workdays egen side.
 
-Config: url: https://lego.wd103.myworkdayjobs.com/LEGO_External
+Config:
+  url: https://lego.wd103.myworkdayjobs.com/LEGO_External
+  location_map: {Headquarters: Hellerup}   (valgfri) stednavne, som Workday-siden bruger i stedet for en by
+                                           (Saxo Bank skriver "Headquarters" om hovedkontoret i Hellerup)
+  pause: 2                                 (valgfri) sekunder mellem kaldene – til sider, der svarer 429 (Accenture)
 """
 import re
+import time
 from urllib.parse import urlparse
 
 from ..common import Job, post, get, html_to_md, is_denmark, is_student, is_student_body, clean, student_fit, topic_tags, reject
@@ -23,9 +28,12 @@ def scrape(cfg):
     base, tenant, site = _parts(cfg["url"])
     api = f"{base}/wday/cxs/{tenant}/{site}"
     seen, listed, jobs = set(), 0, []
+    loc_map = {k.lower(): v for k, v in (cfg.get("location_map") or {}).items()}
+    pause = float(cfg.get("pause") or 0)
     for term in cfg.get("search_terms", SEARCH_TERMS):
         offset = 0
         while offset < 400:
+            time.sleep(pause)
             r = post(f"{api}/jobs", json={"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": term},
                      headers={"Content-Type": "application/json", "Accept": "application/json"})
             data = r.json()
@@ -38,15 +46,19 @@ def scrape(cfg):
                 listed += 1
                 title = clean(p.get("title"))
                 loc = clean(p.get("locationsText"))
+                loc = loc_map.get(loc.lower(), loc) if loc else loc
                 # "2 Locations" skjuler landet, og nogle opslag har slet ingen locationsText -> tjek detaljer
                 if loc and not is_denmark(loc, path) and not re.search(r"\d+\s+locations?", loc, re.I):
+                    if is_student(title):
+                        reject(cfg["name"], title, f"uden for Danmark ({loc[:40]})")
                     continue
                 if not is_student(title) and not cfg.get("check_body", True):
                     continue
+                time.sleep(pause)
                 d = get(f"{api}{path}", headers={"Accept": "application/json"}).json()
                 info = d.get("jobPostingInfo") or {}
                 country = ((info.get("country") or {}).get("descriptor")) or ""
-                locs = [info.get("location") or ""] + (info.get("additionalLocations") or [])
+                locs = [loc_map.get(x.lower(), x) for x in [info.get("location") or ""] + (info.get("additionalLocations") or [])]
                 if not is_denmark(country, " ".join(locs), loc):
                     continue
                 desc = html_to_md(info.get("jobDescription"))

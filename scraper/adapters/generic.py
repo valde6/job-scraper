@@ -6,6 +6,9 @@ Config:
   dk_only: true                                 virksomheden har kun danske job (så springes lokationstjek over)
   pages: {param: page, start: 0, max: 30}       (valgfri) bladr i listen med ?page=N, til en side ikke giver nye links
   title_prefix: "^Om stillingen\\s+"            (valgfri) regex der fjernes fra link-teksten (fx CBS)
+  title_from: detail                            (valgfri) titlen tages fra opslaget (JSON-LD/h1), ikke link-teksten –
+                                                til lister, hvor linket hedder "Læs mere" (Mazanti) eller indeholder
+                                                frist og by (Bech-Bruun). Hver jobside hentes, så kun til små lister.
 Detaljesiden læses via schema.org JobPosting (JSON-LD) og ellers sidens hovedtekst.
 """
 import re
@@ -86,18 +89,22 @@ def scrape(cfg):
             if href in seen or href.rstrip("/") == lu.rstrip("/") or not pat.search(href):
                 continue
             title = clean_title(a.get_text(), cfg.get("title_prefix"))
-            if len(title) < 6:
+            from_detail = cfg.get("title_from") == "detail"
+            if len(title) < 6 and not from_detail:
                 continue
             seen.add(href)
             listed += 1
             new_links += 1
-            if not is_student(title):
+            if not from_detail and not is_student(title):
                 reject(cfg["name"], title, "ikke studiejob (titel)", href)
                 continue
             try:
-                j = detail(cfg["name"], title, href, dk_only)
+                j = detail(cfg["name"], "" if from_detail else title, href, dk_only)
             except Exception:  # noqa: BLE001 – ét opslag, der fejler (fx 404), må ikke vælte kilden (CBS 17/10)
                 reject(cfg["name"], title, "jobsiden kunne ikke hentes", href)
+                continue
+            if j and from_detail and not is_student(j.title):
+                reject(cfg["name"], j.title, "ikke studiejob (titel)", href)
                 continue
             if j:
                 jobs.append(j)

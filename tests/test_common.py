@@ -140,3 +140,13 @@ def test_region_town_names_inside_words():
     from scraper.common import region
     assert region("Danmark", "Studerende (IT-vejledere) til IT-supporten på Copenhagen Business School") == "ukendt"
     assert region("Danmark", "Studentermedhjælper til Vejle-kontoret") is None
+
+
+def test_stud_jur_titles_are_studiejob():
+    """20/10: advokatfirmaer (Mazanti, Gorrissen, Plesner) slår studiejob op som "stud.jur." uden ordet "student"."""
+    from scraper.common import is_student, job_type, set_job_types
+    set_job_types({"studiejob", "praktik", "graduate"})
+    for t in ["Stud.jur. til M&A-afdelingen", "Stud. jur. til Procedure", "Jurastuderende til vores team i Aarhus",
+              "Stud.merc.(jur.) til Skat"]:
+        assert is_student(t) and job_type(t) == "studiejob", t
+    assert not is_student("Studievejleder til jura")

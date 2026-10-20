@@ -61,6 +61,17 @@ def _load_fixture(d, key: str, method: str, url: str) -> requests.Response:
     return r
 
 
+def _retry_wait(r: requests.Response, attempt: int) -> float:
+    """Ventetid før næste forsøg. Ved 429 respekteres Retry-After (højst 30 s), ellers 2, 5, 8 … sekunder."""
+    base = 2 + attempt * 3
+    if r.status_code == 429:
+        ra = (r.headers.get("Retry-After") or "").strip()
+        if ra.isdigit():
+            return min(max(int(ra), base), 30)
+        return min(base * 2, 30)
+    return base
+
+
 def http(method: str, url: str, *, retries: int = 2, **kw) -> requests.Response:
     replay = _fixture_dir("SCRAPER_REPLAY")
     if replay:
@@ -75,7 +86,7 @@ def http(method: str, url: str, *, retries: int = 2, **kw) -> requests.Response:
         try:
             r = _session.request(method, url, **kw)
             if r.status_code in (429, 502, 503, 504) and attempt < retries:
-                time.sleep(2 + attempt * 3)
+                time.sleep(_retry_wait(r, attempt))
                 continue
             r.raise_for_status()
             if record:
@@ -126,7 +137,8 @@ def clean(s: str | None) -> str:
 # ---------------------------------------------------------------- filtre
 STUDENT_RE = re.compile(
     r"student|studerende|studiejob|studie-job|studentermedhj|studentermedarb|"
-    r"studentmedhj|working\s+student|werkstudent|part[- ]time\s+student",
+    r"studentmedhj|working\s+student|werkstudent|part[- ]time\s+student|"
+    r"\bstud\.\s?(?:jur|merc|polit|scient|oecon|soc)\b|jurastuderende",     # 20/10: advokatfirmaernes "stud.jur."
     re.I,
 )
 # ting der ligner studenterjob men ikke er det
