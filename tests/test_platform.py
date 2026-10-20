@@ -242,3 +242,37 @@ def test_why_rejected():
         .startswith("ikke studiejob")
     assert P.why_rejected({"title": "Studentermedhjælper", "description_md": "", "location": "Aarhus"}, {}) \
         .startswith("uden for Sjælland")
+
+
+def test_employer_reading_is_honest():
+    """20/10: arbejdsgivere, der står på listen, men hvis kilde aldrig har givet opslag, skal stå som "læses ikke endnu"."""
+    now = "2026-10-20T06:00:00+00:00"
+    employers = [{"name": "Statens Rekrutteringsløsning (staten)", "status": "klar",
+                  "source": {"type": "hrmanager", "multi_employer": True}},
+                 {"name": "Coloplast", "status": "klar", "source": {"type": "sitemap"}},
+                 {"name": "Bech-Bruun", "status": "klar", "source": {"type": "emply"}},
+                 {"name": "DR", "status": "klar", "source": {"type": "hrmanager"}},
+                 {"name": "Gammel kilde", "status": "klar", "source": {"type": "workday"}},
+                 {"name": "McKinsey", "status": "find-system", "source": {"type": "none"}},
+                 {"name": "Datatilsynet", "status": "via-portal", "source": {"type": "none"}}]
+    sources = {"Statens Rekrutteringsløsning (staten)": {"last_data": now},
+               "Coloplast": {"ok": True, "listed": 290, "last_data": now},
+               "Bech-Bruun": {"ok": True, "listed": 0, "last_data": None},
+               "DR": {"ok": True, "listed": 0, "last_data": "2026-10-05T06:00:00+00:00"},       # 0 opslag lige nu
+               "Gammel kilde": {"ok": False, "last_data": "2026-08-01T06:00:00+00:00"}}         # død i 2½ måned
+    rows = {r["name"]: r for r in P.employer_list(employers, [], sources, now)}
+    assert rows["Coloplast"]["reading"] == "læses" and rows["Coloplast"]["last_data"] == "2026-10-20"
+    assert rows["DR"]["reading"] == "læses"
+    assert rows["Bech-Bruun"]["reading"] == "læses-ikke-endnu"
+    assert rows["Gammel kilde"]["reading"] == "læses-ikke-endnu"
+    assert rows["McKinsey"]["reading"] == "læses-ikke-endnu"
+    assert rows["Datatilsynet"]["reading"] == "læses" and rows["Datatilsynet"]["via"] == "Statens Rekrutteringsløsning (staten)"
+
+
+def test_data_since():
+    now = "2026-10-20T06:00:00+00:00"
+    assert P.data_since({"ok": True, "listed": 5}, {}, now) == now
+    assert P.data_since({"ok": True, "listed": 0}, {"last_data": "2026-10-01"}, now) == "2026-10-01"
+    assert P.data_since({"ok": True, "listed": 0}, {"listed": 16}, now) == now        # overgang fra gammel tilstand
+    assert P.data_since({"ok": False}, {}, now) is None
+    assert P.data_since({"ok": True, "listed": 0}, {"listed": 0}, now) is None

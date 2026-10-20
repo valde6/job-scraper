@@ -227,12 +227,44 @@ def merge_state(found: dict[str, dict], old: dict[str, dict], ok_sources: set[st
     return out
 
 
-def employer_list(employers: list[dict], jobs: list[dict], sources: dict) -> list[dict]:
+READ_DAYS = 30          # en kilde "læses", hvis den har givet opslag inden for så mange dage
+
+
+def data_since(entry: dict, prev: dict, now: str) -> str | None:
+    """Hvornår kilden sidst gav opslag (listed > 0). Gemmes i state.json som `last_data`.
+    Ældre tilstand uden feltet: har kilden tidligere givet opslag, regnes det som nu (engangs-overgang 20/10)."""
+    if entry.get("ok") and (entry.get("listed") or 0) > 0:
+        return now
+    if prev.get("last_data"):
+        return prev["last_data"]
+    if any((d.get(k) or 0) > 0 for d in (prev, entry) for k in ("listed", "last_good_listed")):
+        return now
+    return None
+
+
+def is_read(src: dict | None, now: str) -> bool:
+    """Læses kilden faktisk? Kun hvis den har givet opslag inden for READ_DAYS. En kilde, der er sat op, men aldrig har
+    givet data (forkert adresse, bot-mur, nyt system), står som "læses ikke endnu" – også selv om status er "klar"."""
+    last = (src or {}).get("last_data")
+    if not last:
+        return False
+    try:
+        age = datetime.fromisoformat(now) - datetime.fromisoformat(last)
+    except ValueError:
+        return False
+    return age <= timedelta(days=READ_DAYS)
+
+
+def employer_list(employers: list[dict], jobs: list[dict], sources: dict, now: str | None = None) -> list[dict]:
     """Arbejdsgiverlisten til appen (/arbejdsgivere).
 
     Fælles portaler (fx Statens Rekrutteringsløsning) giver job med den rigtige arbejdsgivers navn. Portalen selv vises
     ikke; i stedet får hver arbejdsgiver med aktive job fra portalen sin egen række (status klar, portalens kilde), så
-    tallene i appen passer med jobbene."""
+    tallene i appen passer med jobbene.
+
+    `reading` ("læses" | "læses-ikke-endnu") fortæller appen, om arbejdsgiveren reelt bliver læst automatisk (se
+    is_read). `last_data` er datoen, kilden sidst gav opslag."""
+    now = now or datetime.now(timezone.utc).isoformat(timespec="seconds")
     known = {n.lower() for e in employers for n in [e["name"], *(e.get("aliases") or [])]}
     portals, subs = set(), {}
     for j in jobs:
@@ -248,6 +280,13 @@ def employer_list(employers: list[dict], jobs: list[dict], sources: dict) -> lis
         if j.get("active") and src and src != j["company"]:
             n = j["company"].lower()
             via_portal[n] = (src, via_portal.get(n, (src, 0))[1] + 1)
+    portal_names = portals | {e["name"] for e in employers if (e.get("source") or {}).get("multi_employer")}
+    portal_read = next((p for p in sorted(portal_names) if is_read(sources.get(p), now)), None)
+
+    def read_fields(src_name: str | None, read: bool) -> dict:
+        last = (sources.get(src_name) or {}).get("last_data") if src_name else None
+        return {"reading": "læses" if read else "læses-ikke-endnu", "last_data": (last or "")[:10] or None}
+
     out = []
     for e in employers:
         if e["name"] in portals and (e.get("source") or {}).get("type") != "none":
@@ -257,18 +296,21 @@ def employer_list(employers: list[dict], jobs: list[dict], sources: dict) -> lis
         row = {"name": e["name"], "lines": [], "status": e.get("status"), "career_url": e.get("career_url"),
                "domain": company_domain(e), "source_type": (e.get("source") or {}).get("type", "none"),
                **{k: sources.get(e["name"], {}).get(k) for k in ("ok", "listed", "matched")}}
+        row.update(read_fields(e["name"], row["source_type"] != "none" and is_read(sources.get(e["name"]), now)))
         if row["source_type"] == "none":
             hit = next((via_portal[n.lower()] for n in [e["name"], *(e.get("aliases") or [])] if n.lower() in via_portal), None)
             if hit:
                 portal = by_name.get(hit[0], {})
                 row.update(status="klar", via=hit[0], ok=True, matched=hit[1],
-                           source_type=(portal.get("source") or {}).get("type", "none"))
+                           source_type=(portal.get("source") or {}).get("type", "none"), **read_fields(hit[0], True))
+            elif e.get("status") == "via-portal" and portal_read:
+                row.update(via=portal_read, **read_fields(portal_read, True))   # portalen læses; ingen job lige nu
         out.append(row)
     for name, sub in sorted(subs.items()):
         portal = by_name.get(sub["via"], {})
         out.append({"name": name, "lines": [], "status": "klar", "career_url": sub["career_url"] or portal.get("career_url"),
                     "domain": sub["domain"], "source_type": (portal.get("source") or {}).get("type", "none"),
-                    "via": sub["via"], "ok": True})
+                    "via": sub["via"], "ok": True, **read_fields(sub["via"], True)})
     return out
 
 
@@ -338,6 +380,7 @@ def main(argv=None):
             pv = prev_status.get(e["name"], {})
             entry["last_good_listed"] = pv.get("listed") or pv.get("last_good_listed")
             traceback.print_exc(file=sys.stderr)
+        entry["last_data"] = data_since(entry, prev_status.get(e["name"], {}), now)
         entry["seconds"] = round(time.time() - t0, 1)
         print(f"{e['name']:<36} {typ:<15} {entry.get('ok')} {entry.get('listed', '')} {entry.get('matched', '')} "
               f"{entry.get('suspect') or entry.get('error') or ''}")
@@ -384,7 +427,7 @@ def main(argv=None):
     (OUT / "keywords.json").write_text(json.dumps(
         {"keywords": [{k: v for k, v in kw.items() if k != "pattern"} for kw in kws]}, ensure_ascii=False, indent=1))
     (OUT / "study_lines.json").write_text(json.dumps({"study_lines": load_study_lines()}, ensure_ascii=False, indent=1))
-    (OUT / "employers.json").write_text(json.dumps({"employers": employer_list(employers, ordered, merged_sources)},
+    (OUT / "employers.json").write_text(json.dumps({"employers": employer_list(employers, ordered, merged_sources, now)},
                                                    ensure_ascii=False, indent=1))
     by_type = {}
     for j in ordered:
