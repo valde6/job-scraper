@@ -276,3 +276,19 @@ def test_data_since():
     assert P.data_since({"ok": True, "listed": 0}, {"listed": 16}, now) == now        # overgang fra gammel tilstand
     assert P.data_since({"ok": False}, {}, now) is None
     assert P.data_since({"ok": True, "listed": 0}, {"listed": 0}, now) is None
+
+
+def test_portal_rows_are_only_read_when_the_portal_is():
+    """Bevarede aktive job fra en portal beviser ikke, at portalen stadig læses (opgave 44 i app-repoet)."""
+    now = "2026-10-20T06:00:00+00:00"
+    employers = [{"name": "Statens Rekrutteringsløsning (staten)", "status": "klar",
+                  "source": {"type": "hrmanager", "multi_employer": True}},
+                 {"name": "Finanstilsynet", "status": "via-portal", "source": {"type": "none"}}]
+    jobs = [{"company": "Finanstilsynet", "source_employer": "Statens Rekrutteringsløsning (staten)", "active": True},
+            {"company": "Banedanmark", "source_employer": "Statens Rekrutteringsløsning (staten)", "active": True}]
+    dead = {"Statens Rekrutteringsløsning (staten)": {"ok": False, "last_data": "2026-08-01T06:00:00+00:00"}}
+    rows = {r["name"]: r for r in P.employer_list(employers, jobs, dead, now)}
+    assert rows["Finanstilsynet"]["reading"] == "læses-ikke-endnu" and rows["Banedanmark"]["reading"] == "læses-ikke-endnu"
+    live = {"Statens Rekrutteringsløsning (staten)": {"ok": True, "listed": 511, "last_data": now}}
+    rows = {r["name"]: r for r in P.employer_list(employers, jobs, live, now)}
+    assert rows["Finanstilsynet"]["reading"] == "læses" and rows["Banedanmark"]["last_data"] == "2026-10-20"

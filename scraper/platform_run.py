@@ -302,7 +302,8 @@ def employer_list(employers: list[dict], jobs: list[dict], sources: dict, now: s
             if hit:
                 portal = by_name.get(hit[0], {})
                 row.update(status="klar", via=hit[0], ok=True, matched=hit[1],
-                           source_type=(portal.get("source") or {}).get("type", "none"), **read_fields(hit[0], True))
+                           source_type=(portal.get("source") or {}).get("type", "none"),
+                           **read_fields(hit[0], is_read(sources.get(hit[0]), now)))   # bevarede job beviser intet
             elif e.get("status") == "via-portal" and portal_read:
                 row.update(via=portal_read, **read_fields(portal_read, True))   # portalen læses; ingen job lige nu
         out.append(row)
@@ -310,7 +311,7 @@ def employer_list(employers: list[dict], jobs: list[dict], sources: dict, now: s
         portal = by_name.get(sub["via"], {})
         out.append({"name": name, "lines": [], "status": "klar", "career_url": sub["career_url"] or portal.get("career_url"),
                     "domain": sub["domain"], "source_type": (portal.get("source") or {}).get("type", "none"),
-                    "via": sub["via"], "ok": True, **read_fields(sub["via"], True)})
+                    "via": sub["via"], "ok": True, **read_fields(sub["via"], is_read(sources.get(sub["via"]), now))})
     return out
 
 
