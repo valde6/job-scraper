@@ -8,7 +8,7 @@
    "domain": "novonordisk.com",
    "source_type": "successfactors",
    "ok": true,
-   "listed": 42,
+   "listed": 38,
    "matched": 2
   },
   {
@@ -19,7 +19,7 @@
    "domain": "maersk.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 622,
+   "listed": 630,
    "matched": 5
   },
   {
@@ -41,7 +41,7 @@
    "domain": "lego.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 107,
+   "listed": 105,
    "matched": 0
   },
   {
@@ -52,7 +52,7 @@
    "domain": "danskebank.com",
    "source_type": "oracle",
    "ok": true,
-   "listed": 123,
+   "listed": 124,
    "matched": 4
   },
   {
@@ -63,7 +63,7 @@
    "domain": "deloitte.com",
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 32,
+   "listed": 37,
    "matched": 5
   },
   {
@@ -74,8 +74,8 @@
    "domain": "pwc.dk",
    "source_type": "workday",
    "ok": true,
-   "listed": 12,
-   "matched": 6
+   "listed": 10,
+   "matched": 4
   },
   {
    "name": "Carlsberg",
@@ -85,7 +85,7 @@
    "domain": "carlsberggroup.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 119,
+   "listed": 125,
    "matched": 1
   },
   {
@@ -107,7 +107,7 @@
    "domain": "nordea.com",
    "source_type": "nordea",
    "ok": true,
-   "listed": 68,
+   "listed": 76,
    "matched": 0
   },
   {
@@ -151,7 +151,7 @@
    "domain": "nykredit.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 50,
+   "listed": 44,
    "matched": 8
   },
   {
@@ -162,7 +162,7 @@
    "domain": "bestseller.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 943,
+   "listed": 958,
    "matched": 0
   },
   {
@@ -173,7 +173,7 @@
    "domain": "loreal.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 1683,
+   "listed": 1698,
    "matched": 1
   },
   {
@@ -184,7 +184,7 @@
    "domain": "bain.com",
    "source_type": "avature",
    "ok": true,
-   "listed": 262,
+   "listed": 265,
    "matched": 1
   },
   {
@@ -195,7 +195,7 @@
    "domain": "vestas.com",
    "source_type": "successfactors",
    "ok": true,
-   "listed": 54,
+   "listed": 53,
    "matched": 0
   },
   {
@@ -206,8 +206,8 @@
    "domain": "implementconsultinggroup.com",
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 18,
-   "matched": 3
+   "listed": 17,
+   "matched": 2
   },
   {
    "name": "Saxo Bank",
@@ -229,7 +229,7 @@
    "source_type": "hrmanager",
    "ok": true,
    "listed": null,
-   "matched": 3,
+   "matched": 2,
    "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
@@ -240,7 +240,7 @@
    "domain": "bang-olufsen.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 6,
+   "listed": 4,
    "matched": 0
   },
   {
@@ -285,7 +285,7 @@
    "domain": "pandoragroup.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 13766,
+   "listed": 13611,
    "matched": 0
   },
   {
@@ -318,7 +318,7 @@
    "domain": "orsted.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 44,
+   "listed": 43,
    "matched": 0
   },
   {
@@ -340,7 +340,7 @@
    "domain": "matas.dk",
    "source_type": "emply",
    "ok": true,
-   "listed": 17,
+   "listed": 16,
    "matched": 1
   },
   {
@@ -395,8 +395,8 @@
    "domain": "netcompany.com",
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 30,
-   "matched": 5
+   "listed": 27,
+   "matched": 4
   },
   {
    "name": "PFA Pension",
@@ -417,7 +417,7 @@
    "domain": "sasgroup.net",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 12,
+   "listed": 13,
    "matched": 0
   },
   {
@@ -450,7 +450,7 @@
    "domain": "alsydbank.dk",
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 22,
+   "listed": 21,
    "matched": 1
   },
   {
@@ -472,7 +472,7 @@
    "domain": "ikea.com",
    "source_type": "generic",
    "ok": true,
-   "listed": 28,
+   "listed": 30,
    "matched": 0
   },
   {
@@ -494,9 +494,9 @@
    "career_url": "https://www.accenture.com/dk-en/careers",
    "domain": "accenture.com",
    "source_type": "workday",
-   "ok": true,
-   "listed": 3,
-   "matched": 0
+   "ok": false,
+   "listed": null,
+   "matched": null
   },
   {
    "name": "Danmarks Radio",
@@ -517,7 +517,7 @@
    "domain": "dsv.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 2269,
+   "listed": 2265,
    "matched": 0
   },
   {
@@ -528,7 +528,7 @@
    "domain": "bdo.dk",
    "source_type": "emply",
    "ok": true,
-   "listed": 24,
+   "listed": 25,
    "matched": 3
   },
   {
@@ -539,7 +539,7 @@
    "domain": "ramboll.com",
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 88,
+   "listed": 81,
    "matched": 6
   },
   {
@@ -550,7 +550,7 @@
    "domain": "novonesis.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 72,
+   "listed": 71,
    "matched": 1
   },
   {
@@ -795,8 +795,8 @@
    "domain": "kk.dk",
    "source_type": "generic",
    "ok": true,
-   "listed": 291,
-   "matched": 3
+   "listed": 288,
+   "matched": 6
   },
   {
    "name": "Frederiksberg Kommune",
@@ -806,8 +806,8 @@
    "domain": "frederiksberg.dk",
    "source_type": "emply",
    "ok": true,
-   "listed": 61,
-   "matched": 4
+   "listed": 59,
+   "matched": 5
   },
   {
    "name": "Tryg",
@@ -817,8 +817,8 @@
    "domain": "tryg.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 32,
-   "matched": 2
+   "listed": 30,
+   "matched": 1
   },
   {
    "name": "Alm. Brand Group",
@@ -839,7 +839,7 @@
    "domain": "if.dk",
    "source_type": "workday",
    "ok": true,
-   "listed": 43,
+   "listed": 44,
    "matched": 1
   },
   {
@@ -850,7 +850,7 @@
    "domain": "atp.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 19,
+   "listed": 20,
    "matched": 1
   },
   {
@@ -982,7 +982,7 @@
    "domain": "capgemini.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 6499,
+   "listed": 6524,
    "matched": 0
   },
   {
@@ -1037,8 +1037,8 @@
    "domain": "dtu.dk",
    "source_type": "oracle",
    "ok": true,
-   "listed": 362,
-   "matched": 4
+   "listed": 369,
+   "matched": 5
   },
   {
    "name": "IT-Universitetet",
@@ -1059,8 +1059,8 @@
    "domain": "ku.dk",
    "source_type": "generic",
    "ok": true,
-   "listed": 78,
-   "matched": 9
+   "listed": 82,
+   "matched": 12
   },
   {
    "name": "CBS",
@@ -1070,7 +1070,7 @@
    "domain": "cbs.dk",
    "source_type": "generic",
    "ok": true,
-   "listed": 27,
+   "listed": 26,
    "matched": 0
   },
   {
@@ -1136,7 +1136,7 @@
    "domain": "danskerhverv.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 14,
+   "listed": 13,
    "matched": 3
   },
   {
@@ -1180,7 +1180,7 @@
    "domain": "coop.dk",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 224,
+   "listed": 226,
    "matched": 1
   },
   {
@@ -1213,7 +1213,7 @@
    "domain": "coloplast.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 289,
+   "listed": 291,
    "matched": 4
   },
   {
@@ -1235,8 +1235,8 @@
    "domain": "demant.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 326,
-   "matched": 1
+   "listed": 325,
+   "matched": 0
   },
   {
    "name": "FLSmidth",
@@ -1290,7 +1290,7 @@
    "domain": "ambu.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 138,
+   "listed": 146,
    "matched": 1
   },
   {
@@ -1301,7 +1301,7 @@
    "domain": "regionh.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 396,
+   "listed": 382,
    "matched": 8
   },
   {
@@ -1312,7 +1312,7 @@
    "domain": "hvidovre.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 39,
+   "listed": 38,
    "matched": 0
   },
   {
@@ -1323,7 +1323,7 @@
    "domain": "vallensbaek.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 13,
+   "listed": 12,
    "matched": 0
   },
   {
@@ -1356,8 +1356,8 @@
    "domain": "kl.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 5,
-   "matched": 2
+   "listed": 4,
+   "matched": 1
   },
   {
    "name": "SOS International",
@@ -1389,7 +1389,7 @@
    "domain": "torm.com",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 3,
+   "listed": 4,
    "matched": 0
   },
   {
@@ -1411,7 +1411,7 @@
    "domain": null,
    "source_type": "emply",
    "ok": true,
-   "listed": 4,
+   "listed": 5,
    "matched": 3
   },
   {
@@ -1422,7 +1422,7 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 32,
+   "listed": 38,
    "matched": 0
   },
   {
@@ -1433,7 +1433,7 @@
    "domain": null,
    "source_type": "emply",
    "ok": true,
-   "listed": 5,
+   "listed": 6,
    "matched": 0
   },
   {
@@ -1455,7 +1455,7 @@
    "domain": null,
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 45,
+   "listed": 43,
    "matched": 0
   },
   {
@@ -1477,7 +1477,7 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 16,
+   "listed": 15,
    "matched": 0
   },
   {
@@ -1510,7 +1510,7 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 38,
+   "listed": 36,
    "matched": 0
   },
   {
@@ -1554,8 +1554,8 @@
    "domain": null,
    "source_type": "emply",
    "ok": true,
-   "listed": 8,
-   "matched": 1
+   "listed": 9,
+   "matched": 2
   },
   {
    "name": "Danske Professionshøjskoler",
@@ -1664,7 +1664,7 @@
    "domain": null,
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 3,
+   "listed": 2,
    "matched": 0
   },
   {
@@ -1675,7 +1675,7 @@
    "domain": null,
    "source_type": "emply",
    "ok": true,
-   "listed": 16,
+   "listed": 15,
    "matched": 1
   },
   {
@@ -1760,16 +1760,6 @@
    "ok": true
   },
   {
-   "name": "Det Kongelige Akademi - Arkitektur, Design, Konservering",
-   "lines": [],
-   "status": "klar",
-   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130",
-   "domain": null,
-   "source_type": "hrmanager",
-   "via": "Udviklings- og Forenklingsstyrelsen",
-   "ok": true
-  },
-  {
    "name": "Det Kongelige Teater og Kapel",
    "lines": [],
    "status": "klar",
@@ -1810,16 +1800,6 @@
    "ok": true
   },
   {
-   "name": "HF & VUC København Syd",
-   "lines": [],
-   "status": "klar",
-   "career_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130",
-   "domain": null,
-   "source_type": "hrmanager",
-   "via": "Udviklings- og Forenklingsstyrelsen",
-   "ok": true
-  },
-  {
    "name": "Institut for Menneskerettigheder",
    "lines": [],
    "status": "klar",
@@ -1827,16 +1807,6 @@
    "domain": null,
    "source_type": "hrmanager",
    "via": "Udviklings- og Forenklingsstyrelsen",
-   "ok": true
-  },
-  {
-   "name": "Ministeriet for Natur og Dyrevelfærd",
-   "lines": [],
-   "status": "klar",
-   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
-   "domain": null,
-   "source_type": "hrmanager",
-   "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true
   },
   {
@@ -1850,7 +1820,7 @@
    "ok": true
   },
   {
-   "name": "SSI - Statens Serum Institut",
+   "name": "Plan- og Landdistriktsstyrelsen",
    "lines": [],
    "status": "klar",
    "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
@@ -1881,16 +1851,6 @@
   },
   {
    "name": "Styrelsen for International Rekruttering og Integration",
-   "lines": [],
-   "status": "klar",
-   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
-   "domain": null,
-   "source_type": "hrmanager",
-   "via": "Statens Rekrutteringsløsning (staten)",
-   "ok": true
-  },
-  {
-   "name": "Styrelsen for Patientsikkerhed",
    "lines": [],
    "status": "klar",
    "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",

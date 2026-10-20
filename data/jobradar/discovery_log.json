@@ -1,17 +1,47 @@
 {
- "started": "2026-10-19T06:18:32+00:00",
- "ads_read": 4,
- "candidates": [],
+ "started": "2026-10-20T06:06:57+00:00",
+ "ads_read": 37,
+ "candidates": [
+  {
+   "name": "NTI A/S",
+   "type": "emply",
+   "cfg": {
+    "url": "https://nti.career.emply.com"
+   },
+   "evidence": "https://nti.career.emply.com/ad/nyuddannet-maskiningenior-eller-maskinmester/zkx5s3/en",
+   "listed": 0,
+   "matched": 0
+  }
+ ],
  "added": [],
  "rejected": [
   {
-   "name": "Odense Kommune",
+   "name": "NTI A/S",
+   "type": "emply",
+   "cfg": {
+    "url": "https://nti.career.emply.com"
+   },
+   "evidence": "https://nti.career.emply.com/ad/nyuddannet-maskiningenior-eller-maskinmester/zkx5s3/en",
+   "reason": "0 opslag"
+  },
+  {
+   "name": "Professionshøjskolen Absalon",
    "type": "hrmanager",
    "cfg": {
-    "cid": "3256",
-    "probe_url": "https://recruiter.hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=42825533-9fe8-493e-b0f0-24be10aa5b74&cid=3256"
+    "cid": "5001",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194460&DepartmentId=9396&MediaId=5"
    },
-   "evidence": "https://recruiter.hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=42825533-9fe8-493e-b0f0-24be10aa5b74&cid=3256",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194460&DepartmentId=9396&MediaId=5",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Aarhus Kommune",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3112",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144564&DepartmentId=20910&MediaId=4768"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=144564&DepartmentId=20910&MediaId=4768",
    "reason": "HR-Manager-alias ikke fundet"
   }
  ]
