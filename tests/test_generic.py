@@ -94,3 +94,23 @@ def test_generic_respects_robots(monkeypatch):
     monkeypatch.setattr(generic, "get", lambda url, **kw: R(pages[url]))
     listed, jobs = generic.scrape({"name": "X", "list_urls": ["https://x.dk/job/"], "link_pattern": "/privat/"})
     assert listed == 1 and jobs == []
+
+
+def test_label_location_jyske_bank():
+    """20/10: Jyske Banks opslag har ingen JSON-LD; byen står under "Arbejdssted"."""
+    md = ("# Studentermedhjælper til Finance i Jyske Finans\n\n‌\n\nJobområde\n\nUniversitets­studerende\n\n---\n\n"
+          "Arbejdssted\n\nSilkeborg\n\nAfdeling\n\nFinance\n\nAnsøgningsfrist\n\n30.10.2026\n")
+    assert generic.label_location(md) == "Silkeborg"
+    assert generic.label_location("**Arbejdssted:** Odense, Vejle eller Esbjerg\n") == "Odense, Vejle eller Esbjerg"
+    assert generic.label_location("Location: Copenhagen\n") == "Copenhagen"
+    assert generic.label_location("Vi har kontorer i hele landet.") == ""
+
+
+def test_detail_uses_label_location(monkeypatch):
+    html = ("<html><body><main><h1>Studentermedhjælper til Research</h1><div><p>Arbejdssted</p><p>Silkeborg</p>"
+            "<p>" + "Er du analytisk stærk og studerende? " * 10 + "</p></div></main></body></html>")
+    monkeypatch.setattr(generic, "get", lambda url, **kw: R(html))
+    j = generic.detail("Jyske Bank", "", "https://x/jobopslag?id=1", True)
+    assert j.location == "Silkeborg"
+    from scraper.common import region
+    assert region(j.location, j.title) is None          # frasorteres som uden for Sjælland

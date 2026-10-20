@@ -228,6 +228,14 @@ def merge_state(found: dict[str, dict], old: dict[str, dict], ok_sources: set[st
 
 
 READ_DAYS = 30          # en kilde "læses", hvis den har givet opslag inden for så mange dage
+FAIL_DAYS = 2           # … og ikke har fejlet i hver kørsel i mere end så mange dage (Accenture: 429 hver nat)
+
+
+def failing_since(entry: dict, prev: dict, now: str) -> str | None:
+    """Første kørsel i den nuværende række af fejl (ok=False). None, når kilden svarede i denne kørsel."""
+    if entry.get("ok") is False:
+        return prev.get("failing_since") or now
+    return None
 
 
 def data_since(entry: dict, prev: dict, now: str) -> str | None:
@@ -245,14 +253,17 @@ def data_since(entry: dict, prev: dict, now: str) -> str | None:
 def is_read(src: dict | None, now: str) -> bool:
     """Læses kilden faktisk? Kun hvis den har givet opslag inden for READ_DAYS. En kilde, der er sat op, men aldrig har
     givet data (forkert adresse, bot-mur, nyt system), står som "læses ikke endnu" – også selv om status er "klar"."""
-    last = (src or {}).get("last_data")
+    src = src or {}
+    last = src.get("last_data")
     if not last:
         return False
     try:
         age = datetime.fromisoformat(now) - datetime.fromisoformat(last)
+        failing = datetime.fromisoformat(now) - datetime.fromisoformat(src["failing_since"]) \
+            if src.get("failing_since") else timedelta(0)
     except ValueError:
         return False
-    return age <= timedelta(days=READ_DAYS)
+    return age <= timedelta(days=READ_DAYS) and failing <= timedelta(days=FAIL_DAYS)
 
 
 def employer_list(employers: list[dict], jobs: list[dict], sources: dict, now: str | None = None) -> list[dict]:
@@ -382,6 +393,7 @@ def main(argv=None):
             entry["last_good_listed"] = pv.get("listed") or pv.get("last_good_listed")
             traceback.print_exc(file=sys.stderr)
         entry["last_data"] = data_since(entry, prev_status.get(e["name"], {}), now)
+        entry["failing_since"] = failing_since(entry, prev_status.get(e["name"], {}), now)
         entry["seconds"] = round(time.time() - t0, 1)
         print(f"{e['name']:<36} {typ:<15} {entry.get('ok')} {entry.get('listed', '')} {entry.get('matched', '')} "
               f"{entry.get('suspect') or entry.get('error') or ''}")

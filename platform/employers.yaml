@@ -519,6 +519,7 @@ employers:
     dk_only: true
   note: Egen Drupal-side; robots.txt forbyder ikke /karriere (fundet i browseren 20/10)
 - name: Plesner
+  region: storkbh
   career_url: https://plesner.com/en/open-positions
   status: klar
   source:
@@ -766,14 +767,14 @@ employers:
   career_url: https://www.lsb.dk/site/job
   status: klar
   source:
-    type: generic
-    list_urls:
+    type: browser
+    urls:
     - https://lsb.easycruit.com/
     link_pattern: /vacancy/\d+/\d+
     dk_only: true
   aliases:
   - Lån & Spar
-  note: Easycruit lsb.easycruit.com (fundet i browseren 20/10)
+  note: Easycruit lsb.easycruit.com. Siden er tom uden JavaScript (generic gav 0 opslag 20/10), derfor browser
 - name: Danmarks Skibskredit
   domain: skibskredit.dk
   career_url: https://app.elvium.com/da
@@ -908,6 +909,7 @@ employers:
     url: https://dsb.jobs.hr.cloud.sap
   note: 'SuccessFactors på nyt SAP-domæne via sitemap (verificeret 16/10 i browser: 23 opslag)'
 - name: Movia
+  region: storkbh
   career_url: https://www.moviatrafik.dk/om-os/job-i-movia/ledige-stillinger
   status: klar
   source:

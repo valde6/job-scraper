@@ -292,3 +292,14 @@ def test_portal_rows_are_only_read_when_the_portal_is():
     live = {"Statens Rekrutteringsløsning (staten)": {"ok": True, "listed": 511, "last_data": now}}
     rows = {r["name"]: r for r in P.employer_list(employers, jobs, live, now)}
     assert rows["Finanstilsynet"]["reading"] == "læses" and rows["Banedanmark"]["last_data"] == "2026-10-20"
+
+
+def test_source_failing_for_days_is_not_read():
+    """Accenture svarede 429 i hver kørsel: efter 2 dage med fejl står den som "læses ikke endnu"."""
+    now = "2026-10-23T06:00:00+00:00"
+    src = {"ok": False, "last_data": "2026-10-20T06:00:00+00:00", "failing_since": "2026-10-20T06:00:00+00:00"}
+    assert not P.is_read(src, now)
+    assert P.is_read({**src, "failing_since": "2026-10-22T06:00:00+00:00"}, now)        # én dags fejl er OK
+    assert P.failing_since({"ok": False}, {"failing_since": "2026-10-20"}, now) == "2026-10-20"
+    assert P.failing_since({"ok": False}, {}, now) == now
+    assert P.failing_since({"ok": True, "listed": 3}, {"failing_since": "2026-10-20"}, now) is None

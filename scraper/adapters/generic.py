@@ -29,15 +29,36 @@ def _main_html(s):
     return ""
 
 
+_LOC_LABEL_RE = re.compile(r"^\s*(?:arbejdssted|arbejdsplads|lokation|location|work\s*location|tjenestested|kontor)\s*:?\s*(.*)$",
+                           re.I)
+
+
+def label_location(text: str) -> str:
+    """Arbejdssted fra opslagets tekst, når der ikke er JSON-LD (Jyske Bank: "Arbejdssted" og byen på næste linje).
+    Uden den stod Jyske Banks studiejob i Silkeborg og Odense som "Danmark" og blev ikke frasorteret (20/10)."""
+    lines = [clean(x) for x in (text or "").splitlines()]
+    lines = [x for x in lines if x and x not in ("---", "*", "-")]
+    for i, line in enumerate(lines[:200]):
+        m = _LOC_LABEL_RE.match(line.strip("*_# "))
+        if not m:
+            continue
+        val = clean(m.group(1).strip("*_: "))
+        if not val and i + 1 < len(lines):
+            val = clean(lines[i + 1].strip("*_# "))
+        if 1 < len(val) <= 80:
+            return val
+    return ""
+
+
 def detail(company, title, href, dk_only, list_loc=""):
     html = get(href).text
     jp = jsonld_jobposting(html) or {}
     s = soup(html)
     title = title or clean(jp.get("title")) or clean((s.find("h1") or s.new_tag("x")).get_text())
-    loc = list_loc or jsonld_location(jp)
+    desc_md = html_to_md(jp.get("description")) if jp.get("description") else html_to_md(_main_html(s))
+    loc = list_loc or jsonld_location(jp) or label_location(desc_md)
     if not dk_only and not is_denmark(loc):
         return None
-    desc_md = html_to_md(jp.get("description")) if jp.get("description") else html_to_md(_main_html(s))
     apply = None
     for a in s.find_all("a", href=True):
         txt = clean(a.get_text()).lower()
