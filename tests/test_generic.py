@@ -1,5 +1,12 @@
 """Generisk HTML-adapter: titler og bladring."""
+import pytest
+
 from scraper.adapters import generic
+
+
+@pytest.fixture(autouse=True)
+def _robots_ok(monkeypatch):
+    monkeypatch.setattr(generic, "robots_allows", lambda url: "/privat/" not in url)
 
 
 def test_clean_title_soft_hyphen_and_prefix():
@@ -80,3 +87,10 @@ def test_title_from_detail(monkeypatch):
                                    "title_from": "detail"})
     assert listed == 2
     assert [j.title for j in jobs] == ["Stud.jur. til M&A-afdelingen"]
+
+
+def test_generic_respects_robots(monkeypatch):
+    pages = {"https://x.dk/job/": '<a href="/privat/studentermedhjaelper-til-hr">Studentermedhjælper til HR</a>'}
+    monkeypatch.setattr(generic, "get", lambda url, **kw: R(pages[url]))
+    listed, jobs = generic.scrape({"name": "X", "list_urls": ["https://x.dk/job/"], "link_pattern": "/privat/"})
+    assert listed == 1 and jobs == []

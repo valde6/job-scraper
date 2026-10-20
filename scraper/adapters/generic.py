@@ -15,7 +15,8 @@ import re
 from datetime import date
 from urllib.parse import urljoin, urldefrag
 
-from ..common import Job, get, soup, clean, html_to_md, is_denmark, is_student, jsonld_jobposting, jsonld_location, find_deadline, reject
+from ..common import (Job, get, soup, clean, html_to_md, is_denmark, is_student, jsonld_jobposting, jsonld_location,
+                      find_deadline, reject, robots_allows)
 
 
 def _main_html(s):
@@ -76,6 +77,9 @@ def scrape(cfg):
     for lu, base in _list_pages(cfg):
         if base in done:
             continue
+        if not robots_allows(lu):                   # regel 6: robots.txt
+            reject(cfg["name"], lu, "robots.txt forbyder listesiden", lu)
+            continue
         try:
             s = soup(get(lu).text)
         except Exception:  # noqa: BLE001
@@ -97,6 +101,9 @@ def scrape(cfg):
             new_links += 1
             if not from_detail and not is_student(title):
                 reject(cfg["name"], title, "ikke studiejob (titel)", href)
+                continue
+            if not robots_allows(href):
+                reject(cfg["name"], title, "robots.txt forbyder", href)
                 continue
             try:
                 j = detail(cfg["name"], "" if from_detail else title, href, dk_only)
