@@ -303,3 +303,16 @@ def test_source_failing_for_days_is_not_read():
     assert P.failing_since({"ok": False}, {"failing_since": "2026-10-20"}, now) == "2026-10-20"
     assert P.failing_since({"ok": False}, {}, now) == now
     assert P.failing_since({"ok": True, "listed": 3}, {"failing_since": "2026-10-20"}, now) is None
+
+
+def test_placeholder_deadlines_are_loebende(rx):
+    """21/10: HR-Manager bruger 2050-01-01/2044-06-01 som frist for løbende opslag (Udenrigsministeriet, Nine United)."""
+    from datetime import date
+    assert P.plausible_deadline("2050-01-01", date(2026, 10, 21)) is None
+    assert P.plausible_deadline("2044-06-01", date(2026, 10, 21)) is None
+    assert P.plausible_deadline("2027-04-30", date(2026, 10, 21)) == "2027-04-30"
+    assert P.plausible_deadline("2026-10-20", date(2026, 10, 21)) == "2026-10-20"      # udløbne frister bevares
+    assert P.plausible_deadline("ikke-en-dato") is None
+    j = Job(company="Tryg", title="Studentermedhjælper i Udenrigsministeriet", url="https://x/1", location="København",
+            deadline="2050-01-01", description_md="Studentermedhjælper", source="hrmanager").to_dict()
+    assert P.build_record(j, emp(), rx, "x")["deadline"] is None

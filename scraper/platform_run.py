@@ -115,6 +115,21 @@ def company_domain(employer: dict) -> str | None:
     return ".".join(labels[-2:]) if len(labels) >= 2 else None
 
 
+MAX_DEADLINE_DAYS = 550   # frister længere ude er pladsholdere for "løbende" (HR-Manager: 2044-06-01, 2050-01-01)
+
+
+def plausible_deadline(deadline: str | None, today: date | None = None) -> str | None:
+    """Fristen, eller None når den er en pladsholder langt ude i fremtiden. Udenrigsministeriets løbende opslag har
+    ApplicationDue 2050-01-01 og Nine United 2044-06-01, så appen viste "Frist 1. jan. 2050" (21/10)."""
+    if not deadline:
+        return None
+    try:
+        d = date.fromisoformat(deadline[:10])
+    except ValueError:
+        return None
+    return None if d > (today or date.today()) + timedelta(days=MAX_DEADLINE_DAYS) else deadline[:10]
+
+
 def build_record(job: dict, employer: dict, rx: dict, now: str) -> dict | None:
     """Job fra en adapter → platform-job, eller None hvis det ikke hører til i Jobradar."""
     jt = job_type(job["title"], job.get("description_md", ""))
@@ -130,7 +145,7 @@ def build_record(job: dict, employer: dict, rx: dict, now: str) -> dict | None:
     # (ellers kommer fx "Laboratory Technician" og "Tutti violinist" med som studiejob).
     if jt == "studiejob" and job.get("fit") == "mulig" and not any(r.search(job["title"]) for r in rx.values()):
         return None
-    deadline = job.get("deadline") or find_deadline(desc, date.today().year) or None
+    deadline = plausible_deadline(job.get("deadline") or find_deadline(desc, date.today().year) or None)
     apply_url = job.get("apply_url") or job.get("url")
     return {
         "id": job["id"], "company": job["company"], "title": job["title"], "url": job.get("url") or apply_url, "job_type": jt, "fit": job.get("fit") or "sikker",
