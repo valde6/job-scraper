@@ -271,8 +271,30 @@ NON_SJ = ["aarhus", "århus", "odense", "aalborg", "esbjerg", "vejle", "kolding"
           "kerteminde", "nyborg", "ringe", "glamsbjerg", "otterup", "munkebo", "langeland", "ærø", "tranbjerg",
           "egå", "åbyhøj", "hasselager", "skødstrup", "sabro", "hørning", "låsby", "vamdrup", "lunderskov",
           "sønderjylland", "nordjylland", "vestjylland", "østjylland", "midtjylland", "sydjylland", "sydfyn", "nordfyn",
-          "vestfyn", "østfyn"]
+          "vestfyn", "østfyn", "syddanmark"]
 _POSTCODE_RE = re.compile(r"\b(?:dk-?)?([1-9]\d{3})\s+[A-ZÆØÅa-zæøå]")
+# 21/10: lande og byer uden for Danmark, som kilderne skriver uden "Denmark". Uden listen blev de til "ukendt" og fik
+# arbejdsgiverens region (Grant Thornton Irland: "Dublin", "Longford"; Scantox Østrig: "Grambach, Austria").
+FOREIGN = ["austria", "österreich", "østrig", "wien", "vienna", "graz", "grambach", "ireland", "irland", "dublin", "longford",
+           "limerick", "cork", "galway", "belfast", "sweden", "sverige", "stockholm", "göteborg", "gothenburg", "malmö",
+           "norway", "norge", "oslo", "finland", "helsinki", "germany", "deutschland", "tyskland", "berlin", "hamburg",
+           "hamborg", "münchen", "munich", "frankfurt", "düsseldorf", "united kingdom", "england", "scotland", "london",
+           "manchester", "poland", "polen", "warsaw", "warszawa", "poznan", "kraków", "krakow", "netherlands", "nederland",
+           "amsterdam", "rotterdam", "belgium", "belgien", "brussels", "bruxelles", "luxembourg", "france", "frankrig",
+           "paris", "spain", "spanien", "madrid", "barcelona", "italy", "italien", "milano", "switzerland", "schweiz",
+           "zürich", "zurich", "geneva", "portugal", "lisbon", "czech republic", "prague", "hungary", "budapest", "romania",
+           "bucharest", "lithuania", "vilnius", "latvia", "riga", "estonia", "tallinn", "united states", "usa", "canada",
+           "india", "china", "singapore", "japan", "australia", "brazil", "mexico", "philippines", "malaysia", "vietnam",
+           "thailand", "dubai"]
+# Lokationer, der kun nævner regionen, ikke en by. Nævner titlen så en by uden for Sjælland, vinder titlen
+# (Danmarks Fængsler: "Studentermedhjælper til arresthuse i Østjylland" med lokationen "Region Hovedstaden").
+_GENERIC_ZEALAND_RE = re.compile(r"region\s+hovedstaden|hovedstaden|hovedstad|capital\s+region|storkøbenhavn|"
+                                 r"region\s+sjælland|sjælland|sjaelland|zealand")
+_TITLE_ONLY_SKIP = {"remote", "hybrid", "hjemmefra"}
+
+
+def _has_word(places, text: str) -> bool:
+    return any(re.search(rf"\b{re.escape(p)}\b", text) for p in places)
 
 
 def _postcode_region(t: str) -> str | None:
@@ -287,17 +309,33 @@ def _postcode_region(t: str) -> str | None:
 def region(loc: str | None, title: str = "") -> str | None:
     """'storkbh' | 'sjaelland' | 'ukendt' (fx bare "Danmark") | None (uden for Sjælland)."""
     t = f"{loc or ''}".lower().replace("new zealand", "nz")   # "zealand" = Sjælland, men ikke New Zealand
+    tl = (title or "").lower().replace("new zealand", "nz")
+    title_cph = [p for p in CPH_PLACES if p not in _TITLE_ONLY_SKIP]
+    title_zealand = _has_word(title_cph, tl) or _has_word(SJ_PLACES, tl)
+    specific = _GENERIC_ZEALAND_RE.sub(" ", t)
+    in_zealand = any(p in t for p in CPH_PLACES) or any(p in t for p in SJ_PLACES)
+    if in_zealand and not any(p in specific for p in CPH_PLACES + SJ_PLACES) \
+            and _has_word(NON_SJ, tl) and not title_zealand:
+        return None                       # kun "Region Hovedstaden" som sted, men titlen siger fx Østjylland
     if any(p in t for p in CPH_PLACES):
         return "storkbh"
     if any(p in t for p in SJ_PLACES):
         return "sjaelland"
-    tl = (title or "").lower()
-    if any(re.search(rf"\b{re.escape(p)}\b", t) for p in NON_SJ) or any(re.search(rf"\b{re.escape(p)}\b", tl) for p in NON_SJ):
+    if _has_word(FOREIGN, t) or _has_word(NON_SJ, t):
         return None
     pc = _postcode_region(loc or "")
     if pc == "udenfor":
         return None
-    return pc or "ukendt"
+    if pc:
+        return pc
+    # Titlen nævner København/Sjælland (EY: "Graduate - Consulting | Copenhagen & Aarhus", sted "Danmark")
+    if _has_word(title_cph, tl):
+        return "storkbh"
+    if _has_word(SJ_PLACES, tl):
+        return "sjaelland"
+    if _has_word(NON_SJ, tl):
+        return None
+    return "ukendt"
 
 
 def is_denmark(*texts: str | None) -> bool:

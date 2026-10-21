@@ -138,8 +138,33 @@ def test_region_compound_jutland_names():
 def test_region_town_names_inside_words():
     """20/10: CBS' "Studerende (IT-vejledere)" blev frasorteret, fordi "vejle" stod inde i "vejledere"."""
     from scraper.common import region
-    assert region("Danmark", "Studerende (IT-vejledere) til IT-supporten på Copenhagen Business School") == "ukendt"
+    assert region("Danmark", "Studerende (IT-vejledere) til IT-supporten på Copenhagen Business School") == "storkbh"
     assert region("Danmark", "Studentermedhjælper til Vejle-kontoret") is None
+
+
+def test_region_foreign_places_without_country_are_outside():
+    """21/10: Grant Thornton (HR-Manager) har irske opslag ("Dublin", "Longford") og Scantox (Emply) østrigske. De blev
+    "ukendt" og fik arbejdsgiverens region (storkbh/sjaelland), så de stod i appen som job i København."""
+    from scraper.common import region
+    for loc in ["Dublin", "Longford", "Parkring, 12, 8074, Grambach, Austria", "Stockholm, Sweden", "London", "Hamburg"]:
+        assert region(loc) is None, loc
+    assert region("Copenhagen, Denmark; London, UK") == "storkbh"        # flere steder, heraf København
+    assert region("Malmö eller København") == "storkbh"
+
+
+def test_region_title_names_copenhagen_or_other_town():
+    """21/10: EY's "Graduate - Consulting | Copenhagen & Aarhus" (sted "Danmark") blev frasorteret pga. "Aarhus" i titlen.
+    Danmarks Fængslers "Studentermedhjælper til arresthuse i Østjylland" (sted "Region Hovedstaden") kom med."""
+    from scraper.common import region
+    assert region("Danmark", "Graduate - Consulting | August 2027 | Copenhagen & Aarhus") == "storkbh"
+    assert region("Danmark", "Part-time Analyst - Corporate Finance (Copenhagen and Aarhus)") == "storkbh"
+    assert region("Danmark", "Finansbachelorpraktikant i Spar Nord og Nykredit på Sjælland") == "sjaelland"
+    assert region("Danmark", "Er du vores nye finansbachelorpraktikant i Syddanmark?") is None
+    assert region("Region Hovedstaden", "Studentermedhjælper til arresthuse i Østjylland") is None
+    assert region("Region Hovedstaden", "Studentermedhjælper til Aarhus og København") == "storkbh"
+    assert region("Region Hovedstaden", "Studentermedhjælper til SoMe") == "storkbh"
+    assert region("Aarhus", "Student Assistant, Copenhagen team") is None          # stedet vinder over titlen
+    assert region("Danmark", "Student Assistant (hybrid)") == "ukendt"
 
 
 def test_stud_jur_titles_are_studiejob():
