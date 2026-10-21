@@ -8,7 +8,7 @@ Søgningen /search?query=… svarer med JSON {"html": "<li …>", "more_requisit
 from datetime import date
 from urllib.parse import urljoin
 
-from ..common import Job, clean, get, html_to_md, jsonld_jobposting, jsonld_location, soup, student_fit, find_deadline
+from ..common import Job, clean, get, html_to_md, jsonld_jobposting, jsonld_location, soup, student_fit, find_deadline, reject
 
 QUERIES = ["Denmark", "Copenhagen", "København"]
 
@@ -54,6 +54,7 @@ def scrape(cfg):
                 listed += 1
                 fit = student_fit(title, "")
                 if not fit:
+                    reject(cfg["name"], title, "ikke studiejob (titel)", href)
                     continue
                 try:
                     jp, md = _detail(href)

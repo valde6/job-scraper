@@ -316,3 +316,42 @@ def test_placeholder_deadlines_are_loebende(rx):
     j = Job(company="Tryg", title="Studentermedhjælper i Udenrigsministeriet", url="https://x/1", location="København",
             deadline="2050-01-01", description_md="Studentermedhjælper", source="hrmanager").to_dict()
     assert P.build_record(j, emp(), rx, "x")["deadline"] is None
+
+
+def test_rejected_examples_keep_rare_reasons(tmp_path):
+    """21/10: store kilder fyldte de 40 eksempler med "ikke studiejob", så fx "uden for Danmark" ikke kunne ses."""
+    rej = [{"company": "X", "title": f"Senior {i}", "reason": "ikke studiejob"} for i in range(100)]
+    rej.append({"company": "X", "title": "Student Assistant", "reason": "uden for Danmark (Dublin)"})
+    P.write_rejected(tmp_path / "r.json", rej)
+    d = json.loads((tmp_path / "r.json").read_text())["companies"]["X"]
+    assert d["count"] == 101 and d["reasons"]["ikke studiejob"] == 100
+    assert {"title": "Student Assistant", "reason": "uden for Danmark (Dublin)"} in d["examples"]
+
+
+def test_adapters_log_rejected_postings(monkeypatch):
+    """21/10: phenom, nordea, amazon, browser, oracle, eightfold, yello, successfactors og workdays landetjek frasorterede
+    uden at logge (sådan blev Saxo-fejlen 20/10 overset). Phenom som eksempel."""
+    from scraper.adapters import phenom, amazon
+
+    class R:
+        def __init__(self, text="", data=None):
+            self.text, self._d = text, data
+
+        def json(self):
+            return self._d
+
+    ddo = {"eagerLoadRefineSearch": {"totalHits": 3, "data": {"jobs": [
+        {"jobId": "1", "title": "Senior Scientist", "city": "Copenhagen", "country": "Denmark"},
+        {"jobId": "2", "title": "Student Worker", "city": "Princeton", "country": "United States"},
+        {"jobId": "3", "title": "Student Worker, Finance", "city": "Copenhagen", "country": "Denmark"}]}}}
+    page = "<script>phApp.ddo = " + json.dumps(ddo) + ";</script>"
+    monkeypatch.setattr(phenom, "get", lambda url, **kw: R(page))
+    C.REJECTED.clear()
+    listed, jobs = phenom.scrape({"name": "Genmab", "url": "https://careers.x.com/global/en", "search_terms": ["student"]})
+    assert listed == 3 and [j.title for j in jobs] == ["Student Worker, Finance"]
+    reasons = {r["title"]: r["reason"] for r in C.REJECTED}
+    assert reasons == {"Senior Scientist": "ikke studiejob (titel)", "Student Worker": "uden for Danmark (Princeton, United States)"}
+    monkeypatch.setattr(amazon, "get", lambda url, **kw: R(data={"hits": 1, "jobs": [{"title": "Area Manager"}]}))
+    C.REJECTED.clear()
+    amazon.scrape({"name": "Amazon"})
+    assert C.REJECTED[0]["reason"] == "ikke studiejob (titel)"

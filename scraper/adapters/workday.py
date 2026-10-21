@@ -60,6 +60,8 @@ def scrape(cfg):
                 country = ((info.get("country") or {}).get("descriptor")) or ""
                 locs = [loc_map.get(x.lower(), x) for x in [info.get("location") or ""] + (info.get("additionalLocations") or [])]
                 if not is_denmark(country, " ".join(locs), loc):
+                    if is_student(title):
+                        reject(cfg["name"], title, f"uden for Danmark ({(country or loc)[:40]})")
                     continue
                 desc = html_to_md(info.get("jobDescription"))
                 fit = student_fit(title, desc)

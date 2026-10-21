@@ -10,7 +10,7 @@ stedet hedder "Denmark" (fx "Humlebæk, DK" rammes ikke), mens sitemap'en altid 
 """
 from urllib.parse import urljoin, quote
 
-from ..common import Job, get, soup, clean, html_to_md, is_denmark, is_student, jsonld_jobposting, jsonld_location
+from ..common import Job, get, soup, clean, html_to_md, is_denmark, is_student, jsonld_jobposting, jsonld_location, reject
 
 TERMS = ["student", "studentermedhjælper"]
 
@@ -43,6 +43,7 @@ def scrape(cfg):
                 new += 1
                 listed += 1
                 if not is_student(title):
+                    reject(cfg["name"], title, "ikke studiejob (titel)", href)
                     continue
                 html = get(href).text
                 jp = jsonld_jobposting(html) or {}
@@ -50,6 +51,7 @@ def scrape(cfg):
                 desc = ds.select_one("[itemprop=description]") or ds.select_one(".jobdescription") or ds.select_one(".job")
                 location = l or jsonld_location(jp) or clean((ds.select_one("[itemprop=jobLocation]") or ds.new_tag("x")).get_text())
                 if not is_denmark(location, loc if cfg.get("location_is_dk_only") else ""):
+                    reject(cfg["name"], title, f"uden for Danmark ({location[:40]})", href)
                     continue
                 apply = ds.select_one("a.dialogApplyBtn, a[href*='apply'], a.apply")
                 jobs.append(Job(

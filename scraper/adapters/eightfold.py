@@ -2,7 +2,7 @@
 
 Config: url: https://apply.careers.microsoft.com   domain: microsoft.com
 """
-from ..common import Job, get, html_to_md, is_denmark, is_student, clean
+from ..common import Job, get, html_to_md, is_denmark, is_student, clean, reject
 
 
 def scrape(cfg):
@@ -16,7 +16,11 @@ def scrape(cfg):
             listed += 1
             title = clean(p.get("name"))
             locs = " | ".join(p.get("locations") or [p.get("location") or ""])
-            if not (is_student(title) and is_denmark(locs)):
+            if not is_student(title):
+                reject(cfg["name"], title, "ikke studiejob (titel)")
+                continue
+            if not is_denmark(locs):
+                reject(cfg["name"], title, f"uden for Danmark ({locs[:40]})")
                 continue
             d = get(f"{base}/api/apply/v2/jobs/{p['id']}", params={"domain": dom}).json()
             url = p.get("canonicalPositionUrl") or f"{base}/careers/job/{p['id']}"

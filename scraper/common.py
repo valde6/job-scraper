@@ -676,7 +676,7 @@ REJECTED: list[dict] = []
 def reject(company: str, title: str, reason: str, url: str = "") -> None:
     """Notér et opslag, som en adapter så men valgte fra. Skrives til data/jobradar/rejected.json efter kørslen,
     så vi kan se, om filtrene smider rigtige studiejob væk (fx 'ikke studiejob', 'uden for Danmark')."""
-    if len(REJECTED) < 5000:
+    if len(REJECTED) < 20000:          # rejected.json gemmer kun 40 eksempler pr. arbejdsgiver; tallene er fulde
         REJECTED.append({"company": company, "title": clean(title)[:160], "reason": reason, "url": url})
 
 

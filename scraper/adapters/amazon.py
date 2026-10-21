@@ -1,5 +1,5 @@
 """amazon.jobs JSON-søgning, filtreret til Danmark."""
-from ..common import Job, get, html_to_md, is_student, clean
+from ..common import Job, get, html_to_md, is_student, clean, reject
 
 
 def scrape(cfg):
@@ -12,6 +12,7 @@ def scrape(cfg):
             listed += 1
             title = clean(p.get("title"))
             if not is_student(title):
+                reject(cfg["name"], title, "ikke studiejob (titel)")
                 continue
             desc = "\n\n".join(html_to_md(p.get(k)) for k in ("description", "basic_qualifications", "preferred_qualifications"))
             url = "https://www.amazon.jobs" + (p.get("job_path") or "")

@@ -2,7 +2,7 @@
 
 Config: host: https://xxxx.fa.em2.oraclecloud.com   site: CX_1
 """
-from ..common import Job, get, html_to_md, is_denmark, is_student, clean
+from ..common import Job, get, html_to_md, is_denmark, is_student, clean, reject
 
 
 def scrape(cfg):
@@ -17,9 +17,13 @@ def scrape(cfg):
                 listed += 1
                 title = clean(p.get("Title"))
                 loc = " | ".join([p.get("PrimaryLocation") or ""] + [x.get("Name", "") for x in p.get("secondaryLocations") or []])
-                if not (is_student(title) and is_denmark(loc, p.get("PrimaryLocationCountry"))):
-                    continue
                 if any(j.external_id == str(p["Id"]) for j in jobs):
+                    continue
+                if not is_student(title):
+                    reject(cfg["name"], title, "ikke studiejob (titel)")
+                    continue
+                if not is_denmark(loc, p.get("PrimaryLocationCountry")):
+                    reject(cfg["name"], title, f"uden for Danmark ({loc[:40]})")
                     continue
                 d = get(f"{host}/hcmRestApi/resources/latest/recruitingCEJobRequisitionDetails", params={
                     "expand": "all", "onlyData": "true", "finder": f'ById;Id="{p["Id"]}",siteNumber={site}'}).json()

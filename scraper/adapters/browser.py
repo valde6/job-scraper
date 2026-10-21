@@ -13,7 +13,7 @@ from datetime import date
 from urllib.parse import quote, urldefrag
 
 from .. import browser as B
-from ..common import (Job, clean, get, html_to_md, soup, is_denmark, student_fit, topic_tags,
+from ..common import (Job, clean, get, html_to_md, soup, is_denmark, student_fit, topic_tags, reject,
                       jsonld_location, find_deadline)
 
 TERMS = ["student", "studentermedhjælper"]
@@ -75,9 +75,11 @@ def scrape_captured(cfg):
             loc = clean(" ".join(str(p.get(k) or "") for k in cap.get("location", [])))
             extra = " ".join(str(p.get(k) or "") for k in cap.get("extra", []))
             if not cfg.get("dk_only") and not is_denmark(loc):
+                reject(cfg["name"], title, f"uden for Danmark ({loc[:40]})", link)
                 continue
             fit = student_fit(title, extra)
             if fit != "sikker" and not ("student" in extra.lower() and fit):
+                reject(cfg["name"], title, "ikke studiejob (titel)", link)
                 continue
             try:
                 html, md = _detail(link, cfg.get("detail", "browser"))
@@ -112,14 +114,17 @@ def scrape(cfg):
             listed += 1
             fit = student_fit(title, "")
             if fit != "sikker":
+                reject(cfg["name"], title, "ikke studiejob (titel)", href)
                 continue   # browser-sider er dyre: kun oplagte studiejob (titel) hentes i detaljer
             try:
                 html, md = _detail(href, how)
-            except Exception:
+            except Exception:  # noqa: BLE001
+                reject(cfg["name"], title, "jobsiden kunne ikke hentes", href)
                 continue
             jp = B.jsonld(html) or {}
             loc = jsonld_location(jp) if jp else ""
             if not cfg.get("dk_only") and not is_denmark(loc, txt, md[:1500]):
+                reject(cfg["name"], title, f"uden for Danmark ({loc[:40]})", href)
                 continue
             jobs.append(Job(
                 company=cfg["name"], title=title, url=href, apply_url=href,

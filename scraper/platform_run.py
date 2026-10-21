@@ -174,14 +174,20 @@ def why_rejected(job: dict, rx: dict) -> str:
 
 
 def write_rejected(path: Path, rejected: list[dict]) -> None:
-    """data/jobradar/rejected.json: pr. arbejdsgiver antal frasorterede opslag pr. årsag + op til 40 eksempler.
+    """data/jobradar/rejected.json: pr. arbejdsgiver antal frasorterede opslag pr. årsag + op til 60 eksempler (25 pr. årsag).
     Bruges til at finde filtre, der er for stramme, og kilder, der ser opslag men aldrig giver job."""
     by: dict[str, dict] = {}
+    per_reason: dict[tuple[str, str], int] = {}
     for r in rejected:
         c = by.setdefault(r["company"], {"count": 0, "reasons": {}, "examples": []})
         c["count"] += 1
-        c["reasons"][r["reason"].split(" (")[0]] = c["reasons"].get(r["reason"].split(" (")[0], 0) + 1
-        if len(c["examples"]) < 40:
+        reason = r["reason"].split(" (")[0]
+        c["reasons"][reason] = c["reasons"].get(reason, 0) + 1
+        # 21/10: højst 25 eksempler pr. årsag, så sjældne årsager ("uden for Sjælland", "deltid …") ikke skubbes ud af
+        # de mange "ikke studiejob" fra store kilder
+        n = per_reason.get((r["company"], reason), 0)
+        if len(c["examples"]) < 60 and n < 25:
+            per_reason[(r["company"], reason)] = n + 1
             c["examples"].append({k: r[k] for k in ("title", "reason", "url") if r.get(k)})
     path.write_text(json.dumps({"companies": dict(sorted(by.items()))}, ensure_ascii=False, indent=1))
 

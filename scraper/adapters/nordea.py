@@ -2,7 +2,7 @@
 from datetime import date
 import html as _html
 
-from ..common import Job, get, soup, clean, html_to_md, is_denmark, student_fit, topic_tags, jsonld_jobposting, find_deadline
+from ..common import Job, get, soup, clean, html_to_md, is_denmark, student_fit, topic_tags, jsonld_jobposting, find_deadline, reject
 
 API = "https://www.nordea.com/en/api/jobs-list"
 
@@ -22,12 +22,15 @@ def scrape(cfg):
                 title = clean(_html.unescape(p.get("title") or ""))
                 loc = clean(p.get("location_name"))
                 if not is_denmark(loc):
+                    if student_fit(title, ""):
+                        reject(cfg["name"], title, f"uden for Danmark ({loc[:40]})", url)
                     continue
                 cat = _html.unescape(p.get("category_name") or "")
                 fit = student_fit(title, cat)
                 if not fit and "student" in cat.lower() and not any(w in title.lower() for w in ("intern", "praktik", "trainee", "graduate", "harjoittel")):
                     fit = "sandsynlig"
                 if not fit:
+                    reject(cfg["name"], title, "ikke studiejob", url)
                     continue
                 desc_md = ""
                 try:
@@ -39,6 +42,7 @@ def scrape(cfg):
                 except Exception:
                     pass
                 if fit != "sikker" and not topic_tags(title, desc_md[:3000]):
+                    reject(cfg["name"], title, "ikke studiejob (intet fagligt emne)", url)
                     continue
                 jobs.append(Job(company=cfg["name"], title=title, url=url, apply_url=url, location=loc,
                                 posted=p.get("created", ""), deadline=p.get("field_apply_due") or find_deadline(desc_md, date.today().year) or "",

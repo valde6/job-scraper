@@ -6,7 +6,7 @@ import json
 import re
 from urllib.parse import quote
 
-from ..common import Job, get, html_to_md, is_denmark, is_student, clean
+from ..common import Job, get, html_to_md, is_denmark, is_student, clean, reject
 
 
 def _ddo(html: str) -> dict:
@@ -36,7 +36,11 @@ def scrape(cfg):
                 listed += 1
                 title = clean(p.get("title"))
                 loc = ", ".join(x for x in (p.get("city"), p.get("state"), p.get("country")) if x)
-                if not (is_student(title) and is_denmark(loc, " ".join(p.get("multi_location") or []))):
+                if not is_student(title):
+                    reject(cfg["name"], title, "ikke studiejob (titel)")
+                    continue
+                if not is_denmark(loc, " ".join(p.get("multi_location") or [])):
+                    reject(cfg["name"], title, f"uden for Danmark ({loc[:40]})")
                     continue
                 url = f"{base}/job/{jid}"
                 desc = p.get("descriptionTeaser") or ""
