@@ -175,3 +175,17 @@ def test_stud_jur_titles_are_studiejob():
               "Stud.merc.(jur.) til Skat"]:
         assert is_student(t) and job_type(t) == "studiejob", t
     assert not is_student("Studievejleder til jura")
+
+
+def test_compound_trainee_graduate_and_plural_interns():
+    """21/10: KPMG "Revisortrainee 2027 – Copenhagen", Beierholm "Bliv revisortrainee i 2027 …", PwC "Bliv revisorgraduate
+    hos PwC Hellerup …" og Rambøll "Communications Interns" blev frasorteret som "ikke studiejob"."""
+    from scraper.common import is_student, job_type, set_job_types
+    set_job_types({"studiejob", "praktik", "graduate"})
+    for t in ["Revisortrainee 2027 – Copenhagen", "Bliv outsourcingtrainee i 2027 hos Danmarks bedste arbejdsplads for unge",
+              "Bliv revisorgraduate hos PwC Hellerup og kom helt tæt på kunderne fra dag 1"]:
+        assert job_type(t) == "graduate", t
+        assert is_student(t), t                          # generic/hrmanager beholder dem i listen
+    assert job_type("Communications Interns") == "praktik"
+    assert job_type("Labtrainee til nyt labmiljø - studenterjob på Erhvervsakademi København") == "studiejob"
+    assert job_type("Intern kontrol – specialist") is None                  # dansk tillægsord, uændret

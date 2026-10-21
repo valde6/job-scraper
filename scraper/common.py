@@ -153,11 +153,14 @@ EXCLUDE_RE = re.compile(
 # Den personlige kørsel vil kun have studiejob. Platform-kørslen (Jobradar) slår praktik og graduate til med
 # set_job_types(), så adapterne også beholder dem. Jobtypen bestemmes bagefter med job_type().
 # "intern" kun som engelsk navneord ("Intern - Finance", "Summer Intern"), ikke dansk tillægsord ("intern kontrol", "Intern sælger")
-PRAKTIK_RE = re.compile(r"\binternship|\bintern\b(?=\s*(?:$|[-–(),|/:]|(?:for|in|at|to|with|within|på|hos|til|i)\b))|"
+PRAKTIK_RE = re.compile(r"\binternship|\binterns?\b(?=\s*(?:$|[-–(),|/:]|(?:for|in|at|to|with|within|på|hos|til|i)\b))|"
                         r"praktikant|praktikophold|\bpraktik\b|sommerpraktik|summer\s+intern", re.I)
 # Afdelingsnavne som "Afd. for Uddannelse og Studerende" er ikke tegn på et studiejob
 STUDENT_SERVICE_RE = re.compile(r"\b(?:for|og|and)\s+studerende\b|\bstudent\s+(?:services|affairs|centre|center)\b", re.I)
-GRADUATE_RE = re.compile(r"\bgraduate|\btrainee|nyuddannet|young\s+professional", re.I)
+# 21/10: sammensatte danske ord ("Revisortrainee 2027" hos KPMG/Beierholm, "revisorgraduate" hos PwC) blev ikke fanget af \b
+GRADUATE_RE = re.compile(r"\bgraduate|\btrainee|nyuddannet|young\s+professional|"
+                         r"(?:revisor|outsourcing|management|finans|økonomi|regnskabs|it|hr|salgs|indkøbs)(?:trainee|graduate)\b",
+                         re.I)
 HARD_EXCLUDE_RE = re.compile(
     r"\bph\.?d\b|postdoc|bachelorprojekt|speciale|thesis|"
     r"student\s+(?:recruit|lead|engagement|advisor|counsel)|studievejled|\bsenior\b|"
