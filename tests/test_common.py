@@ -230,3 +230,12 @@ def test_university_teaching_assistants_are_studiejob():
               "Teaching Assistant Professorship in development, fabrication, assembly of mechanical systems",
               "Fitness instructor"]:
         assert job_type(t) is None, t
+
+
+def test_digital_sales_associate_is_not_retail():
+    """21/10: Saxo Banks "Student Digital Sales Associate" (Hellerup) blev frasorteret af butiksfilteret."""
+    from scraper.common import job_type, set_job_types
+    set_job_types({"studiejob", "praktik", "graduate"})
+    assert job_type("Student Digital Sales Associate") == "studiejob"
+    assert job_type("Sales Associate, Vero Moda Fisketorvet") is None
+    assert job_type("Retail Sales Associate - Warehouse (12-19 Hours/week)") is None

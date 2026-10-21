@@ -180,8 +180,9 @@ EVENT_RE = re.compile(
 )
 # Butiks-, kantine- og servicejob (Coop, Bestseller, 7-Eleven …). Ofte deltid "for studerende", men ikke relevante
 # studiejob for Studieradars målgruppe. Kun i platform-kørslen (job_type), 17/10.
+# 21/10: "Digital Sales Associate" er online-salg/kundeservice på kontoret, ikke butik (Saxo Bank, Hellerup).
 RETAIL_RE = re.compile(
-    r"salgsassistent|sales\s+(?:assistant|advisor|associate)|butiks?(?:assistent|medarbejder|ansat|elev)|"
+    r"salgsassistent|(?<!digital\s)sales\s+(?:assistant|advisor|associate)|butiks?(?:assistent|medarbejder|ansat|elev)|"
     r"kassemedarbejder|kasse/kiosk|\bkiosk\b|ferskvare|lukkeansvarlig|servicemedarbejder|[ou]\w*\s+18\s+år|sabb?atår|"
     r"7-eleven|\bcashier|(?:store|retail)\s+(?:assistant|associate)|opfyldning|varepåfyld|lagermedarbejder|"
     r"rengøring|\bafløser|\bkok\b|\bcater|\btjener\b|opvask|chauffør|pakkemedarbejder|ufaglært",
