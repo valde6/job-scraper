@@ -185,7 +185,9 @@ RETAIL_RE = re.compile(
     r"salgsassistent|(?<!digital\s)sales\s+(?:assistant|advisor|associate)|butiks?(?:assistent|medarbejder|ansat|elev)|"
     r"kassemedarbejder|kasse/kiosk|\bkiosk\b|ferskvare|lukkeansvarlig|servicemedarbejder|[ou]\w*\s+18\s+år|sabb?atår|"
     r"7-eleven|\bcashier|(?:store|retail)\s+(?:assistant|associate)|opfyldning|varepåfyld|lagermedarbejder|"
-    r"rengøring|\bafløser|\bkok\b|\bcater|\btjener\b|opvask|chauffør|pakkemedarbejder|ufaglært",
+    r"rengøring|\bafløser|\bkok\b|\bcater|\btjener\b|opvask|chauffør|pakkemedarbejder|ufaglært|"
+    # 21/10: museums-/biografbutik og billetsalg (Cinemateket, Statens Naturhistoriske Museum)
+    r"butiks-\s+og\s+billet|\bbutik,\s*billet|billetsalg|billetskranke|gæsteservice",
     re.I,
 )
 # 21/10: stillinger for færdiguddannede faggrupper og fleks-/tilkaldejob. De kom med som "studiejob", fordi teksten nævner

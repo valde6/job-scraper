@@ -109,7 +109,10 @@ def test_retail_and_service_jobs_are_not_studiejob():
               "Region Hovedstaden Servicemedarbejder deltid, under 18 år, 365discount",
               "Salgsassistenter til DSB 7-Eleven Holbæk Station (15 timer)",
               "PIECES Holbæk - Sales Assistant 25 timer per uge", "Sales Advisor Rødovre",
-              "Ufaglærte laboratoriemedhjælpere til studiejob, weekend- og ferieafløsning, samt sabbatår"]:
+              "Ufaglærte laboratoriemedhjælpere til studiejob, weekend- og ferieafløsning, samt sabbatår",
+              # 21/10: museums-/biografbutik og billetsalg
+              "Cinemateket søger løbende studentermedhjælpere til butiks- og billetskranken",
+              "Vi søger flere studerende til Butik, Billet & Gæsteservice på Statens Naturhistoriske Museum"]:
         assert job_type(t) is None, t
     for t in ["Studentermedhjælper, marketing, hovedkontoret, Albertslund", "Student Assistant - HR Coordinator, GEM",
               "Studentermedhjælper til Category Management", "Student Assistant to Customer Service Excellence",
