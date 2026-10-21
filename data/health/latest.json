@@ -1,12 +1,12 @@
 {
- "ts": "2026-10-20T05:22:55+00:00",
+ "ts": "2026-10-21T05:22:23+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
    "ok": true,
-   "listed": 3,
-   "matched": 2,
+   "listed": 2,
+   "matched": 1,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -35,7 +35,7 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 62,
+   "listed": 63,
    "matched": 4,
    "problem": null,
    "streak": 0,
@@ -45,8 +45,8 @@
    "name": "Danske Bank",
    "type": "oracle",
    "ok": true,
-   "listed": 6,
-   "matched": 3,
+   "listed": 8,
+   "matched": 4,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -55,8 +55,8 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 37,
-   "matched": 5,
+   "listed": 33,
+   "matched": 4,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -65,8 +65,8 @@
    "name": "PwC",
    "type": "workday",
    "ok": true,
-   "listed": 10,
-   "matched": 3,
+   "listed": 11,
+   "matched": 4,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -135,7 +135,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 44,
+   "listed": 45,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -265,7 +265,7 @@
    "name": "Dansk Industri",
    "type": "teamtailor",
    "ok": true,
-   "listed": 3,
+   "listed": 2,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 42,
+   "listed": 43,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -355,7 +355,7 @@
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 27,
+   "listed": 28,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -365,7 +365,7 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 6,
+   "listed": 7,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -385,7 +385,7 @@
    "name": "Amazon",
    "type": "amazon",
    "ok": true,
-   "listed": 7,
+   "listed": 6,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -448,7 +448,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 1,
+   "streak": 2,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs"
   },
   {
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 3,
+   "streak": 4,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -485,8 +485,8 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 81,
-   "matched": 0,
+   "listed": 82,
+   "matched": 1,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -505,15 +505,16 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 384,
-   "matched": 28,
+   "listed": 378,
+   "matched": 26,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 3 kørsler i træk – 0 opslag (sidst 16)"
+  "**Accenture** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs",
+  "**Danmarks Radio** (hrmanager): mistænkelig i 4 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 31
+ "active": 32
 }
