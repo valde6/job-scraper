@@ -57,6 +57,16 @@ def test_consulting_excludes_sales_consultant():
     ("Vi forventer at byde vores nye kollega velkommen senest d. 1. december 2026.", None),
     ("Applications must be received by **31 October 2026.**", "2026-10-31"),
     ("Applications must be received by **22nd October 2026**.", "2026-10-22"),
+    # 21/10: formuleringer og layouts, der gav "ingen frist" for ca. 25 aktive job
+    ("Selskab\n\nJyske Bank\n\nAnsøgningsfrist\n\n03.11.2026\n\nEr du en nysgerrig", "2026-11-03"),
+    ("Please apply for the Student Assistant Communications role by **22 October 2026**.", "2026-10-22"),
+    ("Contact us or submit your application by 28 October 2026. We look forward", "2026-10-28"),
+    ("**Application deadline:** October 25, 2026. Applications will be reviewed", "2026-10-25"),
+    ("Please submit your online application no later than **31 October 2026 (23:59 Danish time)**.", "2026-10-31"),
+    ("**Deadline**\n\n***26 October 2026***. Applications are reviewed on an ongoing basis", "2026-10-26"),
+    ("Annonce slut: 03.11.2026", "2026-11-03"),
+    ("Vi forventer opstart 10.09.2027.", None),
+    ("Apply by clicking the button below.", None),
 ])
 def test_find_deadline(text, expected):
     assert find_deadline(text, 2026) == expected

@@ -480,13 +480,19 @@ def topic_tags(*texts: str) -> list[str]:
     return [k for k, rx in _TOPIC_RE.items() if rx.search(t)]
 
 
-_DL_KEY = r"(?:ansøgningsfrist|frist|senest|deadline|apply\s+by|application\s+deadline|(?:must\s+be\s+)?received\s+by)"
+# 21/10: flere formuleringer ("apply for the … role by", "submit your application by", "no later than", "Annonce slut"),
+# frist på næste linje ("Ansøgningsfrist\n\n03.11.2026" hos Jyske Bank/Nykredit) og amerikansk dato ("October 25, 2026").
+# Før manglede fristen for ca. 25 aktive job, selv om opslaget havde den.
+_DL_KEY = (r"(?:ansøgningsfrist|sidste\s+ansøgningsdag|annonce\s+slut|frist|senest|deadline|no\s+later\s+than|"
+           r"apply(?:[^.\n]{0,60}?\bby\b)|application(?:[^.\n]{0,30}?\bby\b|\s+deadline)|(?:must\s+be\s+)?received\s+by)")
+_DL_GAP = r"[\s\S]{0,40}?"
+_MONTH_NAMES = (r"(januar|februar|marts|april|maj|juni|juli|august|september|oktober|november|december|"
+                r"january|february|march|may|june|july|october|"
+                r"jan|feb|mar|apr|jun|jul|aug|sep|sept|oct|okt|nov|dec)")
 DEADLINE_RES = [
-    re.compile(_DL_KEY + r"[^\n]{0,40}?"
-               r"(\d{1,2})\.?(?:st|nd|rd|th)?\s*(januar|februar|marts|april|maj|juni|juli|august|september|oktober|november|"
-               r"december|jan|feb|mar|apr|may|jun|jul|aug|sep|oct|okt|nov|dec)[a-z]*\.?\s*(\d{4})?", re.I),
-    re.compile(_DL_KEY + r"[^\n]{0,40}?"
-               r"(\d{1,2})[./-](\d{1,2})[./-](\d{2,4})", re.I),
+    re.compile(_DL_KEY + _DL_GAP + r"\b(\d{1,2})\.?(?:st|nd|rd|th)?\s*" + _MONTH_NAMES + r"\.?\s*(\d{4})?", re.I),
+    re.compile(_DL_KEY + _DL_GAP + r"\b(\d{1,2})[./-](\d{1,2})[./-](\d{2,4})\b", re.I),
+    re.compile(_DL_KEY + _DL_GAP + r"\b" + _MONTH_NAMES + r"\.?\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})", re.I),
 ]
 # 21/10: "senest" er kun en frist, når sætningen handler om ansøgningen ("Søg senest …", "Vi skal modtage din ansøgning
 # senest …"). Ellers er det tiltrædelse eller krav ("velkommen senest d. 1. december", "start senest 1. januar 2027",
@@ -519,8 +525,9 @@ def _deadline_matches(text: str, today_year: int):
                     continue
                 prio = 1
             try:
-                if i == 0:
-                    d, mon, y = m.group(1), m.group(2).lower(), m.group(3)
+                if i in (0, 2):
+                    d, mon, y = (m.group(1), m.group(2).lower(), m.group(3)) if i == 0 else \
+                        (m.group(2), m.group(1).lower(), m.group(3))
                     mo = _MONTHS.get(mon) or _MONTHS.get(mon[:3])
                     if not mo:
                         continue
