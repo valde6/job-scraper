@@ -383,3 +383,34 @@ employers:
     at: '2026-10-20'
     via: jobindex-link
     evidence: https://karriere.ok.dk/jobs/8438127-studentermedhjaelper-til-ok-s-screeningsteam-salg-kundeservice?promotion=2254827-jobindex
+- name: Greve Kommune
+  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1169&ProjectId=148113&DepartmentId=18981&MediaId=5
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: grevekommune
+  discovered:
+    at: '2026-10-21'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1169&ProjectId=148113&DepartmentId=18981&MediaId=5
+  cid: '1169'
+- name: Agilent Technologies Denmark
+  career_url: https://agilent.wd5.myworkdayjobs.com/Agilent_Careers
+  status: opdaget
+  source:
+    type: workday
+    url: https://agilent.wd5.myworkdayjobs.com/Agilent_Careers
+  discovered:
+    at: '2026-10-21'
+    via: jobindex-link
+    evidence: https://agilent.wd5.myworkdayjobs.com/Agilent_Careers/job/Denmark-Ollerupvej/Dyrepasser-til-Agilents-dyrehold-p-Sydsjlland_4039712
+- name: GEV
+  career_url: https://gev.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://gev.career.emply.com
+  discovered:
+    at: '2026-10-21'
+    via: jobindex-link
+    evidence: https://gev.career.emply.com/ad/hr-og-sekretariatskoordinator/ef4dwh/da

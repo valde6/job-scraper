@@ -1,25 +1,70 @@
 {
- "started": "2026-10-20T10:25:47+00:00",
- "ads_read": 9,
+ "started": "2026-10-21T06:06:43+00:00",
+ "ads_read": 27,
  "candidates": [
   {
-   "name": "OK a.m.b.a.",
-   "type": "teamtailor",
+   "name": "Greve Kommune",
+   "type": "hrmanager",
    "cfg": {
-    "url": "https://karriere.ok.dk"
+    "cid": "1169",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1169&ProjectId=148113&DepartmentId=18981&MediaId=5"
    },
-   "evidence": "https://karriere.ok.dk/jobs/8438127-studentermedhjaelper-til-ok-s-screeningsteam-salg-kundeservice?promotion=2254827-jobindex",
-   "listed": 24,
-   "matched": 3
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1169&ProjectId=148113&DepartmentId=18981&MediaId=5",
+   "cid": "1169",
+   "listed": 39,
+   "matched": 1
+  },
+  {
+   "name": "Agilent Technologies Denmark",
+   "type": "workday",
+   "cfg": {
+    "url": "https://agilent.wd5.myworkdayjobs.com/Agilent_Careers"
+   },
+   "evidence": "https://agilent.wd5.myworkdayjobs.com/Agilent_Careers/job/Denmark-Ollerupvej/Dyrepasser-til-Agilents-dyrehold-p-Sydsjlland_4039712",
+   "listed": 129,
+   "matched": 0
+  },
+  {
+   "name": "GEV",
+   "type": "emply",
+   "cfg": {
+    "url": "https://gev.career.emply.com"
+   },
+   "evidence": "https://gev.career.emply.com/ad/hr-og-sekretariatskoordinator/ef4dwh/da",
+   "listed": 2,
+   "matched": 0
   }
  ],
  "added": [
   {
-   "name": "OK a.m.b.a.",
-   "type": "teamtailor",
-   "listed": 24,
-   "matched": 3
+   "name": "Greve Kommune",
+   "type": "hrmanager",
+   "listed": 39,
+   "matched": 1
+  },
+  {
+   "name": "Agilent Technologies Denmark",
+   "type": "workday",
+   "listed": 129,
+   "matched": 0
+  },
+  {
+   "name": "GEV",
+   "type": "emply",
+   "listed": 2,
+   "matched": 0
   }
  ],
- "rejected": []
+ "rejected": [
+  {
+   "name": "Dansk Arbejdsgiverforening",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "1655",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1655&ProjectId=143828&DepartmentId=18956&MediaId=4635"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1655&ProjectId=143828&DepartmentId=18956&MediaId=4635",
+   "reason": "HR-Manager-alias ikke fundet"
+  }
+ ]
 }
