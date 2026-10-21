@@ -183,6 +183,16 @@ RETAIL_RE = re.compile(
     r"rengøring|\bafløser|\bkok\b|\bcater|\btjener\b|opvask|chauffør|pakkemedarbejder|ufaglært",
     re.I,
 )
+# 21/10: stillinger for færdiguddannede faggrupper og fleks-/tilkaldejob. De kom med som "studiejob", fordi teksten nævner
+# studerende og deltid (Region H: "Reservelæge søges til Bedøvelse …", "Farmakonom søges til flexjob-ansættelse",
+# Fødevarestyrelsen: "tilkaldevikar som dyrlæge", Frederiksberg: "Pædagogmedhjælper til SFO"). Kun platform-kørslen
+# (job_type); står der student/studerende i titlen, gælder reglen ikke ("Sygeplejestuderende …", "pædagogstuderende").
+PROFESSION_RE = re.compile(
+    r"\blæger?\b|reservelæge|overlæge|speciallæge|afdelingslæge|sygeplejersk|farmakonom|tandlæge|tandplejer|dyrlæge|"
+    r"jordemo[dr]|fysioterapeut|ergoterapeut|bioanalytiker|radiograf|\bsosu\b|social-\s*og\s*sundheds|pædagog|"
+    r"fle[kx]s-?job|tilkaldevikar|timelønnet\s+vikar",
+    re.I,
+)
 _EXTRA_TYPES: set[str] = set()
 
 
@@ -203,6 +213,8 @@ def job_type(title: str, text: str = "") -> str | None:
     """studiejob | praktik | graduate | None. Titlen afgør praktik/graduate; ellers studiejob via student_fit."""
     t = title or ""
     if HARD_EXCLUDE_RE.search(t) or EVENT_RE.search(t) or RETAIL_RE.search(t):
+        return None
+    if PROFESSION_RE.search(t) and not STUDENT_RE.search(t):
         return None
     if PRAKTIK_RE.search(t):
         return "praktik"
@@ -378,8 +390,18 @@ WEAK_STUDY_RE = re.compile(
     re.I,
 )
 _HOURS_RE = re.compile(r"\b(\d{1,2})\s*(?:[-–]\s*(\d{1,2})\s*)?(?:timer|t\.|hours?|hrs)\s*(?:om|per|pr\.?|a|i|/)\s*(?:ugen|uge|week|wk)", re.I)
-PARTTIME_RE = re.compile(r"\bdeltid|part[- ]time|deltidsstilling|deltidsjob", re.I)
+# 21/10: kun "deltid" som eget ord (eller deltidsstilling/-job/-ansættelse/-arbejde). Før talte "deltidskontorarbejde" i en
+# sagsbeskrivelse (ATP: "Sagsbehandlere til sager om tab af erhvervsevne") som tegn på et deltidsjob.
+PARTTIME_RE = re.compile(r"\bdeltid(?:s(?:stilling|job|ansættelse|arbejde))?\b|part[- ]time", re.I)
 SENIOR_RE = re.compile(r"chef\b|\bsenior|\blead\b|leder\b|\bchef\b|\bhead\b|director|direktør|\bmanager\b|erfaren|experienced|principal|\bpartner\b|\bVP\b", re.I)
+
+
+def fulltime_hours(text: str) -> bool:
+    """Teksten nævner kun timetal over 25 om ugen (fx "32 timer om ugen", "37 timer") – så er "deltid" ikke et studiejob
+    (DM: "Salgskonsulent til fagforeningen DM - deltid", 32 timer)."""
+    his = [int(m.group(2) or m.group(1)) for m in _HOURS_RE.finditer(text or "")]
+    his = [h for h in his if h >= 5]
+    return bool(his) and min(his) > 25
 
 
 def study_hours(text: str) -> bool:
@@ -408,6 +430,8 @@ def student_fit(title: str, text: str = "") -> str | None:
         return None
     body = (text or "")[:8000]
     parttime = bool(PARTTIME_RE.search(title or "") or study_hours(title + " " + body) or PARTTIME_RE.search(body[:1500]))
+    if parttime and fulltime_hours(title + " " + body):
+        parttime = False
     if STUDY_SIGNAL_RE.search(body) or (parttime and WEAK_STUDY_RE.search(body)):
         return "sandsynlig"
     if parttime:

@@ -189,3 +189,31 @@ def test_compound_trainee_graduate_and_plural_interns():
     assert job_type("Communications Interns") == "praktik"
     assert job_type("Labtrainee til nyt labmiljø - studenterjob på Erhvervsakademi København") == "studiejob"
     assert job_type("Intern kontrol – specialist") is None                  # dansk tillægsord, uændret
+
+
+def test_profession_titles_are_not_studiejob():
+    """21/10: færdiguddannede faggrupper og fleks-/tilkaldejob kom med som studiejob (teksten nævnte studerende + deltid)."""
+    from scraper.common import job_type, set_job_types
+    set_job_types({"studiejob", "praktik", "graduate"})
+    body = "Afdelingen modtager medicinstuderende. Stillingen er på deltid."
+    for t in ["Reservelæge søges til Bedøvelse under Afdeling for Bedøvelse, Smerter og Respirationsstøtte",
+              "Farmakonom søges til flexjob-ansættelse på Klinisk Farmakologisk Afdeling",
+              "Søger du et fleksibelt deltidsarbejde? Bliv timelønnet tilkaldevikar som dyrlæge i Kød-kontrollen",
+              "Tandplejer eller tandlæge til traineestilling i tandreguleringen på Saxogade",
+              "Pædagogmedhjælper til SFO Nordlys – Skolen på Grundtvigsvej"]:
+        assert job_type(t, body) is None, t
+    assert job_type("Sygeplejestuderende eller anden sundhedsfaglig studerende til Sølund", body) == "studiejob"
+    assert job_type("Er du pædagogstuderende og mangler et weekendjob", body) == "studiejob"
+    assert job_type("Studentermedhjælpere i medicin søges til Kompetencecenter for Transkulturel Psykiatri") == "studiejob"
+
+
+def test_parttime_signal_is_a_whole_word_and_not_fulltime_hours():
+    """21/10: ATP "Sagsbehandlere …" blev "mulig" pga. "deltidskontorarbejde" i en sagsbeskrivelse, og DM's
+    "Salgskonsulent - deltid" på 32 timer om ugen kom med som studiejob."""
+    from scraper.common import student_fit, fulltime_hours
+    assert student_fit("Sagsbehandlere til sager om tab af erhvervsevne",
+                       "En tømrer går fra fysisk arbejde til deltidskontorarbejde.") is None
+    assert student_fit("Salgskonsulent til fagforeningen DM - deltid", "Stillingen er på 32 timer om ugen.") is None
+    assert student_fit("Analyst (part-time) - Corporate Finance", "Vi søger en analytiker.") == "mulig"
+    assert student_fit("Administrativ medarbejder", "Stillingen er på deltid, 15 timer om ugen.") == "mulig"
+    assert fulltime_hours("37 timer om ugen") and not fulltime_hours("15-20 timer om ugen, evt. 37 timer i ferier")
