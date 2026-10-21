@@ -138,7 +138,11 @@ def clean(s: str | None) -> str:
 STUDENT_RE = re.compile(
     r"student|studerende|studiejob|studie-job|studentermedhj|studentermedarb|"
     r"studentmedhj|working\s+student|werkstudent|part[- ]time\s+student|"
-    r"\bstud\.\s?(?:jur|merc|polit|scient|oecon|soc)\b|jurastuderende",     # 20/10: advokatfirmaernes "stud.jur."
+    r"\bstud\.\s?(?:jur|merc|polit|scient|oecon|soc)\b|jurastuderende|"     # 20/10: advokatfirmaernes "stud.jur."
+    # 21/10: universiteternes undervisningsassistenter er studiejob (CBS: "Instruktor søges til FLØK", "Instructors for
+    # Department of Digitalization" – kun for indskrevne studerende). "Instruktør" med ø er noget andet.
+    r"\binstruktor(?:er)?\b|\bteaching\s+assistants?\b(?!\s+professor)|"
+    r"\binstructors?\s+(?:for|at|to|til)\s+(?:the\s+)?(?:department|institut)",
     re.I,
 )
 # ting der ligner studenterjob men ikke er det

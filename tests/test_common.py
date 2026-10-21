@@ -217,3 +217,16 @@ def test_parttime_signal_is_a_whole_word_and_not_fulltime_hours():
     assert student_fit("Analyst (part-time) - Corporate Finance", "Vi søger en analytiker.") == "mulig"
     assert student_fit("Administrativ medarbejder", "Stillingen er på deltid, 15 timer om ugen.") == "mulig"
     assert fulltime_hours("37 timer om ugen") and not fulltime_hours("15-20 timer om ugen, evt. 37 timer i ferier")
+
+
+def test_university_teaching_assistants_are_studiejob():
+    """21/10: CBS' instruktor-stillinger (kun for indskrevne studerende, deltid) blev frasorteret som "ikke studiejob"."""
+    from scraper.common import is_student, job_type, set_job_types
+    set_job_types({"studiejob", "praktik", "graduate"})
+    for t in ["Instruktor søges til FLØK", "Instruktor til Department of Digitalization",
+              "Instructors for Department of Digitalization", "Teaching Assistants (TA) Spring 2027"]:
+        assert is_student(t) and job_type(t) == "studiejob", t
+    for t in ["Teknisk instruktør med elektrisk baggrund", "Instruktør til skoleoplæringselever, VVS-uddannelsen",
+              "Teaching Assistant Professorship in development, fabrication, assembly of mechanical systems",
+              "Fitness instructor"]:
+        assert job_type(t) is None, t
