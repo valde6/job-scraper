@@ -52,6 +52,11 @@ def test_consulting_excludes_sales_consultant():
     ("Deadline: 1/11/2026", "2026-11-01"),
     ("Søg senest 3. nov.", "2026-11-03"),
     ("Ingen frist nævnt", None),
+    # 21/10: "senest" om tiltrædelse er ikke en frist (Jyske Bank stod med frist 1. jan. 2027 i stedet for 29.10.2026)
+    ("Gerne med start senest 1. januar 2027. Ansøgningsfristen er 29.10.2026.", "2026-10-29"),
+    ("Vi forventer at byde vores nye kollega velkommen senest d. 1. december 2026.", None),
+    ("Applications must be received by **31 October 2026.**", "2026-10-31"),
+    ("Applications must be received by **22nd October 2026**.", "2026-10-22"),
 ])
 def test_find_deadline(text, expected):
     assert find_deadline(text, 2026) == expected
@@ -242,3 +247,8 @@ def test_digital_sales_associate_is_not_retail():
     assert job_type("Student Digital Sales Associate") == "studiejob"
     assert job_type("Sales Associate, Vero Moda Fisketorvet") is None
     assert job_type("Retail Sales Associate - Warehouse (12-19 Hours/week)") is None
+
+
+def test_find_deadline_require_year():
+    assert find_deadline("Søg senest 3. nov.", 2026, require_year=True) is None
+    assert find_deadline("Søg senest 3. nov. 2026", 2026, require_year=True) == "2026-11-03"

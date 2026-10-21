@@ -6,6 +6,7 @@ import json
 import re
 import time
 from dataclasses import dataclass, field, asdict
+from datetime import date
 from typing import Optional
 
 import requests
@@ -479,39 +480,78 @@ def topic_tags(*texts: str) -> list[str]:
     return [k for k, rx in _TOPIC_RE.items() if rx.search(t)]
 
 
+_DL_KEY = r"(?:ansøgningsfrist|frist|senest|deadline|apply\s+by|application\s+deadline|(?:must\s+be\s+)?received\s+by)"
 DEADLINE_RES = [
-    re.compile(r"(?:ansøgningsfrist|frist|senest|deadline|apply by|application deadline)[^\n]{0,40}?"
-               r"(\d{1,2})\.?\s*(januar|februar|marts|april|maj|juni|juli|august|september|oktober|november|december|"
-               r"jan|feb|mar|apr|may|jun|jul|aug|sep|oct|okt|nov|dec)[a-z]*\.?\s*(\d{4})?", re.I),
-    re.compile(r"(?:ansøgningsfrist|frist|senest|deadline|apply by|application deadline)[^\n]{0,40}?"
+    re.compile(_DL_KEY + r"[^\n]{0,40}?"
+               r"(\d{1,2})\.?(?:st|nd|rd|th)?\s*(januar|februar|marts|april|maj|juni|juli|august|september|oktober|november|"
+               r"december|jan|feb|mar|apr|may|jun|jul|aug|sep|oct|okt|nov|dec)[a-z]*\.?\s*(\d{4})?", re.I),
+    re.compile(_DL_KEY + r"[^\n]{0,40}?"
                r"(\d{1,2})[./-](\d{1,2})[./-](\d{2,4})", re.I),
 ]
+# 21/10: "senest" er kun en frist, når sætningen handler om ansøgningen ("Søg senest …", "Vi skal modtage din ansøgning
+# senest …"). Ellers er det tiltrædelse eller krav ("velkommen senest d. 1. december", "start senest 1. januar 2027",
+# "bestået … senest 31/01/2027") – det gav forkerte frister hos Jyske Bank, Visma DataLøn og DTU.
+_APPLY_CONTEXT_RE = re.compile(r"\bsøge?\b|\bansøg\w*|modtage|\bsend|\bapply|application|indsend|indtast|uploade", re.I)
 _MONTHS = {m: i for i, ms in enumerate([
     ("januar", "jan"), ("februar", "feb"), ("marts", "mar", "march"), ("april", "apr"), ("maj", "may"),
     ("juni", "jun", "june"), ("juli", "jul", "july"), ("august", "aug"), ("september", "sep"),
     ("oktober", "okt", "oct", "october"), ("november", "nov"), ("december", "dec")], start=1) for m in ms}
 
 
-def find_deadline(text: str, today_year: int) -> Optional[str]:
-    """Finder ansøgningsfrist i teksten og returnerer ISO-dato. Deterministisk, ikke AI."""
+def _overlapping(rx: re.Pattern, text: str):
+    """Som finditer, men et match kan begynde inde i det forrige ("senest 1. januar 2027. Ansøgningsfristen er 29.10")."""
+    pos = 0
+    while (m := rx.search(text, pos)) is not None:
+        yield m
+        pos = m.start() + 1
+
+
+def _deadline_matches(text: str, today_year: int):
+    """Kandidater (prioritet, position, ISO-dato, har_årstal): 0 = "frist/deadline/…", 1 = "senest" om ansøgningen."""
+    out = []
+    for i, rx in enumerate(DEADLINE_RES):
+        for m in _overlapping(rx, text):
+            kw = m.group(0).split()[0].lower() if m.group(0) else ""
+            prio = 0
+            if kw.startswith("senest"):
+                para = text.rfind("\n\n", 0, m.start()) + 1           # samme afsnit, højst 200 tegn før
+                if not _APPLY_CONTEXT_RE.search(text[max(para, m.start() - 200):m.start() + 6]):
+                    continue
+                prio = 1
+            try:
+                if i == 0:
+                    d, mon, y = m.group(1), m.group(2).lower(), m.group(3)
+                    mo = _MONTHS.get(mon) or _MONTHS.get(mon[:3])
+                    if not mo:
+                        continue
+                    iso = f"{int(y) if y else today_year:04d}-{mo:02d}-{int(d):02d}"
+                    has_year = bool(y)
+                    if y and int(y) < today_year:
+                        continue                  # tastefejl i opslaget ("31th October 2025" i et opslag fra 2026)
+                else:
+                    d, mo, y = (int(x) for x in m.groups())
+                    y = y + 2000 if y < 100 else y
+                    if not (1 <= mo <= 12 and 1 <= d <= 31):
+                        continue
+                    if y < today_year:
+                        continue
+                    iso, has_year = f"{y:04d}-{mo:02d}-{d:02d}", True
+                date.fromisoformat(iso)
+            except ValueError:
+                continue
+            out.append((prio, m.start(), iso, has_year))
+    return sorted(out)
+
+
+def find_deadline(text: str, today_year: int, require_year: bool = False) -> Optional[str]:
+    """Finder ansøgningsfrist i teksten og returnerer ISO-dato. Deterministisk, ikke AI.
+    "Frist/deadline/received by" vinder over "senest"; ellers den første i teksten.
+    require_year: kun frister med årstal (bruges, når teksten skal kunne rette kildens eget fristfelt)."""
     if not text:
         return None
-    m = DEADLINE_RES[0].search(text)
-    if m:
-        d, mon, y = m.group(1), m.group(2).lower(), m.group(3)
-        mo = _MONTHS.get(mon) or _MONTHS.get(mon[:3])
-        if mo:
-            try:
-                return f"{int(y) if y else today_year:04d}-{mo:02d}-{int(d):02d}"
-            except ValueError:
-                pass
-    m = DEADLINE_RES[1].search(text)
-    if m:
-        d, mo, y = (int(x) for x in m.groups())
-        if y < 100:
-            y += 2000
-        if 1 <= mo <= 12 and 1 <= d <= 31:
-            return f"{y:04d}-{mo:02d}-{d:02d}"
+    for _, _, iso, has_year in _deadline_matches(text, today_year):
+        if has_year or not require_year:
+            return iso
     return None
 
 

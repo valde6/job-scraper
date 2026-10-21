@@ -146,6 +146,11 @@ def build_record(job: dict, employer: dict, rx: dict, now: str) -> dict | None:
     if jt == "studiejob" and job.get("fit") == "mulig" and not any(r.search(job["title"]) for r in rx.values()):
         return None
     deadline = plausible_deadline(job.get("deadline") or find_deadline(desc, date.today().year) or None)
+    # 21/10: kildens fristfelt er nogle gange annoncens udløb, ikke ansøgningsfristen. Står der en tidligere frist med
+    # årstal i selve opslaget, vinder den (Erhvervsakademi København: feltet 15/11, teksten "senest den 13. november 2026")
+    text_dl = find_deadline(desc, date.today().year, require_year=True) if job.get("deadline") else None
+    if deadline and text_dl and date.today().isoformat() <= text_dl < deadline:
+        deadline = text_dl
     apply_url = job.get("apply_url") or job.get("url")
     return {
         "id": job["id"], "company": job["company"], "title": job["title"], "url": job.get("url") or apply_url, "job_type": jt, "fit": job.get("fit") or "sikker",

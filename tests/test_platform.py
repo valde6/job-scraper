@@ -355,3 +355,22 @@ def test_adapters_log_rejected_postings(monkeypatch):
     C.REJECTED.clear()
     amazon.scrape({"name": "Amazon"})
     assert C.REJECTED[0]["reason"] == "ikke studiejob (titel)"
+
+
+def test_earlier_deadline_in_text_wins_over_source_field(rx, monkeypatch):
+    """21/10: Emply-feltet sagde 15/11, opslaget "senest den 13. november 2026" (Erhvervsakademi København)."""
+    from datetime import date as _d
+
+    class D(_d):
+        @classmethod
+        def today(cls):
+            return cls(2026, 10, 21)
+    monkeypatch.setattr(P, "date", D)
+    j = Job(company="EK", title="Studentermedhjælper til økonomi", url="https://x/2", location="København",
+            deadline="2026-11-15", description_md="Søg stillingen - senest den 13. november 2026 via Søg-knappen.",
+            source="emply").to_dict()
+    assert P.build_record(j, emp(), rx, "x")["deadline"] == "2026-11-13"
+    late = dict(j, description_md="Ansøgningsfrist 30. november 2026")       # senere frist i teksten: feltet bevares
+    assert P.build_record(late, emp(), rx, "x")["deadline"] == "2026-11-15"
+    past = dict(j, description_md="Ansøgningsfrist 1. oktober 2026")         # tekstfrist i fortiden: ignoreres
+    assert P.build_record(past, emp(), rx, "x")["deadline"] == "2026-11-15"
