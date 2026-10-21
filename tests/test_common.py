@@ -65,8 +65,10 @@ def test_consulting_excludes_sales_consultant():
     ("Please submit your online application no later than **31 October 2026 (23:59 Danish time)**.", "2026-10-31"),
     ("**Deadline**\n\n***26 October 2026***. Applications are reviewed on an ongoing basis", "2026-10-26"),
     ("Annonce slut: 03.11.2026", "2026-11-03"),
+    ("The application deadline is 2nd of November 2026.\n\n### Info\n\n**Application deadline:** 09-11-2026", "2026-11-09"),
     ("Vi forventer opstart 10.09.2027.", None),
     ("Apply by clicking the button below.", None),
+    ("Send your application, CV, and other relevant documents before the 1st of November, 2026. We process", "2026-11-01"),
 ])
 def test_find_deadline(text, expected):
     assert find_deadline(text, 2026) == expected

@@ -484,13 +484,14 @@ def topic_tags(*texts: str) -> list[str]:
 # frist på næste linje ("Ansøgningsfrist\n\n03.11.2026" hos Jyske Bank/Nykredit) og amerikansk dato ("October 25, 2026").
 # Før manglede fristen for ca. 25 aktive job, selv om opslaget havde den.
 _DL_KEY = (r"(?:ansøgningsfrist|sidste\s+ansøgningsdag|annonce\s+slut|frist|senest|deadline|no\s+later\s+than|"
-           r"apply(?:[^.\n]{0,60}?\bby\b)|application(?:[^.\n]{0,30}?\bby\b|\s+deadline)|(?:must\s+be\s+)?received\s+by)")
+           r"apply(?:[^.\n]{0,60}?\b(?:by|before)\b)|application(?:[^.\n]{0,60}?\b(?:by|before)\b|\s+deadline)|"
+           r"(?:must\s+be\s+)?received\s+by)")
 _DL_GAP = r"[\s\S]{0,40}?"
 _MONTH_NAMES = (r"(januar|februar|marts|april|maj|juni|juli|august|september|oktober|november|december|"
                 r"january|february|march|may|june|july|october|"
                 r"jan|feb|mar|apr|jun|jul|aug|sep|sept|oct|okt|nov|dec)")
 DEADLINE_RES = [
-    re.compile(_DL_KEY + _DL_GAP + r"\b(\d{1,2})\.?(?:st|nd|rd|th)?\s*" + _MONTH_NAMES + r"\.?\s*(\d{4})?", re.I),
+    re.compile(_DL_KEY + _DL_GAP + r"\b(\d{1,2})\.?(?:st|nd|rd|th)?\s*(?:of\s+)?" + _MONTH_NAMES + r"\.?\s*(\d{4})?", re.I),
     re.compile(_DL_KEY + _DL_GAP + r"\b(\d{1,2})[./-](\d{1,2})[./-](\d{2,4})\b", re.I),
     re.compile(_DL_KEY + _DL_GAP + r"\b" + _MONTH_NAMES + r"\.?\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})", re.I),
 ]
@@ -513,17 +514,21 @@ def _overlapping(rx: re.Pattern, text: str):
 
 
 def _deadline_matches(text: str, today_year: int):
-    """Kandidater (prioritet, position, ISO-dato, har_årstal): 0 = "frist/deadline/…", 1 = "senest" om ansøgningen."""
+    """Kandidater (prioritet, position, ISO-dato, har_årstal): 0 = etiket ("Ansøgningsfrist: …"), 1 = brødtekst
+    ("apply by …"), 2 = "senest" om ansøgningen."""
     out = []
     for i, rx in enumerate(DEADLINE_RES):
         for m in _overlapping(rx, text):
             kw = m.group(0).split()[0].lower() if m.group(0) else ""
-            prio = 0
+            # Etiket ("Ansøgningsfrist: …", "**Application deadline:** …", "Ansøgningsfrist\n\n03.11.2026") vinder over
+            # brødtekst (KU CAISA: brødteksten siger 2. nov., feltet "Application deadline: 09-11-2026" og siden 9. nov.)
+            kw_end = m.start() + re.match(_DL_KEY, m.group(0), re.I).end()
+            prio = 0 if re.match(r"[*_\s]*(?::|\n)", text[kw_end:kw_end + 8]) else 1
             if kw.startswith("senest"):
                 para = text.rfind("\n\n", 0, m.start()) + 1           # samme afsnit, højst 200 tegn før
                 if not _APPLY_CONTEXT_RE.search(text[max(para, m.start() - 200):m.start() + 6]):
                     continue
-                prio = 1
+                prio = 2
             try:
                 if i in (0, 2):
                     d, mon, y = (m.group(1), m.group(2).lower(), m.group(3)) if i == 0 else \
@@ -552,7 +557,7 @@ def _deadline_matches(text: str, today_year: int):
 
 def find_deadline(text: str, today_year: int, require_year: bool = False) -> Optional[str]:
     """Finder ansøgningsfrist i teksten og returnerer ISO-dato. Deterministisk, ikke AI.
-    "Frist/deadline/received by" vinder over "senest"; ellers den første i teksten.
+    Etiket vinder over brødtekst, som vinder over "senest"; ellers den første i teksten.
     require_year: kun frister med årstal (bruges, når teksten skal kunne rette kildens eget fristfelt)."""
     if not text:
         return None
