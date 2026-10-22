@@ -1,8 +1,9 @@
-# Scraper-sundhed 2026-10-21T06:31:15+00:00
+# Scraper-sundhed 2026-10-22T06:37:45+00:00
 
-Aktive job: 216. Kilder med problemer: 2.
+Aktive job: 217. Kilder med problemer: 3.
 
 | Kilde | Type | Problem | I træk | Detalje |
 |---|---|---|---|---|
-| Danmarks Radio | hrmanager | mistænkelig | 5 | 0 opslag (sidst 16) |
-| GN Group | workday | aldrig data | 8 |  |
+| Accenture | workday | fejl | 1 | HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/Acc |
+| Danmarks Radio | hrmanager | mistænkelig | 6 | 0 opslag (sidst 16) |
+| GN Group | workday | aldrig data | 9 |  |

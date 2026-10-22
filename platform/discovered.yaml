@@ -414,3 +414,24 @@ employers:
     at: '2026-10-21'
     via: jobindex-link
     evidence: https://gev.career.emply.com/ad/hr-og-sekretariatskoordinator/ef4dwh/da
+- name: Munck Asfalt
+  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1467&ProjectId=144872&DepartmentId=19967&MediaId=5
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: ofir_munck-gruppen
+  discovered:
+    at: '2026-10-22'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1467&ProjectId=144872&DepartmentId=19967&MediaId=5
+  cid: '1467'
+- name: Blå Kors Danmark
+  career_url: https://blaakors.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://blaakors.career.emply.com
+  discovered:
+    at: '2026-10-22'
+    via: jobindex-link
+    evidence: https://blaakors.career.emply.com/ad/national-projektleder-for-okonomisk-radgivning-og-udviklingskonsulent-til-bla-kor/npk15r/da
