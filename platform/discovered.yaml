@@ -435,3 +435,23 @@ employers:
     at: '2026-10-22'
     via: jobindex-link
     evidence: https://blaakors.career.emply.com/ad/national-projektleder-for-okonomisk-radgivning-og-udviklingskonsulent-til-bla-kor/npk15r/da
+- name: PHM Danmark ApS
+  career_url: https://phmgroup.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://phmgroup.career.emply.com
+  discovered:
+    at: '2026-10-23'
+    via: jobindex-link
+    evidence: https://phmgroup.career.emply.com/ad/studentermedhjaelper-til-people-culture/iqppe0/da
+- name: Momentum Energy Group A/S
+  career_url: https://meg.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://meg.career.emply.com
+  discovered:
+    at: '2026-10-23'
+    via: jobindex-link
+    evidence: https://meg.career.emply.com/da/ad/are-you-our-new-student-analyst-in-our-analytics-modelling-team/6ksudg

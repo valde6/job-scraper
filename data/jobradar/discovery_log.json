@@ -1,87 +1,65 @@
 {
- "started": "2026-10-22T06:10:23+00:00",
- "ads_read": 39,
+ "started": "2026-10-23T06:12:36+00:00",
+ "ads_read": 32,
  "candidates": [
   {
-   "name": "Munck Asfalt",
+   "name": "Komponent",
    "type": "hrmanager",
    "cfg": {
-    "cid": "1467",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1467&ProjectId=144872&DepartmentId=19967&MediaId=5"
+    "cid": "1747",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1747&ProjectId=143744&DepartmentId=19062&MediaId=4620"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1467&ProjectId=144872&DepartmentId=19967&MediaId=5",
-   "cid": "1467",
-   "listed": 20,
-   "matched": 4
-  },
-  {
-   "name": "Bunker Holding A/S",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "2568",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2568&ProjectId=144469&DepartmentId=18962&MediaId=4655"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2568&ProjectId=144469&DepartmentId=18962&MediaId=4655",
-   "cid": "2568",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1747&ProjectId=143744&DepartmentId=19062&MediaId=4620",
+   "cid": "1747",
    "listed": 0,
    "matched": 0
   },
   {
-   "name": "Blå Kors Danmark",
+   "name": "PHM Danmark ApS",
    "type": "emply",
    "cfg": {
-    "url": "https://blaakors.career.emply.com"
+    "url": "https://phmgroup.career.emply.com"
    },
-   "evidence": "https://blaakors.career.emply.com/ad/national-projektleder-for-okonomisk-radgivning-og-udviklingskonsulent-til-bla-kor/npk15r/da",
-   "listed": 9,
-   "matched": 0
+   "evidence": "https://phmgroup.career.emply.com/ad/studentermedhjaelper-til-people-culture/iqppe0/da",
+   "listed": 8,
+   "matched": 2
+  },
+  {
+   "name": "Momentum Energy Group A/S",
+   "type": "emply",
+   "cfg": {
+    "url": "https://meg.career.emply.com"
+   },
+   "evidence": "https://meg.career.emply.com/da/ad/are-you-our-new-student-analyst-in-our-analytics-modelling-team/6ksudg",
+   "listed": 5,
+   "matched": 1
   }
  ],
  "added": [
   {
-   "name": "Munck Asfalt",
-   "type": "hrmanager",
-   "listed": 20,
-   "matched": 4
+   "name": "PHM Danmark ApS",
+   "type": "emply",
+   "listed": 8,
+   "matched": 2
   },
   {
-   "name": "Blå Kors Danmark",
+   "name": "Momentum Energy Group A/S",
    "type": "emply",
-   "listed": 9,
-   "matched": 0
+   "listed": 5,
+   "matched": 1
   }
  ],
  "rejected": [
   {
-   "name": "Krifa",
+   "name": "Komponent",
    "type": "hrmanager",
    "cfg": {
-    "cid": "1038",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1038&ProjectId=144175&DepartmentId=18959&MediaId=5"
+    "cid": "1747",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1747&ProjectId=143744&DepartmentId=19062&MediaId=4620"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1038&ProjectId=144175&DepartmentId=18959&MediaId=5",
-   "reason": "HR-Manager-alias ikke fundet"
-  },
-  {
-   "name": "Bunker Holding A/S",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "2568",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2568&ProjectId=144469&DepartmentId=18962&MediaId=4655"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2568&ProjectId=144469&DepartmentId=18962&MediaId=4655",
-   "cid": "2568",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1747&ProjectId=143744&DepartmentId=19062&MediaId=4620",
+   "cid": "1747",
    "reason": "0 opslag"
-  },
-  {
-   "name": "Odense Kommune",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "3256",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144813&DepartmentId=19815&MediaId=4630&SkipAdvertisement=true"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144813&DepartmentId=19815&MediaId=4630&SkipAdvertisement=true",
-   "reason": "HR-Manager-alias ikke fundet"
   }
  ]
 }
