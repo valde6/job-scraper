@@ -1,12 +1,12 @@
 {
- "ts": "2026-10-22T05:25:59+00:00",
+ "ts": "2026-10-23T05:33:10+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
    "ok": true,
    "listed": 2,
-   "matched": 1,
+   "matched": 0,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -16,7 +16,7 @@
    "type": "workday",
    "ok": true,
    "listed": 405,
-   "matched": 1,
+   "matched": 0,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -45,8 +45,8 @@
    "name": "Danske Bank",
    "type": "oracle",
    "ok": true,
-   "listed": 8,
-   "matched": 4,
+   "listed": 6,
+   "matched": 3,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -135,7 +135,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 36,
+   "listed": 34,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -195,7 +195,7 @@
    "name": "Saxo Bank",
    "type": "workday",
    "ok": true,
-   "listed": 25,
+   "listed": 24,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 46,
+   "listed": 45,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -325,7 +325,7 @@
    "name": "PA Consulting Group",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 12,
+   "listed": 14,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -355,7 +355,7 @@
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 29,
+   "listed": 28,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -365,7 +365,7 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 7,
+   "listed": 6,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -444,12 +444,12 @@
   {
    "name": "Accenture",
    "type": "workday",
-   "ok": true,
-   "listed": 2,
-   "matched": 2,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "problem": "fejl",
+   "streak": 1,
+   "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs"
   },
   {
    "name": "Danmarks Radio",
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 5,
+   "streak": 6,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -485,7 +485,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 78,
+   "listed": 77,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -496,7 +496,7 @@
    "type": "workday",
    "ok": true,
    "listed": 52,
-   "matched": 1,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -505,15 +505,15 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 389,
-   "matched": 30,
+   "listed": 404,
+   "matched": 31,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 5 kørsler i træk – 0 opslag (sidst 16)"
+  "**Danmarks Radio** (hrmanager): mistænkelig i 6 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 34
+ "active": 32
 }
