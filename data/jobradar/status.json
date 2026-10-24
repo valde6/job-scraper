@@ -1,27 +1,27 @@
 {
- "updated": "2026-10-22T06:37:45+00:00",
+ "updated": "2026-10-24T06:15:54+00:00",
  "companies": [
   {
    "company": "Novo Nordisk",
    "source": "successfactors",
    "lines": [],
    "ok": true,
-   "listed": 39,
+   "listed": 37,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 4.6
+   "seconds": 6.6
   },
   {
    "company": "A.P. Møller - Mærsk",
    "source": "workday",
    "lines": [],
-   "ok": true,
-   "listed": 635,
-   "matched": 5,
+   "ok": false,
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   "last_good_listed": 635,
    "last_data": "2026-10-22T06:37:45+00:00",
-   "failing_since": null,
-   "seconds": 35.7
+   "failing_since": "2026-10-24T06:15:54+00:00",
+   "seconds": 1.0
   },
   {
    "company": "McKinsey & Company",
@@ -30,64 +30,64 @@
    "ok": true,
    "listed": 14,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 25.4
+   "seconds": 26.0
   },
   {
    "company": "LEGO Group",
    "source": "workday",
    "lines": [],
    "ok": true,
-   "listed": 105,
+   "listed": 104,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 42.5
+   "seconds": 42.7
   },
   {
    "company": "Danske Bank",
    "source": "oracle",
    "lines": [],
    "ok": true,
-   "listed": 126,
-   "matched": 5,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "listed": 111,
+   "matched": 3,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 6.4
+   "seconds": 14.4
   },
   {
    "company": "Deloitte",
    "source": "smartrecruiters",
    "lines": [],
    "ok": true,
-   "listed": 36,
+   "listed": 37,
    "matched": 5,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 15.6
+   "seconds": 17.3
   },
   {
    "company": "PwC",
    "source": "workday",
    "lines": [],
-   "ok": true,
-   "listed": 11,
-   "matched": 4,
+   "ok": false,
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   "last_good_listed": 11,
    "last_data": "2026-10-22T06:37:45+00:00",
-   "failing_since": null,
-   "seconds": 9.6
+   "failing_since": "2026-10-24T06:15:54+00:00",
+   "seconds": 0.7
   },
   {
    "company": "Carlsberg",
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 124,
+   "listed": 125,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 7.4
+   "seconds": 10.5
   },
   {
    "company": "Boston Consulting Group (BCG)",
@@ -96,20 +96,20 @@
    "ok": true,
    "listed": 4,
    "matched": 3,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 1.8
+   "seconds": 1.3
   },
   {
    "company": "Nordea",
    "source": "nordea",
    "lines": [],
    "ok": true,
-   "listed": 88,
+   "listed": 86,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 8.2
+   "seconds": 9.2
   },
   {
    "company": "Microsoft",
@@ -125,75 +125,75 @@
    "ok": true,
    "listed": 11,
    "matched": 7,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 3.4
+   "seconds": 3.9
   },
   {
    "company": "Jyske Bank",
    "source": "generic",
    "lines": [],
-   "ok": true,
-   "listed": 32,
-   "matched": 1,
+   "ok": false,
+   "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs",
+   "last_good_listed": 32,
    "last_data": "2026-10-22T06:37:45+00:00",
-   "failing_since": null,
-   "seconds": 39.2
+   "failing_since": "2026-10-24T06:15:54+00:00",
+   "seconds": 6.8
   },
   {
    "company": "Nykredit",
    "source": "browser",
    "lines": [],
    "ok": true,
-   "listed": 36,
-   "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "listed": 32,
+   "matched": 1,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 23.2
+   "seconds": 17.7
   },
   {
    "company": "Bestseller",
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 959,
+   "listed": 962,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 13.6
+   "seconds": 14.6
   },
   {
    "company": "L'Oréal Groupe",
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 1717,
+   "listed": 1694,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 43.7
+   "seconds": 33.2
   },
   {
    "company": "Bain & Company",
    "source": "avature",
    "lines": [],
    "ok": true,
-   "listed": 275,
+   "listed": 273,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 37.4
+   "seconds": 33.8
   },
   {
    "company": "Vestas",
    "source": "successfactors",
    "lines": [],
    "ok": true,
-   "listed": 51,
+   "listed": 54,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 6.6
+   "seconds": 7.9
   },
   {
    "company": "Implement",
@@ -201,21 +201,21 @@
    "lines": [],
    "ok": true,
    "listed": 17,
-   "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "matched": 1,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 7.8
+   "seconds": 8.2
   },
   {
    "company": "Saxo Bank",
    "source": "workday",
    "lines": [],
-   "ok": true,
-   "listed": 51,
-   "matched": 3,
+   "ok": false,
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   "last_good_listed": 51,
    "last_data": "2026-10-22T06:37:45+00:00",
-   "failing_since": null,
-   "seconds": 19.5
+   "failing_since": "2026-10-24T06:15:54+00:00",
+   "seconds": 0.9
   },
   {
    "company": "Finansministeriet",
@@ -229,11 +229,11 @@
    "source": "browser",
    "lines": [],
    "ok": true,
-   "listed": 6,
+   "listed": 8,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 9.6
+   "seconds": 10.1
   },
   {
    "company": "Danmarks Nationalbank",
@@ -249,9 +249,9 @@
    "ok": true,
    "listed": 10,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 129.3
+   "seconds": 144.7
   },
   {
    "company": "Udenrigsministeriet",
@@ -265,11 +265,11 @@
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 13489,
+   "listed": 13210,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 13.1
+   "seconds": 16.3
   },
   {
    "company": "Dansk Industri",
@@ -278,9 +278,9 @@
    "ok": true,
    "listed": 2,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.4
+   "seconds": 0.6
   },
   {
    "company": "Nordnet",
@@ -289,20 +289,20 @@
    "ok": true,
    "listed": 16,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.4
+   "seconds": 0.7
   },
   {
    "company": "Ørsted",
    "source": "browser",
    "lines": [],
    "ok": true,
-   "listed": 46,
+   "listed": 42,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 12.4
+   "seconds": 13.1
   },
   {
    "company": "KPMG",
@@ -311,9 +311,9 @@
    "ok": true,
    "listed": 18,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 2.2
+   "seconds": 1.5
   },
   {
    "company": "Matas",
@@ -321,10 +321,10 @@
    "lines": [],
    "ok": true,
    "listed": 14,
-   "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "matched": 2,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 7.5
+   "seconds": 2.3
   },
   {
    "company": "Salling Group",
@@ -338,22 +338,22 @@
    "source": "smartrecruiters",
    "lines": [],
    "ok": true,
-   "listed": 12,
+   "listed": 14,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 5.4
+   "seconds": 6.3
   },
   {
    "company": "Københavns Lufthavne",
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 13,
+   "listed": 20,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 4.2
+   "seconds": 9.0
   },
   {
    "company": "Danske Commodities",
@@ -362,31 +362,31 @@
    "ok": true,
    "listed": 2,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.7
+   "seconds": 0.5
   },
   {
    "company": "Netcompany",
    "source": "smartrecruiters",
    "lines": [],
    "ok": true,
-   "listed": 29,
+   "listed": 28,
    "matched": 4,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 12.4
+   "seconds": 12.8
   },
   {
    "company": "PFA Pension",
    "source": "browser",
    "lines": [],
    "ok": true,
-   "listed": 7,
+   "listed": 6,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 15.3
+   "seconds": 16.9
   },
   {
    "company": "SAS",
@@ -395,9 +395,9 @@
    "ok": true,
    "listed": 14,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 3.8
+   "seconds": 4.7
   },
   {
    "company": "Amazon",
@@ -406,42 +406,42 @@
    "ok": true,
    "listed": 6,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.4
+   "seconds": 0.6
   },
   {
    "company": "Beierholm",
    "source": "generic",
    "lines": [],
    "ok": true,
-   "listed": 27,
+   "listed": 29,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 1.5
+   "seconds": 1.4
   },
   {
    "company": "AL Sydbank",
    "source": "teamtailor",
    "lines": [],
    "ok": true,
-   "listed": 25,
+   "listed": 26,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.3
+   "seconds": 1.4
   },
   {
    "company": "Forsvaret",
    "source": "generic",
    "lines": [],
    "ok": true,
-   "listed": 55,
+   "listed": 50,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 4.5
+   "seconds": 5.1
   },
   {
    "company": "IKEA",
@@ -450,9 +450,9 @@
    "ok": true,
    "listed": 30,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.5
+   "seconds": 1.6
   },
   {
    "company": "Statsministeriet",
@@ -465,12 +465,12 @@
    "company": "Accenture",
    "source": "workday",
    "lines": [],
-   "ok": false,
-   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs",
-   "last_good_listed": 2,
-   "last_data": "2026-10-21T06:31:15+00:00",
-   "failing_since": "2026-10-22T06:37:45+00:00",
-   "seconds": 17.3
+   "ok": true,
+   "listed": 2,
+   "matched": 0,
+   "last_data": "2026-10-24T06:15:54+00:00",
+   "failing_since": null,
+   "seconds": 22.2
   },
   {
    "company": "Danmarks Radio",
@@ -483,40 +483,40 @@
    "last_good_listed": 16,
    "last_data": "2026-10-20T10:26:38+00:00",
    "failing_since": null,
-   "seconds": 0.5
+   "seconds": 0.6
   },
   {
    "company": "DSV",
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 2316,
+   "listed": 2244,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 8.9
+   "seconds": 9.4
   },
   {
    "company": "BDO",
    "source": "emply",
    "lines": [],
    "ok": true,
-   "listed": 26,
+   "listed": 28,
    "matched": 3,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 5.7
+   "seconds": 4.7
   },
   {
    "company": "Rambøll",
    "source": "smartrecruiters",
    "lines": [],
    "ok": true,
-   "listed": 78,
+   "listed": 86,
    "matched": 7,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 33.1
+   "seconds": 38.2
   },
   {
    "company": "Novonesis",
@@ -524,10 +524,10 @@
    "lines": [],
    "ok": true,
    "listed": 71,
-   "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "matched": 2,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 11.9
+   "seconds": 12.9
   },
   {
    "company": "Kromann Reumert",
@@ -536,9 +536,9 @@
    "ok": true,
    "listed": 2,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 1.2
+   "seconds": 1.1
   },
   {
    "company": "Plesner",
@@ -547,9 +547,9 @@
    "ok": true,
    "listed": 6,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.8
+   "seconds": 1.1
   },
   {
    "company": "Gorrissen Federspiel",
@@ -558,9 +558,9 @@
    "ok": true,
    "listed": 1,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 1.2
+   "seconds": 1.8
   },
   {
    "company": "Bech-Bruun",
@@ -569,18 +569,18 @@
    "ok": true,
    "listed": 6,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 1.7
+   "seconds": 3.0
   },
   {
    "company": "Accura",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 6,
-   "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "listed": 5,
+   "matched": 1,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
    "seconds": 0.4
   },
@@ -589,11 +589,11 @@
    "source": "emply",
    "lines": [],
    "ok": true,
-   "listed": 3,
+   "listed": 2,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 2.1
+   "seconds": 2.2
   },
   {
    "company": "HortenDahl",
@@ -609,9 +609,9 @@
    "ok": true,
    "listed": 2,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.9
+   "seconds": 1.1
   },
   {
    "company": "Mazanti-Andersen",
@@ -620,9 +620,9 @@
    "ok": true,
    "listed": 2,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 1.2
+   "seconds": 1.7
   },
   {
    "company": "Schjødt",
@@ -631,7 +631,7 @@
    "ok": true,
    "listed": 5,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
    "seconds": 0.2
   },
@@ -649,9 +649,9 @@
    "ok": true,
    "listed": 1,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.2
+   "seconds": 0.3
   },
   {
    "company": "Grant Thornton",
@@ -660,9 +660,9 @@
    "ok": true,
    "listed": 52,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.9
+   "seconds": 1.0
   },
   {
    "company": "Partner Revision",
@@ -719,30 +719,30 @@
    "lines": [],
    "ok": true,
    "listed": 399,
-   "matched": 44,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "matched": 42,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 11.0
+   "seconds": 12.2
   },
   {
    "company": "Københavns Kommune",
    "source": "generic",
    "lines": [],
    "ok": true,
-   "listed": 264,
-   "matched": 5,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "listed": 246,
+   "matched": 4,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 8.2
+   "seconds": 4.4
   },
   {
    "company": "Frederiksberg Kommune",
    "source": "emply",
    "lines": [],
    "ok": true,
-   "listed": 55,
+   "listed": 52,
    "matched": 4,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
    "seconds": 2.9
   },
@@ -751,11 +751,11 @@
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 29,
+   "listed": 31,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 11.2
+   "seconds": 15.0
   },
   {
    "company": "Alm. Brand Group",
@@ -769,22 +769,22 @@
    "source": "workday",
    "lines": [],
    "ok": true,
-   "listed": 43,
-   "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "listed": 45,
+   "matched": 1,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 14.9
+   "seconds": 17.1
   },
   {
    "company": "ATP",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 23,
+   "listed": 24,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.6
+   "seconds": 0.7
   },
   {
    "company": "PensionDanmark",
@@ -793,9 +793,9 @@
    "ok": true,
    "listed": 1,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.5
+   "seconds": 1.0
   },
   {
    "company": "Sampension",
@@ -804,9 +804,9 @@
    "ok": true,
    "listed": 4,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 8.6
+   "seconds": 9.2
   },
   {
    "company": "AP Pension",
@@ -820,11 +820,11 @@
    "source": "browser",
    "lines": [],
    "ok": true,
-   "listed": 16,
+   "listed": 15,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 43.8
+   "seconds": 49.8
   },
   {
    "company": "Danmarks Skibskredit",
@@ -840,42 +840,42 @@
    "ok": true,
    "listed": 9,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 1.1
+   "seconds": 2.8
   },
   {
    "company": "KMD",
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 19,
-   "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "listed": 14,
+   "matched": 0,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 3.9
+   "seconds": 5.5
   },
   {
    "company": "EG",
    "source": "teamtailor",
    "lines": [],
    "ok": true,
-   "listed": 38,
-   "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "listed": 39,
+   "matched": 2,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 1.2
+   "seconds": 1.8
   },
   {
    "company": "Twoday",
    "source": "teamtailor",
    "lines": [],
    "ok": true,
-   "listed": 32,
+   "listed": 31,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.9
+   "seconds": 1.0
   },
   {
    "company": "Columbus",
@@ -884,20 +884,20 @@
    "ok": true,
    "listed": 5,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.2
+   "seconds": 0.4
   },
   {
    "company": "Capgemini Danmark",
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 6575,
+   "listed": 6611,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 4.2
+   "seconds": 5.6
   },
   {
    "company": "IBM Danmark",
@@ -920,9 +920,9 @@
    "ok": true,
    "listed": 3,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.2
+   "seconds": 1.2
   },
   {
    "company": "Danske Spil",
@@ -931,20 +931,20 @@
    "ok": true,
    "listed": 6,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.2
+   "seconds": 0.7
   },
   {
    "company": "DTU",
    "source": "oracle",
    "lines": [],
    "ok": true,
-   "listed": 363,
+   "listed": 382,
    "matched": 5,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 10.1
+   "seconds": 11.8
   },
   {
    "company": "IT-Universitetet",
@@ -953,42 +953,42 @@
    "ok": true,
    "listed": 7,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.9
+   "seconds": 1.3
   },
   {
    "company": "Københavns Universitet",
    "source": "generic",
    "lines": [],
    "ok": true,
-   "listed": 83,
+   "listed": 88,
    "matched": 9,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 6.3
+   "seconds": 6.2
   },
   {
    "company": "CBS",
    "source": "generic",
    "lines": [],
    "ok": true,
-   "listed": 23,
+   "listed": 25,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 1.3
+   "seconds": 1.7
   },
   {
    "company": "DSB",
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 20,
+   "listed": 14,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 8.0
+   "seconds": 7.1
   },
   {
    "company": "Movia",
@@ -997,20 +997,20 @@
    "ok": true,
    "listed": 6,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 12.5
+   "seconds": 12.6
   },
   {
    "company": "Svitzer",
    "source": "workday",
    "lines": [],
-   "ok": true,
-   "listed": 33,
-   "matched": 1,
+   "ok": false,
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   "last_good_listed": 33,
    "last_data": "2026-10-22T06:37:45+00:00",
-   "failing_since": null,
-   "seconds": 6.5
+   "failing_since": "2026-10-24T06:15:54+00:00",
+   "seconds": 0.9
   },
   {
    "company": "Nordisk Film / Egmont",
@@ -1024,9 +1024,9 @@
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 12,
-   "matched": 3,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "listed": 11,
+   "matched": 2,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
    "seconds": 0.5
   },
@@ -1035,11 +1035,11 @@
    "source": "emply",
    "lines": [],
    "ok": true,
-   "listed": 3,
-   "matched": 3,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "listed": 2,
+   "matched": 2,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 2.2
+   "seconds": 2.3
   },
   {
    "company": "Ældre Sagen",
@@ -1048,9 +1048,9 @@
    "ok": true,
    "listed": 4,
    "matched": 3,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 2.8
+   "seconds": 2.3
   },
   {
    "company": "Lederne",
@@ -1064,11 +1064,11 @@
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 241,
+   "listed": 249,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 40.4
+   "seconds": 49.2
   },
   {
    "company": "Royal Unibrew",
@@ -1077,141 +1077,141 @@
    "ok": true,
    "listed": 10,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 8.4
+   "seconds": 9.1
   },
   {
    "company": "GN Group",
    "source": "workday",
    "lines": [],
-   "ok": true,
-   "listed": 0,
-   "matched": 0,
+   "ok": false,
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   "last_good_listed": null,
    "last_data": null,
-   "failing_since": null,
-   "seconds": 7.4
+   "failing_since": "2026-10-24T06:15:54+00:00",
+   "seconds": 0.6
   },
   {
    "company": "Coloplast",
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 286,
+   "listed": 290,
    "matched": 4,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 9.8
+   "seconds": 11.1
   },
   {
    "company": "Lundbeck",
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 77,
-   "matched": 3,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "listed": 80,
+   "matched": 1,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 5.5
+   "seconds": 7.3
   },
   {
    "company": "Demant",
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 326,
+   "listed": 314,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 11.5
+   "seconds": 14.6
   },
   {
    "company": "FLSmidth",
    "source": "workday",
    "lines": [],
-   "ok": true,
-   "listed": 90,
-   "matched": 0,
+   "ok": false,
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   "last_good_listed": 90,
    "last_data": "2026-10-22T06:37:45+00:00",
-   "failing_since": null,
-   "seconds": 17.1
+   "failing_since": "2026-10-24T06:15:54+00:00",
+   "seconds": 0.7
   },
   {
    "company": "ISS",
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 54,
-   "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "listed": 48,
+   "matched": 1,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 4.9
+   "seconds": 6.0
   },
   {
    "company": "Genmab",
    "source": "phenom",
    "lines": [],
    "ok": true,
-   "listed": 149,
-   "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "listed": 151,
+   "matched": 3,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 52.1
+   "seconds": 76.0
   },
   {
    "company": "Novo Nordisk Fonden",
    "source": "workable",
    "lines": [],
    "ok": true,
-   "listed": 3,
-   "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "listed": 5,
+   "matched": 1,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.3
+   "seconds": 0.8
   },
   {
    "company": "Ambu",
    "source": "sitemap",
    "lines": [],
    "ok": true,
-   "listed": 145,
+   "listed": 149,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 14.5
+   "seconds": 17.8
   },
   {
    "company": "Region Hovedstaden",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 370,
-   "matched": 9,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "listed": 350,
+   "matched": 8,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 8.6
+   "seconds": 10.3
   },
   {
    "company": "Hvidovre Kommune",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 40,
+   "listed": 31,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.8
+   "seconds": 0.7
   },
   {
    "company": "Vallensbæk Kommune",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 13,
+   "listed": 11,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.4
+   "seconds": 0.3
   },
   {
    "company": "Red Barnet",
@@ -1220,7 +1220,7 @@
    "ok": true,
    "listed": 8,
    "matched": 4,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
    "seconds": 0.4
   },
@@ -1229,9 +1229,9 @@
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 4,
+   "listed": 5,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
    "seconds": 0.2
   },
@@ -1240,22 +1240,22 @@
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 3,
-   "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "listed": 4,
+   "matched": 2,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.2
+   "seconds": 0.3
   },
   {
    "company": "SOS International",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 8,
+   "listed": 9,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.3
+   "seconds": 0.7
   },
   {
    "company": "Andel",
@@ -1264,7 +1264,7 @@
    "ok": true,
    "listed": 8,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
    "seconds": 0.2
   },
@@ -1273,9 +1273,9 @@
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 4,
+   "listed": 5,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
    "seconds": 0.2
   },
@@ -1286,9 +1286,9 @@
    "ok": true,
    "listed": 2,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "company": "DM",
@@ -1297,20 +1297,20 @@
    "ok": true,
    "listed": 4,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 3.0
+   "seconds": 2.0
   },
   {
    "company": "Energinet",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 39,
+   "listed": 43,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.9
+   "seconds": 1.0
   },
   {
    "company": "Whiteaway Group",
@@ -1319,20 +1319,20 @@
    "ok": true,
    "listed": 6,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 3.6
+   "seconds": 4.1
   },
   {
    "company": "Telenor",
    "source": "teamtailor",
    "lines": [],
    "ok": true,
-   "listed": 1,
+   "listed": 3,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.5
+   "seconds": 0.7
   },
   {
    "company": "Landal",
@@ -1355,9 +1355,9 @@
    "ok": true,
    "listed": 44,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.9
+   "seconds": 1.2
   },
   {
    "company": "Medicinrådet",
@@ -1366,20 +1366,20 @@
    "ok": true,
    "listed": 2,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 1.9
+   "seconds": 2.1
   },
   {
    "company": "HOFOR",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 20,
+   "listed": 22,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.4
+   "seconds": 0.6
   },
   {
    "company": "Entreprenørfirmaet Nordkysten A/S",
@@ -1388,9 +1388,9 @@
    "ok": true,
    "listed": 10,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.3
+   "seconds": 1.6
   },
   {
    "company": "Grønlands Selvstyre",
@@ -1404,20 +1404,20 @@
    "source": "smartrecruiters",
    "lines": [],
    "ok": true,
-   "listed": 20,
+   "listed": 21,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 8.8
+   "seconds": 9.8
   },
   {
    "company": "Faxe Kommune",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 39,
+   "listed": 38,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
    "seconds": 0.9
   },
@@ -1433,11 +1433,11 @@
    "source": "emply",
    "lines": [],
    "ok": true,
-   "listed": 8,
+   "listed": 7,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 2.9
+   "seconds": 2.2
   },
   {
    "company": "Würth Danmark A/S",
@@ -1451,11 +1451,11 @@
    "source": "teamtailor",
    "lines": [],
    "ok": true,
-   "listed": 13,
+   "listed": 14,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.8
+   "seconds": 0.9
   },
   {
    "company": "Everllence",
@@ -1464,7 +1464,7 @@
    "ok": true,
    "listed": 2,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
    "seconds": 0.2
   },
@@ -1473,11 +1473,11 @@
    "source": "emply",
    "lines": [],
    "ok": true,
-   "listed": 12,
+   "listed": 13,
    "matched": 3,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 3.8
+   "seconds": 2.1
   },
   {
    "company": "Assens Kommune",
@@ -1493,40 +1493,40 @@
    "ok": true,
    "listed": 1,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 1.8
+   "seconds": 1.6
   },
   {
    "company": "VIA University College",
    "source": "emply",
    "lines": [],
    "ok": true,
-   "listed": 19,
+   "listed": 23,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 2.0
+   "seconds": 2.1
   },
   {
    "company": "Professionshøjskolen UCN",
    "source": "emply",
    "lines": [],
    "ok": true,
-   "listed": 6,
+   "listed": 5,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 2.5
+   "seconds": 1.9
   },
   {
    "company": "Udviklings- og Forenklingsstyrelsen",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 75,
+   "listed": 73,
    "matched": 3,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
    "seconds": 1.7
   },
@@ -1535,11 +1535,11 @@
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 6,
+   "listed": 7,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.2
+   "seconds": 0.3
   },
   {
    "company": "Folkekirkens Nødhjælp",
@@ -1548,9 +1548,9 @@
    "ok": true,
    "listed": 3,
    "matched": 3,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 3.3
+   "seconds": 2.7
   },
   {
    "company": "Orkla Danmark",
@@ -1559,31 +1559,31 @@
    "ok": true,
    "listed": 7,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 3.4
+   "seconds": 3.6
   },
   {
    "company": "Nordic Computer A/S",
    "source": "teamtailor",
    "lines": [],
    "ok": true,
-   "listed": 3,
+   "listed": 2,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.3
+   "seconds": 1.2
   },
   {
    "company": "Normal A/S",
    "source": "teamtailor",
    "lines": [],
    "ok": true,
-   "listed": 11,
+   "listed": 13,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 0.2
+   "seconds": 0.5
   },
   {
    "company": "NetNordic Denmark A/S",
@@ -1592,7 +1592,7 @@
    "ok": true,
    "listed": 2,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
    "seconds": 0.5
   },
@@ -1603,40 +1603,40 @@
    "ok": true,
    "listed": 2,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 1.2
+   "seconds": 1.3
   },
   {
    "company": "Solrød Kommune",
    "source": "emply",
    "lines": [],
    "ok": true,
-   "listed": 12,
+   "listed": 16,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 2.3
+   "seconds": 2.1
   },
   {
    "company": "Metroselskabet I/S",
    "source": "emply",
    "lines": [],
    "ok": true,
-   "listed": 6,
+   "listed": 5,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 1.7
+   "seconds": 2.4
   },
   {
    "company": "OK a.m.b.a.",
    "source": "teamtailor",
    "lines": [],
    "ok": true,
-   "listed": 22,
+   "listed": 23,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
    "seconds": 0.8
   },
@@ -1645,9 +1645,9 @@
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 34,
+   "listed": 28,
    "matched": 1,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
    "seconds": 0.8
   },
@@ -1655,12 +1655,12 @@
    "company": "Agilent Technologies Denmark",
    "source": "workday",
    "lines": [],
-   "ok": true,
-   "listed": 131,
-   "matched": 0,
+   "ok": false,
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   "last_good_listed": 131,
    "last_data": "2026-10-22T06:37:45+00:00",
-   "failing_since": null,
-   "seconds": 12.3
+   "failing_since": "2026-10-24T06:15:54+00:00",
+   "seconds": 0.7
   },
   {
    "company": "GEV",
@@ -1669,18 +1669,18 @@
    "ok": true,
    "listed": 2,
    "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 2.0
+   "seconds": 1.8
   },
   {
    "company": "Munck Asfalt",
    "source": "hrmanager",
    "lines": [],
    "ok": true,
-   "listed": 20,
+   "listed": 19,
    "matched": 2,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
    "seconds": 0.5
   },
@@ -1690,10 +1690,87 @@
    "lines": [],
    "ok": true,
    "listed": 9,
-   "matched": 0,
-   "last_data": "2026-10-22T06:37:45+00:00",
+   "matched": 1,
+   "last_data": "2026-10-24T06:15:54+00:00",
    "failing_since": null,
-   "seconds": 2.7
+   "seconds": 2.0
+  },
+  {
+   "company": "PHM Danmark ApS",
+   "source": "emply",
+   "lines": [],
+   "ok": true,
+   "listed": 8,
+   "matched": 1,
+   "last_data": "2026-10-24T06:15:54+00:00",
+   "failing_since": null,
+   "seconds": 2.2
+  },
+  {
+   "company": "Momentum Energy Group A/S",
+   "source": "emply",
+   "lines": [],
+   "ok": true,
+   "listed": 5,
+   "matched": 1,
+   "last_data": "2026-10-24T06:15:54+00:00",
+   "failing_since": null,
+   "seconds": 1.9
+  },
+  {
+   "company": "Visma Public Technologies A/S",
+   "source": "teamtailor",
+   "lines": [],
+   "ok": true,
+   "listed": 2,
+   "matched": 0,
+   "last_data": "2026-10-24T06:15:54+00:00",
+   "failing_since": null,
+   "seconds": 1.0
+  },
+  {
+   "company": "Q-Park Operations Denmark A/S",
+   "source": "teamtailor",
+   "lines": [],
+   "ok": true,
+   "listed": 9,
+   "matched": 1,
+   "last_data": "2026-10-24T06:15:54+00:00",
+   "failing_since": null,
+   "seconds": 1.3
+  },
+  {
+   "company": "JYSK",
+   "source": "smartrecruiters",
+   "lines": [],
+   "ok": true,
+   "listed": 47,
+   "matched": 4,
+   "last_data": "2026-10-24T06:15:54+00:00",
+   "failing_since": null,
+   "seconds": 21.4
+  },
+  {
+   "company": "IBA Erhvervsakademi Kolding",
+   "source": "hrmanager",
+   "lines": [],
+   "ok": true,
+   "listed": 2,
+   "matched": 0,
+   "last_data": "2026-10-24T06:15:54+00:00",
+   "failing_since": null,
+   "seconds": 0.2
+  },
+  {
+   "company": "Erhvervsakademi Dania",
+   "source": "emply",
+   "lines": [],
+   "ok": true,
+   "listed": 6,
+   "matched": 0,
+   "last_data": "2026-10-24T06:15:54+00:00",
+   "failing_since": null,
+   "seconds": 1.9
   }
  ]
 }

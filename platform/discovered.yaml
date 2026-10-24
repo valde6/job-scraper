@@ -455,3 +455,54 @@ employers:
     at: '2026-10-23'
     via: jobindex-link
     evidence: https://meg.career.emply.com/da/ad/are-you-our-new-student-analyst-in-our-analytics-modelling-team/6ksudg
+- name: Visma Public Technologies A/S
+  career_url: https://vismapublictechnologies.teamtailor.com
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://vismapublictechnologies.teamtailor.com
+  discovered:
+    at: '2026-10-24'
+    via: jobindex-link
+    evidence: https://vismapublictechnologies.teamtailor.com/jobs/8608836-people-partner
+- name: Q-Park Operations Denmark A/S
+  career_url: https://karriere.q-park.dk
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://karriere.q-park.dk
+  discovered:
+    at: '2026-10-24'
+    via: jobindex-link
+    evidence: https://karriere.q-park.dk/jobs/8589059-analytisk-og-skriftligt-staerk-studentermedhjaelper-til-juridisk-afdeling?promotion=2261950-jobindex
+- name: JYSK
+  career_url: https://jobs.smartrecruiters.com/JYSK/744000157430084-employer-branding-consultant-30-hours-week?trid=9c834889-bbb7-437c-a553-3bcb9710b121
+  status: opdaget
+  source:
+    type: smartrecruiters
+    company_id: JYSK
+  discovered:
+    at: '2026-10-24'
+    via: jobindex-link
+    evidence: https://jobs.smartrecruiters.com/JYSK/744000157430084-employer-branding-consultant-30-hours-week?trid=9c834889-bbb7-437c-a553-3bcb9710b121
+- name: IBA Erhvervsakademi Kolding
+  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1433&ProjectId=143791&DepartmentId=18956&MediaId=4624
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: ofir_iba
+  discovered:
+    at: '2026-10-24'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1433&ProjectId=143791&DepartmentId=18956&MediaId=4624
+  cid: '1433'
+- name: Erhvervsakademi Dania
+  career_url: https://eadania.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://eadania.career.emply.com
+  discovered:
+    at: '2026-10-24'
+    via: jobindex-link
+    evidence: https://eadania.career.emply.com/ad/adjunkt-lektor-til-finansokonom-ved-erhvervsakademi-dania-i-hobro/wgdj5j/da
