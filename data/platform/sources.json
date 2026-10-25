@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T05:05:11+00:00",
+ "generated_at": "2026-10-25T05:22:43+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -29,7 +29,7 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 64,
+   "listed": 63,
    "matched": 5,
    "error": null
   },
@@ -229,8 +229,8 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 0,
-   "matched": 0,
+   "listed": 42,
+   "matched": 1,
    "error": null
   },
   {
@@ -389,7 +389,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 86,
+   "listed": 84,
    "matched": 1,
    "error": null
   },
@@ -405,7 +405,7 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 403,
+   "listed": 404,
    "matched": 33,
    "error": null
   }

@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-24T05:05:11+00:00",
+ "ts": "2026-10-25T05:22:43+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -35,7 +35,7 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 64,
+   "listed": 63,
    "matched": 5,
    "problem": null,
    "streak": 0,
@@ -285,11 +285,11 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 0,
-   "matched": 0,
-   "problem": "mistænkelig",
-   "streak": 1,
-   "detail": "0 opslag (sidst 45)"
+   "listed": 42,
+   "matched": 1,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "KPMG",
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 7,
+   "streak": 8,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -485,7 +485,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 86,
+   "listed": 84,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -505,7 +505,7 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 403,
+   "listed": 404,
    "matched": 33,
    "problem": null,
    "streak": 0,
@@ -513,7 +513,7 @@
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 7 kørsler i træk – 0 opslag (sidst 16)"
+  "**Danmarks Radio** (hrmanager): mistænkelig i 8 kørsler i træk – 0 opslag (sidst 16)"
  ],
  "active": 31
 }
