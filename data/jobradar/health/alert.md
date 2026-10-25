@@ -1,6 +1,7 @@
 Scraperen har kilder, der ser ud til at være gået i stykker:
 
-- **Danmarks Radio** (hrmanager): mistænkelig i 8 kørsler i træk – 0 opslag (sidst 16)
-- **GN Group** (workday): fejl i 11 kørsler i træk – JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- **Jyske Bank** (generic): fejl i 2 kørsler i træk – HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs
+- **Danmarks Radio** (hrmanager): mistænkelig i 9 kørsler i træk – 0 opslag (sidst 16)
+- **GN Group** (workday): aldrig data i 12 kørsler i træk
 
 Se `data/jobradar/health/report.md`. Tip: giv dette issue til en kode-agent (se AGENTS.md).

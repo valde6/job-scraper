@@ -1,68 +1,4 @@
 Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 978, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 338, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 368, in main
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
-    return fn()
-           ^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 368, in <lambda>
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                                         ^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/workday.py", line 39, in scrape
-    data = r.json()
-           ^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 982, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 978, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 338, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 368, in main
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
-    return fn()
-           ^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 368, in <lambda>
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                                         ^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/workday.py", line 39, in scrape
-    data = r.json()
-           ^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 982, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-Traceback (most recent call last):
   File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 368, in main
     listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -86,156 +22,28 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
     raise HTTPError(http_error_msg, response=self)
 requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 978, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 338, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 368, in main
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
-    return fn()
-           ^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 368, in <lambda>
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                                         ^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/workday.py", line 39, in scrape
-    data = r.json()
-           ^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 982, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 978, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 338, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 368, in main
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
-    return fn()
-           ^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 368, in <lambda>
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                                         ^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/workday.py", line 39, in scrape
-    data = r.json()
-           ^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 982, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 978, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 338, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 368, in main
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
-    return fn()
-           ^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 368, in <lambda>
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                                         ^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/workday.py", line 39, in scrape
-    data = r.json()
-           ^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 982, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 978, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 338, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 368, in main
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
-    return fn()
-           ^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 368, in <lambda>
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                                         ^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/workday.py", line 39, in scrape
-    data = r.json()
-           ^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 982, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-Novo Nordisk                         successfactors  True 37 1 
-A.P. Møller - Mærsk                  workday         False   JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Novo Nordisk                         successfactors  True 36 1 
+A.P. Møller - Mærsk                  workday         True 635 4 
 McKinsey & Company                   mckinsey        True 14 2 
-LEGO Group                           workday         True 104 0 
+LEGO Group                           workday         True 103 0 
 Danske Bank                          oracle          True 111 3 
 Deloitte                             smartrecruiters True 37 5 
-PwC                                  workday         False   JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-Carlsberg                            sitemap         True 125 1 
+PwC                                  workday         True 11 4 
+Carlsberg                            sitemap         True 126 1 
 Boston Consulting Group (BCG)        eightfold       True 4 3 
 Nordea                               nordea          True 86 0 
 EY                                   yello           True 11 7 
 Jyske Bank                           generic         False   HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs
 Nykredit                             browser         True 32 1 
-Bestseller                           sitemap         True 962 0 
-L'Oréal Groupe                       sitemap         True 1694 1 
-Bain & Company                       avature         True 273 0 
-Vestas                               successfactors  True 54 0 
+Bestseller                           sitemap         True 954 0 
+L'Oréal Groupe                       sitemap         True 1674 1 
+Bain & Company                       avature         True 272 0 
+Vestas                               successfactors  True 50 0 
 Implement                            smartrecruiters True 17 1 
-Saxo Bank                            workday         False   JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Saxo Bank                            workday         True 53 4 
 Bang & Olufsen                       browser         True 8 0 
 Arla Foods                           phenom          True 10 0 
-Pandora                              sitemap         True 13210 0 
+Pandora                              sitemap         True 13174 0 
 Dansk Industri                       teamtailor      True 2 0 
 Nordnet                              teamtailor      True 16 0 
 Ørsted                               browser         True 42 1 
@@ -254,9 +62,9 @@ Forsvaret                            generic         True 50 1
 IKEA                                 generic         True 30 0 
 Accenture                            workday         True 2 0 
 Danmarks Radio                       hrmanager       True 0 0 0 opslag (sidst 16)
-DSV                                  sitemap         True 2244 0 
+DSV                                  sitemap         True 2241 0 
 BDO                                  emply           True 28 3 
-Rambøll                              smartrecruiters True 86 7 
+Rambøll                              smartrecruiters True 84 5 
 Novonesis                            workday         True 71 2 
 Kromann Reumert                      generic         True 2 0 
 Plesner                              generic         True 6 2 
@@ -270,11 +78,11 @@ Schjødt                              hrmanager       True 5 0
 Lund Elmer Sandager                  hrmanager       True 1 0 
 Grant Thornton                       hrmanager       True 52 2 
 Statens Rekrutteringsløsning (staten) hrmanager       True 399 42 
-Københavns Kommune                   generic         True 246 4 
+Københavns Kommune                   generic         True 236 7 
 Frederiksberg Kommune                emply           True 52 4 
 Tryg                                 sitemap         True 31 2 
-If Skadeforsikring                   workday         True 45 1 
-ATP                                  hrmanager       True 24 1 
+If Skadeforsikring                   workday         True 44 1 
+ATP                                  hrmanager       True 23 1 
 PensionDanmark                       generic         True 1 0 
 Sampension                           browser         True 4 0 
 Lån & Spar Bank                      browser         True 15 2 
@@ -283,38 +91,38 @@ KMD                                  sitemap         True 14 0
 EG                                   teamtailor      True 39 2 
 Twoday                               teamtailor      True 31 0 
 Columbus                             teamtailor      True 5 0 
-Capgemini Danmark                    sitemap         True 6611 0 
+Capgemini Danmark                    sitemap         True 6597 0 
 Visma DataLøn                        teamtailor      True 3 1 
 Danske Spil                          teamtailor      True 6 2 
-DTU                                  oracle          True 382 5 
+DTU                                  oracle          True 379 5 
 IT-Universitetet                     hrmanager       True 7 1 
-Københavns Universitet               generic         True 88 9 
+Københavns Universitet               generic         True 87 9 
 CBS                                  generic         True 25 1 
 DSB                                  sitemap         True 14 0 
 Movia                                browser         True 6 1 
-Svitzer                              workday         False   JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Svitzer                              workday         True 33 1 
 Dansk Erhverv                        hrmanager       True 11 2 
 Akademikernes A-kasse                emply           True 2 2 
 Ældre Sagen                          emply           True 4 3 
-Coop                                 sitemap         True 249 2 
+Coop                                 sitemap         True 248 2 
 Royal Unibrew                        browser         True 10 0 
-GN Group                             workday         False   JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+GN Group                             workday         True 0 0 
 Coloplast                            sitemap         True 290 4 
 Lundbeck                             sitemap         True 80 1 
 Demant                               sitemap         True 314 0 
-FLSmidth                             workday         False   JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+FLSmidth                             workday         True 89 0 
 ISS                                  sitemap         True 48 1 
-Genmab                               phenom          True 151 3 
+Genmab                               phenom          True 150 3 
 Novo Nordisk Fonden                  workable        True 5 1 
 Ambu                                 sitemap         True 149 1 
 Region Hovedstaden                   hrmanager       True 350 8 
 Hvidovre Kommune                     hrmanager       True 31 0 
-Vallensbæk Kommune                   hrmanager       True 11 0 
+Vallensbæk Kommune                   hrmanager       True 12 0 
 Red Barnet                           hrmanager       True 8 4 
 Kræftens Bekæmpelse                  hrmanager       True 5 2 
 KL                                   hrmanager       True 4 2 
 SOS International                    hrmanager       True 9 2 
-Andel                                hrmanager       True 8 0 
+Andel                                hrmanager       True 7 0 
 TORM                                 hrmanager       True 5 0 
 Tivoli                               hrmanager       True 2 0 
 DM                                   emply           True 4 2 
@@ -334,39 +142,7 @@ Erhvervsakademi København            emply           True 13 3
 Danske Professionshøjskoler          emply           True 1 0 
 VIA University College               emply           True 23 0 
 Professionshøjskolen UCN             emply           True 5 0 
-Udviklings- og Forenklingsstyrelsen  hrmanager       True 73 3 Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 978, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 338, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 368, in main
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
-    return fn()
-           ^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 368, in <lambda>
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                                         ^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/workday.py", line 39, in scrape
-    data = r.json()
-           ^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 982, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
+Udviklings- og Forenklingsstyrelsen  hrmanager       True 73 3 
 Nine United A/S                      hrmanager       True 7 1 
 Folkekirkens Nødhjælp                emply           True 3 3 
 Orkla Danmark                        smartrecruiters True 7 0 
@@ -378,7 +154,7 @@ Solrød Kommune                       emply           True 16 0
 Metroselskabet I/S                   emply           True 5 1 
 OK a.m.b.a.                          teamtailor      True 23 0 
 Greve Kommune                        hrmanager       True 28 1 
-Agilent Technologies Denmark         workday         False   JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Agilent Technologies Denmark         workday         True 134 0 
 GEV                                  emply           True 2 0 
 Munck Asfalt                         hrmanager       True 19 2 
 Blå Kors Danmark                     emply           True 9 1 
@@ -389,6 +165,6 @@ Q-Park Operations Denmark A/S        teamtailor      True 9 1
 JYSK                                 smartrecruiters True 47 4 
 IBA Erhvervsakademi Kolding          hrmanager       True 2 0 
 Erhvervsakademi Dania                emply           True 6 0 
-AI-strukturering: {'cached': 0, 'new': 0, 'failed': 0, 'skipped_no_key': 219, 'over_limit': 0}
+AI-strukturering: {'cached': 0, 'new': 0, 'failed': 0, 'skipped_no_key': 220, 'over_limit': 0}
 
-Færdig: 206 fundet i dag, 219 aktive. Pr. type: {'praktik': 61, 'studiejob': 145, 'graduate': 13}
+Færdig: 220 fundet i dag, 220 aktive. Pr. type: {'studiejob': 148, 'praktik': 59, 'graduate': 13}
