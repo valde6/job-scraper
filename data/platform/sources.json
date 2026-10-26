@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T05:22:43+00:00",
+ "generated_at": "2026-10-26T05:24:48+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -29,7 +29,7 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 63,
+   "listed": 64,
    "matched": 5,
    "error": null
   },
@@ -45,7 +45,7 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 37,
+   "listed": 35,
    "matched": 6,
    "error": null
   },
@@ -77,7 +77,7 @@
    "name": "Nordea",
    "type": "nordea",
    "ok": true,
-   "listed": 8,
+   "listed": 7,
    "matched": 0,
    "error": null
   },
@@ -109,8 +109,8 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 32,
-   "matched": 1,
+   "listed": 30,
+   "matched": 0,
    "error": null
   },
   {
@@ -229,7 +229,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 42,
+   "listed": 38,
    "matched": 1,
    "error": null
   },
@@ -293,8 +293,8 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 6,
-   "matched": 0,
+   "listed": 8,
+   "matched": 1,
    "error": null
   },
   {
@@ -341,7 +341,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 30,
+   "listed": 28,
    "matched": 0,
    "error": null
   },
@@ -357,8 +357,8 @@
    "name": "Accenture",
    "type": "workday",
    "ok": true,
-   "listed": 2,
-   "matched": 2,
+   "listed": 1,
+   "matched": 1,
    "error": null
   },
   {
@@ -389,7 +389,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 84,
+   "listed": 80,
    "matched": 1,
    "error": null
   },
@@ -397,7 +397,7 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 52,
+   "listed": 51,
    "matched": 2,
    "error": null
   },
@@ -405,7 +405,7 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 404,
+   "listed": 400,
    "matched": 33,
    "error": null
   }

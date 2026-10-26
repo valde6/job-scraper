@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-25T05:22:43+00:00",
+ "ts": "2026-10-26T05:24:48+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -35,7 +35,7 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 63,
+   "listed": 64,
    "matched": 5,
    "problem": null,
    "streak": 0,
@@ -55,7 +55,7 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 37,
+   "listed": 35,
    "matched": 6,
    "problem": null,
    "streak": 0,
@@ -95,7 +95,7 @@
    "name": "Nordea",
    "type": "nordea",
    "ok": true,
-   "listed": 8,
+   "listed": 7,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -135,8 +135,8 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 32,
-   "matched": 1,
+   "listed": 30,
+   "matched": 0,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 42,
+   "listed": 38,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -365,8 +365,8 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 6,
-   "matched": 0,
+   "listed": 8,
+   "matched": 1,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -425,7 +425,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 30,
+   "listed": 28,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -445,8 +445,8 @@
    "name": "Accenture",
    "type": "workday",
    "ok": true,
-   "listed": 2,
-   "matched": 2,
+   "listed": 1,
+   "matched": 1,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 8,
+   "streak": 9,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -485,7 +485,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 84,
+   "listed": 80,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -495,7 +495,7 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 52,
+   "listed": 51,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -505,7 +505,7 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 404,
+   "listed": 400,
    "matched": 33,
    "problem": null,
    "streak": 0,
@@ -513,7 +513,7 @@
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 8 kørsler i træk – 0 opslag (sidst 16)"
+  "**Danmarks Radio** (hrmanager): mistænkelig i 9 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 31
+ "active": 28
 }
