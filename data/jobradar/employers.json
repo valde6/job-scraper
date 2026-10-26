@@ -8,10 +8,10 @@
    "domain": "novonordisk.com",
    "source_type": "successfactors",
    "ok": true,
-   "listed": 36,
+   "listed": 29,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "A.P. Møller - Mærsk",
@@ -21,10 +21,10 @@
    "domain": "maersk.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 635,
+   "listed": 633,
    "matched": 4,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "McKinsey & Company",
@@ -37,7 +37,7 @@
    "listed": 14,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "LEGO Group",
@@ -47,10 +47,10 @@
    "domain": "lego.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 103,
+   "listed": 101,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Danske Bank",
@@ -60,10 +60,10 @@
    "domain": "danskebank.com",
    "source_type": "oracle",
    "ok": true,
-   "listed": 111,
+   "listed": 107,
    "matched": 3,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Deloitte",
@@ -73,10 +73,10 @@
    "domain": "deloitte.com",
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 37,
+   "listed": 35,
    "matched": 5,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "PwC",
@@ -89,7 +89,7 @@
    "listed": 11,
    "matched": 4,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Carlsberg",
@@ -99,10 +99,10 @@
    "domain": "carlsberggroup.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 126,
+   "listed": 124,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Boston Consulting Group (BCG)",
@@ -115,7 +115,7 @@
    "listed": 4,
    "matched": 3,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Nordea",
@@ -125,10 +125,10 @@
    "domain": "nordea.com",
    "source_type": "nordea",
    "ok": true,
-   "listed": 86,
+   "listed": 85,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Microsoft",
@@ -154,7 +154,7 @@
    "listed": 11,
    "matched": 7,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Jyske Bank",
@@ -166,7 +166,7 @@
    "ok": false,
    "listed": null,
    "matched": null,
-   "reading": "læses",
+   "reading": "læses-ikke-endnu",
    "last_data": "2026-10-22"
   },
   {
@@ -177,10 +177,10 @@
    "domain": "nykredit.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 32,
-   "matched": 1,
+   "listed": 30,
+   "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Bestseller",
@@ -190,10 +190,10 @@
    "domain": "bestseller.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 954,
+   "listed": 947,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "L'Oréal Groupe",
@@ -203,10 +203,10 @@
    "domain": "loreal.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 1674,
+   "listed": 1658,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Bain & Company",
@@ -216,10 +216,10 @@
    "domain": "bain.com",
    "source_type": "avature",
    "ok": true,
-   "listed": 272,
+   "listed": 273,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Vestas",
@@ -229,10 +229,10 @@
    "domain": "vestas.com",
    "source_type": "successfactors",
    "ok": true,
-   "listed": 50,
+   "listed": 49,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Implement",
@@ -245,7 +245,7 @@
    "listed": 17,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Saxo Bank",
@@ -258,7 +258,7 @@
    "listed": 53,
    "matched": 4,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Finansministeriet",
@@ -271,7 +271,7 @@
    "listed": null,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25",
+   "last_data": "2026-10-26",
    "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
@@ -285,7 +285,7 @@
    "listed": 8,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Danmarks Nationalbank",
@@ -311,7 +311,7 @@
    "listed": 10,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Udenrigsministeriet",
@@ -324,7 +324,7 @@
    "listed": null,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25",
+   "last_data": "2026-10-26",
    "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
@@ -335,10 +335,10 @@
    "domain": "pandoragroup.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 13174,
+   "listed": 13054,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Dansk Industri",
@@ -351,7 +351,7 @@
    "listed": 2,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Nordnet",
@@ -364,7 +364,7 @@
    "listed": 16,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Ørsted",
@@ -374,10 +374,10 @@
    "domain": "orsted.com",
    "source_type": "browser",
    "ok": true,
-   "listed": 42,
+   "listed": 38,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "KPMG",
@@ -390,7 +390,7 @@
    "listed": 18,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Matas",
@@ -403,7 +403,7 @@
    "listed": 14,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Salling Group",
@@ -429,7 +429,7 @@
    "listed": 14,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Københavns Lufthavne",
@@ -439,10 +439,10 @@
    "domain": "cph.dk",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 20,
+   "listed": 14,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Danske Commodities",
@@ -455,7 +455,7 @@
    "listed": 2,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Netcompany",
@@ -468,7 +468,7 @@
    "listed": 28,
    "matched": 4,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "PFA Pension",
@@ -478,10 +478,10 @@
    "domain": "pfa.dk",
    "source_type": "browser",
    "ok": true,
-   "listed": 6,
-   "matched": 1,
+   "listed": 8,
+   "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "SAS",
@@ -494,7 +494,7 @@
    "listed": 14,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Amazon",
@@ -507,7 +507,7 @@
    "listed": 6,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Beierholm",
@@ -520,7 +520,7 @@
    "listed": 29,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "AL Sydbank",
@@ -530,10 +530,10 @@
    "domain": "alsydbank.dk",
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 26,
+   "listed": 24,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Forsvaret",
@@ -543,10 +543,10 @@
    "domain": "forsvaret.dk",
    "source_type": "generic",
    "ok": true,
-   "listed": 50,
+   "listed": 48,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "IKEA",
@@ -556,10 +556,10 @@
    "domain": "ikea.com",
    "source_type": "generic",
    "ok": true,
-   "listed": 30,
+   "listed": 28,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Statsministeriet",
@@ -572,7 +572,7 @@
    "listed": null,
    "matched": null,
    "reading": "læses",
-   "last_data": "2026-10-25",
+   "last_data": "2026-10-26",
    "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
@@ -583,10 +583,10 @@
    "domain": "accenture.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 2,
+   "listed": 1,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Danmarks Radio",
@@ -609,10 +609,10 @@
    "domain": "dsv.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 2241,
+   "listed": 2237,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "BDO",
@@ -625,7 +625,7 @@
    "listed": 28,
    "matched": 3,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Rambøll",
@@ -635,10 +635,10 @@
    "domain": "ramboll.com",
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 84,
-   "matched": 5,
+   "listed": 80,
+   "matched": 3,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Novonesis",
@@ -651,7 +651,7 @@
    "listed": 71,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Kromann Reumert",
@@ -664,7 +664,7 @@
    "listed": 2,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Plesner",
@@ -677,7 +677,7 @@
    "listed": 6,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Gorrissen Federspiel",
@@ -690,7 +690,7 @@
    "listed": 1,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Bech-Bruun",
@@ -703,7 +703,7 @@
    "listed": 6,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Accura",
@@ -716,7 +716,7 @@
    "listed": 5,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Poul Schmith / Kammeradvokaten",
@@ -729,7 +729,7 @@
    "listed": 2,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "HortenDahl",
@@ -755,7 +755,7 @@
    "listed": 2,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Mazanti-Andersen",
@@ -768,7 +768,7 @@
    "listed": 2,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Schjødt",
@@ -781,7 +781,7 @@
    "listed": 5,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Moalem Weitemeyer",
@@ -807,7 +807,7 @@
    "listed": 1,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Grant Thornton",
@@ -820,7 +820,7 @@
    "listed": 52,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Partner Revision",
@@ -846,7 +846,7 @@
    "listed": null,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25",
+   "last_data": "2026-10-26",
    "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
@@ -860,7 +860,7 @@
    "listed": null,
    "matched": null,
    "reading": "læses",
-   "last_data": "2026-10-25",
+   "last_data": "2026-10-26",
    "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
@@ -874,7 +874,7 @@
    "listed": null,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25",
+   "last_data": "2026-10-26",
    "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
@@ -888,7 +888,7 @@
    "listed": null,
    "matched": null,
    "reading": "læses",
-   "last_data": "2026-10-25",
+   "last_data": "2026-10-26",
    "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
@@ -902,7 +902,7 @@
    "listed": null,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25",
+   "last_data": "2026-10-26",
    "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
@@ -916,7 +916,7 @@
    "listed": null,
    "matched": null,
    "reading": "læses",
-   "last_data": "2026-10-25",
+   "last_data": "2026-10-26",
    "via": "Statens Rekrutteringsløsning (staten)"
   },
   {
@@ -927,10 +927,10 @@
    "domain": "kk.dk",
    "source_type": "generic",
    "ok": true,
-   "listed": 236,
-   "matched": 7,
+   "listed": 215,
+   "matched": 6,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Frederiksberg Kommune",
@@ -940,10 +940,10 @@
    "domain": "frederiksberg.dk",
    "source_type": "emply",
    "ok": true,
-   "listed": 52,
+   "listed": 47,
    "matched": 4,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Tryg",
@@ -953,10 +953,10 @@
    "domain": "tryg.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 31,
+   "listed": 27,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Alm. Brand Group",
@@ -982,7 +982,7 @@
    "listed": 44,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "ATP",
@@ -992,10 +992,10 @@
    "domain": "atp.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 23,
+   "listed": 21,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "PensionDanmark",
@@ -1008,7 +1008,7 @@
    "listed": 1,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Sampension",
@@ -1021,7 +1021,7 @@
    "listed": 4,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "AP Pension",
@@ -1047,7 +1047,7 @@
    "listed": 15,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Danmarks Skibskredit",
@@ -1073,7 +1073,7 @@
    "listed": 9,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "KMD",
@@ -1086,7 +1086,7 @@
    "listed": 14,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "EG",
@@ -1096,10 +1096,10 @@
    "domain": "egsoftware.com",
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 39,
+   "listed": 40,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Twoday",
@@ -1112,7 +1112,7 @@
    "listed": 31,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Columbus",
@@ -1125,7 +1125,7 @@
    "listed": 5,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Capgemini Danmark",
@@ -1135,10 +1135,10 @@
    "domain": "capgemini.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 6597,
+   "listed": 6602,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "IBM Danmark",
@@ -1177,7 +1177,7 @@
    "listed": 3,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Danske Spil",
@@ -1187,10 +1187,10 @@
    "domain": "danskespil.dk",
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 6,
+   "listed": 5,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "DTU",
@@ -1200,10 +1200,10 @@
    "domain": "dtu.dk",
    "source_type": "oracle",
    "ok": true,
-   "listed": 379,
-   "matched": 5,
+   "listed": 370,
+   "matched": 4,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "IT-Universitetet",
@@ -1213,10 +1213,10 @@
    "domain": "itu.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 7,
-   "matched": 1,
+   "listed": 4,
+   "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Københavns Universitet",
@@ -1226,10 +1226,10 @@
    "domain": "ku.dk",
    "source_type": "generic",
    "ok": true,
-   "listed": 87,
-   "matched": 9,
+   "listed": 81,
+   "matched": 8,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "CBS",
@@ -1239,10 +1239,10 @@
    "domain": "cbs.dk",
    "source_type": "generic",
    "ok": true,
-   "listed": 25,
+   "listed": 21,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "DSB",
@@ -1252,10 +1252,10 @@
    "domain": "dsb.dk",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 14,
+   "listed": 13,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Movia",
@@ -1268,7 +1268,7 @@
    "listed": 6,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Svitzer",
@@ -1278,10 +1278,10 @@
    "domain": "svitzer.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 33,
-   "matched": 1,
+   "listed": 32,
+   "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Nordisk Film / Egmont",
@@ -1304,10 +1304,10 @@
    "domain": "danskerhverv.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 11,
+   "listed": 9,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Akademikernes A-kasse",
@@ -1320,7 +1320,7 @@
    "listed": 2,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Ældre Sagen",
@@ -1330,10 +1330,10 @@
    "domain": "aeldresagen.dk",
    "source_type": "emply",
    "ok": true,
-   "listed": 4,
-   "matched": 3,
+   "listed": 3,
+   "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Lederne",
@@ -1356,10 +1356,10 @@
    "domain": "coop.dk",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 248,
+   "listed": 227,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Royal Unibrew",
@@ -1372,7 +1372,7 @@
    "listed": 10,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "GN Group",
@@ -1395,10 +1395,10 @@
    "domain": "coloplast.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 290,
+   "listed": 287,
    "matched": 4,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Lundbeck",
@@ -1408,10 +1408,10 @@
    "domain": "lundbeck.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 80,
+   "listed": 79,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Demant",
@@ -1421,10 +1421,10 @@
    "domain": "demant.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 314,
+   "listed": 312,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "FLSmidth",
@@ -1434,10 +1434,10 @@
    "domain": "fls.com",
    "source_type": "workday",
    "ok": true,
-   "listed": 89,
+   "listed": 86,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "ISS",
@@ -1447,10 +1447,10 @@
    "domain": "issworld.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 48,
+   "listed": 47,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Genmab",
@@ -1463,7 +1463,7 @@
    "listed": 150,
    "matched": 3,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Novo Nordisk Fonden",
@@ -1476,7 +1476,7 @@
    "listed": 5,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Ambu",
@@ -1486,10 +1486,10 @@
    "domain": "ambu.com",
    "source_type": "sitemap",
    "ok": true,
-   "listed": 149,
+   "listed": 152,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Region Hovedstaden",
@@ -1499,10 +1499,10 @@
    "domain": "regionh.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 350,
-   "matched": 8,
+   "listed": 311,
+   "matched": 6,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Hvidovre Kommune",
@@ -1512,10 +1512,10 @@
    "domain": "hvidovre.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 31,
+   "listed": 27,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Vallensbæk Kommune",
@@ -1525,10 +1525,10 @@
    "domain": "vallensbaek.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 12,
+   "listed": 11,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Red Barnet",
@@ -1538,10 +1538,10 @@
    "domain": "redbarnet.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 8,
-   "matched": 4,
+   "listed": 7,
+   "matched": 3,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Kræftens Bekæmpelse",
@@ -1554,7 +1554,7 @@
    "listed": 5,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "KL",
@@ -1567,7 +1567,7 @@
    "listed": 4,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "SOS International",
@@ -1580,7 +1580,7 @@
    "listed": 9,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Andel",
@@ -1590,10 +1590,10 @@
    "domain": "andel.dk",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 7,
+   "listed": 6,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "TORM",
@@ -1603,10 +1603,10 @@
    "domain": "torm.com",
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 5,
+   "listed": 2,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Tivoli",
@@ -1619,7 +1619,7 @@
    "listed": 2,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "DM",
@@ -1629,10 +1629,10 @@
    "domain": null,
    "source_type": "emply",
    "ok": true,
-   "listed": 4,
-   "matched": 2,
+   "listed": 3,
+   "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Energinet",
@@ -1642,10 +1642,10 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 43,
+   "listed": 40,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Whiteaway Group",
@@ -1658,7 +1658,7 @@
    "listed": 6,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Telenor",
@@ -1671,7 +1671,7 @@
    "listed": 3,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "GML A/S",
@@ -1684,7 +1684,7 @@
    "listed": 44,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Medicinrådet",
@@ -1697,7 +1697,7 @@
    "listed": 2,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "HOFOR",
@@ -1707,10 +1707,10 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 22,
+   "listed": 21,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Entreprenørfirmaet Nordkysten A/S",
@@ -1723,7 +1723,7 @@
    "listed": 10,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Eurofins",
@@ -1736,7 +1736,7 @@
    "listed": 21,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Faxe Kommune",
@@ -1746,10 +1746,10 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 38,
+   "listed": 30,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Scantox A/S",
@@ -1762,7 +1762,7 @@
    "listed": 7,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "HTH",
@@ -1772,10 +1772,10 @@
    "domain": null,
    "source_type": "teamtailor",
    "ok": true,
-   "listed": 14,
+   "listed": 13,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Everllence",
@@ -1788,7 +1788,7 @@
    "listed": 2,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Erhvervsakademi København",
@@ -1801,7 +1801,7 @@
    "listed": 13,
    "matched": 3,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Danske Professionshøjskoler",
@@ -1814,7 +1814,7 @@
    "listed": 1,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "VIA University College",
@@ -1824,10 +1824,10 @@
    "domain": null,
    "source_type": "emply",
    "ok": true,
-   "listed": 23,
+   "listed": 20,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Professionshøjskolen UCN",
@@ -1840,7 +1840,7 @@
    "listed": 5,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Nine United A/S",
@@ -1853,7 +1853,7 @@
    "listed": 7,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Folkekirkens Nødhjælp",
@@ -1866,7 +1866,7 @@
    "listed": 3,
    "matched": 3,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Orkla Danmark",
@@ -1876,10 +1876,10 @@
    "domain": null,
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 7,
+   "listed": 8,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Nordic Computer A/S",
@@ -1892,7 +1892,7 @@
    "listed": 2,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Normal A/S",
@@ -1905,7 +1905,7 @@
    "listed": 13,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "NetNordic Denmark A/S",
@@ -1918,7 +1918,7 @@
    "listed": 2,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "LGC Biosearch Technologies A/S",
@@ -1931,7 +1931,7 @@
    "listed": 2,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Solrød Kommune",
@@ -1941,10 +1941,10 @@
    "domain": null,
    "source_type": "emply",
    "ok": true,
-   "listed": 16,
+   "listed": 15,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Metroselskabet I/S",
@@ -1957,7 +1957,7 @@
    "listed": 5,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "OK a.m.b.a.",
@@ -1970,7 +1970,7 @@
    "listed": 23,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Greve Kommune",
@@ -1980,10 +1980,10 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 28,
+   "listed": 24,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Agilent Technologies Denmark",
@@ -1993,10 +1993,10 @@
    "domain": null,
    "source_type": "workday",
    "ok": true,
-   "listed": 134,
+   "listed": 133,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "GEV",
@@ -2009,7 +2009,7 @@
    "listed": 2,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Munck Asfalt",
@@ -2019,10 +2019,10 @@
    "domain": null,
    "source_type": "hrmanager",
    "ok": true,
-   "listed": 19,
+   "listed": 18,
    "matched": 2,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Blå Kors Danmark",
@@ -2035,7 +2035,7 @@
    "listed": 9,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "PHM Danmark ApS",
@@ -2048,7 +2048,7 @@
    "listed": 8,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Momentum Energy Group A/S",
@@ -2058,10 +2058,10 @@
    "domain": null,
    "source_type": "emply",
    "ok": true,
-   "listed": 5,
+   "listed": 4,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Visma Public Technologies A/S",
@@ -2074,7 +2074,7 @@
    "listed": 2,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Q-Park Operations Denmark A/S",
@@ -2087,7 +2087,7 @@
    "listed": 9,
    "matched": 1,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "JYSK",
@@ -2097,10 +2097,10 @@
    "domain": null,
    "source_type": "smartrecruiters",
    "ok": true,
-   "listed": 47,
+   "listed": 46,
    "matched": 4,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "IBA Erhvervsakademi Kolding",
@@ -2113,7 +2113,7 @@
    "listed": 2,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Erhvervsakademi Dania",
@@ -2126,19 +2126,7 @@
    "listed": 6,
    "matched": 0,
    "reading": "læses",
-   "last_data": "2026-10-25"
-  },
-  {
-   "name": "Banedanmark",
-   "lines": [],
-   "status": "klar",
-   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
-   "domain": null,
-   "source_type": "hrmanager",
-   "via": "Statens Rekrutteringsløsning (staten)",
-   "ok": true,
-   "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Beskæftigelsesministeriet",
@@ -2150,19 +2138,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
-  },
-  {
-   "name": "Børne- Undervisningsministeriet",
-   "lines": [],
-   "status": "klar",
-   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
-   "domain": null,
-   "source_type": "hrmanager",
-   "via": "Statens Rekrutteringsløsning (staten)",
-   "ok": true,
-   "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Danmarks Domstole",
@@ -2174,7 +2150,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Danmarks Fængsler",
@@ -2186,7 +2162,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Det Danske Filminstitut",
@@ -2198,7 +2174,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Det Kgl. Bibliotek",
@@ -2210,7 +2186,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Det Kongelige Danske Musikkonservatorium",
@@ -2222,19 +2198,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
-  },
-  {
-   "name": "Energistyrelsen",
-   "lines": [],
-   "status": "klar",
-   "career_url": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=statensrekrutteringsloesning_tr",
-   "domain": null,
-   "source_type": "hrmanager",
-   "via": "Statens Rekrutteringsløsning (staten)",
-   "ok": true,
-   "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Folketinget",
@@ -2246,7 +2210,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Fødevarestyrelsen",
@@ -2258,7 +2222,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Institut for Menneskerettigheder",
@@ -2270,7 +2234,7 @@
    "via": "Udviklings- og Forenklingsstyrelsen",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Ministeriet for Samfund og Beredskab",
@@ -2282,7 +2246,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Plan- og Landdistriktsstyrelsen",
@@ -2294,7 +2258,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Røde Kors asylafdeling",
@@ -2306,7 +2270,7 @@
    "via": "Udviklings- og Forenklingsstyrelsen",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Skatteforvaltningen",
@@ -2318,7 +2282,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Slots- og Kulturstyrelsen",
@@ -2330,7 +2294,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Styrelsen for Arbejdsmarked og Rekruttering",
@@ -2342,7 +2306,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Styrelsen for International Rekruttering og Integration",
@@ -2354,7 +2318,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Styrelsen for Undervisning og Kvalitet",
@@ -2366,7 +2330,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Sundhedsdatastyrelsen",
@@ -2378,7 +2342,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "Sundhedsstyrelsen",
@@ -2390,7 +2354,7 @@
    "via": "Statens Rekrutteringsløsning (staten)",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   },
   {
    "name": "TEC",
@@ -2402,7 +2366,7 @@
    "via": "Udviklings- og Forenklingsstyrelsen",
    "ok": true,
    "reading": "læses",
-   "last_data": "2026-10-25"
+   "last_data": "2026-10-26"
   }
  ]
 }
