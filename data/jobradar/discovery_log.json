@@ -1,7 +1,38 @@
 {
- "started": "2026-10-26T06:23:01+00:00",
- "ads_read": 1,
+ "started": "2026-10-27T06:27:11+00:00",
+ "ads_read": 42,
  "candidates": [],
  "added": [],
- "rejected": []
+ "rejected": [
+  {
+   "name": "IT-Universitetet i København",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "119",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181917&DepartmentId=3439&MediaId=5"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181917&DepartmentId=3439&MediaId=5",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Ejner Hessel A/S",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "1302",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1302&ProjectId=145267&DepartmentId=18976&MediaId=4614"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1302&ProjectId=145267&DepartmentId=18976&MediaId=4614",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Odense Kommune",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3256",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144762&DepartmentId=19936&MediaId=4630&SkipAdvertisement=true"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144762&DepartmentId=19936&MediaId=4630&SkipAdvertisement=true",
+   "reason": "HR-Manager-alias ikke fundet"
+  }
+ ]
 }
