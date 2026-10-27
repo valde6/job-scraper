@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-26T05:24:48+00:00",
+ "ts": "2026-10-27T05:40:06+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -15,7 +15,7 @@
    "name": "A.P. Møller - Mærsk",
    "type": "workday",
    "ok": true,
-   "listed": 405,
+   "listed": 403,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -45,7 +45,7 @@
    "name": "Danske Bank",
    "type": "oracle",
    "ok": true,
-   "listed": 4,
+   "listed": 5,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -55,8 +55,8 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 35,
-   "matched": 6,
+   "listed": 38,
+   "matched": 7,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -115,8 +115,8 @@
    "name": "EY",
    "type": "yello",
    "ok": true,
-   "listed": 11,
-   "matched": 4,
+   "listed": 9,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -135,7 +135,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 30,
+   "listed": 32,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -175,7 +175,7 @@
    "name": "Vestas",
    "type": "successfactors",
    "ok": true,
-   "listed": 5,
+   "listed": 6,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -195,7 +195,7 @@
    "name": "Saxo Bank",
    "type": "workday",
    "ok": true,
-   "listed": 27,
+   "listed": 24,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -265,7 +265,7 @@
    "name": "Dansk Industri",
    "type": "teamtailor",
    "ok": true,
-   "listed": 2,
+   "listed": 1,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -285,8 +285,8 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 38,
-   "matched": 1,
+   "listed": 35,
+   "matched": 0,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -355,7 +355,7 @@
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 28,
+   "listed": 27,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -365,7 +365,7 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 8,
+   "listed": 7,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -445,11 +445,11 @@
    "name": "Accenture",
    "type": "workday",
    "ok": true,
-   "listed": 1,
-   "matched": 1,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "listed": 0,
+   "matched": 0,
+   "problem": "mistænkelig",
+   "streak": 1,
+   "detail": "0 opslag (sidst 1)"
   },
   {
    "name": "Danmarks Radio",
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 9,
+   "streak": 10,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -485,7 +485,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 80,
+   "listed": 78,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -505,15 +505,15 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 400,
-   "matched": 33,
+   "listed": 381,
+   "matched": 31,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 9 kørsler i træk – 0 opslag (sidst 16)"
+  "**Danmarks Radio** (hrmanager): mistænkelig i 10 kørsler i træk – 0 opslag (sidst 16)"
  ],
  "active": 28
 }

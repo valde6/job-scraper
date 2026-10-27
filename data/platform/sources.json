@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T05:24:48+00:00",
+ "generated_at": "2026-10-27T05:40:06+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -13,7 +13,7 @@
    "name": "A.P. Møller - Mærsk",
    "type": "workday",
    "ok": true,
-   "listed": 405,
+   "listed": 403,
    "matched": 0,
    "error": null
   },
@@ -37,7 +37,7 @@
    "name": "Danske Bank",
    "type": "oracle",
    "ok": true,
-   "listed": 4,
+   "listed": 5,
    "matched": 2,
    "error": null
   },
@@ -45,8 +45,8 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 35,
-   "matched": 6,
+   "listed": 38,
+   "matched": 7,
    "error": null
   },
   {
@@ -93,8 +93,8 @@
    "name": "EY",
    "type": "yello",
    "ok": true,
-   "listed": 11,
-   "matched": 4,
+   "listed": 9,
+   "matched": 2,
    "error": null
   },
   {
@@ -109,7 +109,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 30,
+   "listed": 32,
    "matched": 0,
    "error": null
   },
@@ -141,7 +141,7 @@
    "name": "Vestas",
    "type": "successfactors",
    "ok": true,
-   "listed": 5,
+   "listed": 6,
    "matched": 0,
    "error": null
   },
@@ -157,7 +157,7 @@
    "name": "Saxo Bank",
    "type": "workday",
    "ok": true,
-   "listed": 27,
+   "listed": 24,
    "matched": 0,
    "error": null
   },
@@ -213,7 +213,7 @@
    "name": "Dansk Industri",
    "type": "teamtailor",
    "ok": true,
-   "listed": 2,
+   "listed": 1,
    "matched": 0,
    "error": null
   },
@@ -229,8 +229,8 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 38,
-   "matched": 1,
+   "listed": 35,
+   "matched": 0,
    "error": null
   },
   {
@@ -285,7 +285,7 @@
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 28,
+   "listed": 27,
    "matched": 2,
    "error": null
   },
@@ -293,7 +293,7 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 8,
+   "listed": 7,
    "matched": 1,
    "error": null
   },
@@ -357,8 +357,8 @@
    "name": "Accenture",
    "type": "workday",
    "ok": true,
-   "listed": 1,
-   "matched": 1,
+   "listed": 0,
+   "matched": 0,
    "error": null
   },
   {
@@ -389,7 +389,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 80,
+   "listed": 78,
    "matched": 1,
    "error": null
   },
@@ -405,8 +405,8 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 400,
-   "matched": 33,
+   "listed": 381,
+   "matched": 31,
    "error": null
   }
  ]
