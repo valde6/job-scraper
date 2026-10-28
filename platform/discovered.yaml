@@ -506,3 +506,65 @@ employers:
     at: '2026-10-24'
     via: jobindex-link
     evidence: https://eadania.career.emply.com/ad/adjunkt-lektor-til-finansokonom-ved-erhvervsakademi-dania-i-hobro/wgdj5j/da
+- name: Teknologisk Institut
+  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1054&ProjectId=145194&DepartmentId=18975&MediaId=4650&SkipAdvertisement=true
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: teknologisk
+  discovered:
+    at: '2026-10-28'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1054&ProjectId=145194&DepartmentId=18975&MediaId=4650&SkipAdvertisement=true
+  cid: '1054'
+- name: Fibia P/S
+  career_url: https://fibia.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://fibia.career.emply.com
+  discovered:
+    at: '2026-10-28'
+    via: jobindex-link
+    evidence: https://fibia.career.emply.com/jobagent
+- name: Oxfam Danmark
+  career_url: https://oxfam-dk.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://oxfam-dk.career.emply.com
+  discovered:
+    at: '2026-10-28'
+    via: jobindex-link
+    evidence: https://oxfam-dk.career.emply.com/ad/praktikant-til-politisk-indflydelsesarbejde-i-oxfam-danmark-foraret-2027/dqli38/da
+- name: SDL Denmark
+  career_url: https://jobs.lever.co/rws/6e4e9691-244b-493a-9a8b-ceed10f0d5a3?lever-origin=applied&lever-source%5B%5D=jobindex
+  status: opdaget
+  source:
+    type: lever
+    account: rws
+  discovered:
+    at: '2026-10-28'
+    via: jobindex-link
+    evidence: https://jobs.lever.co/rws/6e4e9691-244b-493a-9a8b-ceed10f0d5a3?lever-origin=applied&lever-source%5B%5D=jobindex
+- name: Albertslund Kommune
+  career_url: https://albertslund.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://albertslund.career.emply.com
+  discovered:
+    at: '2026-10-28'
+    via: jobindex-link
+    evidence: https://albertslund.career.emply.com/ad/bliv-kontorelev-i-albertslund-kommune-og-fa-ansvar-faglig-udvikling-og-indblik-i/2tjsg1/da
+- name: ARC – Amager Ressourcecenter
+  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2158&ProjectId=143936&DepartmentId=18979&MediaId=4622
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: arc_tr
+  discovered:
+    at: '2026-10-28'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2158&ProjectId=143936&DepartmentId=18979&MediaId=4622
+  cid: '2158'

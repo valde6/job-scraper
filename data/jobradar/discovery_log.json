@@ -1,38 +1,162 @@
 {
- "started": "2026-10-27T06:27:11+00:00",
- "ads_read": 42,
- "candidates": [],
- "added": [],
+ "started": "2026-10-28T06:54:51+00:00",
+ "ads_read": 40,
+ "candidates": [
+  {
+   "name": "Teknologisk Institut",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "1054",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1054&ProjectId=145194&DepartmentId=18975&MediaId=4650&SkipAdvertisement=true"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1054&ProjectId=145194&DepartmentId=18975&MediaId=4650&SkipAdvertisement=true",
+   "cid": "1054",
+   "listed": 9,
+   "matched": 0
+  },
+  {
+   "name": "Fibia P/S",
+   "type": "emply",
+   "cfg": {
+    "url": "https://fibia.career.emply.com"
+   },
+   "evidence": "https://fibia.career.emply.com/jobagent",
+   "listed": 3,
+   "matched": 0
+  },
+  {
+   "name": "Oxfam Danmark",
+   "type": "emply",
+   "cfg": {
+    "url": "https://oxfam-dk.career.emply.com"
+   },
+   "evidence": "https://oxfam-dk.career.emply.com/ad/praktikant-til-politisk-indflydelsesarbejde-i-oxfam-danmark-foraret-2027/dqli38/da",
+   "listed": 6,
+   "matched": 4
+  },
+  {
+   "name": "SDL Denmark",
+   "type": "lever",
+   "cfg": {
+    "account": "rws"
+   },
+   "evidence": "https://jobs.lever.co/rws/6e4e9691-244b-493a-9a8b-ceed10f0d5a3?lever-origin=applied&lever-source%5B%5D=jobindex",
+   "listed": 149,
+   "matched": 0
+  },
+  {
+   "name": "Lemvigh-Müller A/S",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3341",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143605&DepartmentId=19019&MediaId=4635&SkipAdvertisement=true"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143605&DepartmentId=19019&MediaId=4635&SkipAdvertisement=true",
+   "cid": "3341",
+   "listed": 0,
+   "matched": 0
+  },
+  {
+   "name": "Albertslund Kommune",
+   "type": "emply",
+   "cfg": {
+    "url": "https://albertslund.career.emply.com"
+   },
+   "evidence": "https://albertslund.career.emply.com/ad/bliv-kontorelev-i-albertslund-kommune-og-fa-ansvar-faglig-udvikling-og-indblik-i/2tjsg1/da",
+   "listed": 16,
+   "matched": 1
+  },
+  {
+   "name": "ARC – Amager Ressourcecenter",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "2158",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2158&ProjectId=143936&DepartmentId=18979&MediaId=4622"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2158&ProjectId=143936&DepartmentId=18979&MediaId=4622",
+   "cid": "2158",
+   "listed": 4,
+   "matched": 0
+  },
+  {
+   "name": "Københavns Professionshøjskole",
+   "type": "emply",
+   "cfg": {
+    "url": "https://kp.career.emply.com"
+   },
+   "evidence": "https://kp.career.emply.com/ad/timelaerere-og-studenterundervisere-med-naturvidenskabelige-kompetencer-til-sygepl/d6bg52/da",
+   "listed": 0,
+   "matched": 0
+  }
+ ],
+ "added": [
+  {
+   "name": "Teknologisk Institut",
+   "type": "hrmanager",
+   "listed": 9,
+   "matched": 0
+  },
+  {
+   "name": "Fibia P/S",
+   "type": "emply",
+   "listed": 3,
+   "matched": 0
+  },
+  {
+   "name": "Oxfam Danmark",
+   "type": "emply",
+   "listed": 6,
+   "matched": 4
+  },
+  {
+   "name": "SDL Denmark",
+   "type": "lever",
+   "listed": 149,
+   "matched": 0
+  },
+  {
+   "name": "Albertslund Kommune",
+   "type": "emply",
+   "listed": 16,
+   "matched": 1
+  },
+  {
+   "name": "ARC – Amager Ressourcecenter",
+   "type": "hrmanager",
+   "listed": 4,
+   "matched": 0
+  }
+ ],
  "rejected": [
   {
-   "name": "IT-Universitetet i København",
+   "name": "Lemvigh-Müller A/S",
    "type": "hrmanager",
    "cfg": {
-    "cid": "119",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181917&DepartmentId=3439&MediaId=5"
+    "cid": "3341",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143605&DepartmentId=19019&MediaId=4635&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181917&DepartmentId=3439&MediaId=5",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143605&DepartmentId=19019&MediaId=4635&SkipAdvertisement=true",
+   "cid": "3341",
+   "reason": "0 opslag"
+  },
+  {
+   "name": "BILA A/S",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "1523",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1523&ProjectId=144404&DepartmentId=18958&MediaId=5"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1523&ProjectId=144404&DepartmentId=18958&MediaId=5",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
-   "name": "Ejner Hessel A/S",
-   "type": "hrmanager",
+   "name": "Københavns Professionshøjskole",
+   "type": "emply",
    "cfg": {
-    "cid": "1302",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1302&ProjectId=145267&DepartmentId=18976&MediaId=4614"
+    "url": "https://kp.career.emply.com"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1302&ProjectId=145267&DepartmentId=18976&MediaId=4614",
-   "reason": "HR-Manager-alias ikke fundet"
-  },
-  {
-   "name": "Odense Kommune",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "3256",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144762&DepartmentId=19936&MediaId=4630&SkipAdvertisement=true"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144762&DepartmentId=19936&MediaId=4630&SkipAdvertisement=true",
-   "reason": "HR-Manager-alias ikke fundet"
+   "evidence": "https://kp.career.emply.com/ad/timelaerere-og-studenterundervisere-med-naturvidenskabelige-kompetencer-til-sygepl/d6bg52/da",
+   "reason": "0 opslag"
   }
  ]
 }
