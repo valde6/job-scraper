@@ -1,12 +1,12 @@
 {
- "ts": "2026-10-27T05:40:06+00:00",
+ "ts": "2026-10-28T06:21:19+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
    "ok": true,
-   "listed": 2,
-   "matched": 0,
+   "listed": 4,
+   "matched": 1,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -15,7 +15,7 @@
    "name": "A.P. Møller - Mærsk",
    "type": "workday",
    "ok": true,
-   "listed": 403,
+   "listed": 401,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -35,8 +35,8 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 64,
-   "matched": 5,
+   "listed": 63,
+   "matched": 4,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -56,7 +56,7 @@
    "type": "smartrecruiters",
    "ok": true,
    "listed": 38,
-   "matched": 7,
+   "matched": 8,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -95,7 +95,7 @@
    "name": "Nordea",
    "type": "nordea",
    "ok": true,
-   "listed": 7,
+   "listed": 8,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 35,
+   "listed": 40,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -325,8 +325,8 @@
    "name": "PA Consulting Group",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 14,
-   "matched": 0,
+   "listed": 16,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -345,7 +345,7 @@
    "name": "Danske Commodities",
    "type": "teamtailor",
    "ok": true,
-   "listed": 2,
+   "listed": 1,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -355,7 +355,7 @@
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 27,
+   "listed": 28,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -448,7 +448,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 1,
+   "streak": 2,
    "detail": "0 opslag (sidst 1)"
   },
   {
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 10,
+   "streak": 11,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -485,7 +485,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 78,
+   "listed": 81,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -495,7 +495,7 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 51,
+   "listed": 52,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -505,7 +505,7 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 381,
+   "listed": 384,
    "matched": 31,
    "problem": null,
    "streak": 0,
@@ -513,7 +513,8 @@
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 10 kørsler i træk – 0 opslag (sidst 16)"
+  "**Accenture** (workday): mistænkelig i 2 kørsler i træk – 0 opslag (sidst 1)",
+  "**Danmarks Radio** (hrmanager): mistænkelig i 11 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 28
+ "active": 31
 }
