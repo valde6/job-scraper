@@ -1,47 +1,15 @@
 {
- "started": "2026-10-28T06:54:51+00:00",
+ "started": "2026-10-29T07:12:45+00:00",
  "ads_read": 40,
  "candidates": [
   {
-   "name": "Teknologisk Institut",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "1054",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1054&ProjectId=145194&DepartmentId=18975&MediaId=4650&SkipAdvertisement=true"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1054&ProjectId=145194&DepartmentId=18975&MediaId=4650&SkipAdvertisement=true",
-   "cid": "1054",
-   "listed": 9,
-   "matched": 0
-  },
-  {
-   "name": "Fibia P/S",
+   "name": "Dansk Sygeplejeråd",
    "type": "emply",
    "cfg": {
-    "url": "https://fibia.career.emply.com"
+    "url": "https://dsr.career.emply.com"
    },
-   "evidence": "https://fibia.career.emply.com/jobagent",
-   "listed": 3,
-   "matched": 0
-  },
-  {
-   "name": "Oxfam Danmark",
-   "type": "emply",
-   "cfg": {
-    "url": "https://oxfam-dk.career.emply.com"
-   },
-   "evidence": "https://oxfam-dk.career.emply.com/ad/praktikant-til-politisk-indflydelsesarbejde-i-oxfam-danmark-foraret-2027/dqli38/da",
-   "listed": 6,
-   "matched": 4
-  },
-  {
-   "name": "SDL Denmark",
-   "type": "lever",
-   "cfg": {
-    "account": "rws"
-   },
-   "evidence": "https://jobs.lever.co/rws/6e4e9691-244b-493a-9a8b-ceed10f0d5a3?lever-origin=applied&lever-source%5B%5D=jobindex",
-   "listed": 149,
+   "evidence": "https://dsr.career.emply.com/ad/studentermedhjaelper-til-okonomi-faciliteter-i-dansk-sygeplejerad/3pt4kt/da",
+   "listed": 0,
    "matched": 0
   },
   {
@@ -49,33 +17,31 @@
    "type": "hrmanager",
    "cfg": {
     "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143605&DepartmentId=19019&MediaId=4635&SkipAdvertisement=true"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143611&DepartmentId=18998&MediaId=4635&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143605&DepartmentId=19019&MediaId=4635&SkipAdvertisement=true",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143611&DepartmentId=18998&MediaId=4635&SkipAdvertisement=true",
    "cid": "3341",
    "listed": 0,
    "matched": 0
   },
   {
-   "name": "Albertslund Kommune",
-   "type": "emply",
+   "name": "HR Company ApS",
+   "type": "teamtailor",
    "cfg": {
-    "url": "https://albertslund.career.emply.com"
+    "url": "https://hrcompany.teamtailor.com"
    },
-   "evidence": "https://albertslund.career.emply.com/ad/bliv-kontorelev-i-albertslund-kommune-og-fa-ansvar-faglig-udvikling-og-indblik-i/2tjsg1/da",
-   "listed": 16,
-   "matched": 1
+   "evidence": "https://hrcompany.teamtailor.com/jobs/8477199-omsaet-data-til-fremtidens-klimatilpasning-bliv-planlaegger-hos-aquadjurs",
+   "listed": 4,
+   "matched": 0
   },
   {
-   "name": "ARC – Amager Ressourcecenter",
-   "type": "hrmanager",
+   "name": "STARK Danmark",
+   "type": "workday",
    "cfg": {
-    "cid": "2158",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2158&ProjectId=143936&DepartmentId=18979&MediaId=4622"
+    "url": "https://stark.wd3.myworkdayjobs.com/STARK-Denmark"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2158&ProjectId=143936&DepartmentId=18979&MediaId=4622",
-   "cid": "2158",
-   "listed": 4,
+   "evidence": "https://stark.wd3.myworkdayjobs.com/STARK-Denmark/job/RDC-Aarhus/STARK-sger-Chauffrelever_JR13220",
+   "listed": 7,
    "matched": 0
   },
   {
@@ -84,69 +50,70 @@
    "cfg": {
     "url": "https://kp.career.emply.com"
    },
-   "evidence": "https://kp.career.emply.com/ad/timelaerere-og-studenterundervisere-med-naturvidenskabelige-kompetencer-til-sygepl/d6bg52/da",
+   "evidence": "https://kp.career.emply.com/ad/strategisk-udviklingskonsulent-tilkapacitetsopbygning-pa-skoleomradet/w891iu/da",
    "listed": 0,
+   "matched": 0
+  },
+  {
+   "name": "Truvio Commerce Denmark A/S",
+   "type": "teamtailor",
+   "cfg": {
+    "url": "https://truvio.teamtailor.com"
+   },
+   "evidence": "https://truvio.teamtailor.com/jobs/8538858-qa-documentation-automation-engineer",
+   "listed": 8,
    "matched": 0
   }
  ],
  "added": [
   {
-   "name": "Teknologisk Institut",
-   "type": "hrmanager",
-   "listed": 9,
-   "matched": 0
-  },
-  {
-   "name": "Fibia P/S",
-   "type": "emply",
-   "listed": 3,
-   "matched": 0
-  },
-  {
-   "name": "Oxfam Danmark",
-   "type": "emply",
-   "listed": 6,
-   "matched": 4
-  },
-  {
-   "name": "SDL Denmark",
-   "type": "lever",
-   "listed": 149,
-   "matched": 0
-  },
-  {
-   "name": "Albertslund Kommune",
-   "type": "emply",
-   "listed": 16,
-   "matched": 1
-  },
-  {
-   "name": "ARC – Amager Ressourcecenter",
-   "type": "hrmanager",
+   "name": "HR Company ApS",
+   "type": "teamtailor",
    "listed": 4,
+   "matched": 0
+  },
+  {
+   "name": "STARK Danmark",
+   "type": "workday",
+   "listed": 7,
+   "matched": 0
+  },
+  {
+   "name": "Truvio Commerce Denmark A/S",
+   "type": "teamtailor",
+   "listed": 8,
    "matched": 0
   }
  ],
  "rejected": [
   {
+   "name": "Dansk Sygeplejeråd",
+   "type": "emply",
+   "cfg": {
+    "url": "https://dsr.career.emply.com"
+   },
+   "evidence": "https://dsr.career.emply.com/ad/studentermedhjaelper-til-okonomi-faciliteter-i-dansk-sygeplejerad/3pt4kt/da",
+   "reason": "0 opslag"
+  },
+  {
    "name": "Lemvigh-Müller A/S",
    "type": "hrmanager",
    "cfg": {
     "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143605&DepartmentId=19019&MediaId=4635&SkipAdvertisement=true"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143611&DepartmentId=18998&MediaId=4635&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143605&DepartmentId=19019&MediaId=4635&SkipAdvertisement=true",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143611&DepartmentId=18998&MediaId=4635&SkipAdvertisement=true",
    "cid": "3341",
    "reason": "0 opslag"
   },
   {
-   "name": "BILA A/S",
+   "name": "Professionshøjskolen Absalon",
    "type": "hrmanager",
    "cfg": {
-    "cid": "1523",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1523&ProjectId=144404&DepartmentId=18958&MediaId=5"
+    "cid": "5001",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194489&DepartmentId=9378&MediaId=5"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1523&ProjectId=144404&DepartmentId=18958&MediaId=5",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194489&DepartmentId=9378&MediaId=5",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
@@ -155,7 +122,7 @@
    "cfg": {
     "url": "https://kp.career.emply.com"
    },
-   "evidence": "https://kp.career.emply.com/ad/timelaerere-og-studenterundervisere-med-naturvidenskabelige-kompetencer-til-sygepl/d6bg52/da",
+   "evidence": "https://kp.career.emply.com/ad/strategisk-udviklingskonsulent-tilkapacitetsopbygning-pa-skoleomradet/w891iu/da",
    "reason": "0 opslag"
   }
  ]

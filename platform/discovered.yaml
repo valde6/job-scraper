@@ -568,3 +568,33 @@ employers:
     via: jobindex-link
     evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2158&ProjectId=143936&DepartmentId=18979&MediaId=4622
   cid: '2158'
+- name: HR Company ApS
+  career_url: https://hrcompany.teamtailor.com
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://hrcompany.teamtailor.com
+  discovered:
+    at: '2026-10-29'
+    via: jobindex-link
+    evidence: https://hrcompany.teamtailor.com/jobs/8477199-omsaet-data-til-fremtidens-klimatilpasning-bliv-planlaegger-hos-aquadjurs
+- name: STARK Danmark
+  career_url: https://stark.wd3.myworkdayjobs.com/STARK-Denmark
+  status: opdaget
+  source:
+    type: workday
+    url: https://stark.wd3.myworkdayjobs.com/STARK-Denmark
+  discovered:
+    at: '2026-10-29'
+    via: jobindex-link
+    evidence: https://stark.wd3.myworkdayjobs.com/STARK-Denmark/job/RDC-Aarhus/STARK-sger-Chauffrelever_JR13220
+- name: Truvio Commerce Denmark A/S
+  career_url: https://truvio.teamtailor.com
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://truvio.teamtailor.com
+  discovered:
+    at: '2026-10-29'
+    via: jobindex-link
+    evidence: https://truvio.teamtailor.com/jobs/8538858-qa-documentation-automation-engineer
