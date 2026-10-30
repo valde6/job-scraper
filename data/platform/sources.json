@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T06:31:33+00:00",
+ "generated_at": "2026-10-30T06:31:14+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -29,15 +29,15 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 59,
-   "matched": 4,
+   "listed": 60,
+   "matched": 5,
    "error": null
   },
   {
    "name": "Danske Bank",
    "type": "oracle",
    "ok": true,
-   "listed": 4,
+   "listed": 5,
    "matched": 1,
    "error": null
   },
@@ -110,7 +110,7 @@
    "type": "browser",
    "ok": true,
    "listed": 29,
-   "matched": 0,
+   "matched": 1,
    "error": null
   },
   {
@@ -141,7 +141,7 @@
    "name": "Vestas",
    "type": "successfactors",
    "ok": true,
-   "listed": 6,
+   "listed": 7,
    "matched": 0,
    "error": null
   },
@@ -157,7 +157,7 @@
    "name": "Saxo Bank",
    "type": "workday",
    "ok": true,
-   "listed": 26,
+   "listed": 27,
    "matched": 0,
    "error": null
   },
@@ -213,8 +213,8 @@
    "name": "Dansk Industri",
    "type": "teamtailor",
    "ok": true,
-   "listed": 1,
-   "matched": 0,
+   "listed": 4,
+   "matched": 1,
    "error": null
   },
   {
@@ -229,7 +229,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 40,
+   "listed": 41,
    "matched": 0,
    "error": null
   },
@@ -261,7 +261,7 @@
    "name": "PA Consulting Group",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 16,
+   "listed": 14,
    "matched": 2,
    "error": null
   },
@@ -277,7 +277,7 @@
    "name": "Danske Commodities",
    "type": "teamtailor",
    "ok": true,
-   "listed": 2,
+   "listed": 4,
    "matched": 1,
    "error": null
   },
@@ -293,7 +293,7 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 7,
+   "listed": 9,
    "matched": 1,
    "error": null
   },
@@ -397,16 +397,16 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 52,
-   "matched": 2,
+   "listed": 50,
+   "matched": 1,
    "error": null
   },
   {
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 382,
-   "matched": 30,
+   "listed": 393,
+   "matched": 28,
    "error": null
   }
  ]
