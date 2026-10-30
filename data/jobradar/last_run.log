@@ -73,7 +73,7 @@ Traceback (most recent call last):
                        ^^^^^^^^^^^^^^^^
   File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/urllib3/connection.py", line 248, in _new_conn
     raise ConnectTimeoutError(
-urllib3.exceptions.ConnectTimeoutError: (<HTTPSConnection(host='employment.ku.dk', port=443) at 0x7effee327770>, 'Connection to employment.ku.dk timed out. (connect timeout=25)')
+urllib3.exceptions.ConnectTimeoutError: (<HTTPSConnection(host='employment.ku.dk', port=443) at 0x793bb4b01d30>, 'Connection to employment.ku.dk timed out. (connect timeout=25)')
 
 The above exception was the direct cause of the following exception:
 
@@ -87,7 +87,7 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/urllib3/util/retry.py", line 555, in increment
     raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='employment.ku.dk', port=443): Max retries exceeded with url: /all-vacancies/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='employment.ku.dk', port=443) at 0x7effee327770>, 'Connection to employment.ku.dk timed out. (connect timeout=25)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='employment.ku.dk', port=443): Max retries exceeded with url: /all-vacancies/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='employment.ku.dk', port=443) at 0x793bb4b01d30>, 'Connection to employment.ku.dk timed out. (connect timeout=25)'))
 
 During handling of the above exception, another exception occurred:
 
@@ -121,133 +121,133 @@ Traceback (most recent call last):
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/adapters.py", line 666, in send
     raise ConnectTimeout(e, request=request)
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='employment.ku.dk', port=443): Max retries exceeded with url: /all-vacancies/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='employment.ku.dk', port=443) at 0x7effee327770>, 'Connection to employment.ku.dk timed out. (connect timeout=25)'))
-Novo Nordisk                         successfactors  True 32 2 
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='employment.ku.dk', port=443): Max retries exceeded with url: /all-vacancies/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='employment.ku.dk', port=443) at 0x793bb4b01d30>, 'Connection to employment.ku.dk timed out. (connect timeout=25)'))
+Novo Nordisk                         successfactors  True 34 1 
 A.P. Møller - Mærsk                  workday         True 626 4 
 McKinsey & Company                   mckinsey        True 13 2 
-LEGO Group                           workday         True 105 0 
-Danske Bank                          oracle          True 108 2 
+LEGO Group                           workday         True 102 0 
+Danske Bank                          oracle          True 101 2 
 Deloitte                             smartrecruiters True 37 6 
 PwC                                  workday         True 11 4 
-Carlsberg                            sitemap         True 118 1 
+Carlsberg                            sitemap         True 116 1 
 Boston Consulting Group (BCG)        eightfold       True 4 3 
-Nordea                               nordea          True 88 0 
+Nordea                               nordea          True 93 0 
 EY                                   yello           True 9 6 
 Jyske Bank                           generic         False   HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs
-Nykredit                             browser         True 29 0 
-Bestseller                           sitemap         True 929 0 
-L'Oréal Groupe                       sitemap         True 1692 1 
-Bain & Company                       avature         True 270 0 
-Vestas                               successfactors  True 55 0 
+Nykredit                             browser         True 29 1 
+Bestseller                           sitemap         True 931 0 
+L'Oréal Groupe                       sitemap         True 1689 1 
+Bain & Company                       avature         True 268 0 
+Vestas                               successfactors  True 56 0 
 Implement                            smartrecruiters True 18 1 
-Saxo Bank                            workday         True 51 5 
+Saxo Bank                            workday         True 53 5 
 Bang & Olufsen                       browser         True 8 0 
 Arla Foods                           phenom          True 10 0 
-Pandora                              sitemap         True 13013 1 
-Dansk Industri                       teamtailor      True 1 0 
-Nordnet                              teamtailor      True 17 0 
-Ørsted                               browser         True 40 0 
+Pandora                              sitemap         True 13002 1 
+Dansk Industri                       teamtailor      True 4 2 
+Nordnet                              teamtailor      True 16 0 
+Ørsted                               browser         True 41 0 
 KPMG                                 hrmanager       True 18 2 
-Matas                                emply           True 14 2 
-PA Consulting Group                  smartrecruiters True 16 2 
-Københavns Lufthavne                 sitemap         True 16 0 
-Danske Commodities                   teamtailor      True 2 0 
+Matas                                emply           True 14 3 
+PA Consulting Group                  smartrecruiters True 14 2 
+Københavns Lufthavne                 sitemap         True 19 1 
+Danske Commodities                   teamtailor      True 4 0 
 Netcompany                           smartrecruiters True 30 4 
-PFA Pension                          browser         True 7 2 
-SAS                                  sitemap         True 15 0 
+PFA Pension                          browser         True 9 2 
+SAS                                  sitemap         True 17 0 
 Amazon                               amazon          True 6 0 
-Beierholm                            generic         True 30 2 
-AL Sydbank                           teamtailor      True 26 1 
-Forsvaret                            generic         True 50 1 
+Beierholm                            generic         True 31 2 
+AL Sydbank                           teamtailor      True 29 1 
+Forsvaret                            generic         True 48 1 
 IKEA                                 generic         True 30 0 
 Accenture                            workday         True 0 0 0 opslag (sidst 1)
 Danmarks Radio                       hrmanager       True 0 0 0 opslag (sidst 16)
-DSV                                  sitemap         True 2273 0 
-BDO                                  emply           True 29 3 
+DSV                                  sitemap         True 2276 0 
+BDO                                  emply           True 28 3 
 Rambøll                              smartrecruiters True 76 3 
-Novonesis                            workday         True 70 2 
+Novonesis                            workday         True 69 1 
 Kromann Reumert                      generic         True 2 0 
 Plesner                              generic         True 7 2 
 Gorrissen Federspiel                 generic         False   HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/
-Bech-Bruun                           generic         True 6 1 
+Bech-Bruun                           generic         True 7 1 
 Accura                               hrmanager       True 5 1 
 Poul Schmith / Kammeradvokaten       emply           True 2 0 
-DLA Piper Denmark                    generic         True 2 0 
+DLA Piper Denmark                    generic         True 3 1 
 Mazanti-Andersen                     generic         True 2 0 
 Schjødt                              hrmanager       True 6 0 
 Lund Elmer Sandager                  hrmanager       True 1 0 
 Grant Thornton                       hrmanager       True 52 2 
-Statens Rekrutteringsløsning (staten) hrmanager       True 399 38 
-Københavns Kommune                   generic         True 239 5 
-Frederiksberg Kommune                emply           True 49 5 
-Tryg                                 sitemap         True 33 3 
-If Skadeforsikring                   workday         True 46 1 
-ATP                                  hrmanager       True 23 1 
+Statens Rekrutteringsløsning (staten) hrmanager       True 399 40 
+Københavns Kommune                   generic         True 238 8 
+Frederiksberg Kommune                emply           True 53 5 
+Tryg                                 sitemap         True 34 3 
+If Skadeforsikring                   workday         True 47 1 
+ATP                                  hrmanager       True 24 1 
 PensionDanmark                       generic         True 2 1 
 Sampension                           browser         True 6 0 
 Lån & Spar Bank                      browser         True 15 2 
 Söderberg & Partners                 generic         True 7 2 
-KMD                                  sitemap         True 14 0 
-EG                                   teamtailor      True 38 2 
-Twoday                               teamtailor      True 31 0 
+KMD                                  sitemap         True 15 0 
+EG                                   teamtailor      True 37 2 
+Twoday                               teamtailor      True 34 0 
 Columbus                             teamtailor      True 5 0 
-Capgemini Danmark                    sitemap         True 6697 0 
-Visma DataLøn                        teamtailor      True 2 1 
+Capgemini Danmark                    sitemap         True 6747 0 
+Visma DataLøn                        teamtailor      True 1 1 
 Danske Spil                          teamtailor      True 2 0 
-DTU                                  oracle          True 364 4 
-IT-Universitetet                     hrmanager       True 6 1 
-Københavns Universitet               generic         False   ConnectTimeout: HTTPSConnectionPool(host='employment.ku.dk', port=443): Max retries exceeded with url: /all-vacancies/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='employment.ku.dk', port=443) at 0x7effee327770>, 'Connection to employment.ku.dk timed out. (connect timeout=25)'))
-CBS                                  generic         True 18 0 
-DSB                                  sitemap         True 17 0 
+DTU                                  oracle          True 376 5 
+IT-Universitetet                     hrmanager       True 7 1 
+Københavns Universitet               generic         False   ConnectTimeout: HTTPSConnectionPool(host='employment.ku.dk', port=443): Max retries exceeded with url: /all-vacancies/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='employment.ku.dk', port=443) at 0x793bb4b01d30>, 'Connection to employment.ku.dk timed out. (connect timeout=25)'))
+CBS                                  generic         True 20 1 
+DSB                                  sitemap         True 12 0 
 Movia                                browser         True 6 1 
 Svitzer                              workday         True 31 0 
-Dansk Erhverv                        hrmanager       True 10 2 
+Dansk Erhverv                        hrmanager       True 9 2 
 Akademikernes A-kasse                emply           True 1 1 
 Ældre Sagen                          emply           True 3 2 
-Coop                                 sitemap         True 232 2 
+Coop                                 sitemap         True 233 2 
 Royal Unibrew                        browser         True 10 0 
 GN Group                             workday         True 0 0 
 Coloplast                            sitemap         True 282 3 
 Lundbeck                             sitemap         True 85 1 
 Demant                               sitemap         True 320 0 
-FLSmidth                             workday         True 87 0 
-ISS                                  sitemap         True 58 1 
-Genmab                               phenom          True 147 4 
+FLSmidth                             workday         True 83 0 
+ISS                                  sitemap         True 59 1 
+Genmab                               phenom          True 145 4 
 Novo Nordisk Fonden                  workable        True 3 1 
 Ambu                                 sitemap         True 161 1 
-Region Hovedstaden                   hrmanager       True 339 6 
+Region Hovedstaden                   hrmanager       True 372 6 
 Hvidovre Kommune                     hrmanager       True 35 0 
-Vallensbæk Kommune                   hrmanager       True 11 1 
+Vallensbæk Kommune                   hrmanager       True 13 1 
 Red Barnet                           hrmanager       True 7 3 
-Kræftens Bekæmpelse                  hrmanager       True 6 2 
-KL                                   hrmanager       True 5 3 
-SOS International                    hrmanager       True 8 1 
+Kræftens Bekæmpelse                  hrmanager       True 7 2 
+KL                                   hrmanager       True 7 4 
+SOS International                    hrmanager       True 8 0 
 Andel                                hrmanager       True 8 0 
 TORM                                 hrmanager       True 2 0 
 Tivoli                               hrmanager       True 3 0 
 DM                                   emply           True 3 1 
-Energinet                            hrmanager       True 33 0 
+Energinet                            hrmanager       True 34 0 
 Whiteaway Group                      emply           True 6 0 
-Telenor                              teamtailor      True 2 0 
-GML A/S                              teamtailor      True 41 0 
+Telenor                              teamtailor      True 1 0 
+GML A/S                              teamtailor      True 40 0 
 Medicinrådet                         emply           True 2 2 
 HOFOR                                hrmanager       True 20 1 
 Entreprenørfirmaet Nordkysten A/S    teamtailor      True 10 2 
-Eurofins                             smartrecruiters True 20 0 
+Eurofins                             smartrecruiters True 19 0 
 Faxe Kommune                         hrmanager       True 27 0 
 Scantox A/S                          emply           True 7 2 
 HTH                                  teamtailor      True 12 0 
 Everllence                           hrmanager       True 2 0 
-Erhvervsakademi København            emply           True 13 3 
+Erhvervsakademi København            emply           True 11 2 
 Danske Professionshøjskoler          emply           True 1 0 
-VIA University College               emply           True 26 0 
+VIA University College               emply           True 25 0 
 Professionshøjskolen UCN             emply           True 5 0 
-Udviklings- og Forenklingsstyrelsen  hrmanager       True 81 1 
+Udviklings- og Forenklingsstyrelsen  hrmanager       True 79 1 
 Nine United A/S                      hrmanager       True 7 1 
 Folkekirkens Nødhjælp                emply           True 5 4 
 Orkla Danmark                        smartrecruiters True 7 0 
 Nordic Computer A/S                  teamtailor      True 1 0 
-Normal A/S                           teamtailor      True 15 0 
+Normal A/S                           teamtailor      True 14 0 
 NetNordic Denmark A/S                teamtailor      True 2 1 
 LGC Biosearch Technologies A/S       smartrecruiters True 2 0 
 Solrød Kommune                       emply           True 12 0 
@@ -256,24 +256,26 @@ OK a.m.b.a.                          teamtailor      True 19 0
 Greve Kommune                        hrmanager       True 20 1 
 Agilent Technologies Denmark         workday         True 128 0 
 GEV                                  emply           True 1 0 
-Munck Asfalt                         hrmanager       True 19 1 
+Munck Asfalt                         hrmanager       True 20 1 
 Blå Kors Danmark                     emply           True 8 1 
 PHM Danmark ApS                      emply           True 8 1 
 Momentum Energy Group A/S            emply           True 4 1 
 Visma Public Technologies A/S        teamtailor      True 2 0 
-Q-Park Operations Denmark A/S        teamtailor      True 9 1 
+Q-Park Operations Denmark A/S        teamtailor      True 8 1 
 JYSK                                 smartrecruiters True 45 5 
 IBA Erhvervsakademi Kolding          hrmanager       True 2 0 
 Erhvervsakademi Dania                emply           True 7 0 
-Teknologisk Institut                 hrmanager       True 9 0 
-Fibia P/S                            emply           True 3 0 
+Teknologisk Institut                 hrmanager       True 10 0 
+Fibia P/S                            emply           True 6 0 
 Oxfam Danmark                        emply           True 5 3 
-SDL Denmark                          lever           True 156 0 
-Albertslund Kommune                  emply           True 17 0 
-ARC – Amager Ressourcecenter         hrmanager       True 4 0 
+SDL Denmark                          lever           True 154 0 
+Albertslund Kommune                  emply           True 18 0 
+ARC – Amager Ressourcecenter         hrmanager       True 5 0 
 HR Company ApS                       teamtailor      True 4 0 
 STARK Danmark                        workday         True 7 0 
 Truvio Commerce Denmark A/S          teamtailor      True 8 0 
-AI-strukturering: {'cached': 0, 'new': 0, 'failed': 0, 'skipped_no_key': 207, 'over_limit': 0}
+Furesø Kommune                       emply           True 33 2 
+Stevns Kommune                       emply           True 25 0 
+AI-strukturering: {'cached': 0, 'new': 0, 'failed': 0, 'skipped_no_key': 219, 'over_limit': 0}
 
-Færdig: 202 fundet i dag, 207 aktive. Pr. type: {'studiejob': 138, 'praktik': 57, 'graduate': 12}
+Færdig: 214 fundet i dag, 219 aktive. Pr. type: {'studiejob': 146, 'praktik': 61, 'graduate': 12}

@@ -598,3 +598,23 @@ employers:
     at: '2026-10-29'
     via: jobindex-link
     evidence: https://truvio.teamtailor.com/jobs/8538858-qa-documentation-automation-engineer
+- name: Furesø Kommune
+  career_url: https://furesoe.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://furesoe.career.emply.com
+  discovered:
+    at: '2026-10-30'
+    via: jobindex-link
+    evidence: https://furesoe.career.emply.com/ad/natur-og-miljo-fureso-kommune-soger-en-student-til-hjaelp-med-kommunikation-omkr/35cm4x/da
+- name: Stevns Kommune
+  career_url: https://stevns.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://stevns.career.emply.com
+  discovered:
+    at: '2026-10-30'
+    via: jobindex-link
+    evidence: https://stevns.career.emply.com/ad/hjemme-og-sygeplejen-i-stroby-soger-en-sygeplejerske-genopslag/zb9mpn/da

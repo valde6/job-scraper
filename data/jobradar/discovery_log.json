@@ -1,129 +1,72 @@
 {
- "started": "2026-10-29T07:12:45+00:00",
- "ads_read": 40,
+ "started": "2026-10-30T07:15:31+00:00",
+ "ads_read": 33,
  "candidates": [
   {
-   "name": "Dansk Sygeplejeråd",
+   "name": "Furesø Kommune",
    "type": "emply",
    "cfg": {
-    "url": "https://dsr.career.emply.com"
+    "url": "https://furesoe.career.emply.com"
    },
-   "evidence": "https://dsr.career.emply.com/ad/studentermedhjaelper-til-okonomi-faciliteter-i-dansk-sygeplejerad/3pt4kt/da",
-   "listed": 0,
-   "matched": 0
+   "evidence": "https://furesoe.career.emply.com/ad/natur-og-miljo-fureso-kommune-soger-en-student-til-hjaelp-med-kommunikation-omkr/35cm4x/da",
+   "listed": 33,
+   "matched": 2
   },
   {
-   "name": "Lemvigh-Müller A/S",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143611&DepartmentId=18998&MediaId=4635&SkipAdvertisement=true"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143611&DepartmentId=18998&MediaId=4635&SkipAdvertisement=true",
-   "cid": "3341",
-   "listed": 0,
-   "matched": 0
-  },
-  {
-   "name": "HR Company ApS",
-   "type": "teamtailor",
-   "cfg": {
-    "url": "https://hrcompany.teamtailor.com"
-   },
-   "evidence": "https://hrcompany.teamtailor.com/jobs/8477199-omsaet-data-til-fremtidens-klimatilpasning-bliv-planlaegger-hos-aquadjurs",
-   "listed": 4,
-   "matched": 0
-  },
-  {
-   "name": "STARK Danmark",
-   "type": "workday",
-   "cfg": {
-    "url": "https://stark.wd3.myworkdayjobs.com/STARK-Denmark"
-   },
-   "evidence": "https://stark.wd3.myworkdayjobs.com/STARK-Denmark/job/RDC-Aarhus/STARK-sger-Chauffrelever_JR13220",
-   "listed": 7,
-   "matched": 0
-  },
-  {
-   "name": "Københavns Professionshøjskole",
+   "name": "Stevns Kommune",
    "type": "emply",
    "cfg": {
-    "url": "https://kp.career.emply.com"
+    "url": "https://stevns.career.emply.com"
    },
-   "evidence": "https://kp.career.emply.com/ad/strategisk-udviklingskonsulent-tilkapacitetsopbygning-pa-skoleomradet/w891iu/da",
-   "listed": 0,
-   "matched": 0
-  },
-  {
-   "name": "Truvio Commerce Denmark A/S",
-   "type": "teamtailor",
-   "cfg": {
-    "url": "https://truvio.teamtailor.com"
-   },
-   "evidence": "https://truvio.teamtailor.com/jobs/8538858-qa-documentation-automation-engineer",
-   "listed": 8,
-   "matched": 0
+   "evidence": "https://stevns.career.emply.com/ad/hjemme-og-sygeplejen-i-stroby-soger-en-sygeplejerske-genopslag/zb9mpn/da",
+   "listed": 25,
+   "matched": 1
   }
  ],
  "added": [
   {
-   "name": "HR Company ApS",
-   "type": "teamtailor",
-   "listed": 4,
-   "matched": 0
+   "name": "Furesø Kommune",
+   "type": "emply",
+   "listed": 33,
+   "matched": 2
   },
   {
-   "name": "STARK Danmark",
-   "type": "workday",
-   "listed": 7,
-   "matched": 0
-  },
-  {
-   "name": "Truvio Commerce Denmark A/S",
-   "type": "teamtailor",
-   "listed": 8,
-   "matched": 0
+   "name": "Stevns Kommune",
+   "type": "emply",
+   "listed": 25,
+   "matched": 1
   }
  ],
  "rejected": [
   {
-   "name": "Dansk Sygeplejeråd",
-   "type": "emply",
-   "cfg": {
-    "url": "https://dsr.career.emply.com"
-   },
-   "evidence": "https://dsr.career.emply.com/ad/studentermedhjaelper-til-okonomi-faciliteter-i-dansk-sygeplejerad/3pt4kt/da",
-   "reason": "0 opslag"
-  },
-  {
-   "name": "Lemvigh-Müller A/S",
+   "name": "nemlig.com",
    "type": "hrmanager",
    "cfg": {
-    "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143611&DepartmentId=18998&MediaId=4635&SkipAdvertisement=true"
+    "cid": "1202",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1202&ProjectId=144269&DepartmentId=18956&MediaId=59"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143611&DepartmentId=18998&MediaId=4635&SkipAdvertisement=true",
-   "cid": "3341",
-   "reason": "0 opslag"
-  },
-  {
-   "name": "Professionshøjskolen Absalon",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "5001",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194489&DepartmentId=9378&MediaId=5"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194489&DepartmentId=9378&MediaId=5",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1202&ProjectId=144269&DepartmentId=18956&MediaId=59",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
-   "name": "Københavns Professionshøjskole",
-   "type": "emply",
+   "name": "Odense Kommune",
+   "type": "hrmanager",
    "cfg": {
-    "url": "https://kp.career.emply.com"
+    "cid": "3256",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144854&DepartmentId=18956&MediaId=4630&SkipAdvertisement=true"
    },
-   "evidence": "https://kp.career.emply.com/ad/strategisk-udviklingskonsulent-tilkapacitetsopbygning-pa-skoleomradet/w891iu/da",
-   "reason": "0 opslag"
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144854&DepartmentId=18956&MediaId=4630&SkipAdvertisement=true",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Roskilde Universitet",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "1310",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1310&ProjectId=148338&DepartmentId=18978&MediaId=4618"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1310&ProjectId=148338&DepartmentId=18978&MediaId=4618",
+   "reason": "HR-Manager-alias ikke fundet"
   }
  ]
 }
