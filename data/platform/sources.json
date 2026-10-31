@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T06:31:14+00:00",
+ "generated_at": "2026-10-31T06:21:01+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -12,10 +12,10 @@
   {
    "name": "A.P. Møller - Mærsk",
    "type": "workday",
-   "ok": true,
-   "listed": 404,
-   "matched": 0,
-   "error": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
   },
   {
    "name": "McKinsey & Company",
@@ -45,17 +45,17 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 37,
-   "matched": 7,
+   "listed": 35,
+   "matched": 8,
    "error": null
   },
   {
    "name": "PwC",
    "type": "workday",
-   "ok": true,
-   "listed": 11,
-   "matched": 4,
-   "error": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
   },
   {
    "name": "Carlsberg",
@@ -77,7 +77,7 @@
    "name": "Nordea",
    "type": "nordea",
    "ok": true,
-   "listed": 9,
+   "listed": 10,
    "matched": 0,
    "error": null
   },
@@ -93,7 +93,7 @@
    "name": "EY",
    "type": "yello",
    "ok": true,
-   "listed": 9,
+   "listed": 8,
    "matched": 2,
    "error": null
   },
@@ -109,7 +109,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 29,
+   "listed": 32,
    "matched": 1,
    "error": null
   },
@@ -156,10 +156,10 @@
   {
    "name": "Saxo Bank",
    "type": "workday",
-   "ok": true,
-   "listed": 27,
-   "matched": 0,
-   "error": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
   },
   {
    "name": "Finansministeriet",
@@ -213,8 +213,8 @@
    "name": "Dansk Industri",
    "type": "teamtailor",
    "ok": true,
-   "listed": 4,
-   "matched": 1,
+   "listed": 5,
+   "matched": 2,
    "error": null
   },
   {
@@ -229,7 +229,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 41,
+   "listed": 37,
    "matched": 0,
    "error": null
   },
@@ -237,7 +237,7 @@
    "name": "KPMG",
    "type": "hrmanager",
    "ok": true,
-   "listed": 18,
+   "listed": 14,
    "matched": 1,
    "error": null
   },
@@ -293,7 +293,7 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 9,
+   "listed": 8,
    "matched": 1,
    "error": null
   },
@@ -341,7 +341,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 27,
+   "listed": 30,
    "matched": 0,
    "error": null
   },
@@ -389,7 +389,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 76,
+   "listed": 68,
    "matched": 1,
    "error": null
   },
@@ -397,16 +397,16 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 50,
-   "matched": 1,
+   "listed": 47,
+   "matched": 3,
    "error": null
   },
   {
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 393,
-   "matched": 28,
+   "listed": 384,
+   "matched": 29,
    "error": null
   }
  ]
