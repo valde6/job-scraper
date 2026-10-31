@@ -618,3 +618,44 @@ employers:
     at: '2026-10-30'
     via: jobindex-link
     evidence: https://stevns.career.emply.com/ad/hjemme-og-sygeplejen-i-stroby-soger-en-sygeplejerske-genopslag/zb9mpn/da
+- name: Brøndby Kommune
+  career_url: https://brondby.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://brondby.career.emply.com
+  discovered:
+    at: '2026-10-31'
+    via: jobindex-link
+    evidence: https://brondby.career.emply.com/ad/born-unge-og-familier-brondby-kommune-soger-to-socialradgivere-til-henholdsvis/stg56g
+- name: Fleggaard Holding A/S
+  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1192&ProjectId=145362&DepartmentId=18962&MediaId=4660
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: fleggaard
+  discovered:
+    at: '2026-10-31'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1192&ProjectId=145362&DepartmentId=18962&MediaId=4660
+  cid: '1192'
+- name: AFRY
+  career_url: https://jobs.smartrecruiters.com/AFRY/744000158534318-bygningskonstrukt-r-constructing-architect?vq_campaign=d9c3dd43-d93d-5dc2-9843-3ed942947e7b&vq_source=898f5b3b-5c32-4eaa-b0ec-a36622a58a60&igbTracker=974953822&utm_source=jobindex
+  status: opdaget
+  source:
+    type: smartrecruiters
+    company_id: AFRY
+  discovered:
+    at: '2026-10-31'
+    via: jobindex-link
+    evidence: https://jobs.smartrecruiters.com/AFRY/744000158534318-bygningskonstrukt-r-constructing-architect?vq_campaign=d9c3dd43-d93d-5dc2-9843-3ed942947e7b&vq_source=898f5b3b-5c32-4eaa-b0ec-a36622a58a60&igbTracker=974953822&utm_source=jobindex
+- name: Egedal Kommune
+  career_url: https://egedalkommune.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://egedalkommune.career.emply.com
+  discovered:
+    at: '2026-10-31'
+    via: jobindex-link
+    evidence: https://egedalkommune.career.emply.com/ad/i-bornehuset-basthoj-skynder-vi-os-langsomt-mens-vi-venter-pa-dig/rz9l8a/da

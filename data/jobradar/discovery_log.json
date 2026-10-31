@@ -1,51 +1,117 @@
 {
- "started": "2026-10-30T07:15:31+00:00",
- "ads_read": 33,
+ "started": "2026-10-31T07:04:32+00:00",
+ "ads_read": 37,
  "candidates": [
   {
-   "name": "Furesø Kommune",
+   "name": "Brøndby Kommune",
    "type": "emply",
    "cfg": {
-    "url": "https://furesoe.career.emply.com"
+    "url": "https://brondby.career.emply.com"
    },
-   "evidence": "https://furesoe.career.emply.com/ad/natur-og-miljo-fureso-kommune-soger-en-student-til-hjaelp-med-kommunikation-omkr/35cm4x/da",
-   "listed": 33,
-   "matched": 2
+   "evidence": "https://brondby.career.emply.com/ad/born-unge-og-familier-brondby-kommune-soger-to-socialradgivere-til-henholdsvis/stg56g",
+   "listed": 47,
+   "matched": 1
   },
   {
-   "name": "Stevns Kommune",
+   "name": "Fleggaard Holding A/S",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "1192",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1192&ProjectId=145362&DepartmentId=18962&MediaId=4660"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1192&ProjectId=145362&DepartmentId=18962&MediaId=4660",
+   "cid": "1192",
+   "listed": 9,
+   "matched": 0
+  },
+  {
+   "name": "AFRY",
+   "type": "smartrecruiters",
+   "cfg": {
+    "company_id": "AFRY"
+   },
+   "evidence": "https://jobs.smartrecruiters.com/AFRY/744000158534318-bygningskonstrukt-r-constructing-architect?vq_campaign=d9c3dd43-d93d-5dc2-9843-3ed942947e7b&vq_source=898f5b3b-5c32-4eaa-b0ec-a36622a58a60&igbTracker=974953822&utm_source=jobindex",
+   "listed": 21,
+   "matched": 1
+  },
+  {
+   "name": "Lemvigh-Müller A/S",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3341",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143625&DepartmentId=19007&MediaId=4635&SkipAdvertisement=true"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143625&DepartmentId=19007&MediaId=4635&SkipAdvertisement=true",
+   "cid": "3341",
+   "listed": 0,
+   "matched": 0
+  },
+  {
+   "name": "Københavns Professionshøjskole",
    "type": "emply",
    "cfg": {
-    "url": "https://stevns.career.emply.com"
+    "url": "https://kp.career.emply.com"
    },
-   "evidence": "https://stevns.career.emply.com/ad/hjemme-og-sygeplejen-i-stroby-soger-en-sygeplejerske-genopslag/zb9mpn/da",
-   "listed": 25,
+   "evidence": "https://kp.career.emply.com/ad/proceskonsulent-til-facilitering-og-forandringsprocesser-med-et-blik-for-ai-og/plzxef/da",
+   "listed": 0,
+   "matched": 0
+  },
+  {
+   "name": "Egedal Kommune",
+   "type": "emply",
+   "cfg": {
+    "url": "https://egedalkommune.career.emply.com"
+   },
+   "evidence": "https://egedalkommune.career.emply.com/ad/i-bornehuset-basthoj-skynder-vi-os-langsomt-mens-vi-venter-pa-dig/rz9l8a/da",
+   "listed": 41,
    "matched": 1
+  },
+  {
+   "name": "Røde Kors",
+   "type": "emply",
+   "cfg": {
+    "url": "https://rodekors.career.emply.com"
+   },
+   "evidence": "https://rodekors.career.emply.com/ad/rode-kors-soger-koordinator-til-beredskabssektionen/3hd28k/da",
+   "listed": 0,
+   "matched": 0
   }
  ],
  "added": [
   {
-   "name": "Furesø Kommune",
+   "name": "Brøndby Kommune",
    "type": "emply",
-   "listed": 33,
-   "matched": 2
+   "listed": 47,
+   "matched": 1
   },
   {
-   "name": "Stevns Kommune",
+   "name": "Fleggaard Holding A/S",
+   "type": "hrmanager",
+   "listed": 9,
+   "matched": 0
+  },
+  {
+   "name": "AFRY",
+   "type": "smartrecruiters",
+   "listed": 21,
+   "matched": 1
+  },
+  {
+   "name": "Egedal Kommune",
    "type": "emply",
-   "listed": 25,
+   "listed": 41,
    "matched": 1
   }
  ],
  "rejected": [
   {
-   "name": "nemlig.com",
+   "name": "Region Nordjylland",
    "type": "hrmanager",
    "cfg": {
-    "cid": "1202",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1202&ProjectId=144269&DepartmentId=18956&MediaId=59"
+    "cid": "3318",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3318&ProjectId=144864&DepartmentId=19605&MediaId=4632&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1202&ProjectId=144269&DepartmentId=18956&MediaId=59",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3318&ProjectId=144864&DepartmentId=19605&MediaId=4632&SkipAdvertisement=true",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
@@ -53,20 +119,48 @@
    "type": "hrmanager",
    "cfg": {
     "cid": "3256",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144854&DepartmentId=18956&MediaId=4630&SkipAdvertisement=true"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144853&DepartmentId=18956&MediaId=4630&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144854&DepartmentId=18956&MediaId=4630&SkipAdvertisement=true",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144853&DepartmentId=18956&MediaId=4630&SkipAdvertisement=true",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
-   "name": "Roskilde Universitet",
+   "name": "Lemvigh-Müller A/S",
    "type": "hrmanager",
    "cfg": {
-    "cid": "1310",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1310&ProjectId=148338&DepartmentId=18978&MediaId=4618"
+    "cid": "3341",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143625&DepartmentId=19007&MediaId=4635&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1310&ProjectId=148338&DepartmentId=18978&MediaId=4618",
-   "reason": "HR-Manager-alias ikke fundet"
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143625&DepartmentId=19007&MediaId=4635&SkipAdvertisement=true",
+   "cid": "3341",
+   "reason": "0 opslag"
+  },
+  {
+   "name": "Zealand Pharma A/S",
+   "type": "workday",
+   "cfg": {
+    "url": "https://zealandpharma.wd3.myworkdayjobs.com/ExternalCareer"
+   },
+   "evidence": "https://zealandpharma.wd3.myworkdayjobs.com/ExternalCareer/job/Sborg-Denmark/Student-Assistant_JR426",
+   "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+   "name": "Københavns Professionshøjskole",
+   "type": "emply",
+   "cfg": {
+    "url": "https://kp.career.emply.com"
+   },
+   "evidence": "https://kp.career.emply.com/ad/proceskonsulent-til-facilitering-og-forandringsprocesser-med-et-blik-for-ai-og/plzxef/da",
+   "reason": "0 opslag"
+  },
+  {
+   "name": "Røde Kors",
+   "type": "emply",
+   "cfg": {
+    "url": "https://rodekors.career.emply.com"
+   },
+   "evidence": "https://rodekors.career.emply.com/ad/rode-kors-soger-koordinator-til-beredskabssektionen/3hd28k/da",
+   "reason": "0 opslag"
   }
  ]
 }
