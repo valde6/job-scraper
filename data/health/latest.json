@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-31T06:21:01+00:00",
+ "ts": "2026-11-01T06:53:27+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -14,12 +14,12 @@
   {
    "name": "A.P. Møller - Mærsk",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "ok": true,
+   "listed": 404,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "McKinsey & Company",
@@ -64,12 +64,12 @@
   {
    "name": "PwC",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "ok": true,
+   "listed": 10,
+   "matched": 3,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "Carlsberg",
@@ -95,7 +95,7 @@
    "name": "Nordea",
    "type": "nordea",
    "ok": true,
-   "listed": 10,
+   "listed": 7,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -194,12 +194,12 @@
   {
    "name": "Saxo Bank",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "ok": true,
+   "listed": 26,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "Finansministeriet",
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 37,
+   "listed": 26,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -295,7 +295,7 @@
    "name": "KPMG",
    "type": "hrmanager",
    "ok": true,
-   "listed": 14,
+   "listed": 11,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -448,7 +448,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 5,
+   "streak": 6,
    "detail": "0 opslag (sidst 1)"
   },
   {
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 14,
+   "streak": 15,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -485,7 +485,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 68,
+   "listed": 42,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -495,7 +495,7 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 47,
+   "listed": 46,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -505,16 +505,16 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 384,
-   "matched": 29,
+   "listed": 381,
+   "matched": 28,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [
-  "**Accenture** (workday): mistænkelig i 5 kørsler i træk – 0 opslag (sidst 1)",
-  "**Danmarks Radio** (hrmanager): mistænkelig i 14 kørsler i træk – 0 opslag (sidst 16)"
+  "**Accenture** (workday): mistænkelig i 6 kørsler i træk – 0 opslag (sidst 1)",
+  "**Danmarks Radio** (hrmanager): mistænkelig i 15 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 36
+ "active": 35
 }
