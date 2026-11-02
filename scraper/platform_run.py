@@ -28,7 +28,7 @@ from urllib.parse import urlparse
 import yaml
 
 from .adapters import ADAPTERS
-from .common import REJECTED, find_deadline, job_type, region, reject, set_job_types, set_topics
+from .common import PARTTIME_RE, REJECTED, find_deadline, job_type, region, reject, set_job_types, set_topics
 from .run import SOURCE_TIMEOUT, _with_timeout, norm_title, suspicious
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -154,6 +154,11 @@ def build_record(job: dict, employer: dict, rx: dict, now: str) -> dict | None:
     # "mulig" = deltid uden tegn på studier. Kun med, hvis titlen selv rammer et fagligt nøgleord
     # (ellers kommer fx "Laboratory Technician" og "Tutti violinist" med som studiejob).
     if jt == "studiejob" and job.get("fit") == "mulig" and not any(r.search(job["title"]) for r in rx.values()):
+        return None
+    # 2/11 (ugekontrol): "mulig" (deltid uden tegn på studier) gav mest støj – "Administrativ medarbejder til … Rideakademi
+    # - 25 timers stilling", "… (Barselsvikariat)", "Fritidsvejledning (12-15 timer)", Region H's sekretærer. Kun med, når
+    # titlen selv siger deltid/part-time (KPMG "Analyst (part-time) - Corporate Finance").
+    if jt == "studiejob" and job.get("fit") == "mulig" and not PARTTIME_RE.search(job["title"]):
         return None
     deadline = plausible_deadline(job.get("deadline") or find_deadline(desc, date.today().year) or None)
     # 21/10: kildens fristfelt er nogle gange annoncens udløb, ikke ansøgningsfristen. Står der en tidligere frist med

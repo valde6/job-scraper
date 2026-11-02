@@ -161,7 +161,9 @@ EXCLUDE_RE = re.compile(
 PRAKTIK_RE = re.compile(r"\binternship|\binterns?\b(?=\s*(?:$|[-–(),|/:]|(?:for|in|at|to|with|within|på|hos|til|i)\b))|"
                         r"praktikant|praktikophold|\bpraktik\b|sommerpraktik|summer\s+intern", re.I)
 # Afdelingsnavne som "Afd. for Uddannelse og Studerende" er ikke tegn på et studiejob
-STUDENT_SERVICE_RE = re.compile(r"\b(?:for|og|and)\s+studerende\b|\bstudent\s+(?:services|affairs|centre|center)\b", re.I)
+# 2/11: også institutioner med "student" i navnet ("Erfaren sekretariatsprofil … i Studenterrådgivningen" blev "sikker")
+STUDENT_SERVICE_RE = re.compile(r"\b(?:for|og|and)\s+studerende\b|\bstudent\s+(?:services|affairs|centre|center)\b|"
+                                r"studenterrådgivning\w*|studenterhus\w*|studenterforening\w*", re.I)
 # 21/10: sammensatte danske ord ("Revisortrainee 2027" hos KPMG/Beierholm, "revisorgraduate" hos PwC) blev ikke fanget af \b
 GRADUATE_RE = re.compile(r"\bgraduate|\btrainee|nyuddannet|young\s+professional|"
                          r"(?:revisor|outsourcing|management|finans|økonomi|regnskabs|it|hr|salgs|indkøbs)(?:trainee|graduate)\b",
@@ -169,7 +171,7 @@ GRADUATE_RE = re.compile(r"\bgraduate|\btrainee|nyuddannet|young\s+professional|
 HARD_EXCLUDE_RE = re.compile(
     r"\bph\.?d\b|postdoc|bachelorprojekt|speciale|thesis|"
     r"student\s+(?:recruit|lead|engagement|advisor|counsel)|studievejled|\bsenior\b|"
-    r"laborant|lærling|\belev\b|kontorelev|elevplads|erhvervsuddannelse|apprentice|skolepraktik|"
+    r"laborant|lærling|elev(?:er|en|erne)?\b|elevplads|erhvervsuddannelse|apprentice|skolepraktik|\berfaren\b|"
     r"pensionerede|genansættelse",
     re.I,
 )
@@ -187,6 +189,9 @@ RETAIL_RE = re.compile(
     r"kassemedarbejder|kasse/kiosk|\bkiosk\b|ferskvare|lukkeansvarlig|servicemedarbejder|[ou]\w*\s+18\s+år|sabb?atår|"
     r"7-eleven|\bcashier|(?:store|retail)\s+(?:assistant|associate)|opfyldning|varepåfyld|lagermedarbejder|"
     r"rengøring|\bafløser|\bkok\b|\bcater|\btjener\b|opvask|chauffør|pakkemedarbejder|ufaglært|"
+    # 2/11 (ugekontrol): JYSK "Deltidssælger u/18 år", "Store Manager Trainee", Matas "Manager Trainee" (butiksleder) og
+    # Matas "Booking- og SoMe-ansvarlig til Matas Lyngby Storcenter". "Management trainee" (banker) rammes ikke.
+    r"sælger(?:e|en)?\b|store\s+manager|\bmanager\s+trainee|butiks(?:chef|leder)|storcenter|"
     # 21/10: museums-/biografbutik og billetsalg (Cinemateket, Statens Naturhistoriske Museum)
     r"butiks-\s+og\s+billet|\bbutik,\s*billet|billetsalg|billetskranke|gæsteservice",
     re.I,
@@ -198,7 +203,13 @@ RETAIL_RE = re.compile(
 PROFESSION_RE = re.compile(
     r"\blæger?\b|reservelæge|overlæge|speciallæge|afdelingslæge|sygeplejersk|farmakonom|tandlæge|tandplejer|dyrlæge|"
     r"jordemo[dr]|fysioterapeut|ergoterapeut|bioanalytiker|radiograf|\bsosu\b|social-\s*og\s*sundheds|pædagog|"
-    r"fle[kx]s-?job|tilkaldevikar|timelønnet\s+vikar",
+    r"fle[kx]s-?job|tilkaldevikar|timelønnet\s+vikar|"
+    # 2/11 (ugekontrol + gennemgang af alle aktive job): pleje/omsorg, vikariater, undervisere og sekretærer kom med som
+    # studiejob (Egedal "Weekendafløsere til Plejecenter", Brøndby "Teamkoordinator til … Hjemmepleje", Greve "ledsagere
+    # til borgere", Frederiksberg "… (Barselsvikariat)", Musikkonservatoriet "Studielektor", Region H "sekretærteam",
+    # Arla "Mejeri trainee").
+    r"plejecenter|plejehjem|hjemmepleje|døgninstitution|\bbosted|ledsager|\w*vikariat|lektor\b|adjunkt|"
+    r"sekretær(?!iat)|receptionist|mejeri",
     re.I,
 )
 _EXTRA_TYPES: set[str] = set()
@@ -224,6 +235,8 @@ def job_type(title: str, text: str = "") -> str | None:
         return None
     if PROFESSION_RE.search(t) and not STUDENT_RE.search(t):
         return None
+    if fulltime_hours(t) and not STUDENT_RE.search(t):
+        return None                       # 2/11: "Teamkoordinator … - 37 timer uden weekendvagt" (Brøndby)
     if PRAKTIK_RE.search(t):
         return "praktik"
     if GRADUATE_RE.search(t):
@@ -337,9 +350,11 @@ def region(loc: str | None, title: str = "") -> str | None:
     title_zealand = _has_word(title_cph, tl) or _has_word(SJ_PLACES, tl)
     specific = _GENERIC_ZEALAND_RE.sub(" ", t)
     in_zealand = any(p in t for p in CPH_PLACES) or any(p in t for p in SJ_PLACES)
-    if in_zealand and not any(p in specific for p in CPH_PLACES + SJ_PLACES) \
-            and _has_word(NON_SJ, tl) and not title_zealand:
-        return None                       # kun "Region Hovedstaden" som sted, men titlen siger fx Østjylland
+    if _has_word(NON_SJ, tl) and not title_zealand:
+        # Titlen siger en by/egn uden for Sjælland og ingen sjællandsk: titlen vinder over lokationen, som ofte er
+        # hovedkontoret eller kun regionen (Danmarks Fængsler: "… arresthuse i Østjylland" med "Region Hovedstaden";
+        # 2/11: Munck "… til Munck Havne & Anlæg, Aalborg" med hovedkontoret i Glostrup som sted)
+        return None
     if any(p in t for p in CPH_PLACES):
         return "storkbh"
     if any(p in t for p in SJ_PLACES):

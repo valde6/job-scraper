@@ -394,3 +394,14 @@ def test_apply_link_is_the_posting_not_a_form(rx):
     j = Job(company="Tryg", title="Studentermedhjælper til Compliance", url="", apply_url="https://x/apply",
             location="København", description_md="compliance").to_dict()
     assert P.build_record(j, emp(), rx, "x")["apply_url"] == "https://x/apply"     # uden opslag: kildens link
+
+
+def test_mulig_studiejob_needs_parttime_in_title(rx):
+    """2/11 (ugekontrol): deltid uden tegn på studier ("mulig") gav mest støj. Kun med, når titlen siger deltid/part-time."""
+    def rec(title, body="Stillingen er på 20 timer om ugen. Du arbejder med administration og Excel."):
+        j = Job(company="Tryg", title=title, url="https://x/9", location="København", description_md=body,
+                fit="mulig", source="hrmanager").to_dict()
+        return P.build_record(j, emp(), rx, "x")
+    assert rec("Administrativ medarbejder til Vallensbæk Rideakademi - 25 timers stilling") is None
+    assert rec("Administrativ medarbejder – 20 timer om ugen - til en bred vifte af opgaver") is None
+    assert rec("Analyst (part-time) - KPMG Corporate Finance team")["job_type"] == "studiejob"

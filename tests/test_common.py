@@ -264,3 +264,43 @@ def test_digital_sales_associate_is_not_retail():
 def test_find_deadline_require_year():
     assert find_deadline("Søg senest 3. nov.", 2026, require_year=True) is None
     assert find_deadline("Søg senest 3. nov. 2026", 2026, require_year=True) == "2026-11-03"
+
+
+def test_ugekontrol_2_november_wrong_jobs_are_filtered():
+    """2/11: job, som ugekontrollen markerede, og som stadig var aktive efter natpatchen fra 21/10."""
+    from scraper.common import job_type, set_job_types
+    set_job_types({"studiejob", "praktik", "graduate"})
+    body = "Vi søger studerende på deltid, 15 timer om ugen ved siden af dit studie."
+    for t in ["Deltidssælger u/18 år til JYSK KBH K", "Uopfordrede ansøgninger til Deltidssælger o/18 år",
+              "Uopfordrede ansøgninger til Store Manager Trainee",
+              "Bliv fremtidens leder i Matas – start din karriere som Manager Trainee!",
+              "Booking- og SoMe-ansvarlig til Matas Lyngby Storcenter – 12-15 timer om ugen",
+              "Weekendafløsere til Plejecenter Damgårdsparken",
+              "Teamkoordinator til Brøndbyvester Hjemmepleje - 37 timer uden weekendvagt - genopslag",
+              "Greve Kommune søger ledsagere til borgere med nedsat funktionsevne",
+              "Administrativ medarbejder til Børneambassaden (Barselsvikariat)",
+              "Studielektor i repetition for sangere, akkompagnement for pianister",
+              "Bliv en del af vores stærke sekretærteam i Led- og Knoglekirurgi",
+              "Serviceminded receptionist til Præhospitalet i Region Østdanmark",
+              "Erfaren sekretariatsprofil til ledelsesunderstøttelse i Studenterrådgivningen",
+              "IT-supportelev - bliv en del af et stærkt Service Desk-team i en levende uddannelsesverden",
+              "Logistik- og indkøbselev til internationale byggeprojekter",
+              "Mejeri trainee, Arla foods Branderup mejeri."]:
+        assert job_type(t, body) is None, t
+    # Det, der skal blive: rigtige studiejob med de samme ord i nærheden
+    for t, jt in [("Studentermedhjælper til sekretariatet i Institut for Økonomi", "studiejob"),
+                  ("Studentermedhjælper til Center for Ungdomsuddannelser", "studiejob"),
+                  ("Management Trainee Programme 2027 – Danske Bank", "graduate"),
+                  ("Studentermedhjælper til salg og rådgivning", "studiejob"),
+                  ("Sygeplejestuderende til weekendvagter på plejecenter", "studiejob"),
+                  ("Studerende til vikariat i kommunikationsafdelingen", "studiejob"),
+                  ("Student Assistant, Relevant Analytics", "studiejob")]:
+        assert job_type(t, body) == jt, t
+
+
+def test_region_title_town_outside_zealand_wins_over_hq_address():
+    """2/11: Munck "… til Munck Havne & Anlæg, Aalborg" havde hovedkontoret i Glostrup som sted."""
+    from scraper.common import region
+    assert region("Produktionsvej 24. 2600 Glostrup", "Ingeniørpraktikanter til Munck Havne & Anlæg, Aalborg") is None
+    assert region("Copenhagen, Aarhus or Aalborg", "Student Assistant, Netcompany Consulting") == "storkbh"
+    assert region("Glostrup", "Studentermedhjælper til vores kontorer i Aarhus og Glostrup") == "storkbh"
