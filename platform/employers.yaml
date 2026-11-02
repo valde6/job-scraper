@@ -268,14 +268,15 @@ employers:
   aliases:
   - DI - Dansk Industri
 - name: Nordnet
-  career_url: https://www.nordnet.dk/dk/om-nordnet/karriere
+  career_url: https://career.nordnetab.com/jobs
   status: klar
   source:
     type: teamtailor
     url: https://career.nordnetab.com
   aliases:
   - Nordnet Bank
-  note: Teamtailor (fundet 16/10 via web-søgning – ikke verificeret endnu). Oftest kun job i Stockholm
+  note: Teamtailor (verificeret i browseren 2/11 – 17 opslag, alle i Stockholm/Helsinki). Den gamle karriereside
+    nordnet.dk/dk/om-nordnet/karriere giver 404
 - name: Ørsted
   career_url: https://orsted.com/en/careers
   status: klar
@@ -467,11 +468,13 @@ employers:
   - Accenture A/S
   note: 20/10 – Workday svarede 429; pause mellem kaldene
 - name: Danmarks Radio
-  career_url: https://www.dr.dk/om-dr/job-i-dr
+  career_url: https://www.dr.dk/om-dr/job
   status: klar
   source:
-    type: hrmanager
-    customer: danmarksradio
+    type: sitemap
+    url: https://dr.jobs.hr.cloud.sap
+  note: 2/11 – DR er flyttet fra HR-Manager (0 opslag i 16 kørsler) til SAP SuccessFactors (dr.jobs.hr.cloud.sap, sitemap
+    med 21 opslag, bl.a. "Universitetspraktikanter til Deadline"). Den gamle karriereside /om-dr/job-i-dr giver 404
 - name: DSV
   career_url: https://www.dsv.com/en/careers
   status: klar
@@ -626,12 +629,19 @@ employers:
 - name: Grant Thornton
   region: storkbh
   domain: grantthornton.dk
-  career_url: https://www.grantthornton.dk/karriere/
+  career_url: https://www.grantthornton.dk/karriere/ledige-stillinger/
   status: klar
   source:
-    type: hrmanager
-    customer: grantthornton
-  note: HR-Manager alias "grantthornton" (52 opslag 15/10)
+    type: generic
+    list_urls:
+    - https://www.grantthornton.dk/karriere/ledige-stillinger/
+    - https://www.grantthornton.dk/karriere/
+    link_pattern: grantthornton\.dk/karriere/ledige-stillinger/[a-z0-9-]+/?$
+    title_from: detail
+    dk_only: true
+  note: 2/11 – HR-Manager-aliaset "grantthornton" er Grant Thornton Irland (Dublin, Longford). Den danske liste ligger på
+    grantthornton.dk med schema.org JobPosting pr. opslag (fx "Studentermedhjælper til kommunikation og marketing",
+    som manglede i appen). Ansøgning sker via Jobindex-link, men appen linker til opslaget på grantthornton.dk
 - name: Partner Revision
   career_url: https://www.partner-revision.dk/om-os/karriere
   status: ikke-tilladt
@@ -987,11 +997,12 @@ employers:
   note: SuccessFactors classic via browser (fundet af discovery)
 - name: GN Group
   career_url: https://www.gn.com/careers
-  status: tjek
+  status: klar
   source:
     type: workday
     url: https://gn.wd3.myworkdayjobs.com/GN-Careers
-  note: Workday-siden er lukket til start november 2026 (salg af Hearing til Amplifon) – tjek igen
+  note: 2/11 – Workday-siden er åben igen, men har kun 5 opslag i alt (Ballerup og USA) og ingen studiejob efter salget
+    af Hearing til Amplifon. 0 er altså korrekt, ikke en fejl
 - name: Coloplast
   career_url: https://www.coloplast.com/careers/
   status: klar
