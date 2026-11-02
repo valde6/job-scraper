@@ -1,11 +1,11 @@
 {
- "ts": "2026-11-01T06:53:27+00:00",
+ "ts": "2026-11-02T06:53:43+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
    "ok": true,
-   "listed": 4,
+   "listed": 3,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -15,7 +15,7 @@
    "name": "A.P. Møller - Mærsk",
    "type": "workday",
    "ok": true,
-   "listed": 404,
+   "listed": 405,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -55,8 +55,8 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 35,
-   "matched": 8,
+   "listed": 30,
+   "matched": 7,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -65,7 +65,7 @@
    "name": "PwC",
    "type": "workday",
    "ok": true,
-   "listed": 10,
+   "listed": 9,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -135,7 +135,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 32,
+   "listed": 30,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -195,7 +195,7 @@
    "name": "Saxo Bank",
    "type": "workday",
    "ok": true,
-   "listed": 26,
+   "listed": 27,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 26,
+   "listed": 25,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -365,7 +365,7 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 8,
+   "listed": 6,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -448,7 +448,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 6,
+   "streak": 7,
    "detail": "0 opslag (sidst 1)"
   },
   {
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 15,
+   "streak": 16,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -485,7 +485,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 42,
+   "listed": 37,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -505,7 +505,7 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 381,
+   "listed": 383,
    "matched": 28,
    "problem": null,
    "streak": 0,
@@ -513,8 +513,8 @@
   }
  ],
  "alerts": [
-  "**Accenture** (workday): mistænkelig i 6 kørsler i træk – 0 opslag (sidst 1)",
-  "**Danmarks Radio** (hrmanager): mistænkelig i 15 kørsler i træk – 0 opslag (sidst 16)"
+  "**Accenture** (workday): mistænkelig i 7 kørsler i træk – 0 opslag (sidst 1)",
+  "**Danmarks Radio** (hrmanager): mistænkelig i 16 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 35
+ "active": 34
 }
