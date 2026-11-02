@@ -130,6 +130,15 @@ def plausible_deadline(deadline: str | None, today: date | None = None) -> str |
     return None if d > (today or date.today()) + timedelta(days=MAX_DEADLINE_DAYS) else deadline[:10]
 
 
+def posting_url(job: dict) -> str | None:
+    """Linket bag "Søg hos …" i appen: selve opslaget hos arbejdsgiveren, ikke en direkte ansøgningsformular.
+    2/11: adapternes ansøgningslinks var ofte døde eller forkerte – Oracle-adapterens `<opslag>/apply` giver "Page not
+    found" (Danske Bank, DTU), HR-Managers `SkipAdvertisement=true` springer selve opslaget over, og den generiske
+    adapter tog første link med "ansøg" (CBS: "Ansøgning og optagelse" på bacheloruddannelserne). Opslaget har altid
+    arbejdsgiverens egen "Søg"-knap, og det er den side, linkkontrollen tjekker."""
+    return job.get("url") or job.get("apply_url") or None
+
+
 def build_record(job: dict, employer: dict, rx: dict, now: str) -> dict | None:
     """Job fra en adapter → platform-job, eller None hvis det ikke hører til i Jobradar."""
     jt = job_type(job["title"], job.get("description_md", ""))
@@ -151,7 +160,7 @@ def build_record(job: dict, employer: dict, rx: dict, now: str) -> dict | None:
     text_dl = find_deadline(desc, date.today().year, require_year=True) if job.get("deadline") else None
     if deadline and text_dl and date.today().isoformat() <= text_dl < deadline:
         deadline = text_dl
-    apply_url = job.get("apply_url") or job.get("url")
+    apply_url = posting_url(job)
     return {
         "id": job["id"], "company": job["company"], "title": job["title"], "url": job.get("url") or apply_url, "job_type": jt, "fit": job.get("fit") or "sikker",
         "location": job.get("location") or "", "region": reg,
@@ -437,6 +446,7 @@ def main(argv=None):
     jobs = merge_state(found, state["jobs"], ok_sources, now, today)
     for j in jobs.values():                       # ældre tilstand uden url-felt (før 13/10)
         j.setdefault("url", j.get("apply_url") or j.get("career_url"))
+        j["apply_url"] = posting_url(j) or j.get("apply_url")    # 2/11: også job fra før rettelsen
     domains = {}
     for e in employers:                           # også aliaser, så job fra fælles portaler får logo (fx "Banedanmark")
         for n in [e["name"], *(e.get("aliases") or [])]:

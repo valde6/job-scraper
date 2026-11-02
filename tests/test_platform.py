@@ -374,3 +374,23 @@ def test_earlier_deadline_in_text_wins_over_source_field(rx, monkeypatch):
     assert P.build_record(late, emp(), rx, "x")["deadline"] == "2026-11-15"
     past = dict(j, description_md="Ansøgningsfrist 1. oktober 2026")         # tekstfrist i fortiden: ignoreres
     assert P.build_record(past, emp(), rx, "x")["deadline"] == "2026-11-15"
+
+
+def test_apply_link_is_the_posting_not_a_form(rx):
+    """2/11: "Søg hos Danske Bank" gik til Oracles `/job/24975/apply` = "Page not found", selv om stillingen fandtes.
+    HR-Managers `SkipAdvertisement=true` og CBS' "Ansøgning og optagelse" var samme slags fejl."""
+    for url, apply in [
+        ("https://ejqi.fa.ocs.oraclecloud.eu/hcmUI/CandidateExperience/en/sites/CX_1001/job/24975",
+         "https://ejqi.fa.ocs.oraclecloud.eu/hcmUI/CandidateExperience/en/sites/CX_1001/job/24975/apply"),
+        ("https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=1",
+         "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=1&SkipAdvertisement=true"),
+        ("https://www.cbs.dk/om-cbs/job-og-karriere/ledige-stillinger/studentermedhjaelp",
+         "https://www.cbs.dk/uddannelser/bacheloruddannelser/ansoegning-og-optagelse"),
+    ]:
+        j = Job(company="Tryg", title="Studentermedhjælper til Compliance", url=url, apply_url=apply,
+                location="København", description_md="compliance", source="oracle").to_dict()
+        r = P.build_record(j, emp(), rx, "x")
+        assert r["apply_url"] == url and r["url"] == url and r["apply_is_direct"]
+    j = Job(company="Tryg", title="Studentermedhjælper til Compliance", url="", apply_url="https://x/apply",
+            location="København", description_md="compliance").to_dict()
+    assert P.build_record(j, emp(), rx, "x")["apply_url"] == "https://x/apply"     # uden opslag: kildens link
