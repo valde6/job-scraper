@@ -81,6 +81,11 @@ tilføj i `companies.yaml` → `python -m scraper.run --only "<navn>"` → `pyth
   filtre kan findes.
 - Sundhedstjekket slår alarm ved fejl/tomme kilder (2 kørsler) og ved kilder, der **aldrig** har vist et opslag (5 kørsler).
 - Respektér robots.txt (`robots_allows()`), og omgå aldrig bot-mure (Cloudflare, 202-svar uden indhold, CAPTCHA).
+- **Linkkontrol (2/11, `scraper/linkcheck.py`):** efter hver Jobradar-kørsel hentes hvert aktivt jobs opslag og hver
+  karriereside. Døde opslag (404/410, fejlside, "opslaget findes ikke") lukkes straks; job, som kilden ikke har vist i
+  4 dage, lukkes, medmindre opslaget selv svarer ok (altid efter 14 dage). En død karriereside erstattes af kildens
+  liste. Rapport i `data/jobradar/linkcheck.json`. Bot-mure/timeouts er "unknown" og lukker aldrig noget.
+- "Søg hos …" i appen er altid opslagets URL (`posting_url()`), aldrig en konstrueret ansøgningsformular.
 
 ## Definition of done
 - `python -m pytest -q` er grønt

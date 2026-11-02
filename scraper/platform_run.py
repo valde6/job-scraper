@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 import time
@@ -361,6 +362,93 @@ def employer_list(employers: list[dict], jobs: list[dict], sources: dict, now: s
     return out
 
 
+STALE_DAYS = 4          # job, som kilden ikke har vist i så mange dage, lukkes, medmindre linkkontrollen siger "ok"
+MAX_UNSEEN_DAYS = 14    # … og efter så mange dage under alle omstændigheder
+
+
+def fallback_career_url(employer: dict) -> str | None:
+    """En karriereside, der kan bruges, når `career_url` er død: kildens egen liste over opslag (hvis den er en side)."""
+    src = employer.get("source") or {}
+    t = src.get("type")
+    if t == "generic" and src.get("list_urls"):
+        return src["list_urls"][0]
+    if t == "browser" and src.get("urls"):
+        return src["urls"][0]
+    if t == "teamtailor" and src.get("url"):
+        return src["url"].rstrip("/") + "/jobs"
+    if t in ("workday", "phenom", "emply", "successfactors", "sitemap", "avature") and src.get("url"):
+        return src["url"]
+    if t == "yello" and src.get("url"):
+        return src["url"]
+    return None
+
+
+def _days_since(ts: str | None, now: str) -> float:
+    try:
+        a = datetime.fromisoformat(ts) if ts else None
+        b = datetime.fromisoformat(now)
+    except ValueError:
+        return 0.0
+    return (b - a).total_seconds() / 86400 if a else 0.0
+
+
+def retire_stale_and_dead(jobs: dict[str, dict], verdicts: dict[str, tuple[str, str]], now: str) -> dict[str, list]:
+    """Lukker job, hvis opslag er dødt (linkkontrol), og job, som kilden ikke har vist i STALE_DAYS dage.
+
+    2/11: Jyske Banks kilde svarede 403 i 9 kørsler, og KU's fik timeout i 6. merge_state lader job fra en kilde, der
+    fejler, stå som aktive (så en nedetid ikke tømmer appen) – men uden en grænse stod Jyske Banks opslag i appen, længe
+    efter at det var lukket ("Jobopslaget blev ikke fundet"). Nu: efter STALE_DAYS kun, hvis opslaget selv svarer ok;
+    efter MAX_UNSEEN_DAYS aldrig."""
+    out = {"dead": [], "stale": []}
+    for j in jobs.values():
+        if not j.get("active"):
+            continue
+        url = posting_url(j)
+        verdict, why = verdicts.get(url, ("unknown", "ikke tjekket"))
+        unseen = _days_since(j.get("last_seen"), now)
+        row = {"id": j["id"], "company": j["company"], "title": j["title"][:120], "url": url}
+        if verdict == "dead":
+            j["active"] = False
+            out["dead"].append({**row, "why": why})
+        elif unseen > MAX_UNSEEN_DAYS or (unseen > STALE_DAYS and verdict != "ok"):
+            j["active"] = False
+            out["stale"].append({**row, "why": f"ikke set hos kilden i {unseen:.0f} dage ({why or verdict})"})
+    return out
+
+
+def run_linkcheck(jobs: dict[str, dict], employers: list[dict], now: str, fetcher=None) -> dict:
+    """Tjekker aktive jobs opslag og arbejdsgivernes karrieresider. Døde karrieresider erstattes af kildens liste (eller
+    fjernes), så appens "Gå til …s jobside" og /arbejdsgivere ikke fører til en 404 (Nordnet 2/11)."""
+    from . import linkcheck as L
+    items = [(posting_url(j), "job") for j in jobs.values() if j.get("active") and posting_url(j)]
+    for e in employers:
+        for u in (e.get("career_url"), fallback_career_url(e)):
+            if u:
+                items.append((u, "page"))
+    verdicts = L.check_many(items, **({"fetcher": fetcher} if fetcher else {}))
+    retired = retire_stale_and_dead(jobs, verdicts, now)
+    career_dead, replaced = [], {}
+    for e in employers:
+        u = e.get("career_url")
+        if not u or verdicts.get(u, ("unknown",))[0] != "dead":
+            continue
+        e.setdefault("domain", company_domain(e))   # logoet må ikke forsvinde, når karrieresiden skiftes ud
+        fb = fallback_career_url(e)
+        new = fb if fb and fb != u and verdicts.get(fb, ("unknown",))[0] != "dead" else None
+        career_dead.append({"company": e["name"], "url": u, "why": verdicts[u][1], "replaced_by": new})
+        replaced[u] = new
+        e["career_url"] = new
+    for j in jobs.values():
+        if j.get("career_url") in replaced:
+            j["career_url"] = replaced[j["career_url"]]
+    counts = {}
+    for v, _ in verdicts.values():
+        counts[v] = counts.get(v, 0) + 1
+    return {"checked": now, "counts": counts, "jobs_dead": retired["dead"], "jobs_stale": retired["stale"],
+            "career_dead": career_dead,
+            "unknown": sorted({u for u, (v, _) in verdicts.items() if v == "unknown"})[:200]}
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", action="append")
@@ -447,6 +535,14 @@ def main(argv=None):
     for j in jobs.values():                       # ældre tilstand uden url-felt (før 13/10)
         j.setdefault("url", j.get("apply_url") or j.get("career_url"))
         j["apply_url"] = posting_url(j) or j.get("apply_url")    # 2/11: også job fra før rettelsen
+    link_report = None
+    if not args.only and os.environ.get("JOBRADAR_LINKCHECK", "1") != "0":
+        employers = [dict(e) for e in employers]  # karrieresider kan blive erstattet i denne kørsel
+        link_report = run_linkcheck(jobs, employers, now)
+        print(f"Linkkontrol: {link_report['counts']}, lukket {len(link_report['jobs_dead'])} døde og "
+              f"{len(link_report['jobs_stale'])} forældede job, {len(link_report['career_dead'])} døde karrieresider")
+    elif not args.only:
+        retire_stale_and_dead(jobs, {}, now)     # uden netværk: kun grænsen på MAX_UNSEEN_DAYS/STALE_DAYS
     domains = {}
     for e in employers:                           # også aliaser, så job fra fælles portaler får logo (fx "Banedanmark")
         for n in [e["name"], *(e.get("aliases") or [])]:
@@ -472,6 +568,8 @@ def main(argv=None):
     (OUT / "jobs.json").write_text(json.dumps(payload, ensure_ascii=False))
     (OUT / "state.json").write_text(json.dumps({"jobs": jobs, "sources": merged_sources}, ensure_ascii=False))
     write_rejected(OUT / "rejected.json", REJECTED)
+    if link_report is not None:
+        (OUT / "linkcheck.json").write_text(json.dumps(link_report, ensure_ascii=False, indent=1))
     (OUT / "status.json").write_text(json.dumps({"updated": now, "companies": status}, ensure_ascii=False, indent=1))
     (OUT / "keywords.json").write_text(json.dumps(
         {"keywords": [{k: v for k, v in kw.items() if k != "pattern"} for kw in kws]}, ensure_ascii=False, indent=1))
