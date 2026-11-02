@@ -54,7 +54,7 @@ employers:
   aliases:
   - Danske Bank A/S
 - name: Deloitte
-  career_url: https://www.deloitte.com/dk/da/careers.html
+  career_url: https://www.deloitte.com/dk/en/careers/job-search.html
   status: klar
   source:
     type: smartrecruiters
@@ -183,7 +183,7 @@ employers:
   aliases:
   - Vestas Wind Systems
 - name: Implement
-  career_url: https://implementconsultinggroup.com/careers
+  career_url: https://implementconsultinggroup.com/join-us/jobs
   status: klar
   source:
     type: smartrecruiters
@@ -204,7 +204,7 @@ employers:
   - Saxo Bank A/S
   note: 20/10 – Workday skriver "Headquarters" om hovedkontoret i Hellerup; uden location_map blev studiejobbene smidt væk
 - name: Finansministeriet
-  career_url: https://fm.dk/om-os/job-i-finansministeriet/
+  career_url: https://fm.dk/karriere/ledige-stillinger/
   status: via-portal
   source:
     type: none
@@ -233,7 +233,7 @@ employers:
   aliases:
   - Nationalbanken
 - name: Arla Foods
-  career_url: https://www.arla.com/careers/
+  career_url: https://jobs.arla.com/global/en
   status: klar
   source:
     type: phenom
@@ -241,7 +241,7 @@ employers:
   aliases:
   - Arla
 - name: Udenrigsministeriet
-  career_url: https://um.dk/om-os/job-i-udenrigsministeriet
+  career_url: https://um.dk/om-os/stillinger/
   status: via-portal
   source:
     type: none
@@ -363,7 +363,7 @@ employers:
   aliases:
   - Netcompany A/S
 - name: PFA Pension
-  career_url: https://www.pfa.dk/om-pfa/job-og-karriere/
+  career_url: https://career2.successfactors.eu/career?company=pfapensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK
   status: klar
   source:
     type: browser
@@ -374,7 +374,7 @@ employers:
   aliases:
   - PFA
 - name: SAS
-  career_url: https://www.sasgroup.net/careers/
+  career_url: https://careers.sasgroup.net
   status: klar
   source:
     type: sitemap
@@ -415,7 +415,7 @@ employers:
   - AL Bank
   note: Teamtailor (fundet 16/10 via web-søgning – ikke verificeret endnu)
 - name: Forsvaret
-  career_url: https://www.forsvaret.dk/da/job-i-forsvaret/
+  career_url: https://www.forsvaret.dk/da/karrieresider/ledige-stillinger-haeren/
   status: klar
   source:
     type: generic
@@ -431,7 +431,7 @@ employers:
   - Forsvarsministeriets
   note: Lister på forsvaret.dk, opslag i HR-Manager cid 3010 (kunde-alias ukendt) (fundet i browseren 20/10)
 - name: IKEA
-  career_url: https://jobs.ikea.com/en/search?location=Denmark
+  career_url: https://jobs.ikea.com/da/soeg-jobs/student/Danmark/
   status: klar
   source:
     type: generic
@@ -445,7 +445,7 @@ employers:
   - Ingka
   - Inter IKEA
 - name: Statsministeriet
-  career_url: https://stm.dk/om-os/job/
+  career_url: https://stm.dk/statsministeriet/ledige-stillinger/
   status: via-portal
   source:
     type: none
@@ -563,7 +563,7 @@ employers:
     customer: accura
   note: HR-Manager (fundet af discovery)
 - name: Poul Schmith / Kammeradvokaten
-  career_url: https://www.poulschmith.dk/karriere
+  career_url: https://jobs.poulschmith.dk
   status: klar
   source:
     type: emply
@@ -658,13 +658,13 @@ employers:
   - Skatteministeriet
   note: Hentes via Statens Rekrutteringsløsning (ministeriet hed før Skatteministeriet). Skatteforvaltningen vises som egen arbejdsgiver
 - name: Erhvervsstyrelsen
-  career_url: https://erhvervsstyrelsen.dk/job
+  career_url: https://erhvervsstyrelsen.dk/karriere
   status: via-portal
   source:
     type: none
   note: Hentes via Statens Rekrutteringsløsning (fælles portal)
 - name: Finanstilsynet
-  career_url: https://www.finanstilsynet.dk/om-os/job
+  career_url: https://www.finanstilsynet.dk/karriere
   status: via-portal
   source:
     type: none
@@ -676,13 +676,13 @@ employers:
     type: none
   note: Hentes via Statens Rekrutteringsløsning (fælles portal)
 - name: Justitsministeriet
-  career_url: https://www.justitsministeriet.dk/job
+  career_url: https://www.justitsministeriet.dk/karriere/ledige-stillinger/
   status: via-portal
   source:
     type: none
   note: Hentes via Statens Rekrutteringsløsning (fælles portal)
 - name: Datatilsynet
-  career_url: https://www.datatilsynet.dk/om-datatilsynet/job
+  career_url: https://www.datatilsynet.dk/karriere
   status: via-portal
   source:
     type: none
@@ -727,12 +727,12 @@ employers:
     url: https://careers.tryg.com
   note: 'SuccessFactors CSB via sitemap (verificeret 16/10 i browser: studentermedhjælper i Ballerup). Søgesiden gav 0'
 - name: Alm. Brand Group
-  career_url: https://www.almbrand.dk/om-os/job
+  career_url: https://www.almbrand.dk/job/
   status: find-system
   source:
     type: none
 - name: If Skadeforsikring
-  career_url: https://www.if.dk/om-if/job
+  career_url: https://if.wd502.myworkdayjobs.com/Careers
   status: klar
   source:
     type: workday
@@ -741,7 +741,7 @@ employers:
 - name: ATP
   region: storkbh
   domain: atp.dk
-  career_url: https://www.atp.dk/job
+  career_url: https://www.atp.dk/karriere/ledige-stillinger
   status: klar
   source:
     type: hrmanager
@@ -1020,7 +1020,7 @@ employers:
   - H. Lundbeck A/S
   note: SuccessFactors Career Site Builder på jobs.lundbeck (fundet i browseren 20/10; 73 opslag, 3 studie-/intern-job i Kbh)
 - name: Demant
-  career_url: https://www.demant.com/careers
+  career_url: https://careers.demant.com
   status: klar
   source:
     type: sitemap
@@ -1060,7 +1060,7 @@ employers:
   - Novo Nordisk Foundation
   note: Workable (fundet i browseren 20/10)
 - name: Ambu
-  career_url: https://www.ambu.com/careers
+  career_url: https://jobs.ambu.com
   status: klar
   source:
     type: sitemap
@@ -1113,7 +1113,7 @@ employers:
 - name: KL
   region: storkbh
   domain: kl.dk
-  career_url: https://www.kl.dk/om-kl/job-i-kl
+  career_url: https://www.kl.dk/karriereunivers/forside
   status: klar
   source:
     type: hrmanager

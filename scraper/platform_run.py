@@ -460,6 +460,26 @@ def run_linkcheck(jobs: dict[str, dict], employers: list[dict], now: str, fetche
             "unknown": sorted({u for u, (v, _) in verdicts.items() if v == "unknown"})[:200]}
 
 
+def refilter_kept(jobs: dict[str, dict], found: dict[str, dict], employers: list[dict], rx: dict, now: str) -> list[str]:
+    """Job, som ikke blev fundet i denne kørsel, men stadig er aktive (kilden fejlede eller faldt mistænkeligt), køres
+    gennem de nuværende filtre. 2/11: Grant Thorntons irske job (Dublin, Longford) blev stående efter skiftet til den
+    danske kilde, fordi faldet fra 52 til 10 opslag gjorde kilden "mistænkelig", og gamle job derfor blev bevaret –
+    selv om natpatchens udlandsfilter ville have frasorteret dem."""
+    by_name = {}
+    for e in employers:
+        for n in [e["name"], *(e.get("aliases") or [])]:
+            by_name.setdefault(n, e)
+    closed = []
+    for jid, j in jobs.items():
+        if jid in found or not j.get("active"):
+            continue
+        e = by_name.get(j.get("source_employer") or j["company"]) or {}
+        if build_record(dict(j), e, rx, now) is None:
+            j["active"] = False
+            closed.append(jid)
+    return closed
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", action="append")
@@ -543,6 +563,8 @@ def main(argv=None):
             if (j.get("source_employer") or j["company"]) not in current:
                 j["active"] = False
     jobs = merge_state(found, state["jobs"], ok_sources, now, today)
+    if not args.only:
+        refilter_kept(jobs, found, employers, rx, now)
     for j in jobs.values():                       # ældre tilstand uden url-felt (før 13/10)
         j.setdefault("url", j.get("apply_url") or j.get("career_url"))
         j["apply_url"] = posting_url(j) or j.get("apply_url")    # 2/11: også job fra før rettelsen

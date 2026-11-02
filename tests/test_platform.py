@@ -424,3 +424,15 @@ def test_generic_reads_hr_manager_advertisement_text():
             + "<div id='cookie'>" + "Denne hjemmeside bruger cookies. " * 20 + "</div></body></html>")
     out = _main_html(soup(html))
     assert "formidling" in out and "cookies" not in out
+
+
+def test_kept_jobs_are_refiltered(rx):
+    """2/11: Grant Thorntons irske job blev bevaret, fordi den nye danske kilde gav et "mistænkeligt" fald i opslag."""
+    old = {"gt1": {"id": "gt1", "company": "Grant Thornton", "title": "Trainee Accountant - Longford", "location": "Longford",
+                   "url": "https://x/1", "description_md": "Trainee accountant in Ireland", "active": True,
+                   "source_employer": "Grant Thornton", "last_seen": "2026-11-02T08:00:00+00:00"},
+           "gt2": {"id": "gt2", "company": "Grant Thornton", "title": "Studentermedhjælper til revision", "location": "København",
+                   "url": "https://x/2", "description_md": "Studentermedhjælper i revision", "active": True,
+                   "source_employer": "Grant Thornton", "last_seen": "2026-11-02T08:00:00+00:00"}}
+    closed = P.refilter_kept(old, {}, [{"name": "Grant Thornton", "region": "storkbh"}], rx, "2026-11-02T16:00:00+00:00")
+    assert closed == ["gt1"] and not old["gt1"]["active"] and old["gt2"]["active"]
