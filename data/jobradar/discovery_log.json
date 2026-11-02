@@ -1,28 +1,97 @@
 {
- "started": "2026-11-02T07:45:13+00:00",
- "ads_read": 10,
- "candidates": [],
- "added": [],
+ "started": "2026-11-02T16:32:16+00:00",
+ "ads_read": 36,
+ "candidates": [
+  {
+   "name": "HMF Group A/S",
+   "type": "emply",
+   "cfg": {
+    "url": "https://hmf2.career.emply.com"
+   },
+   "evidence": "https://hmf2.career.emply.com/vacant-positions",
+   "listed": 2,
+   "matched": 1
+  },
+  {
+   "name": "Zealand Pharma A/S",
+   "type": "workday",
+   "cfg": {
+    "url": "https://zealandpharma.wd3.myworkdayjobs.com/ExternalCareer"
+   },
+   "evidence": "https://zealandpharma.wd3.myworkdayjobs.com/ExternalCareer/job/Knud-Hjgaards-Vej-7/Dyrepasser_JR425",
+   "listed": 14,
+   "matched": 1
+  },
+  {
+   "name": "DGI",
+   "type": "emply",
+   "cfg": {
+    "url": "https://dgi.career.emply.com"
+   },
+   "evidence": "https://dgi.career.emply.com/ad/afdelingsleder-til-projektudvikling-og-kommunikation/nzckz1/da",
+   "listed": 11,
+   "matched": 8
+  },
+  {
+   "name": "Københavns Professionshøjskole",
+   "type": "emply",
+   "cfg": {
+    "url": "https://kp.career.emply.com"
+   },
+   "evidence": "https://kp.career.emply.com/ad/jurafaglig-adjunkt-lektor-til-institut-for-socialradgiveruddannelse-i-hillerod/d52x6y/da",
+   "listed": 0,
+   "matched": 0
+  }
+ ],
+ "added": [
+  {
+   "name": "HMF Group A/S",
+   "type": "emply",
+   "listed": 2,
+   "matched": 1
+  },
+  {
+   "name": "Zealand Pharma A/S",
+   "type": "workday",
+   "listed": 14,
+   "matched": 1
+  },
+  {
+   "name": "DGI",
+   "type": "emply",
+   "listed": 11,
+   "matched": 8
+  }
+ ],
  "rejected": [
   {
-   "name": "Dansk Arbejdsgiverforening",
+   "name": "UC SYD",
    "type": "hrmanager",
    "cfg": {
-    "cid": "1655",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1655&ProjectId=143829&DepartmentId=18956&MediaId=4635"
+    "cid": "5001",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194500&DepartmentId=8336&MediaId=5"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1655&ProjectId=143829&DepartmentId=18956&MediaId=4635",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194500&DepartmentId=8336&MediaId=5",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
-   "name": "Region Nordjylland",
+   "name": "Nordic Bioscience A/S",
    "type": "hrmanager",
    "cfg": {
-    "cid": "3318",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3318&ProjectId=144868&DepartmentId=19750&MediaId=4632&SkipAdvertisement=true"
+    "cid": "2191",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2191&ProjectId=143738&DepartmentId=18956&MediaId=4614"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3318&ProjectId=144868&DepartmentId=19750&MediaId=4632&SkipAdvertisement=true",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2191&ProjectId=143738&DepartmentId=18956&MediaId=4614",
    "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Københavns Professionshøjskole",
+   "type": "emply",
+   "cfg": {
+    "url": "https://kp.career.emply.com"
+   },
+   "evidence": "https://kp.career.emply.com/ad/jurafaglig-adjunkt-lektor-til-institut-for-socialradgiveruddannelse-i-hillerod/d52x6y/da",
+   "reason": "0 opslag"
   }
  ]
 }

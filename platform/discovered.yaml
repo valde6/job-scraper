@@ -659,3 +659,33 @@ employers:
     at: '2026-10-31'
     via: jobindex-link
     evidence: https://egedalkommune.career.emply.com/ad/i-bornehuset-basthoj-skynder-vi-os-langsomt-mens-vi-venter-pa-dig/rz9l8a/da
+- name: HMF Group A/S
+  career_url: https://hmf2.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://hmf2.career.emply.com
+  discovered:
+    at: '2026-11-02'
+    via: jobindex-link
+    evidence: https://hmf2.career.emply.com/vacant-positions
+- name: Zealand Pharma A/S
+  career_url: https://zealandpharma.wd3.myworkdayjobs.com/ExternalCareer
+  status: opdaget
+  source:
+    type: workday
+    url: https://zealandpharma.wd3.myworkdayjobs.com/ExternalCareer
+  discovered:
+    at: '2026-11-02'
+    via: jobindex-link
+    evidence: https://zealandpharma.wd3.myworkdayjobs.com/ExternalCareer/job/Knud-Hjgaards-Vej-7/Dyrepasser_JR425
+- name: DGI
+  career_url: https://dgi.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://dgi.career.emply.com
+  discovered:
+    at: '2026-11-02'
+    via: jobindex-link
+    evidence: https://dgi.career.emply.com/ad/afdelingsleder-til-projektudvikling-og-kommunikation/nzckz1/da

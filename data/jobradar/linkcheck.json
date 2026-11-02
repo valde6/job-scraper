@@ -1,0 +1,252 @@
+{
+ "checked": "2026-11-02T16:36:18+00:00",
+ "counts": {
+  "unknown": 34,
+  "ok": 408,
+  "dead": 29
+ },
+ "jobs_dead": [],
+ "jobs_stale": [
+  {
+   "id": "33925497d6bd",
+   "company": "Københavns Universitet",
+   "title": "Studerende til Institut for psykologi ved, Københavns Universitet",
+   "url": "https://employment.ku.dk/all-vacancies/?show=171309",
+   "why": "ikke set hos kilden i 7 dage (ConnectTimeout)"
+  },
+  {
+   "id": "7ed003a8ba1e",
+   "company": "Københavns Universitet",
+   "title": "Center for Applied Ecological Thinking (CApE) søger to studerende",
+   "url": "https://employment.ku.dk/all-vacancies/?show=171083",
+   "why": "ikke set hos kilden i 7 dage (ConnectTimeout)"
+  },
+  {
+   "id": "2b2d94e70a19",
+   "company": "Københavns Universitet",
+   "title": "3-4 Students at CAISA (The National Centre for AI in Society)",
+   "url": "https://employment.ku.dk/all-vacancies/?show=171328",
+   "why": "ikke set hos kilden i 7 dage (ConnectTimeout)"
+  },
+  {
+   "id": "d65e53f88179",
+   "company": "Københavns Universitet",
+   "title": "Studerende til studieadministrationen, Søndre Campus",
+   "url": "https://employment.ku.dk/all-vacancies/?show=171314",
+   "why": "ikke set hos kilden i 7 dage (ConnectTimeout)"
+  },
+  {
+   "id": "d55d1a0edf1e",
+   "company": "Jyske Bank",
+   "title": "Finansbachelor til Lokalt Erhverv med en klar vej til praktik- og traineeforløb",
+   "url": "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191425",
+   "why": "ikke set hos kilden i 11 dage (HTTP 403)"
+  }
+ ],
+ "career_dead": [
+  {
+   "company": "Deloitte",
+   "url": "https://www.deloitte.com/dk/da/careers.html",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "Implement",
+   "url": "https://implementconsultinggroup.com/careers",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "Finansministeriet",
+   "url": "https://fm.dk/om-os/job-i-finansministeriet/",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "Danmarks Nationalbank",
+   "url": "https://www.nationalbanken.dk/da/om-nationalbanken/job",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "Arla Foods",
+   "url": "https://www.arla.com/careers/",
+   "why": "HTTP 404",
+   "replaced_by": "https://jobs.arla.com/global/en"
+  },
+  {
+   "company": "Udenrigsministeriet",
+   "url": "https://um.dk/om-os/job-i-udenrigsministeriet",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "PFA Pension",
+   "url": "https://www.pfa.dk/om-pfa/job-og-karriere/",
+   "why": "HTTP 404",
+   "replaced_by": "https://career2.successfactors.eu/career?company=pfapensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK"
+  },
+  {
+   "company": "SAS",
+   "url": "https://www.sasgroup.net/careers/",
+   "why": "HTTP 404",
+   "replaced_by": "https://careers.sasgroup.net"
+  },
+  {
+   "company": "Amazon",
+   "url": "https://www.amazon.jobs/en/locations/copenhagen-area-denmark",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "Forsvaret",
+   "url": "https://www.forsvaret.dk/da/job-i-forsvaret/",
+   "why": "HTTP 404",
+   "replaced_by": "https://www.forsvaret.dk/da/karrieresider/ledige-stillinger-haeren/"
+  },
+  {
+   "company": "IKEA",
+   "url": "https://jobs.ikea.com/en/search?location=Denmark",
+   "why": "HTTP 404",
+   "replaced_by": "https://jobs.ikea.com/da/soeg-jobs/student/Danmark/"
+  },
+  {
+   "company": "Statsministeriet",
+   "url": "https://stm.dk/om-os/job/",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "Poul Schmith / Kammeradvokaten",
+   "url": "https://www.poulschmith.dk/karriere",
+   "why": "HTTP 404",
+   "replaced_by": "https://jobs.poulschmith.dk"
+  },
+  {
+   "company": "Erhvervsstyrelsen",
+   "url": "https://erhvervsstyrelsen.dk/job",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "Finanstilsynet",
+   "url": "https://www.finanstilsynet.dk/om-os/job",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "Justitsministeriet",
+   "url": "https://www.justitsministeriet.dk/job",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "Datatilsynet",
+   "url": "https://www.datatilsynet.dk/om-datatilsynet/job",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "Alm. Brand Group",
+   "url": "https://www.almbrand.dk/om-os/job",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "If Skadeforsikring",
+   "url": "https://www.if.dk/om-if/job",
+   "why": "HTTP 404",
+   "replaced_by": "https://if.wd502.myworkdayjobs.com/Careers"
+  },
+  {
+   "company": "ATP",
+   "url": "https://www.atp.dk/job",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "Dansk Erhverv",
+   "url": "https://www.danskerhverv.dk/om-dansk-erhverv/job/",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "Lederne",
+   "url": "https://www.lederne.dk/om-lederne/job",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "Demant",
+   "url": "https://www.demant.com/careers",
+   "why": "HTTP 404",
+   "replaced_by": "https://careers.demant.com"
+  },
+  {
+   "company": "Ambu",
+   "url": "https://www.ambu.com/careers",
+   "why": "HTTP 404",
+   "replaced_by": "https://jobs.ambu.com"
+  },
+  {
+   "company": "Vallensbæk Kommune",
+   "url": "https://www.vallensbaek.dk/job",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "Kræftens Bekæmpelse",
+   "url": "https://www.cancer.dk/om-os/job",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "KL",
+   "url": "https://www.kl.dk/om-kl/job-i-kl",
+   "why": "HTTP 404",
+   "replaced_by": null
+  },
+  {
+   "company": "Tivoli",
+   "url": "https://www.tivoli.dk/job",
+   "why": "HTTP 404",
+   "replaced_by": null
+  }
+ ],
+ "unknown": [
+  "https://app.elvium.com/da",
+  "https://apply.careers.microsoft.com",
+  "https://career2.successfactors.eu/career?career%5fns=job%5flisting&company=pfapensionP&navBarLevel=JOB%5fSEARCH&rcm%5fsite%5flocale=da%5fDK&career_job_req_id=15217&selected_lang=da_DK&jobAlertController_jobAlertId=&jobAlertController_jobAlertName=&browserTimeZone=UTC&_s.crb=YVai%2f52Fg2QpqRnfr%2fxqkZv5wzny7r46Xi5eQiKt3dg%3d",
+  "https://career2.successfactors.eu/career?career%5fns=job%5flisting&company=pfapensionP&navBarLevel=JOB%5fSEARCH&rcm%5fsite%5flocale=da%5fDK&career_job_req_id=15594&selected_lang=da_DK&jobAlertController_jobAlertId=&jobAlertController_jobAlertName=&browserTimeZone=UTC&_s.crb=YVai%2f52Fg2QpqRnfr%2fxqkZv5wzny7r46Xi5eQiKt3dg%3d",
+  "https://career2.successfactors.eu/career?career%5fns=job%5flisting&company=pfapensionP&navBarLevel=JOB%5fSEARCH&rcm%5fsite%5flocale=da%5fDK&career_job_req_id=15644&selected_lang=da_DK&jobAlertController_jobAlertId=&jobAlertController_jobAlertName=&browserTimeZone=UTC&_s.crb=YVai%2f52Fg2QpqRnfr%2fxqkZv5wzny7r46Xi5eQiKt3dg%3d",
+  "https://career2.successfactors.eu/career?company=pfapensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
+  "https://career2.successfactors.eu/career?company=royalunibr&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
+  "https://career5.successfactors.eu/career?company=bangolufse&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
+  "https://career5.successfactors.eu/career?company=sampensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
+  "https://employment.ku.dk/all-vacancies/",
+  "https://employment.ku.dk/all-vacancies/?show=171083",
+  "https://employment.ku.dk/all-vacancies/?show=171309",
+  "https://employment.ku.dk/all-vacancies/?show=171314",
+  "https://employment.ku.dk/all-vacancies/?show=171328",
+  "https://novonesis.wd103.myworkdayjobs.com/Novonesis_Careers/job/Lyngby/Student-Assistant--Global-Livestock-Research--Lyngby_JR113592-2",
+  "https://novonesis.wd103.myworkdayjobs.com/Novonesis_Careers/job/Lyngby/Student-Assistant-for-AI-Adoption-in-Supply-Chain_JR113980",
+  "https://novonesis.wd103.myworkdayjobs.com/Novonesis_Careers/job/Lyngby/Student-Assistant-for-Supply-Chain-Data---Analytics_JR113943-1",
+  "https://om.coop.dk/job",
+  "https://orsted.com/en/careers",
+  "https://orsted.com/en/careers/vacancies-list",
+  "https://redbarnet.dk/om-red-barnet/job",
+  "https://studenttalent.bcg.com/careers/job/790313062445",
+  "https://studenttalent.bcg.com/careers/job/790313062451",
+  "https://studenttalent.bcg.com/careers/job/790313522914",
+  "https://www.alsydbank.dk/om-os/job",
+  "https://www.coloplast.com/careers/",
+  "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs",
+  "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs/jobopslag?id=191425",
+  "https://www.lundbeck.com/global/careers/your-job/job-opportunities",
+  "https://www.mckinsey.com/careers/search-jobs/jobs/businessanalystintern-15275",
+  "https://www.mckinsey.com/careers/search-jobs/jobs/fellowintern-20421",
+  "https://www.mckinsey.com/careers/search-jobs?cities=Copenhagen",
+  "https://www.pwc.dk/da/karriere.html",
+  "https://www.sos.dk/job"
+ ]
+}
