@@ -1,7 +1,28 @@
 {
- "started": "2026-11-01T07:38:22+00:00",
- "ads_read": 4,
+ "started": "2026-11-02T07:45:13+00:00",
+ "ads_read": 10,
  "candidates": [],
  "added": [],
- "rejected": []
+ "rejected": [
+  {
+   "name": "Dansk Arbejdsgiverforening",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "1655",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1655&ProjectId=143829&DepartmentId=18956&MediaId=4635"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1655&ProjectId=143829&DepartmentId=18956&MediaId=4635",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Region Nordjylland",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3318",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3318&ProjectId=144868&DepartmentId=19750&MediaId=4632&SkipAdvertisement=true"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3318&ProjectId=144868&DepartmentId=19750&MediaId=4632&SkipAdvertisement=true",
+   "reason": "HR-Manager-alias ikke fundet"
+  }
+ ]
 }
