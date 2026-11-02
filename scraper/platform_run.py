@@ -160,6 +160,10 @@ def build_record(job: dict, employer: dict, rx: dict, now: str) -> dict | None:
     # titlen selv siger deltid/part-time (KPMG "Analyst (part-time) - Corporate Finance").
     if jt == "studiejob" and job.get("fit") == "mulig" and not PARTTIME_RE.search(job["title"]):
         return None
+    if not desc.strip():
+        # 2/11: et opslag uden tekst er en tom side for brugeren (Nine United "Internship with Nine United": kun titel og
+        # "Application due 01-06-2044"). Kommer med igen, så snart kilden giver teksten.
+        return None
     deadline = plausible_deadline(job.get("deadline") or find_deadline(desc, date.today().year) or None)
     # 21/10: kildens fristfelt er nogle gange annoncens udløb, ikke ansøgningsfristen. Står der en tidligere frist med
     # årstal i selve opslaget, vinder den (Erhvervsakademi København: feltet 15/11, teksten "senest den 13. november 2026")
@@ -190,6 +194,8 @@ def why_rejected(job: dict, rx: dict) -> str:
         return "ikke studiejob/praktik/graduate"
     if region(job.get("location"), job["title"]) is None:
         return f"uden for Sjælland ({(job.get('location') or '')[:40]})"
+    if not (job.get("description_md") or "").strip():
+        return "opslaget har ingen tekst"
     return "deltid uden fagligt nøgleord i titlen"
 
 

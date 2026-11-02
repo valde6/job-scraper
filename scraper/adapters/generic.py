@@ -20,7 +20,10 @@ from ..common import (Job, get, soup, clean, html_to_md, is_denmark, is_student,
 
 
 def _main_html(s):
-    for sel in ("[itemprop=description]", "article", "main", "[role=main]", "#content", ".content", "body"):
+    # 2/11: HR-Managers opslagsside (ApplicationInit.aspx) har et tomt [itemprop=description] og teksten i
+    # #AdvertisementInnerContent (Forsvaret "Studentermedhjælper til digital kommunikation og analyse" stod uden tekst)
+    for sel in ("[itemprop=description]", "#AdvertisementInnerContent", ".AdContentContainer", "article", "main",
+                "[role=main]", "#content", ".content", "body"):
         el = s.select_one(sel)
         if el and len(el.get_text(strip=True)) > 200:
             for bad in el.select("nav, header, footer, script, style, form, aside"):

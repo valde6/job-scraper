@@ -405,3 +405,22 @@ def test_mulig_studiejob_needs_parttime_in_title(rx):
     assert rec("Administrativ medarbejder til Vallensbæk Rideakademi - 25 timers stilling") is None
     assert rec("Administrativ medarbejder – 20 timer om ugen - til en bred vifte af opgaver") is None
     assert rec("Analyst (part-time) - KPMG Corporate Finance team")["job_type"] == "studiejob"
+
+
+def test_posting_without_text_is_not_shown(rx):
+    """2/11: Nine Uniteds "Internship with Nine United" er en tom side (kun titel og frist 2044)."""
+    j = Job(company="Tryg", title="Internship with Nine United", url="https://x/n", location="København",
+            description_md="  \n ", source="hrmanager").to_dict()
+    assert P.build_record(j, emp(), rx, "x") is None
+    assert P.why_rejected(j, rx) == "opslaget har ingen tekst"
+
+
+def test_generic_reads_hr_manager_advertisement_text():
+    """2/11: HR-Managers opslag har et tomt itemprop=description og teksten i #AdvertisementInnerContent."""
+    from scraper.adapters.generic import _main_html
+    from scraper.common import soup
+    html = ("<html><body><div itemprop='description'></div><div id='container'><div id='AdvertisementInnerContent'>"
+            + "<p>Er du god til formidling – og samtidig lidt af en nørd? " * 6 + "</p></div></div>"
+            + "<div id='cookie'>" + "Denne hjemmeside bruger cookies. " * 20 + "</div></body></html>")
+    out = _main_html(soup(html))
+    assert "formidling" in out and "cookies" not in out
