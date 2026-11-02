@@ -436,3 +436,11 @@ def test_kept_jobs_are_refiltered(rx):
                    "source_employer": "Grant Thornton", "last_seen": "2026-11-02T08:00:00+00:00"}}
     closed = P.refilter_kept(old, {}, [{"name": "Grant Thornton", "region": "storkbh"}], rx, "2026-11-02T16:00:00+00:00")
     assert closed == ["gt1"] and not old["gt1"]["active"] and old["gt2"]["active"]
+
+
+def test_hrmanager_career_page_is_the_customer_list():
+    """2/11: opdagede HR-Manager-arbejdsgivere havde et enkelt opslag som karriereside (dør, når opslaget lukker)."""
+    e = {"name": "Fleggaard", "source": {"type": "hrmanager", "customer": "fleggaard"}}
+    assert P.fallback_career_url(e) == "https://candidate.hr-manager.net/vacancies/list.aspx?customer=fleggaard"
+    disc = yaml.safe_load((P.PLAT / "discovered.yaml").read_text())["employers"]
+    assert not [d["name"] for d in disc if "ApplicationInit" in (d.get("career_url") or "")]

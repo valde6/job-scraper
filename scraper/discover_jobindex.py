@@ -248,7 +248,11 @@ def main():
         if listed == 0:
             log["rejected"].append({**c, "reason": "0 opslag"})
             continue
-        entry = {"name": name, "career_url": cfg.get("url") or cfg.get("host") or c["evidence"],
+        # 2/11: for HR-Manager var karrieresiden det opslag, der førte til opdagelsen – et link, der dør, når opslaget
+        # lukker. Brug kundens liste i stedet.
+        career = (f"https://candidate.hr-manager.net/vacancies/list.aspx?customer={cfg['customer']}"
+                  if typ == "hrmanager" and cfg.get("customer") else None)
+        entry = {"name": name, "career_url": career or cfg.get("url") or cfg.get("host") or c["evidence"],
                  "status": "opdaget", "source": {"type": typ, **cfg},
                  "discovered": {"at": log["started"][:10], "via": "jobindex-link", "evidence": c["evidence"]}}
         if c.get("cid"):

@@ -13,7 +13,7 @@ employers:
     via: jobindex-link
     evidence: https://dm-v2.career.emply.com/ad/student-til-fagforeningen-dms-medieteam/jmxttw/da
 - name: Energinet
-  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=316&ProjectId=188796&DepartmentId=21679&MediaId=5
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=energinet
   status: opdaget
   source:
     type: hrmanager
@@ -98,7 +98,7 @@ employers:
     via: jobindex-link
     evidence: https://medicinraadet.career.emply.com/ad/studentermedhjaelpere-til-medicinradets-sekretariat/e6j7y4/da
 - name: HOFOR
-  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=174&ProjectId=184437&DepartmentId=21999&MediaId=59
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=ke
   status: opdaget
   source:
     type: hrmanager
@@ -141,7 +141,7 @@ employers:
     evidence: https://jobs.smartrecruiters.com/Eurofins/744000155202220-praktikant-til-salg-support-kundeudvikling?trid=855d0792-8b64-4b61-8b9b-b6ead421d748
 - name: Faxe Kommune
   region: sjaelland
-  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1372&ProjectId=147348&DepartmentId=20025&MediaId=4616
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=ofir_faxekommune
   status: opdaget
   source:
     type: hrmanager
@@ -196,7 +196,7 @@ employers:
     evidence: https://nobiaab-hth.teamtailor.com/jobs/8496996-vi-soger-en-ny-kollega-til-hth-holstebro-maske-er-det-dig?promotion=2229209-jobindex
 - name: Everllence
   region: storkbh
-  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1877&ProjectId=146338&DepartmentId=19149&MediaId=4619
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=Everllence
   status: opdaget
   source:
     type: hrmanager
@@ -219,7 +219,7 @@ employers:
     evidence: https://ek.career.emply.com/ad/specialkonsulent-til-erhvervsakademi-kobenhavns-studieadministration/myye0k/da
 - name: Assens Kommune
   region: udenfor
-  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=231&ProjectId=193256&DepartmentId=18452&MediaId=5545
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=assens
   status: opdaget
   source:
     type: hrmanager
@@ -241,7 +241,7 @@ employers:
     via: jobindex-link
     evidence: https://dkprof.career.emply.com/ad/kommunikationskonsulent-med-politisk-blik-til-danske-professionshojskoler/tpuadk
 - name: Jobboozt ApS
-  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2135&ProjectId=143996&DepartmentId=19216&MediaId=5
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=jobboozt_tr
   status: opdaget
   source:
     type: hrmanager
@@ -252,6 +252,7 @@ employers:
     evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2135&ProjectId=143996&DepartmentId=19216&MediaId=5
   cid: '2135'
 - name: VIA University College
+  region: udenfor
   career_url: https://via.career.emply.com
   status: opdaget
   source:
@@ -261,7 +262,9 @@ employers:
     at: '2026-10-14'
     via: jobindex-link
     evidence: https://via.career.emply.com/ad/udviklingsorienteret-og-relationel-uddannelsesleder-til-fremtidens-sygeplejerskeu/sag1zp/da
+  note: '2/11: uden for Sjælland (Aarhus, Horsens, Holstebro m.fl.) – vises ikke på /arbejdsgivere, og job hentes ikke'
 - name: Professionshøjskolen UCN
+  region: udenfor
   career_url: https://ucn.career.emply.com
   status: opdaget
   source:
@@ -271,8 +274,9 @@ employers:
     at: '2026-10-14'
     via: jobindex-link
     evidence: https://ucn.career.emply.com/ad/afdelingsleder-i-ucns-forsknings-og-udviklingsafdeling/oik5sn/da
+  note: '2/11: uden for Sjælland (Aalborg/Nordjylland) – vises ikke på /arbejdsgivere, og job hentes ikke'
 - name: Udviklings- og Forenklingsstyrelsen
-  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=statens_erekruttering
   status: opdaget
   source:
     type: hrmanager
@@ -283,7 +287,7 @@ employers:
     evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3010&ProjectId=171184&DepartmentId=19140&MediaId=5130
   cid: '3010'
 - name: Nine United A/S
-  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2182&ProjectId=144017&DepartmentId=18969&MediaId=4624
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=Nineunitedas_tr
   status: opdaget
   source:
     type: hrmanager
@@ -384,7 +388,7 @@ employers:
     via: jobindex-link
     evidence: https://karriere.ok.dk/jobs/8438127-studentermedhjaelper-til-ok-s-screeningsteam-salg-kundeservice?promotion=2254827-jobindex
 - name: Greve Kommune
-  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1169&ProjectId=148113&DepartmentId=18981&MediaId=5
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=grevekommune
   status: opdaget
   source:
     type: hrmanager
@@ -415,7 +419,7 @@ employers:
     via: jobindex-link
     evidence: https://gev.career.emply.com/ad/hr-og-sekretariatskoordinator/ef4dwh/da
 - name: Munck Asfalt
-  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1467&ProjectId=144872&DepartmentId=19967&MediaId=5
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=ofir_munck-gruppen
   status: opdaget
   source:
     type: hrmanager
@@ -486,7 +490,8 @@ employers:
     via: jobindex-link
     evidence: https://jobs.smartrecruiters.com/JYSK/744000157430084-employer-branding-consultant-30-hours-week?trid=9c834889-bbb7-437c-a553-3bcb9710b121
 - name: IBA Erhvervsakademi Kolding
-  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1433&ProjectId=143791&DepartmentId=18956&MediaId=4624
+  region: udenfor
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=ofir_iba
   status: opdaget
   source:
     type: hrmanager
@@ -496,7 +501,9 @@ employers:
     via: jobindex-link
     evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1433&ProjectId=143791&DepartmentId=18956&MediaId=4624
   cid: '1433'
+  note: '2/11: uden for Sjælland (Kolding) – vises ikke på /arbejdsgivere, og job hentes ikke'
 - name: Erhvervsakademi Dania
+  region: udenfor
   career_url: https://eadania.career.emply.com
   status: opdaget
   source:
@@ -506,8 +513,9 @@ employers:
     at: '2026-10-24'
     via: jobindex-link
     evidence: https://eadania.career.emply.com/ad/adjunkt-lektor-til-finansokonom-ved-erhvervsakademi-dania-i-hobro/wgdj5j/da
+  note: '2/11: uden for Sjælland (Randers, Hobro, Viborg m.fl.) – vises ikke på /arbejdsgivere, og job hentes ikke'
 - name: Teknologisk Institut
-  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1054&ProjectId=145194&DepartmentId=18975&MediaId=4650&SkipAdvertisement=true
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=teknologisk
   status: opdaget
   source:
     type: hrmanager
@@ -558,7 +566,7 @@ employers:
     via: jobindex-link
     evidence: https://albertslund.career.emply.com/ad/bliv-kontorelev-i-albertslund-kommune-og-fa-ansvar-faglig-udvikling-og-indblik-i/2tjsg1/da
 - name: ARC – Amager Ressourcecenter
-  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2158&ProjectId=143936&DepartmentId=18979&MediaId=4622
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=arc_tr
   status: opdaget
   source:
     type: hrmanager
@@ -629,7 +637,8 @@ employers:
     via: jobindex-link
     evidence: https://brondby.career.emply.com/ad/born-unge-og-familier-brondby-kommune-soger-to-socialradgivere-til-henholdsvis/stg56g
 - name: Fleggaard Holding A/S
-  career_url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1192&ProjectId=145362&DepartmentId=18962&MediaId=4660
+  region: udenfor
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=fleggaard
   status: opdaget
   source:
     type: hrmanager
@@ -639,6 +648,7 @@ employers:
     via: jobindex-link
     evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1192&ProjectId=145362&DepartmentId=18962&MediaId=4660
   cid: '1192'
+  note: '2/11: uden for Sjælland (Padborg/Harrislee) – vises ikke på /arbejdsgivere, og job hentes ikke'
 - name: AFRY
   career_url: https://jobs.smartrecruiters.com/AFRY/744000158534318-bygningskonstrukt-r-constructing-architect?vq_campaign=d9c3dd43-d93d-5dc2-9843-3ed942947e7b&vq_source=898f5b3b-5c32-4eaa-b0ec-a36622a58a60&igbTracker=974953822&utm_source=jobindex
   status: opdaget

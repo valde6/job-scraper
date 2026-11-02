@@ -949,7 +949,7 @@ employers:
 - name: Dansk Erhverv
   region: storkbh
   domain: danskerhverv.dk
-  career_url: https://www.danskerhverv.dk/om-dansk-erhverv/job/
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=danskerhverv
   status: klar
   source:
     type: hrmanager
@@ -1105,7 +1105,7 @@ employers:
 - name: Kræftens Bekæmpelse
   region: storkbh
   domain: cancer.dk
-  career_url: https://www.cancer.dk/om-os/job
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=cancer
   status: klar
   source:
     type: hrmanager

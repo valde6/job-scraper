@@ -377,10 +377,17 @@ STALE_DAYS = 4          # job, som kilden ikke har vist i så mange dage, lukkes
 MAX_UNSEEN_DAYS = 14    # … og efter så mange dage under alle omstændigheder
 
 
+def hrmanager_list_url(alias: str) -> str:
+    """HR-Managers offentlige liste over en kundes opslag (tjekket i browseren 2/11 for "fleggaard")."""
+    return f"https://candidate.hr-manager.net/vacancies/list.aspx?customer={alias}"
+
+
 def fallback_career_url(employer: dict) -> str | None:
     """En karriereside, der kan bruges, når `career_url` er død: kildens egen liste over opslag (hvis den er en side)."""
     src = employer.get("source") or {}
     t = src.get("type")
+    if t == "hrmanager" and src.get("customer"):
+        return hrmanager_list_url(src["customer"])
     if t == "generic" and src.get("list_urls"):
         return src["list_urls"][0]
     if t == "browser" and src.get("urls"):
