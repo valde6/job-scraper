@@ -583,6 +583,22 @@ def find_deadline(text: str, today_year: int, require_year: bool = False) -> Opt
 
 
 # ---------------------------------------------------------------- model
+_VOLATILE_PARAMS = {"_s.crb", "jobalertcontroller_jobalertid", "jobalertcontroller_jobalertname", "browsertimezone",
+                    "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"}
+
+
+def stable_url(url: str) -> str:
+    """URL uden parametre, der skifter fra besøg til besøg. 3/11: PFA's SuccessFactors-links indeholder en sessionsnøgle
+    (`_s.crb=…`), så de samme 3 job fik nyt id i hver kørsel – de stod som "nye" hver dag og mistede gemte job og
+    AI-scorer. Siden virker uden parametrene (tjekket i browseren)."""
+    from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+    p = urlsplit(url or "")
+    if not p.query:
+        return url
+    q = [(k, v) for k, v in parse_qsl(p.query, keep_blank_values=True) if k.lower() not in _VOLATILE_PARAMS]
+    return urlunsplit((p.scheme, p.netloc, p.path, urlencode(q, safe="/:"), p.fragment))
+
+
 @dataclass
 class Job:
     company: str

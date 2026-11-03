@@ -304,3 +304,17 @@ def test_region_title_town_outside_zealand_wins_over_hq_address():
     assert region("Produktionsvej 24. 2600 Glostrup", "Ingeniørpraktikanter til Munck Havne & Anlæg, Aalborg") is None
     assert region("Copenhagen, Aarhus or Aalborg", "Student Assistant, Netcompany Consulting") == "storkbh"
     assert region("Glostrup", "Studentermedhjælper til vores kontorer i Aarhus og Glostrup") == "storkbh"
+
+
+def test_stable_url_drops_session_params():
+    """3/11: PFA's links (SuccessFactors) har en sessionsnøgle, så jobbene fik nyt id i hver kørsel."""
+    from scraper.common import stable_url, Job
+    a = ("https://career2.successfactors.eu/career?career%5fns=job%5flisting&company=pfapensionP&navBarLevel=JOB%5fSEARCH"
+         "&rcm%5fsite%5flocale=da%5fDK&career_job_req_id=15217&selected_lang=da_DK&jobAlertController_jobAlertId="
+         "&jobAlertController_jobAlertName=&browserTimeZone=UTC&_s.crb=cCIW8vzfxOYR6c0k%2fXUqms2tRCxZ8wVVx1aKfG6ZYvQ%3d")
+    b = a.replace("cCIW8vzfxOYR6c0k%2fXUqms2tRCxZ8wVVx1aKfG6ZYvQ%3d", "ANDENNØGLE%3d")
+    assert stable_url(a) == stable_url(b)
+    assert "career_job_req_id=15217" in stable_url(a) and "_s.crb" not in stable_url(a)
+    assert Job("PFA", "x", stable_url(a)).id == Job("PFA", "x", stable_url(b)).id
+    assert stable_url("https://x.dk/job/1") == "https://x.dk/job/1"
+    assert stable_url("https://x.dk/job?id=5&utm_source=li") == "https://x.dk/job?id=5"

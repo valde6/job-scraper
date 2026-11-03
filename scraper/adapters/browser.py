@@ -13,7 +13,7 @@ from datetime import date
 from urllib.parse import quote, urldefrag
 
 from .. import browser as B
-from ..common import (Job, clean, get, html_to_md, soup, is_denmark, student_fit, topic_tags, reject,
+from ..common import (Job, stable_url, clean, get, html_to_md, soup, is_denmark, student_fit, topic_tags, reject,
                       jsonld_location, find_deadline)
 
 TERMS = ["student", "studentermedhjælper"]
@@ -67,7 +67,7 @@ def scrape_captured(cfg):
             continue
         for p in _get_path(data, cap.get("items")) or []:
             title = clean(str(p.get(cap["title"]) or ""))
-            link = p.get(cap["link"]) or ""
+            link = stable_url(p.get(cap["link"]) or "")
             if not title or link in seen:
                 continue
             seen.add(link)
@@ -104,7 +104,7 @@ def scrape(cfg):
     for u in urls:
         page = B.render(u, wait_for=cfg.get("wait_for"), more_clicks=cfg.get("more_clicks", 3))
         for txt, href in page["links"]:
-            href = urldefrag(href)[0]
+            href = stable_url(urldefrag(href)[0])
             if not href.startswith("http") or href in seen or not pat.search(href):
                 continue
             title = _title_from_anchor(txt)
