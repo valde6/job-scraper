@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-02T06:53:43+00:00",
+ "ts": "2026-11-03T07:17:28+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -35,8 +35,8 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 60,
-   "matched": 5,
+   "listed": 61,
+   "matched": 4,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -45,7 +45,7 @@
    "name": "Danske Bank",
    "type": "oracle",
    "ok": true,
-   "listed": 5,
+   "listed": 6,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -135,7 +135,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 30,
+   "listed": 26,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -265,7 +265,7 @@
    "name": "Dansk Industri",
    "type": "teamtailor",
    "ok": true,
-   "listed": 5,
+   "listed": 6,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 25,
+   "listed": 26,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -295,7 +295,7 @@
    "name": "KPMG",
    "type": "hrmanager",
    "ok": true,
-   "listed": 11,
+   "listed": 14,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -345,8 +345,8 @@
    "name": "Danske Commodities",
    "type": "teamtailor",
    "ok": true,
-   "listed": 4,
-   "matched": 1,
+   "listed": 6,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -355,7 +355,7 @@
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 30,
+   "listed": 29,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -365,8 +365,8 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 6,
-   "matched": 1,
+   "listed": 7,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -445,11 +445,11 @@
    "name": "Accenture",
    "type": "workday",
    "ok": true,
-   "listed": 0,
-   "matched": 0,
-   "problem": "mistænkelig",
-   "streak": 7,
-   "detail": "0 opslag (sidst 1)"
+   "listed": 1,
+   "matched": 1,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "Danmarks Radio",
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 16,
+   "streak": 17,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -495,7 +495,7 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 46,
+   "listed": 45,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -505,16 +505,15 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 383,
-   "matched": 28,
+   "listed": 394,
+   "matched": 29,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [
-  "**Accenture** (workday): mistænkelig i 7 kørsler i træk – 0 opslag (sidst 1)",
-  "**Danmarks Radio** (hrmanager): mistænkelig i 16 kørsler i træk – 0 opslag (sidst 16)"
+  "**Danmarks Radio** (hrmanager): mistænkelig i 17 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 34
+ "active": 35
 }
