@@ -1,15 +1,53 @@
 {
- "updated": "2026-11-02T06:53:43+00:00",
+ "updated": "2026-11-03T07:17:28+00:00",
  "run": {
-  "updated": "2026-11-02T06:53:43+00:00",
-  "active_count": 154,
+  "updated": "2026-11-03T07:17:28+00:00",
+  "active_count": 161,
   "sources_ok": 26,
   "sources_total": 50,
   "jobindex_ok": true
  },
  "jobs": [
   {
-   "id": "6998f4f0a602",
+   "id": "2dece61873d5",
+   "active": true,
+   "company": "Danske Commodities",
+   "title": "Student employee for Intraday Analysis",
+   "top50": true,
+   "fit": "sikker",
+   "location": "Aarhus, Denmark Kalkværksvej Aarhus Denmark Aarhus, Denmark Kalkværksvej Aarhus Denmark Aarhus",
+   "deadline": "",
+   "tags": [
+    "Data & analyse",
+    "AI",
+    "Proces",
+    "Portfolio & investering",
+    "Python"
+   ],
+   "excerpt": "## Quote\n\nYou’ll work on solutions that contribute to our trading decisions while learning from experienced analysts and traders and developing your programming and analytical skills along the way.\n\n## Here’s what the job entails\n\nIn the role as Junior Quantitative Analyst, you will support the Intraday Analysis team by analysing market behavior, testing quantitative trading ideas, and turning complex data into actionable insights. You will also develop Python-based models and tools that support trading decisions and automated strategies.\n\nMore specifically, your responsibilities include:\n\n* analysing market and trading data to identify patterns, explain market movements and uncover potential trading opportunities\n\n* developing and backtesting quantitative models and trading ideas, including approaches based on statistics and machine learning\n\n* building and improving Python tools, dashboards and reports that make data and model results accessible to analysts and traders\n\n* monitoring and maintaining existing analyses and models, investigating unexpected results and helping improve their reliability\n\n* contributing to ad-hoc analyses and development tasks in close collaboration with analysts, traders and other quantitative teams\n\n## Meet your team\n\nYou will join our Intraday Analysis team, where we develop quantitative analyses, forecasts and decision-support tools for European intraday power trading. We use market data, statistics, machine learning and domain knowledge to un"
+  },
+  {
+   "id": "8bebec84be4b",
+   "active": true,
+   "company": "PFA Pension",
+   "title": "Studentermedhjælper til Data Management - få erfaring med markedsdata",
+   "top50": true,
+   "fit": "sikker",
+   "location": "Danmark",
+   "deadline": "2026-11-24",
+   "tags": [
+    "Data & analyse",
+    "SQL",
+    "Automatisering",
+    "Digitalisering",
+    "Portfolio & investering",
+    "Finans",
+    "Python"
+   ],
+   "excerpt": "Gå til hovedindhold\nLog på\nSprog\nDansk ‎(Danish)‎\nMinimeret. Tryk på Enter for at vise\nUdvidet. Tryk på Enter for at skjule\nKarrieremuligheder: Studentermedhjælper til Data Management - få erfaring med markedsdata (15644)\nRekvisitions-id 15644 - Publiceret 02/11/2026 - København - Investering\n  Vis udskrift for jobbeskrivelse\nAnsøg\n \nGem job\n \nSend e-mail med job til en ven\n \nTilbage til listen\n\n\n \n\n”Som studentermedhjælper i Data Management får du en spændende mulighed for at udvikle dine kompetencer og få indblik i, hvordan markedsdata understøtter arbejdet i PFA’s Investeringsområde. Du bliver en del af et velfungerende team, hvor vi hjælper hinanden, finder gode løsninger sammen og har fokus på høj kvalitet i det, vi leverer,” siger Kasper Weinberger, Senior Director.\n\n \n\nSå hvad er det egentlig, du skal?\n\nDin hverdag vil bestå af både faste driftsopgaver, løbende udvikling af vores setup og besvarelse af henvendelser fra brugere af vores data. Du kommer også til at bidrage til opsætning af nye datakilder og får rig mulighed for at bruge din interesse for finansielle markeder, data og nye teknologier i praksis.\n\n \n\nVær med til at sikre kvaliteten af data i investeringsområdet\n\nSom studentermedhjælper kommer du til at arbejde med: \nGennemføre daglige valideringer af markedsdata (herunder priser, rentekurver, FX kurser osv.) og stamdata.\nImplementere, vedligeholde og foretage daglige kontroller af benchmarkdata.\nBesvare henvendelser om markedsdata og hjælpe med ad hoc leve"
+  },
+  {
+   "id": "f0148a0e3b7d",
    "active": true,
    "company": "PFA Pension",
    "title": "Studentermedhjælper til Strategisk Sundhed - omsæt analyser til løsninger, der skaber trivsel",
@@ -23,6 +61,111 @@
     "Power BI / Excel"
    ],
    "excerpt": "Gå til hovedindhold\nLog på\nSprog\nDansk ‎(Danish)‎\nMinimeret. Tryk på Enter for at vise\nUdvidet. Tryk på Enter for at skjule\nKarrieremuligheder: Studentermedhjælper til Strategisk Sundhed - omsæt analyser til løsninger, der skaber trivsel (15217)\nRekvisitions-id 15217 - Publiceret 25/10/2026 - København - Rådgivning\n  Vis udskrift for jobbeskrivelse\nAnsøg\n \nGem job\n \nSend e-mail med job til en ven\n \nTilbage til listen\n\n\n \n\n“Som studentermedhjælper i Strategisk Sundhed får du en hverdag, hvor du både arbejder analytisk og tæt på vores kunder. Du bliver en vigtig del af et stærkt team, hvor der er plads til at lære og tage ansvar,” siger Rikke Bay Haaber, Chef for Strategisk Sundhed.\n\n \n\nSå hvad er det egentlig, du skal?\n\nDu får en central rolle i arbejdet med at udvikle tilbud og løsninger, der hjælper PFA’s virksomheds- og organisationskunder med at skabe trivsel i arbejdslivet. Du kommer til at udarbejde analyser, oplæg og kundevendte materialer i tæt samarbejde med teamet. Du får en varieret hverdag med både analytiske, kommunikative og praktiske opgaver – og mulighed for at omsætte din viden fra studiet til konkrete leverancer for kunder og samarbejdspartnere.\n\n \n\nGør viden skarp og anvendelig for PFA’s kunder\n\nDine nøgleopgaver bliver at:\n\nUdarbejde og opdatere kundevendte materialer og præsentationer i PowerPoint.\nUdarbejde analyser og oplæg til løsninger, der understøtter kundespecifikke value propositions.\nIndsamle, strukturere og formidle viden og data, som kan bruges"
+  },
+  {
+   "id": "9adb5da486cc",
+   "active": true,
+   "company": "Accenture",
+   "title": "Student Event: Inside Accenture - Ask Us Anything",
+   "top50": true,
+   "fit": "sikker",
+   "location": "Copenhagen",
+   "deadline": "2026-11-17",
+   "tags": [
+    "AI",
+    "Consulting"
+   ],
+   "excerpt": "Are you curious about what it's really like to work as a consultant? Interested in digital transformation, technology, business, and solving complex challenges for leading organizations?\n\nAs part of Accenture's Digital Transformation Programme, we are opening our final session to more students who want to learn more about Accenture, meet our people, and ask the questions you've always wanted answered.\n\nJoin us on **25 November 2026** for an evening hosted at **Nordisk Film Biografer**, where you'll gain insights into life at Accenture through an engaging and informal panel debate featuring both junior and senior consultants from across our business.\n\n# What to Expect\n\nOur panelists will share their experiences and perspectives on topics such as:\n\n* What it's really like to work as a consultant at Accenture\n* Collaborating with clients and navigating real project challenges\n* Career development and growth opportunities\n* Life as a junior consultant versus a more senior role\n* Digital transformation and the future of business and technology\n* Lessons learned from client engagements and transformation programmes\n\nMost importantly, this is your opportunity to **ask anything**. Whether you're curious about consulting, career paths, work-life balance, recruitment, project work, or Accenture's culture, our panel will be ready to answer your questions.\n\nThe evening will also include networking opportunities, engaging discussions, and of course, popcorn.\n\n# Event Details\n\n**Date:** 25"
+  },
+  {
+   "id": "7e918eb61e5a",
+   "active": true,
+   "company": "Antalis A/S",
+   "title": "Student Assistant Transport",
+   "top50": false,
+   "fit": "sikker",
+   "location": "Valby",
+   "deadline": "",
+   "tags": [
+    "Proces"
+   ],
+   "excerpt": "Som studentermedhjælper i Transport bliver du en vigtig spiller i vores arbejde med at sikre en effektiv, standardiseret og pålidelig transportdrift. Du får en rolle, der kombinerer data, analyse, kvalitet og procesoptimering.\n\nDu bliver hurtigt en nøglespiller i at sikre valide data og gode beslutningsgrundlag, og du får rig mulighed for at præge processer og læring.\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
+  },
+  {
+   "id": "b12c5cdbab4a",
+   "active": true,
+   "company": "Operate A/S",
+   "title": "Studentermedhjælper til økonomi og administration",
+   "top50": false,
+   "fit": "sikker",
+   "location": "København N",
+   "deadline": "",
+   "tags": [
+    "Automatisering",
+    "AI",
+    "Finans",
+    "Consulting"
+   ],
+   "excerpt": "# Studentermedhjælper til økonomi og administration\n\nVil du have et studierelevant job, hvor du får praktisk erfaring med økonomistyring? Og vil du være en del af et ambitiøst bureau med et stærkt socialt fællesskab?\n\n2. november 2026\n\nI Operate leder vi efter en struktureret og detaljeorienteret Junior Økonomikonsulent, der kan understøtte vores daglige drift og økonomifunktion. Du bliver en vigtig brik i at sikre, at vores økonomiprocesser kører glat, og du vil få tæt sparring og gode muligheder for faglig udvikling.\n\nDu vil få selvstændigt ansvar for en række faste, ugentlige opgaver samt ad hoc-projekter i samarbejde med vores økonomi- og administrationsteam.\n\n### **Dine primære opgaver bliver:**\n\n* **Bilagshåndtering**: Kontrol, registrering og betaling af bilag.\n\n* **Fakturering**: Klargøring og udsendelse af fakturaer til vores kunder.\n\n* **Projektcontrolling**: Mulighed for at assistere vores rådgivere i projektøkonomi.\n\n* **Ad hoc-opgaver:** Diverse administrative og praktiske opgaver, der sikrer en velfungerende hverdag på kontoret.\n\nDu vil referere til vores COO Pernille Bille, og i hverdagen arbejde tæt med vores økonomichef Steen Westli.\n\n## **Hvem er du?**\n\nVi forestiller os, at du er i gang med en relevant uddannelse på fx CBS, KU eller CPH Business.\n\nSom person er du struktureret, arbejder systematisk og trives med opgaver, der kræver præcision og overblik.\n\nDet er en forudsætning for stillingen, at du taler og skriver flydende dansk.\n\nDet er en fordel, hvis d"
+  },
+  {
+   "id": "93b775f38c64",
+   "active": true,
+   "company": "Meedo ApS",
+   "title": "AI & Digital Marketing Specialist på deltid",
+   "top50": false,
+   "fit": "sandsynlig",
+   "location": "Hvidovre",
+   "deadline": "",
+   "tags": [
+    "AI",
+    "Proces"
+   ],
+   "excerpt": "[Gem job](/bruger/dine-job/h1712416/gem)\n[Del](https://www.jobindex.dk/vis-job/h1712416 \"Del\")\n[Ansøg](/c?t=e6376159&ctx=w&source=jobtext)\n\n# AI & Digital Marketing Specialist på deltid\n\nMeedo ApS\n\nHvidovre\n\n**Er du erfaren inden for digital marketing, arbejder du professionelt med Claude, og kan du skabe resultater fra dag ét?**\n\nHos Meedo søger vi en dygtig og selvstændig deltidsmedarbejder eller studentermedhjælper, der kan varetage digital markedsføring for vores kunder.\n\nVi søger en person, der har solid praktisk erfaring med digital marketing og AI, og som trives med ansvar og selvstændige opgaver. Vi forventer at du er kreativ, kan selv komme med gode ideer og arbejde selvstændigt.\n\n## **Dine arbejdsopgaver:**\n\n* Google Ads og Meta Ads: Opsætning, administration og optimering af kampagner.\n* SEO og GEO: Optimering af kundernes synlighed på Google og i AI-baserede søgninger.\n* Content og hjemmesider: Produktion og optimering af tekster, indhold og landingssider.\n* Video og videoredigering: Redigering af videoer til annoncer, sociale medier og hjemmesider.\n* Claude og AI: Effektivisering, analyse og produktion af marketingindhold ved hjælp af AI.\n\n## **Vi forventer, at du:**\n\n* Har solid praktisk erfaring med Claude og bruger AI professionelt i dit arbejde.\n* Har dokumenteret erfaring med Google Ads og Meta Ads og selvstændigt kan administrere kampagner.\n* Har praktisk erfaring med SEO, contentproduktion og videoredigering.\n* Har forståelse for GEO og optimering til AI-b"
+  },
+  {
+   "id": "8b52f48af1af",
+   "active": true,
+   "company": "Finansministeriet",
+   "title": "Finansministeriets departement søger studentermedhjælper til employer branding og organisationsudvikling",
+   "top50": true,
+   "fit": "sikker",
+   "location": "København K",
+   "deadline": "",
+   "tags": [
+    "Automatisering",
+    "Finans"
+   ],
+   "excerpt": "# Jobannonce: Finansministeriets departement søger studentermedhjælper til employer branding og organisationsudvikling\n\n[Finansministeriet](/virksomhed/22297/finansministeriet#om-virksomhed)\n\n[Fejlmeld annonce](/bruger/fejlmelding/r14080411)\n\nDel annoncen\n\nKopier link\nVia apps\n[Facebook](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.jobindex.dk%2Fvis-job%2Fr14080411)\n[LinkedIn](https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.jobindex.dk%2Fvis-job%2Fr14080411&mini=true)\n\n#### [Finansministeriets departement søger studentermedhjælper til employer branding og organisationsudvikling](https://www.jobindex.dk/jobannonce/r14080411)\n\nKøbenhavn K\n\n[Se rejsetid](#)\n\nHar du mod på faglige udfordringer og stort ansvar?\n\n**Tjek jobglæden:**\n\n[4 af 5 stjerner](/virksomhed/22297/finansministeriet#evalueringer)\n[30 evalueringer](/virksomhed/22297/finansministeriet#evalueringer)\n\nIndrykket:\n02-11-2026\n\nHentet fra Djøf Jobunivers\n\n[Gem job](/bruger/dine-job/r14080411/gem)\n\n[Se jobbet](https://www.jobunivers.dk/job/?job=8631)\n\n[Se jobbet](https://www.jobunivers.dk/job/?job=8631)\n\n432 følgere\n[FølgerFølg](/bruger/dine-virksomheder/22297)\n\n[Finansministeriet](/virksomhed/22297/finansministeriet#om-virksomhed)\n\n[30 evalueringer](/virksomhed/22297/finansministeriet#evalueringer)\n\n[4 jobannoncer](/jobsoegning/virksomhed/22297/finansministeriet)\n\n[Om virksomheden](/virksomhed/22297/finansministeriet#om-virksomhed)\n\n## Anbefalede job\n\nIndrykket:\n26. oktober 2026\n\n[Student "
+  },
+  {
+   "id": "777b2cbc8442",
+   "active": true,
+   "company": "Convatec",
+   "title": "Student Assistant, User Research & Human Factors Engineering",
+   "top50": false,
+   "fit": "sikker",
+   "location": "Søborg",
+   "deadline": "",
+   "tags": [
+    "Data & analyse"
+   ],
+   "excerpt": "Do you want to gather hands-on work experience from an international MedTech company?\n\nYou will focus on supporting the team in their everyday tasks as well as set up for user studies and support with data analysis. In addition, you will be managing our local ‘Innovation Space’ to ensure it is kept up to date and inspire the local team to be creative.\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
+  },
+  {
+   "id": "5a0b4a4a739e",
+   "active": true,
+   "company": "Microsoft",
+   "title": "Software Engineering Student Worker",
+   "top50": true,
+   "fit": "sikker",
+   "location": "Kgs. Lyngby, København",
+   "deadline": "",
+   "tags": [
+    "Data & analyse",
+    "AI"
+   ],
+   "excerpt": "# Jobannonce: Software Engineering Student Worker\n\n[Microsoft Danmark ApS](/virksomhed/5921/microsoft-danmark-aps#om-virksomhed)\n\n[Fejlmeld annonce](/bruger/fejlmelding/r14080566)\n\nDel annoncen\n\nKopier link\nVia apps\n[Facebook](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.jobindex.dk%2Fvis-job%2Fr14080566)\n[LinkedIn](https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.jobindex.dk%2Fvis-job%2Fr14080566&mini=true)\n\n#### [Software Engineering Student Worker](https://apply.careers.microsoft.com/careers/job/1970393557043463)\n\nKgs. Lyngby, København\n\nCome build a community, explore your passions and do your best work at Microsoft with thousands of university interns from every corner of the world.\n\n**Tjek jobglæden:**\n\n[5 af 5 stjerner](/virksomhed/5921/microsoft-danmark-aps#evalueringer)\n[143 evalueringer](/virksomhed/5921/microsoft-danmark-aps#evalueringer)\n\nIndrykket:\n02-11-2026\n\n[Gem job](/bruger/dine-job/r14080566/gem)\n\n[Se jobbet](https://apply.careers.microsoft.com/careers/job/1970393557043463)\n\n[Se jobbet](https://apply.careers.microsoft.com/careers/job/1970393557043463)\n\n1.926 følgere\n[FølgerFølg](/bruger/dine-virksomheder/5921)\n\n[Microsoft Danmark ApS](/virksomhed/5921/microsoft-danmark-aps#om-virksomhed)\n\n[143 evalueringer](/virksomhed/5921/microsoft-danmark-aps#evalueringer)\n\n[13 jobannoncer](/jobsoegning/virksomhed/5921/microsoft-danmark-aps)\n\n[Om virksomheden](/virksomhed/5921/microsoft-danmark-aps#om-virksomhed)\n\n## Anbefalede job\n\nIndrykket:"
   },
   {
    "id": "ee4f80591e03",
@@ -65,7 +208,7 @@
    "top50": true,
    "fit": "sikker",
    "location": "Lyngby",
-   "deadline": "",
+   "deadline": "2026-11-06",
    "tags": [
     "Data & analyse",
     "Proces",
@@ -81,7 +224,7 @@
    "top50": true,
    "fit": "sikker",
    "location": "Lyngby",
-   "deadline": "",
+   "deadline": "2026-11-15",
    "tags": [
     "Data & analyse",
     "SQL",
@@ -100,41 +243,13 @@
    "top50": true,
    "fit": "sikker",
    "location": "Lyngby",
-   "deadline": "",
+   "deadline": "2026-11-15",
    "tags": [
     "Data & analyse",
     "Automatisering",
     "AI"
    ],
    "excerpt": "**Interesseret i en karriere, der gør en forskel?**\n\n&#xa;\n\nAre you excited about the potential of AI to transform the way we work, collaborate, and solve business challenges? Join our Supply Chain Data & Analytics team and help accelerate AI adoption across Novonesis’ global Supply Chain organization.\n\nWe partner with supply chain teams across the business to turn data into insights and action, supporting end-to-end supply chain processes and strategic initiatives. Working closely with global and regional stakeholders as well as our Global Competence Center in Bangalore, India, we help drive transparency, performance, and informed decision-making across the supply chain.\n\n**The role & your impact**As our Student Assistant in AI Adoption in Supply Chain, you will help turn emerging AI technology into practical solutions that make a difference in colleagues’ everyday work. You will work at the intersection of AI, business transformation, learning, and community building, helping colleagues explore and adopt tools such as Microsoft Copilot and other Generative AI solutions.\n\nWorking closely with Supply Chain Data & Analytics, business stakeholders, and our growing AI Community, you will have the opportunity to:\n\n* Develop engaging training materials, learning content, guides, and best practices that help colleagues adopt AI tools and new ways of working.\n* Build, test, and continuously improve reusable prompt libraries for common Supply Chain and business scenarios.\n* Support c"
-  },
-  {
-   "id": "84b4d938b0ff",
-   "active": true,
-   "company": "KFUMs Idrætsforbund",
-   "title": "Studentermedhjælper til selvstændige opgaver indenfor idræt og ungemiljøer",
-   "top50": false,
-   "fit": "sikker",
-   "location": "Aalborg, Odense, Esbjerg, Kolding, Roskilde",
-   "deadline": "",
-   "tags": [
-    "Consulting"
-   ],
-   "excerpt": "[Gem job](/bruger/dine-job/h1712255/gem)\n[Del](https://www.jobindex.dk/vis-job/h1712255 \"Del\")\n[Ansøg](/c?t=e6373514&ctx=w&source=jobtext)\n\n# Studentermedhjælper til selvstændige opgaver indenfor idræt og ungemiljøer\n\nKFUMs Idrætsforbund\n\nAalborg, Odense, Esbjerg, Kolding, Roskilde\n\n## Aalborg, Odense, Esbjerg, Kolding, Roskilde kalder!\n\nSøger du mulighed for at udvikle dine færdigheder som kommende konsulent? KFUMs Idrætsforbund søger open-minded studerende, der kan hjælpe os med at udvikle fællesskaber for unge i en konsulentfunktion. Her får du for alvor mulighed for at udvikle dig i en selvstændigopgave, hvor du er knyttet til et dygtigt team af faste medarbejdere.\n\n## Hvad går jobbet ud på?\n\nHos KFUMs Idrætsforbund arbejder vi med projektet ”Flere Nye Unge Fællesskaber”, hvor vi hjælper unge mellem 18 og 30 år med at finde sammen om nye idrætsaktiviteter og fællesskaber.\n\nVi tror på, at idræt kan være meget mere end træning og konkurrence. Det handler også om at møde nye mennesker, skabe relationer og føle sig som en del af noget større.\n\nGennem de seneste 3 år har vi været med til at skabe mere end 200 aktiviteter, 28 nye fællesskaber og involveret omkring 2.500 unge.\n\nNu vil vi gerne skabe endnu flere fællesskaber – og derfor har vi brug for dig!\n\nDu bliver vores lokale drivkraft i din by og får en vigtig rolle i at skabe nye aktiviteter og fællesskaber.\n\n## Hvad skal du lave?\n\nDine opgaver bliver blandt andet at; tage samtaler med unge, at skabe kontakt til unge i stu"
-  },
-  {
-   "id": "38a3caadb9d5",
-   "active": true,
-   "company": "Tryg Forsikring A/S",
-   "title": "Studentermedhjælper til rådgivning og salg",
-   "top50": false,
-   "fit": "sikker",
-   "location": "Ballerup",
-   "deadline": "2026-11-19",
-   "tags": [
-    "Finans"
-   ],
-   "excerpt": "[Gem job](/bruger/dine-job/h1712243/gem)\n[Del](https://www.jobindex.dk/vis-job/h1712243 \"Del\")\n[Ansøg](/c?t=e6373502&ctx=w)\n\n# Studentermedhjælper til rådgivning og salg\n\nTryg Forsikring A/S\n\nBallerup\n\nEr du i gang med en finansøkonom-, finansbachelor- eller lignende uddannelse, og har du lyst til at omsætte teori til praksis i et af Skandinaviens største skadesforsikringsselskaber? Hos Tryg får du mulighed for at udvikle dine kompetencer inden for rådgivning og salg, samtidig med at du opbygger relevant erhvervserfaring ved siden af studiet. For mange af vores studerende bliver studiejobbet det første skridt mod praktik og senere en karriere i Tryg.\n\n## Om jobbet | Rådgivning, salg og værdifuld erfaring\n\nSom studentermedhjælper i Team Deltid bliver du en del af et team af studerende, der hver dag hjælper både eksisterende og nye kunder over telefonen. Du rådgiver kunderne om deres forsikringer, følger op på tilbud og hjælper dem med at finde løsninger, der matcher deres behov.\n\nVi ønsker, at du får den bedst mulige start hos os. Derfor begynder ansættelsen med et grundigt og lønnet oplæringsforløb, hvor du bliver introduceret til vores produkter, systemer og arbejdsmetoder. Opstart er den 1. januar 2027, og i de første fire uger deltager du i undervisning tirsdag, onsdag, torsdag og lørdag kl. 09.00-16.00. Det er vigtigt, at du kan deltage på alle undervisningsdage, så du får de bedste forudsætninger for at lykkes i rollen.\n\nEfter oplæringen arbejder du op til 15 timer om ug"
   },
   {
    "id": "822654e3b1f3",
@@ -152,6 +267,20 @@
    "excerpt": "# Jobannonce: Finansministeriet søger dygtige studenter til arbejdet med finansloven\n\n[Finansministeriets Departementet](/virksomhed/22297/finansministeriet#om-virksomhed)\n\n[Fejlmeld annonce](/bruger/fejlmelding/r14076299)\n\nDel annoncen\n\nKopier link\nVia apps\n[Facebook](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.jobindex.dk%2Fvis-job%2Fr14076299)\n[LinkedIn](https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.jobindex.dk%2Fvis-job%2Fr14076299&mini=true)\n\n#### [Finansministeriet søger dygtige studenter til arbejdet med finansloven](https://www.jobindex.dk/jobannonce/r14076299/finansministeriet-soeger-dygtige-studenter-til-arbejdet-med-finansloven)\n\nKøbenhavn K\n\n[Se rejsetid](#)\n\nHar du lyst til at arbejde i maskinrummet bag finansloven og komme helt tæt på centrale regeringsprocesser?\n\n**Tjek jobglæden:**\n\n[4 af 5 stjerner](/virksomhed/22297/finansministeriet#evalueringer)\n[30 evalueringer](/virksomhed/22297/finansministeriet#evalueringer)\n\nIndrykket:\n30-10-2026\n\nHentet fra Jobcenter\n\n[Gem job](/bruger/dine-job/r14076299/gem)\n\n[Se jobbet](https://www.jobindex.dk/jobannonce/r14076299/finansministeriet-soeger-dygtige-studenter-til-arbejdet-med-finansloven)\n\n[Se jobbet](https://www.jobindex.dk/jobannonce/r14076299/finansministeriet-soeger-dygtige-studenter-til-arbejdet-med-finansloven)\n\n432 følgere\n[FølgerFølg](/bruger/dine-virksomheder/22297)\n\n[Finansministeriet](/virksomhed/22297/finansministeriet#om-virksomhed)\n\n[30 evalueringer](/virksomhed/22297/fin"
   },
   {
+   "id": "38a3caadb9d5",
+   "active": true,
+   "company": "Tryg Forsikring A/S",
+   "title": "Studentermedhjælper til rådgivning og salg",
+   "top50": false,
+   "fit": "sikker",
+   "location": "Ballerup",
+   "deadline": "2026-11-19",
+   "tags": [
+    "Finans"
+   ],
+   "excerpt": "[Gem job](/bruger/dine-job/h1712243/gem)\n[Del](https://www.jobindex.dk/vis-job/h1712243 \"Del\")\n[Ansøg](/c?t=e6373502&ctx=w)\n\n# Studentermedhjælper til rådgivning og salg\n\nTryg Forsikring A/S\n\nBallerup\n\nEr du i gang med en finansøkonom-, finansbachelor- eller lignende uddannelse, og har du lyst til at omsætte teori til praksis i et af Skandinaviens største skadesforsikringsselskaber? Hos Tryg får du mulighed for at udvikle dine kompetencer inden for rådgivning og salg, samtidig med at du opbygger relevant erhvervserfaring ved siden af studiet. For mange af vores studerende bliver studiejobbet det første skridt mod praktik og senere en karriere i Tryg.\n\n## Om jobbet | Rådgivning, salg og værdifuld erfaring\n\nSom studentermedhjælper i Team Deltid bliver du en del af et team af studerende, der hver dag hjælper både eksisterende og nye kunder over telefonen. Du rådgiver kunderne om deres forsikringer, følger op på tilbud og hjælper dem med at finde løsninger, der matcher deres behov.\n\nVi ønsker, at du får den bedst mulige start hos os. Derfor begynder ansættelsen med et grundigt og lønnet oplæringsforløb, hvor du bliver introduceret til vores produkter, systemer og arbejdsmetoder. Opstart er den 1. januar 2027, og i de første fire uger deltager du i undervisning tirsdag, onsdag, torsdag og lørdag kl. 09.00-16.00. Det er vigtigt, at du kan deltage på alle undervisningsdage, så du får de bedste forudsætninger for at lykkes i rollen.\n\nEfter oplæringen arbejder du op til 15 timer om ug"
+  },
+  {
    "id": "bc6c299da108",
    "active": true,
    "company": "KMD A/S",
@@ -165,6 +294,20 @@
     "AI"
    ],
    "excerpt": "# Jobannonce: Student Worker | Business Intelligence & Data Analytics\n\n[KMD A/S](/virksomhed/201/kmd-a-s#om-virksomhed)\n\n[Fejlmeld annonce](/bruger/fejlmelding/r14076978)\n\nDel annoncen\n\nKopier link\nVia apps\n[Facebook](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.jobindex.dk%2Fvis-job%2Fr14076978)\n[LinkedIn](https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.jobindex.dk%2Fvis-job%2Fr14076978&mini=true)\n\n#### [Student Worker | Business Intelligence & Data Analytics](https://www.it-jobbank.dk/c?t=h1711900&ctx=j&utm_source=partner&utm_medium=jobindex&utm_campaign=jobannonce)\n\nBallerup\n\nStudent Worker | Business Intelligence & Data Analytics Hos KMD udvikler vi digitale løsninger, som bruges og skaber fremskridt for millioner af mennesker verden over.\n\n**Tjek jobglæden:**\n\n[4 af 5 stjerner](/virksomhed/201/kmd-a-s#evalueringer)\n[518 evalueringer](/virksomhed/201/kmd-a-s#evalueringer)\n\nIndrykket:\n30-10-2026\n\nHentet fra Computerworld it-jobbank\n\n[Gem job](/bruger/dine-job/r14076978/gem)\n\n[Se jobbet](https://www.it-jobbank.dk/c?t=h1711900&ctx=j&utm_source=partner&utm_medium=jobindex&utm_campaign=jobannonce)\n\n[Se jobbet](https://www.it-jobbank.dk/c?t=h1711900&ctx=j&utm_source=partner&utm_medium=jobindex&utm_campaign=jobannonce)\n\n3.829 følgere\n[FølgerFølg](/bruger/dine-virksomheder/201)\n\n[KMD A/S](/virksomhed/201/kmd-a-s#om-virksomhed)\n\n[518 evalueringer](/virksomhed/201/kmd-a-s#evalueringer)\n\n[8 jobannoncer](/jobsoegning/virksomhed/201/kmd-a-s)\n\n[Om virksomh"
+  },
+  {
+   "id": "84b4d938b0ff",
+   "active": true,
+   "company": "KFUMs Idrætsforbund",
+   "title": "Studentermedhjælper til selvstændige opgaver indenfor idræt og ungemiljøer",
+   "top50": false,
+   "fit": "sikker",
+   "location": "Aalborg, Odense, Esbjerg, Kolding, Roskilde",
+   "deadline": "",
+   "tags": [
+    "Consulting"
+   ],
+   "excerpt": "[Gem job](/bruger/dine-job/h1712255/gem)\n[Del](https://www.jobindex.dk/vis-job/h1712255 \"Del\")\n[Ansøg](/c?t=e6373514&ctx=w&source=jobtext)\n\n# Studentermedhjælper til selvstændige opgaver indenfor idræt og ungemiljøer\n\nKFUMs Idrætsforbund\n\nAalborg, Odense, Esbjerg, Kolding, Roskilde\n\n## Aalborg, Odense, Esbjerg, Kolding, Roskilde kalder!\n\nSøger du mulighed for at udvikle dine færdigheder som kommende konsulent? KFUMs Idrætsforbund søger open-minded studerende, der kan hjælpe os med at udvikle fællesskaber for unge i en konsulentfunktion. Her får du for alvor mulighed for at udvikle dig i en selvstændigopgave, hvor du er knyttet til et dygtigt team af faste medarbejdere.\n\n## Hvad går jobbet ud på?\n\nHos KFUMs Idrætsforbund arbejder vi med projektet ”Flere Nye Unge Fællesskaber”, hvor vi hjælper unge mellem 18 og 30 år med at finde sammen om nye idrætsaktiviteter og fællesskaber.\n\nVi tror på, at idræt kan være meget mere end træning og konkurrence. Det handler også om at møde nye mennesker, skabe relationer og føle sig som en del af noget større.\n\nGennem de seneste 3 år har vi været med til at skabe mere end 200 aktiviteter, 28 nye fællesskaber og involveret omkring 2.500 unge.\n\nNu vil vi gerne skabe endnu flere fællesskaber – og derfor har vi brug for dig!\n\nDu bliver vores lokale drivkraft i din by og får en vigtig rolle i at skabe nye aktiviteter og fællesskaber.\n\n## Hvad skal du lave?\n\nDine opgaver bliver blandt andet at; tage samtaler med unge, at skabe kontakt til unge i stu"
   },
   {
    "id": "a9d20ff524a8",
@@ -190,7 +333,7 @@
    "top50": true,
    "fit": "sikker",
    "location": "Danmark",
-   "deadline": "",
+   "deadline": "2026-11-22",
    "tags": [
     "AI",
     "Portfolio & investering",
@@ -293,20 +436,6 @@
    "excerpt": "Er du ambitiøs og har et ønske om at udvikle dine kompetencer inden for økonomi?\n\nDu vil primært arbejde med faste økonomiopgaver, der knytter sig til regnskabet og tilhørende controlleropgaver.\n\nDu vil få et stort praktisk indblik i opgaver og processerne i en økonomiafdeling, som kan være et godt afsæt til at anvende og perspektivere den teori, som du har med fra dit studie.\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
   },
   {
-   "id": "a6269e710f7f",
-   "active": true,
-   "company": "Lærernes a-kasse",
-   "title": "Vi søger en engageret studerende til vores Medlemsserviceteam",
-   "top50": false,
-   "fit": "sikker",
-   "location": "København K",
-   "deadline": "",
-   "tags": [
-    "Consulting"
-   ],
-   "excerpt": "Som medlemskonsulent bliver du a-kassens stemme og ansigt udadtil og den første der har kontakten med vores medlemmer.\n\nVi søger en medlemskonsulent, som på skift skal være i vores reception og på telefonen i vores Medlemsservice. Din vigtigste opgave er at sikre, at medlemmerne får en tryg og professionel oplevelse, når de kontakter os.\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
-  },
-  {
    "id": "b7d7e2b16bc1",
    "active": true,
    "company": "Danske Regioner",
@@ -319,6 +448,20 @@
     "Data & analyse"
    ],
    "excerpt": "# Jobannonce: Analytisk stærk studentermedhjælper der vil arbejde med sundhedspolitik\n\n[Danske Regioner](/virksomhed/21746/danske-regioner#om-virksomhed)\n\n[Fejlmeld annonce](/bruger/fejlmelding/r14072738)\n\nDel annoncen\n\nKopier link\nVia apps\n[Facebook](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.jobindex.dk%2Fvis-job%2Fr14072738)\n[LinkedIn](https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.jobindex.dk%2Fvis-job%2Fr14072738&mini=true)\n\n#### [Analytisk stærk studentermedhjælper der vil arbejde med sundhedspolitik](https://www.jobindex.dk/jobannonce/r14072738)\n\nKøbenhavn\n\nVil du have erfaring med politisk interessevaretagelse og være med til at realisere sundhedsreformens ambitioner om et nært og sammenhængende sundhedsvæsen?\n\n**Tjek jobglæden:**\n\n[4 af 5 stjerner](/virksomhed/21746/danske-regioner#evalueringer)\n[37 evalueringer](/virksomhed/21746/danske-regioner#evalueringer)\n\nIndrykket:\n28-10-2026\n\nHentet fra Altinget\n\n[Gem job](/bruger/dine-job/r14072738/gem)\n\n[Se jobbet](https://www.altinget.dk/job/analytisk-staerk-studentermedhjaelper-der-vil-arbejde-med-sundhedspolitik)\n\n[Se jobbet](https://www.altinget.dk/job/analytisk-staerk-studentermedhjaelper-der-vil-arbejde-med-sundhedspolitik)\n\n703 følgere\n[FølgerFølg](/bruger/dine-virksomheder/21746)\n\n[Danske Regioner](/virksomhed/21746/danske-regioner#om-virksomhed)\n\n[37 evalueringer](/virksomhed/21746/danske-regioner#evalueringer)\n\n[Om virksomheden](/virksomhed/21746/danske-regioner#om-virksomhed)\n\n## "
+  },
+  {
+   "id": "a6269e710f7f",
+   "active": true,
+   "company": "Lærernes a-kasse",
+   "title": "Vi søger en engageret studerende til vores Medlemsserviceteam",
+   "top50": false,
+   "fit": "sikker",
+   "location": "København K",
+   "deadline": "",
+   "tags": [
+    "Consulting"
+   ],
+   "excerpt": "Som medlemskonsulent bliver du a-kassens stemme og ansigt udadtil og den første der har kontakten med vores medlemmer.\n\nVi søger en medlemskonsulent, som på skift skal være i vores reception og på telefonen i vores Medlemsservice. Din vigtigste opgave er at sikre, at medlemmerne får en tryg og professionel oplevelse, når de kontakter os.\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
   },
   {
    "id": "7488ac3d282c",
@@ -408,7 +551,7 @@
    "top50": true,
    "fit": "sikker",
    "location": "Copenhagen, dk",
-   "deadline": "",
+   "deadline": "2026-11-15",
    "tags": [
     "Data & analyse",
     "Finans",
@@ -424,7 +567,7 @@
    "top50": true,
    "fit": "sikker",
    "location": "Copenhagen, dk",
-   "deadline": "",
+   "deadline": "2026-11-15",
    "tags": [
     "Data & analyse",
     "AI",
@@ -734,7 +877,7 @@
    "top50": true,
    "fit": "sikker",
    "location": "Danmark",
-   "deadline": "",
+   "deadline": "2026-11-25",
    "tags": [
     "Automatisering",
     "AI",
@@ -976,20 +1119,6 @@
    "excerpt": "# Jobannonce: Noma Projects søger en lønbogholder på deltid med mulighed for hjemmearbejde\n\n[Noma Projects](/virksomhed/68456/noma-projects#om-virksomhed)\n\n[Fejlmeld annonce](/bruger/fejlmelding/r14056260)\n\nDel annoncen\n\nKopier link\nVia apps\n[Facebook](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.jobindex.dk%2Fvis-job%2Fr14056260)\n[LinkedIn](https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.jobindex.dk%2Fvis-job%2Fr14056260&mini=true)\n\n#### [Noma Projects søger en lønbogholder på deltid med mulighed for hjemmearbejde](https://hospitunity.dk/jobs/loenbogholder-noma-projects/)\n\nKøbenhavn K\n\n[Se rejsetid](#)\n\nVil du have ansvar for den månedlige lønproces i en fleksibel deltidsrolle med mulighed for hjemmearbejde og tæt samarbejde på tværs af HR og Finans?\n\n[Om virksomheden](/virksomhed/68456/noma-projects#om-virksomhed)\n\nIndrykket:\n19-10-2026\n\nHentet fra Hospitunity\n\n[Gem job](/bruger/dine-job/r14056260/gem)\n\n[Se jobbet](https://hospitunity.dk/jobs/loenbogholder-noma-projects/)\n\n[Se jobbet](https://hospitunity.dk/jobs/loenbogholder-noma-projects/)\n\n[FølgerFølg](/bruger/dine-virksomheder/68456)\n\n[Noma Projects](/virksomhed/68456/noma-projects#om-virksomhed)\n\n[3 jobannoncer](/jobsoegning/virksomhed/68456/noma-projects)\n\n[Om virksomheden](/virksomhed/68456/noma-projects#om-virksomhed)\n\n## Anbefalede job\n\nIndrykket:\n8. oktober 2026\n\n[Erfaren løn­bog­hol­der søges til Stads­re­vi­sio­nen, Aarhus eller København](/c?t=h1697389&ctx=w&ctt=r&u=22698274)\n\nStad"
   },
   {
-   "id": "22d1d8963f3d",
-   "active": true,
-   "company": "LEGO Group",
-   "title": "Student Worker - Workplace Innovation",
-   "top50": true,
-   "fit": "sikker",
-   "location": "Billund",
-   "deadline": "",
-   "tags": [
-    "Power BI / Excel"
-   ],
-   "excerpt": "**Job Description**\n\n## Student Worker – Event Support HQ\n\n*Location: Billund Part-time | Approx. 15-20 hours per week*\n\nAre you passionate about creating engaging workplace experiences, organizing events, and supporting a vibrant office environment? We are looking for a proactive and service-minded student worker to join our Workplace Innovation & Engagement team in Billund.\n\nIn this role, you will help create memorable employee experiences through events, communications, and day-to-day support that contribute to a positive and engaging workplace culture.\n\n**What you'll be doing**\n\n**Event Coordination & Execution**\n\n· Coordinate internal events and employee engagement activities\n\n· Manage participant registrations and event invitations\n\n· Liaise with external vendors\n\n· Prepare event run sheets and briefing materials\n\n· Support event setup and breakdown\n\n· Collect and analyze post-event feedback\n\n· Support on running events in holiday weeks\n\n**Communications & Employee Engagement**\n\n· Create communications related to workplace activities and events\n\n· Draft posts for Teams, Viva Engage, and other internal communication channels\n\n· Design posters and visual materials using Canva or similar tools\n\n· Support on shared mailbox\n\n· Support maintenance of intranet pages\n\n· Take photos and create content during events\n\n· Prepare event highlights and short recaps\n\n**Data, Reporting & Administration**\n\n· Track event attendance and participation metrics\n\n· Collect feedback and prepare"
-  },
-  {
    "id": "3c3bc54ef082",
    "active": true,
    "company": "Deloitte",
@@ -1164,23 +1293,6 @@
     "Consulting"
    ],
    "excerpt": "[Show More](#)\n\n# Audit Studentermedarbejder i EY\n\n1724686DNK-Aarhus C, DNK-Esbjerg, DNK-Fredriksberg, DNK-Herning, DNK-Odense, DNK-Sønderborg, DNK-Vejle - Tech House\n\n[apply](/external/requisitions/RcW6SJvkzoSjrMspek6x0A/apply?locale=en)\n\n### \\_\\_\\_\\_\\_\\_\\_\\_\n\nAt EY, we’re all in to shape your future with confidence.\n\nWe’ll help you succeed in a globally connected powerhouse of diverse teams and take your career wherever you want it to go.\n\nJoin EY and help to build a better working world.\n\n### \\_\\_\\_\\_\\_\\_\\_\\_\\_\n\n**Will you shape the future or will the future shape you?**\n\nDu sidder til forelæsning og tænker: \"Hvordan ser det her egentlig ud i virkeligheden?\" Du har lyst til at komme tættere på erhvervslivet, men vil gerne starte i et tempo, hvor der stadig er plads til studiet.\n\nSom Audit Studentermedarbejder hos EY får du netop det. Du kommer helt tæt på nogle af Danmarks mest spændende virksomheder, bidrager til rigtige opgaver og lærer af nogle af landets dygtigste revisorer. Alt sammen mens du er en del af et stærkt fællesskab af andre unge og har god plads til forelæsninger, eksamener og fritid.\n\nVi søger Audit Studentermedarbejdere i **Esbjerg, Herning, København, Odense, Sønderborg, Vejle og Aarhus**.\n\n**The opportunity: Dit næste eventyr venter**\n\nSom Audit Studentermedarbejder i EY får du et studiejob, der er mere end kaffe og kopimaskiner. Du kommer med ud til kunderne, arbejder med rigtige opgaver og lærer revisorfaget som et håndværk – i et tempo, der passer in"
-  },
-  {
-   "id": "faa8ab0b011a",
-   "active": true,
-   "company": "Accenture",
-   "title": "An Evening with Accenture x CBS IT Union - AI in Consulting",
-   "top50": true,
-   "fit": "sandsynlig",
-   "location": "Copenhagen",
-   "deadline": "",
-   "tags": [
-    "Data & analyse",
-    "AI",
-    "Digitalisering",
-    "Consulting"
-   ],
-   "excerpt": "We are partnering with CBS IT Union to invite MSc students from CBS for an evening at the Accenture Copenhagen office, where we explore how AI is shaping the future of consulting - both in how we work and in the solutions we deliver to clients.\n\n# **What to expect:**\n\n• **AI in Consulting:** Get an inside look at how Accenture integrates AI into our day-to-day work and into the solutions we build for clients - from strategy through to implementation.\n\n• **Consulting AI Challenge:** Work in teams on a consulting-inspired challenge designed to reflect how AI is applied in practice. Apply analytical thinking and structured reasoning to a realistic business problem.\n\n• **Insight into Accenture:** Hear directly from our consultants about life at Accenture and the kind of work we do at the forefront of technology and business transformation.\n\n• **Dinner & Networking:** Enjoy pizza and drinks while connecting with Accenture consultants - many of whom are CBS alumni themselves.\n\n# **About you:**\n\n• You are currently enrolled in one of the three MSc programs at CBS represented by IT Union (Data Science, Digital Business, or Information Systems).\n\n• You have a technical foundation or a strong interest in data, AI, and digitalization.\n\n• You are curious about consulting and what a career combining tech and business looks like.\n\n# **Practical details:**\n\n• Date: Wednesday, November 4, 2026\n\n• Time: 17:00\n\n• Location: Accenture Copenhagen, Bohrsgade 35, 1799 Copenhagen\n\n# **How to apply:*"
   },
   {
    "id": "82f9d66e88d2",
@@ -1658,6 +1770,20 @@
    "excerpt": "Brænder du for at gøre en forskel for iværksættere? Vil du prøve kræfter med et studiejob, som byder på ansvar og mulighed for hjælpe andre med at lykkes? Og er du ansvarlig og elsker at indgå i nye relationer? Så er det måske dig, der skal være en del af teamet.\n\nDin dagligdag vil bestå i at yde en kvalitetsbevidst, effektiv og nærværende service til vores medlemmer.\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
   },
   {
+   "id": "3294b72942f2",
+   "active": true,
+   "company": "Custom Cph ApS",
+   "title": "Administrativ koordinator med flair for regnskab søges til startup i vækst – deltid også mulig",
+   "top50": false,
+   "fit": "mulig",
+   "location": "København V",
+   "deadline": "",
+   "tags": [
+    "Finans"
+   ],
+   "excerpt": "[Gem job](/bruger/dine-job/h1703743/gem)\n[Del](https://www.jobindex.dk/vis-job/h1703743 \"Del\")\n[Ansøg](mailto:jobs@customcph.com)\n\n# Administrativ koordinator med flair for regnskab søges til startup i vækst – deltid også mulig\n\nCustom Cph ApS\n\nKøbenhavn V\n\n## Vil du have en central rolle i udviklingen af en succesfuld dansk startup i vækst?\n\nCUSTOM CPH er en lille, men succesfuld dansk startup, der producerer custom løsninger som møbler, skabe og køkkener i høj snedkerkvalitet – og til meget skarpe priser – med produktion i de baltiske lande.\n\nVi har dejligt travlt med glade kunder og leder efter en talentfuld (og naturligvis sød) administrativ koordinator med flair for regnskab og en stærk digital forståelse. Du bliver en vigtig brik i at holde styr på vores økonomi og i at skabe god struktur på tværs af teamet.\n\nDu kommer til at stå for den løbende bogføring i e-conomic, have styr på debitorer og kreditorer, lægge betalinger klar og afstemme op imod banken. Du følger op på vores kunder og rykker, når det er nødvendigt, så vi sikrer, at betalingerne kommer ind. Du klargør regnskabet til revisor, står for momsafregningen og er med til at lave forecast og budgetter for året samt støtte ledelsen med månedlige rapporter.\n\nDerudover kommer du til at bistå med indkøb og samarbejdsaftaler, koordinere på tværs af teamet og hjælpe med forefaldende arbejde. Du får naturligvis sparring og støtte fra ledelsen og vores revisor undervejs.\n\nVi har søde kollegaer og et hyggeligt og uformel"
+  },
+  {
    "id": "bcd01a628d1f",
    "active": true,
    "company": "Ældre Sagen",
@@ -1671,20 +1797,6 @@
     "Power BI / Excel"
    ],
    "excerpt": "Vil du arbejde med et af Danmarks mest spændende datasæt om danskernes liv, værdier og fremtid? Og har du flair for dataanalyse og Power BI?\n\nÆldre Sagens afdeling for Samfundsanalyse søger en studentermedarbejder til et fagligt udfordrende studiejob med stor grad af selvstændighed og mulighed for at opbygge kompetencer inden for analyse, statistik og datavisualisering.\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
-  },
-  {
-   "id": "3294b72942f2",
-   "active": true,
-   "company": "Custom Cph ApS",
-   "title": "Administrativ koordinator med flair for regnskab søges til startup i vækst – deltid også mulig",
-   "top50": false,
-   "fit": "mulig",
-   "location": "København V",
-   "deadline": "",
-   "tags": [
-    "Finans"
-   ],
-   "excerpt": "[Gem job](/bruger/dine-job/h1703743/gem)\n[Del](https://www.jobindex.dk/vis-job/h1703743 \"Del\")\n[Ansøg](mailto:jobs@customcph.com)\n\n# Administrativ koordinator med flair for regnskab søges til startup i vækst – deltid også mulig\n\nCustom Cph ApS\n\nKøbenhavn V\n\n## Vil du have en central rolle i udviklingen af en succesfuld dansk startup i vækst?\n\nCUSTOM CPH er en lille, men succesfuld dansk startup, der producerer custom løsninger som møbler, skabe og køkkener i høj snedkerkvalitet – og til meget skarpe priser – med produktion i de baltiske lande.\n\nVi har dejligt travlt med glade kunder og leder efter en talentfuld (og naturligvis sød) administrativ koordinator med flair for regnskab og en stærk digital forståelse. Du bliver en vigtig brik i at holde styr på vores økonomi og i at skabe god struktur på tværs af teamet.\n\nDu kommer til at stå for den løbende bogføring i e-conomic, have styr på debitorer og kreditorer, lægge betalinger klar og afstemme op imod banken. Du følger op på vores kunder og rykker, når det er nødvendigt, så vi sikrer, at betalingerne kommer ind. Du klargør regnskabet til revisor, står for momsafregningen og er med til at lave forecast og budgetter for året samt støtte ledelsen med månedlige rapporter.\n\nDerudover kommer du til at bistå med indkøb og samarbejdsaftaler, koordinere på tværs af teamet og hjælpe med forefaldende arbejde. Du får naturligvis sparring og støtte fra ledelsen og vores revisor undervejs.\n\nVi har søde kollegaer og et hyggeligt og uformel"
   },
   {
    "id": "ff2c40ea20af",
@@ -2319,6 +2431,11 @@
    "excerpt": ""
   },
   {
+   "id": "6998f4f0a602",
+   "active": false,
+   "deadline": "2026-11-08"
+  },
+  {
    "id": "ca2589a84e06",
    "active": false,
    "deadline": "2026-11-08"
@@ -2374,6 +2491,11 @@
    "deadline": "2026-11-01"
   },
   {
+   "id": "22d1d8963f3d",
+   "active": false,
+   "deadline": ""
+  },
+  {
    "id": "48e35f567563",
    "active": false,
    "deadline": ""
@@ -2407,6 +2529,11 @@
    "id": "7f46511edfb9",
    "active": false,
    "deadline": "2026-10-15"
+  },
+  {
+   "id": "faa8ab0b011a",
+   "active": false,
+   "deadline": ""
   },
   {
    "id": "84a95a0e845a",
