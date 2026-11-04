@@ -1,18 +1,18 @@
-Novo Nordisk                     successfactors  True 3 1 
+Novo Nordisk                     successfactors  True 4 1 
 A.P. Møller - Mærsk              workday         True 405 0 
 LEGO Group                       workday         True 61 4 
-Danske Bank                      oracle          True 6 1 
+Danske Bank                      oracle          True 7 2 
 Deloitte                         smartrecruiters True 30 7 
 PwC                              workday         True 9 3 
 Boston Consulting Group (BCG)    eightfold       True 4 0 
 Nordea                           nordea          True 7 0 
 EY                               yello           True 8 2 
-Nykredit                         browser         True 26 1 
+Nykredit                         browser         True 28 2 
 Vestas                           successfactors  True 7 0 
-Saxo Bank                        workday         True 27 0 
+Saxo Bank                        workday         True 26 0 
 Arla Foods                       phenom          True 10 0 
-Dansk Industri                   teamtailor      True 6 2 
-Ørsted                           browser         True 26 0 
+Dansk Industri                   teamtailor      True 8 2 
+Ørsted                           browser         True 24 0 
 KPMG                             hrmanager       True 14 1 
 PA Consulting Group              smartrecruiters True 14 2 
 Danske Commodities               teamtailor      True 6 2 
@@ -24,6 +24,6 @@ Accenture                        workday         True 1 1
 Danmarks Radio                   hrmanager       True 0 0 
 Rambøll                          smartrecruiters True 37 1 
 Novonesis                        workday         True 45 3 
-Jobindex: {'sikker': 25, 'sandsynlig': 2, 'mulig': 2, 'body_fetch': 24}
+Jobindex: {'sikker': 25, 'sandsynlig': 2, 'mulig': 1, 'body_fetch': 19}
 
-Færdig: 64 fundet i dag, 10 nye, 161 aktive i alt.
+Færdig: 65 fundet i dag, 6 nye, 165 aktive i alt.

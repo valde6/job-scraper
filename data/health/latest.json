@@ -1,11 +1,11 @@
 {
- "ts": "2026-11-03T07:17:28+00:00",
+ "ts": "2026-11-04T07:00:33+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
    "ok": true,
-   "listed": 3,
+   "listed": 4,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -45,8 +45,8 @@
    "name": "Danske Bank",
    "type": "oracle",
    "ok": true,
-   "listed": 6,
-   "matched": 1,
+   "listed": 7,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -135,8 +135,8 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 26,
-   "matched": 1,
+   "listed": 28,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -195,7 +195,7 @@
    "name": "Saxo Bank",
    "type": "workday",
    "ok": true,
-   "listed": 27,
+   "listed": 26,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -265,7 +265,7 @@
    "name": "Dansk Industri",
    "type": "teamtailor",
    "ok": true,
-   "listed": 6,
+   "listed": 8,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 26,
+   "listed": 24,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 17,
+   "streak": 18,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -505,15 +505,15 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 394,
-   "matched": 29,
+   "listed": 390,
+   "matched": 28,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 17 kørsler i træk – 0 opslag (sidst 16)"
+  "**Danmarks Radio** (hrmanager): mistænkelig i 18 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 35
+ "active": 37
 }
