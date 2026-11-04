@@ -1,7 +1,138 @@
 {
- "started": "2026-11-03T07:59:09+00:00",
- "ads_read": 3,
- "candidates": [],
- "added": [],
- "rejected": []
+ "started": "2026-11-04T07:33:52+00:00",
+ "ads_read": 49,
+ "candidates": [
+  {
+   "name": "Aarstiderne",
+   "type": "emply",
+   "cfg": {
+    "url": "https://aarstiderne.career.emply.com"
+   },
+   "evidence": "https://Aarstiderne.career.emply.com/ad/studentermedhjaelper-soges-til-aarstidernes-opskriftsredaktion/x738o7/da",
+   "listed": 2,
+   "matched": 1
+  },
+  {
+   "name": "Askovfonden",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "2369",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2369&ProjectId=143641&DepartmentId=18960&MediaId=4621"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2369&ProjectId=143641&DepartmentId=18960&MediaId=4621",
+   "cid": "2369",
+   "listed": 6,
+   "matched": 2
+  },
+  {
+   "name": "SCT Transport A/S",
+   "type": "emply",
+   "cfg": {
+    "url": "https://sct.career.emply.com"
+   },
+   "evidence": "https://sct.career.emply.com/ad/disponent-trainee-til-maskintransport/4dtlkw",
+   "listed": 3,
+   "matched": 1
+  },
+  {
+   "name": "Exsitec ApS",
+   "type": "teamtailor",
+   "cfg": {
+    "url": "https://app.teamtailor.com"
+   },
+   "evidence": "https://app.teamtailor.com/companies/grMJbLFbc1I@eu/dashboard",
+   "listed": 0,
+   "matched": 0
+  },
+  {
+   "name": "Københavns Professionshøjskole",
+   "type": "emply",
+   "cfg": {
+    "url": "https://kp.career.emply.com"
+   },
+   "evidence": "https://kp.career.emply.com/ad/undervisere-i-dansk-tegnsprog-og-konsulenter-til-ordbog-over-dansk-tegnsprog/mcrw2c/da",
+   "listed": 0,
+   "matched": 0
+  }
+ ],
+ "added": [
+  {
+   "name": "Aarstiderne",
+   "type": "emply",
+   "listed": 2,
+   "matched": 1
+  },
+  {
+   "name": "Askovfonden",
+   "type": "hrmanager",
+   "listed": 6,
+   "matched": 2
+  },
+  {
+   "name": "SCT Transport A/S",
+   "type": "emply",
+   "listed": 3,
+   "matched": 1
+  }
+ ],
+ "rejected": [
+  {
+   "name": "Aasted",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "1632",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1632&ProjectId=143934&DepartmentId=18965&MediaId=4615"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1632&ProjectId=143934&DepartmentId=18965&MediaId=4615",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Weibel Scientific A/S",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "1716",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1716&ProjectId=144259&DepartmentId=18956&MediaId=4618"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1716&ProjectId=144259&DepartmentId=18956&MediaId=4618",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Odense Kommune",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3256",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144872&DepartmentId=19925&MediaId=4630&SkipAdvertisement=true"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144872&DepartmentId=19925&MediaId=4630&SkipAdvertisement=true",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Erhvervsakademi Aarhus",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "5001",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194505&DepartmentId=8299&MediaId=59"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194505&DepartmentId=8299&MediaId=59",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Exsitec ApS",
+   "type": "teamtailor",
+   "cfg": {
+    "url": "https://app.teamtailor.com"
+   },
+   "evidence": "https://app.teamtailor.com/companies/grMJbLFbc1I@eu/dashboard",
+   "reason": "0 opslag"
+  },
+  {
+   "name": "Københavns Professionshøjskole",
+   "type": "emply",
+   "cfg": {
+    "url": "https://kp.career.emply.com"
+   },
+   "evidence": "https://kp.career.emply.com/ad/undervisere-i-dansk-tegnsprog-og-konsulenter-til-ordbog-over-dansk-tegnsprog/mcrw2c/da",
+   "reason": "0 opslag"
+  }
+ ]
 }

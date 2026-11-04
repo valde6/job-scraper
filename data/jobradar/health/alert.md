@@ -1,11 +1,10 @@
 Scraperen har kilder, der ser ud til at være gået i stykker:
 
-- **Jyske Bank** (generic): fejl i 12 kørsler i træk – HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs
-- **Gorrissen Federspiel** (generic): fejl i 8 kørsler i træk – HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/
-- **Grant Thornton** (generic): fald i 2 kørsler i træk
-- **Københavns Universitet** (generic): fejl i 9 kørsler i træk – ConnectTimeout: HTTPSConnectionPool(host='employment.ku.dk', port=443): Max retries exceeded with url: /all-vacancies/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='employment.ku.dk', port=443
-- **Akademikernes A-kasse** (emply): mistænkelig i 5 kørsler i træk – 0 opslag (sidst 1)
-- **Medicinrådet** (emply): mistænkelig i 3 kørsler i træk – 0 opslag (sidst 1)
-- **GEV** (emply): mistænkelig i 2 kørsler i træk – 0 opslag (sidst 1)
+- **Jyske Bank** (generic): fejl i 13 kørsler i træk – HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs
+- **Gorrissen Federspiel** (generic): fejl i 9 kørsler i træk – HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/
+- **Grant Thornton** (generic): fald i 3 kørsler i træk
+- **Københavns Universitet** (generic): fejl i 10 kørsler i træk – ConnectTimeout: HTTPSConnectionPool(host='employment.ku.dk', port=443): Max retries exceeded with url: /all-vacancies/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='employment.ku.dk', port=443
+- **Medicinrådet** (emply): mistænkelig i 4 kørsler i træk – 0 opslag (sidst 1)
+- **GEV** (emply): mistænkelig i 3 kørsler i træk – 0 opslag (sidst 1)
 
 Se `data/jobradar/health/report.md`. Tip: giv dette issue til en kode-agent (se AGENTS.md).

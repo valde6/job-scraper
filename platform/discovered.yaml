@@ -699,3 +699,34 @@ employers:
     at: '2026-11-02'
     via: jobindex-link
     evidence: https://dgi.career.emply.com/ad/afdelingsleder-til-projektudvikling-og-kommunikation/nzckz1/da
+- name: Aarstiderne
+  career_url: https://aarstiderne.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://aarstiderne.career.emply.com
+  discovered:
+    at: '2026-11-04'
+    via: jobindex-link
+    evidence: https://Aarstiderne.career.emply.com/ad/studentermedhjaelper-soges-til-aarstidernes-opskriftsredaktion/x738o7/da
+- name: Askovfonden
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=askovfonden_tr
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: askovfonden_tr
+  discovered:
+    at: '2026-11-04'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2369&ProjectId=143641&DepartmentId=18960&MediaId=4621
+  cid: '2369'
+- name: SCT Transport A/S
+  career_url: https://sct.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://sct.career.emply.com
+  discovered:
+    at: '2026-11-04'
+    via: jobindex-link
+    evidence: https://sct.career.emply.com/ad/disponent-trainee-til-maskintransport/4dtlkw
