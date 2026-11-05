@@ -1,12 +1,12 @@
 {
- "ts": "2026-11-04T07:00:33+00:00",
+ "ts": "2026-11-05T07:26:36+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
    "ok": true,
-   "listed": 4,
-   "matched": 1,
+   "listed": 5,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -35,8 +35,8 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 61,
-   "matched": 4,
+   "listed": 52,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -55,7 +55,7 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 30,
+   "listed": 32,
    "matched": 7,
    "problem": null,
    "streak": 0,
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 24,
+   "listed": 25,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -345,8 +345,8 @@
    "name": "Danske Commodities",
    "type": "teamtailor",
    "ok": true,
-   "listed": 6,
-   "matched": 2,
+   "listed": 11,
+   "matched": 3,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -385,7 +385,7 @@
    "name": "Amazon",
    "type": "amazon",
    "ok": true,
-   "listed": 6,
+   "listed": 7,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -425,7 +425,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 30,
+   "listed": 28,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 18,
+   "streak": 19,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -485,8 +485,8 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 37,
-   "matched": 1,
+   "listed": 36,
+   "matched": 0,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -495,7 +495,7 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 45,
+   "listed": 44,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -505,15 +505,15 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 390,
-   "matched": 28,
+   "listed": 403,
+   "matched": 29,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 18 kørsler i træk – 0 opslag (sidst 16)"
+  "**Danmarks Radio** (hrmanager): mistænkelig i 19 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 37
+ "active": 36
 }
