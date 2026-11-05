@@ -128,7 +128,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 13,
+   "streak": 14,
    "detail": "HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs"
   },
   {
@@ -528,7 +528,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 9,
+   "streak": 10,
    "detail": "HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/"
   },
   {
@@ -627,8 +627,8 @@
    "ok": true,
    "listed": 9,
    "matched": 1,
-   "problem": "fald",
-   "streak": 3,
+   "problem": null,
+   "streak": 0,
    "detail": null
   },
   {
@@ -948,7 +948,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 10,
+   "streak": 11,
    "detail": "ConnectTimeout: HTTPSConnectionPool(host='employment.ku.dk', port=443): Max retries exceeded with url: /all-vacancies/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='employment.ku.dk', port=443) at 0x7deb378f5df0>, 'Connection to employment.ku.dk timed out. (connect timeout=25)'))"
   },
   {
@@ -1328,7 +1328,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 4,
+   "streak": 5,
    "detail": "0 opslag (sidst 1)"
   },
   {
@@ -1618,7 +1618,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 3,
+   "streak": 4,
    "detail": "0 opslag (sidst 1)"
   },
   {
@@ -1923,12 +1923,11 @@
   }
  ],
  "alerts": [
-  "**Jyske Bank** (generic): fejl i 13 kørsler i træk – HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs",
-  "**Gorrissen Federspiel** (generic): fejl i 9 kørsler i træk – HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/",
-  "**Grant Thornton** (generic): fald i 3 kørsler i træk",
-  "**Københavns Universitet** (generic): fejl i 10 kørsler i træk – ConnectTimeout: HTTPSConnectionPool(host='employment.ku.dk', port=443): Max retries exceeded with url: /all-vacancies/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='employment.ku.dk', port=443",
-  "**Medicinrådet** (emply): mistænkelig i 4 kørsler i træk – 0 opslag (sidst 1)",
-  "**GEV** (emply): mistænkelig i 3 kørsler i træk – 0 opslag (sidst 1)"
+  "**Jyske Bank** (generic): fejl i 14 kørsler i træk – HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs",
+  "**Gorrissen Federspiel** (generic): fejl i 10 kørsler i træk – HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/",
+  "**Københavns Universitet** (generic): fejl i 11 kørsler i træk – ConnectTimeout: HTTPSConnectionPool(host='employment.ku.dk', port=443): Max retries exceeded with url: /all-vacancies/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='employment.ku.dk', port=443",
+  "**Medicinrådet** (emply): mistænkelig i 5 kørsler i træk – 0 opslag (sidst 1)",
+  "**GEV** (emply): mistænkelig i 4 kørsler i træk – 0 opslag (sidst 1)"
  ],
  "active": 208
 }

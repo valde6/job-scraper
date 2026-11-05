@@ -730,3 +730,34 @@ employers:
     at: '2026-11-04'
     via: jobindex-link
     evidence: https://sct.career.emply.com/ad/disponent-trainee-til-maskintransport/4dtlkw
+- name: Sedgwick Danmark
+  career_url: https://sedgwick.wd1.myworkdayjobs.com/Sedgwick
+  status: opdaget
+  source:
+    type: workday
+    url: https://sedgwick.wd1.myworkdayjobs.com/Sedgwick
+  discovered:
+    at: '2026-11-05'
+    via: jobindex-link
+    evidence: https://sedgwick.wd1.myworkdayjobs.com/Sedgwick/job/DK-Ballerup/Juridisk-studentermedhjlper_R80024
+- name: Hamamatsu Photonics
+  career_url: https://photonics.wd103.myworkdayjobs.com/Job_Index
+  status: opdaget
+  source:
+    type: workday
+    url: https://photonics.wd103.myworkdayjobs.com/Job_Index
+  discovered:
+    at: '2026-11-05'
+    via: jobindex-link
+    evidence: https://photonics.wd103.myworkdayjobs.com/Job_Index/job/Birkerd-Capital-Region-Denmark/Student-Assistance---Procurment_JR100541
+- name: Sabroe Selection
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=Sabroe-selection
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: Sabroe-selection
+  discovered:
+    at: '2026-11-05'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2065&ProjectId=143847&DepartmentId=18956&MediaId=5
+  cid: '2065'

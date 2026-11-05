@@ -1,48 +1,50 @@
 {
- "started": "2026-11-04T07:33:52+00:00",
- "ads_read": 49,
+ "started": "2026-11-05T07:57:37+00:00",
+ "ads_read": 59,
  "candidates": [
   {
-   "name": "Aarstiderne",
-   "type": "emply",
+   "name": "Sedgwick Danmark",
+   "type": "workday",
    "cfg": {
-    "url": "https://aarstiderne.career.emply.com"
+    "url": "https://sedgwick.wd1.myworkdayjobs.com/Sedgwick"
    },
-   "evidence": "https://Aarstiderne.career.emply.com/ad/studentermedhjaelper-soges-til-aarstidernes-opskriftsredaktion/x738o7/da",
-   "listed": 2,
+   "evidence": "https://sedgwick.wd1.myworkdayjobs.com/Sedgwick/job/DK-Ballerup/Juridisk-studentermedhjlper_R80024",
+   "listed": 75,
    "matched": 1
   },
   {
-   "name": "Askovfonden",
+   "name": "Hamamatsu Photonics",
+   "type": "workday",
+   "cfg": {
+    "url": "https://photonics.wd103.myworkdayjobs.com/Job_Index"
+   },
+   "evidence": "https://photonics.wd103.myworkdayjobs.com/Job_Index/job/Birkerd-Capital-Region-Denmark/Student-Assistance---Procurment_JR100541",
+   "listed": 10,
+   "matched": 1
+  },
+  {
+   "name": "Lemvigh-Müller A/S",
    "type": "hrmanager",
    "cfg": {
-    "cid": "2369",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2369&ProjectId=143641&DepartmentId=18960&MediaId=4621"
+    "cid": "3341",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143626&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2369&ProjectId=143641&DepartmentId=18960&MediaId=4621",
-   "cid": "2369",
-   "listed": 6,
-   "matched": 2
-  },
-  {
-   "name": "SCT Transport A/S",
-   "type": "emply",
-   "cfg": {
-    "url": "https://sct.career.emply.com"
-   },
-   "evidence": "https://sct.career.emply.com/ad/disponent-trainee-til-maskintransport/4dtlkw",
-   "listed": 3,
-   "matched": 1
-  },
-  {
-   "name": "Exsitec ApS",
-   "type": "teamtailor",
-   "cfg": {
-    "url": "https://app.teamtailor.com"
-   },
-   "evidence": "https://app.teamtailor.com/companies/grMJbLFbc1I@eu/dashboard",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143626&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true",
+   "cid": "3341",
    "listed": 0,
    "matched": 0
+  },
+  {
+   "name": "Sabroe Selection",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "2065",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2065&ProjectId=143847&DepartmentId=18956&MediaId=5"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2065&ProjectId=143847&DepartmentId=18956&MediaId=5",
+   "cid": "2065",
+   "listed": 10,
+   "matched": 1
   },
   {
    "name": "Københavns Professionshøjskole",
@@ -50,50 +52,60 @@
    "cfg": {
     "url": "https://kp.career.emply.com"
    },
-   "evidence": "https://kp.career.emply.com/ad/undervisere-i-dansk-tegnsprog-og-konsulenter-til-ordbog-over-dansk-tegnsprog/mcrw2c/da",
+   "evidence": "https://kp.career.emply.com/ad/adjunkt-lektor-med-speciale-i-broderi-og-forskning-til-tekstilformidleruddannelse/ljqedm/da",
    "listed": 0,
    "matched": 0
   }
  ],
  "added": [
   {
-   "name": "Aarstiderne",
-   "type": "emply",
-   "listed": 2,
+   "name": "Sedgwick Danmark",
+   "type": "workday",
+   "listed": 75,
    "matched": 1
   },
   {
-   "name": "Askovfonden",
-   "type": "hrmanager",
-   "listed": 6,
-   "matched": 2
+   "name": "Hamamatsu Photonics",
+   "type": "workday",
+   "listed": 10,
+   "matched": 1
   },
   {
-   "name": "SCT Transport A/S",
-   "type": "emply",
-   "listed": 3,
+   "name": "Sabroe Selection",
+   "type": "hrmanager",
+   "listed": 10,
    "matched": 1
   }
  ],
  "rejected": [
   {
-   "name": "Aasted",
+   "name": "Per Aarsleff A/S",
    "type": "hrmanager",
    "cfg": {
-    "cid": "1632",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1632&ProjectId=143934&DepartmentId=18965&MediaId=4615"
+    "cid": "306",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=306&ProjectId=182842&DepartmentId=21679&MediaId=59"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1632&ProjectId=143934&DepartmentId=18965&MediaId=4615",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=306&ProjectId=182842&DepartmentId=21679&MediaId=59",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
-   "name": "Weibel Scientific A/S",
+   "name": "Wonderful Copenhagen",
    "type": "hrmanager",
    "cfg": {
-    "cid": "1716",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1716&ProjectId=144259&DepartmentId=18956&MediaId=4618"
+    "cid": "1185",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1185&ProjectId=143786&DepartmentId=18958&MediaId=5"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1716&ProjectId=144259&DepartmentId=18956&MediaId=4618",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1185&ProjectId=143786&DepartmentId=18958&MediaId=5",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Dansk Flygtningehjælp",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "1036",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1036&ProjectId=177116&DepartmentId=18962&MediaId=59"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1036&ProjectId=177116&DepartmentId=18962&MediaId=59",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
@@ -101,28 +113,40 @@
    "type": "hrmanager",
    "cfg": {
     "cid": "3256",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144872&DepartmentId=19925&MediaId=4630&SkipAdvertisement=true"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144598&DepartmentId=19538&MediaId=4630&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144872&DepartmentId=19925&MediaId=4630&SkipAdvertisement=true",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144598&DepartmentId=19538&MediaId=4630&SkipAdvertisement=true",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
-   "name": "Erhvervsakademi Aarhus",
+   "name": "IT-Universitetet i København",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "119",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181921&DepartmentId=3439&MediaId=5"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181921&DepartmentId=3439&MediaId=5",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Professionshøjskolen Absalon",
    "type": "hrmanager",
    "cfg": {
     "cid": "5001",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194505&DepartmentId=8299&MediaId=59"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194426&DepartmentId=9492&MediaId=5"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194505&DepartmentId=8299&MediaId=59",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194426&DepartmentId=9492&MediaId=5",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
-   "name": "Exsitec ApS",
-   "type": "teamtailor",
+   "name": "Lemvigh-Müller A/S",
+   "type": "hrmanager",
    "cfg": {
-    "url": "https://app.teamtailor.com"
+    "cid": "3341",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143626&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true"
    },
-   "evidence": "https://app.teamtailor.com/companies/grMJbLFbc1I@eu/dashboard",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143626&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true",
+   "cid": "3341",
    "reason": "0 opslag"
   },
   {
@@ -131,7 +155,7 @@
    "cfg": {
     "url": "https://kp.career.emply.com"
    },
-   "evidence": "https://kp.career.emply.com/ad/undervisere-i-dansk-tegnsprog-og-konsulenter-til-ordbog-over-dansk-tegnsprog/mcrw2c/da",
+   "evidence": "https://kp.career.emply.com/ad/adjunkt-lektor-med-speciale-i-broderi-og-forskning-til-tekstilformidleruddannelse/ljqedm/da",
    "reason": "0 opslag"
   }
  ]
