@@ -1,13 +1,79 @@
 {
- "updated": "2026-11-05T07:26:36+00:00",
+ "updated": "2026-11-06T07:27:27+00:00",
  "run": {
-  "updated": "2026-11-05T07:26:36+00:00",
-  "active_count": 172,
+  "updated": "2026-11-06T07:27:27+00:00",
+  "active_count": 175,
   "sources_ok": 26,
   "sources_total": 50,
   "jobindex_ok": true
  },
  "jobs": [
+  {
+   "id": "8964101e2aa3",
+   "active": true,
+   "company": "Danske Bank",
+   "title": "Studentermedhjælper med flair for dataoptimering hos Danica",
+   "top50": true,
+   "fit": "sikker",
+   "location": "København V, Denmark",
+   "deadline": "2026-11-22",
+   "tags": [
+    "Data & analyse",
+    "Automatisering",
+    "Proces",
+    "Finans",
+    "Power BI / Excel"
+   ],
+   "excerpt": "Vil du bruge din interesse for økonomi, programmering og dataløsninger i praksis? Som studentermedhjælper i Danicas CFO-område hjælper du med at styrke rapportering, automatisering og økonomiopfølgning i et team tæt på forretningen. Du får indsigt i økonomistyring i en stor finansiel koncern og mulighed for at omsætte din viden fra studiet til løsninger, der bliver brugt.\n\n**Dine opgaver**\n\nDu bliver en del af Business Performance Management i Danicas CFO-område, hvor syv kolleger arbejder med budgetter, prognoser, økonomiopfølgning, ledelsesrapportering og analyser. Du får primær arbejdsplads i Danske Banks bygning ved Hovedbanegården i København og arbejder tæt sammen med både Business Performance Management, Business Analytics og andre samarbejdspartnere i Danica. Teamet har en åben kultur, hvor faglig sparring og løbende forbedringer fylder i hverdagen.\n\n* Opdatere månedlig ledelsesrapportering og analyser, især til COO-området.\n* Indsamle og strukturere information fra Tableau, Dynamics og Excel-kilder.\n* Udvikle og automatisere rapporter, så arbejdsgange bliver enklere.\n* Bidrage til et mere moderne setup for rapportering og analyse.\n* Omsætte viden fra studiet til forbedringer af processer og værktøjer.\n\n**Om dig**\n\n**Det forventer vi, du kan:**\n\n* Du er i gang med en bachelor eller kandidat inden for IT eller Business Intelligence.\n* Du har interesse for økonomirapportering, analyse og procesoptimering.\n* Du har erfaring med programmering eller lyst til at udvikle din"
+  },
+  {
+   "id": "2bc26c642752",
+   "active": true,
+   "company": "Deloitte",
+   "title": "Student Business Analyst til A&A Technology",
+   "top50": true,
+   "fit": "sikker",
+   "location": "København, dk",
+   "deadline": "2026-12-05",
+   "tags": [
+    "Automatisering",
+    "Digitalisering",
+    "Consulting"
+   ],
+   "excerpt": "Med mere end 8.000 medarbejdere er Deloitte en af de største rådgivnings- og revisionshuse i Norden. Vi hjælper vores kunder med at navigere komplekse teknologiske og forretningsmæssige transformationer ved at kombinere dyb faglig viden med førende kompetencer inden for revision, skat, rådgivning og konsulentydelser.\n\n**Om teamet**\n\nI Nordic A&A Technology nytænker og bygger vi IT til Deloittes Audit & Assurance-forretning, i Danmark, i Norden og globalt. Vi arbejder med stort set alle hjørner af tech, fra den første løse idé til løsninger, der bruges i arbejdet med nogle af verdens største virksomheder.\n\n**Fokus på dig**\n\nSom Business Analyst prøver du kræfter med mange forskellige typer opgaver, og vi tilpasser løbende rollen efter dine interesser og det, du bliver god til. Du arbejder tæt sammen med vores CTO, product managers og tech leads og bliver en slags højre hånd på tværs af teamet. Det giver dig et stærkt indblik i, hvordan man bygger, lancerer, driver og skalerer IT i en stor, global organisation.\n\nVi leder efter en ambitiøs studerende med interesse for både forretning og teknologi. Du bliver en del af teamet på lige fod med alle andre og får reelt ansvar fra starten. Dine opgaver vil især ligge inden for teknisk support, kvalitetssikring og dokumentation, men der er også mulighed for at prøve kræfter med udvikling og automatisering. Du behøver ikke kunne det hele på forhånd. Det vigtigste er, at du er nysgerrig, struktureret og lærer hurtigt.\n\n* **Produkt- og bru"
+  },
+  {
+   "id": "9f217c2a3b75",
+   "active": true,
+   "company": "Nordea",
+   "title": "Student position in Credit Rating and ESG Analysis",
+   "top50": true,
+   "fit": "sikker",
+   "location": "Denmark, København S",
+   "deadline": "2026-11-11",
+   "tags": [
+    "Data & analyse",
+    "Proces",
+    "Finans",
+    "Consulting",
+    "Power BI / Excel"
+   ],
+   "excerpt": "# Student position in Credit Rating and ESG Analysis\n\nKøbenhavn S, DK, 2300\n\n**Job ID: 7001**\n\nWe are looking for a Student with strong analytical skills to support with credit rating and other ad hoc tasks in the credit process – A splendid opportunity to get insight into the fundamentals for handling corporate customers in Nordea. Location will be at our Danish headquarters at Grønjordsvej in Copenhagen.\n\n**About our team**\n\nMeet the Credit, Rating & ESG Analysis team. We assess credit risk and identify early warning signals to help prevent unexpected losses across individual customer engagements within traditional corporates, agriculture and real estate. We are part of the Nordic Credit Risk & ESG Analysis organisation, with 320 employees in Group Credit Management - almost 70 of whom are based in Denmark.\n\nWe take pride in onboarding and supporting new colleagues, and we work together in an open, respectful tone with genuine interest in one another.\n\nCollaboration. Ownership. Passion. Courage. These are the values that guide us in how we work and how we make decisions – and that we imagine you share with us.  \n\n**What you’ll be doing**\n\n**Main responsibilities in this role:**\n\n* Assess credit risk for specific corporate customers - initially focusing on Tenant Owned Associations (\"Andelsboligforeninger\")\n* Deliver high-quality analyses that enable an efficient credit process and strong customer experiences\n* Identify early warning signals and help shape the right credit s"
+  },
+  {
+   "id": "d86570c14e50",
+   "active": true,
+   "company": "Hamlet Tours",
+   "title": "Turistguide med buskørekort",
+   "top50": false,
+   "fit": "sandsynlig",
+   "location": "København Ø",
+   "deadline": "",
+   "tags": [
+    "Finans"
+   ],
+   "excerpt": "[Gem job](/bruger/dine-job/h1713421/gem)\n[Del](https://www.jobindex.dk/vis-job/h1713421 \"Del\")\n[Ansøg](/c?t=e6382468&ctx=w&source=jobtext)\n\n# Turistguide med buskørekort\n\nHamlet Tours\n\nKøbenhavn Ø\n\n**Sommerjob/deltidsjob hvor du kan dyrke Danmarks historie og blive en del af et dedikeret team.**\n\nJobbet består i at køre små grupper af turister fra hele verden fra København rundt til de historiske seværdigheder i Helsingør, Hillerød og Roskilde og undervejs fortælle dem om Danmark og seværdighederne og besvare deres spørgsmål.\n\nUdover glæden ved at vise Danmark frem og berette om kongerigets historie får du lejlighed til at lære om turistbranchen og erfaring med at køre bus.\n\nJobbet er velbetalt. Der er en overenskomstmæssig timeløn og dertil drikkepenge fra turisterne, hvis de synes du gør det godt.\n\nAnsættelsen er tidsbegrænset og gælder for sæson 2027 med start fra april måned.\n\n## KVALIFIKATIONSKRAV\n\n* Erhvervskørekort til bus\n* Engelsk og dansk på højt niveau\n* Talent for at formidle og underholde\n* Erfaring med at styre en gruppe og holde en skarp tidsplan. Eksempelvis erfaring som guide, underviser, befalingsmand eller lignende\n* Stor almen viden om det danske samfund og dansk historie\n* Præsentabel, ordentlig og ansvarlig\n\nALLE kvalifikationer skal opfyldes. Har du ikke erhvervskørekort til bus, er det muligt at tage som en arbejdsmarkedsuddannelse inden for nogle måneder. Du kan først tiltræde jobbet, når du har gennemført erhvervschauffør-uddannelsen og er i besiddel"
+  },
   {
    "id": "8895c02ec4b7",
    "active": true,
@@ -88,20 +154,6 @@
    "excerpt": "Center for Detailhandel, Industri, Fødevarer, Landbrug og Sundhed (DIPS) søger en dygtig økonomistuderende, der i samarbejde med erfarne kollegaer skal arbejde for bedre konkurrence i Danmark.\n\nDu vil særligt komme til at beskæftige dig med følgende opgaver:\n\n* Bistå ved markedsundersøgelser\n* Databehandling, herunder beregninger og figuropsætning\n* Research, herunder litteratursøgning\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
   },
   {
-   "id": "22e1810d2571",
-   "active": true,
-   "company": "Udviklings- og Forenklingsstyrelsen",
-   "title": "Studentermedhjælper til Web-platform",
-   "top50": false,
-   "fit": "sikker",
-   "location": "Frederiksberg",
-   "deadline": "",
-   "tags": [
-    "Automatisering"
-   ],
-   "excerpt": "Vil du være med til at sikre automatiserede test, forstå data og omsætte det til anbefalinger til forretningen samt optimere supportkæden i Skatte- og Vækstministeriets web-platform?\n\nDu sikrer, at viden fra support og ændringer i løsningerne bliver dokumenteret i Webguiden, så brugere og redaktører har adgang til opdaterede vejledninger. Derudover bistår du med ad hoc-opgaver i teamet.\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
-  },
-  {
    "id": "bcf0bf7e56a1",
    "active": true,
    "company": "Dansk Flygtningehjælp",
@@ -157,6 +209,20 @@
     "Automatisering"
    ],
    "excerpt": "Put your studies into practice as a Student Assistant in our Procurement team. Gain hands-on experience with data analysis, suppliers, and procurement processes while supporting an international organization.\n\nYour role and responsibilities will, among other things, be to support improvements to procurement processes, procedures, templates, workflows, and reporting.\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
+  },
+  {
+   "id": "22e1810d2571",
+   "active": true,
+   "company": "Udviklings- og Forenklingsstyrelsen",
+   "title": "Studentermedhjælper til Web-platform",
+   "top50": false,
+   "fit": "sikker",
+   "location": "Frederiksberg",
+   "deadline": "",
+   "tags": [
+    "Automatisering"
+   ],
+   "excerpt": "Vil du være med til at sikre automatiserede test, forstå data og omsætte det til anbefalinger til forretningen samt optimere supportkæden i Skatte- og Vækstministeriets web-platform?\n\nDu sikrer, at viden fra support og ændringer i løsningerne bliver dokumenteret i Webguiden, så brugere og redaktører har adgang til opdaterede vejledninger. Derudover bistår du med ad hoc-opgaver i teamet.\n\n*(Kort uddrag fra Jobindex – se hele opslaget via linket.)*"
   },
   {
    "id": "6ad0bd63f3e8",
@@ -1080,7 +1146,7 @@
     "Finans",
     "Consulting"
    ],
-   "excerpt": "[Show More](#)\n\n# Strategy and M&A Junior Consultant (part-time student position) - EY-Parthenon | Copenhagen\n\n1754687\n\n[apply](/external/requisitions/5eZv-2AHUGeBCvfNtkDEkA/apply?locale=en)\n\n### \\_\\_\\_\\_\\_\\_\\_\\_\n\nAt EY, we’re all in to shape your future with confidence.\n\nWe’ll help you succeed in a globally connected powerhouse of diverse teams and take your career wherever you want it to go.\n\nJoin EY and help to build a better working world.\n\n### \\_\\_\\_\\_\\_\\_\\_\\_\\_\n\n**What if we didn’t focus on who you are today, but who you could become?**\n\nJoin our market-leading strategy and M&A consulting practice as part of EY-Parthenon’s Strategy & Execution team in Copenhagen, as a **part-time Junior Consultant, starting from late 2026 or early 2027**.\n\nEY-Parthenon is a global consulting firm comprised of more than 25,000 professionals that advise leading corporate and private equity clients on a broad range of topics, including corporate strategy, commercial & operational diligence, transaction execution, post-deal value realization, financial diligence, corporate finance, valuations and others. We are looking for curious minds who want to accelerate their career by joining the Strategy & Execution team in the Copenhagen office.\n\n**The opportunity: your next adventure awaits**\n\nIn the **Strategy & Execution** team, we work with leading clients to help them grow, reshape their portfolios, and reinvent themselves to deliver value for the future. We work across diverse areas, covering"
+   "excerpt": "[Show More](#)\n\n# Strategy and M&A Junior Consultant (part-time student position) - EY-Parthenon | Copenhagen\n\n1754687\n\n[apply](/external/requisitions/5eZv-2AHUGeBCvfNtkDEkA/apply?locale=en)\n\n### \\_\\_\\_\\_\\_\\_\\_\\_\n\nAt EY, we’re all in to shape your future with confidence.\n\nWe’ll help you succeed in a globally connected powerhouse of diverse teams and take your career wherever you want it to go.\n\nJoin EY and help to build a better working world.\n\n### \\_\\_\\_\\_\\_\\_\\_\\_\\_\n\n**What if we didn’t focus on who you are today, but who you could become?**\n\nJoin our market-leading strategy and M&A consulting practice as part of EY-Parthenon’s Strategy & Execution team in Copenhagen, as a**part-time Junior Consultant, starting from late 2026 or early 2027**.\n\nEY-Parthenon is a global consulting firm comprised of more than 25,000 professionals that advise leading corporate and private equity clients on a broad range of topics, including corporate strategy, commercial & operational diligence, transaction execution, post-deal value realization, financial diligence, corporate finance, valuations and others. We are looking for curious minds who want to accelerate their career by joining the Strategy & Execution team in the Copenhagen office.\n\n**The opportunity: your next adventure awaits**\n\nIn the **Strategy & Execution** team, we work with leading clients to help them grow, reshape their portfolios, and reinvent themselves to deliver value for the future. We work across diverse areas, covering "
   },
   {
    "id": "3cae20ed9059",
@@ -1810,24 +1876,6 @@
     "Finans"
    ],
    "excerpt": "**Line of Service**\n\nAssurance\n\n**Industry/Sector**\n\nNot Applicable\n\n**Specialism**\n\nAssurance\n\n**Management Level**\n\nAssociate\n\n**Job Description & Summary**\n\nJa, den er god nok. Som revisortrainee hos PwC opbygger du din karriere, mens du tager en uddannelse sideløbende.\n\nDu får nemlig erhvervserfaring fra dag ét, når du arbejder på fuldtid og læser på deltid. Samtidig er du med til at påvirke virksomheders forretningsstrategier, investeringsbeslutninger og meget mere, når du løser opgaver for dem.\n\nSå længe du synes, det er spændende at skabe relationer og at arbejde med tal, så står vi klar med de bedste kolleger og et væld af karrieremuligheder.\n\n*”Den bedste læring er, når du arbejder med opgaverne i praksis, og det kommer du til her. Samtidig får du et virkelig bredt netværk - ikke bare blandt de andre trainees, men også blandt kollegerne i de teams, du bliver en del af,” fortæller Amanda, revisor & tidligere deltager på Trustbuilder-forløbet.*\n\n**Bliv klædt på gennem vores Trustbuilder-forløb**\n\nSom trainee bliver du en del af vores interne uddannelsesforløb, kaldet Trustbuilder. Gennem forløbet sørger vi for, at du tilegner dig de rette kompetencer og værktøjer til at udføre rollen som kundernes betroede rådgiver. Du deltager i forløbet sammen med de andre revisortrainees på tværs af PwC, hvilket giver dig en unik mulighed for at skabe stærke relationer og fællesskaber.\n\nDu bliver taget i hånden hele vejen gennem forløbet og med støtte fra os, er der plads til at bal"
-  },
-  {
-   "id": "6740a6d9eea3",
-   "active": true,
-   "company": "PwC",
-   "title": "Studentermedhjælper til vores revisionsafdeling i Vejle – er du vores nye kollega?",
-   "top50": true,
-   "fit": "sikker",
-   "location": "Trekantområdet",
-   "deadline": "",
-   "tags": [
-    "Data & analyse",
-    "AI",
-    "Digitalisering",
-    "Finans",
-    "Power BI / Excel"
-   ],
-   "excerpt": "**Line of Service**\n\nAssurance\n\n**Industry/Sector**\n\nNot Applicable\n\n**Specialism**\n\nAssurance\n\n**Management Level**\n\nIntern/Trainee\n\n**Job Description & Summary**\n\n*Brænder du for at skabe succes sammen med andre? Så søg ind som studentermedhjælper hos PwC. Hos os får du en dynamisk hverdag på en professionel og spændende arbejdsplads, hvor du dagligt møder mange kolleger, du kan sparre og dele idéer med.*\n\n**Start din karriere hos PwC Vejle**\n\nHos os bliver du en del af en førende global revisions- og rådgivningsvirksomhed, hvor dine arbejdsopgaver vil udvikle sig i takt med, at du færdiggør dit studie. Dine primære arbejdsopgaver bliver assistance på revisionsopgaver, herunder at deltage i revisionsarbejde på kontoret i Vejle og hos kunder.\n\nVi kan tilbyde et udviklende og inspirerende miljø, hvor der er mulighed for at prøve kræfter med forskellige områder og opgaver. Typisk er din arbejdstid på 10-15 timer pr. uge.  Du vil have gode muligheder for fleksible arbejdstider, således at du fortsat kan prioritere dit studie og faglig fordybelse højt.\n\n**Prøv kræfter med rollen som revisor**\n\nDu vil blive en del af en kultur, hvor vi gennem fællesskab og samarbejde når længst. Vi er den daglige sparringspartner for vores kunder og tænker altid i løsninger frem for udfordringer. Du kommer ligeledes til at indgå i et dynamisk team, som betjener et bredt spænd af virksomheder og kunder, som omfatter alt fra de absolut største koncerner i Region Syddanmark til små og mellemstore vi"
   },
   {
    "id": "6b14839cea54",
@@ -2850,6 +2898,11 @@
    "id": "ef6a8bc7eb9b",
    "active": false,
    "deadline": "2026-10-15"
+  },
+  {
+   "id": "6740a6d9eea3",
+   "active": false,
+   "deadline": ""
   },
   {
    "id": "dd1c049ec5db",

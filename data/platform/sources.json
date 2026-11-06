@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-05T07:26:36+00:00",
+ "generated_at": "2026-11-06T07:27:27+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
    "ok": true,
-   "listed": 5,
+   "listed": 4,
    "matched": 2,
    "error": null
   },
@@ -13,7 +13,7 @@
    "name": "A.P. Møller - Mærsk",
    "type": "workday",
    "ok": true,
-   "listed": 405,
+   "listed": 404,
    "matched": 0,
    "error": null
   },
@@ -29,7 +29,7 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 52,
+   "listed": 51,
    "matched": 2,
    "error": null
   },
@@ -37,24 +37,24 @@
    "name": "Danske Bank",
    "type": "oracle",
    "ok": true,
-   "listed": 7,
-   "matched": 2,
+   "listed": 8,
+   "matched": 3,
    "error": null
   },
   {
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 32,
-   "matched": 7,
+   "listed": 35,
+   "matched": 8,
    "error": null
   },
   {
    "name": "PwC",
    "type": "workday",
    "ok": true,
-   "listed": 9,
-   "matched": 3,
+   "listed": 8,
+   "matched": 2,
    "error": null
   },
   {
@@ -77,8 +77,8 @@
    "name": "Nordea",
    "type": "nordea",
    "ok": true,
-   "listed": 7,
-   "matched": 0,
+   "listed": 8,
+   "matched": 1,
    "error": null
   },
   {
@@ -109,7 +109,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 28,
+   "listed": 27,
    "matched": 2,
    "error": null
   },
@@ -157,7 +157,7 @@
    "name": "Saxo Bank",
    "type": "workday",
    "ok": true,
-   "listed": 26,
+   "listed": 25,
    "matched": 0,
    "error": null
   },
@@ -229,7 +229,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 25,
+   "listed": 27,
    "matched": 0,
    "error": null
   },
@@ -285,7 +285,7 @@
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 29,
+   "listed": 28,
    "matched": 2,
    "error": null
   },
@@ -309,7 +309,7 @@
    "name": "Amazon",
    "type": "amazon",
    "ok": true,
-   "listed": 7,
+   "listed": 6,
    "matched": 0,
    "error": null
   },
@@ -341,7 +341,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 28,
+   "listed": 30,
    "matched": 0,
    "error": null
   },
@@ -389,7 +389,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 36,
+   "listed": 34,
    "matched": 0,
    "error": null
   },
@@ -397,7 +397,7 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 44,
+   "listed": 45,
    "matched": 3,
    "error": null
   },
@@ -405,8 +405,8 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 403,
-   "matched": 29,
+   "listed": 406,
+   "matched": 26,
    "error": null
   }
  ]
