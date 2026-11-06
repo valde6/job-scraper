@@ -1,50 +1,50 @@
 {
- "started": "2026-11-05T07:57:37+00:00",
- "ads_read": 59,
+ "started": "2026-11-06T07:59:17+00:00",
+ "ads_read": 55,
  "candidates": [
   {
-   "name": "Sedgwick Danmark",
-   "type": "workday",
+   "name": "AL Sydbank",
+   "type": "teamtailor",
    "cfg": {
-    "url": "https://sedgwick.wd1.myworkdayjobs.com/Sedgwick"
+    "url": "https://app.teamtailor.com"
    },
-   "evidence": "https://sedgwick.wd1.myworkdayjobs.com/Sedgwick/job/DK-Ballerup/Juridisk-studentermedhjlper_R80024",
-   "listed": 75,
-   "matched": 1
+   "evidence": "https://app.teamtailor.com/companies/8Y8ZlPcl1lY@eu/dashboard",
+   "listed": 0,
+   "matched": 0
   },
   {
-   "name": "Hamamatsu Photonics",
+   "name": "IFF",
    "type": "workday",
    "cfg": {
-    "url": "https://photonics.wd103.myworkdayjobs.com/Job_Index"
+    "url": "https://iff.wd5.myworkdayjobs.com/IFF_Careers"
    },
-   "evidence": "https://photonics.wd103.myworkdayjobs.com/Job_Index/job/Birkerd-Capital-Region-Denmark/Student-Assistance---Procurment_JR100541",
-   "listed": 10,
-   "matched": 1
+   "evidence": "https://iff.wd5.myworkdayjobs.com/IFF_Careers/job/Brabrand-Denmark/Internship-and-Thesis-opportunities-at-IFF--Spring-2027-_R20937",
+   "listed": 126,
+   "matched": 0
   },
   {
    "name": "Lemvigh-Müller A/S",
    "type": "hrmanager",
    "cfg": {
     "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143626&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143628&DepartmentId=19007&MediaId=4635&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143626&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143628&DepartmentId=19007&MediaId=4635&SkipAdvertisement=true",
    "cid": "3341",
    "listed": 0,
    "matched": 0
   },
   {
-   "name": "Sabroe Selection",
+   "name": "KFUM's Sociale Arbejde",
    "type": "hrmanager",
    "cfg": {
-    "cid": "2065",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2065&ProjectId=143847&DepartmentId=18956&MediaId=5"
+    "cid": "1923",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1923&ProjectId=143927&DepartmentId=18997&MediaId=4622"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2065&ProjectId=143847&DepartmentId=18956&MediaId=5",
-   "cid": "2065",
-   "listed": 10,
-   "matched": 1
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1923&ProjectId=143927&DepartmentId=18997&MediaId=4622",
+   "cid": "1923",
+   "listed": 6,
+   "matched": 0
   },
   {
    "name": "Københavns Professionshøjskole",
@@ -52,80 +52,43 @@
    "cfg": {
     "url": "https://kp.career.emply.com"
    },
-   "evidence": "https://kp.career.emply.com/ad/adjunkt-lektor-med-speciale-i-broderi-og-forskning-til-tekstilformidleruddannelse/ljqedm/da",
+   "evidence": "https://kp.career.emply.com/ad/leder-til-facility-management-driftsservice-skab-serviceoplevelser-og-sammenhaen/48bf4x/da",
    "listed": 0,
    "matched": 0
   }
  ],
  "added": [
   {
-   "name": "Sedgwick Danmark",
+   "name": "IFF",
    "type": "workday",
-   "listed": 75,
-   "matched": 1
+   "listed": 126,
+   "matched": 0
   },
   {
-   "name": "Hamamatsu Photonics",
-   "type": "workday",
-   "listed": 10,
-   "matched": 1
-  },
-  {
-   "name": "Sabroe Selection",
+   "name": "KFUM's Sociale Arbejde",
    "type": "hrmanager",
-   "listed": 10,
-   "matched": 1
+   "listed": 6,
+   "matched": 0
   }
  ],
  "rejected": [
+  {
+   "name": "AL Sydbank",
+   "type": "teamtailor",
+   "cfg": {
+    "url": "https://app.teamtailor.com"
+   },
+   "evidence": "https://app.teamtailor.com/companies/8Y8ZlPcl1lY@eu/dashboard",
+   "reason": "0 opslag"
+  },
   {
    "name": "Per Aarsleff A/S",
    "type": "hrmanager",
    "cfg": {
     "cid": "306",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=306&ProjectId=182842&DepartmentId=21679&MediaId=59"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=306&ProjectId=182843&DepartmentId=21679&MediaId=59"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=306&ProjectId=182842&DepartmentId=21679&MediaId=59",
-   "reason": "HR-Manager-alias ikke fundet"
-  },
-  {
-   "name": "Wonderful Copenhagen",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "1185",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1185&ProjectId=143786&DepartmentId=18958&MediaId=5"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1185&ProjectId=143786&DepartmentId=18958&MediaId=5",
-   "reason": "HR-Manager-alias ikke fundet"
-  },
-  {
-   "name": "Dansk Flygtningehjælp",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "1036",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1036&ProjectId=177116&DepartmentId=18962&MediaId=59"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1036&ProjectId=177116&DepartmentId=18962&MediaId=59",
-   "reason": "HR-Manager-alias ikke fundet"
-  },
-  {
-   "name": "Odense Kommune",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "3256",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144598&DepartmentId=19538&MediaId=4630&SkipAdvertisement=true"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144598&DepartmentId=19538&MediaId=4630&SkipAdvertisement=true",
-   "reason": "HR-Manager-alias ikke fundet"
-  },
-  {
-   "name": "IT-Universitetet i København",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "119",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181921&DepartmentId=3439&MediaId=5"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181921&DepartmentId=3439&MediaId=5",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=306&ProjectId=182843&DepartmentId=21679&MediaId=59",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
@@ -133,9 +96,9 @@
    "type": "hrmanager",
    "cfg": {
     "cid": "5001",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194426&DepartmentId=9492&MediaId=5"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194525&DepartmentId=9359&MediaId=5"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194426&DepartmentId=9492&MediaId=5",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194525&DepartmentId=9359&MediaId=5",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
@@ -143,9 +106,9 @@
    "type": "hrmanager",
    "cfg": {
     "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143626&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143628&DepartmentId=19007&MediaId=4635&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143626&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143628&DepartmentId=19007&MediaId=4635&SkipAdvertisement=true",
    "cid": "3341",
    "reason": "0 opslag"
   },
@@ -155,8 +118,18 @@
    "cfg": {
     "url": "https://kp.career.emply.com"
    },
-   "evidence": "https://kp.career.emply.com/ad/adjunkt-lektor-med-speciale-i-broderi-og-forskning-til-tekstilformidleruddannelse/ljqedm/da",
+   "evidence": "https://kp.career.emply.com/ad/leder-til-facility-management-driftsservice-skab-serviceoplevelser-og-sammenhaen/48bf4x/da",
    "reason": "0 opslag"
+  },
+  {
+   "name": "Odense Kommune",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3256",
+    "probe_url": "https://recruiter.hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=0a708a77-fed4-4784-bd61-5b291ad8e44f&cid=3256"
+   },
+   "evidence": "https://recruiter.hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=0a708a77-fed4-4784-bd61-5b291ad8e44f&cid=3256",
+   "reason": "HR-Manager-alias ikke fundet"
   }
  ]
 }
