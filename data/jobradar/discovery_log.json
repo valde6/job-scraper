@@ -1,49 +1,47 @@
 {
- "started": "2026-11-06T07:59:17+00:00",
- "ads_read": 55,
+ "started": "2026-11-07T07:16:48+00:00",
+ "ads_read": 53,
  "candidates": [
   {
-   "name": "AL Sydbank",
-   "type": "teamtailor",
+   "name": "Gyldendal A/S",
+   "type": "emply",
    "cfg": {
-    "url": "https://app.teamtailor.com"
+    "url": "https://mentordanmark.career.emply.com"
    },
-   "evidence": "https://app.teamtailor.com/companies/8Y8ZlPcl1lY@eu/dashboard",
-   "listed": 0,
-   "matched": 0
-  },
-  {
-   "name": "IFF",
-   "type": "workday",
-   "cfg": {
-    "url": "https://iff.wd5.myworkdayjobs.com/IFF_Careers"
-   },
-   "evidence": "https://iff.wd5.myworkdayjobs.com/IFF_Careers/job/Brabrand-Denmark/Internship-and-Thesis-opportunities-at-IFF--Spring-2027-_R20937",
-   "listed": 126,
-   "matched": 0
+   "evidence": "https://mentordanmark.career.emply.com/ad/studiejob-med-mening-bliv-fagvejleder-hos-mentordanmark/nbhc7x/da",
+   "listed": 2,
+   "matched": 1
   },
   {
    "name": "Lemvigh-Müller A/S",
    "type": "hrmanager",
    "cfg": {
     "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143628&DepartmentId=19007&MediaId=4635&SkipAdvertisement=true"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143627&DepartmentId=18990&MediaId=4635&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143628&DepartmentId=19007&MediaId=4635&SkipAdvertisement=true",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143627&DepartmentId=18990&MediaId=4635&SkipAdvertisement=true",
    "cid": "3341",
    "listed": 0,
    "matched": 0
   },
   {
-   "name": "KFUM's Sociale Arbejde",
-   "type": "hrmanager",
+   "name": "KIRKBI A/S",
+   "type": "teamtailor",
    "cfg": {
-    "cid": "1923",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1923&ProjectId=143927&DepartmentId=18997&MediaId=4622"
+    "url": "https://thelegofoundation.teamtailor.com"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1923&ProjectId=143927&DepartmentId=18997&MediaId=4622",
-   "cid": "1923",
-   "listed": 6,
+   "evidence": "https://thelegofoundation.teamtailor.com/jobs/8671092-student-worker-strategy?promotion=2282866-jobindex",
+   "listed": 1,
+   "matched": 1
+  },
+  {
+   "name": "Syddjurs Kommune",
+   "type": "emply",
+   "cfg": {
+    "url": "https://syddjurs.career.emply.com"
+   },
+   "evidence": "https://syddjurs.career.emply.com/ad/kok-med-ansvar-for-kantinedrift-soges-til-kantinen-i-hornslet/mkt9b3/da",
+   "listed": 42,
    "matched": 0
   },
   {
@@ -52,53 +50,40 @@
    "cfg": {
     "url": "https://kp.career.emply.com"
    },
-   "evidence": "https://kp.career.emply.com/ad/leder-til-facility-management-driftsservice-skab-serviceoplevelser-og-sammenhaen/48bf4x/da",
+   "evidence": "https://kp.career.emply.com/ad/bachelorvejledere-til-sygeplejerskeuddannelsen-i-hillerod/m0qh6o/da",
    "listed": 0,
    "matched": 0
   }
  ],
  "added": [
   {
-   "name": "IFF",
-   "type": "workday",
-   "listed": 126,
-   "matched": 0
+   "name": "Gyldendal A/S",
+   "type": "emply",
+   "listed": 2,
+   "matched": 1
   },
   {
-   "name": "KFUM's Sociale Arbejde",
-   "type": "hrmanager",
-   "listed": 6,
+   "name": "KIRKBI A/S",
+   "type": "teamtailor",
+   "listed": 1,
+   "matched": 1
+  },
+  {
+   "name": "Syddjurs Kommune",
+   "type": "emply",
+   "listed": 42,
    "matched": 0
   }
  ],
  "rejected": [
   {
-   "name": "AL Sydbank",
-   "type": "teamtailor",
-   "cfg": {
-    "url": "https://app.teamtailor.com"
-   },
-   "evidence": "https://app.teamtailor.com/companies/8Y8ZlPcl1lY@eu/dashboard",
-   "reason": "0 opslag"
-  },
-  {
-   "name": "Per Aarsleff A/S",
+   "name": "Odense Kommune",
    "type": "hrmanager",
    "cfg": {
-    "cid": "306",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=306&ProjectId=182843&DepartmentId=21679&MediaId=59"
+    "cid": "3256",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144897&DepartmentId=18956&MediaId=4630&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=306&ProjectId=182843&DepartmentId=21679&MediaId=59",
-   "reason": "HR-Manager-alias ikke fundet"
-  },
-  {
-   "name": "Professionshøjskolen Absalon",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "5001",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194525&DepartmentId=9359&MediaId=5"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194525&DepartmentId=9359&MediaId=5",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144897&DepartmentId=18956&MediaId=4630&SkipAdvertisement=true",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
@@ -106,11 +91,21 @@
    "type": "hrmanager",
    "cfg": {
     "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143628&DepartmentId=19007&MediaId=4635&SkipAdvertisement=true"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143627&DepartmentId=18990&MediaId=4635&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143628&DepartmentId=19007&MediaId=4635&SkipAdvertisement=true",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143627&DepartmentId=18990&MediaId=4635&SkipAdvertisement=true",
    "cid": "3341",
    "reason": "0 opslag"
+  },
+  {
+   "name": "Billund Kommune",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "1392",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1392&ProjectId=146532&DepartmentId=20141&MediaId=4616"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1392&ProjectId=146532&DepartmentId=20141&MediaId=4616",
+   "reason": "HR-Manager-alias ikke fundet"
   },
   {
    "name": "Københavns Professionshøjskole",
@@ -118,17 +113,17 @@
    "cfg": {
     "url": "https://kp.career.emply.com"
    },
-   "evidence": "https://kp.career.emply.com/ad/leder-til-facility-management-driftsservice-skab-serviceoplevelser-og-sammenhaen/48bf4x/da",
+   "evidence": "https://kp.career.emply.com/ad/bachelorvejledere-til-sygeplejerskeuddannelsen-i-hillerod/m0qh6o/da",
    "reason": "0 opslag"
   },
   {
-   "name": "Odense Kommune",
+   "name": "UC SYD",
    "type": "hrmanager",
    "cfg": {
-    "cid": "3256",
-    "probe_url": "https://recruiter.hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=0a708a77-fed4-4784-bd61-5b291ad8e44f&cid=3256"
+    "cid": "5001",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194528&DepartmentId=8232&MediaId=5"
    },
-   "evidence": "https://recruiter.hr-manager.net/Export/Attachments/ViewFileManagerDocument.aspx?id=0a708a77-fed4-4784-bd61-5b291ad8e44f&cid=3256",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194528&DepartmentId=8232&MediaId=5",
    "reason": "HR-Manager-alias ikke fundet"
   }
  ]

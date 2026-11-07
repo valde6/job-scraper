@@ -1,11 +1,82 @@
 {
- "checked": "2026-11-06T08:23:39+00:00",
+ "checked": "2026-11-07T07:42:45+00:00",
  "counts": {
-  "unknown": 30,
-  "ok": 468,
-  "dead": 6
+  "unknown": 34,
+  "ok": 472,
+  "dead": 16
  },
- "jobs_dead": [],
+ "jobs_dead": [
+  {
+   "id": "9ee910feaa93",
+   "company": "A.P. Møller - Mærsk",
+   "title": "Global Public Affairs Intern – European & Nordic Policy (Early Careers)",
+   "url": "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers/job/Denmark-Copenhagen-1098/Global-Public-Affairs-Intern---European---Nordic-Policy--Early-Careers-_R198408-1",
+   "why": "viderestillet væk fra opslaget (https://static.community.workday.com/maintenance-page.html)"
+  },
+  {
+   "id": "abad46922a62",
+   "company": "A.P. Møller - Mærsk",
+   "title": "Intern - Global Public Affairs (Early Careers)",
+   "url": "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers/job/Denmark-Copenhagen-1098/Intern---Global-Public-Affairs--Early-Careers-_R198409",
+   "why": "viderestillet væk fra opslaget (https://static.community.workday.com/maintenance-page.html)"
+  },
+  {
+   "id": "a03f9457aa12",
+   "company": "Saxo Bank",
+   "title": "Student Assistant - Unsolicited Application",
+   "url": "https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank/job/Headquarters/Student-Assistant---Unsolicited-Application_R-13931",
+   "why": "viderestillet væk fra opslaget (https://static.community.workday.com/maintenance-page.html)"
+  },
+  {
+   "id": "14dc780d765d",
+   "company": "Saxo Bank",
+   "title": "Client Service Associate - part time",
+   "url": "https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank/job/Headquarters/Client-Service-Associate---part-time_R-15369",
+   "why": "viderestillet væk fra opslaget (https://static.community.workday.com/maintenance-page.html)"
+  },
+  {
+   "id": "5ac71769fedd",
+   "company": "Saxo Bank",
+   "title": "Market Data Analyst (Student Assistant)",
+   "url": "https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank/job/Headquarters/Market-Data-Analyst--Student-Assistant-_R-19482-1",
+   "why": "viderestillet væk fra opslaget (https://static.community.workday.com/maintenance-page.html)"
+  },
+  {
+   "id": "fe6d6e9db155",
+   "company": "Saxo Bank",
+   "title": "Student Digital Sales Associate",
+   "url": "https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank/job/Headquarters/Student-Digital-Sales-Associate_R-15566",
+   "why": "viderestillet væk fra opslaget (https://static.community.workday.com/maintenance-page.html)"
+  },
+  {
+   "id": "7e125943657e",
+   "company": "Saxo Bank",
+   "title": "Client Service Associate (Student Assistant) - Native Polish, Czech/Slovak Speaker",
+   "url": "https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank/job/Headquarters/Client-Service-Associate_R-15368",
+   "why": "viderestillet væk fra opslaget (https://static.community.workday.com/maintenance-page.html)"
+  },
+  {
+   "id": "ef7a2deadbdc",
+   "company": "STARK Danmark",
+   "title": "Salgstrainee - STARK",
+   "url": "https://stark.wd3.myworkdayjobs.com/STARK-Denmark/job/STARK-Danmark/Salgstrainees-med-speciale-i-byggematerialer-eller-vrktj_JR12427",
+   "why": "viderestillet væk fra opslaget (https://static.community.workday.com/maintenance-page.html)"
+  },
+  {
+   "id": "38ff3bb45f10",
+   "company": "Zealand Pharma A/S",
+   "title": "Student Assistant",
+   "url": "https://zealandpharma.wd3.myworkdayjobs.com/ExternalCareer/job/Sborg-Denmark/Student-Assistant_JR426",
+   "why": "viderestillet væk fra opslaget (https://static.community.workday.com/maintenance-page.html)"
+  },
+  {
+   "id": "7fa23dfadd36",
+   "company": "Sedgwick Danmark",
+   "title": "Juridisk studentermedhjælper",
+   "url": "https://sedgwick.wd1.myworkdayjobs.com/Sedgwick/job/DK-Ballerup/Juridisk-studentermedhjlper_R80024",
+   "why": "viderestillet væk fra opslaget (https://static.community.workday.com/maintenance-page.html)"
+  }
+ ],
  "jobs_stale": [],
  "career_dead": [
   {
@@ -49,13 +120,17 @@
   "https://career2.successfactors.eu/career?company=royalunibr&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
   "https://career5.successfactors.eu/career?company=bangolufse&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
   "https://career5.successfactors.eu/career?company=sampensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
-  "https://employment.ku.dk/all-vacancies/",
-  "https://novonesis.wd103.myworkdayjobs.com/Novonesis_Careers/job/Lyngby/Student-Assistant--Global-Livestock-Research--Lyngby_JR113592-2",
   "https://novonesis.wd103.myworkdayjobs.com/Novonesis_Careers/job/Lyngby/Student-Assistant-for-AI-Adoption-in-Supply-Chain_JR113980",
   "https://novonesis.wd103.myworkdayjobs.com/Novonesis_Careers/job/Lyngby/Student-Assistant-for-Supply-Chain-Data---Analytics_JR113943-1",
   "https://om.coop.dk/job",
   "https://orsted.com/en/careers",
   "https://orsted.com/en/careers/vacancies-list",
+  "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers",
+  "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/Bliv-revisorgraduate-hos-PwC-Hellerup-og-kom-helt-tt-p-kunderne-fra-dag-1_753522WD-1",
+  "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/Bliv-revisorpraktikant-hos-PwC-i-Hellerup--August-2027-_753030WD",
+  "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/Bliv-revisortrainee-hos-PwC-Hellerup---start-din-karriere-og-tag-en-uddannelse-samtidig-_753519WD",
+  "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/HR-praktikant---F-mulighed-for-at-arbejde-med-events-og-employer-branding_764998WD",
+  "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/Praktikant---f-bred-erfaring-med-HR--lring-og-udvikling_765731WD",
   "https://redbarnet.dk/om-red-barnet/job",
   "https://studenttalent.bcg.com/careers/job/790313062445",
   "https://studenttalent.bcg.com/careers/job/790313062451",

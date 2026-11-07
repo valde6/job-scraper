@@ -782,3 +782,33 @@ employers:
     via: jobindex-link
     evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1923&ProjectId=143927&DepartmentId=18997&MediaId=4622
   cid: '1923'
+- name: Gyldendal A/S
+  career_url: https://mentordanmark.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://mentordanmark.career.emply.com
+  discovered:
+    at: '2026-11-07'
+    via: jobindex-link
+    evidence: https://mentordanmark.career.emply.com/ad/studiejob-med-mening-bliv-fagvejleder-hos-mentordanmark/nbhc7x/da
+- name: KIRKBI A/S
+  career_url: https://thelegofoundation.teamtailor.com
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://thelegofoundation.teamtailor.com
+  discovered:
+    at: '2026-11-07'
+    via: jobindex-link
+    evidence: https://thelegofoundation.teamtailor.com/jobs/8671092-student-worker-strategy?promotion=2282866-jobindex
+- name: Syddjurs Kommune
+  career_url: https://syddjurs.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://syddjurs.career.emply.com
+  discovered:
+    at: '2026-11-07'
+    via: jobindex-link
+    evidence: https://syddjurs.career.emply.com/ad/kok-med-ansvar-for-kantinedrift-soges-til-kantinen-i-hornslet/mkt9b3/da
