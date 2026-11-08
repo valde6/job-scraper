@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-07T06:38:45+00:00",
+ "ts": "2026-11-08T06:44:58+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -95,7 +95,7 @@
    "name": "Nordea",
    "type": "nordea",
    "ok": true,
-   "listed": 8,
+   "listed": 7,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 21,
+   "streak": 22,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -505,15 +505,15 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 414,
-   "matched": 35,
+   "listed": 413,
+   "matched": 34,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 21 kørsler i træk – 0 opslag (sidst 16)"
+  "**Danmarks Radio** (hrmanager): mistænkelig i 22 kørsler i træk – 0 opslag (sidst 16)"
  ],
  "active": 37
 }

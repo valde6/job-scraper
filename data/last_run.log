@@ -5,7 +5,7 @@ Danske Bank                      oracle          True 5 2
 Deloitte                         smartrecruiters True 35 8 
 PwC                              workday         True 7 2 
 Boston Consulting Group (BCG)    eightfold       True 4 0 
-Nordea                           nordea          True 8 1 
+Nordea                           nordea          True 7 1 
 EY                               yello           True 8 2 
 Nykredit                         browser         True 29 3 
 Vestas                           successfactors  True 7 0 
@@ -24,6 +24,6 @@ Accenture                        workday         True 1 1
 Danmarks Radio                   hrmanager       True 0 0 
 Rambøll                          smartrecruiters True 35 0 
 Novonesis                        workday         True 44 2 
-Jobindex: {'sikker': 29, 'sandsynlig': 4, 'mulig': 2, 'body_fetch': 32}
+Jobindex: {'sikker': 28, 'sandsynlig': 4, 'mulig': 2, 'body_fetch': 3}
 
-Færdig: 72 fundet i dag, 12 nye, 185 aktive i alt.
+Færdig: 71 fundet i dag, 0 nye, 185 aktive i alt.
