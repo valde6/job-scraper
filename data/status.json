@@ -1,14 +1,14 @@
 {
- "updated": "2026-11-08T06:44:58+00:00",
+ "updated": "2026-11-09T07:14:50+00:00",
  "companies": [
   {
    "company": "Novo Nordisk",
    "rank": 1,
    "source": "successfactors",
    "ok": true,
-   "listed": 5,
-   "matched": 2,
-   "seconds": 2.6
+   "listed": 3,
+   "matched": 1,
+   "seconds": 1.7
   },
   {
    "company": "A.P. Møller - Mærsk",
@@ -17,7 +17,7 @@
    "ok": true,
    "listed": 404,
    "matched": 0,
-   "seconds": 16.4
+   "seconds": 13.1
   },
   {
    "company": "McKinsey & Company",
@@ -33,25 +33,25 @@
    "ok": true,
    "listed": 51,
    "matched": 2,
-   "seconds": 20.9
+   "seconds": 21.8
   },
   {
    "company": "Danske Bank",
    "rank": 5,
    "source": "oracle",
    "ok": true,
-   "listed": 5,
+   "listed": 4,
    "matched": 2,
-   "seconds": 2.5
+   "seconds": 9.2
   },
   {
    "company": "Deloitte",
    "rank": 6,
    "source": "smartrecruiters",
    "ok": true,
-   "listed": 35,
+   "listed": 34,
    "matched": 8,
-   "seconds": 16.7
+   "seconds": 14.6
   },
   {
    "company": "PwC",
@@ -60,7 +60,7 @@
    "ok": true,
    "listed": 7,
    "matched": 2,
-   "seconds": 7.8
+   "seconds": 8.0
   },
   {
    "company": "Carlsberg",
@@ -85,7 +85,7 @@
    "ok": true,
    "listed": 7,
    "matched": 1,
-   "seconds": 3.9
+   "seconds": 3.5
   },
   {
    "company": "Microsoft",
@@ -101,7 +101,7 @@
    "ok": true,
    "listed": 8,
    "matched": 2,
-   "seconds": 1.9
+   "seconds": 1.4
   },
   {
    "company": "Jyske Bank",
@@ -115,9 +115,9 @@
    "rank": 14,
    "source": "browser",
    "ok": true,
-   "listed": 29,
+   "listed": 27,
    "matched": 3,
-   "seconds": 28.9
+   "seconds": 29.6
   },
   {
    "company": "Bestseller",
@@ -147,7 +147,7 @@
    "ok": true,
    "listed": 7,
    "matched": 0,
-   "seconds": 1.8
+   "seconds": 1.4
   },
   {
    "company": "Implement",
@@ -163,7 +163,7 @@
    "ok": true,
    "listed": 24,
    "matched": 0,
-   "seconds": 4.9
+   "seconds": 4.6
   },
   {
    "company": "Finansministeriet",
@@ -193,7 +193,7 @@
    "ok": true,
    "listed": 10,
    "matched": 0,
-   "seconds": 31.0
+   "seconds": 25.6
   },
   {
    "company": "Udenrigsministeriet",
@@ -216,7 +216,7 @@
    "ok": true,
    "listed": 11,
    "matched": 2,
-   "seconds": 0.7
+   "seconds": 0.6
   },
   {
    "company": "Nordnet",
@@ -232,7 +232,7 @@
    "ok": true,
    "listed": 31,
    "matched": 0,
-   "seconds": 8.3
+   "seconds": 7.6
   },
   {
    "company": "KPMG",
@@ -241,7 +241,7 @@
    "ok": true,
    "listed": 14,
    "matched": 1,
-   "seconds": 1.3
+   "seconds": 1.2
   },
   {
    "company": "Matas",
@@ -264,7 +264,7 @@
    "ok": true,
    "listed": 12,
    "matched": 2,
-   "seconds": 5.8
+   "seconds": 5.5
   },
   {
    "company": "Københavns Lufthavne",
@@ -280,7 +280,7 @@
    "ok": true,
    "listed": 12,
    "matched": 3,
-   "seconds": 0.6
+   "seconds": 0.7
   },
   {
    "company": "Netcompany",
@@ -289,16 +289,16 @@
    "ok": true,
    "listed": 28,
    "matched": 2,
-   "seconds": 13.0
+   "seconds": 12.0
   },
   {
    "company": "PFA Pension",
    "rank": 37,
    "source": "browser",
    "ok": true,
-   "listed": 10,
-   "matched": 2,
-   "seconds": 21.7
+   "listed": 8,
+   "matched": 1,
+   "seconds": 16.5
   },
   {
    "company": "SAS",
@@ -314,7 +314,7 @@
    "ok": true,
    "listed": 6,
    "matched": 0,
-   "seconds": 0.3
+   "seconds": 0.6
   },
   {
    "company": "Beierholm",
@@ -344,7 +344,7 @@
    "ok": true,
    "listed": 30,
    "matched": 0,
-   "seconds": 0.9
+   "seconds": 0.4
   },
   {
    "company": "Statsministeriet",
@@ -360,7 +360,7 @@
    "ok": true,
    "listed": 1,
    "matched": 1,
-   "seconds": 8.9
+   "seconds": 9.9
   },
   {
    "company": "Danmarks Radio",
@@ -394,7 +394,7 @@
    "ok": true,
    "listed": 35,
    "matched": 0,
-   "seconds": 16.0
+   "seconds": 14.7
   },
   {
    "company": "Novonesis",
@@ -403,13 +403,13 @@
    "ok": true,
    "listed": 44,
    "matched": 2,
-   "seconds": 5.3
+   "seconds": 4.6
   },
   {
    "company": "(Jobindex RSS)",
    "source": "jobindex",
    "ok": true,
-   "listed": 413,
+   "listed": 405,
    "matched": 34,
    "fit": {
     "sikker": 28,

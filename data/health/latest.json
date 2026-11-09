@@ -1,12 +1,12 @@
 {
- "ts": "2026-11-08T06:44:58+00:00",
+ "ts": "2026-11-09T07:14:50+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
    "ok": true,
-   "listed": 5,
-   "matched": 2,
+   "listed": 3,
+   "matched": 1,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -45,7 +45,7 @@
    "name": "Danske Bank",
    "type": "oracle",
    "ok": true,
-   "listed": 5,
+   "listed": 4,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -55,7 +55,7 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 35,
+   "listed": 34,
    "matched": 8,
    "problem": null,
    "streak": 0,
@@ -135,7 +135,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 29,
+   "listed": 27,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -365,8 +365,8 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 10,
-   "matched": 2,
+   "listed": 8,
+   "matched": 1,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 22,
+   "streak": 23,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -505,7 +505,7 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 413,
+   "listed": 405,
    "matched": 34,
    "problem": null,
    "streak": 0,
@@ -513,7 +513,7 @@
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 22 kørsler i træk – 0 opslag (sidst 16)"
+  "**Danmarks Radio** (hrmanager): mistænkelig i 23 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 37
+ "active": 35
 }
