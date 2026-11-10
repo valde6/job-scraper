@@ -812,3 +812,33 @@ employers:
     at: '2026-11-07'
     via: jobindex-link
     evidence: https://syddjurs.career.emply.com/ad/kok-med-ansvar-for-kantinedrift-soges-til-kantinen-i-hornslet/mkt9b3/da
+- name: Vejen Kommune
+  career_url: https://vejen.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://vejen.career.emply.com
+  discovered:
+    at: '2026-11-10'
+    via: jobindex-link
+    evidence: https://vejen.career.emply.com/ad/studentermedhjaelper-til-indkobskontoret-2026/4x9adp/da
+- name: Nordfyns Kommune
+  career_url: https://nordfynskommune.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://nordfynskommune.career.emply.com
+  discovered:
+    at: '2026-11-10'
+    via: jobindex-link
+    evidence: https://nordfynskommune.career.emply.com/ad/virksomhedskonsulent-til-fleksjobteamet-skab-jobmuligheder-for-borgere-med-neds/gn4pte/da
+- name: Herlev Kommune
+  career_url: https://herlev.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://herlev.career.emply.com
+  discovered:
+    at: '2026-11-10'
+    via: jobindex-link
+    evidence: https://herlev.career.emply.com/ad/vi-soger-to-paedagogiske-medarbejdere-der-vil-vaere-med-til-at-udvikle-vores-faelle/xo2wof/da

@@ -1,7 +1,88 @@
 {
- "started": "2026-11-09T08:06:15+00:00",
- "ads_read": 3,
- "candidates": [],
- "added": [],
- "rejected": []
+ "started": "2026-11-10T08:29:35+00:00",
+ "ads_read": 57,
+ "candidates": [
+  {
+   "name": "Vejen Kommune",
+   "type": "emply",
+   "cfg": {
+    "url": "https://vejen.career.emply.com"
+   },
+   "evidence": "https://vejen.career.emply.com/ad/studentermedhjaelper-til-indkobskontoret-2026/4x9adp/da",
+   "listed": 34,
+   "matched": 2
+  },
+  {
+   "name": "Nordfyns Kommune",
+   "type": "emply",
+   "cfg": {
+    "url": "https://nordfynskommune.career.emply.com"
+   },
+   "evidence": "https://nordfynskommune.career.emply.com/ad/virksomhedskonsulent-til-fleksjobteamet-skab-jobmuligheder-for-borgere-med-neds/gn4pte/da",
+   "listed": 35,
+   "matched": 0
+  },
+  {
+   "name": "Herlev Kommune",
+   "type": "emply",
+   "cfg": {
+    "url": "https://herlev.career.emply.com"
+   },
+   "evidence": "https://herlev.career.emply.com/ad/vi-soger-to-paedagogiske-medarbejdere-der-vil-vaere-med-til-at-udvikle-vores-faelle/xo2wof/da",
+   "listed": 33,
+   "matched": 0
+  }
+ ],
+ "added": [
+  {
+   "name": "Vejen Kommune",
+   "type": "emply",
+   "listed": 34,
+   "matched": 2
+  },
+  {
+   "name": "Nordfyns Kommune",
+   "type": "emply",
+   "listed": 35,
+   "matched": 0
+  },
+  {
+   "name": "Herlev Kommune",
+   "type": "emply",
+   "listed": 33,
+   "matched": 0
+  }
+ ],
+ "rejected": [
+  {
+   "name": "Odense Kommune",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3256",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144919&DepartmentId=19287&MediaId=4630&SkipAdvertisement=true"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144919&DepartmentId=19287&MediaId=4630&SkipAdvertisement=true",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Region Nordjylland",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3318",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3318&ProjectId=143665&DepartmentId=19154&MediaId=4632&SkipAdvertisement=true"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3318&ProjectId=143665&DepartmentId=19154&MediaId=4632&SkipAdvertisement=true",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "UC SYD",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "5001",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194535&DepartmentId=8336&MediaId=5"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194535&DepartmentId=8336&MediaId=5",
+   "reason": "HR-Manager-alias ikke fundet"
+  }
+ ]
 }

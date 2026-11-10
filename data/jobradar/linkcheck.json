@@ -1,9 +1,9 @@
 {
- "checked": "2026-11-09T08:08:57+00:00",
+ "checked": "2026-11-10T08:35:18+00:00",
  "counts": {
-  "unknown": 27,
-  "ok": 477,
-  "dead": 6
+  "unknown": 26,
+  "ok": 496,
+  "dead": 7
  },
  "jobs_dead": [],
  "jobs_stale": [],
@@ -37,6 +37,12 @@
    "url": "https://www.tivoli.dk/job",
    "why": "HTTP 404",
    "replaced_by": "https://candidate.hr-manager.net/vacancies/list.aspx?customer=tivoli"
+  },
+  {
+   "company": "LGC Biosearch Technologies A/S",
+   "url": "https://jobs.smartrecruiters.com/LGCGroup/744000155686603-oligonucleotide-development-scientist-specialist?trid=f08184f8-6b3c-479d-9d54-ea2d3674ed91",
+   "why": "tekst: This job has expired",
+   "replaced_by": null
   }
  ],
  "unknown": [
@@ -59,7 +65,6 @@
   "https://studenttalent.bcg.com/careers/job/790313522914",
   "https://www.alsydbank.dk/om-os/job",
   "https://www.coloplast.com/careers/",
-  "https://www.forsvaret.dk/da/karrieresider/ledige-stillinger-haeren/",
   "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs",
   "https://www.lundbeck.com/global/careers/your-job/job-opportunities",
   "https://www.mckinsey.com/careers/search-jobs/jobs/businessanalystintern-15275",
