@@ -1,11 +1,11 @@
 {
- "ts": "2026-11-09T07:14:50+00:00",
+ "ts": "2026-11-10T07:47:59+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
    "ok": true,
-   "listed": 3,
+   "listed": 4,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -15,7 +15,7 @@
    "name": "A.P. Møller - Mærsk",
    "type": "workday",
    "ok": true,
-   "listed": 404,
+   "listed": 403,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -36,7 +36,7 @@
    "type": "workday",
    "ok": true,
    "listed": 51,
-   "matched": 2,
+   "matched": 3,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -55,7 +55,7 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 34,
+   "listed": 32,
    "matched": 8,
    "problem": null,
    "streak": 0,
@@ -95,8 +95,8 @@
    "name": "Nordea",
    "type": "nordea",
    "ok": true,
-   "listed": 7,
-   "matched": 1,
+   "listed": 9,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -135,8 +135,8 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 27,
-   "matched": 3,
+   "listed": 33,
+   "matched": 5,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -265,7 +265,7 @@
    "name": "Dansk Industri",
    "type": "teamtailor",
    "ok": true,
-   "listed": 11,
+   "listed": 10,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 31,
+   "listed": 34,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -346,7 +346,7 @@
    "type": "teamtailor",
    "ok": true,
    "listed": 12,
-   "matched": 3,
+   "matched": 4,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -355,8 +355,8 @@
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 28,
-   "matched": 2,
+   "listed": 29,
+   "matched": 3,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -445,8 +445,8 @@
    "name": "Accenture",
    "type": "workday",
    "ok": true,
-   "listed": 1,
-   "matched": 1,
+   "listed": 2,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 23,
+   "streak": 24,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -506,14 +506,14 @@
    "type": "jobindex",
    "ok": true,
    "listed": 405,
-   "matched": 34,
+   "matched": 35,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 23 kørsler i træk – 0 opslag (sidst 16)"
+  "**Danmarks Radio** (hrmanager): mistænkelig i 24 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 35
+ "active": 42
 }

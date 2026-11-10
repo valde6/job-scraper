@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-09T07:14:50+00:00",
+ "generated_at": "2026-11-10T07:47:59+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
    "ok": true,
-   "listed": 3,
+   "listed": 4,
    "matched": 1,
    "error": null
   },
@@ -13,7 +13,7 @@
    "name": "A.P. Møller - Mærsk",
    "type": "workday",
    "ok": true,
-   "listed": 404,
+   "listed": 403,
    "matched": 0,
    "error": null
   },
@@ -30,7 +30,7 @@
    "type": "workday",
    "ok": true,
    "listed": 51,
-   "matched": 2,
+   "matched": 3,
    "error": null
   },
   {
@@ -45,7 +45,7 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 34,
+   "listed": 32,
    "matched": 8,
    "error": null
   },
@@ -77,8 +77,8 @@
    "name": "Nordea",
    "type": "nordea",
    "ok": true,
-   "listed": 7,
-   "matched": 1,
+   "listed": 9,
+   "matched": 2,
    "error": null
   },
   {
@@ -109,8 +109,8 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 27,
-   "matched": 3,
+   "listed": 33,
+   "matched": 5,
    "error": null
   },
   {
@@ -213,7 +213,7 @@
    "name": "Dansk Industri",
    "type": "teamtailor",
    "ok": true,
-   "listed": 11,
+   "listed": 10,
    "matched": 2,
    "error": null
   },
@@ -229,7 +229,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 31,
+   "listed": 34,
    "matched": 0,
    "error": null
   },
@@ -278,15 +278,15 @@
    "type": "teamtailor",
    "ok": true,
    "listed": 12,
-   "matched": 3,
+   "matched": 4,
    "error": null
   },
   {
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 28,
-   "matched": 2,
+   "listed": 29,
+   "matched": 3,
    "error": null
   },
   {
@@ -357,8 +357,8 @@
    "name": "Accenture",
    "type": "workday",
    "ok": true,
-   "listed": 1,
-   "matched": 1,
+   "listed": 2,
+   "matched": 2,
    "error": null
   },
   {
@@ -406,7 +406,7 @@
    "type": "jobindex",
    "ok": true,
    "listed": 405,
-   "matched": 34,
+   "matched": 35,
    "error": null
   }
  ]
