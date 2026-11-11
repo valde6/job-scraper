@@ -1,87 +1,176 @@
 {
- "started": "2026-11-10T08:29:35+00:00",
- "ads_read": 57,
+ "started": "2026-11-11T07:47:57+00:00",
+ "ads_read": 36,
  "candidates": [
   {
-   "name": "Vejen Kommune",
+   "name": "Sundhed.dk",
    "type": "emply",
    "cfg": {
-    "url": "https://vejen.career.emply.com"
+    "url": "https://sundheddk.career.emply.com"
    },
-   "evidence": "https://vejen.career.emply.com/ad/studentermedhjaelper-til-indkobskontoret-2026/4x9adp/da",
-   "listed": 34,
-   "matched": 2
-  },
-  {
-   "name": "Nordfyns Kommune",
-   "type": "emply",
-   "cfg": {
-    "url": "https://nordfynskommune.career.emply.com"
-   },
-   "evidence": "https://nordfynskommune.career.emply.com/ad/virksomhedskonsulent-til-fleksjobteamet-skab-jobmuligheder-for-borgere-med-neds/gn4pte/da",
-   "listed": 35,
+   "evidence": "https://sundheddk.career.emply.com/ad/digital-sundhed-danmark-soger-en-dedikeret-sektionsleder-til-brugersupporten/xgaz68/da",
+   "listed": 0,
    "matched": 0
   },
   {
-   "name": "Herlev Kommune",
+   "name": "Billund Lufthavn A/S",
    "type": "emply",
    "cfg": {
-    "url": "https://herlev.career.emply.com"
+    "url": "https://bll.career.emply.com"
    },
-   "evidence": "https://herlev.career.emply.com/ad/vi-soger-to-paedagogiske-medarbejdere-der-vil-vaere-med-til-at-udvikle-vores-faelle/xo2wof/da",
-   "listed": 33,
+   "evidence": "https://bll.career.emply.com/ad/bliv-en-del-af-gastro-vi-soger-nye-kolleger-til-vores-restaurant-i-billund-luft/ebxb6x/da",
+   "listed": 2,
+   "matched": 0
+  },
+  {
+   "name": "Lemvigh-Müller A/S",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3341",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143601&DepartmentId=18956&MediaId=4635&SkipAdvertisement=true"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143601&DepartmentId=18956&MediaId=4635&SkipAdvertisement=true",
+   "cid": "3341",
+   "listed": 0,
+   "matched": 0
+  },
+  {
+   "name": "Dansk Boldspil-Union (DBU)",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "1830",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1830&ProjectId=143965&DepartmentId=18966&MediaId=5"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1830&ProjectId=143965&DepartmentId=18966&MediaId=5",
+   "cid": "1830",
+   "listed": 8,
+   "matched": 1
+  },
+  {
+   "name": "Shell Biogas A/S",
+   "type": "workday",
+   "cfg": {
+    "url": "https://shell.wd3.myworkdayjobs.com/ShellCareers"
+   },
+   "evidence": "https://shell.wd3.myworkdayjobs.com/en-GB/ShellCareers/job/Denmark-Odense/Automation-Engineer---PLC---SCADA-Programming-for-Green-Energy-Solutions_R214902",
+   "listed": 88,
+   "matched": 0
+  },
+  {
+   "name": "Københavns Professionshøjskole",
+   "type": "emply",
+   "cfg": {
+    "url": "https://kp.career.emply.com"
+   },
+   "evidence": "https://kp.career.emply.com/ad/materialemedarbejder-til-center-for-undervisningsmidler-cfu/wzc0zf/da",
+   "listed": 0,
+   "matched": 0
+  },
+  {
+   "name": "OK-Fonden",
+   "type": "emply",
+   "cfg": {
+    "url": "https://ok-fonden-v2.career.emply.com"
+   },
+   "evidence": "https://ok-fonden-v2.career.emply.com/ad/social-og-sundhedsassistent-med-faglighed-hjerte-og-humor-soges-til-dagvagt-pa/cr3qss/da",
+   "listed": 15,
    "matched": 0
   }
  ],
  "added": [
   {
-   "name": "Vejen Kommune",
+   "name": "Billund Lufthavn A/S",
    "type": "emply",
-   "listed": 34,
-   "matched": 2
-  },
-  {
-   "name": "Nordfyns Kommune",
-   "type": "emply",
-   "listed": 35,
+   "listed": 2,
    "matched": 0
   },
   {
-   "name": "Herlev Kommune",
+   "name": "Dansk Boldspil-Union (DBU)",
+   "type": "hrmanager",
+   "listed": 8,
+   "matched": 1
+  },
+  {
+   "name": "Shell Biogas A/S",
+   "type": "workday",
+   "listed": 88,
+   "matched": 0
+  },
+  {
+   "name": "OK-Fonden",
    "type": "emply",
-   "listed": 33,
+   "listed": 15,
    "matched": 0
   }
  ],
  "rejected": [
   {
+   "name": "Sundhed.dk",
+   "type": "emply",
+   "cfg": {
+    "url": "https://sundheddk.career.emply.com"
+   },
+   "evidence": "https://sundheddk.career.emply.com/ad/digital-sundhed-danmark-soger-en-dedikeret-sektionsleder-til-brugersupporten/xgaz68/da",
+   "reason": "0 opslag"
+  },
+  {
+   "name": "Weibel Scientific A/S",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "1716",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1716&ProjectId=144267&DepartmentId=18956&MediaId=4618"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1716&ProjectId=144267&DepartmentId=18956&MediaId=4618",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Lemvigh-Müller A/S",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3341",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143601&DepartmentId=18956&MediaId=4635&SkipAdvertisement=true"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143601&DepartmentId=18956&MediaId=4635&SkipAdvertisement=true",
+   "cid": "3341",
+   "reason": "0 opslag"
+  },
+  {
    "name": "Odense Kommune",
    "type": "hrmanager",
    "cfg": {
     "cid": "3256",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144919&DepartmentId=19287&MediaId=4630&SkipAdvertisement=true"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144928&DepartmentId=19520&MediaId=4630&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144919&DepartmentId=19287&MediaId=4630&SkipAdvertisement=true",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144928&DepartmentId=19520&MediaId=4630&SkipAdvertisement=true",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
-   "name": "Region Nordjylland",
-   "type": "hrmanager",
+   "name": "Københavns Professionshøjskole",
+   "type": "emply",
    "cfg": {
-    "cid": "3318",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3318&ProjectId=143665&DepartmentId=19154&MediaId=4632&SkipAdvertisement=true"
+    "url": "https://kp.career.emply.com"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3318&ProjectId=143665&DepartmentId=19154&MediaId=4632&SkipAdvertisement=true",
-   "reason": "HR-Manager-alias ikke fundet"
+   "evidence": "https://kp.career.emply.com/ad/materialemedarbejder-til-center-for-undervisningsmidler-cfu/wzc0zf/da",
+   "reason": "0 opslag"
   },
   {
    "name": "UC SYD",
    "type": "hrmanager",
    "cfg": {
     "cid": "5001",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194535&DepartmentId=8336&MediaId=5"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194538&DepartmentId=8323&MediaId=5"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194535&DepartmentId=8336&MediaId=5",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194538&DepartmentId=8323&MediaId=5",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Lederne",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "2134",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2134&ProjectId=143878&DepartmentId=19025&MediaId=4615"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2134&ProjectId=143878&DepartmentId=19025&MediaId=4615",
    "reason": "HR-Manager-alias ikke fundet"
   }
  ]

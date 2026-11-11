@@ -842,3 +842,44 @@ employers:
     at: '2026-11-10'
     via: jobindex-link
     evidence: https://herlev.career.emply.com/ad/vi-soger-to-paedagogiske-medarbejdere-der-vil-vaere-med-til-at-udvikle-vores-faelle/xo2wof/da
+- name: Billund Lufthavn A/S
+  career_url: https://bll.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://bll.career.emply.com
+  discovered:
+    at: '2026-11-11'
+    via: jobindex-link
+    evidence: https://bll.career.emply.com/ad/bliv-en-del-af-gastro-vi-soger-nye-kolleger-til-vores-restaurant-i-billund-luft/ebxb6x/da
+- name: Dansk Boldspil-Union (DBU)
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=template
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: template
+  discovered:
+    at: '2026-11-11'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1830&ProjectId=143965&DepartmentId=18966&MediaId=5
+  cid: '1830'
+- name: Shell Biogas A/S
+  career_url: https://shell.wd3.myworkdayjobs.com/ShellCareers
+  status: opdaget
+  source:
+    type: workday
+    url: https://shell.wd3.myworkdayjobs.com/ShellCareers
+  discovered:
+    at: '2026-11-11'
+    via: jobindex-link
+    evidence: https://shell.wd3.myworkdayjobs.com/en-GB/ShellCareers/job/Denmark-Odense/Automation-Engineer---PLC---SCADA-Programming-for-Green-Energy-Solutions_R214902
+- name: OK-Fonden
+  career_url: https://ok-fonden-v2.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://ok-fonden-v2.career.emply.com
+  discovered:
+    at: '2026-11-11'
+    via: jobindex-link
+    evidence: https://ok-fonden-v2.career.emply.com/ad/social-og-sundhedsassistent-med-faglighed-hjerte-og-humor-soges-til-dagvagt-pa/cr3qss/da
