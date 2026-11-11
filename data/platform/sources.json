@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T07:47:59+00:00",
+ "generated_at": "2026-11-11T07:13:52+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -13,7 +13,7 @@
    "name": "A.P. Møller - Mærsk",
    "type": "workday",
    "ok": true,
-   "listed": 403,
+   "listed": 404,
    "matched": 0,
    "error": null
   },
@@ -77,8 +77,8 @@
    "name": "Nordea",
    "type": "nordea",
    "ok": true,
-   "listed": 9,
-   "matched": 2,
+   "listed": 11,
+   "matched": 3,
    "error": null
   },
   {
@@ -109,7 +109,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 33,
+   "listed": 34,
    "matched": 5,
    "error": null
   },
@@ -213,8 +213,8 @@
    "name": "Dansk Industri",
    "type": "teamtailor",
    "ok": true,
-   "listed": 10,
-   "matched": 2,
+   "listed": 11,
+   "matched": 3,
    "error": null
   },
   {
@@ -229,7 +229,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 34,
+   "listed": 37,
    "matched": 0,
    "error": null
   },
@@ -293,7 +293,7 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 8,
+   "listed": 7,
    "matched": 1,
    "error": null
   },
@@ -341,7 +341,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 30,
+   "listed": 28,
    "matched": 0,
    "error": null
   },
@@ -398,14 +398,14 @@
    "type": "workday",
    "ok": true,
    "listed": 44,
-   "matched": 2,
+   "matched": 4,
    "error": null
   },
   {
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 405,
+   "listed": 415,
    "matched": 35,
    "error": null
   }
