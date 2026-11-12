@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-11T07:13:52+00:00",
+ "ts": "2026-11-12T07:45:45+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -55,8 +55,8 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 32,
-   "matched": 8,
+   "listed": 26,
+   "matched": 6,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -95,8 +95,8 @@
    "name": "Nordea",
    "type": "nordea",
    "ok": true,
-   "listed": 11,
-   "matched": 3,
+   "listed": 9,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -135,7 +135,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 34,
+   "listed": 35,
    "matched": 5,
    "problem": null,
    "streak": 0,
@@ -195,7 +195,7 @@
    "name": "Saxo Bank",
    "type": "workday",
    "ok": true,
-   "listed": 24,
+   "listed": 25,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -355,7 +355,7 @@
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 29,
+   "listed": 31,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -425,7 +425,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 28,
+   "listed": 30,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 25,
+   "streak": 26,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -485,7 +485,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 35,
+   "listed": 36,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -505,15 +505,15 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 415,
-   "matched": 35,
+   "listed": 406,
+   "matched": 31,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 25 kørsler i træk – 0 opslag (sidst 16)"
+  "**Danmarks Radio** (hrmanager): mistænkelig i 26 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 46
+ "active": 43
 }
