@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T07:45:45+00:00",
+ "generated_at": "2026-11-13T07:23:03+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -29,7 +29,7 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 51,
+   "listed": 52,
    "matched": 3,
    "error": null
   },
@@ -45,8 +45,8 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 26,
-   "matched": 6,
+   "listed": 32,
+   "matched": 8,
    "error": null
   },
   {
@@ -109,7 +109,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 35,
+   "listed": 34,
    "matched": 5,
    "error": null
   },
@@ -229,7 +229,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 37,
+   "listed": 36,
    "matched": 0,
    "error": null
   },
@@ -278,14 +278,14 @@
    "type": "teamtailor",
    "ok": true,
    "listed": 12,
-   "matched": 4,
+   "matched": 3,
    "error": null
   },
   {
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 31,
+   "listed": 32,
    "matched": 3,
    "error": null
   },
@@ -389,7 +389,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 36,
+   "listed": 42,
    "matched": 0,
    "error": null
   },
@@ -397,7 +397,7 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 44,
+   "listed": 46,
    "matched": 4,
    "error": null
   },
@@ -406,7 +406,7 @@
    "type": "jobindex",
    "ok": true,
    "listed": 406,
-   "matched": 31,
+   "matched": 33,
    "error": null
   }
  ]

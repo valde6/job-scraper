@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-12T07:45:45+00:00",
+ "ts": "2026-11-13T07:23:03+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -35,7 +35,7 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 51,
+   "listed": 52,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -55,8 +55,8 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 26,
-   "matched": 6,
+   "listed": 32,
+   "matched": 8,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -135,7 +135,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 35,
+   "listed": 34,
    "matched": 5,
    "problem": null,
    "streak": 0,
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 37,
+   "listed": 36,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -346,7 +346,7 @@
    "type": "teamtailor",
    "ok": true,
    "listed": 12,
-   "matched": 4,
+   "matched": 3,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -355,7 +355,7 @@
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 31,
+   "listed": 32,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 26,
+   "streak": 27,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -485,7 +485,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 36,
+   "listed": 42,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -495,7 +495,7 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 44,
+   "listed": 46,
    "matched": 4,
    "problem": null,
    "streak": 0,
@@ -506,14 +506,14 @@
    "type": "jobindex",
    "ok": true,
    "listed": 406,
-   "matched": 31,
+   "matched": 33,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 26 kørsler i træk – 0 opslag (sidst 16)"
+  "**Danmarks Radio** (hrmanager): mistænkelig i 27 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 43
+ "active": 44
 }
