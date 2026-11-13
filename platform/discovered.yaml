@@ -893,3 +893,24 @@ employers:
     at: '2026-11-12'
     via: jobindex-link
     evidence: https://cryos.career.emply.com/da/forside
+- name: Colosseumklinikken Danmark ApS
+  career_url: https://colosseumklinikken.teamtailor.com
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://colosseumklinikken.teamtailor.com
+  discovered:
+    at: '2026-11-13'
+    via: jobindex-link
+    evidence: https://colosseumklinikken.teamtailor.com/jobs/8705577-brand-communications-lead
+- name: DBI – Dansk Brand- og sikringsteknisk Institut
+  career_url: https://candidate.hr-manager.net/vacancies/list.aspx?customer=DBI
+  status: opdaget
+  source:
+    type: hrmanager
+    customer: DBI
+  discovered:
+    at: '2026-11-13'
+    via: jobindex-link
+    evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1964&ProjectId=144197&DepartmentId=18995&MediaId=4615
+  cid: '1964'

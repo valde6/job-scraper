@@ -46,160 +46,136 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
     raise HTTPError(http_error_msg, response=self)
 requests.exceptions.HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/
-Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 529, in main
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
-    return fn()
-           ^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 529, in <lambda>
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                                         ^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/generic.py", line 108, in scrape
-    s = soup(get(lu).text)
-             ^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 104, in get
-    return http("GET", url, **kw)
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 100, in http
-    raise last  # type: ignore[misc]
-    ^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 92, in http
-    r.raise_for_status()
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 503 Server Error: Backend fetch failed for url: https://www.kk.dk/ledigestillinger?page=0
-Novo Nordisk                         successfactors  True 40 4 
-A.P. Møller - Mærsk                  workday         True 626 2 
+Novo Nordisk                         successfactors  True 38 4 
+A.P. Møller - Mærsk                  workday         True 629 2 
 McKinsey & Company                   mckinsey        True 11 2 
-LEGO Group                           workday         True 103 0 
-Danske Bank                          oracle          True 120 3 
+LEGO Group                           workday         True 106 0 
+Danske Bank                          oracle          True 129 3 
 Deloitte                             smartrecruiters True 32 7 
 PwC                                  workday         True 7 5 
-Carlsberg                            sitemap         True 104 0 
+Carlsberg                            sitemap         True 105 0 
 Boston Consulting Group (BCG)        eightfold       True 4 3 
-Nordea                               nordea          True 76 1 
+Nordea                               nordea          True 82 1 
 EY                                   yello           True 8 8 
 Jyske Bank                           generic         False   HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs
-Nykredit                             browser         True 35 5 
-Bestseller                           sitemap         True 834 0 
-L'Oréal Groupe                       sitemap         True 1594 1 
+Nykredit                             browser         True 34 5 
+Bestseller                           sitemap         True 821 0 
+L'Oréal Groupe                       sitemap         True 1579 1 
 Bain & Company                       avature         True 254 0 
-Vestas                               successfactors  True 66 0 
+Vestas                               successfactors  True 62 0 
 Implement                            smartrecruiters True 16 1 
 Saxo Bank                            workday         True 53 4 
 Bang & Olufsen                       browser         True 4 0 
 Arla Foods                           phenom          True 10 0 
-Pandora                              sitemap         True 11891 1 
+Pandora                              sitemap         True 11945 1 
 Dansk Industri                       teamtailor      True 11 3 
 Nordnet                              teamtailor      True 14 0 
-Ørsted                               browser         True 37 0 
+Ørsted                               browser         True 35 0 
 KPMG                                 hrmanager       True 14 1 
 Matas                                emply           True 20 3 
 PA Consulting Group                  smartrecruiters True 12 2 
-Københavns Lufthavne                 sitemap         True 22 1 
+Københavns Lufthavne                 sitemap         True 25 2 
 Danske Commodities                   teamtailor      True 12 1 
-Netcompany                           smartrecruiters True 31 5 
+Netcompany                           smartrecruiters True 32 5 
 PFA Pension                          browser         True 7 2 
-SAS                                  sitemap         True 0 0 0 opslag (sidst 17)
+SAS                                  sitemap         True 20 0 
 Amazon                               amazon          True 6 0 
-Beierholm                            generic         True 30 5 
-AL Sydbank                           teamtailor      True 33 2 
-Forsvaret                            generic         True 70 0 
+Beierholm                            generic         True 31 5 
+AL Sydbank                           teamtailor      True 32 2 
+Forsvaret                            generic         True 76 0 
 IKEA                                 generic         True 30 0 
 Accenture                            workday         True 2 0 
-Danmarks Radio                       sitemap         True 32 6 
-DSV                                  sitemap         True 2164 0 
-BDO                                  emply           True 27 3 
-Rambøll                              smartrecruiters True 36 1 
-Novonesis                            workday         True 63 4 
+Danmarks Radio                       sitemap         True 29 8 
+DSV                                  sitemap         True 2182 0 
+BDO                                  emply           True 25 3 
+Rambøll                              smartrecruiters True 42 2 
+Novonesis                            workday         True 64 4 
 Kromann Reumert                      generic         True 3 0 
 Plesner                              generic         True 6 2 
 Gorrissen Federspiel                 generic         False   HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/
 Bech-Bruun                           generic         True 3 1 
 Accura                               hrmanager       True 5 1 
 Poul Schmith / Kammeradvokaten       emply           True 9 1 
-DLA Piper Denmark                    generic         True 3 1 
+DLA Piper Denmark                    generic         True 4 1 
 Mazanti-Andersen                     generic         True 3 0 
 Schjødt                              hrmanager       True 4 0 
 Lund Elmer Sandager                  hrmanager       True 1 0 
 Grant Thornton                       generic         True 9 1 
-Statens Rekrutteringsløsning (staten) hrmanager       True 399 50 
-Københavns Kommune                   generic         False   HTTPError: 503 Server Error: Backend fetch failed for url: https://www.kk.dk/ledigestillinger?page=0
-Frederiksberg Kommune                emply           True 61 3 
+Statens Rekrutteringsløsning (staten) hrmanager       True 486 53 
+Københavns Kommune                   generic         True 186 8 
+Frederiksberg Kommune                emply           True 65 3 
 Tryg                                 sitemap         True 40 3 
 If Skadeforsikring                   workday         True 42 2 
-ATP                                  hrmanager       True 15 0 
+ATP                                  hrmanager       True 16 0 
 PensionDanmark                       generic         True 6 1 
 Sampension                           browser         True 2 0 
 Lån & Spar Bank                      browser         True 14 0 
 Söderberg & Partners                 generic         True 6 2 
-KMD                                  sitemap         True 21 2 
-EG                                   teamtailor      True 26 1 
+KMD                                  sitemap         True 22 2 
+EG                                   teamtailor      True 27 1 
 Twoday                               teamtailor      True 29 0 
-Columbus                             teamtailor      True 4 0 
-Capgemini Danmark                    sitemap         True 6495 0 
-Visma DataLøn                        teamtailor      True 2 0 
+Columbus                             teamtailor      True 8 0 
+Capgemini Danmark                    sitemap         True 6499 0 
+Visma DataLøn                        teamtailor      True 1 0 
 Danske Spil                          teamtailor      True 5 2 
-DTU                                  oracle          True 301 2 
+DTU                                  oracle          True 319 2 
 IT-Universitetet                     hrmanager       True 6 2 
-Københavns Universitet               generic         True 52 2 
+Københavns Universitet               generic         True 50 2 
 CBS                                  generic         True 16 5 
-DSB                                  sitemap         True 17 0 
+DSB                                  sitemap         True 16 0 
 Movia                                browser         True 5 1 
 Svitzer                              workday         True 36 0 
 Dansk Erhverv                        hrmanager       True 4 2 
 Akademikernes A-kasse                emply           True 2 0 
 Ældre Sagen                          emply           True 5 3 
-Coop                                 sitemap         True 247 1 
+Coop                                 sitemap         True 241 1 
 Royal Unibrew                        browser         True 10 0 
-GN Group                             workday         True 23 0 
-Coloplast                            sitemap         True 280 1 
-Lundbeck                             sitemap         True 106 3 
-Demant                               sitemap         True 311 0 
-FLSmidth                             workday         True 92 0 
-ISS                                  sitemap         True 68 0 
-Genmab                               phenom          True 132 1 
+GN Group                             workday         True 25 0 
+Coloplast                            sitemap         True 282 1 
+Lundbeck                             sitemap         True 104 3 
+Demant                               sitemap         True 312 0 
+FLSmidth                             workday         True 91 0 
+ISS                                  sitemap         True 69 0 
+Genmab                               phenom          True 131 1 
 Novo Nordisk Fonden                  workable        True 5 0 
-Ambu                                 sitemap         True 151 2 
-Region Hovedstaden                   hrmanager       True 455 5 
-Hvidovre Kommune                     hrmanager       True 36 1 
-Vallensbæk Kommune                   hrmanager       True 17 0 
+Ambu                                 sitemap         True 149 2 
+Region Hovedstaden                   hrmanager       True 463 7 
+Hvidovre Kommune                     hrmanager       True 35 1 
+Vallensbæk Kommune                   hrmanager       True 15 0 
 Red Barnet                           hrmanager       True 7 5 
-Kræftens Bekæmpelse                  hrmanager       True 8 1 
+Kræftens Bekæmpelse                  hrmanager       True 9 1 
 KL                                   hrmanager       True 9 4 
 SOS International                    hrmanager       True 10 3 
 Andel                                hrmanager       True 10 1 
-TORM                                 hrmanager       True 5 1 
+TORM                                 hrmanager       True 6 1 
 Tivoli                               hrmanager       True 4 0 
 DM                                   emply           True 2 1 
 Energinet                            hrmanager       True 28 0 
 Whiteaway Group                      emply           True 6 0 
 Telenor                              teamtailor      True 2 0 
-GML A/S                              teamtailor      True 42 0 
+GML A/S                              teamtailor      True 44 0 
 Medicinrådet                         emply           True 0 0 0 opslag (sidst 1)
-HOFOR                                hrmanager       True 12 1 
+HOFOR                                hrmanager       True 13 1 
 Entreprenørfirmaet Nordkysten A/S    teamtailor      True 11 1 
 Eurofins                             smartrecruiters True 18 0 
-Faxe Kommune                         hrmanager       True 36 0 
+Faxe Kommune                         hrmanager       True 38 0 
 Scantox A/S                          emply           True 4 0 
-HTH                                  teamtailor      True 8 0 
+HTH                                  teamtailor      True 7 0 
 Everllence                           hrmanager       True 1 0 
-Erhvervsakademi København            emply           True 11 1 
+Erhvervsakademi København            emply           True 10 1 
 Danske Professionshøjskoler          emply           True 2 0 
-Udviklings- og Forenklingsstyrelsen  hrmanager       True 76 3 
-Nine United A/S                      hrmanager       True 4 0 
-Folkekirkens Nødhjælp                emply           True 6 4 
-Orkla Danmark                        smartrecruiters True 7 0 
+Udviklings- og Forenklingsstyrelsen  hrmanager       True 78 4 
+Nine United A/S                      hrmanager       True 7 0 
+Folkekirkens Nødhjælp                emply           True 7 5 
+Orkla Danmark                        smartrecruiters True 6 0 
 Nordic Computer A/S                  teamtailor      True 2 0 
 Normal A/S                           teamtailor      True 16 0 
 NetNordic Denmark A/S                teamtailor      True 2 1 
 LGC Biosearch Technologies A/S       smartrecruiters True 1 0 
-Solrød Kommune                       emply           True 17 0 
+Solrød Kommune                       emply           True 15 0 
 Metroselskabet I/S                   emply           True 4 1 
 OK a.m.b.a.                          teamtailor      True 21 0 
-Greve Kommune                        hrmanager       True 10 0 
+Greve Kommune                        hrmanager       True 8 0 
 Agilent Technologies Denmark         workday         True 129 0 
 GEV                                  emply           True 0 0 0 opslag (sidst 1)
 Munck Asfalt                         hrmanager       True 12 0 
@@ -207,45 +183,47 @@ Blå Kors Danmark                     emply           True 7 1
 PHM Danmark ApS                      emply           True 9 0 
 Momentum Energy Group A/S            emply           True 4 0 
 Visma Public Technologies A/S        teamtailor      True 1 0 
-Q-Park Operations Denmark A/S        teamtailor      True 7 0 
-JYSK                                 smartrecruiters True 51 0 
-Teknologisk Institut                 hrmanager       True 8 0 
+Q-Park Operations Denmark A/S        teamtailor      True 6 0 
+JYSK                                 smartrecruiters True 52 0 
+Teknologisk Institut                 hrmanager       True 5 0 
 Fibia P/S                            emply           True 8 0 
 Oxfam Danmark                        emply           True 4 3 
-SDL Denmark                          lever           True 133 0 
+SDL Denmark                          lever           True 132 0 
 Albertslund Kommune                  emply           True 37 0 
-ARC – Amager Ressourcecenter         hrmanager       True 5 0 
+ARC – Amager Ressourcecenter         hrmanager       True 6 0 
 HR Company ApS                       teamtailor      True 2 0 
-STARK Danmark                        workday         True 10 2 
+STARK Danmark                        workday         True 12 2 
 Truvio Commerce Denmark A/S          teamtailor      True 16 0 
-Furesø Kommune                       emply           True 44 1 
+Furesø Kommune                       emply           True 43 1 
 Stevns Kommune                       emply           True 29 0 
 Brøndby Kommune                      emply           True 52 1 
 AFRY                                 smartrecruiters True 15 0 
-Egedal Kommune                       emply           True 56 1 
+Egedal Kommune                       emply           True 57 1 
 HMF Group A/S                        emply           True 2 1 
 Zealand Pharma A/S                   workday         True 14 0 
-DGI                                  emply           True 11 7 
+DGI                                  emply           True 12 7 
 Aarstiderne                          emply           True 3 1 
 Askovfonden                          hrmanager       True 7 2 
 SCT Transport A/S                    emply           True 2 1 
-Sedgwick Danmark                     workday         True 78 1 
+Sedgwick Danmark                     workday         True 83 1 
 Hamamatsu Photonics                  workday         True 11 1 
 Sabroe Selection                     hrmanager       True 8 1 
-IFF                                  workday         True 127 0 
+IFF                                  workday         True 126 0 
 KFUM's Sociale Arbejde               hrmanager       True 5 0 
 Gyldendal A/S                        emply           True 2 1 
 KIRKBI A/S                           teamtailor      True 1 0 
-Syddjurs Kommune                     emply           True 45 0 
-Vejen Kommune                        emply           True 35 0 
+Syddjurs Kommune                     emply           True 46 0 
+Vejen Kommune                        emply           True 34 0 
 Nordfyns Kommune                     emply           True 41 0 
-Herlev Kommune                       emply           True 35 0 
+Herlev Kommune                       emply           True 34 0 
 Billund Lufthavn A/S                 emply           True 3 0 
 Dansk Boldspil-Union (DBU)           hrmanager       True 8 0 
-Shell Biogas A/S                     workday         True 90 0 
+Shell Biogas A/S                     workday         True 92 0 
 OK-Fonden                            emply           True 15 0 
 Cryos International – Denmark ApS    emply           True 3 1 
-Linkkontrol: {'unknown': 28, 'ok': 499, 'dead': 7}, lukket 0 døde og 0 forældede job, 6 døde karrieresider
-AI-strukturering: {'cached': 0, 'new': 0, 'failed': 0, 'skipped_no_key': 250, 'over_limit': 0}
+Colosseumklinikken Danmark ApS       teamtailor      True 20 1 
+DBI – Dansk Brand- og sikringsteknisk Institut hrmanager       True 7 1 
+Linkkontrol: {'unknown': 28, 'ok': 516, 'dead': 7}, lukket 0 døde og 0 forældede job, 6 døde karrieresider
+AI-strukturering: {'cached': 0, 'new': 0, 'failed': 0, 'skipped_no_key': 264, 'over_limit': 0}
 
-Færdig: 244 fundet i dag, 250 aktive. Pr. type: {'studiejob': 166, 'graduate': 24, 'praktik': 60}
+Færdig: 265 fundet i dag, 264 aktive. Pr. type: {'studiejob': 177, 'praktik': 63, 'graduate': 24}

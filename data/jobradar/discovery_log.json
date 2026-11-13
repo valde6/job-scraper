@@ -1,94 +1,87 @@
 {
- "started": "2026-11-12T08:25:58+00:00",
- "ads_read": 37,
+ "started": "2026-11-13T08:08:00+00:00",
+ "ads_read": 35,
  "candidates": [
   {
-   "name": "Sundhed.dk",
-   "type": "emply",
+   "name": "Colosseumklinikken Danmark ApS",
+   "type": "teamtailor",
    "cfg": {
-    "url": "https://sundheddk.career.emply.com"
+    "url": "https://colosseumklinikken.teamtailor.com"
    },
-   "evidence": "https://sundheddk.career.emply.com/ad/digital-sundhed-danmark-soger-servicemindet-studentermedhjaelper-til-sundhed-dk-br/ll82nu/da",
-   "listed": 0,
-   "matched": 0
-  },
-  {
-   "name": "Cryos International – Denmark ApS",
-   "type": "emply",
-   "cfg": {
-    "url": "https://cryos.career.emply.com"
-   },
-   "evidence": "https://cryos.career.emply.com/da/forside",
-   "listed": 3,
+   "evidence": "https://colosseumklinikken.teamtailor.com/jobs/8705577-brand-communications-lead",
+   "listed": 19,
    "matched": 1
   },
   {
-   "name": "Københavns Professionshøjskole",
-   "type": "emply",
+   "name": "DBI – Dansk Brand- og sikringsteknisk Institut",
+   "type": "hrmanager",
    "cfg": {
-    "url": "https://kp.career.emply.com"
+    "cid": "1964",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1964&ProjectId=144197&DepartmentId=18995&MediaId=4615"
    },
-   "evidence": "https://kp.career.emply.com/ad/forskerstuderende-til-center-for-bedre-borneliv/b61k2p/da",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1964&ProjectId=144197&DepartmentId=18995&MediaId=4615",
+   "cid": "1964",
+   "listed": 7,
+   "matched": 2
+  },
+  {
+   "name": "Lemvigh-Müller A/S",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3341",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143620&DepartmentId=19004&MediaId=4635&SkipAdvertisement=true"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143620&DepartmentId=19004&MediaId=4635&SkipAdvertisement=true",
+   "cid": "3341",
    "listed": 0,
    "matched": 0
   }
  ],
  "added": [
   {
-   "name": "Cryos International – Denmark ApS",
-   "type": "emply",
-   "listed": 3,
+   "name": "Colosseumklinikken Danmark ApS",
+   "type": "teamtailor",
+   "listed": 19,
    "matched": 1
+  },
+  {
+   "name": "DBI – Dansk Brand- og sikringsteknisk Institut",
+   "type": "hrmanager",
+   "listed": 7,
+   "matched": 2
   }
  ],
  "rejected": [
   {
-   "name": "Sundhed.dk",
-   "type": "emply",
+   "name": "Lemvigh-Müller A/S",
+   "type": "hrmanager",
    "cfg": {
-    "url": "https://sundheddk.career.emply.com"
+    "cid": "3341",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143620&DepartmentId=19004&MediaId=4635&SkipAdvertisement=true"
    },
-   "evidence": "https://sundheddk.career.emply.com/ad/digital-sundhed-danmark-soger-servicemindet-studentermedhjaelper-til-sundhed-dk-br/ll82nu/da",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143620&DepartmentId=19004&MediaId=4635&SkipAdvertisement=true",
+   "cid": "3341",
    "reason": "0 opslag"
   },
   {
-   "name": "Nic. Christiansen Gruppen",
+   "name": "BILA A/S",
    "type": "hrmanager",
    "cfg": {
-    "cid": "1281",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1281&ProjectId=146720&DepartmentId=18972&MediaId=4614"
+    "cid": "1523",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1523&ProjectId=144393&DepartmentId=18958&MediaId=5"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1281&ProjectId=146720&DepartmentId=18972&MediaId=4614",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1523&ProjectId=144393&DepartmentId=18958&MediaId=5",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
-   "name": "Odense Kommune",
+   "name": "Lederne",
    "type": "hrmanager",
    "cfg": {
-    "cid": "3256",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144933&DepartmentId=18956&MediaId=4630&SkipAdvertisement=true"
+    "cid": "2134",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2134&ProjectId=143881&DepartmentId=19025&MediaId=4615"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144933&DepartmentId=18956&MediaId=4630&SkipAdvertisement=true",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2134&ProjectId=143881&DepartmentId=19025&MediaId=4615",
    "reason": "HR-Manager-alias ikke fundet"
-  },
-  {
-   "name": "Billund Kommune",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "1392",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1392&ProjectId=146536&DepartmentId=20563&MediaId=4616"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1392&ProjectId=146536&DepartmentId=20563&MediaId=4616",
-   "reason": "HR-Manager-alias ikke fundet"
-  },
-  {
-   "name": "Københavns Professionshøjskole",
-   "type": "emply",
-   "cfg": {
-    "url": "https://kp.career.emply.com"
-   },
-   "evidence": "https://kp.career.emply.com/ad/forskerstuderende-til-center-for-bedre-borneliv/b61k2p/da",
-   "reason": "0 opslag"
   }
  ]
 }
