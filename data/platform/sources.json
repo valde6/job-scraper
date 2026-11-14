@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T07:23:03+00:00",
+ "generated_at": "2026-11-14T07:04:07+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -29,7 +29,7 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 52,
+   "listed": 53,
    "matched": 3,
    "error": null
   },
@@ -109,8 +109,8 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 34,
-   "matched": 5,
+   "listed": 36,
+   "matched": 7,
    "error": null
   },
   {
@@ -156,10 +156,10 @@
   {
    "name": "Saxo Bank",
    "type": "workday",
-   "ok": true,
-   "listed": 25,
-   "matched": 0,
-   "error": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
   },
   {
    "name": "Finansministeriet",
@@ -214,7 +214,7 @@
    "type": "teamtailor",
    "ok": true,
    "listed": 11,
-   "matched": 3,
+   "matched": 2,
    "error": null
   },
   {
@@ -229,7 +229,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 36,
+   "listed": 35,
    "matched": 0,
    "error": null
   },
@@ -277,7 +277,7 @@
    "name": "Danske Commodities",
    "type": "teamtailor",
    "ok": true,
-   "listed": 12,
+   "listed": 10,
    "matched": 3,
    "error": null
   },
@@ -293,7 +293,7 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 7,
+   "listed": 8,
    "matched": 1,
    "error": null
   },
@@ -397,7 +397,7 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 46,
+   "listed": 47,
    "matched": 4,
    "error": null
   },
@@ -405,8 +405,8 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 406,
-   "matched": 33,
+   "listed": 409,
+   "matched": 31,
    "error": null
   }
  ]

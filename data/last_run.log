@@ -1,29 +1,61 @@
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 978, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 99, in main
+    listed, jobs = _with_timeout(lambda: ADAPTERS[typ]({**src, "name": c["name"]}), SOURCE_TIMEOUT)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
+    return fn()
+           ^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 99, in <lambda>
+    listed, jobs = _with_timeout(lambda: ADAPTERS[typ]({**src, "name": c["name"]}), SOURCE_TIMEOUT)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/workday.py", line 39, in scrape
+    data = r.json()
+           ^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 982, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 Novo Nordisk                     successfactors  True 4 1 
 A.P. Møller - Mærsk              workday         True 404 0 
-LEGO Group                       workday         True 52 3 
+LEGO Group                       workday         True 53 3 
 Danske Bank                      oracle          True 4 2 
 Deloitte                         smartrecruiters True 32 8 
 PwC                              workday         True 7 2 
 Boston Consulting Group (BCG)    eightfold       True 4 0 
 Nordea                           nordea          True 9 2 
 EY                               yello           True 8 2 
-Nykredit                         browser         True 34 5 
+Nykredit                         browser         True 36 7 
 Vestas                           successfactors  True 7 0 
-Saxo Bank                        workday         True 25 0 
+Saxo Bank                        workday         False   JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 Arla Foods                       phenom          True 10 0 
-Dansk Industri                   teamtailor      True 11 3 
-Ørsted                           browser         True 36 0 
+Dansk Industri                   teamtailor      True 11 2 
+Ørsted                           browser         True 35 0 
 KPMG                             hrmanager       True 14 1 
 PA Consulting Group              smartrecruiters True 12 2 
-Danske Commodities               teamtailor      True 12 3 
+Danske Commodities               teamtailor      True 10 3 
 Netcompany                       smartrecruiters True 32 3 
-PFA Pension                      browser         True 7 1 
+PFA Pension                      browser         True 8 1 
 Amazon                           amazon          True 6 0 
 IKEA                             generic         True 30 0 
 Accenture                        workday         True 2 2 
 Danmarks Radio                   hrmanager       True 0 0 
 Rambøll                          smartrecruiters True 42 0 
-Novonesis                        workday         True 46 4 
-Jobindex: {'sikker': 29, 'sandsynlig': 2, 'mulig': 2, 'body_fetch': 24}
+Novonesis                        workday         True 47 4 
+Jobindex: {'sikker': 28, 'sandsynlig': 1, 'mulig': 2, 'body_fetch': 22}
 
-Færdig: 77 fundet i dag, 4 nye, 174 aktive i alt.
+Færdig: 76 fundet i dag, 5 nye, 169 aktive i alt.

@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-13T07:23:03+00:00",
+ "ts": "2026-11-14T07:04:07+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -35,7 +35,7 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 52,
+   "listed": 53,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -135,8 +135,8 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 34,
-   "matched": 5,
+   "listed": 36,
+   "matched": 7,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -194,12 +194,12 @@
   {
    "name": "Saxo Bank",
    "type": "workday",
-   "ok": true,
-   "listed": 25,
-   "matched": 0,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "problem": "fejl",
+   "streak": 1,
+   "detail": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
   },
   {
    "name": "Finansministeriet",
@@ -266,7 +266,7 @@
    "type": "teamtailor",
    "ok": true,
    "listed": 11,
-   "matched": 3,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 36,
+   "listed": 35,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -345,7 +345,7 @@
    "name": "Danske Commodities",
    "type": "teamtailor",
    "ok": true,
-   "listed": 12,
+   "listed": 10,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -365,7 +365,7 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 7,
+   "listed": 8,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 27,
+   "streak": 28,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -495,7 +495,7 @@
    "name": "Novonesis",
    "type": "workday",
    "ok": true,
-   "listed": 46,
+   "listed": 47,
    "matched": 4,
    "problem": null,
    "streak": 0,
@@ -505,15 +505,15 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 406,
-   "matched": 33,
+   "listed": 409,
+   "matched": 31,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 27 kørsler i træk – 0 opslag (sidst 16)"
+  "**Danmarks Radio** (hrmanager): mistænkelig i 28 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 44
+ "active": 45
 }
