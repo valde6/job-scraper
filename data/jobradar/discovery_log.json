@@ -1,86 +1,61 @@
 {
- "started": "2026-11-13T08:08:00+00:00",
- "ads_read": 35,
+ "started": "2026-11-14T07:39:21+00:00",
+ "ads_read": 30,
  "candidates": [
   {
-   "name": "Colosseumklinikken Danmark ApS",
-   "type": "teamtailor",
+   "name": "Børns Vilkår",
+   "type": "emply",
    "cfg": {
-    "url": "https://colosseumklinikken.teamtailor.com"
+    "url": "https://bornsvilkar.career.emply.com"
    },
-   "evidence": "https://colosseumklinikken.teamtailor.com/jobs/8705577-brand-communications-lead",
-   "listed": 19,
-   "matched": 1
+   "evidence": "https://bornsvilkar.career.emply.com/ad/hr-chef-til-borns-vilkar/rn9cqf/da",
+   "listed": 1,
+   "matched": 0
   },
   {
-   "name": "DBI – Dansk Brand- og sikringsteknisk Institut",
-   "type": "hrmanager",
+   "name": "DFS Plus",
+   "type": "emply",
    "cfg": {
-    "cid": "1964",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1964&ProjectId=144197&DepartmentId=18995&MediaId=4615"
+    "url": "https://dfs-plus.career.emply.com"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1964&ProjectId=144197&DepartmentId=18995&MediaId=4615",
-   "cid": "1964",
-   "listed": 7,
-   "matched": 2
-  },
-  {
-   "name": "Lemvigh-Müller A/S",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143620&DepartmentId=19004&MediaId=4635&SkipAdvertisement=true"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143620&DepartmentId=19004&MediaId=4635&SkipAdvertisement=true",
-   "cid": "3341",
-   "listed": 0,
+   "evidence": "https://dfs-plus.career.emply.com/ad/vaer-med-til-at-styrke-holdet-bag-fremtidens-hjemmepleje-som-rekrutteringskonsulen/71j34v/da",
+   "listed": 9,
    "matched": 0
   }
  ],
  "added": [
   {
-   "name": "Colosseumklinikken Danmark ApS",
-   "type": "teamtailor",
-   "listed": 19,
-   "matched": 1
+   "name": "Børns Vilkår",
+   "type": "emply",
+   "listed": 1,
+   "matched": 0
   },
   {
-   "name": "DBI – Dansk Brand- og sikringsteknisk Institut",
-   "type": "hrmanager",
-   "listed": 7,
-   "matched": 2
+   "name": "DFS Plus",
+   "type": "emply",
+   "listed": 9,
+   "matched": 0
   }
  ],
  "rejected": [
   {
-   "name": "Lemvigh-Müller A/S",
+   "name": "Professionshøjskolen Absalon",
    "type": "hrmanager",
    "cfg": {
-    "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143620&DepartmentId=19004&MediaId=4635&SkipAdvertisement=true"
+    "cid": "5001",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194547&DepartmentId=9353&MediaId=5"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143620&DepartmentId=19004&MediaId=4635&SkipAdvertisement=true",
-   "cid": "3341",
-   "reason": "0 opslag"
-  },
-  {
-   "name": "BILA A/S",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "1523",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1523&ProjectId=144393&DepartmentId=18958&MediaId=5"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1523&ProjectId=144393&DepartmentId=18958&MediaId=5",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194547&DepartmentId=9353&MediaId=5",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
-   "name": "Lederne",
+   "name": "EDC-gruppen a/s",
    "type": "hrmanager",
    "cfg": {
-    "cid": "2134",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2134&ProjectId=143881&DepartmentId=19025&MediaId=4615"
+    "cid": "2223",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2223&ProjectId=145385&DepartmentId=19281&MediaId=4631"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2134&ProjectId=143881&DepartmentId=19025&MediaId=4615",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2223&ProjectId=145385&DepartmentId=19281&MediaId=4631",
    "reason": "HR-Manager-alias ikke fundet"
   }
  ]

@@ -914,3 +914,23 @@ employers:
     via: jobindex-link
     evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1964&ProjectId=144197&DepartmentId=18995&MediaId=4615
   cid: '1964'
+- name: Børns Vilkår
+  career_url: https://bornsvilkar.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://bornsvilkar.career.emply.com
+  discovered:
+    at: '2026-11-14'
+    via: jobindex-link
+    evidence: https://bornsvilkar.career.emply.com/ad/hr-chef-til-borns-vilkar/rn9cqf/da
+- name: DFS Plus
+  career_url: https://dfs-plus.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://dfs-plus.career.emply.com
+  discovered:
+    at: '2026-11-14'
+    via: jobindex-link
+    evidence: https://dfs-plus.career.emply.com/ad/vaer-med-til-at-styrke-holdet-bag-fremtidens-hjemmepleje-som-rekrutteringskonsulen/71j34v/da
