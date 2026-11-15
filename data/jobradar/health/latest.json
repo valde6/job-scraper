@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-14T07:41:35+00:00",
+ "ts": "2026-11-15T07:55:51+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -14,12 +14,12 @@
   {
    "name": "A.P. Møller - Mærsk",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "ok": true,
+   "listed": 632,
+   "matched": 1,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "McKinsey & Company",
@@ -35,7 +35,7 @@
    "name": "LEGO Group",
    "type": "workday",
    "ok": true,
-   "listed": 107,
+   "listed": 108,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -64,12 +64,12 @@
   {
    "name": "PwC",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "ok": true,
+   "listed": 7,
+   "matched": 5,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "Carlsberg",
@@ -128,7 +128,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 23,
+   "streak": 24,
    "detail": "HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs"
   },
   {
@@ -145,7 +145,7 @@
    "name": "Bestseller",
    "type": "sitemap",
    "ok": true,
-   "listed": 838,
+   "listed": 834,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -155,7 +155,7 @@
    "name": "L'Oréal Groupe",
    "type": "sitemap",
    "ok": true,
-   "listed": 1583,
+   "listed": 1558,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -165,7 +165,7 @@
    "name": "Bain & Company",
    "type": "avature",
    "ok": true,
-   "listed": 254,
+   "listed": 255,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -194,12 +194,12 @@
   {
    "name": "Saxo Bank",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "ok": true,
+   "listed": 52,
+   "matched": 4,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "Finansministeriet",
@@ -255,7 +255,7 @@
    "name": "Pandora",
    "type": "sitemap",
    "ok": true,
-   "listed": 11643,
+   "listed": 11615,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 35,
+   "listed": 34,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -425,7 +425,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 30,
+   "listed": 29,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -485,7 +485,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 42,
+   "listed": 41,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -528,7 +528,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 19,
+   "streak": 20,
    "detail": "HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/"
   },
   {
@@ -705,7 +705,7 @@
    "name": "Statens Rekrutteringsløsning (staten)",
    "type": "hrmanager",
    "ok": true,
-   "listed": 492,
+   "listed": 493,
    "matched": 58,
    "problem": null,
    "streak": 0,
@@ -715,7 +715,7 @@
    "name": "Københavns Kommune",
    "type": "generic",
    "ok": true,
-   "listed": 309,
+   "listed": 283,
    "matched": 7,
    "problem": null,
    "streak": 0,
@@ -925,7 +925,7 @@
    "name": "DTU",
    "type": "oracle",
    "ok": true,
-   "listed": 316,
+   "listed": 326,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -945,7 +945,7 @@
    "name": "Københavns Universitet",
    "type": "generic",
    "ok": true,
-   "listed": 50,
+   "listed": 49,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -984,12 +984,12 @@
   {
    "name": "Svitzer",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "ok": true,
+   "listed": 36,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "Nordisk Film / Egmont",
@@ -1064,12 +1064,12 @@
   {
    "name": "GN Group",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "ok": true,
+   "listed": 27,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "Coloplast",
@@ -1104,18 +1104,18 @@
   {
    "name": "FLSmidth",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "ok": true,
+   "listed": 89,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "ISS",
    "type": "sitemap",
    "ok": true,
-   "listed": 74,
+   "listed": 73,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -1125,7 +1125,7 @@
    "name": "Genmab",
    "type": "phenom",
    "ok": true,
-   "listed": 137,
+   "listed": 135,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -1155,7 +1155,7 @@
    "name": "Region Hovedstaden",
    "type": "hrmanager",
    "ok": true,
-   "listed": 462,
+   "listed": 461,
    "matched": 7,
    "problem": null,
    "streak": 0,
@@ -1185,8 +1185,8 @@
    "name": "Red Barnet",
    "type": "hrmanager",
    "ok": true,
-   "listed": 7,
-   "matched": 5,
+   "listed": 6,
+   "matched": 4,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -1505,8 +1505,8 @@
    "name": "Folkekirkens Nødhjælp",
    "type": "emply",
    "ok": true,
-   "listed": 7,
-   "matched": 5,
+   "listed": 6,
+   "matched": 4,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -1515,7 +1515,7 @@
    "name": "Orkla Danmark",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 6,
+   "listed": 5,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -1604,12 +1604,12 @@
   {
    "name": "Agilent Technologies Denmark",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "HTTPError: 521 Server Error: <none> for url: https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs"
+   "ok": true,
+   "listed": 129,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "GEV",
@@ -1618,7 +1618,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 13,
+   "streak": 14,
    "detail": "0 opslag (sidst 1)"
   },
   {
@@ -1635,7 +1635,7 @@
    "name": "Blå Kors Danmark",
    "type": "emply",
    "ok": true,
-   "listed": 7,
+   "listed": 9,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -1784,12 +1784,12 @@
   {
    "name": "STARK Danmark",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "ok": true,
+   "listed": 12,
+   "matched": 2,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "Truvio Commerce Denmark A/S",
@@ -1825,7 +1825,7 @@
    "name": "Brøndby Kommune",
    "type": "emply",
    "ok": true,
-   "listed": 50,
+   "listed": 49,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -1855,7 +1855,7 @@
    "name": "Egedal Kommune",
    "type": "emply",
    "ok": true,
-   "listed": 59,
+   "listed": 60,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -1874,12 +1874,12 @@
   {
    "name": "Zealand Pharma A/S",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "ok": true,
+   "listed": 14,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "DGI",
@@ -1924,12 +1924,12 @@
   {
    "name": "Sedgwick Danmark",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "HTTPError: 521 Server Error: <none> for url: https://sedgwick.wd1.myworkdayjobs.com/wday/cxs/sedgwick/Sedgwick/jobs"
+   "ok": true,
+   "listed": 89,
+   "matched": 1,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "Hamamatsu Photonics",
@@ -1954,12 +1954,12 @@
   {
    "name": "IFF",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "HTTPError: 521 Server Error: <none> for url: https://iff.wd5.myworkdayjobs.com/wday/cxs/iff/IFF_Careers/jobs"
+   "ok": true,
+   "listed": 127,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "KFUM's Sociale Arbejde",
@@ -2054,12 +2054,12 @@
   {
    "name": "Shell Biogas A/S",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "problem": "fejl",
-   "streak": 1,
-   "detail": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "ok": true,
+   "listed": 87,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
   },
   {
    "name": "OK-Fonden",
@@ -2123,9 +2123,9 @@
   }
  ],
  "alerts": [
-  "**Jyske Bank** (generic): fejl i 23 kørsler i træk – HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs",
-  "**Gorrissen Federspiel** (generic): fejl i 19 kørsler i træk – HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/",
-  "**GEV** (emply): mistænkelig i 13 kørsler i træk – 0 opslag (sidst 1)"
+  "**Jyske Bank** (generic): fejl i 24 kørsler i træk – HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs",
+  "**Gorrissen Federspiel** (generic): fejl i 20 kørsler i træk – HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/",
+  "**GEV** (emply): mistænkelig i 14 kørsler i træk – 0 opslag (sidst 1)"
  ],
- "active": 259
+ "active": 264
 }
