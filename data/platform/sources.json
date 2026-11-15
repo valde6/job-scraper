@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T07:04:07+00:00",
+ "generated_at": "2026-11-15T07:14:53+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -156,10 +156,10 @@
   {
    "name": "Saxo Bank",
    "type": "workday",
-   "ok": false,
-   "listed": null,
-   "matched": null,
-   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "ok": true,
+   "listed": 25,
+   "matched": 0,
+   "error": null
   },
   {
    "name": "Finansministeriet",
@@ -229,7 +229,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 35,
+   "listed": 34,
    "matched": 0,
    "error": null
   },
@@ -341,7 +341,7 @@
    "name": "IKEA",
    "type": "generic",
    "ok": true,
-   "listed": 30,
+   "listed": 29,
    "matched": 0,
    "error": null
   },
@@ -389,7 +389,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 42,
+   "listed": 41,
    "matched": 0,
    "error": null
   },
@@ -406,7 +406,7 @@
    "type": "jobindex",
    "ok": true,
    "listed": 409,
-   "matched": 31,
+   "matched": 32,
    "error": null
   }
  ]
