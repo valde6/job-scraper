@@ -934,3 +934,13 @@ employers:
     at: '2026-11-14'
     via: jobindex-link
     evidence: https://dfs-plus.career.emply.com/ad/vaer-med-til-at-styrke-holdet-bag-fremtidens-hjemmepleje-som-rekrutteringskonsulen/71j34v/da
+- name: HB-Care A/S
+  career_url: https://hb-care.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://hb-care.career.emply.com
+  discovered:
+    at: '2026-11-16'
+    via: jobindex-link
+    evidence: https://hb-care.career.emply.com/ad/studentermedhjaelper-til-timekontrol-har-du-flair-for-tal-logik-og-detaljer/mm2sin/da

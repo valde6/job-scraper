@@ -1,7 +1,25 @@
 {
- "started": "2026-11-15T07:55:30+00:00",
- "ads_read": 1,
- "candidates": [],
- "added": [],
+ "started": "2026-11-16T08:03:12+00:00",
+ "ads_read": 6,
+ "candidates": [
+  {
+   "name": "HB-Care A/S",
+   "type": "emply",
+   "cfg": {
+    "url": "https://hb-care.career.emply.com"
+   },
+   "evidence": "https://hb-care.career.emply.com/ad/studentermedhjaelper-til-timekontrol-har-du-flair-for-tal-logik-og-detaljer/mm2sin/da",
+   "listed": 13,
+   "matched": 1
+  }
+ ],
+ "added": [
+  {
+   "name": "HB-Care A/S",
+   "type": "emply",
+   "listed": 13,
+   "matched": 1
+  }
+ ],
  "rejected": []
 }
