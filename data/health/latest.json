@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-15T07:14:53+00:00",
+ "ts": "2026-11-16T07:21:35+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -14,12 +14,12 @@
   {
    "name": "A.P. Møller - Mærsk",
    "type": "workday",
-   "ok": true,
-   "listed": 404,
-   "matched": 0,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "problem": "fejl",
+   "streak": 1,
+   "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs"
   },
   {
    "name": "McKinsey & Company",
@@ -34,12 +34,12 @@
   {
    "name": "LEGO Group",
    "type": "workday",
-   "ok": true,
-   "listed": 53,
-   "matched": 3,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "problem": "fejl",
+   "streak": 1,
+   "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/job/Billund/Student-worker---Business-Intelligence_0000039643"
   },
   {
    "name": "Danske Bank",
@@ -55,8 +55,8 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 32,
-   "matched": 8,
+   "listed": 30,
+   "matched": 7,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -64,12 +64,12 @@
   {
    "name": "PwC",
    "type": "workday",
-   "ok": true,
-   "listed": 7,
-   "matched": 2,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "problem": "fejl",
+   "streak": 1,
+   "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs"
   },
   {
    "name": "Carlsberg",
@@ -135,7 +135,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 36,
+   "listed": 33,
    "matched": 7,
    "problem": null,
    "streak": 0,
@@ -194,12 +194,12 @@
   {
    "name": "Saxo Bank",
    "type": "workday",
-   "ok": true,
-   "listed": 25,
-   "matched": 0,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "problem": "fejl",
+   "streak": 1,
+   "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs"
   },
   {
    "name": "Finansministeriet",
@@ -265,7 +265,7 @@
    "name": "Dansk Industri",
    "type": "teamtailor",
    "ok": true,
-   "listed": 11,
+   "listed": 9,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -285,7 +285,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 34,
+   "listed": 32,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -295,7 +295,7 @@
    "name": "KPMG",
    "type": "hrmanager",
    "ok": true,
-   "listed": 14,
+   "listed": 10,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -365,7 +365,7 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 8,
+   "listed": 7,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -444,12 +444,12 @@
   {
    "name": "Accenture",
    "type": "workday",
-   "ok": true,
-   "listed": 2,
-   "matched": 2,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "problem": "fejl",
+   "streak": 1,
+   "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs"
   },
   {
    "name": "Danmarks Radio",
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 29,
+   "streak": 30,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -485,7 +485,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 41,
+   "listed": 40,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -494,18 +494,18 @@
   {
    "name": "Novonesis",
    "type": "workday",
-   "ok": true,
-   "listed": 47,
-   "matched": 4,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "problem": "fejl",
+   "streak": 1,
+   "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Novonesis_Careers/job/Lyngby/Labour-Law-Specialist-for-Site-Hrsholm---Lyngby_JR114198-1"
   },
   {
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 409,
+   "listed": 408,
    "matched": 32,
    "problem": null,
    "streak": 0,
@@ -513,7 +513,7 @@
   }
  ],
  "alerts": [
-  "**Danmarks Radio** (hrmanager): mistænkelig i 29 kørsler i træk – 0 opslag (sidst 16)"
+  "**Danmarks Radio** (hrmanager): mistænkelig i 30 kørsler i træk – 0 opslag (sidst 16)"
  ],
- "active": 45
+ "active": 40
 }
