@@ -254,7 +254,8 @@ def validate(payload: dict, keyword_ids: set[str]) -> list[str]:
 
 def merge_state(found: dict[str, dict], old: dict[str, dict], ok_sources: set[str], now: str, today: str) -> dict[str, dict]:
     """Sætter first_seen/last_seen/active. Job fra en kilde, der virkede, men som ikke længere findes → inaktiv."""
-    cutoff = (datetime.now(timezone.utc) - timedelta(days=PRUNE_DAYS)).isoformat(timespec="seconds")
+    # 17/11: regnes fra kørslens `now`, ikke fra uret, så resultatet ikke afhænger af, hvornår testene køres.
+    cutoff = (datetime.fromisoformat(now) - timedelta(days=PRUNE_DAYS)).isoformat(timespec="seconds")
     out = {}
     for jid, j in found.items():
         prev = old.get(jid)
