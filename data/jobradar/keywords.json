@@ -443,6 +443,48 @@
    "label": "Shipping og maritim",
    "en": "Shipping & maritime",
    "group": "drift"
+  },
+  {
+   "id": "makrooekonomi",
+   "label": "Samfundsøkonomi og økonomisk politik",
+   "en": "Economics & economic policy",
+   "group": "oekonomi"
+  },
+  {
+   "id": "ejendom",
+   "label": "Ejendomme og ejendomshandel",
+   "en": "Real estate",
+   "group": "oekonomi"
+  },
+  {
+   "id": "sport",
+   "label": "Sport og idræt",
+   "en": "Sport",
+   "group": "marked"
+  },
+  {
+   "id": "innovation",
+   "label": "Innovation og iværksætteri",
+   "en": "Innovation & entrepreneurship",
+   "group": "strategi"
+  },
+  {
+   "id": "detailhandel",
+   "label": "Detailhandel og kategori",
+   "en": "Retail & category management",
+   "group": "marked"
+  },
+  {
+   "id": "foedevarer",
+   "label": "Fødevarer og landbrug",
+   "en": "Food & agriculture",
+   "group": "drift"
+  },
+  {
+   "id": "energi",
+   "label": "Energi og forsyning",
+   "en": "Energy & utilities",
+   "group": "drift"
   }
  ]
 }

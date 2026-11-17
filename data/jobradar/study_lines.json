@@ -272,6 +272,1125 @@
     "salg",
     "kundeservice"
    ]
+  },
+  {
+   "id": "cbs-ib",
+   "name": "BSc International Business",
+   "school": "CBS",
+   "description": "International business, strategi og global handel (engelsk)",
+   "suggested": [
+    "strategi",
+    "international-handel",
+    "supply-chain",
+    "consulting",
+    "forretningsudvikling",
+    "marketing",
+    "finans",
+    "data-analyse",
+    "projektledelse",
+    "markedsanalyse",
+    "indkoeb",
+    "sprog",
+    "baeredygtighed",
+    "excel",
+    "kommunikation"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "cbs-ibp",
+   "name": "BSc International Business and Politics",
+   "school": "CBS",
+   "description": "Business, økonomi og international politik (engelsk)",
+   "suggested": [
+    "public-affairs",
+    "strategi",
+    "international-handel",
+    "makrooekonomi",
+    "offentlig",
+    "consulting",
+    "compliance",
+    "baeredygtighed",
+    "data-analyse",
+    "kommunikation",
+    "finans",
+    "risiko",
+    "energi",
+    "etik",
+    "projektledelse"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "cbs-dm",
+   "name": "BSc Business Administration and Digital Management",
+   "school": "CBS",
+   "description": "Erhvervsøkonomi, digitalisering og data (engelsk)",
+   "suggested": [
+    "digitalisering",
+    "data-analyse",
+    "it-projekt",
+    "forretningsudvikling",
+    "ux",
+    "ai",
+    "agil",
+    "power-bi",
+    "projektledelse",
+    "forandringsledelse",
+    "strategi",
+    "consulting",
+    "it-konsulent",
+    "e-handel",
+    "python"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice",
+    "it-support"
+   ]
+  },
+  {
+   "id": "cbs-sem",
+   "name": "BSc Business Administration and Service Management",
+   "school": "CBS",
+   "description": "Erhvervsøkonomi og servicefag: turisme, kultur og digitale services (engelsk)",
+   "suggested": [
+    "kundeoplevelse",
+    "marketing",
+    "turisme",
+    "events",
+    "forretningsudvikling",
+    "innovation",
+    "ux",
+    "e-handel",
+    "strategi",
+    "consulting",
+    "markedsanalyse",
+    "projektledelse",
+    "brugerundersoegelse",
+    "kommunikation",
+    "data-analyse"
+   ],
+   "avoid": [
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "cbs-soc",
+   "name": "BSc Business Administration and Sociology",
+   "school": "CBS",
+   "description": "Erhvervsøkonomi og sociologi (engelsk)",
+   "suggested": [
+    "organisationsudvikling",
+    "hr",
+    "brugerundersoegelse",
+    "baeredygtighed",
+    "offentlig",
+    "strategi",
+    "data-analyse",
+    "statistik",
+    "consulting",
+    "kommunikation",
+    "forandringsledelse",
+    "etik",
+    "projektledelse",
+    "markedsanalyse",
+    "trivsel"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "cbs-ist",
+   "name": "BSc International Shipping and Trade",
+   "school": "CBS",
+   "description": "Shipping, international handel og logistik (engelsk)",
+   "suggested": [
+    "shipping",
+    "supply-chain",
+    "international-handel",
+    "indkoeb",
+    "finans",
+    "data-analyse",
+    "excel",
+    "risiko",
+    "kontraktret",
+    "bank",
+    "strategi",
+    "forretningsudvikling",
+    "baeredygtighed",
+    "projektledelse",
+    "energi"
+   ],
+   "avoid": [
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "cbs-blc",
+   "name": "BSc Business, Language and Culture",
+   "school": "CBS",
+   "description": "Business, sprog og kultur (engelsk). Optager ikke nye studerende",
+   "suggested": [
+    "sprog",
+    "kommunikation",
+    "marketing",
+    "international-handel",
+    "strategi",
+    "markedsanalyse",
+    "forbrugerindsigt",
+    "some",
+    "events",
+    "hr",
+    "projektledelse",
+    "forretningsudvikling",
+    "public-affairs"
+   ],
+   "avoid": [
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "cbs-asia",
+   "name": "BSc Business, Asian Language and Culture",
+   "school": "CBS",
+   "description": "Business, kinesisk eller japansk og asiatisk kultur (engelsk). Optager ikke nye studerende",
+   "suggested": [
+    "sprog",
+    "international-handel",
+    "strategi",
+    "marketing",
+    "kommunikation",
+    "supply-chain",
+    "indkoeb",
+    "markedsanalyse",
+    "forretningsudvikling",
+    "consulting",
+    "public-affairs",
+    "projektledelse"
+   ],
+   "avoid": [
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "ku-oekonomi",
+   "name": "Økonomi (BSc)",
+   "school": "KU",
+   "description": "Samfundsøkonomi, økonometri og kvantitative metoder",
+   "suggested": [
+    "makrooekonomi",
+    "statistik",
+    "data-analyse",
+    "python",
+    "excel",
+    "finans",
+    "offentlig",
+    "consulting",
+    "risiko",
+    "investering",
+    "bank",
+    "forsikring",
+    "skat",
+    "energi",
+    "baeredygtighed"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "ku-matoek",
+   "name": "Matematik-økonomi (BSc)",
+   "school": "KU",
+   "description": "Matematik, statistik, sandsynlighedsregning og økonomi",
+   "suggested": [
+    "statistik",
+    "python",
+    "data-analyse",
+    "risiko",
+    "finans",
+    "investering",
+    "forsikring",
+    "makrooekonomi",
+    "sql",
+    "ai",
+    "bank",
+    "excel",
+    "programmering",
+    "consulting",
+    "power-bi"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice",
+    "it-support"
+   ]
+  },
+  {
+   "id": "ku-datoek",
+   "name": "Datalogi-økonomi (BSc)",
+   "school": "KU",
+   "description": "Datalogi, matematik og økonomi",
+   "suggested": [
+    "programmering",
+    "python",
+    "sql",
+    "data-analyse",
+    "ai",
+    "statistik",
+    "makrooekonomi",
+    "finans",
+    "cloud",
+    "automatisering",
+    "bi",
+    "investering",
+    "risiko",
+    "digitalisering",
+    "it-konsulent"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice",
+    "it-support"
+   ]
+  },
+  {
+   "id": "ku-mfoek",
+   "name": "Miljø- og fødevareøkonomi (BSc)",
+   "school": "KU",
+   "description": "Økonomi med fokus på miljø, klima, fødevarer og landbrug",
+   "suggested": [
+    "baeredygtighed",
+    "foedevarer",
+    "energi",
+    "makrooekonomi",
+    "statistik",
+    "data-analyse",
+    "offentlig",
+    "public-affairs",
+    "consulting",
+    "excel",
+    "strategi",
+    "risiko",
+    "international-handel",
+    "projektledelse",
+    "etik"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "ruc-ba",
+   "name": "Business Administration (HA)",
+   "school": "RUC",
+   "description": "Erhvervsøkonomi som etfagsbachelor (engelsk)",
+   "suggested": [
+    "strategi",
+    "finans",
+    "regnskab",
+    "marketing",
+    "organisationsudvikling",
+    "forretningsudvikling",
+    "consulting",
+    "innovation",
+    "projektledelse",
+    "data-analyse",
+    "baeredygtighed",
+    "hr",
+    "controlling",
+    "excel",
+    "markedsanalyse"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "ruc-bs",
+   "name": "Virksomhedsstudier (Business Studies)",
+   "school": "RUC",
+   "description": "Virksomhedsstudier som det ene af to fag",
+   "suggested": [
+    "organisationsudvikling",
+    "strategi",
+    "forretningsudvikling",
+    "kommunikation",
+    "hr",
+    "marketing",
+    "innovation",
+    "projektledelse",
+    "forandringsledelse",
+    "offentlig",
+    "baeredygtighed",
+    "consulting",
+    "brugerundersoegelse",
+    "administration",
+    "finans"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "itu-gbi",
+   "name": "Global Business Informatics (BSc)",
+   "school": "ITU",
+   "description": "Digitalisering, IT og organisationer (engelsk)",
+   "suggested": [
+    "digitalisering",
+    "it-projekt",
+    "ux",
+    "brugerundersoegelse",
+    "forretningsudvikling",
+    "ai",
+    "agil",
+    "it-konsulent",
+    "data-analyse",
+    "projektledelse",
+    "forandringsledelse",
+    "baeredygtighed",
+    "proces",
+    "erp",
+    "crm"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice",
+    "it-support"
+   ]
+  },
+  {
+   "id": "dtu-gbt",
+   "name": "Global Business og Teknologi (diplomingeniør)",
+   "school": "DTU",
+   "description": "Teknologi, forretning og kultur",
+   "suggested": [
+    "projektledelse",
+    "forretningsudvikling",
+    "international-handel",
+    "supply-chain",
+    "indkoeb",
+    "innovation",
+    "proces",
+    "strategi",
+    "baeredygtighed",
+    "energi",
+    "data-analyse",
+    "sprog",
+    "kommunikation",
+    "digitalisering",
+    "consulting"
+   ],
+   "avoid": [
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "dtu-itoek",
+   "name": "IT og Økonomi (diplomingeniør)",
+   "school": "DTU",
+   "description": "Softwareudvikling og virksomhedsøkonomi (læses også på CBS)",
+   "suggested": [
+    "programmering",
+    "it-projekt",
+    "data-analyse",
+    "sql",
+    "python",
+    "erp",
+    "digitalisering",
+    "forretningsudvikling",
+    "ux",
+    "agil",
+    "ai",
+    "cloud",
+    "controlling",
+    "automatisering",
+    "it-konsulent"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "kp-offadm",
+   "name": "Offentlig administration (professionsbachelor)",
+   "school": "KP",
+   "description": "Administrationsbachelor: forvaltning, jura, økonomistyring og politik",
+   "suggested": [
+    "offentlig",
+    "administration",
+    "udbud",
+    "jura",
+    "controlling",
+    "projektledelse",
+    "kommunikation",
+    "hr",
+    "data-analyse",
+    "organisationsudvikling",
+    "gdpr",
+    "compliance",
+    "digitalisering",
+    "public-affairs",
+    "excel"
+   ],
+   "avoid": [
+    "salg"
+   ]
+  },
+  {
+   "id": "ek-finansoekonom",
+   "name": "Finansøkonom (AK)",
+   "school": "EK",
+   "description": "Bank, realkredit, forsikring, ejendomshandel og revision",
+   "suggested": [
+    "bank",
+    "forsikring",
+    "ejendom",
+    "finans",
+    "regnskab",
+    "revision",
+    "investering",
+    "skat",
+    "risiko",
+    "hvidvask",
+    "compliance",
+    "excel",
+    "controlling",
+    "kundeservice",
+    "salg"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "ek-financial-controller",
+   "name": "Financial controller (AK)",
+   "school": "EK",
+   "description": "Bogføring, regnskab, revision og controlling",
+   "suggested": [
+    "regnskab",
+    "revision",
+    "controlling",
+    "skat",
+    "excel",
+    "erp",
+    "finans",
+    "bi",
+    "power-bi",
+    "administration",
+    "data-analyse",
+    "risiko",
+    "compliance",
+    "automatisering",
+    "projektledelse"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "ek-markedsfoeringsoekonom",
+   "name": "Markedsføringsøkonom (AK)",
+   "school": "EK",
+   "description": "Markedsføring, salg og international handel",
+   "suggested": [
+    "marketing",
+    "salg",
+    "some",
+    "kommunikation",
+    "markedsanalyse",
+    "e-handel",
+    "forbrugerindsigt",
+    "international-handel",
+    "crm",
+    "events",
+    "kundeoplevelse",
+    "detailhandel",
+    "forretningsudvikling",
+    "brugerundersoegelse",
+    "projektledelse"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "ek-handelsoekonom",
+   "name": "Handelsøkonom (AK)",
+   "school": "EK",
+   "description": "Handel, indkøb og salg, med lønnet praktik",
+   "suggested": [
+    "detailhandel",
+    "indkoeb",
+    "salg",
+    "marketing",
+    "supply-chain",
+    "e-handel",
+    "kundeoplevelse",
+    "international-handel",
+    "crm",
+    "forretningsudvikling",
+    "excel",
+    "kundeservice",
+    "markedsanalyse"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "ek-serviceoekonom",
+   "name": "Service- og oplevelsesøkonom (AK)",
+   "school": "EK",
+   "description": "Hotel, turisme, events og oplevelser",
+   "suggested": [
+    "turisme",
+    "events",
+    "kundeoplevelse",
+    "marketing",
+    "some",
+    "projektledelse",
+    "salg",
+    "kommunikation",
+    "sport",
+    "kundeservice",
+    "forretningsudvikling",
+    "administration",
+    "innovation"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "ek-logistikoekonom",
+   "name": "Logistikøkonom (AK)",
+   "school": "EK",
+   "description": "Logistik, transport, indkøb og supply chain",
+   "suggested": [
+    "supply-chain",
+    "indkoeb",
+    "shipping",
+    "international-handel",
+    "erp",
+    "excel",
+    "proces",
+    "data-analyse",
+    "detailhandel",
+    "kontraktret",
+    "baeredygtighed",
+    "projektledelse",
+    "administration",
+    "power-bi"
+   ],
+   "avoid": [
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "ek-finansbachelor",
+   "name": "Finansbachelor (professionsbachelor)",
+   "school": "EK",
+   "description": "Finansiel rådgivning, bank, forsikring, pension og ejendom",
+   "suggested": [
+    "bank",
+    "forsikring",
+    "investering",
+    "finans",
+    "ejendom",
+    "risiko",
+    "hvidvask",
+    "compliance",
+    "regnskab",
+    "revision",
+    "skat",
+    "finansiel-regulering",
+    "salg",
+    "excel",
+    "data-analyse"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "ek-oekonomi-it",
+   "name": "Økonomi og IT (professionsbachelor)",
+   "school": "EK",
+   "description": "Økonomi, systemudvikling og digitalisering",
+   "suggested": [
+    "erp",
+    "digitalisering",
+    "data-analyse",
+    "power-bi",
+    "automatisering",
+    "it-projekt",
+    "proces",
+    "regnskab",
+    "controlling",
+    "sql",
+    "python",
+    "agil",
+    "it-konsulent",
+    "crm",
+    "bi"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "ek-ecommerce",
+   "name": "E-commerce og digital marketing (professionsbachelor)",
+   "school": "EK",
+   "description": "Webshops, digital markedsføring og data",
+   "suggested": [
+    "e-handel",
+    "marketing",
+    "some",
+    "data-analyse",
+    "ux",
+    "kommunikation",
+    "crm",
+    "power-bi",
+    "forbrugerindsigt",
+    "markedsanalyse",
+    "kundeoplevelse",
+    "salg",
+    "ai",
+    "forretningsudvikling",
+    "detailhandel"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "ek-vcm",
+   "name": "Value Chain Management (professionsbachelor)",
+   "school": "EK",
+   "description": "Procesøkonomi og værdikædeledelse: produktion, indkøb, kvalitet og forsyningskæder",
+   "suggested": [
+    "supply-chain",
+    "indkoeb",
+    "proces",
+    "erp",
+    "projektledelse",
+    "baeredygtighed",
+    "data-analyse",
+    "excel",
+    "strategi",
+    "controlling",
+    "international-handel",
+    "power-bi",
+    "forretningsudvikling"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "ek-ihm",
+   "name": "International handel og markedsføring (top-up)",
+   "school": "EK",
+   "description": "B2B- og B2C-salg, markedsføring og international handel",
+   "suggested": [
+    "salg",
+    "marketing",
+    "international-handel",
+    "markedsanalyse",
+    "crm",
+    "e-handel",
+    "forretningsudvikling",
+    "kommunikation",
+    "some",
+    "forbrugerindsigt",
+    "strategi",
+    "projektledelse",
+    "sprog",
+    "kundeoplevelse"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "ek-innovation",
+   "name": "Innovation og entrepreneurship (top-up)",
+   "school": "EK",
+   "description": "Forretningsudvikling, iværksætteri og innovation",
+   "suggested": [
+    "innovation",
+    "forretningsudvikling",
+    "strategi",
+    "projektledelse",
+    "marketing",
+    "ux",
+    "brugerundersoegelse",
+    "baeredygtighed",
+    "consulting",
+    "salg",
+    "digitalisering",
+    "events",
+    "kommunikation"
+   ],
+   "avoid": [
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "ek-hospitality",
+   "name": "International Hospitality Management (top-up)",
+   "school": "EK",
+   "description": "Ledelse og økonomi i hotel-, restaurant- og oplevelsesbranchen",
+   "suggested": [
+    "turisme",
+    "kundeoplevelse",
+    "events",
+    "marketing",
+    "salg",
+    "controlling",
+    "hr",
+    "forretningsudvikling",
+    "projektledelse",
+    "kommunikation",
+    "some",
+    "administration"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "ek-sport",
+   "name": "Sportsmanagement (top-up)",
+   "school": "EK",
+   "description": "Ledelse, markedsføring og økonomi i sportsbranchen",
+   "suggested": [
+    "sport",
+    "events",
+    "marketing",
+    "some",
+    "kommunikation",
+    "salg",
+    "projektledelse",
+    "forretningsudvikling",
+    "kundeoplevelse",
+    "administration",
+    "innovation"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "ek-dataanalyse",
+   "name": "Dataanalyse (top-up)",
+   "school": "EK",
+   "description": "Data, business intelligence og analyse til forretningen",
+   "suggested": [
+    "data-analyse",
+    "sql",
+    "python",
+    "power-bi",
+    "bi",
+    "excel",
+    "statistik",
+    "ai",
+    "automatisering",
+    "digitalisering",
+    "markedsanalyse",
+    "controlling",
+    "cloud"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "ek-ehandel",
+   "name": "E-handel (top-up)",
+   "school": "EK",
+   "description": "Digital forretning, webshops og online markedsføring",
+   "suggested": [
+    "e-handel",
+    "marketing",
+    "some",
+    "ux",
+    "data-analyse",
+    "crm",
+    "kundeoplevelse",
+    "forretningsudvikling",
+    "salg",
+    "power-bi",
+    "detailhandel",
+    "ai"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "zealand-finansoekonom",
+   "name": "Finansøkonom (AK)",
+   "school": "Zealand",
+   "description": "Bank, realkredit, forsikring, ejendomshandel og revision (Holbæk, Næstved, Køge)",
+   "suggested": [
+    "bank",
+    "forsikring",
+    "ejendom",
+    "finans",
+    "regnskab",
+    "revision",
+    "investering",
+    "skat",
+    "risiko",
+    "hvidvask",
+    "compliance",
+    "excel",
+    "controlling",
+    "kundeservice",
+    "salg"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "zealand-administrationsoekonom",
+   "name": "Administrationsøkonom (AK)",
+   "school": "Zealand",
+   "description": "Administration, jura, HR og forvaltning (Køge)",
+   "suggested": [
+    "administration",
+    "offentlig",
+    "hr",
+    "jura",
+    "regnskab",
+    "controlling",
+    "compliance",
+    "gdpr",
+    "kommunikation",
+    "projektledelse",
+    "udbud",
+    "arbejdsret",
+    "excel",
+    "kundeservice"
+   ],
+   "avoid": [
+    "salg"
+   ]
+  },
+  {
+   "id": "zealand-markedsfoeringsoekonom",
+   "name": "Markedsføringsøkonom (AK)",
+   "school": "Zealand",
+   "description": "Markedsføring, salg og international handel (Roskilde)",
+   "suggested": [
+    "marketing",
+    "salg",
+    "some",
+    "kommunikation",
+    "markedsanalyse",
+    "e-handel",
+    "forbrugerindsigt",
+    "international-handel",
+    "crm",
+    "events",
+    "kundeoplevelse",
+    "detailhandel",
+    "forretningsudvikling",
+    "brugerundersoegelse",
+    "projektledelse"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "zealand-handelsoekonom",
+   "name": "Handelsøkonom (AK)",
+   "school": "Zealand",
+   "description": "Handel, indkøb og salg, med lønnet praktik (Næstved)",
+   "suggested": [
+    "detailhandel",
+    "indkoeb",
+    "salg",
+    "marketing",
+    "supply-chain",
+    "e-handel",
+    "kundeoplevelse",
+    "international-handel",
+    "crm",
+    "forretningsudvikling",
+    "excel",
+    "kundeservice",
+    "markedsanalyse"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "zealand-serviceoekonom",
+   "name": "Service- og oplevelsesøkonom (AK)",
+   "school": "Zealand",
+   "description": "Hotel, turisme, events og oplevelser (Køge)",
+   "suggested": [
+    "turisme",
+    "events",
+    "kundeoplevelse",
+    "marketing",
+    "some",
+    "projektledelse",
+    "salg",
+    "kommunikation",
+    "sport",
+    "kundeservice",
+    "forretningsudvikling",
+    "administration",
+    "innovation"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "zealand-logistikoekonom",
+   "name": "Logistikøkonom (AK)",
+   "school": "Zealand",
+   "description": "Logistik, transport, indkøb og supply chain (Køge)",
+   "suggested": [
+    "supply-chain",
+    "indkoeb",
+    "shipping",
+    "international-handel",
+    "erp",
+    "excel",
+    "proces",
+    "data-analyse",
+    "detailhandel",
+    "kontraktret",
+    "baeredygtighed",
+    "projektledelse",
+    "administration",
+    "power-bi"
+   ],
+   "avoid": [
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "zealand-finansbachelor",
+   "name": "Finansbachelor (professionsbachelor)",
+   "school": "Zealand",
+   "description": "Finansiel rådgivning, bank, forsikring, pension og ejendom (Næstved)",
+   "suggested": [
+    "bank",
+    "forsikring",
+    "investering",
+    "finans",
+    "ejendom",
+    "risiko",
+    "hvidvask",
+    "compliance",
+    "regnskab",
+    "revision",
+    "skat",
+    "finansiel-regulering",
+    "salg",
+    "excel",
+    "data-analyse"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "zealand-oekonomi-it",
+   "name": "Økonomi og IT (professionsbachelor)",
+   "school": "Zealand",
+   "description": "Økonomi, systemudvikling og digitalisering (Roskilde)",
+   "suggested": [
+    "erp",
+    "digitalisering",
+    "data-analyse",
+    "power-bi",
+    "automatisering",
+    "it-projekt",
+    "proces",
+    "regnskab",
+    "controlling",
+    "sql",
+    "python",
+    "agil",
+    "it-konsulent",
+    "crm",
+    "bi"
+   ],
+   "avoid": [
+    "salg",
+    "kundeservice"
+   ]
+  },
+  {
+   "id": "zealand-event",
+   "name": "Event Management og Økonomi (professionsbachelor)",
+   "school": "Zealand",
+   "description": "Udvikling, økonomi og markedsføring af events (Roskilde)",
+   "suggested": [
+    "events",
+    "projektledelse",
+    "marketing",
+    "some",
+    "kommunikation",
+    "controlling",
+    "salg",
+    "sport",
+    "turisme",
+    "kundeoplevelse",
+    "innovation",
+    "administration",
+    "forretningsudvikling"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "zealand-ihm",
+   "name": "International handel og markedsføring (top-up)",
+   "school": "Zealand",
+   "description": "B2B- og B2C-salg, markedsføring og international handel (Roskilde, Næstved)",
+   "suggested": [
+    "salg",
+    "marketing",
+    "international-handel",
+    "markedsanalyse",
+    "crm",
+    "e-handel",
+    "forretningsudvikling",
+    "kommunikation",
+    "some",
+    "forbrugerindsigt",
+    "strategi",
+    "projektledelse",
+    "sprog",
+    "kundeoplevelse"
+   ],
+   "avoid": []
+  },
+  {
+   "id": "zealand-innovation",
+   "name": "Innovation & Entrepreneurship (top-up)",
+   "school": "Zealand",
+   "description": "Forretningsudvikling, iværksætteri og innovation (Næstved)",
+   "suggested": [
+    "innovation",
+    "forretningsudvikling",
+    "strategi",
+    "projektledelse",
+    "marketing",
+    "ux",
+    "brugerundersoegelse",
+    "baeredygtighed",
+    "consulting",
+    "salg",
+    "digitalisering",
+    "events",
+    "kommunikation"
+   ],
+   "avoid": [
+    "kundeservice"
+   ]
   }
  ]
 }
