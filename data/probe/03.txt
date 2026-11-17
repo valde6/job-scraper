@@ -1,5 +1,5 @@
-GET https://copenhageneconomics.com/sitemap_index.xml
-ERROR HTTPError: 404 Client Error: Not Found for url: https://copenhageneconomics.com/sitemap_index.xml
+GET https://maersk.wd3.myworkdayjobs.com/robots.txt
+ERROR HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/robots.txt
 Traceback (most recent call last):
   File "/home/runner/work/job-scraper/job-scraper/scraper/probe.py", line 129, in <module>
     r = http(parts[0], parts[1], **kw)
@@ -11,28 +11,94 @@ Traceback (most recent call last):
     r.raise_for_status()
   File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
     raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://copenhageneconomics.com/sitemap_index.xml
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/robots.txt
 
-<!doctype html>
-<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-GB"  >
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- This is Squarespace. --><!-- copenhageneconomics -->
-<base href="">
-<meta charset="utf-8" />
-<title>Copenhagen Economics</title>
-<meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" /><link rel="icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/68c3d9261ed06804552f5d22/a0c93540-e2a0-494d-bf86-f6223ded9207/favicon.ico"/>
-<meta property="og:site_name" content="Copenhagen Economics"/>
-<meta property="og:title" content="Copenhagen Economics"/>
-<meta property="og:type" content="website"/>
-<meta property="og:image" content="http://images.squarespace-cdn.com/content/v1/68c3d9261ed06804552f5d22/1757665585589-DCPIZC7QFAHP2B3RGFAI/CE_logo_DK_Small_white_CMYK.png?format=1500w"/>
-<meta itemprop="name" content="Copenhagen Economics"/>
-<meta itemprop="thumbnailUrl" content="http://images.squarespace-cdn.com/content/v1/68c3d9261ed06804552f5d22/1757665585589-DCPIZC7QFAHP2B3RGFAI/CE_logo_DK_Small_white_CMYK.png?format=1500w"/>
-<link rel="image_src" href="http://images.squarespace-cdn.com/content/v1/68c3d9261ed06804552f5d22/1757665585589-DCPIZC7QFAHP2B3RGFAI/CE_logo_DK_Small_white_CMYK.png?format=1500w" />
-<meta itemprop="image" content="http://images.squarespace-cdn.com/content/v1/68c3d9261ed06804552f5d22/1757665585589-DCPIZC7QFAHP2B3RGFAI/CE_logo_DK_Small_white_CMYK.png?format=1500w"/>
-<meta name="twitter:title" content="Copenhagen Economics"/>
-<meta name="twitter:image" content="http://images.squarespace-cdn.com/content/v1/68c3d9261ed06804552f5d22/1757665585589-DCPIZC7QFAHP2B3RGFAI/CE_logo_DK_Small_white_CMYK.png?format=1500w"/>
-<meta name="twitter:card" content="summary"/>
-<meta name="description" content="" />
-<link rel="preconnect" href=
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            color: #333333;
+        }
+
+        .graphicsContainer {
+            background-color: #0b77e3;
+        }
+
+        .wdayLogo,
+        .signOutGraphic {
+            display: block;
+            margin: auto;
+        }
+
+        .wdayLogo {
+            padding: 16px 0 8px;
+        }
+
+        .title {
+            display: block;
+            font-weight: 300;
+            font-size: 34px;
+            line-height: 1.24;
+            margin: 32px auto 18px;
+            max-width: 650px;
+        }
+
+        .zone-name-title {
+            display: block;
+            font-weight: 300;
+            font-size: 34px;
+            line-height: 1.24;
+            margin: 32px auto 18px;
+            max-width: 650px;
+        }
+
+        .bodyText {
+            display: block;
+            margin: 0 auto 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            padding-bottom: 42px;
+            max-width: 850px;
+        }
+
+        .core-msg {
+            display: block;
+            margin: 0 auto 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            padding-bottom: 42px;
+            max-width: 850px;
+        }
+
+        .captcha-box {
+            padding-bottom: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bodyContainer {
+            margin: 0 27px;
+        }
+
+        @media only screen and (max-width: 534px) {
+            .title {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: normal;
+                margin: 24px 0 12px;
+            }
+
+            .zone-name-title {
+                font-weight: normal;
+                font-size: 16px;
+               

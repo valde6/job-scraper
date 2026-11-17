@@ -1,45 +1,104 @@
-GET https://copenhageneconomics.com/careers/vacancies/
-STATUS 200 FINAL https://copenhageneconomics.com/careers/vacancies/
+POST https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs {"appliedFacets":{},"limit":20,"offset":0,"searchText":"student"}
+ERROR HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs
+Traceback (most recent call last):
+  File "/home/runner/work/job-scraper/job-scraper/scraper/probe.py", line 129, in <module>
+    r = http(parts[0], parts[1], **kw)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 100, in http
+    raise last  # type: ignore[misc]
+    ^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 92, in http
+    r.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs
 
-TYPE text/html;charset=utf-8
-TITLE Vacancies | Copenhagen Economics
-LINKS 35
-Skip to Content -> https://copenhageneconomics.com/careers/vacancies/#page
-Home -> https://copenhageneconomics.com/
-About us -> https://copenhageneconomics.com/about-copenhagen-economics
-Services -> https://copenhageneconomics.com/services
-Our experts -> https://copenhageneconomics.com/our-experts
-Publications -> https://copenhageneconomics.com/publication
-Insights -> https://copenhageneconomics.com/insight
-Careers -> https://copenhageneconomics.com/careers/working-with-us
-Contact -> https://copenhageneconomics.com/contact
-Home -> https://copenhageneconomics.com/
-About us -> https://copenhageneconomics.com/about-copenhagen-economics
-Services -> https://copenhageneconomics.com/services
-Our experts -> https://copenhageneconomics.com/our-experts
-Publications -> https://copenhageneconomics.com/publication
-Insights -> https://copenhageneconomics.com/insight
-Careers -> https://copenhageneconomics.com/careers/working-with-us
-Contact -> https://copenhageneconomics.com/contact
-Home -> https://copenhageneconomics.com/
-About us -> https://copenhageneconomics.com/about-copenhagen-economics
-Services -> https://copenhageneconomics.com/services
-Our experts -> https://copenhageneconomics.com/our-experts
-Folder: Our work -> https://copenhageneconomics.com/our-work
-Back -> https://copenhageneconomics.com/
-Publications -> https://copenhageneconomics.com/publication
-Insights -> https://copenhageneconomics.com/insight
-Careers -> https://copenhageneconomics.com/careers/working-with-us
-Contact -> https://copenhageneconomics.com/contact
-HOME > -> https://copenhageneconomics.com/home
-Contact -> https://copenhageneconomics.com/contact#copenhagen
-Contact -> https://copenhageneconomics.com/contact/stockholm#stockholm
-Contact -> https://copenhageneconomics.com/contact/helsinki#helsinki
-Contact -> https://copenhageneconomics.com/contact/brussels#brussels
-Sustainability report -> https://copenhageneconomics.com/s/CE_Sustainability_Report_2025-9fy6.pdf
-Privacy notice -> https://copenhageneconomics.com/privacy-notice
-Whistleblower portal -> https://copenhageneconomics.integrityline.com/
-SCRIPTS //assets.squarespace.com/@sqs/polyfiller/1.7.7/modern.js | //assets.squarespace.com/universal/scripts-compressed/visitor-site-error-reporter-13df8f64bf674d5d-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-3c370362578b8c76-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-5b1fd9aed201e910-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-b990034f3f04f793-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-2018f11bd7e3dd74-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/common-vendors-4db09d1b3644e16a-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/common-2e4cb53721ed5a01-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/commerce-5dc8771de20ec1ed-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/performance-27d9e485b198390f-min.en-US.js | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/7504cb7c-8380-4972-a1 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/71bb7092-2b17- | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/e94359ea-e2 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/ebadb235-0376-406d-89 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://www.googletagmanager.com/gtag/js?id=G-5WC1CSN2QJ | https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.41bf7926cddb68
-JSONLD 1
-{"url":"https://copenhageneconomics.com","name":"Copenhagen Economics","description":"","image":"//images.squarespace-cdn.com/content/v1/68c3d9261ed06804552f5d22/1757665585589-DCPIZC7QFAHP2B3RGFAI/CE_logo_DK_Small_white_CMYK.png","@context":"http://schema.org","@type":"WebSite"}
-TEXT Vacancies | Copenhagen Economics 0 Skip to Content Home About us Services Our experts Our work Publications Insights Careers Contact Open Menu Close Menu Home About us Services Our experts Our work Publications Insights Careers Contact Open Menu Close Menu Home About us Services Our experts Folder: Our work Back Publications Insights Careers Contact HOME > careers Working with us Working at Copenhagen Economics offers the chance to work on meaningful economic questions with talented colleagues across our offices. If you’re curious about joining us, this page is where we publish vacant positions. See our open roles below. Unsolicited applications If we have no vacancies matching your interests, you are welcome to send us an unsolicited application through the ‘Unsolicited application’ job posting below. Please include your CV, a motivated letter, academic transcripts, and any other information you deem relevant. We will not reply to your unsolicited application until it becomes relevant for one of our vacancies. Copenhagen Vester Farimagsgade 41 DK-1606 Copenhagen VAT number: DK25262441 Contact Stockholm Lilla Nygatan 14 SE-111 28 Stockholm VAT number: SE516405041001 Contact Helsinki Erottajankatu 2 FIN-00120 Helsinki VAT number: FI29062416 Contact Brussels Maison de la Radio Place Eugène Flagey 18 BE-1050 Brussels VAT number: BE0674684785 Contact Sustainability report Privacy notice Whistleblower portal ALL RIGHTS RESERVED @ 2026 COPENHAGEN ECONOMICS
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            color: #333333;
+        }
+
+        .graphicsContainer {
+            background-color: #0b77e3;
+        }
+
+        .wdayLogo,
+        .signOutGraphic {
+            display: block;
+            margin: auto;
+        }
+
+        .wdayLogo {
+            padding: 16px 0 8px;
+        }
+
+        .title {
+            display: block;
+            font-weight: 300;
+            font-size: 34px;
+            line-height: 1.24;
+            margin: 32px auto 18px;
+            max-width: 650px;
+        }
+
+        .zone-name-title {
+            display: block;
+            font-weight: 300;
+            font-size: 34px;
+            line-height: 1.24;
+            margin: 32px auto 18px;
+            max-width: 650px;
+        }
+
+        .bodyText {
+            display: block;
+            margin: 0 auto 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            padding-bottom: 42px;
+            max-width: 850px;
+        }
+
+        .core-msg {
+            display: block;
+            margin: 0 auto 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            padding-bottom: 42px;
+            max-width: 850px;
+        }
+
+        .captcha-box {
+            padding-bottom: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bodyContainer {
+            margin: 0 27px;
+        }
+
+        @media only screen and (max-width: 534px) {
+            .title {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: normal;
+                margin: 24px 0 12px;
+            }
+
+            .zone-name-title {
+                font-weight: normal;
+                font-size: 16px;
+               
