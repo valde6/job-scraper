@@ -1,9 +1,4 @@
-# 17/11 flere uddannelser: tjek nye kilder
-GET https://copenhageneconomics.com/careers/vacancies/
-GET https://copenhageneconomics.com/careers
-GET https://copenhageneconomics.com/sitemap_index.xml
-GET https://business.trustpilot.com/jobs
-GET https://boards-api.greenhouse.io/v1/boards/trustpilot/jobs
-GET https://boards-api.greenhouse.io/v1/boards/toogoodtogo/jobs
-GET https://jobs.lunar.app/jobs
-GET https://www.norden.com/career
+# 17/11: Workday svarer 429 for alle virksomheder siden 16/11 - se svarets headers
+POST https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs {"appliedFacets":{},"limit":20,"offset":0,"searchText":"student"}
+GET https://lego.wd103.myworkdayjobs.com/LEGO_External
+GET https://maersk.wd3.myworkdayjobs.com/robots.txt

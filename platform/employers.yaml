@@ -1193,15 +1193,15 @@ employers:
     type: none
   note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
 - name: Copenhagen Economics
-  career_url: https://copenhageneconomics.com/careers/
+  career_url: https://copenhageneconomics.com/careers/vacancies/
   status: klar
   source:
     type: generic
     list_urls:
-    - https://copenhageneconomics.com/careers/
+    - https://copenhageneconomics.com/careers/vacancies/
     link_pattern: /careers/vacancies/[^/?#]+/?$
     title_from: detail
-  note: Egen liste (careers/vacancies/<slug>), fundet 17/11 via web-søgning. Kontorer også i udlandet; lokation læses i opslaget
+  note: Squarespace-side; listen er careers/vacancies/ (probe 17/11 gav 200, men "no vacancies" lige nu). Kontorer også i udlandet
 - name: Kraka
   career_url: https://kraka.dk/job
   status: find-system
@@ -1439,23 +1439,19 @@ employers:
   note: Teamtailor på eget domæne (fundet 17/11 via web-søgning; mange "Student Worker"-opslag)
 - name: Too Good To Go
   career_url: https://www.toogoodtogo.com/en/careers
+  status: find-system
+  source:
+    type: none
+  note: 17/11 web-søgning viste job-boards.greenhouse.io/toogoodtogo, men API'et (boards/toogoodtogo) svarer 404 fra GitHub. Find den rigtige board-token
+- name: Trustpilot
+  career_url: https://corporate.trustpilot.com/careers
   status: klar
   source:
     type: greenhouse
-    board: toogoodtogo
-  note: Greenhouse (job-boards.greenhouse.io/toogoodtogo, fundet 17/11 via web-søgning). Globale opslag; kun Danmark beholdes
-- name: Trustpilot
-  career_url: https://business.trustpilot.com/jobs
-  status: klar
-  source:
-    type: generic
-    list_urls:
-    - https://business.trustpilot.com/jobs
-    link_pattern: /jobs/\d+
-    title_from: detail
+    board: trustpilot
   aliases:
   - Trustpilot A/S
-  note: Egen liste (business.trustpilot.com/jobs/<id>), fundet 17/11 via web-søgning – ikke verificeret. Giver den 0, så prøv Greenhouse
+  note: Greenhouse (boards-api.greenhouse.io/v1/boards/trustpilot), bekræftet med probe 17/11. Globale opslag; kun Danmark beholdes
 - name: Coolshop
   career_url: https://www.coolshop.dk/job
   status: find-system
