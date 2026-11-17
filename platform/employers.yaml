@@ -1170,13 +1170,13 @@ employers:
     type: none
   note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
 - name: Danmarks Statistik
-  career_url: https://www.dst.dk/da/OmDS/job
-  status: find-system
+  career_url: https://www.dst.dk/da/OmDS/Job/ledige-job
+  status: via-portal
   source:
     type: none
-  note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
   aliases:
   - DST
+  note: Hentes via Statens Rekrutteringsløsning (fælles portal). Discover 17/11 fandt statensrekrutteringsloesning_tr, afdeling 19126
 - name: Energistyrelsen
   career_url: https://ens.dk/om-os/job-i-energistyrelsen
   status: find-system
@@ -1191,10 +1191,14 @@ employers:
   note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
 - name: Copenhagen Economics
   career_url: https://copenhageneconomics.com/careers/
-  status: find-system
+  status: klar
   source:
-    type: none
-  note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
+    type: generic
+    list_urls:
+    - https://copenhageneconomics.com/careers/
+    link_pattern: /careers/vacancies/[^/?#]+/?$
+    title_from: detail
+  note: Egen liste (careers/vacancies/<slug>), fundet 17/11 via web-søgning. Kontorer også i udlandet; lokation læses i opslaget
 - name: Kraka
   career_url: https://kraka.dk/job
   status: find-system
@@ -1270,21 +1274,27 @@ employers:
     type: none
   note: '17/11 flere uddannelser: Finans (finansøkonom, finansbachelor)'
 - name: DFDS
-  career_url: https://www.dfds.com/en/about/careers
-  status: find-system
+  career_url: https://dfdsdenmark.teamtailor.com/jobs
+  status: klar
   source:
-    type: none
-  note: '17/11 flere uddannelser: Logistik og shipping (logistikøkonom, VCM, IST)'
+    type: teamtailor
+    url: https://dfdsdenmark.teamtailor.com
   aliases:
   - DFDS A/S
+  note: Teamtailor (DFDS Denmark), fundet 17/11 via web-søgning (studentermedhjælpere i Finance, Strategy, Customer Service)
 - name: Norden
-  career_url: https://www.norden.com/careers
-  status: find-system
+  career_url: https://www.norden.com/career
+  status: klar
   source:
-    type: none
-  note: '17/11 flere uddannelser: Logistik og shipping (logistikøkonom, VCM, IST)'
+    type: generic
+    list_urls:
+    - https://www.norden.com/career
+    link_pattern: /jobs/\d+
+    title_from: detail
   aliases:
   - Dampskibsselskabet Norden
+  - DAMPSKIBSSELSKABET NORDEN A/S
+  note: Egen liste, opslag på norden.com/jobs/<id> (fundet 17/11 via web-søgning). Shipping-intern for BSc IST og studentermedhjælpere
 - name: PostNord
   career_url: https://www.postnord.dk/om-os/job-i-postnord
   status: find-system
@@ -1308,19 +1318,21 @@ employers:
     type: none
   note: '17/11 flere uddannelser: Logistik og shipping (logistikøkonom, VCM, IST)'
 - name: Blue Water Shipping
-  career_url: https://www.bws.net/careers
-  status: find-system
+  career_url: https://www.bws.net/career
+  status: klar
   source:
-    type: none
-  note: '17/11 flere uddannelser: Logistik og shipping (logistikøkonom, VCM, IST)'
+    type: emply
+    url: https://bwsglobal.career.emply.com
+  note: Emply (fundet af discover 17/11)
 - name: Arp-Hansen Hotel Group
-  career_url: https://www.arp-hansen.dk/job
+  career_url: https://www.arp-hansen.com/careers
   status: find-system
   source:
     type: none
-  note: '17/11 flere uddannelser: Service, hospitality og event'
   aliases:
   - Arp-Hansen
+  - ARP-HANSEN HOTEL GROUP
+  note: '17/11 flere uddannelser: hotel. Søger løbende serviceøkonom-praktikanter'
 - name: Strawberry
   career_url: https://www.strawberry.dk/careers
   status: find-system
@@ -1394,12 +1406,13 @@ employers:
   note: '17/11 flere uddannelser: Sport (sportsmanagement, event)'
 - name: Boozt
   career_url: https://careers.booztgroup.com
-  status: find-system
+  status: klar
   source:
-    type: none
-  note: '17/11 flere uddannelser: E-handel og marketing (e-commerce, e-handel, IHM)'
+    type: teamtailor
+    url: https://careers.booztgroup.com
   aliases:
   - Boozt Group
+  note: Teamtailor på eget domæne (fundet af discover 17/11). Mest Malmö; lokationsfilteret sorterer resten fra
 - name: Magasin
   career_url: https://www.magasin.dk/job
   status: find-system
@@ -1409,11 +1422,11 @@ employers:
   aliases:
   - Magasin du Nord
 - name: Illum
-  career_url: https://www.illum.dk/job
-  status: find-system
+  career_url: https://illum.dk/jobs/
+  status: mangler-adapter
   source:
     type: none
-  note: '17/11 flere uddannelser: E-handel og marketing (e-commerce, e-handel, IHM)'
+  note: Elvium (app.elvium.com/o/illum, har /job_postings/export). Fundet af discover 17/11; adapter mangler
 - name: Nemlig.com
   career_url: https://www.nemlig.com/job
   status: find-system
