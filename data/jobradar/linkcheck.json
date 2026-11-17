@@ -1,19 +1,11 @@
 {
- "checked": "2026-11-16T08:07:48+00:00",
+ "checked": "2026-11-17T09:46:19+00:00",
  "counts": {
-  "unknown": 60,
-  "ok": 458,
-  "dead": 8
+  "unknown": 54,
+  "ok": 462,
+  "dead": 7
  },
- "jobs_dead": [
-  {
-   "id": "6b78c352c657",
-   "company": "Danmarks Radio",
-   "title": "Studentermedhjælper til DR Kommunikation",
-   "url": "https://dr.jobs.hr.cloud.sap/job/K%C3%B8benhavn-K-Studentermedhj%C3%A6lper-til-DR-Kommunikation-0999/1451676233/",
-   "why": "tekst: Stillingen er besat"
-  }
- ],
+ "jobs_dead": [],
  "jobs_stale": [],
  "career_dead": [
   {
@@ -55,7 +47,6 @@
  ],
  "unknown": [
   "https://accenture.wd103.myworkdayjobs.com/AccentureCareers",
-  "https://agilent.wd5.myworkdayjobs.com/Agilent_Careers",
   "https://app.elvium.com/da",
   "https://apply.careers.microsoft.com",
   "https://career2.successfactors.eu/career?career_ns=job_listing&company=pfapensionP&navBarLevel=JOB_SEARCH&rcm_site_locale=da_DK&career_job_req_id=15644&selected_lang=da_DK",
@@ -64,17 +55,14 @@
   "https://career5.successfactors.eu/career?company=bangolufse&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
   "https://career5.successfactors.eu/career?company=sampensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
   "https://flsmidth.wd3.myworkdayjobs.com/FLS_Global",
-  "https://gn.wd3.myworkdayjobs.com/GN-Careers",
-  "https://if.wd502.myworkdayjobs.com/Careers",
-  "https://if.wd502.myworkdayjobs.com/Careers/job/Kbenhavn/Finansbachelorer-til-praktik-2027_JobReqID11596",
-  "https://if.wd502.myworkdayjobs.com/Careers/job/Viby/Studentermedhjlper-til-mdebooking_JobReqID11708-1",
   "https://iff.wd5.myworkdayjobs.com/IFF_Careers",
   "https://lego.wd103.myworkdayjobs.com/LEGO_External",
   "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers",
   "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers/job/Denmark-Copenhagen-1098/Talent-Acquisition-Intern---Early-Careers-_R199126",
+  "https://netnordicdenmark.teamtailor.com",
+  "https://netnordicdenmark.teamtailor.com/jobs",
   "https://novonesis.wd103.myworkdayjobs.com/Novonesis_Careers",
   "https://novonesis.wd103.myworkdayjobs.com/Novonesis_Careers/job/Bagsvrd/Student-Assistant--Formulation-Development-and-Innovation--Novonesis--Bagsvrd_JR114100",
-  "https://novonesis.wd103.myworkdayjobs.com/Novonesis_Careers/job/Bagsvrd/Student-Assistant--Novonesis--Global-LIMS--Automation---Digitalization--Bagsvrd_JR113928-1",
   "https://om.coop.dk/job",
   "https://orsted.com/en/careers",
   "https://orsted.com/en/careers/vacancies-list",
@@ -82,12 +70,9 @@
   "https://photonics.wd103.myworkdayjobs.com/Job_Index/job/Birkerd-Capital-Region-Denmark/Student-Assistance---Procurment_JR100541",
   "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers",
   "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/Bliv-revisorgraduate-hos-PwC-Hellerup-og-kom-helt-tt-p-kunderne-fra-dag-1_753522WD-1",
-  "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/Bliv-revisorpraktikant-hos-PwC-i-Hellerup--August-2027-_753030WD",
   "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/Bliv-revisortrainee-hos-PwC-Hellerup---start-din-karriere-og-tag-en-uddannelse-samtidig-_753519WD",
-  "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/HR-praktikant---F-mulighed-for-at-arbejde-med-events-og-employer-branding_764998WD",
   "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/Praktikant---f-bred-erfaring-med-HR--lring-og-udvikling_765731WD",
   "https://redbarnet.dk/om-red-barnet/job",
-  "https://roompot.wd103.myworkdayjobs.com/Landal",
   "https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank",
   "https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank/job/Headquarters/Client-Service-Associate---part-time_R-15369",
   "https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank/job/Headquarters/Client-Service-Associate_R-15368",
@@ -102,10 +87,11 @@
   "https://studenttalent.bcg.com/careers/job/790313062445",
   "https://studenttalent.bcg.com/careers/job/790313062451",
   "https://studenttalent.bcg.com/careers/job/790313522914",
-  "https://svitzer.wd3.myworkdayjobs.com/Svitzer_Careers",
+  "https://telenorlinx-1750856670.teamtailor.com",
+  "https://telenorlinx-1750856670.teamtailor.com/jobs",
+  "https://twodaydenmark.teamtailor.com/jobs",
   "https://www.alsydbank.dk/om-os/job",
   "https://www.coloplast.com/careers/",
-  "https://www.gn.com/careers",
   "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs",
   "https://www.lundbeck.com/global/careers/your-job/job-opportunities",
   "https://www.mckinsey.com/careers/search-jobs/jobs/businessanalystintern-15275",

@@ -1,25 +1,65 @@
 {
- "started": "2026-11-16T08:03:12+00:00",
- "ads_read": 6,
+ "started": "2026-11-17T09:18:31+00:00",
+ "ads_read": 36,
  "candidates": [
   {
-   "name": "HB-Care A/S",
+   "name": "SSI Diagnostica A/S",
+   "type": "teamtailor",
+   "cfg": {
+    "url": "https://career.ssid.com"
+   },
+   "evidence": "https://career.ssid.com/jobs/8382829-dyrepasser-til-forsogsgard-i-allerod?promotion=2297634-jobindex",
+   "listed": 7,
+   "matched": 0
+  },
+  {
+   "name": "Københavns Professionshøjskole",
    "type": "emply",
    "cfg": {
-    "url": "https://hb-care.career.emply.com"
+    "url": "https://kp.career.emply.com"
    },
-   "evidence": "https://hb-care.career.emply.com/ad/studentermedhjaelper-til-timekontrol-har-du-flair-for-tal-logik-og-detaljer/mm2sin/da",
-   "listed": 13,
-   "matched": 1
+   "evidence": "https://kp.career.emply.com/ad/lageroperator-til-center-for-undervisningsmidler/2g51v6/da",
+   "listed": 0,
+   "matched": 0
   }
  ],
  "added": [
   {
-   "name": "HB-Care A/S",
-   "type": "emply",
-   "listed": 13,
-   "matched": 1
+   "name": "SSI Diagnostica A/S",
+   "type": "teamtailor",
+   "listed": 7,
+   "matched": 0
   }
  ],
- "rejected": []
+ "rejected": [
+  {
+   "name": "Odense Kommune",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3256",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144972&DepartmentId=19037&MediaId=4630&SkipAdvertisement=true"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144972&DepartmentId=19037&MediaId=4630&SkipAdvertisement=true",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Københavns Professionshøjskole",
+   "type": "emply",
+   "cfg": {
+    "url": "https://kp.career.emply.com"
+   },
+   "evidence": "https://kp.career.emply.com/ad/lageroperator-til-center-for-undervisningsmidler/2g51v6/da",
+   "reason": "0 opslag"
+  },
+  {
+   "name": "UC SYD",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "5001",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194552&DepartmentId=10362&MediaId=5"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194552&DepartmentId=10362&MediaId=5",
+   "reason": "HR-Manager-alias ikke fundet"
+  }
+ ]
 }
