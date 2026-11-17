@@ -1,17 +1,38 @@
-BROWSER https://bechbruun.career.emply.com/ledige-stillinger
-FINAL https://bechbruun.career.emply.com/jobagent
-TITLE Jobagent I Bech-Bruun
-LINKS 46
-L Min profil -> https://bechbruun.career.emply.com/profile
-L Min profil -> https://bechbruun.career.emply.com/onboarding-profile
-JSON 3
-J https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true
-   {}
-J https://bechbruun.career.emply.com/api/integration/v2/candidate/logged-in
-   {"candidateExists":false,"hasOnboarding":false}
-J https://bechbruun.career.emply.com/api/integration/v2/candidate/logged-in
-   {"candidateExists":false,"hasOnboarding":false}
-R GET https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true
-R GET https://bechbruun.career.emply.com/api/integration/v2/candidate/logged-in
-R GET https://bechbruun.career.emply.com/api/integration/v2/candidate/logged-in
-TEXT Log ind Jobagent Opret en jobagent og bliv automatisk notificeret, når der er en ledig stilling, der matcher dine kriterier. Jobkategori Fagområde Arbejdssted Notificér mig dagligt / ugentligt om nye jobmuligheder Tilmeld mig jobagent Bech-Bruun Advokatpartnerselskab Gdanskgade 18 2150 Nordhavn CVR 38538071 Powered by Emply
+GET https://copenhageneconomics.com/careers
+ERROR HTTPError: 404 Client Error: Not Found for url: https://copenhageneconomics.com/careers
+Traceback (most recent call last):
+  File "/home/runner/work/job-scraper/job-scraper/scraper/probe.py", line 129, in <module>
+    r = http(parts[0], parts[1], **kw)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 100, in http
+    raise last  # type: ignore[misc]
+    ^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 92, in http
+    r.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://copenhageneconomics.com/careers
+
+<!doctype html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-GB"  >
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This is Squarespace. --><!-- copenhageneconomics -->
+<base href="">
+<meta charset="utf-8" />
+<title>Copenhagen Economics</title>
+<meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" /><link rel="icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/68c3d9261ed06804552f5d22/a0c93540-e2a0-494d-bf86-f6223ded9207/favicon.ico"/>
+<meta property="og:site_name" content="Copenhagen Economics"/>
+<meta property="og:title" content="Copenhagen Economics"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="http://images.squarespace-cdn.com/content/v1/68c3d9261ed06804552f5d22/1757665585589-DCPIZC7QFAHP2B3RGFAI/CE_logo_DK_Small_white_CMYK.png?format=1500w"/>
+<meta itemprop="name" content="Copenhagen Economics"/>
+<meta itemprop="thumbnailUrl" content="http://images.squarespace-cdn.com/content/v1/68c3d9261ed06804552f5d22/1757665585589-DCPIZC7QFAHP2B3RGFAI/CE_logo_DK_Small_white_CMYK.png?format=1500w"/>
+<link rel="image_src" href="http://images.squarespace-cdn.com/content/v1/68c3d9261ed06804552f5d22/1757665585589-DCPIZC7QFAHP2B3RGFAI/CE_logo_DK_Small_white_CMYK.png?format=1500w" />
+<meta itemprop="image" content="http://images.squarespace-cdn.com/content/v1/68c3d9261ed06804552f5d22/1757665585589-DCPIZC7QFAHP2B3RGFAI/CE_logo_DK_Small_white_CMYK.png?format=1500w"/>
+<meta name="twitter:title" content="Copenhagen Economics"/>
+<meta name="twitter:image" content="http://images.squarespace-cdn.com/content/v1/68c3d9261ed06804552f5d22/1757665585589-DCPIZC7QFAHP2B3RGFAI/CE_logo_DK_Small_white_CMYK.png?format=1500w"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="description" content="" />
+<link rel="preconnect" href=

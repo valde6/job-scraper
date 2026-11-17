@@ -1,2 +1,8 @@
-01 BROWSER links=30 json=3 | Ledige stillinger I Career Site | BROWSER https://aeldresagen.career.emply.com/ledige-stillinger
-02 BROWSER links=46 json=3 | Jobagent I Bech-Bruun | BROWSER https://bechbruun.career.emply.com/ledige-stillinger
+01 200 242604B | GET https://copenhageneconomics.com/careers/vacancies/
+02 ERR HTTPError: 404 Client Error: Not Found for url: https://copenhageneconomics.com/careers | GET https://copenhageneconomics.com/careers
+03 ERR HTTPError: 404 Client Error: Not Found for url: https://copenhageneconomics.com/sitemap_index.xml | GET https://copenhageneconomics.com/sitemap_index.xml
+04 200 329495B | GET https://business.trustpilot.com/jobs
+05 200 18044B | GET https://boards-api.greenhouse.io/v1/boards/trustpilot/jobs
+06 ERR HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/toogoodtogo/jobs | GET https://boards-api.greenhouse.io/v1/boards/toogoodtogo/jobs
+07 200 80827B | GET https://jobs.lunar.app/jobs
+08 200 154971B | GET https://www.norden.com/career

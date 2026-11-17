@@ -1,22 +1,45 @@
-BROWSER https://aeldresagen.career.emply.com/ledige-stillinger
-FINAL https://aeldresagen.career.emply.com/ledige-stillinger
-TITLE Ledige stillinger I Career Site
-LINKS 30
-L Ledige stillinger -> https://aeldresagen.career.emply.com/ledige-stillinger
-L Søg uopfordret -> https://aeldresagen.career.emply.com/sog-uopfordret
-L Min profil -> https://aeldresagen.career.emply.com/profile
-L Min profil -> https://aeldresagen.career.emply.com/onboarding-profile
-L Ældre Sagen søger en studentermedarbejder til hjemmeside -> https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-en-studentermedarbejder-til-hjemmeside/jyb3rc
-L Ældre Sagen søger en studentermedarbejder til analyse, datavisualisering og Power BI -> https://aeldresagen.career.emply.com/ad/aeldre-sagen-soger-en-studentermedarbejder-til-analyse-datavisualisering-og-power/z9aebv
-L Studentermedarbejder til sociale medier -> https://aeldresagen.career.emply.com/ad/studentermedarbejder-til-sociale-medier/epjjwp
-JSON 3
-J https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true
-   {}
-J https://aeldresagen.career.emply.com/api/integration/v2/candidate/logged-in
-   {"candidateExists":false,"hasOnboarding":false}
-J https://aeldresagen.career.emply.com/api/integration/v2/candidate/logged-in
-   {"candidateExists":false,"hasOnboarding":false}
-R GET https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true
-R GET https://aeldresagen.career.emply.com/api/integration/v2/candidate/logged-in
-R GET https://aeldresagen.career.emply.com/api/integration/v2/candidate/logged-in
-TEXT Ledige stillinger Søg uopfordret Log ind Ledige stillinger Ældre Sagen søger en studentermedarbejder til hjemmeside Fagområde: Studentermedarbejder Afdeling: Kommunikation Frist: 25/10/2026, 22:59 Ældre Sagen søger en studentermedarbejder til analyse, datavisualisering og Power BI Fagområde: Studentermedarbejder Afdeling: Samfundsanalyse Frist: 15/11/2026, 22:59 Studentermedarbejder til sociale medier Fagområde: Studentermedarbejder Afdeling: Kommunikation Frist: 18/10/2026, 21:59 Ældre Sagen Snorresgade 17-19 2300 København S CVR 10 62 54 08 aeldresagen@aeldresagen.dk Powered by Emply
+GET https://copenhageneconomics.com/careers/vacancies/
+STATUS 200 FINAL https://copenhageneconomics.com/careers/vacancies/
+
+TYPE text/html;charset=utf-8
+TITLE Vacancies | Copenhagen Economics
+LINKS 35
+Skip to Content -> https://copenhageneconomics.com/careers/vacancies/#page
+Home -> https://copenhageneconomics.com/
+About us -> https://copenhageneconomics.com/about-copenhagen-economics
+Services -> https://copenhageneconomics.com/services
+Our experts -> https://copenhageneconomics.com/our-experts
+Publications -> https://copenhageneconomics.com/publication
+Insights -> https://copenhageneconomics.com/insight
+Careers -> https://copenhageneconomics.com/careers/working-with-us
+Contact -> https://copenhageneconomics.com/contact
+Home -> https://copenhageneconomics.com/
+About us -> https://copenhageneconomics.com/about-copenhagen-economics
+Services -> https://copenhageneconomics.com/services
+Our experts -> https://copenhageneconomics.com/our-experts
+Publications -> https://copenhageneconomics.com/publication
+Insights -> https://copenhageneconomics.com/insight
+Careers -> https://copenhageneconomics.com/careers/working-with-us
+Contact -> https://copenhageneconomics.com/contact
+Home -> https://copenhageneconomics.com/
+About us -> https://copenhageneconomics.com/about-copenhagen-economics
+Services -> https://copenhageneconomics.com/services
+Our experts -> https://copenhageneconomics.com/our-experts
+Folder: Our work -> https://copenhageneconomics.com/our-work
+Back -> https://copenhageneconomics.com/
+Publications -> https://copenhageneconomics.com/publication
+Insights -> https://copenhageneconomics.com/insight
+Careers -> https://copenhageneconomics.com/careers/working-with-us
+Contact -> https://copenhageneconomics.com/contact
+HOME > -> https://copenhageneconomics.com/home
+Contact -> https://copenhageneconomics.com/contact#copenhagen
+Contact -> https://copenhageneconomics.com/contact/stockholm#stockholm
+Contact -> https://copenhageneconomics.com/contact/helsinki#helsinki
+Contact -> https://copenhageneconomics.com/contact/brussels#brussels
+Sustainability report -> https://copenhageneconomics.com/s/CE_Sustainability_Report_2025-9fy6.pdf
+Privacy notice -> https://copenhageneconomics.com/privacy-notice
+Whistleblower portal -> https://copenhageneconomics.integrityline.com/
+SCRIPTS //assets.squarespace.com/@sqs/polyfiller/1.7.7/modern.js | //assets.squarespace.com/universal/scripts-compressed/visitor-site-error-reporter-13df8f64bf674d5d-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-3c370362578b8c76-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-5b1fd9aed201e910-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-b990034f3f04f793-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-2018f11bd7e3dd74-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/common-vendors-4db09d1b3644e16a-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/common-2e4cb53721ed5a01-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/commerce-5dc8771de20ec1ed-min.en-US.js | //assets.squarespace.com/universal/scripts-compressed/performance-27d9e485b198390f-min.en-US.js | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/7504cb7c-8380-4972-a1 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/71bb7092-2b17- | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/e94359ea-e2 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/ebadb235-0376-406d-89 | https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/20ac2df6-bb16-4 | https://www.googletagmanager.com/gtag/js?id=G-5WC1CSN2QJ | https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.41bf7926cddb68
+JSONLD 1
+{"url":"https://copenhageneconomics.com","name":"Copenhagen Economics","description":"","image":"//images.squarespace-cdn.com/content/v1/68c3d9261ed06804552f5d22/1757665585589-DCPIZC7QFAHP2B3RGFAI/CE_logo_DK_Small_white_CMYK.png","@context":"http://schema.org","@type":"WebSite"}
+TEXT Vacancies | Copenhagen Economics 0 Skip to Content Home About us Services Our experts Our work Publications Insights Careers Contact Open Menu Close Menu Home About us Services Our experts Our work Publications Insights Careers Contact Open Menu Close Menu Home About us Services Our experts Folder: Our work Back Publications Insights Careers Contact HOME > careers Working with us Working at Copenhagen Economics offers the chance to work on meaningful economic questions with talented colleagues across our offices. If you’re curious about joining us, this page is where we publish vacant positions. See our open roles below. Unsolicited applications If we have no vacancies matching your interests, you are welcome to send us an unsolicited application through the ‘Unsolicited application’ job posting below. Please include your CV, a motivated letter, academic transcripts, and any other information you deem relevant. We will not reply to your unsolicited application until it becomes relevant for one of our vacancies. Copenhagen Vester Farimagsgade 41 DK-1606 Copenhagen VAT number: DK25262441 Contact Stockholm Lilla Nygatan 14 SE-111 28 Stockholm VAT number: SE516405041001 Contact Helsinki Erottajankatu 2 FIN-00120 Helsinki VAT number: FI29062416 Contact Brussels Maison de la Radio Place Eugène Flagey 18 BE-1050 Brussels VAT number: BE0674684785 Contact Sustainability report Privacy notice Whistleblower portal ALL RIGHTS RESERVED @ 2026 COPENHAGEN ECONOMICS

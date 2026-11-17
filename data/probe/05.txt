@@ -1,0 +1,168 @@
+GET https://boards-api.greenhouse.io/v1/boards/trustpilot/jobs
+STATUS 200 FINAL https://boards-api.greenhouse.io/v1/boards/trustpilot/jobs
+
+JSON
+{
+ "jobs": [
+  {
+   "absolute_url": "https://corporate.trustpilot.com/careers/job/7588014?gh_jid=7588014",
+   "data_compliance": [
+    {
+     "type": "gdpr",
+     "requires_consent": false,
+     "requires_processing_consent": false,
+     "requires_retention_consent": false,
+     "retention_period": null,
+     "demographic_data_consent_applies": false
+    }
+   ],
+   "internal_job_id": 3354353,
+   "location": {
+    "name": "Amsterdam"
+   },
+   "metadata": null,
+   "id": 7588014,
+   "updated_at": "2026-09-15T01:38:19-04:00",
+   "requisition_id": "3011",
+   "title": "Account Executive - Belgium market (Flemish speaking)",
+   "company_name": "Trustpilot ",
+   "first_published": "2026-03-12T05:36:00-04:00",
+   "language": "en",
+   "application_deadline": null
+  },
+  {
+   "absolute_url": "https://corporate.trustpilot.com/careers/job/8105352?gh_jid=8105352",
+   "data_compliance": [
+    {
+     "type": "gdpr",
+     "requires_consent": false,
+     "requires_processing_consent": false,
+     "requires_retention_consent": false,
+     "retention_period": null,
+     "demographic_data_consent_applies": false
+    }
+   ],
+   "internal_job_id": 3511380,
+   "location": {
+    "name": "Copenhagen"
+   },
+   "metadata": null,
+   "id": 8105352,
+   "updated_at": "2026-11-12T09:25:49-05:00",
+   "requisition_id": "3249",
+   "title": "Account Executive - French Mid-Market (French Speaking)",
+   "company_name": "Trustpilot ",
+   "first_published": "2026-08-06T09:57:56-04:00",
+   "language": "en",
+   "application_deadline": null
+  },
+  {
+   "absolute_url": "https://corporate.trustpilot.com/careers/job/8249658?gh_jid=8249658",
+   "data_compliance": [
+    {
+     "type": "gdpr",
+     "requires_consent": false,
+     "requires_processing_consent": false,
+     "requires_retention_consent": false,
+     "retention_period": null,
+     "demographic_data_consent_applies": false
+    }
+   ],
+   "internal_job_id": 3569226,
+   "location": {
+    "name": "Copenhagen"
+   },
+   "metadata": null,
+   "id": 8249658,
+   "updated_at": "2026-11-13T05:52:32-05:00",
+   "requisition_id": "3334",
+   "title": "Account Executive Mid Market - Spain",
+   "company_name": "Trustpilot ",
+   "first_published": "2026-11-11T07:30:34-05:00",
+   "language": "en",
+   "application_deadline": null
+  },
+  {
+   "absolute_url": "https://corporate.trustpilot.com/careers/job/8210659?gh_jid=8210659",
+   "data_compliance": [
+    {
+     "type": "gdpr",
+     "requires_consent": false,
+     "requires_processing_consent": false,
+     "requires_retention_consent": false,
+     "retention_period": null,
+     "demographic_data_consent_applies": false
+    }
+   ],
+   "internal_job_id": 3553455,
+   "location": {
+    "name": "Copenhagen"
+   },
+   "metadata": null,
+   "id": 8210659,
+   "updated_at": "2026-11-12T09:25:41-05:00",
+   "requisition_id": "3312",
+   "title": "Account Manager, French Mid-Market (Copenhagen)",
+   "company_name": "Trustpilot ",
+   "first_published": "2026-09-30T10:14:34-04:00",
+   "language": "en",
+   "application_deadline": null
+  },
+  {
+   "absolute_url": "https://corporate.trustpilot.com/careers/job/8272986?gh_jid=8272986",
+   "data_compliance": [
+    {
+     "type": "gdpr",
+     "requires_consent": false,
+     "requires_processing_consent": false,
+     "requires_retention_consent": false,
+     "retention_period": null,
+     "demographic_data_consent_applies": false
+    }
+   ],
+   "internal_job_id": 3579320,
+   "location": {
+    "name": "Copenhagen"
+   },
+   "metadata": null,
+   "id": 8272986,
+   "updated_at": "2026-11-13T06:12:46-05:00",
+   "requisition_id": "3360",
+   "title": "Account Manager, Mid-Market  - Spain ",
+   "company_name": "Trustpilot ",
+   "first_published": "2026-11-13T05:57:28-05:00",
+   "language": "en",
+   "application_deadline": null
+  },
+  {
+   "absolute_url": "https://corporate.trustpilot.com/careers/job/8140567?gh_jid=8140567",
+   "data_compliance": [
+    {
+     "type": "gdpr",
+     "requires_consent": false,
+     "requires_processing_consent": false,
+     "requires_retention_consent": false,
+     "retention_period": null,
+     "demographic_data_consent_applies": false
+    }
+   ],
+   "internal_job_id": 3523097,
+   "location": {
+    "name": "Denver"
+   },
+   "metadata": null,
+   "id": 8140567,
+   "updated_at": "2026-11-16T16:50:55-05:00",
+   "requisition_id": "3270",
+   "title": "Customer Success Manager",
+   "company_name": "Trustpilot ",
+   "first_published": "2026-09-04T09:16:59-04:00",
+   "language": "en",
+   "application_deadline": null
+  },
+  "... +24"
+ ],
+ "meta": {
+  "total": 30
+ }
+}
