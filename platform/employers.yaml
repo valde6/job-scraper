@@ -731,6 +731,9 @@ employers:
   status: find-system
   source:
     type: none
+  aliases:
+  - Codan
+  - Codan Forsikring
 - name: If Skadeforsikring
   career_url: https://if.wd502.myworkdayjobs.com/Careers
   status: klar
@@ -1225,14 +1228,6 @@ employers:
   source:
     type: none
   note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
-- name: Codan
-  career_url: https://www.codan.dk/om-codan/job-og-karriere
-  status: find-system
-  source:
-    type: none
-  note: '17/11 flere uddannelser: Finans (finansøkonom, finansbachelor)'
-  aliases:
-  - Codan Forsikring
 - name: GF Forsikring
   career_url: https://www.gf-forsikring.dk/om-gf/job
   status: find-system
@@ -1434,23 +1429,33 @@ employers:
     type: none
   note: '17/11 flere uddannelser: E-handel og marketing (e-commerce, e-handel, IHM)'
 - name: Lunar
-  career_url: https://www.lunar.app/en/careers
-  status: find-system
+  career_url: https://jobs.lunar.app/jobs
+  status: klar
   source:
-    type: none
-  note: '17/11 flere uddannelser: E-handel og marketing (e-commerce, e-handel, IHM)'
+    type: teamtailor
+    url: https://jobs.lunar.app
+  aliases:
+  - Lunar ApS
+  note: Teamtailor på eget domæne (fundet 17/11 via web-søgning; mange "Student Worker"-opslag)
 - name: Too Good To Go
   career_url: https://www.toogoodtogo.com/en/careers
-  status: find-system
+  status: klar
   source:
-    type: none
-  note: '17/11 flere uddannelser: E-handel og marketing (e-commerce, e-handel, IHM)'
+    type: greenhouse
+    board: toogoodtogo
+  note: Greenhouse (job-boards.greenhouse.io/toogoodtogo, fundet 17/11 via web-søgning). Globale opslag; kun Danmark beholdes
 - name: Trustpilot
-  career_url: https://careers.trustpilot.com
-  status: find-system
+  career_url: https://business.trustpilot.com/jobs
+  status: klar
   source:
-    type: none
-  note: '17/11 flere uddannelser: E-handel og marketing (e-commerce, e-handel, IHM)'
+    type: generic
+    list_urls:
+    - https://business.trustpilot.com/jobs
+    link_pattern: /jobs/\d+
+    title_from: detail
+  aliases:
+  - Trustpilot A/S
+  note: Egen liste (business.trustpilot.com/jobs/<id>), fundet 17/11 via web-søgning – ikke verificeret. Giver den 0, så prøv Greenhouse
 - name: Coolshop
   career_url: https://www.coolshop.dk/job
   status: find-system
