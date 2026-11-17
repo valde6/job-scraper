@@ -1153,3 +1153,302 @@ employers:
   source:
     type: hrmanager
     customer: tivoli
+# --- 17/11: flere uddannelser (SCRAPER-2026-11-17-FLERE-UDDANNELSER.md, S3). Karrieresiderne er fra hukommelsen og
+#     skal bekræftes af discover (workflow discover-ats med only=PLATFORM). Uden kilde vises de som "læses ikke endnu".
+- name: De Økonomiske Råd
+  career_url: https://dors.dk/om-os/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
+  aliases:
+  - DØRS
+- name: Erhvervsministeriet
+  career_url: https://em.dk/om-os/job-i-erhvervsministeriet
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
+- name: Danmarks Statistik
+  career_url: https://www.dst.dk/da/OmDS/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
+  aliases:
+  - DST
+- name: Energistyrelsen
+  career_url: https://ens.dk/om-os/job-i-energistyrelsen
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
+- name: Klimarådet
+  career_url: https://klimaraadet.dk/da/om-klimaraadet/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
+- name: Copenhagen Economics
+  career_url: https://copenhageneconomics.com/careers/
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
+- name: Kraka
+  career_url: https://kraka.dk/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
+  aliases:
+  - Kraka Economics
+- name: Rockwool Fonden
+  career_url: https://www.rockwoolfonden.dk/om-fonden/job/
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
+- name: Epinion
+  career_url: https://www.epinionglobal.com/careers/
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
+- name: AkademikerPension
+  career_url: https://akademikerpension.dk/om-os/job/
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Økonomi og analyse (KU, IBP)'
+- name: Codan
+  career_url: https://www.codan.dk/om-codan/job-og-karriere
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Finans (finansøkonom, finansbachelor)'
+  aliases:
+  - Codan Forsikring
+- name: GF Forsikring
+  career_url: https://www.gf-forsikring.dk/om-gf/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Finans (finansøkonom, finansbachelor)'
+- name: home
+  career_url: https://home.dk/om-home/job/
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Finans (finansøkonom, finansbachelor)'
+  aliases:
+  - home ejendomsmægler
+- name: EDC
+  career_url: https://www.edc.dk/om-edc/job/
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Finans (finansøkonom, finansbachelor)'
+  aliases:
+  - EDC Poul Erik Bech
+- name: Nybolig
+  career_url: https://www.nybolig.dk/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Finans (finansøkonom, finansbachelor)'
+- name: danbolig
+  career_url: https://danbolig.dk/om-danbolig/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Finans (finansøkonom, finansbachelor)'
+- name: DEAS
+  career_url: https://www.deas.dk/om-deas/job/
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Finans (finansøkonom, finansbachelor)'
+- name: DFDS
+  career_url: https://www.dfds.com/en/about/careers
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Logistik og shipping (logistikøkonom, VCM, IST)'
+  aliases:
+  - DFDS A/S
+- name: Norden
+  career_url: https://www.norden.com/careers
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Logistik og shipping (logistikøkonom, VCM, IST)'
+  aliases:
+  - Dampskibsselskabet Norden
+- name: PostNord
+  career_url: https://www.postnord.dk/om-os/job-i-postnord
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Logistik og shipping (logistikøkonom, VCM, IST)'
+  aliases:
+  - PostNord Danmark
+- name: GLS Denmark
+  career_url: https://gls-group.com/DK/da/om-gls/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Logistik og shipping (logistikøkonom, VCM, IST)'
+  aliases:
+  - GLS
+- name: Scan Global Logistics
+  career_url: https://www.scangl.com/careers/
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Logistik og shipping (logistikøkonom, VCM, IST)'
+- name: Blue Water Shipping
+  career_url: https://www.bws.net/careers
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Logistik og shipping (logistikøkonom, VCM, IST)'
+- name: Arp-Hansen Hotel Group
+  career_url: https://www.arp-hansen.dk/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Service, hospitality og event'
+  aliases:
+  - Arp-Hansen
+- name: Strawberry
+  career_url: https://www.strawberry.dk/careers
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Service, hospitality og event'
+  aliases:
+  - Nordic Choice Hotels
+- name: Scandic Hotels
+  career_url: https://www.scandichotels.com/careers
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Service, hospitality og event'
+  aliases:
+  - Scandic
+- name: Wonderful Copenhagen
+  career_url: https://www.wonderfulcopenhagen.dk/wonderful-copenhagen/om-wonderful-copenhagen/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Service, hospitality og event'
+- name: VisitDenmark
+  career_url: https://www.visitdenmark.dk/corporate/om-visitdenmark/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Service, hospitality og event'
+- name: Bella Group
+  career_url: https://www.bellagroup.dk/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Service, hospitality og event'
+  aliases:
+  - Bella Center
+- name: Royal Arena
+  career_url: https://www.royalarena.dk/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Service, hospitality og event'
+- name: Roskilde Festival
+  career_url: https://www.roskilde-festival.dk/en/about/jobs
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Service, hospitality og event'
+- name: Danmarks Idrætsforbund
+  career_url: https://www.dif.dk/om-dif/job-i-dif
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Sport (sportsmanagement, event)'
+  aliases:
+  - DIF
+- name: Parken Sport & Entertainment
+  career_url: https://www.parkensport.dk/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Sport (sportsmanagement, event)'
+  aliases:
+  - FC København
+  - F.C. København
+- name: Brøndby IF
+  career_url: https://brondby.com/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: Sport (sportsmanagement, event)'
+- name: Boozt
+  career_url: https://careers.booztgroup.com
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: E-handel og marketing (e-commerce, e-handel, IHM)'
+  aliases:
+  - Boozt Group
+- name: Magasin
+  career_url: https://www.magasin.dk/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: E-handel og marketing (e-commerce, e-handel, IHM)'
+  aliases:
+  - Magasin du Nord
+- name: Illum
+  career_url: https://www.illum.dk/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: E-handel og marketing (e-commerce, e-handel, IHM)'
+- name: Nemlig.com
+  career_url: https://www.nemlig.com/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: E-handel og marketing (e-commerce, e-handel, IHM)'
+- name: Lunar
+  career_url: https://www.lunar.app/en/careers
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: E-handel og marketing (e-commerce, e-handel, IHM)'
+- name: Too Good To Go
+  career_url: https://www.toogoodtogo.com/en/careers
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: E-handel og marketing (e-commerce, e-handel, IHM)'
+- name: Trustpilot
+  career_url: https://careers.trustpilot.com
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: E-handel og marketing (e-commerce, e-handel, IHM)'
+- name: Coolshop
+  career_url: https://www.coolshop.dk/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: E-handel og marketing (e-commerce, e-handel, IHM)'
+- name: Elgiganten
+  career_url: https://www.elgiganten.dk/info/job
+  status: find-system
+  source:
+    type: none
+  note: '17/11 flere uddannelser: E-handel og marketing (e-commerce, e-handel, IHM)'
+  aliases:
+  - Elkjøp
