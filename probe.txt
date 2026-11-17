@@ -1,3 +1,9 @@
-# 1791900400 Emply-API
-BROWSER https://aeldresagen.career.emply.com/ledige-stillinger
-BROWSER https://bechbruun.career.emply.com/ledige-stillinger
+# 17/11 flere uddannelser: tjek nye kilder
+GET https://copenhageneconomics.com/careers/vacancies/
+GET https://copenhageneconomics.com/careers
+GET https://copenhageneconomics.com/sitemap_index.xml
+GET https://business.trustpilot.com/jobs
+GET https://boards-api.greenhouse.io/v1/boards/trustpilot/jobs
+GET https://boards-api.greenhouse.io/v1/boards/toogoodtogo/jobs
+GET https://jobs.lunar.app/jobs
+GET https://www.norden.com/career
