@@ -181,6 +181,28 @@ EVENT_RE = re.compile(
     r"networking|evening|night|meetup|bootcamp|hackathon|case\s+competition|workshop)\b|\bevent\b(?!s)|\barrangement\b",
     re.I,
 )
+# 17/11 (flere uddannelser): ordet "event" alene gjorde også rigtige job til arrangementer ("Student Assistant – Social
+# Media and Event Planning" hos Danske Spil). Står der en jobbetegnelse i titlen, og rammer EVENT_RE kun på "event" eller
+# "arrangement", er det et job (vigtigt for Event Management, Service- og oplevelsesøkonom, Sportsmanagement).
+_EVENT_WORD_RE = re.compile(r"\bevent\b(?!s)|\barrangement\b", re.I)
+_EVENT_JOB_RE = re.compile(
+    r"student(?:er)?\s*(?:assistant|medhjælper|medarbejder|worker)|studentermedhjælp|studentermedarbejder|"
+    r"\bassistant\b|\bassistent\b|koordinator|coordinator|\bplanner\b|praktikant|\binternship\b|\bintern\b(?!\w)|"
+    r"\bmedhjælper\b|\bafvikler\b|\bansvarlig\b",
+    re.I,
+)
+
+
+def is_event(title: str) -> bool:
+    """Et arrangement (middag, webinar, "Student Event: …"), ikke et job. "Event"/"arrangement" alene tæller ikke,
+    når titlen også har en jobbetegnelse."""
+    t = title or ""
+    if not EVENT_RE.search(t):
+        return False
+    if _EVENT_WORD_RE.sub(" ", t) != t and not EVENT_RE.search(_EVENT_WORD_RE.sub(" ", t)):
+        return not _EVENT_JOB_RE.search(t)
+    return True
+
 # Butiks-, kantine- og servicejob (Coop, Bestseller, 7-Eleven …). Ofte deltid "for studerende", men ikke relevante
 # studiejob for Studieradars målgruppe. Kun i platform-kørslen (job_type), 17/10.
 # 21/10: "Digital Sales Associate" er online-salg/kundeservice på kontoret, ikke butik (Saxo Bank, Hellerup).
@@ -194,6 +216,14 @@ RETAIL_RE = re.compile(
     r"sælger(?:e|en)?\b|store\s+manager|\bmanager\s+trainee|butiks(?:chef|leder)|storcenter|"
     # 21/10: museums-/biografbutik og billetsalg (Cinemateket, Statens Naturhistoriske Museum)
     r"butiks-\s+og\s+billet|\bbutik,\s*billet|billetsalg|billetskranke|gæsteservice",
+    re.I,
+)
+# 17/11 (flere uddannelser): B2B-salg og inside sales for studerende er relevante job for markedsføringsøkonomer og
+# International handel og markedsføring. Gælder kun, når titlen også siger student/studerende/praktik, så butiks- og
+# telefonsalg ("Sælger til JYSK", "Telefonsælger") stadig er ude.
+B2B_SALES_RE = re.compile(
+    r"(?=.*(?:inside\s+sales|\bb2b\b|key\s+account|salgskoordinat|sales\s+(?:support|operations|development|coordinator))"
+    r")(?=.*(?:student|studerende|studiejob|studentermedhj|praktik|intern\b))",
     re.I,
 )
 # 21/10: stillinger for færdiguddannede faggrupper og fleks-/tilkaldejob. De kom med som "studiejob", fordi teksten nævner
@@ -231,7 +261,7 @@ def _extra_type_ok(title: str) -> bool:
 def job_type(title: str, text: str = "") -> str | None:
     """studiejob | praktik | graduate | None. Titlen afgør praktik/graduate; ellers studiejob via student_fit."""
     t = title or ""
-    if HARD_EXCLUDE_RE.search(t) or EVENT_RE.search(t) or RETAIL_RE.search(t):
+    if HARD_EXCLUDE_RE.search(t) or is_event(t) or (RETAIL_RE.search(t) and not B2B_SALES_RE.search(t)):
         return None
     if PROFESSION_RE.search(t) and not STUDENT_RE.search(t):
         return None

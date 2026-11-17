@@ -318,3 +318,23 @@ def test_stable_url_drops_session_params():
     assert Job("PFA", "x", stable_url(a)).id == Job("PFA", "x", stable_url(b)).id
     assert stable_url("https://x.dk/job/1") == "https://x.dk/job/1"
     assert stable_url("https://x.dk/job?id=5&utm_source=li") == "https://x.dk/job?id=5"
+
+
+def test_flere_uddannelser_event_jobs_and_b2b_sales_17_november():
+    """17/11: "event" alene gjorde rigtige job til arrangementer (Danske Spil "Student Assistant – Social Media and
+    Event Planning" lå i rejected.json), og B2B-salg for studerende blev sorteret fra som butikssalg. Begge er relevante
+    for de nye retninger (Event Management, Service- og oplevelsesøkonom, markedsføringsøkonom, IHM)."""
+    from scraper.common import job_type, set_job_types
+    set_job_types({"studiejob", "praktik", "graduate"})
+    body = "Vi søger en studerende på deltid, 15 timer om ugen ved siden af dit studie."
+    for t in ["Student Assistant – Social Media and Event Planning", "Event Coordinator (student assistant)",
+              "Studentermedhjælper til event og arrangementer", "Inside Sales Student Assistant",
+              "B2B-sælger – studiejob i vores salgsteam"]:
+        assert job_type(t, body) == "studiejob", t
+    assert job_type("Praktikant til eventafdelingen", body) == "praktik"
+    # Arrangementer og butiks-/telefonsalg er stadig ude
+    for t in ["Student Event: Meet our analysts", "Graduate Event 2027", "Event – Meet us at CBS",
+              "Deloitte SAP Graduate Dinner 2026 — December 3rd", "Webinar for students: life as a student assistant",
+              "Sælger til JYSK Næstved", "Telefonsælger søges – studiejob", "Deltidssælger u/18 år til JYSK Ballerup",
+              "Faglært materialist/Sales Assistant til 15-20 timer/ugen i Matas Åbenrå"]:
+        assert job_type(t, body) is None, t
