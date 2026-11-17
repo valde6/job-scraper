@@ -1,15 +1,15 @@
 {
- "ts": "2026-11-17T09:46:19+00:00",
+ "ts": "2026-11-17T12:07:42+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
-   "ok": true,
-   "listed": 37,
-   "matched": 5,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "problem": "fejl",
+   "streak": 1,
+   "detail": "ReadTimeout: HTTPSConnectionPool(host='careers.novonordisk.com', port=443): Read timed out. (read timeout=25)"
   },
   {
    "name": "A.P. Møller - Mærsk",
@@ -18,7 +18,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs"
   },
   {
@@ -38,14 +38,14 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
-   "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/job/Shanghai/Student-Worker--RCD_0000039858"
+   "streak": 3,
+   "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs"
   },
   {
    "name": "Danske Bank",
    "type": "oracle",
    "ok": true,
-   "listed": 124,
+   "listed": 130,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -64,12 +64,12 @@
   {
    "name": "PwC",
    "type": "workday",
-   "ok": true,
-   "listed": 4,
-   "matched": 3,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "problem": "fejl",
+   "streak": 1,
+   "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs"
   },
   {
    "name": "Carlsberg",
@@ -96,7 +96,7 @@
    "type": "nordea",
    "ok": true,
    "listed": 69,
-   "matched": 1,
+   "matched": 0,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -128,14 +128,14 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 26,
+   "streak": 27,
    "detail": "HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs"
   },
   {
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 35,
+   "listed": 38,
    "matched": 7,
    "problem": null,
    "streak": 0,
@@ -145,7 +145,7 @@
    "name": "Bestseller",
    "type": "sitemap",
    "ok": true,
-   "listed": 798,
+   "listed": 793,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -165,7 +165,7 @@
    "name": "Bain & Company",
    "type": "avature",
    "ok": true,
-   "listed": 249,
+   "listed": 250,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -174,12 +174,12 @@
   {
    "name": "Vestas",
    "type": "successfactors",
-   "ok": true,
-   "listed": 65,
-   "matched": 0,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "problem": "fejl",
+   "streak": 1,
+   "detail": "ReadTimeout: HTTPSConnectionPool(host='careers.vestas.com', port=443): Read timed out. (read timeout=25)"
   },
   {
    "name": "Implement",
@@ -198,7 +198,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs"
   },
   {
@@ -236,7 +236,7 @@
    "type": "phenom",
    "ok": true,
    "listed": 10,
-   "matched": 0,
+   "matched": 1,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -255,8 +255,8 @@
    "name": "Pandora",
    "type": "sitemap",
    "ok": true,
-   "listed": 11526,
-   "matched": 2,
+   "listed": 11333,
+   "matched": 1,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -335,11 +335,11 @@
    "name": "Københavns Lufthavne",
    "type": "sitemap",
    "ok": true,
-   "listed": 22,
-   "matched": 1,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "listed": 0,
+   "matched": 0,
+   "problem": "mistænkelig",
+   "streak": 1,
+   "detail": "0 opslag (sidst 22)"
   },
   {
    "name": "Danske Commodities",
@@ -375,11 +375,11 @@
    "name": "SAS",
    "type": "sitemap",
    "ok": true,
-   "listed": 20,
+   "listed": 0,
    "matched": 0,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "problem": "mistænkelig",
+   "streak": 1,
+   "detail": "0 opslag (sidst 20)"
   },
   {
    "name": "Amazon",
@@ -448,28 +448,28 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs"
   },
   {
    "name": "Danmarks Radio",
    "type": "sitemap",
    "ok": true,
-   "listed": 27,
-   "matched": 7,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "listed": 0,
+   "matched": 0,
+   "problem": "mistænkelig",
+   "streak": 1,
+   "detail": "0 opslag (sidst 27)"
   },
   {
    "name": "DSV",
    "type": "sitemap",
    "ok": true,
-   "listed": 2128,
+   "listed": 0,
    "matched": 0,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "problem": "mistænkelig",
+   "streak": 1,
+   "detail": "0 opslag (sidst 2128)"
   },
   {
    "name": "BDO",
@@ -485,7 +485,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 42,
+   "listed": 43,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -498,7 +498,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Novonesis_Careers/jobs"
   },
   {
@@ -528,7 +528,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 22,
+   "streak": 23,
    "detail": "HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/"
   },
   {
@@ -706,7 +706,7 @@
    "type": "hrmanager",
    "ok": true,
    "listed": 399,
-   "matched": 48,
+   "matched": 49,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -715,8 +715,8 @@
    "name": "Københavns Kommune",
    "type": "generic",
    "ok": true,
-   "listed": 322,
-   "matched": 6,
+   "listed": 308,
+   "matched": 5,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -725,7 +725,7 @@
    "name": "Frederiksberg Kommune",
    "type": "emply",
    "ok": true,
-   "listed": 61,
+   "listed": 62,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -735,11 +735,11 @@
    "name": "Tryg",
    "type": "sitemap",
    "ok": true,
-   "listed": 38,
-   "matched": 2,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "listed": 0,
+   "matched": 0,
+   "problem": "mistænkelig",
+   "streak": 1,
+   "detail": "0 opslag (sidst 38)"
   },
   {
    "name": "Alm. Brand Group",
@@ -758,7 +758,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://if.wd502.myworkdayjobs.com/wday/cxs/if/Careers/jobs"
   },
   {
@@ -805,7 +805,7 @@
    "name": "Lån & Spar Bank",
    "type": "browser",
    "ok": true,
-   "listed": 12,
+   "listed": 14,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -836,7 +836,7 @@
    "type": "sitemap",
    "ok": true,
    "listed": 22,
-   "matched": 2,
+   "matched": 0,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -855,7 +855,7 @@
    "name": "Twoday",
    "type": "teamtailor",
    "ok": true,
-   "listed": 33,
+   "listed": 32,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -875,7 +875,7 @@
    "name": "Capgemini Danmark",
    "type": "sitemap",
    "ok": true,
-   "listed": 6466,
+   "listed": 6473,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -908,7 +908,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 1,
+   "streak": 2,
    "detail": "0 opslag (sidst 1)"
   },
   {
@@ -916,7 +916,7 @@
    "type": "teamtailor",
    "ok": true,
    "listed": 5,
-   "matched": 2,
+   "matched": 3,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -965,7 +965,7 @@
    "name": "DSB",
    "type": "sitemap",
    "ok": true,
-   "listed": 15,
+   "listed": 16,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -988,7 +988,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://svitzer.wd3.myworkdayjobs.com/wday/cxs/svitzer/Svitzer_Careers/jobs"
   },
   {
@@ -1045,7 +1045,7 @@
    "name": "Coop",
    "type": "sitemap",
    "ok": true,
-   "listed": 230,
+   "listed": 237,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -1068,7 +1068,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://gn.wd3.myworkdayjobs.com/wday/cxs/gn/GN-Careers/jobs"
   },
   {
@@ -1085,17 +1085,17 @@
    "name": "Lundbeck",
    "type": "sitemap",
    "ok": true,
-   "listed": 102,
-   "matched": 1,
-   "problem": null,
-   "streak": 0,
-   "detail": null
+   "listed": 0,
+   "matched": 0,
+   "problem": "mistænkelig",
+   "streak": 1,
+   "detail": "0 opslag (sidst 102)"
   },
   {
    "name": "Demant",
    "type": "sitemap",
    "ok": true,
-   "listed": 307,
+   "listed": 305,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -1108,14 +1108,14 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://flsmidth.wd3.myworkdayjobs.com/wday/cxs/flsmidth/FLS_Global/jobs"
   },
   {
    "name": "ISS",
    "type": "sitemap",
    "ok": true,
-   "listed": 71,
+   "listed": 72,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -1145,7 +1145,7 @@
    "name": "Ambu",
    "type": "sitemap",
    "ok": true,
-   "listed": 158,
+   "listed": 160,
    "matched": 2,
    "problem": null,
    "streak": 0,
@@ -1155,7 +1155,7 @@
    "name": "Region Hovedstaden",
    "type": "hrmanager",
    "ok": true,
-   "listed": 411,
+   "listed": 416,
    "matched": 7,
    "problem": null,
    "streak": 0,
@@ -1235,7 +1235,7 @@
    "name": "TORM",
    "type": "hrmanager",
    "ok": true,
-   "listed": 4,
+   "listed": 5,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -1247,6 +1247,436 @@
    "ok": true,
    "listed": 3,
    "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "De Økonomiske Råd",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Erhvervsministeriet",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Danmarks Statistik",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Energistyrelsen",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Klimarådet",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Copenhagen Economics",
+   "type": "generic",
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "problem": "fejl",
+   "streak": 1,
+   "detail": "HTTPError: 404 Client Error: Not Found for url: https://copenhageneconomics.com/careers/"
+  },
+  {
+   "name": "Kraka",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Rockwool Fonden",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Epinion",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "AkademikerPension",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Codan",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "GF Forsikring",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "home",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "EDC",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Nybolig",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "danbolig",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "DEAS",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "DFDS",
+   "type": "teamtailor",
+   "ok": true,
+   "listed": 22,
+   "matched": 8,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Norden",
+   "type": "generic",
+   "ok": true,
+   "listed": 5,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "PostNord",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "GLS Denmark",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Scan Global Logistics",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Blue Water Shipping",
+   "type": "emply",
+   "ok": true,
+   "listed": 33,
+   "matched": 1,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Arp-Hansen Hotel Group",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Strawberry",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Scandic Hotels",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Wonderful Copenhagen",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "VisitDenmark",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Bella Group",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Royal Arena",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Roskilde Festival",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Danmarks Idrætsforbund",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Parken Sport & Entertainment",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Brøndby IF",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Boozt",
+   "type": "teamtailor",
+   "ok": true,
+   "listed": 10,
+   "matched": 0,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Magasin",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Illum",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Nemlig.com",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Lunar",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Too Good To Go",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Trustpilot",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Coolshop",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
+   "problem": null,
+   "streak": 0,
+   "detail": null
+  },
+  {
+   "name": "Elgiganten",
+   "type": "none",
+   "ok": null,
+   "listed": null,
+   "matched": null,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -1315,7 +1745,7 @@
    "name": "GML A/S",
    "type": "teamtailor",
    "ok": true,
-   "listed": 44,
+   "listed": 45,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -1485,7 +1915,7 @@
    "name": "Udviklings- og Forenklingsstyrelsen",
    "type": "hrmanager",
    "ok": true,
-   "listed": 75,
+   "listed": 74,
    "matched": 3,
    "problem": null,
    "streak": 0,
@@ -1608,7 +2038,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs"
   },
   {
@@ -1618,7 +2048,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 16,
+   "streak": 17,
    "detail": "0 opslag (sidst 1)"
   },
   {
@@ -1685,7 +2115,7 @@
    "name": "JYSK",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 47,
+   "listed": 46,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -1745,7 +2175,7 @@
    "name": "SDL Denmark",
    "type": "lever",
    "ok": true,
-   "listed": 140,
+   "listed": 142,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -1788,7 +2218,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://stark.wd3.myworkdayjobs.com/wday/cxs/stark/STARK-Denmark/jobs"
   },
   {
@@ -1805,7 +2235,7 @@
    "name": "Furesø Kommune",
    "type": "emply",
    "ok": true,
-   "listed": 43,
+   "listed": 44,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -1825,7 +2255,7 @@
    "name": "Brøndby Kommune",
    "type": "emply",
    "ok": true,
-   "listed": 50,
+   "listed": 51,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -1855,7 +2285,7 @@
    "name": "Egedal Kommune",
    "type": "emply",
    "ok": true,
-   "listed": 58,
+   "listed": 60,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -1878,7 +2308,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://zealandpharma.wd3.myworkdayjobs.com/wday/cxs/zealandpharma/ExternalCareer/jobs"
   },
   {
@@ -1928,7 +2358,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://sedgwick.wd1.myworkdayjobs.com/wday/cxs/sedgwick/Sedgwick/jobs"
   },
   {
@@ -1938,7 +2368,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://photonics.wd103.myworkdayjobs.com/wday/cxs/photonics/Job_Index/jobs"
   },
   {
@@ -1958,7 +2388,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://iff.wd5.myworkdayjobs.com/wday/cxs/iff/IFF_Careers/jobs"
   },
   {
@@ -2005,7 +2435,7 @@
    "name": "Vejen Kommune",
    "type": "emply",
    "ok": true,
-   "listed": 36,
+   "listed": 35,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -2058,7 +2488,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://shell.wd3.myworkdayjobs.com/wday/cxs/shell/ShellCareers/jobs"
   },
   {
@@ -2143,25 +2573,26 @@
   }
  ],
  "alerts": [
-  "**A.P. Møller - Mærsk** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs",
-  "**LEGO Group** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/job/Shanghai/Student-Worker--RCD_0000039858",
-  "**Jyske Bank** (generic): fejl i 26 kørsler i træk – HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs",
-  "**Saxo Bank** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs",
-  "**Accenture** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs",
-  "**Novonesis** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Novonesis_Careers/jobs",
-  "**Gorrissen Federspiel** (generic): fejl i 22 kørsler i træk – HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/",
-  "**If Skadeforsikring** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://if.wd502.myworkdayjobs.com/wday/cxs/if/Careers/jobs",
-  "**Svitzer** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://svitzer.wd3.myworkdayjobs.com/wday/cxs/svitzer/Svitzer_Careers/jobs",
-  "**GN Group** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://gn.wd3.myworkdayjobs.com/wday/cxs/gn/GN-Careers/jobs",
-  "**FLSmidth** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://flsmidth.wd3.myworkdayjobs.com/wday/cxs/flsmidth/FLS_Global/jobs",
-  "**Agilent Technologies Denmark** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs",
-  "**GEV** (emply): mistænkelig i 16 kørsler i træk – 0 opslag (sidst 1)",
-  "**STARK Danmark** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://stark.wd3.myworkdayjobs.com/wday/cxs/stark/STARK-Denmark/jobs",
-  "**Zealand Pharma A/S** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://zealandpharma.wd3.myworkdayjobs.com/wday/cxs/zealandpharma/ExternalCareer/jobs",
-  "**Sedgwick Danmark** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://sedgwick.wd1.myworkdayjobs.com/wday/cxs/sedgwick/Sedgwick/jobs",
-  "**Hamamatsu Photonics** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://photonics.wd103.myworkdayjobs.com/wday/cxs/photonics/Job_Index/jobs",
-  "**IFF** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://iff.wd5.myworkdayjobs.com/wday/cxs/iff/IFF_Careers/jobs",
-  "**Shell Biogas A/S** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://shell.wd3.myworkdayjobs.com/wday/cxs/shell/ShellCareers/jobs"
+  "**A.P. Møller - Mærsk** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs",
+  "**LEGO Group** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs",
+  "**Jyske Bank** (generic): fejl i 27 kørsler i træk – HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs",
+  "**Saxo Bank** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs",
+  "**Accenture** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs",
+  "**Novonesis** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Novonesis_Careers/jobs",
+  "**Gorrissen Federspiel** (generic): fejl i 23 kørsler i træk – HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/",
+  "**If Skadeforsikring** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://if.wd502.myworkdayjobs.com/wday/cxs/if/Careers/jobs",
+  "**Visma DataLøn** (teamtailor): mistænkelig i 2 kørsler i træk – 0 opslag (sidst 1)",
+  "**Svitzer** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://svitzer.wd3.myworkdayjobs.com/wday/cxs/svitzer/Svitzer_Careers/jobs",
+  "**GN Group** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://gn.wd3.myworkdayjobs.com/wday/cxs/gn/GN-Careers/jobs",
+  "**FLSmidth** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://flsmidth.wd3.myworkdayjobs.com/wday/cxs/flsmidth/FLS_Global/jobs",
+  "**Agilent Technologies Denmark** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs",
+  "**GEV** (emply): mistænkelig i 17 kørsler i træk – 0 opslag (sidst 1)",
+  "**STARK Danmark** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://stark.wd3.myworkdayjobs.com/wday/cxs/stark/STARK-Denmark/jobs",
+  "**Zealand Pharma A/S** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://zealandpharma.wd3.myworkdayjobs.com/wday/cxs/zealandpharma/ExternalCareer/jobs",
+  "**Sedgwick Danmark** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://sedgwick.wd1.myworkdayjobs.com/wday/cxs/sedgwick/Sedgwick/jobs",
+  "**Hamamatsu Photonics** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://photonics.wd103.myworkdayjobs.com/wday/cxs/photonics/Job_Index/jobs",
+  "**IFF** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://iff.wd5.myworkdayjobs.com/wday/cxs/iff/IFF_Careers/jobs",
+  "**Shell Biogas A/S** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://shell.wd3.myworkdayjobs.com/wday/cxs/shell/ShellCareers/jobs"
  ],
- "active": 231
+ "active": 237
 }
