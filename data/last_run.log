@@ -93,7 +93,31 @@ Traceback (most recent call last):
     r.raise_for_status()
   File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
     raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs
+Traceback (most recent call last):
+  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 99, in main
+    listed, jobs = _with_timeout(lambda: ADAPTERS[typ]({**src, "name": c["name"]}), SOURCE_TIMEOUT)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
+    return fn()
+           ^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 99, in <lambda>
+    listed, jobs = _with_timeout(lambda: ADAPTERS[typ]({**src, "name": c["name"]}), SOURCE_TIMEOUT)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/workday.py", line 58, in scrape
+    d = get(f"{api}{path}", headers={"Accept": "application/json"}).json()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 104, in get
+    return http("GET", url, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 100, in http
+    raise last  # type: ignore[misc]
+    ^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 92, in http
+    r.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/job/Copenhagen/An-Evening-with-Accenture-x-CBS-AI---AI-in-Consulting_R00370092
 Traceback (most recent call last):
   File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 99, in main
     listed, jobs = _with_timeout(lambda: ADAPTERS[typ]({**src, "name": c["name"]}), SOURCE_TIMEOUT)
@@ -127,12 +151,12 @@ PwC                              workday         False   HTTPError: 429 Client E
 Boston Consulting Group (BCG)    eightfold       True 4 0 
 Nordea                           nordea          True 9 2 
 EY                               yello           True 5 2 
-Nykredit                         browser         True 32 7 
+Nykredit                         browser         True 37 6 
 Vestas                           successfactors  True 7 0 
-Saxo Bank                        workday         True 24 0 
+Saxo Bank                        workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs
 Arla Foods                       phenom          True 10 0 
 Dansk Industri                   teamtailor      True 12 3 
-Ørsted                           browser         True 33 0 
+Ørsted                           browser         True 34 0 
 KPMG                             hrmanager       True 9 0 
 PA Consulting Group              smartrecruiters True 10 0 
 Danske Commodities               teamtailor      True 10 3 
@@ -140,10 +164,10 @@ Netcompany                       smartrecruiters True 33 3
 PFA Pension                      browser         True 5 1 
 Amazon                           amazon          True 6 0 
 IKEA                             generic         True 30 0 
-Accenture                        workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs
+Accenture                        workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/job/Copenhagen/An-Evening-with-Accenture-x-CBS-AI---AI-in-Consulting_R00370092
 Danmarks Radio                   hrmanager       True 0 0 
-Rambøll                          smartrecruiters True 42 0 
+Rambøll                          smartrecruiters True 53 0 
 Novonesis                        workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Novonesis_Careers/jobs
-Jobindex: {'sikker': 23, 'sandsynlig': 1, 'mulig': 2, 'body_fetch': 26}
+Jobindex: {'sikker': 25, 'sandsynlig': 1, 'mulig': 2, 'body_fetch': 24}
 
-Færdig: 57 fundet i dag, 4 nye, 162 aktive i alt.
+Færdig: 58 fundet i dag, 3 nye, 160 aktive i alt.

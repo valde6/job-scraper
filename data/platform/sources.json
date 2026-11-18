@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T08:32:01+00:00",
+ "generated_at": "2026-11-18T07:58:39+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -109,8 +109,8 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 32,
-   "matched": 7,
+   "listed": 37,
+   "matched": 6,
    "error": null
   },
   {
@@ -156,10 +156,10 @@
   {
    "name": "Saxo Bank",
    "type": "workday",
-   "ok": true,
-   "listed": 24,
-   "matched": 0,
-   "error": null
+   "ok": false,
+   "listed": null,
+   "matched": null,
+   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs"
   },
   {
    "name": "Finansministeriet",
@@ -229,7 +229,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 33,
+   "listed": 34,
    "matched": 0,
    "error": null
   },
@@ -359,7 +359,7 @@
    "ok": false,
    "listed": null,
    "matched": null,
-   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs"
+   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/job/Copenhagen/An-Evening-with-Accenture-x-CBS-AI---AI-in-Consulti"
   },
   {
    "name": "Danmarks Radio",
@@ -389,7 +389,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 42,
+   "listed": 53,
    "matched": 0,
    "error": null
   },
@@ -405,8 +405,8 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 409,
-   "matched": 26,
+   "listed": 405,
+   "matched": 28,
    "error": null
   }
  ]
