@@ -1,86 +1,4 @@
 Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 540, in _make_request
-    response = conn.getresponse()
-               ^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connection.py", line 638, in getresponse
-    httplib_response = super().getresponse()
-                       ^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/http/client.py", line 1478, in getresponse
-    response.begin()
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/http/client.py", line 343, in begin
-    version, status, reason = self._read_status()
-                              ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/http/client.py", line 304, in _read_status
-    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/socket.py", line 720, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/ssl.py", line 1264, in recv_into
-    return self.read(nbytes, buffer)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/ssl.py", line 1116, in read
-    return self._sslobj.read(len, buffer)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TimeoutError: The read operation timed out
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/adapters.py", line 645, in send
-    resp = conn.urlopen(
-           ^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 847, in urlopen
-    retries = retries.increment(
-              ^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/util/retry.py", line 510, in increment
-    raise reraise(type(error), error, _stacktrace)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
-    raise value
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 793, in urlopen
-    response = self._make_request(
-               ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 542, in _make_request
-    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 373, in _raise_timeout
-    raise ReadTimeoutError(
-urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='careers.novonordisk.com', port=443): Read timed out. (read timeout=25)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 530, in main
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
-    return fn()
-           ^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 530, in <lambda>
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                                         ^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/successfactors.py", line 48, in scrape
-    html = get(href).text
-           ^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 104, in get
-    return http("GET", url, **kw)
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 100, in http
-    raise last  # type: ignore[misc]
-    ^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 88, in http
-    r = _session.request(method, url, **kw)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/sessions.py", line 592, in request
-    resp = self.send(prep, **send_kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/sessions.py", line 706, in send
-    r = adapter.send(request, **kwargs)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/adapters.py", line 691, in send
-    raise ReadTimeout(e, request=request)
-requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='careers.novonordisk.com', port=443): Read timed out. (read timeout=25)
-Traceback (most recent call last):
   File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 530, in main
     listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -176,88 +94,6 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
     raise HTTPError(http_error_msg, response=self)
 requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 540, in _make_request
-    response = conn.getresponse()
-               ^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connection.py", line 638, in getresponse
-    httplib_response = super().getresponse()
-                       ^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/http/client.py", line 1478, in getresponse
-    response.begin()
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/http/client.py", line 343, in begin
-    version, status, reason = self._read_status()
-                              ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/http/client.py", line 304, in _read_status
-    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/socket.py", line 720, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/ssl.py", line 1264, in recv_into
-    return self.read(nbytes, buffer)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/ssl.py", line 1116, in read
-    return self._sslobj.read(len, buffer)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TimeoutError: The read operation timed out
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/adapters.py", line 645, in send
-    resp = conn.urlopen(
-           ^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 847, in urlopen
-    retries = retries.increment(
-              ^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/util/retry.py", line 510, in increment
-    raise reraise(type(error), error, _stacktrace)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
-    raise value
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 793, in urlopen
-    response = self._make_request(
-               ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 542, in _make_request
-    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 373, in _raise_timeout
-    raise ReadTimeoutError(
-urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='careers.vestas.com', port=443): Read timed out. (read timeout=25)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 530, in main
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
-    return fn()
-           ^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 530, in <lambda>
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                                         ^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/successfactors.py", line 26, in scrape
-    s = soup(get(url).text)
-             ^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 104, in get
-    return http("GET", url, **kw)
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 100, in http
-    raise last  # type: ignore[misc]
-    ^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 88, in http
-    r = _session.request(method, url, **kw)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/sessions.py", line 592, in request
-    resp = self.send(prep, **send_kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/sessions.py", line 706, in send
-    r = adapter.send(request, **kwargs)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/adapters.py", line 691, in send
-    raise ReadTimeout(e, request=request)
-requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='careers.vestas.com', port=443): Read timed out. (read timeout=25)
 Traceback (most recent call last):
   File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 530, in main
     listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
@@ -364,12 +200,12 @@ Traceback (most recent call last):
   File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 530, in <lambda>
     listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
                                          ^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/workday.py", line 37, in scrape
-    r = post(f"{api}/jobs", json={"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": term},
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 108, in post
-    return http("POST", url, **kw)
-           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/workday.py", line 58, in scrape
+    d = get(f"{api}{path}", headers={"Accept": "application/json"}).json()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 104, in get
+    return http("GET", url, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^
   File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 100, in http
     raise last  # type: ignore[misc]
     ^^^^^^^^^^
@@ -377,7 +213,7 @@ Traceback (most recent call last):
     r.raise_for_status()
   File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
     raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://if.wd502.myworkdayjobs.com/wday/cxs/if/Careers/jobs
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://if.wd502.myworkdayjobs.com/wday/cxs/if/Careers/job/Kbenhavn/Finanselever-med-lyst-til-udvikling-2027_JobReqID11591
 Traceback (most recent call last):
   File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 530, in main
     listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
@@ -450,49 +286,49 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
     raise HTTPError(http_error_msg, response=self)
 requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://flsmidth.wd3.myworkdayjobs.com/wday/cxs/flsmidth/FLS_Global/jobs
-Novo Nordisk                         successfactors  False   ReadTimeout: HTTPSConnectionPool(host='careers.novonordisk.com', port=443): Read timed out. (read timeout=25)
+Novo Nordisk                         successfactors  True 39 5 
 A.P. Møller - Mærsk                  workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs
 McKinsey & Company                   mckinsey        True 11 2 
 LEGO Group                           workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs
 Danske Bank                          oracle          True 130 2 
 Deloitte                             smartrecruiters True 29 6 
 PwC                                  workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs
-Carlsberg                            sitemap         True 107 0 
+Carlsberg                            sitemap         True 108 0 
 Boston Consulting Group (BCG)        eightfold       True 4 3 
-Nordea                               nordea          True 69 0 
+Nordea                               nordea          True 76 1 
 EY                                   yello           True 5 5 
 Jyske Bank                           generic         False   HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs
-Nykredit                             browser         True 38 7 
-Bestseller                           sitemap         True 793 0 
-L'Oréal Groupe                       sitemap         True 1559 1 
-Bain & Company                       avature         True 250 0 
-Vestas                               successfactors  False   ReadTimeout: HTTPSConnectionPool(host='careers.vestas.com', port=443): Read timed out. (read timeout=25)
+Nykredit                             browser         True 37 6 
+Bestseller                           sitemap         True 782 0 
+L'Oréal Groupe                       sitemap         True 1564 1 
+Bain & Company                       avature         True 245 0 
+Vestas                               successfactors  True 66 0 
 Implement                            smartrecruiters True 16 1 
 Saxo Bank                            workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs
 Bang & Olufsen                       browser         True 3 0 
-Arla Foods                           phenom          True 10 1 
-Pandora                              sitemap         True 11333 1 
+Arla Foods                           phenom          True 10 0 
+Pandora                              sitemap         True 10697 1 
 Dansk Industri                       teamtailor      True 12 3 
 Nordnet                              teamtailor      True 13 0 
-Ørsted                               browser         True 33 0 
+Ørsted                               browser         True 34 0 
 KPMG                                 hrmanager       True 9 0 
 Matas                                emply           True 20 3 
 PA Consulting Group                  smartrecruiters True 10 0 
-Københavns Lufthavne                 sitemap         True 0 0 0 opslag (sidst 22)
+Københavns Lufthavne                 sitemap         True 23 1 
 Danske Commodities                   teamtailor      True 10 1 
 Netcompany                           smartrecruiters True 33 5 
-PFA Pension                          browser         True 5 1 
-SAS                                  sitemap         True 0 0 0 opslag (sidst 20)
+PFA Pension                          browser         True 6 1 
+SAS                                  sitemap         True 20 0 
 Amazon                               amazon          True 6 0 
 Beierholm                            generic         True 31 5 
 AL Sydbank                           teamtailor      True 28 2 
-Forsvaret                            generic         True 71 0 
+Forsvaret                            generic         True 70 0 
 IKEA                                 generic         True 30 0 
 Accenture                            workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs
-Danmarks Radio                       sitemap         True 0 0 0 opslag (sidst 27)
-DSV                                  sitemap         True 0 0 0 opslag (sidst 2128)
-BDO                                  emply           True 26 3 
-Rambøll                              smartrecruiters True 43 2 
+Danmarks Radio                       sitemap         True 26 7 
+DSV                                  sitemap         True 2108 2 
+BDO                                  emply           True 25 3 
+Rambøll                              smartrecruiters True 53 2 
 Novonesis                            workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Novonesis_Careers/jobs
 Kromann Reumert                      generic         True 4 0 
 Plesner                              generic         True 6 2 
@@ -506,75 +342,55 @@ Schjødt                              hrmanager       True 2 0
 Lund Elmer Sandager                  hrmanager       True 1 0 
 Grant Thornton                       generic         True 9 1 
 Statens Rekrutteringsløsning (staten) hrmanager       True 399 49 
-Københavns Kommune                   generic         True 308 5 
-Frederiksberg Kommune                emply           True 62 1 
-Tryg                                 sitemap         True 0 0 0 opslag (sidst 38)
-If Skadeforsikring                   workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://if.wd502.myworkdayjobs.com/wday/cxs/if/Careers/jobs
-ATP                                  hrmanager       True 16 0 
+Københavns Kommune                   generic         True 297 6 
+Frederiksberg Kommune                emply           True 65 0 
+Tryg                                 sitemap         True 43 4 
+If Skadeforsikring                   workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://if.wd502.myworkdayjobs.com/wday/cxs/if/Careers/job/Kbenhavn/Finanselever-med-lyst-til-udvikling-2027_JobReqID11591
+ATP                                  hrmanager       True 17 0 
 PensionDanmark                       generic         True 8 1 
 Sampension                           browser         True 3 0 
 Lån & Spar Bank                      browser         True 14 0 
 Söderberg & Partners                 generic         True 5 1 
-KMD                                  sitemap         True 22 0 
+KMD                                  sitemap         True 22 2 
 EG                                   teamtailor      True 29 1 
-Twoday                               teamtailor      True 32 0 
+Twoday                               teamtailor      True 31 0 
 Columbus                             teamtailor      True 8 0 
-Capgemini Danmark                    sitemap         True 6473 0 
+Capgemini Danmark                    sitemap         True 6529 0 
 Visma DataLøn                        teamtailor      True 0 0 0 opslag (sidst 1)
 Danske Spil                          teamtailor      True 5 3 
-DTU                                  oracle          True 314 3 
+DTU                                  oracle          True 319 3 
 IT-Universitetet                     hrmanager       True 6 2 
-Københavns Universitet               generic         True 36 2 
-CBS                                  generic         True 14 4 
-DSB                                  sitemap         True 16 0 
+Københavns Universitet               generic         True 33 2 
+CBS                                  generic         True 14 3 
+DSB                                  sitemap         True 15 0 
 Movia                                browser         True 5 1 
 Svitzer                              workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://svitzer.wd3.myworkdayjobs.com/wday/cxs/svitzer/Svitzer_Careers/jobs
-Dansk Erhverv                        hrmanager       True 4 2 
-Akademikernes A-kasse                emply           True 2 0 
+Dansk Erhverv                        hrmanager       True 5 3 
+Akademikernes A-kasse                emply           True 1 0 
 Ældre Sagen                          emply           True 3 2 
-Coop                                 sitemap         True 237 1 
+Coop                                 sitemap         True 229 1 
 Royal Unibrew                        browser         True 10 0 
 GN Group                             workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://gn.wd3.myworkdayjobs.com/wday/cxs/gn/GN-Careers/jobs
-Coloplast                            sitemap         True 276 1 
-Lundbeck                             sitemap         True 0 0 0 opslag (sidst 102)
+Coloplast                            sitemap         True 274 1 
+Lundbeck                             sitemap         True 100 1 
 Demant                               sitemap         True 305 1 
 FLSmidth                             workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://flsmidth.wd3.myworkdayjobs.com/wday/cxs/flsmidth/FLS_Global/jobs
-ISS                                  sitemap         True 72 0 
-Genmab                               phenom          True 134 3 
-Novo Nordisk Fonden                  workable        True 8 2 
-Ambu                                 sitemap         True 160 2 
-Region Hovedstaden                   hrmanager       True 416 7 
-Hvidovre Kommune                     hrmanager       True 27 1 
+ISS                                  sitemap         True 75 0 
+Genmab                               phenom          True 139 4 
+Novo Nordisk Fonden                  workable        True 9 2 
+Ambu                                 sitemap         True 158 2 
+Region Hovedstaden                   hrmanager       True 412 7 
+Hvidovre Kommune                     hrmanager       True 26 1 
 Vallensbæk Kommune                   hrmanager       True 10 0 
 Red Barnet                           hrmanager       True 7 5 
-Kræftens Bekæmpelse                  hrmanager       True 7 1 
-KL                                   hrmanager       True 6 3 
+Kræftens Bekæmpelse                  hrmanager       True 6 1 
+KL                                   hrmanager       True 4 2 
 SOS International                    hrmanager       True 12 3 
-Andel                                hrmanager       True 10 1 Traceback (most recent call last):
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 530, in main
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/run.py", line 46, in _with_timeout
-    return fn()
-           ^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 530, in <lambda>
-    listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
-                                         ^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/generic.py", line 108, in scrape
-    s = soup(get(lu).text)
-             ^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 104, in get
-    return http("GET", url, **kw)
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 100, in http
-    raise last  # type: ignore[misc]
-    ^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 92, in http
-    r.raise_for_status()
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://copenhageneconomics.com/careers/
-Traceback (most recent call last):
+Andel                                hrmanager       True 10 1 
+TORM                                 hrmanager       True 6 0 
+Tivoli                               hrmanager       True 3 0 
+Copenhagen Economics                 generic         True 0 0 
+DFDS                                 teamtailor      True 23 8 Traceback (most recent call last):
   File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 530, in main
     listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -704,12 +520,12 @@ Traceback (most recent call last):
   File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 530, in <lambda>
     listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
                                          ^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/workday.py", line 37, in scrape
-    r = post(f"{api}/jobs", json={"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": term},
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 108, in post
-    return http("POST", url, **kw)
-           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/adapters/workday.py", line 58, in scrape
+    d = get(f"{api}{path}", headers={"Accept": "application/json"}).json()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 104, in get
+    return http("GET", url, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^
   File "/home/runner/work/job-scraper/job-scraper/scraper/common.py", line 100, in http
     raise last  # type: ignore[misc]
     ^^^^^^^^^^
@@ -717,7 +533,7 @@ Traceback (most recent call last):
     r.raise_for_status()
   File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1028, in raise_for_status
     raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://iff.wd5.myworkdayjobs.com/wday/cxs/iff/IFF_Careers/jobs
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://iff.wd5.myworkdayjobs.com/wday/cxs/iff/IFF_Careers/job/Brabrand-Denmark/HR-Business-Partner_R22641
 Traceback (most recent call last):
   File "/home/runner/work/job-scraper/job-scraper/scraper/platform_run.py", line 530, in main
     listed, jobs = _with_timeout(lambda: ADAPTERS[typ](cfg), SOURCE_TIMEOUT)
@@ -743,31 +559,29 @@ Traceback (most recent call last):
     raise HTTPError(http_error_msg, response=self)
 requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://shell.wd3.myworkdayjobs.com/wday/cxs/shell/ShellCareers/jobs
 
-TORM                                 hrmanager       True 5 0 
-Tivoli                               hrmanager       True 3 0 
-Copenhagen Economics                 generic         False   HTTPError: 404 Client Error: Not Found for url: https://copenhageneconomics.com/careers/
-DFDS                                 teamtailor      True 22 8 
 Norden                               generic         True 5 0 
 Blue Water Shipping                  emply           True 33 1 
-Boozt                                teamtailor      True 10 0 
+Boozt                                teamtailor      True 12 0 
+Lunar                                teamtailor      True 19 0 
+Trustpilot                           greenhouse      True 29 0 
 DM                                   emply           True 3 1 
 Energinet                            hrmanager       True 29 0 
 Whiteaway Group                      emply           True 8 0 
 Telenor                              teamtailor      True 1 0 
-GML A/S                              teamtailor      True 45 0 
+GML A/S                              teamtailor      True 46 0 
 Medicinrådet                         emply           True 1 0 
-HOFOR                                hrmanager       True 12 0 
+HOFOR                                hrmanager       True 15 0 
 Entreprenørfirmaet Nordkysten A/S    teamtailor      True 12 1 
 Eurofins                             smartrecruiters True 18 0 
-Faxe Kommune                         hrmanager       True 38 0 
+Faxe Kommune                         hrmanager       True 40 0 
 Scantox A/S                          emply           True 4 0 
 HTH                                  teamtailor      True 7 0 
 Everllence                           hrmanager       True 1 0 
 Erhvervsakademi København            emply           True 9 1 
 Danske Professionshøjskoler          emply           True 2 0 
-Udviklings- og Forenklingsstyrelsen  hrmanager       True 74 3 
-Nine United A/S                      hrmanager       True 7 0 
-Folkekirkens Nødhjælp                emply           True 5 3 
+Udviklings- og Forenklingsstyrelsen  hrmanager       True 75 4 
+Nine United A/S                      hrmanager       True 6 0 
+Folkekirkens Nødhjælp                emply           True 6 3 
 Orkla Danmark                        smartrecruiters True 4 0 
 Nordic Computer A/S                  teamtailor      True 2 0 
 Normal A/S                           teamtailor      True 16 0 
@@ -782,24 +596,24 @@ GEV                                  emply           True 0 0 0 opslag (sidst 1)
 Munck Asfalt                         hrmanager       True 12 0 
 Blå Kors Danmark                     emply           True 9 1 
 PHM Danmark ApS                      emply           True 10 0 
-Momentum Energy Group A/S            emply           True 4 0 
+Momentum Energy Group A/S            emply           True 3 0 
 Visma Public Technologies A/S        teamtailor      True 1 0 
 Q-Park Operations Denmark A/S        teamtailor      True 5 0 
 JYSK                                 smartrecruiters True 46 0 
 Teknologisk Institut                 hrmanager       True 5 0 
 Fibia P/S                            emply           True 2 0 
 Oxfam Danmark                        emply           True 1 1 
-SDL Denmark                          lever           True 142 0 
-Albertslund Kommune                  emply           True 35 0 
+SDL Denmark                          lever           True 148 0 
+Albertslund Kommune                  emply           True 33 0 
 ARC – Amager Ressourcecenter         hrmanager       True 7 0 
 HR Company ApS                       teamtailor      True 1 0 
 STARK Danmark                        workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://stark.wd3.myworkdayjobs.com/wday/cxs/stark/STARK-Denmark/jobs
 Truvio Commerce Denmark A/S          teamtailor      True 15 0 
 Furesø Kommune                       emply           True 44 1 
-Stevns Kommune                       emply           True 25 0 
-Brøndby Kommune                      emply           True 51 0 
+Stevns Kommune                       emply           True 24 0 
+Brøndby Kommune                      emply           True 49 0 
 AFRY                                 smartrecruiters True 15 0 
-Egedal Kommune                       emply           True 60 1 
+Egedal Kommune                       emply           True 58 1 
 HMF Group A/S                        emply           True 3 0 
 Zealand Pharma A/S                   workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://zealandpharma.wd3.myworkdayjobs.com/wday/cxs/zealandpharma/ExternalCareer/jobs
 DGI                                  emply           True 13 7 
@@ -809,26 +623,26 @@ SCT Transport A/S                    emply           True 2 1
 Sedgwick Danmark                     workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://sedgwick.wd1.myworkdayjobs.com/wday/cxs/sedgwick/Sedgwick/jobs
 Hamamatsu Photonics                  workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://photonics.wd103.myworkdayjobs.com/wday/cxs/photonics/Job_Index/jobs
 Sabroe Selection                     hrmanager       True 7 1 
-IFF                                  workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://iff.wd5.myworkdayjobs.com/wday/cxs/iff/IFF_Careers/jobs
+IFF                                  workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://iff.wd5.myworkdayjobs.com/wday/cxs/iff/IFF_Careers/job/Brabrand-Denmark/HR-Business-Partner_R22641
 KFUM's Sociale Arbejde               hrmanager       True 4 0 
 Gyldendal A/S                        emply           True 2 1 
 KIRKBI A/S                           teamtailor      True 1 0 
 Syddjurs Kommune                     emply           True 41 0 
-Vejen Kommune                        emply           True 35 0 
-Nordfyns Kommune                     emply           True 34 0 
+Vejen Kommune                        emply           True 38 0 
+Nordfyns Kommune                     emply           True 36 0 
 Herlev Kommune                       emply           True 31 0 
 Billund Lufthavn A/S                 emply           True 4 0 
 Dansk Boldspil-Union (DBU)           hrmanager       True 8 0 
 Shell Biogas A/S                     workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://shell.wd3.myworkdayjobs.com/wday/cxs/shell/ShellCareers/jobs
-OK-Fonden                            emply           True 20 0 
+OK-Fonden                            emply           True 21 0 
 Cryos International – Denmark ApS    emply           True 3 1 
-Colosseumklinikken Danmark ApS       teamtailor      True 19 1 
+Colosseumklinikken Danmark ApS       teamtailor      True 18 1 
 DBI – Dansk Brand- og sikringsteknisk Institut hrmanager       True 6 1 
 Børns Vilkår                         emply           True 1 0 
 DFS Plus                             emply           True 9 0 
 HB-Care A/S                          emply           True 12 1 
 SSI Diagnostica A/S                  teamtailor      True 7 0 
-Linkkontrol: {'ok': 470, 'unknown': 73, 'dead': 32}, lukket 1 døde og 0 forældede job, 30 døde karrieresider
-AI-strukturering: {'cached': 0, 'new': 0, 'failed': 0, 'skipped_no_key': 237, 'over_limit': 0}
+Linkkontrol: {'unknown': 65, 'ok': 486, 'dead': 29}, lukket 0 døde og 0 forældede job, 28 døde karrieresider
+AI-strukturering: {'cached': 0, 'new': 0, 'failed': 0, 'skipped_no_key': 244, 'over_limit': 0}
 
-Færdig: 208 fundet i dag, 237 aktive. Pr. type: {'praktik': 58, 'studiejob': 158, 'graduate': 21}
+Færdig: 230 fundet i dag, 244 aktive. Pr. type: {'studiejob': 165, 'praktik': 58, 'graduate': 21}

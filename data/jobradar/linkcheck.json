@@ -1,19 +1,11 @@
 {
- "checked": "2026-11-17T12:07:42+00:00",
+ "checked": "2026-11-18T08:39:24+00:00",
  "counts": {
-  "ok": 470,
-  "unknown": 73,
-  "dead": 32
+  "unknown": 65,
+  "ok": 486,
+  "dead": 29
  },
- "jobs_dead": [
-  {
-   "id": "8d24f53e61db",
-   "company": "Arla Foods",
-   "title": "Finance Graduate Programme 2027",
-   "url": "https://jobs.arla.com/global/en/job/111629",
-   "why": "viderestillet væk fra opslaget (https://jobs.arla.com/gb/en)"
-  }
- ],
+ "jobs_dead": [],
  "jobs_stale": [],
  "career_dead": [
   {
@@ -73,12 +65,6 @@
   {
    "company": "Klimarådet",
    "url": "https://klimaraadet.dk/da/om-klimaraadet/job",
-   "why": "HTTP 404",
-   "replaced_by": null
-  },
-  {
-   "company": "Copenhagen Economics",
-   "url": "https://copenhageneconomics.com/careers/",
    "why": "HTTP 404",
    "replaced_by": null
   },
@@ -179,12 +165,6 @@
    "replaced_by": null
   },
   {
-   "company": "Lunar",
-   "url": "https://www.lunar.app/en/careers",
-   "why": "HTTP 404",
-   "replaced_by": null
-  },
-  {
    "company": "Coolshop",
    "url": "https://www.coolshop.dk/job",
    "why": "HTTP 404",
@@ -207,15 +187,9 @@
   "https://career2.successfactors.eu/career?company=royalunibr&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
   "https://career5.successfactors.eu/career?company=bangolufse&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
   "https://career5.successfactors.eu/career?company=sampensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
-  "https://careers.trustpilot.com",
-  "https://dr.jobs.hr.cloud.sap/job/K%C3%B8benhavn-K-Vil-du-v%C3%A6re-med-til-at-s%C3%A6tte-DR-i-feedet-Vi-s%C3%B8ger-en-kreativ-studentermedhj%C3%A6lper-til-sociale-medier-0999/1456502533/",
   "https://flsmidth.wd3.myworkdayjobs.com/FLS_Global",
   "https://gn.wd3.myworkdayjobs.com/GN-Careers",
-  "https://if.wd502.myworkdayjobs.com/Careers",
-  "https://if.wd502.myworkdayjobs.com/Careers/job/Viby/Studentermedhjlper-til-mdebooking_JobReqID11708-1",
   "https://iff.wd5.myworkdayjobs.com/IFF_Careers",
-  "https://jobs.ambu.com/job/Ballerup-Student-Assistant%2C-People-&-Culture/1454767433/",
-  "https://jobs.dsv.com",
   "https://lego.wd103.myworkdayjobs.com/LEGO_External",
   "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers",
   "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers/job/Denmark-Copenhagen-1098/Talent-Acquisition-Intern---Early-Careers-_R199126",
@@ -239,8 +213,6 @@
   "https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank/job/Headquarters/Client-Service-Associate_R-15368",
   "https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank/job/Headquarters/Student-Assistant---Unsolicited-Application_R-13931",
   "https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank/job/Headquarters/Student-Digital-Sales-Associate_R-15566",
-  "https://sedgwick.wd1.myworkdayjobs.com/Sedgwick",
-  "https://sedgwick.wd1.myworkdayjobs.com/Sedgwick/job/DK-Ballerup/Juridisk-studentermedhjlper_R80024",
   "https://shell.wd3.myworkdayjobs.com/ShellCareers",
   "https://stark.wd3.myworkdayjobs.com/STARK-Denmark",
   "https://stark.wd3.myworkdayjobs.com/STARK-Denmark/job/Brabrand/Salgstrainee-til-butiksteamet---STARK-Brabrand_JR40467",
@@ -259,10 +231,10 @@
   "https://www.gn.com/careers",
   "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs",
   "https://www.lundbeck.com/global/careers/your-job/job-opportunities",
-  "https://www.matas.dk/job",
   "https://www.mckinsey.com/careers/search-jobs/jobs/businessanalystintern-15275",
   "https://www.mckinsey.com/careers/search-jobs/jobs/fellowintern-20421",
   "https://www.mckinsey.com/careers/search-jobs?cities=Copenhagen",
+  "https://www.nykredit.com/karriere/stillinger/",
   "https://www.parkensport.dk/job",
   "https://www.postnord.dk/om-os/job-i-postnord",
   "https://www.pwc.dk/da/karriere.html",
