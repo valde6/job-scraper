@@ -1,71 +1,38 @@
 {
- "started": "2026-11-18T08:37:43+00:00",
- "ads_read": 14,
- "candidates": [
-  {
-   "name": "Lemvigh-Müller A/S",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143629&DepartmentId=18973&MediaId=4635&SkipAdvertisement=true"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143629&DepartmentId=18973&MediaId=4635&SkipAdvertisement=true",
-   "cid": "3341",
-   "listed": 0,
-   "matched": 0
-  },
-  {
-   "name": "Københavns Professionshøjskole",
-   "type": "emply",
-   "cfg": {
-    "url": "https://kp.career.emply.com"
-   },
-   "evidence": "https://kp.career.emply.com/ad/klargoringsassistent-lager-og-administration-pa-cfu/fg4v8l/da",
-   "listed": 0,
-   "matched": 0
-  }
- ],
+ "started": "2026-11-19T08:58:56+00:00",
+ "ads_read": 46,
+ "candidates": [],
  "added": [],
  "rejected": [
   {
-   "name": "Lemvigh-Müller A/S",
+   "name": "Forca A/S",
    "type": "hrmanager",
    "cfg": {
-    "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143629&DepartmentId=18973&MediaId=4635&SkipAdvertisement=true"
+    "cid": "2248",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2248&ProjectId=143945&DepartmentId=18960&MediaId=4615"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143629&DepartmentId=18973&MediaId=4635&SkipAdvertisement=true",
-   "cid": "3341",
-   "reason": "0 opslag"
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2248&ProjectId=143945&DepartmentId=18960&MediaId=4615",
+   "reason": "HR-Manager-alias ikke fundet"
   },
   {
    "name": "Odense Kommune",
    "type": "hrmanager",
    "cfg": {
     "cid": "3256",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144979&DepartmentId=19151&MediaId=4630&SkipAdvertisement=true"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144975&DepartmentId=19151&MediaId=4630&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144979&DepartmentId=19151&MediaId=4630&SkipAdvertisement=true",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144975&DepartmentId=19151&MediaId=4630&SkipAdvertisement=true",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
-   "name": "Professionshøjskolen Absalon",
+   "name": "Red Barnet",
    "type": "hrmanager",
    "cfg": {
-    "cid": "5001",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194557&DepartmentId=10157&MediaId=5"
+    "cid": "399",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=399&ProjectId=179909&DepartmentId=21532&MediaId=59"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194557&DepartmentId=10157&MediaId=5",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=399&ProjectId=179909&DepartmentId=21532&MediaId=59",
    "reason": "HR-Manager-alias ikke fundet"
-  },
-  {
-   "name": "Københavns Professionshøjskole",
-   "type": "emply",
-   "cfg": {
-    "url": "https://kp.career.emply.com"
-   },
-   "evidence": "https://kp.career.emply.com/ad/klargoringsassistent-lager-og-administration-pa-cfu/fg4v8l/da",
-   "reason": "0 opslag"
   }
  ]
 }
