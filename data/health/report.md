@@ -1,13 +1,13 @@
-# Scraper-sundhed 2026-11-18T07:58:39+00:00
+# Scraper-sundhed 2026-11-19T07:58:44+00:00
 
-Aktive job: 37. Kilder med problemer: 7.
+Aktive job: 39. Kilder med problemer: 7.
 
 | Kilde | Type | Problem | I træk | Detalje |
 |---|---|---|---|---|
-| A.P. Møller - Mærsk | workday | fejl | 3 | HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Care |
-| LEGO Group | workday | fejl | 3 | HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External |
-| PwC | workday | fejl | 3 | HTTPError: 429 Client Error: Too Many Requests for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Car |
-| Saxo Bank | workday | fejl | 1 | HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/Careera |
-| Accenture | workday | fejl | 3 | HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/Acc |
-| Danmarks Radio | hrmanager | mistænkelig | 32 | 0 opslag (sidst 16) |
-| Novonesis | workday | fejl | 3 | HTTPError: 429 Client Error: Too Many Requests for url: https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Nov |
+| A.P. Møller - Mærsk | workday | fejl | 4 | HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Care |
+| LEGO Group | workday | fejl | 4 | HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External |
+| PwC | workday | fejl | 4 | HTTPError: 429 Client Error: Too Many Requests for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Car |
+| Saxo Bank | workday | fejl | 2 | HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/Careera |
+| Accenture | workday | fejl | 4 | HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/Acc |
+| Danmarks Radio | hrmanager | mistænkelig | 33 | 0 opslag (sidst 16) |
+| Novonesis | workday | fejl | 4 | HTTPError: 429 Client Error: Too Many Requests for url: https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Nov |
