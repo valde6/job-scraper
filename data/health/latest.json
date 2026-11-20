@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-19T07:58:44+00:00",
+ "ts": "2026-11-20T07:48:58+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -18,7 +18,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 4,
+   "streak": 5,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs"
   },
   {
@@ -38,15 +38,15 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 4,
+   "streak": 5,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs"
   },
   {
    "name": "Danske Bank",
    "type": "oracle",
    "ok": true,
-   "listed": 4,
-   "matched": 1,
+   "listed": 5,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -55,7 +55,7 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 29,
+   "listed": 30,
    "matched": 7,
    "problem": null,
    "streak": 0,
@@ -68,7 +68,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 4,
+   "streak": 5,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs"
   },
   {
@@ -135,7 +135,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 37,
+   "listed": 36,
    "matched": 7,
    "problem": null,
    "streak": 0,
@@ -198,7 +198,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 2,
+   "streak": 3,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs"
   },
   {
@@ -266,7 +266,7 @@
    "type": "teamtailor",
    "ok": true,
    "listed": 11,
-   "matched": 2,
+   "matched": 3,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -365,8 +365,8 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 6,
-   "matched": 1,
+   "listed": 7,
+   "matched": 2,
    "problem": null,
    "streak": 0,
    "detail": null
@@ -385,7 +385,7 @@
    "name": "Amazon",
    "type": "amazon",
    "ok": true,
-   "listed": 6,
+   "listed": 7,
    "matched": 0,
    "problem": null,
    "streak": 0,
@@ -448,7 +448,7 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 4,
+   "streak": 5,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs"
   },
   {
@@ -458,7 +458,7 @@
    "listed": 0,
    "matched": 0,
    "problem": "mistænkelig",
-   "streak": 33,
+   "streak": 34,
    "detail": "0 opslag (sidst 16)"
   },
   {
@@ -485,7 +485,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 54,
+   "listed": 58,
    "matched": 1,
    "problem": null,
    "streak": 0,
@@ -498,28 +498,28 @@
    "listed": null,
    "matched": null,
    "problem": "fejl",
-   "streak": 4,
+   "streak": 5,
    "detail": "HTTPError: 429 Client Error: Too Many Requests for url: https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Novonesis_Careers/jobs"
   },
   {
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 374,
-   "matched": 28,
+   "listed": 402,
+   "matched": 27,
    "problem": null,
    "streak": 0,
    "detail": null
   }
  ],
  "alerts": [
-  "**A.P. Møller - Mærsk** (workday): fejl i 4 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs",
-  "**LEGO Group** (workday): fejl i 4 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs",
-  "**PwC** (workday): fejl i 4 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs",
-  "**Saxo Bank** (workday): fejl i 2 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs",
-  "**Accenture** (workday): fejl i 4 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs",
-  "**Danmarks Radio** (hrmanager): mistænkelig i 33 kørsler i træk – 0 opslag (sidst 16)",
-  "**Novonesis** (workday): fejl i 4 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Novonesis_Careers/jobs"
+  "**A.P. Møller - Mærsk** (workday): fejl i 5 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs",
+  "**LEGO Group** (workday): fejl i 5 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs",
+  "**PwC** (workday): fejl i 5 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs",
+  "**Saxo Bank** (workday): fejl i 3 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs",
+  "**Accenture** (workday): fejl i 5 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs",
+  "**Danmarks Radio** (hrmanager): mistænkelig i 34 kørsler i træk – 0 opslag (sidst 16)",
+  "**Novonesis** (workday): fejl i 5 kørsler i træk – HTTPError: 429 Client Error: Too Many Requests for url: https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Novonesis_Careers/jobs"
  ],
- "active": 39
+ "active": 42
 }

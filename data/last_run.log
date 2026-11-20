@@ -145,29 +145,29 @@ requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: http
 Novo Nordisk                     successfactors  True 6 3 
 A.P. Møller - Mærsk              workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs
 LEGO Group                       workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs
-Danske Bank                      oracle          True 4 1 
-Deloitte                         smartrecruiters True 29 7 
+Danske Bank                      oracle          True 5 2 
+Deloitte                         smartrecruiters True 30 7 
 PwC                              workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs
 Boston Consulting Group (BCG)    eightfold       True 4 0 
 Nordea                           nordea          True 8 2 
 EY                               yello           True 5 2 
-Nykredit                         browser         True 37 7 
+Nykredit                         browser         True 36 7 
 Vestas                           successfactors  True 7 0 
 Saxo Bank                        workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs
 Arla Foods                       phenom          True 10 0 
-Dansk Industri                   teamtailor      True 11 2 
+Dansk Industri                   teamtailor      True 11 3 
 Ørsted                           browser         True 35 0 
 KPMG                             hrmanager       True 9 0 
 PA Consulting Group              smartrecruiters True 10 0 
 Danske Commodities               teamtailor      True 7 3 
 Netcompany                       smartrecruiters True 33 3 
-PFA Pension                      browser         True 6 1 
-Amazon                           amazon          True 6 0 
+PFA Pension                      browser         True 7 2 
+Amazon                           amazon          True 7 0 
 IKEA                             generic         True 30 0 
 Accenture                        workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs
 Danmarks Radio                   hrmanager       True 0 0 
-Rambøll                          smartrecruiters True 54 1 
+Rambøll                          smartrecruiters True 58 1 
 Novonesis                        workday         False   HTTPError: 429 Client Error: Too Many Requests for url: https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Novonesis_Careers/jobs
-Jobindex: {'sikker': 26, 'sandsynlig': 1, 'mulig': 1, 'body_fetch': 28}
+Jobindex: {'sikker': 25, 'sandsynlig': 1, 'mulig': 1, 'body_fetch': 15}
 
-Færdig: 60 fundet i dag, 13 nye, 168 aktive i alt.
+Færdig: 62 fundet i dag, 5 nye, 167 aktive i alt.
