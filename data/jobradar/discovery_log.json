@@ -1,17 +1,27 @@
 {
- "started": "2026-11-19T08:58:56+00:00",
- "ads_read": 46,
+ "started": "2026-11-20T08:39:23+00:00",
+ "ads_read": 25,
  "candidates": [],
  "added": [],
  "rejected": [
   {
-   "name": "Forca A/S",
+   "name": "Køge Kommune",
    "type": "hrmanager",
    "cfg": {
-    "cid": "2248",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2248&ProjectId=143945&DepartmentId=18960&MediaId=4615"
+    "cid": "3378",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3378&ProjectId=143642&DepartmentId=19851&MediaId=4634"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2248&ProjectId=143945&DepartmentId=18960&MediaId=4615",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3378&ProjectId=143642&DepartmentId=19851&MediaId=4634",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Dansk Flygtningehjælp",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "1036",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1036&ProjectId=177243&DepartmentId=19119&MediaId=59"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1036&ProjectId=177243&DepartmentId=19119&MediaId=59",
    "reason": "HR-Manager-alias ikke fundet"
   },
   {
@@ -19,19 +29,9 @@
    "type": "hrmanager",
    "cfg": {
     "cid": "3256",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144975&DepartmentId=19151&MediaId=4630&SkipAdvertisement=true"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144973&DepartmentId=19812&MediaId=4630&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144975&DepartmentId=19151&MediaId=4630&SkipAdvertisement=true",
-   "reason": "HR-Manager-alias ikke fundet"
-  },
-  {
-   "name": "Red Barnet",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "399",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=399&ProjectId=179909&DepartmentId=21532&MediaId=59"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=399&ProjectId=179909&DepartmentId=21532&MediaId=59",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144973&DepartmentId=19812&MediaId=4630&SkipAdvertisement=true",
    "reason": "HR-Manager-alias ikke fundet"
   }
  ]
