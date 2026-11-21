@@ -1,12 +1,20 @@
 {
- "checked": "2026-11-20T08:48:38+00:00",
+ "checked": "2026-11-21T08:44:41+00:00",
  "counts": {
   "unknown": 58,
-  "ok": 479,
+  "ok": 478,
   "dead": 29
  },
  "jobs_dead": [],
- "jobs_stale": [],
+ "jobs_stale": [
+  {
+   "id": "e3e9d4574104",
+   "company": "If Skadeforsikring",
+   "title": "Studentermedhjælper til mødebooking",
+   "url": "https://if.wd502.myworkdayjobs.com/Careers/job/Viby/Studentermedhjlper-til-mdebooking_JobReqID11708-1",
+   "why": "ikke set hos kilden i 6 dage (HTTP 429)"
+  }
+ ],
  "career_dead": [
   {
    "company": "Danmarks Nationalbank",
@@ -190,6 +198,8 @@
   "https://career5.successfactors.eu/career?company=sampensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
   "https://flsmidth.wd3.myworkdayjobs.com/FLS_Global",
   "https://gn.wd3.myworkdayjobs.com/GN-Careers",
+  "https://if.wd502.myworkdayjobs.com/Careers",
+  "https://if.wd502.myworkdayjobs.com/Careers/job/Viby/Studentermedhjlper-til-mdebooking_JobReqID11708-1",
   "https://iff.wd5.myworkdayjobs.com/IFF_Careers",
   "https://lego.wd103.myworkdayjobs.com/LEGO_External",
   "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers",
@@ -205,7 +215,6 @@
   "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/Bliv-revisortrainee-hos-PwC-Hellerup---start-din-karriere-og-tag-en-uddannelse-samtidig-_753519WD",
   "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/Praktikant---f-bred-erfaring-med-HR--lring-og-udvikling_765731WD",
   "https://redbarnet.dk/om-red-barnet/job",
-  "https://roompot.wd103.myworkdayjobs.com/Landal",
   "https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank",
   "https://sedgwick.wd1.myworkdayjobs.com/Sedgwick",
   "https://shell.wd3.myworkdayjobs.com/ShellCareers",
@@ -224,7 +233,6 @@
   "https://www.gn.com/careers",
   "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs",
   "https://www.lundbeck.com/global/careers/your-job/job-opportunities",
-  "https://www.matas.dk/job",
   "https://www.mckinsey.com/careers/search-jobs/jobs/businessanalystintern-15275",
   "https://www.mckinsey.com/careers/search-jobs/jobs/fellowintern-20421",
   "https://www.mckinsey.com/careers/search-jobs?cities=Copenhagen",

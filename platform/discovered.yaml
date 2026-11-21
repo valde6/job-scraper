@@ -954,3 +954,13 @@ employers:
     at: '2026-11-17'
     via: jobindex-link
     evidence: https://career.ssid.com/jobs/8382829-dyrepasser-til-forsogsgard-i-allerod?promotion=2297634-jobindex
+- name: Furesø Kommune (emply)
+  career_url: https://furesoe-1.career.emply.com
+  status: opdaget
+  source:
+    type: emply
+    url: https://furesoe-1.career.emply.com
+  discovered:
+    at: '2026-11-21'
+    via: jobindex-link
+    evidence: https://furesoe-1.career.emply.com/ad/har-du-lyst-til-at-arbejde-som-paedagogisk-vikar-i-et-dagtilbud-hvor-mange-vaelger/gzvom7/da
