@@ -1,30 +1,30 @@
-# Scraper-sundhed 2026-11-21T08:44:41+00:00
+# Scraper-sundhed 2026-11-22T08:11:25+00:00
 
-Aktive job: 227. Kilder med problemer: 24.
+Aktive job: 222. Kilder med problemer: 24.
 
 | Kilde | Type | Problem | I træk | Detalje |
 |---|---|---|---|---|
-| A.P. Møller - Mærsk | workday | fejl | 7 | JSONDecodeError: Expecting value: line 1 column 1 (char 0) |
-| LEGO Group | workday | fejl | 7 | HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External |
-| PwC | workday | fejl | 5 | HTTPError: 429 Client Error: Too Many Requests for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Car |
-| Jyske Bank | generic | fejl | 31 | HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs |
-| Saxo Bank | workday | fejl | 7 | HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/Careera |
-| Accenture | workday | fejl | 7 | HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/Acc |
-| Novonesis | workday | fejl | 7 | HTTPError: 429 Client Error: Too Many Requests for url: https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Nov |
-| Gorrissen Federspiel | generic | fejl | 27 | HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/ |
-| If Skadeforsikring | workday | fejl | 7 | HTTPError: 429 Client Error: Too Many Requests for url: https://if.wd502.myworkdayjobs.com/wday/cxs/if/Careers/job/Kbenh |
-| Visma DataLøn | teamtailor | mistænkelig | 6 | 0 opslag (sidst 1) |
-| Svitzer | workday | fejl | 7 | HTTPError: 429 Client Error: Too Many Requests for url: https://svitzer.wd3.myworkdayjobs.com/wday/cxs/svitzer/Svitzer_C |
-| Akademikernes A-kasse | emply | mistænkelig | 2 | 0 opslag (sidst 1) |
-| GN Group | workday | fejl | 7 | HTTPError: 429 Client Error: Too Many Requests for url: https://gn.wd3.myworkdayjobs.com/wday/cxs/gn/GN-Careers/jobs |
-| FLSmidth | workday | fejl | 7 | HTTPError: 429 Client Error: Too Many Requests for url: https://flsmidth.wd3.myworkdayjobs.com/wday/cxs/flsmidth/FLS_Glo |
-| Copenhagen Economics | generic | aldrig data | 5 |  |
-| NetNordic Denmark A/S | teamtailor | mistænkelig | 1 | 0 opslag (sidst 1) |
-| Agilent Technologies Denmark | workday | fejl | 7 | JSONDecodeError: Expecting value: line 1 column 1 (char 0) |
-| GEV | emply | mistænkelig | 21 | 0 opslag (sidst 1) |
-| STARK Danmark | workday | fejl | 7 | HTTPError: 429 Client Error: Too Many Requests for url: https://stark.wd3.myworkdayjobs.com/wday/cxs/stark/STARK-Denmark |
-| Zealand Pharma A/S | workday | fejl | 7 | HTTPError: 429 Client Error: Too Many Requests for url: https://zealandpharma.wd3.myworkdayjobs.com/wday/cxs/zealandphar |
-| Sedgwick Danmark | workday | fejl | 7 | HTTPError: 429 Client Error: Too Many Requests for url: https://sedgwick.wd1.myworkdayjobs.com/wday/cxs/sedgwick/Sedgwic |
-| Hamamatsu Photonics | workday | fejl | 7 | HTTPError: 429 Client Error: Too Many Requests for url: https://photonics.wd103.myworkdayjobs.com/wday/cxs/photonics/Job |
-| IFF | workday | fejl | 7 | HTTPError: 429 Client Error: Too Many Requests for url: https://iff.wd5.myworkdayjobs.com/wday/cxs/iff/IFF_Careers/jobs |
-| Shell Biogas A/S | workday | fejl | 7 | HTTPError: 429 Client Error: Too Many Requests for url: https://shell.wd3.myworkdayjobs.com/wday/cxs/shell/ShellCareers/ |
+| A.P. Møller - Mærsk | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Care |
+| LEGO Group | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External |
+| PwC | workday | fejl | 6 | HTTPError: 429 Client Error: Too Many Requests for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Car |
+| Jyske Bank | generic | fejl | 32 | HTTPError: 403 Client Error: Forbidden for url: https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs |
+| Saxo Bank | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/Careera |
+| Accenture | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/Acc |
+| Novonesis | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Nov |
+| Gorrissen Federspiel | generic | fejl | 28 | HTTPError: 454 Client Error:  for url: https://gorrissenfederspiel.com/jobs/ |
+| If Skadeforsikring | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://if.wd502.myworkdayjobs.com/wday/cxs/if/Careers/job/Talli |
+| Visma DataLøn | teamtailor | mistænkelig | 7 | 0 opslag (sidst 1) |
+| Svitzer | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://svitzer.wd3.myworkdayjobs.com/wday/cxs/svitzer/Svitzer_C |
+| Akademikernes A-kasse | emply | mistænkelig | 3 | 0 opslag (sidst 1) |
+| GN Group | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://gn.wd3.myworkdayjobs.com/wday/cxs/gn/GN-Careers/jobs |
+| FLSmidth | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://flsmidth.wd3.myworkdayjobs.com/wday/cxs/flsmidth/FLS_Glo |
+| Copenhagen Economics | generic | aldrig data | 6 |  |
+| NetNordic Denmark A/S | teamtailor | mistænkelig | 2 | 0 opslag (sidst 1) |
+| Agilent Technologies Denmark | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_C |
+| GEV | emply | mistænkelig | 22 | 0 opslag (sidst 1) |
+| STARK Danmark | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://stark.wd3.myworkdayjobs.com/wday/cxs/stark/STARK-Denmark |
+| Zealand Pharma A/S | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://zealandpharma.wd3.myworkdayjobs.com/wday/cxs/zealandphar |
+| Sedgwick Danmark | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://sedgwick.wd1.myworkdayjobs.com/wday/cxs/sedgwick/Sedgwic |
+| Hamamatsu Photonics | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://photonics.wd103.myworkdayjobs.com/wday/cxs/photonics/Job |
+| IFF | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://iff.wd5.myworkdayjobs.com/wday/cxs/iff/IFF_Careers/jobs |
+| Shell Biogas A/S | workday | fejl | 8 | HTTPError: 429 Client Error: Too Many Requests for url: https://shell.wd3.myworkdayjobs.com/wday/cxs/shell/ShellCareers/ |

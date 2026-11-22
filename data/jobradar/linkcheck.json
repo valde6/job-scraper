@@ -1,18 +1,32 @@
 {
- "checked": "2026-11-21T08:44:41+00:00",
+ "checked": "2026-11-22T08:11:25+00:00",
  "counts": {
-  "unknown": 58,
-  "ok": 478,
+  "unknown": 56,
+  "ok": 477,
   "dead": 29
  },
  "jobs_dead": [],
  "jobs_stale": [
   {
-   "id": "e3e9d4574104",
-   "company": "If Skadeforsikring",
-   "title": "Studentermedhjælper til mødebooking",
-   "url": "https://if.wd502.myworkdayjobs.com/Careers/job/Viby/Studentermedhjlper-til-mdebooking_JobReqID11708-1",
-   "why": "ikke set hos kilden i 6 dage (HTTP 429)"
+   "id": "eac4640430e2",
+   "company": "PwC",
+   "title": "Praktikant – få bred erfaring med HR, læring og udvikling",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/Praktikant---f-bred-erfaring-med-HR--lring-og-udvikling_765731WD",
+   "why": "ikke set hos kilden i 5 dage (HTTP 429)"
+  },
+  {
+   "id": "4f838d448ea6",
+   "company": "PwC",
+   "title": "Bliv revisorgraduate hos PwC Hellerup og kom helt tæt på kunderne fra dag 1",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/Bliv-revisorgraduate-hos-PwC-Hellerup-og-kom-helt-tt-p-kunderne-fra-dag-1_753522WD-1",
+   "why": "ikke set hos kilden i 5 dage (HTTP 429)"
+  },
+  {
+   "id": "073f7802f435",
+   "company": "PwC",
+   "title": "Bliv revisortrainee hos PwC Hellerup - start din karriere og tag en uddannelse samtidig!",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/Bliv-revisortrainee-hos-PwC-Hellerup---start-din-karriere-og-tag-en-uddannelse-samtidig-_753519WD",
+   "why": "ikke set hos kilden i 5 dage (HTTP 429)"
   }
  ],
  "career_dead": [
@@ -198,8 +212,6 @@
   "https://career5.successfactors.eu/career?company=sampensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
   "https://flsmidth.wd3.myworkdayjobs.com/FLS_Global",
   "https://gn.wd3.myworkdayjobs.com/GN-Careers",
-  "https://if.wd502.myworkdayjobs.com/Careers",
-  "https://if.wd502.myworkdayjobs.com/Careers/job/Viby/Studentermedhjlper-til-mdebooking_JobReqID11708-1",
   "https://iff.wd5.myworkdayjobs.com/IFF_Careers",
   "https://lego.wd103.myworkdayjobs.com/LEGO_External",
   "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers",
@@ -215,6 +227,7 @@
   "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/Bliv-revisortrainee-hos-PwC-Hellerup---start-din-karriere-og-tag-en-uddannelse-samtidig-_753519WD",
   "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Copenhagen/Praktikant---f-bred-erfaring-med-HR--lring-og-udvikling_765731WD",
   "https://redbarnet.dk/om-red-barnet/job",
+  "https://roompot.wd103.myworkdayjobs.com/Landal",
   "https://saxobank.wd3.myworkdayjobs.com/CareeratSaxoBank",
   "https://sedgwick.wd1.myworkdayjobs.com/Sedgwick",
   "https://shell.wd3.myworkdayjobs.com/ShellCareers",
@@ -230,7 +243,6 @@
   "https://www.coloplast.com/careers/",
   "https://www.elgiganten.dk/info/job",
   "https://www.gf-forsikring.dk/om-gf/job",
-  "https://www.gn.com/careers",
   "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs",
   "https://www.lundbeck.com/global/careers/your-job/job-opportunities",
   "https://www.mckinsey.com/careers/search-jobs/jobs/businessanalystintern-15275",

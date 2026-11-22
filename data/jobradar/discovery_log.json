@@ -1,46 +1,7 @@
 {
- "started": "2026-11-21T08:21:19+00:00",
- "ads_read": 28,
- "candidates": [
-  {
-   "name": "Furesø Kommune",
-   "type": "emply",
-   "cfg": {
-    "url": "https://furesoe-1.career.emply.com"
-   },
-   "evidence": "https://furesoe-1.career.emply.com/ad/har-du-lyst-til-at-arbejde-som-paedagogisk-vikar-i-et-dagtilbud-hvor-mange-vaelger/gzvom7/da",
-   "listed": 3,
-   "matched": 0
-  }
- ],
- "added": [
-  {
-   "name": "Furesø Kommune (emply)",
-   "type": "emply",
-   "listed": 3,
-   "matched": 0
-  }
- ],
- "rejected": [
-  {
-   "name": "Odense Kommune",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "3256",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=145010&DepartmentId=20058&MediaId=4630&SkipAdvertisement=true"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=145010&DepartmentId=20058&MediaId=4630&SkipAdvertisement=true",
-   "reason": "HR-Manager-alias ikke fundet"
-  },
-  {
-   "name": "IT-Universitetet i København",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "119",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181922&DepartmentId=3439&MediaId=5"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181922&DepartmentId=3439&MediaId=5",
-   "reason": "HR-Manager-alias ikke fundet"
-  }
- ]
+ "started": "2026-11-22T08:06:49+00:00",
+ "ads_read": 2,
+ "candidates": [],
+ "added": [],
+ "rejected": []
 }
