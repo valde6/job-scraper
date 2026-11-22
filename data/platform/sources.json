@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T07:44:47+00:00",
+ "generated_at": "2026-11-22T07:30:23+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -15,7 +15,7 @@
    "ok": false,
    "listed": null,
    "matched": null,
-   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs"
   },
   {
    "name": "McKinsey & Company",
@@ -159,7 +159,7 @@
    "ok": false,
    "listed": null,
    "matched": null,
-   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs"
   },
   {
    "name": "Finansministeriet",
@@ -389,7 +389,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 57,
+   "listed": 61,
    "matched": 1,
    "error": null
   },
