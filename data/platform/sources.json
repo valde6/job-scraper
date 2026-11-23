@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-22T07:30:23+00:00",
+ "generated_at": "2026-11-23T08:18:31+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
    "ok": true,
-   "listed": 5,
-   "matched": 3,
+   "listed": 3,
+   "matched": 2,
    "error": null
   },
   {
@@ -37,7 +37,7 @@
    "name": "Danske Bank",
    "type": "oracle",
    "ok": true,
-   "listed": 5,
+   "listed": 4,
    "matched": 2,
    "error": null
   },
@@ -109,8 +109,8 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 36,
-   "matched": 7,
+   "listed": 34,
+   "matched": 6,
    "error": null
   },
   {
@@ -229,7 +229,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 34,
+   "listed": 32,
    "matched": 0,
    "error": null
   },
@@ -293,7 +293,7 @@
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 9,
+   "listed": 6,
    "matched": 2,
    "error": null
   },
@@ -389,7 +389,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 61,
+   "listed": 60,
    "matched": 1,
    "error": null
   },
@@ -405,8 +405,8 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 406,
-   "matched": 30,
+   "listed": 403,
+   "matched": 31,
    "error": null
   }
  ]
