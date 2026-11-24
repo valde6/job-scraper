@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T08:18:31+00:00",
+ "updated": "2026-11-24T10:27:49+00:00",
  "companies": [
   {
    "company": "Novo Nordisk",
@@ -8,7 +8,7 @@
    "ok": true,
    "listed": 3,
    "matched": 2,
-   "seconds": 2.2
+   "seconds": 1.8
   },
   {
    "company": "A.P. Møller - Mærsk",
@@ -17,7 +17,7 @@
    "ok": false,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs",
    "last_good_listed": 404,
-   "seconds": 15.0
+   "seconds": 16.5
   },
   {
    "company": "McKinsey & Company",
@@ -42,16 +42,16 @@
    "ok": true,
    "listed": 4,
    "matched": 2,
-   "seconds": 3.6
+   "seconds": 2.3
   },
   {
    "company": "Deloitte",
    "rank": 6,
    "source": "smartrecruiters",
    "ok": true,
-   "listed": 29,
+   "listed": 33,
    "matched": 7,
-   "seconds": 12.5
+   "seconds": 13.8
   },
   {
    "company": "PwC",
@@ -76,7 +76,7 @@
    "ok": true,
    "listed": 4,
    "matched": 0,
-   "seconds": 0.3
+   "seconds": 0.4
   },
   {
    "company": "Nordea",
@@ -84,8 +84,8 @@
    "source": "nordea",
    "ok": true,
    "listed": 9,
-   "matched": 3,
-   "seconds": 7.0
+   "matched": 2,
+   "seconds": 3.8
   },
   {
    "company": "Microsoft",
@@ -101,7 +101,7 @@
    "ok": true,
    "listed": 6,
    "matched": 2,
-   "seconds": 1.6
+   "seconds": 1.0
   },
   {
    "company": "Jyske Bank",
@@ -117,7 +117,7 @@
    "ok": true,
    "listed": 34,
    "matched": 6,
-   "seconds": 49.5
+   "seconds": 48.2
   },
   {
    "company": "Bestseller",
@@ -145,9 +145,11 @@
    "rank": 18,
    "source": "successfactors",
    "ok": true,
-   "listed": 7,
+   "listed": 0,
    "matched": 0,
-   "seconds": 2.0
+   "suspect": "0 opslag (sidst 7)",
+   "last_good_listed": 7,
+   "seconds": 1.1
   },
   {
    "company": "Implement",
@@ -193,7 +195,7 @@
    "ok": true,
    "listed": 10,
    "matched": 0,
-   "seconds": 23.8
+   "seconds": 32.0
   },
   {
    "company": "Udenrigsministeriet",
@@ -214,9 +216,9 @@
    "rank": 27,
    "source": "teamtailor",
    "ok": true,
-   "listed": 12,
+   "listed": 11,
    "matched": 3,
-   "seconds": 0.5
+   "seconds": 0.3
   },
   {
    "company": "Nordnet",
@@ -230,18 +232,18 @@
    "rank": 29,
    "source": "browser",
    "ok": true,
-   "listed": 32,
+   "listed": 33,
    "matched": 0,
-   "seconds": 7.6
+   "seconds": 7.3
   },
   {
    "company": "KPMG",
    "rank": 30,
    "source": "hrmanager",
    "ok": true,
-   "listed": 9,
+   "listed": 8,
    "matched": 0,
-   "seconds": 1.0
+   "seconds": 2.3
   },
   {
    "company": "Matas",
@@ -264,7 +266,7 @@
    "ok": true,
    "listed": 10,
    "matched": 0,
-   "seconds": 4.7
+   "seconds": 4.5
   },
   {
    "company": "Københavns Lufthavne",
@@ -279,17 +281,17 @@
    "source": "teamtailor",
    "ok": true,
    "listed": 8,
-   "matched": 4,
-   "seconds": 0.8
+   "matched": 3,
+   "seconds": 0.4
   },
   {
    "company": "Netcompany",
    "rank": 36,
    "source": "smartrecruiters",
    "ok": true,
-   "listed": 34,
+   "listed": 35,
    "matched": 3,
-   "seconds": 14.3
+   "seconds": 14.8
   },
   {
    "company": "PFA Pension",
@@ -298,7 +300,7 @@
    "ok": true,
    "listed": 6,
    "matched": 2,
-   "seconds": 20.2
+   "seconds": 20.1
   },
   {
    "company": "SAS",
@@ -312,9 +314,9 @@
    "rank": 39,
    "source": "amazon",
    "ok": true,
-   "listed": 7,
+   "listed": 6,
    "matched": 0,
-   "seconds": 0.6
+   "seconds": 0.5
   },
   {
    "company": "Beierholm",
@@ -360,7 +362,7 @@
    "ok": false,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs",
    "last_good_listed": 2,
-   "seconds": 21.0
+   "seconds": 14.9
   },
   {
    "company": "Danmarks Radio",
@@ -392,9 +394,9 @@
    "rank": 49,
    "source": "smartrecruiters",
    "ok": true,
-   "listed": 60,
+   "listed": 63,
    "matched": 1,
-   "seconds": 24.3
+   "seconds": 25.8
   },
   {
    "company": "Novonesis",
@@ -409,13 +411,13 @@
    "company": "(Jobindex RSS)",
    "source": "jobindex",
    "ok": true,
-   "listed": 403,
-   "matched": 31,
+   "listed": 402,
+   "matched": 30,
    "fit": {
-    "sikker": 28,
+    "sikker": 27,
     "sandsynlig": 1,
     "mulig": 2,
-    "body_fetch": 3
+    "body_fetch": 16
    }
   }
  ]
