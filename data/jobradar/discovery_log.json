@@ -1,28 +1,69 @@
 {
- "started": "2026-11-23T09:12:37+00:00",
- "ads_read": 7,
+ "started": "2026-11-24T11:05:53+00:00",
+ "ads_read": 39,
  "candidates": [
   {
-   "name": "Københavns Professionshøjskole",
-   "type": "emply",
+   "name": "Lemvigh-Müller A/S",
+   "type": "hrmanager",
    "cfg": {
-    "url": "https://kp.career.emply.com"
+    "cid": "3341",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143619&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true"
    },
-   "evidence": "https://kp.career.emply.com/ad/timelaerere-til-diplomuddannelsen-i-skat-i-aalborg-fredericia-eller-kobenhavn/yg6eb0/da",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143619&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true",
+   "cid": "3341",
    "listed": 0,
+   "matched": 0
+  },
+  {
+   "name": "Invita Køkkener",
+   "type": "teamtailor",
+   "cfg": {
+    "url": "https://careers.nobia.com"
+   },
+   "evidence": "https://careers.nobia.com/jobs/8773716-invita-aalborg-soger-erfaren-erhvervskonsulent?promotion=2307677-jobindex",
+   "listed": 38,
    "matched": 0
   }
  ],
- "added": [],
+ "added": [
+  {
+   "name": "Invita Køkkener",
+   "type": "teamtailor",
+   "listed": 38,
+   "matched": 0
+  }
+ ],
  "rejected": [
   {
-   "name": "Københavns Professionshøjskole",
-   "type": "emply",
+   "name": "Professionshøjskolen Absalon",
+   "type": "hrmanager",
    "cfg": {
-    "url": "https://kp.career.emply.com"
+    "cid": "5001",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194564&DepartmentId=9367&MediaId=5"
    },
-   "evidence": "https://kp.career.emply.com/ad/timelaerere-til-diplomuddannelsen-i-skat-i-aalborg-fredericia-eller-kobenhavn/yg6eb0/da",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194564&DepartmentId=9367&MediaId=5",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Lemvigh-Müller A/S",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3341",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143619&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143619&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true",
+   "cid": "3341",
    "reason": "0 opslag"
+  },
+  {
+   "name": "Odense Kommune",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "3256",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144994&DepartmentId=19980&MediaId=4630&SkipAdvertisement=true"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144994&DepartmentId=19980&MediaId=4630&SkipAdvertisement=true",
+   "reason": "HR-Manager-alias ikke fundet"
   }
  ]
 }
