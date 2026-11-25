@@ -1,68 +1,99 @@
 {
- "started": "2026-11-24T11:05:53+00:00",
- "ads_read": 39,
+ "started": "2026-11-25T09:54:43+00:00",
+ "ads_read": 52,
  "candidates": [
+  {
+   "name": "Alipes ApS",
+   "type": "teamtailor",
+   "cfg": {
+    "url": "https://app.teamtailor.com"
+   },
+   "evidence": "https://app.teamtailor.com/companies/sKY7JsaxI5I@eu/dashboard",
+   "listed": 0,
+   "matched": 0
+  },
   {
    "name": "Lemvigh-Müller A/S",
    "type": "hrmanager",
    "cfg": {
     "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143619&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143621&DepartmentId=18971&MediaId=4635&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143619&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143621&DepartmentId=18971&MediaId=4635&SkipAdvertisement=true",
    "cid": "3341",
    "listed": 0,
    "matched": 0
   },
   {
-   "name": "Invita Køkkener",
-   "type": "teamtailor",
+   "name": "CHANGE of Scandinavia A/S",
+   "type": "hrmanager",
    "cfg": {
-    "url": "https://careers.nobia.com"
+    "cid": "1178",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1178&ProjectId=147316&DepartmentId=18982&MediaId=59"
    },
-   "evidence": "https://careers.nobia.com/jobs/8773716-invita-aalborg-soger-erfaren-erhvervskonsulent?promotion=2307677-jobindex",
-   "listed": 38,
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1178&ProjectId=147316&DepartmentId=18982&MediaId=59",
+   "cid": "1178",
+   "listed": 15,
    "matched": 0
   }
  ],
  "added": [
   {
-   "name": "Invita Køkkener",
-   "type": "teamtailor",
-   "listed": 38,
+   "name": "CHANGE of Scandinavia A/S",
+   "type": "hrmanager",
+   "listed": 15,
    "matched": 0
   }
  ],
  "rejected": [
   {
-   "name": "Professionshøjskolen Absalon",
+   "name": "Lederne",
    "type": "hrmanager",
    "cfg": {
-    "cid": "5001",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194564&DepartmentId=9367&MediaId=5"
+    "cid": "2134",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2134&ProjectId=143882&DepartmentId=19106&MediaId=4615"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=5001&ProjectId=194564&DepartmentId=9367&MediaId=5",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2134&ProjectId=143882&DepartmentId=19106&MediaId=4615",
    "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Elis Danmark A/S",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "1062",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1062&ProjectId=145629&DepartmentId=19022&MediaId=59"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1062&ProjectId=145629&DepartmentId=19022&MediaId=59",
+   "reason": "HR-Manager-alias ikke fundet"
+  },
+  {
+   "name": "Alipes ApS",
+   "type": "teamtailor",
+   "cfg": {
+    "url": "https://app.teamtailor.com"
+   },
+   "evidence": "https://app.teamtailor.com/companies/sKY7JsaxI5I@eu/dashboard",
+   "reason": "0 opslag"
   },
   {
    "name": "Lemvigh-Müller A/S",
    "type": "hrmanager",
    "cfg": {
     "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143619&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true"
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143621&DepartmentId=18971&MediaId=4635&SkipAdvertisement=true"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143619&DepartmentId=18979&MediaId=4635&SkipAdvertisement=true",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143621&DepartmentId=18971&MediaId=4635&SkipAdvertisement=true",
    "cid": "3341",
    "reason": "0 opslag"
   },
   {
-   "name": "Odense Kommune",
+   "name": "Vallensbæk Kommune",
    "type": "hrmanager",
    "cfg": {
-    "cid": "3256",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144994&DepartmentId=19980&MediaId=4630&SkipAdvertisement=true"
+    "cid": "234",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=234&ProjectId=183274&DepartmentId=8733&MediaId=5564"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3256&ProjectId=144994&DepartmentId=19980&MediaId=4630&SkipAdvertisement=true",
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=234&ProjectId=183274&DepartmentId=8733&MediaId=5564",
    "reason": "HR-Manager-alias ikke fundet"
   }
  ]
