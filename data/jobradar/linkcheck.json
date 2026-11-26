@@ -1,11 +1,19 @@
 {
- "checked": "2026-11-25T10:23:44+00:00",
+ "checked": "2026-11-26T09:52:59+00:00",
  "counts": {
-  "unknown": 56,
-  "ok": 464,
-  "dead": 29
+  "unknown": 54,
+  "ok": 463,
+  "dead": 30
  },
- "jobs_dead": [],
+ "jobs_dead": [
+  {
+   "id": "8d24f53e61db",
+   "company": "Arla Foods",
+   "title": "Finance Graduate Programme 2027",
+   "url": "https://jobs.arla.com/global/en/job/111629",
+   "why": "viderestillet væk fra opslaget (https://jobs.arla.com/gb/en)"
+  }
+ ],
  "jobs_stale": [],
  "career_dead": [
   {
@@ -188,9 +196,7 @@
   "https://career2.successfactors.eu/career?company=royalunibr&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
   "https://career5.successfactors.eu/career?company=bangolufse&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
   "https://career5.successfactors.eu/career?company=sampensionP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&lang=da_DK",
-  "https://corporate.trustpilot.com/careers/job/8368919?gh_jid=8368919",
   "https://flsmidth.wd3.myworkdayjobs.com/FLS_Global",
-  "https://gn.wd3.myworkdayjobs.com/GN-Careers",
   "https://iff.wd5.myworkdayjobs.com/IFF_Careers",
   "https://lego.wd103.myworkdayjobs.com/LEGO_External",
   "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers",
@@ -216,13 +222,13 @@
   "https://telenorlinx-1750856670.teamtailor.com/jobs",
   "https://twodaydenmark.teamtailor.com/jobs",
   "https://www.alsydbank.dk/om-os/job",
+  "https://www.beierholm.dk/karriere/",
   "https://www.coloplast.com/careers/",
   "https://www.elgiganten.dk/info/job",
   "https://www.gf-forsikring.dk/om-gf/job",
   "https://www.gn.com/careers",
   "https://www.jyskebank.dk/om-os/job-og-karriere/ledige-jobs",
   "https://www.lundbeck.com/global/careers/your-job/job-opportunities",
-  "https://www.matas.dk/job",
   "https://www.mckinsey.com/careers/search-jobs/jobs/businessanalystintern-15275",
   "https://www.mckinsey.com/careers/search-jobs/jobs/fellowintern-20421",
   "https://www.mckinsey.com/careers/search-jobs?cities=Copenhagen",

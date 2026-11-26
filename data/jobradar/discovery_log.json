@@ -1,100 +1,28 @@
 {
- "started": "2026-11-25T09:54:43+00:00",
- "ads_read": 52,
+ "started": "2026-11-26T09:39:22+00:00",
+ "ads_read": 30,
  "candidates": [
   {
-   "name": "Alipes ApS",
-   "type": "teamtailor",
+   "name": "NREP",
+   "type": "emply",
    "cfg": {
-    "url": "https://app.teamtailor.com"
+    "url": "https://urbanpartners.career.emply.com"
    },
-   "evidence": "https://app.teamtailor.com/companies/sKY7JsaxI5I@eu/dashboard",
+   "evidence": "https://urbanpartners.career.emply.com/ad/studentermedhjaelper-til-digital-marketing-data-ai/s5kxxq/en",
    "listed": 0,
-   "matched": 0
-  },
-  {
-   "name": "Lemvigh-Müller A/S",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143621&DepartmentId=18971&MediaId=4635&SkipAdvertisement=true"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143621&DepartmentId=18971&MediaId=4635&SkipAdvertisement=true",
-   "cid": "3341",
-   "listed": 0,
-   "matched": 0
-  },
-  {
-   "name": "CHANGE of Scandinavia A/S",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "1178",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1178&ProjectId=147316&DepartmentId=18982&MediaId=59"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1178&ProjectId=147316&DepartmentId=18982&MediaId=59",
-   "cid": "1178",
-   "listed": 15,
    "matched": 0
   }
  ],
- "added": [
-  {
-   "name": "CHANGE of Scandinavia A/S",
-   "type": "hrmanager",
-   "listed": 15,
-   "matched": 0
-  }
- ],
+ "added": [],
  "rejected": [
   {
-   "name": "Lederne",
-   "type": "hrmanager",
+   "name": "NREP",
+   "type": "emply",
    "cfg": {
-    "cid": "2134",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2134&ProjectId=143882&DepartmentId=19106&MediaId=4615"
+    "url": "https://urbanpartners.career.emply.com"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2134&ProjectId=143882&DepartmentId=19106&MediaId=4615",
-   "reason": "HR-Manager-alias ikke fundet"
-  },
-  {
-   "name": "Elis Danmark A/S",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "1062",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1062&ProjectId=145629&DepartmentId=19022&MediaId=59"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1062&ProjectId=145629&DepartmentId=19022&MediaId=59",
-   "reason": "HR-Manager-alias ikke fundet"
-  },
-  {
-   "name": "Alipes ApS",
-   "type": "teamtailor",
-   "cfg": {
-    "url": "https://app.teamtailor.com"
-   },
-   "evidence": "https://app.teamtailor.com/companies/sKY7JsaxI5I@eu/dashboard",
+   "evidence": "https://urbanpartners.career.emply.com/ad/studentermedhjaelper-til-digital-marketing-data-ai/s5kxxq/en",
    "reason": "0 opslag"
-  },
-  {
-   "name": "Lemvigh-Müller A/S",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "3341",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143621&DepartmentId=18971&MediaId=4635&SkipAdvertisement=true"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3341&ProjectId=143621&DepartmentId=18971&MediaId=4635&SkipAdvertisement=true",
-   "cid": "3341",
-   "reason": "0 opslag"
-  },
-  {
-   "name": "Vallensbæk Kommune",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "234",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=234&ProjectId=183274&DepartmentId=8733&MediaId=5564"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=234&ProjectId=183274&DepartmentId=8733&MediaId=5564",
-   "reason": "HR-Manager-alias ikke fundet"
   }
  ]
 }
