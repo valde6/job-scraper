@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T09:14:35+00:00",
+ "generated_at": "2026-11-26T08:56:22+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
@@ -15,7 +15,7 @@
    "ok": false,
    "listed": null,
    "matched": null,
-   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/job/Denmark-Aarhus-8210/Customs-Process-Administrator_R203465"
+   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs"
   },
   {
    "name": "McKinsey & Company",
@@ -31,21 +31,21 @@
    "ok": false,
    "listed": null,
    "matched": null,
-   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/job/Billund/Student-Worker---Marketing-Skill-Development_0000039569"
+   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs"
   },
   {
    "name": "Danske Bank",
    "type": "oracle",
    "ok": true,
    "listed": 5,
-   "matched": 3,
+   "matched": 2,
    "error": null
   },
   {
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 33,
+   "listed": 29,
    "matched": 7,
    "error": null
   },
@@ -93,8 +93,8 @@
    "name": "EY",
    "type": "yello",
    "ok": true,
-   "listed": 6,
-   "matched": 2,
+   "listed": 7,
+   "matched": 3,
    "error": null
   },
   {
@@ -109,7 +109,7 @@
    "name": "Nykredit",
    "type": "browser",
    "ok": true,
-   "listed": 35,
+   "listed": 36,
    "matched": 6,
    "error": null
   },
@@ -229,7 +229,7 @@
    "name": "Ørsted",
    "type": "browser",
    "ok": true,
-   "listed": 31,
+   "listed": 33,
    "matched": 0,
    "error": null
   },
@@ -277,16 +277,16 @@
    "name": "Danske Commodities",
    "type": "teamtailor",
    "ok": true,
-   "listed": 9,
-   "matched": 3,
+   "listed": 8,
+   "matched": 2,
    "error": null
   },
   {
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 35,
-   "matched": 3,
+   "listed": 33,
+   "matched": 2,
    "error": null
   },
   {
@@ -309,7 +309,7 @@
    "name": "Amazon",
    "type": "amazon",
    "ok": true,
-   "listed": 6,
+   "listed": 5,
    "matched": 0,
    "error": null
   },
@@ -389,7 +389,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 69,
+   "listed": 66,
    "matched": 1,
    "error": null
   },
@@ -405,8 +405,8 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 391,
-   "matched": 32,
+   "listed": 406,
+   "matched": 40,
    "error": null
   }
  ]
