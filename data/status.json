@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T08:56:22+00:00",
+ "updated": "2026-11-27T09:08:08+00:00",
  "companies": [
   {
    "company": "Novo Nordisk",
@@ -8,7 +8,7 @@
    "ok": true,
    "listed": 3,
    "matched": 2,
-   "seconds": 2.9
+   "seconds": 2.3
   },
   {
    "company": "A.P. Møller - Mærsk",
@@ -17,7 +17,7 @@
    "ok": false,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://maersk.wd3.myworkdayjobs.com/wday/cxs/maersk/Maersk_Careers/jobs",
    "last_good_listed": 404,
-   "seconds": 15.7
+   "seconds": 15.4
   },
   {
    "company": "McKinsey & Company",
@@ -33,7 +33,7 @@
    "ok": false,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://lego.wd103.myworkdayjobs.com/wday/cxs/lego/LEGO_External/jobs",
    "last_good_listed": 53,
-   "seconds": 15.9
+   "seconds": 15.5
   },
   {
    "company": "Danske Bank",
@@ -42,7 +42,7 @@
    "ok": true,
    "listed": 5,
    "matched": 2,
-   "seconds": 3.3
+   "seconds": 8.8
   },
   {
    "company": "Deloitte",
@@ -51,16 +51,16 @@
    "ok": true,
    "listed": 29,
    "matched": 7,
-   "seconds": 13.6
+   "seconds": 7.0
   },
   {
    "company": "PwC",
    "rank": 7,
    "source": "workday",
    "ok": false,
-   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs",
+   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/job/Copenhagen/Praktikant---f-bred-erfaring-med-HR--lring-og-udvikling_765731WD",
    "last_good_listed": 7,
-   "seconds": 15.9
+   "seconds": 23.2
   },
   {
    "company": "Carlsberg",
@@ -76,7 +76,7 @@
    "ok": true,
    "listed": 4,
    "matched": 0,
-   "seconds": 0.3
+   "seconds": 0.5
   },
   {
    "company": "Nordea",
@@ -85,7 +85,7 @@
    "ok": true,
    "listed": 8,
    "matched": 1,
-   "seconds": 4.3
+   "seconds": 3.9
   },
   {
    "company": "Microsoft",
@@ -116,8 +116,8 @@
    "source": "browser",
    "ok": true,
    "listed": 36,
-   "matched": 6,
-   "seconds": 49.8
+   "matched": 7,
+   "seconds": 56.2
   },
   {
    "company": "Bestseller",
@@ -149,7 +149,7 @@
    "matched": 0,
    "suspect": "0 opslag (sidst 7)",
    "last_good_listed": 7,
-   "seconds": 2.3
+   "seconds": 1.7
   },
   {
    "company": "Implement",
@@ -165,7 +165,7 @@
    "ok": false,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://saxobank.wd3.myworkdayjobs.com/wday/cxs/saxobank/CareeratSaxoBank/jobs",
    "last_good_listed": 24,
-   "seconds": 15.9
+   "seconds": 15.4
   },
   {
    "company": "Finansministeriet",
@@ -195,7 +195,7 @@
    "ok": true,
    "listed": 10,
    "matched": 0,
-   "seconds": 33.9
+   "seconds": 24.1
   },
   {
    "company": "Udenrigsministeriet",
@@ -216,7 +216,7 @@
    "rank": 27,
    "source": "teamtailor",
    "ok": true,
-   "listed": 11,
+   "listed": 10,
    "matched": 3,
    "seconds": 0.6
   },
@@ -232,9 +232,9 @@
    "rank": 29,
    "source": "browser",
    "ok": true,
-   "listed": 33,
-   "matched": 0,
-   "seconds": 8.2
+   "listed": 37,
+   "matched": 1,
+   "seconds": 12.9
   },
   {
    "company": "KPMG",
@@ -243,7 +243,7 @@
    "ok": true,
    "listed": 8,
    "matched": 0,
-   "seconds": 1.4
+   "seconds": 1.2
   },
   {
    "company": "Matas",
@@ -266,7 +266,7 @@
    "ok": true,
    "listed": 10,
    "matched": 0,
-   "seconds": 5.2
+   "seconds": 2.5
   },
   {
    "company": "Københavns Lufthavne",
@@ -280,27 +280,27 @@
    "rank": 35,
    "source": "teamtailor",
    "ok": true,
-   "listed": 8,
+   "listed": 7,
    "matched": 2,
-   "seconds": 0.6
+   "seconds": 0.5
   },
   {
    "company": "Netcompany",
    "rank": 36,
    "source": "smartrecruiters",
    "ok": true,
-   "listed": 33,
+   "listed": 32,
    "matched": 2,
-   "seconds": 15.1
+   "seconds": 7.5
   },
   {
    "company": "PFA Pension",
    "rank": 37,
    "source": "browser",
    "ok": true,
-   "listed": 5,
+   "listed": 7,
    "matched": 1,
-   "seconds": 18.0
+   "seconds": 15.8
   },
   {
    "company": "SAS",
@@ -316,7 +316,7 @@
    "ok": true,
    "listed": 5,
    "matched": 0,
-   "seconds": 0.2
+   "seconds": 0.9
   },
   {
    "company": "Beierholm",
@@ -346,7 +346,7 @@
    "ok": true,
    "listed": 30,
    "matched": 0,
-   "seconds": 1.6
+   "seconds": 1.3
   },
   {
    "company": "Statsministeriet",
@@ -362,7 +362,7 @@
    "ok": false,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs",
    "last_good_listed": 2,
-   "seconds": 24.0
+   "seconds": 15.4
   },
   {
    "company": "Danmarks Radio",
@@ -394,9 +394,9 @@
    "rank": 49,
    "source": "smartrecruiters",
    "ok": true,
-   "listed": 66,
+   "listed": 73,
    "matched": 1,
-   "seconds": 32.3
+   "seconds": 17.8
   },
   {
    "company": "Novonesis",
@@ -405,19 +405,19 @@
    "ok": false,
    "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://novonesis.wd103.myworkdayjobs.com/wday/cxs/novonesis/Novonesis_Careers/jobs",
    "last_good_listed": 47,
-   "seconds": 15.9
+   "seconds": 15.3
   },
   {
    "company": "(Jobindex RSS)",
    "source": "jobindex",
    "ok": true,
-   "listed": 406,
-   "matched": 40,
+   "listed": 409,
+   "matched": 36,
    "fit": {
-    "sikker": 36,
+    "sikker": 32,
     "sandsynlig": 1,
     "mulig": 3,
-    "body_fetch": 26
+    "body_fetch": 18
    }
   }
  ]
