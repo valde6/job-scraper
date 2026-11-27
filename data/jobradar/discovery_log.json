@@ -1,28 +1,88 @@
 {
- "started": "2026-11-26T09:39:22+00:00",
- "ads_read": 30,
+ "started": "2026-11-27T09:44:18+00:00",
+ "ads_read": 34,
  "candidates": [
   {
-   "name": "NREP",
+   "name": "VikingDanmark",
    "type": "emply",
    "cfg": {
-    "url": "https://urbanpartners.career.emply.com"
+    "url": "https://vikingdk.career.emply.com"
    },
-   "evidence": "https://urbanpartners.career.emply.com/ad/studentermedhjaelper-til-digital-marketing-data-ai/s5kxxq/en",
-   "listed": 0,
+   "evidence": "https://vikingdk.career.emply.com/ad/medhjaelper-til-servicevaerkstedet-i-vikingdanmark/kukwnr/da",
+   "listed": 1,
+   "matched": 1
+  },
+  {
+   "name": "Danmarks Naturfredningsforening",
+   "type": "emply",
+   "cfg": {
+    "url": "https://dn.career.emply.com"
+   },
+   "evidence": "https://dn.career.emply.com/ad/fundraising-chef-i-danmarks-naturfredningsforening/aa8uhq/da",
+   "listed": 7,
+   "matched": 3
+  },
+  {
+   "name": "Dagrofa ApS",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "2180",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2180&ProjectId=148719&DepartmentId=19554&MediaId=4623"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2180&ProjectId=148719&DepartmentId=19554&MediaId=4623",
+   "cid": "2180",
+   "listed": 71,
+   "matched": 1
+  },
+  {
+   "name": "Dantherm A/S",
+   "type": "hrmanager",
+   "cfg": {
+    "cid": "2313",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2313&ProjectId=143677&DepartmentId=18962&MediaId=4621"
+   },
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2313&ProjectId=143677&DepartmentId=18962&MediaId=4621",
+   "cid": "2313",
+   "listed": 4,
    "matched": 0
   }
  ],
- "added": [],
+ "added": [
+  {
+   "name": "VikingDanmark",
+   "type": "emply",
+   "listed": 1,
+   "matched": 1
+  },
+  {
+   "name": "Danmarks Naturfredningsforening",
+   "type": "emply",
+   "listed": 7,
+   "matched": 3
+  },
+  {
+   "name": "Dagrofa ApS",
+   "type": "hrmanager",
+   "listed": 71,
+   "matched": 1
+  },
+  {
+   "name": "Dantherm A/S",
+   "type": "hrmanager",
+   "listed": 4,
+   "matched": 0
+  }
+ ],
  "rejected": [
   {
-   "name": "NREP",
-   "type": "emply",
+   "name": "Aarhus Kommune",
+   "type": "hrmanager",
    "cfg": {
-    "url": "https://urbanpartners.career.emply.com"
+    "cid": "3112",
+    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=145026&DepartmentId=21392&MediaId=4631"
    },
-   "evidence": "https://urbanpartners.career.emply.com/ad/studentermedhjaelper-til-digital-marketing-data-ai/s5kxxq/en",
-   "reason": "0 opslag"
+   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=145026&DepartmentId=21392&MediaId=4631",
+   "reason": "HR-Manager-alias ikke fundet"
   }
  ]
 }
