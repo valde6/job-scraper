@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-27T09:08:08+00:00",
+ "generated_at": "2026-11-28T08:29:27+00:00",
  "sources": [
   {
    "name": "Novo Nordisk",
    "type": "successfactors",
    "ok": true,
-   "listed": 3,
+   "listed": 5,
    "matched": 2,
    "error": null
   },
@@ -45,8 +45,8 @@
    "name": "Deloitte",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 29,
-   "matched": 7,
+   "listed": 28,
+   "matched": 6,
    "error": null
   },
   {
@@ -55,7 +55,7 @@
    "ok": false,
    "listed": null,
    "matched": null,
-   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/job/Copenhagen/Praktikant---f-bred-erfaring-med-HR--lring-og-udvikling_7657"
+   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://pwc.wd3.myworkdayjobs.com/wday/cxs/pwc/Global_Campus_Careers/jobs"
   },
   {
    "name": "Carlsberg",
@@ -213,8 +213,8 @@
    "name": "Dansk Industri",
    "type": "teamtailor",
    "ok": true,
-   "listed": 10,
-   "matched": 3,
+   "listed": 11,
+   "matched": 4,
    "error": null
   },
   {
@@ -277,7 +277,7 @@
    "name": "Danske Commodities",
    "type": "teamtailor",
    "ok": true,
-   "listed": 7,
+   "listed": 8,
    "matched": 2,
    "error": null
   },
@@ -285,16 +285,16 @@
    "name": "Netcompany",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 32,
-   "matched": 2,
+   "listed": 33,
+   "matched": 3,
    "error": null
   },
   {
    "name": "PFA Pension",
    "type": "browser",
    "ok": true,
-   "listed": 7,
-   "matched": 1,
+   "listed": 9,
+   "matched": 2,
    "error": null
   },
   {
@@ -309,7 +309,7 @@
    "name": "Amazon",
    "type": "amazon",
    "ok": true,
-   "listed": 5,
+   "listed": 6,
    "matched": 0,
    "error": null
   },
@@ -389,7 +389,7 @@
    "name": "Rambøll",
    "type": "smartrecruiters",
    "ok": true,
-   "listed": 73,
+   "listed": 77,
    "matched": 1,
    "error": null
   },
@@ -405,8 +405,8 @@
    "name": "(Jobindex RSS)",
    "type": "jobindex",
    "ok": true,
-   "listed": 409,
-   "matched": 36,
+   "listed": 420,
+   "matched": 37,
    "error": null
   }
  ]
