@@ -1027,3 +1027,13 @@ employers:
     via: jobindex-link
     evidence: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2313&ProjectId=143677&DepartmentId=18962&MediaId=4621
   cid: '2313'
+- name: Caljan A/S
+  career_url: https://career.caljan.com
+  status: opdaget
+  source:
+    type: teamtailor
+    url: https://career.caljan.com
+  discovered:
+    at: '2026-11-28'
+    via: jobindex-link
+    evidence: https://career.caljan.com/jobs/8800978-executive-business-assistant?promotion=2315614-jobindex

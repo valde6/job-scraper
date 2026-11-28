@@ -1,88 +1,45 @@
 {
- "started": "2026-11-27T09:44:18+00:00",
- "ads_read": 34,
+ "started": "2026-11-28T08:57:52+00:00",
+ "ads_read": 16,
  "candidates": [
   {
-   "name": "VikingDanmark",
+   "name": "NREP",
    "type": "emply",
    "cfg": {
-    "url": "https://vikingdk.career.emply.com"
+    "url": "https://urbanpartners.career.emply.com"
    },
-   "evidence": "https://vikingdk.career.emply.com/ad/medhjaelper-til-servicevaerkstedet-i-vikingdanmark/kukwnr/da",
-   "listed": 1,
-   "matched": 1
+   "evidence": "https://urbanpartners.career.emply.com/ad/studentermedhjaelper-til-juli-living-i-nordhavn-en-del-af-urban-partners/nn9gvw",
+   "listed": 0,
+   "matched": 0
   },
   {
-   "name": "Danmarks Naturfredningsforening",
-   "type": "emply",
+   "name": "Caljan A/S",
+   "type": "teamtailor",
    "cfg": {
-    "url": "https://dn.career.emply.com"
+    "url": "https://career.caljan.com"
    },
-   "evidence": "https://dn.career.emply.com/ad/fundraising-chef-i-danmarks-naturfredningsforening/aa8uhq/da",
-   "listed": 7,
-   "matched": 3
-  },
-  {
-   "name": "Dagrofa ApS",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "2180",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2180&ProjectId=148719&DepartmentId=19554&MediaId=4623"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2180&ProjectId=148719&DepartmentId=19554&MediaId=4623",
-   "cid": "2180",
-   "listed": 71,
-   "matched": 1
-  },
-  {
-   "name": "Dantherm A/S",
-   "type": "hrmanager",
-   "cfg": {
-    "cid": "2313",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2313&ProjectId=143677&DepartmentId=18962&MediaId=4621"
-   },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=2313&ProjectId=143677&DepartmentId=18962&MediaId=4621",
-   "cid": "2313",
-   "listed": 4,
+   "evidence": "https://career.caljan.com/jobs/8800978-executive-business-assistant?promotion=2315614-jobindex",
+   "listed": 13,
    "matched": 0
   }
  ],
  "added": [
   {
-   "name": "VikingDanmark",
-   "type": "emply",
-   "listed": 1,
-   "matched": 1
-  },
-  {
-   "name": "Danmarks Naturfredningsforening",
-   "type": "emply",
-   "listed": 7,
-   "matched": 3
-  },
-  {
-   "name": "Dagrofa ApS",
-   "type": "hrmanager",
-   "listed": 71,
-   "matched": 1
-  },
-  {
-   "name": "Dantherm A/S",
-   "type": "hrmanager",
-   "listed": 4,
+   "name": "Caljan A/S",
+   "type": "teamtailor",
+   "listed": 13,
    "matched": 0
   }
  ],
  "rejected": [
   {
-   "name": "Aarhus Kommune",
-   "type": "hrmanager",
+   "name": "NREP",
+   "type": "emply",
    "cfg": {
-    "cid": "3112",
-    "probe_url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=145026&DepartmentId=21392&MediaId=4631"
+    "url": "https://urbanpartners.career.emply.com"
    },
-   "evidence": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=3112&ProjectId=145026&DepartmentId=21392&MediaId=4631",
-   "reason": "HR-Manager-alias ikke fundet"
+   "evidence": "https://urbanpartners.career.emply.com/ad/studentermedhjaelper-til-juli-living-i-nordhavn-en-del-af-urban-partners/nn9gvw",
+   "reason": "0 opslag"
   }
  ]
 }
